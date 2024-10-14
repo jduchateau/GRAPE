@@ -2,7 +2,6 @@
 <model ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -296,11 +295,12 @@
     <property role="TrG5h" value="RdfLiteralAnnotation" />
     <property role="EcuMT" value="2937713717140657241" />
     <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2z4QKYxXxhr">
     <property role="EcuMT" value="2937713717140657243" />
     <property role="TrG5h" value="RdfLiteralLangAnnotation" />
-    <property role="34LRSv" value="@" />
+    <property role="34LRSv" value="@lang" />
     <ref role="1TJDcQ" node="2z4QKYxXxhp" resolve="RdfLiteralAnnotation" />
     <node concept="PrWs8" id="2z4QKYxXxhz" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -309,6 +309,7 @@
   <node concept="1TIwiD" id="2z4QKYxXxhJ">
     <property role="EcuMT" value="2937713717140657263" />
     <property role="TrG5h" value="RdfLiteralTypeAnnotation" />
+    <property role="34LRSv" value="^^type" />
     <ref role="1TJDcQ" node="2z4QKYxXxhp" resolve="RdfLiteralAnnotation" />
     <node concept="1TJgyj" id="2z4QKYxXxhN" role="1TKVEi">
       <property role="IQ2ns" value="2937713717140657267" />
@@ -320,6 +321,7 @@
   <node concept="1TIwiD" id="2L7xBeiM5zR">
     <property role="EcuMT" value="3190666691957250295" />
     <property role="TrG5h" value="BlankNodePropertyList" />
+    <property role="34LRSv" value="[ blank node properties ]" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="2L7xBeiM5zS" role="PzmwI">
       <ref role="PrY4T" node="2z4QKYxWcd2" resolve="Subject" />
@@ -333,6 +335,25 @@
       <property role="20kJfa" value="predicateObjectList" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2z4QKYxWbD2" resolve="PredicateObject" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1p4Xe90hRmb">
+    <property role="EcuMT" value="1604676619828950411" />
+    <property role="TrG5h" value="Collection" />
+    <property role="34LRSv" value="( collection )" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="1p4Xe90hRmd" role="PzmwI">
+      <ref role="PrY4T" node="2z4QKYxWcd2" resolve="Subject" />
+    </node>
+    <node concept="PrWs8" id="1p4Xe90hRme" role="PzmwI">
+      <ref role="PrY4T" node="2z4QKYxWdpG" resolve="Object" />
+    </node>
+    <node concept="1TJgyj" id="1p4Xe90hRmf" role="1TKVEi">
+      <property role="IQ2ns" value="1604676619828950415" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="objects" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2z4QKYxWdpG" resolve="Object" />
     </node>
   </node>
 </model>
