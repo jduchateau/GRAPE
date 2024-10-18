@@ -4,10 +4,16 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/models" />
     </modelRoot>
+    <modelRoot contentPath="${module}/../../lib" type="java_classes">
+      <sourceRoot location="antlr4-runtime-4.13.2.jar" />
+      <sourceRoot location="antlr4-runtime-4.13.2-javadoc.jar" />
+    </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/../../lib/antlr4-runtime-4.13.2.jar" />
+      <library location="${module}/../../lib/antlr4-runtime-4.13.2-javadoc.jar" />
     </facet>
   </facets>
   <accessoryModels />

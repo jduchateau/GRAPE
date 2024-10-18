@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/languages/RML/RML.iml" filepath="$PROJECT_DIR$/languages/RML/RML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RML-editor-lang.iml" filepath="$PROJECT_DIR$/.idea/RML-editor-lang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/languages/Turtle/Turtle.iml" filepath="$PROJECT_DIR$/languages/Turtle/Turtle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/languages/RML/generator/generator.iml" filepath="$PROJECT_DIR$/languages/RML/generator/generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/languages/Turtle/generator/generator2.iml" filepath="$PROJECT_DIR$/languages/Turtle/generator/generator2.iml" />
+    </modules>
+  </component>
+</project>
