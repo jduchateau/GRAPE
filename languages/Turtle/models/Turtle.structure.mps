@@ -204,7 +204,7 @@
   <node concept="1TIwiD" id="2z4QKYxWbDf">
     <property role="EcuMT" value="2937713717140306511" />
     <property role="TrG5h" value="AnnotatedObject" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2z4QKYxWe0t" role="1TKVEi">
       <property role="IQ2ns" value="2937713717140316189" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -223,7 +223,7 @@
     <property role="TrG5h" value="Subject" />
     <property role="EcuMT" value="2937713717140295287" />
     <node concept="t5JxF" id="2z4QKYxWcd9" role="lGtFl">
-      <property role="t5JxN" value="Missing collection" />
+      <property role="t5JxN" value="TODO Missing collection" />
     </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxWcd4">
@@ -231,7 +231,7 @@
     <property role="TrG5h" value="BlankNode" />
     <property role="R4oN_" value="named blank node" />
     <property role="34LRSv" value="_:" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2z4QKYxWcd5" role="PzmwI">
       <ref role="PrY4T" node="2z4QKYxWcd2" resolve="Subject" />
     </node>
@@ -269,7 +269,7 @@
     <property role="EcuMT" value="2937713717140624468" />
     <property role="TrG5h" value="Literal" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2z4QKYxXxhm" role="PzmwI">
       <ref role="PrY4T" node="2z4QKYxWdpG" resolve="Object" />
     </node>
@@ -322,7 +322,7 @@
     <property role="EcuMT" value="3190666691957250295" />
     <property role="TrG5h" value="BlankNodePropertyList" />
     <property role="34LRSv" value="[ blank node properties ]" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2L7xBeiM5zS" role="PzmwI">
       <ref role="PrY4T" node="2z4QKYxWcd2" resolve="Subject" />
     </node>
@@ -341,7 +341,7 @@
     <property role="EcuMT" value="1604676619828950411" />
     <property role="TrG5h" value="Collection" />
     <property role="34LRSv" value="( collection )" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1p4Xe90hRmd" role="PzmwI">
       <ref role="PrY4T" node="2z4QKYxWcd2" resolve="Subject" />
     </node>

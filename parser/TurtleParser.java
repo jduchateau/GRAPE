@@ -1,5 +1,4 @@
-// Generated from src/main/java/org/example/turtle/TURTLE.g4 by ANTLR 4.13.2
-package org.example.turtle;
+// Generated from Turtle.g4 by ANTLR 4.10.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -9,9 +8,9 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue", "this-escape"})
-public class TURTLEParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.13.2", RuntimeMetaData.VERSION); }
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
+public class TurtleParser extends Parser {
+	static { RuntimeMetaData.checkVersion("4.10.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -96,7 +95,7 @@ public class TURTLEParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "TURTLE.g4"; }
+	public String getGrammarFileName() { return "Turtle.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -107,14 +106,13 @@ public class TURTLEParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public TURTLEParser(TokenStream input) {
+	public TurtleParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class TurtleDocContext extends ParserRuleContext {
-		public TerminalNode EOF() { return getToken(TURTLEParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(TurtleParser.EOF, 0); }
 		public List<StatementContext> statement() {
 			return getRuleContexts(StatementContext.class);
 		}
@@ -127,16 +125,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_turtleDoc; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterTurtleDoc(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterTurtleDoc(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitTurtleDoc(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitTurtleDoc(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitTurtleDoc(this);
 		}
 	}
 
@@ -150,7 +143,7 @@ public class TURTLEParser extends Parser {
 			setState(41);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 5376572L) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__1) | (1L << T__2) | (1L << T__3) | (1L << T__4) | (1L << T__8) | (1L << T__10) | (1L << BlankNode) | (1L << IRIREF) | (1L << PrefixedName))) != 0)) {
 				{
 				{
 				setState(38);
@@ -176,7 +169,6 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class StatementContext extends ParserRuleContext {
 		public DirectiveContext directive() {
 			return getRuleContext(DirectiveContext.class,0);
@@ -190,16 +182,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_statement; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterStatement(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterStatement(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitStatement(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitStatement(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitStatement(this);
 		}
 	}
 
@@ -248,7 +235,6 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class DirectiveContext extends ParserRuleContext {
 		public PrefixIDContext prefixID() {
 			return getRuleContext(PrefixIDContext.class,0);
@@ -268,16 +254,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_directive; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterDirective(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterDirective(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitDirective(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitDirective(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitDirective(this);
 		}
 	}
 
@@ -331,26 +312,20 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class PrefixIDContext extends ParserRuleContext {
-		public TerminalNode PNAME_NS() { return getToken(TURTLEParser.PNAME_NS, 0); }
-		public TerminalNode IRIREF() { return getToken(TURTLEParser.IRIREF, 0); }
+		public TerminalNode PNAME_NS() { return getToken(TurtleParser.PNAME_NS, 0); }
+		public TerminalNode IRIREF() { return getToken(TurtleParser.IRIREF, 0); }
 		public PrefixIDContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_prefixID; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterPrefixID(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterPrefixID(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitPrefixID(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitPrefixID(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitPrefixID(this);
 		}
 	}
 
@@ -381,25 +356,19 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class BaseContext extends ParserRuleContext {
-		public TerminalNode IRIREF() { return getToken(TURTLEParser.IRIREF, 0); }
+		public TerminalNode IRIREF() { return getToken(TurtleParser.IRIREF, 0); }
 		public BaseContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_base; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterBase(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterBase(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitBase(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitBase(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitBase(this);
 		}
 	}
 
@@ -428,25 +397,19 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class SparqlBaseContext extends ParserRuleContext {
-		public TerminalNode IRIREF() { return getToken(TURTLEParser.IRIREF, 0); }
+		public TerminalNode IRIREF() { return getToken(TurtleParser.IRIREF, 0); }
 		public SparqlBaseContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sparqlBase; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterSparqlBase(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterSparqlBase(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitSparqlBase(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitSparqlBase(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitSparqlBase(this);
 		}
 	}
 
@@ -473,26 +436,20 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class SparqlPrefixContext extends ParserRuleContext {
-		public TerminalNode PNAME_NS() { return getToken(TURTLEParser.PNAME_NS, 0); }
-		public TerminalNode IRIREF() { return getToken(TURTLEParser.IRIREF, 0); }
+		public TerminalNode PNAME_NS() { return getToken(TurtleParser.PNAME_NS, 0); }
+		public TerminalNode IRIREF() { return getToken(TurtleParser.IRIREF, 0); }
 		public SparqlPrefixContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sparqlPrefix; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterSparqlPrefix(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterSparqlPrefix(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitSparqlPrefix(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitSparqlPrefix(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitSparqlPrefix(this);
 		}
 	}
 
@@ -521,7 +478,6 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class TriplesContext extends ParserRuleContext {
 		public SubjectContext subject() {
 			return getRuleContext(SubjectContext.class,0);
@@ -538,16 +494,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_triples; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterTriples(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterTriples(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitTriples(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitTriples(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitTriples(this);
 		}
 	}
 
@@ -579,7 +530,7 @@ public class TURTLEParser extends Parser {
 				setState(79);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 5243136L) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__7) | (1L << IRIREF) | (1L << PrefixedName))) != 0)) {
 					{
 					setState(78);
 					predicateObjectList();
@@ -603,7 +554,6 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class PredicateObjectListContext extends ParserRuleContext {
 		public List<VerbContext> verb() {
 			return getRuleContexts(VerbContext.class);
@@ -623,16 +573,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_predicateObjectList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterPredicateObjectList(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterPredicateObjectList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitPredicateObjectList(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitPredicateObjectList(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitPredicateObjectList(this);
 		}
 	}
 
@@ -658,7 +603,7 @@ public class TURTLEParser extends Parser {
 				setState(89);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 5243136L) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__7) | (1L << IRIREF) | (1L << PrefixedName))) != 0)) {
 					{
 					setState(86);
 					verb();
@@ -686,7 +631,6 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ObjectListContext extends ParserRuleContext {
 		public List<Object_Context> object_() {
 			return getRuleContexts(Object_Context.class);
@@ -700,16 +644,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_objectList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterObjectList(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterObjectList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitObjectList(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitObjectList(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitObjectList(this);
 		}
 	}
 
@@ -751,7 +690,6 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class VerbContext extends ParserRuleContext {
 		public PredicateContext predicate() {
 			return getRuleContext(PredicateContext.class,0);
@@ -762,16 +700,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_verb; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterVerb(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterVerb(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitVerb(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitVerb(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitVerb(this);
 		}
 	}
 
@@ -812,12 +745,11 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class SubjectContext extends ParserRuleContext {
 		public IriContext iri() {
 			return getRuleContext(IriContext.class,0);
 		}
-		public TerminalNode BlankNode() { return getToken(TURTLEParser.BlankNode, 0); }
+		public TerminalNode BlankNode() { return getToken(TurtleParser.BlankNode, 0); }
 		public CollectionContext collection() {
 			return getRuleContext(CollectionContext.class,0);
 		}
@@ -827,16 +759,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_subject; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterSubject(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterSubject(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitSubject(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitSubject(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitSubject(this);
 		}
 	}
 
@@ -884,7 +811,6 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class PredicateContext extends ParserRuleContext {
 		public IriContext iri() {
 			return getRuleContext(IriContext.class,0);
@@ -895,16 +821,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_predicate; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterPredicate(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterPredicate(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitPredicate(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitPredicate(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitPredicate(this);
 		}
 	}
 
@@ -929,12 +850,11 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class Object_Context extends ParserRuleContext {
 		public IriContext iri() {
 			return getRuleContext(IriContext.class,0);
 		}
-		public TerminalNode BlankNode() { return getToken(TURTLEParser.BlankNode, 0); }
+		public TerminalNode BlankNode() { return getToken(TurtleParser.BlankNode, 0); }
 		public CollectionContext collection() {
 			return getRuleContext(CollectionContext.class,0);
 		}
@@ -950,16 +870,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_object_; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterObject_(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterObject_(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitObject_(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitObject_(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitObject_(this);
 		}
 	}
 
@@ -1023,29 +938,23 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class LiteralContext extends ParserRuleContext {
 		public RdfLiteralContext rdfLiteral() {
 			return getRuleContext(RdfLiteralContext.class,0);
 		}
-		public TerminalNode NumericLiteral() { return getToken(TURTLEParser.NumericLiteral, 0); }
-		public TerminalNode BooleanLiteral() { return getToken(TURTLEParser.BooleanLiteral, 0); }
+		public TerminalNode NumericLiteral() { return getToken(TurtleParser.NumericLiteral, 0); }
+		public TerminalNode BooleanLiteral() { return getToken(TurtleParser.BooleanLiteral, 0); }
 		public LiteralContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterLiteral(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterLiteral(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitLiteral(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitLiteral(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitLiteral(this);
 		}
 	}
 
@@ -1092,7 +1001,6 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class BlankNodePropertyListContext extends ParserRuleContext {
 		public PredicateObjectListContext predicateObjectList() {
 			return getRuleContext(PredicateObjectListContext.class,0);
@@ -1103,16 +1011,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_blankNodePropertyList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterBlankNodePropertyList(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterBlankNodePropertyList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitBlankNodePropertyList(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitBlankNodePropertyList(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitBlankNodePropertyList(this);
 		}
 	}
 
@@ -1141,7 +1044,6 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class CollectionContext extends ParserRuleContext {
 		public List<Object_Context> object_() {
 			return getRuleContexts(Object_Context.class);
@@ -1155,16 +1057,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_collection; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterCollection(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterCollection(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitCollection(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitCollection(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitCollection(this);
 		}
 	}
 
@@ -1180,7 +1077,7 @@ public class TURTLEParser extends Parser {
 			setState(135);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 5491200L) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__8) | (1L << T__10) | (1L << NumericLiteral) | (1L << BooleanLiteral) | (1L << String) | (1L << BlankNode) | (1L << IRIREF) | (1L << PrefixedName))) != 0)) {
 				{
 				{
 				setState(132);
@@ -1206,10 +1103,9 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class RdfLiteralContext extends ParserRuleContext {
-		public TerminalNode String() { return getToken(TURTLEParser.String, 0); }
-		public TerminalNode LANGTAG() { return getToken(TURTLEParser.LANGTAG, 0); }
+		public TerminalNode String() { return getToken(TurtleParser.String, 0); }
+		public TerminalNode LANGTAG() { return getToken(TurtleParser.LANGTAG, 0); }
 		public IriContext iri() {
 			return getRuleContext(IriContext.class,0);
 		}
@@ -1219,16 +1115,11 @@ public class TURTLEParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_rdfLiteral; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterRdfLiteral(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterRdfLiteral(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitRdfLiteral(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitRdfLiteral(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitRdfLiteral(this);
 		}
 	}
 
@@ -1287,26 +1178,20 @@ public class TURTLEParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class IriContext extends ParserRuleContext {
-		public TerminalNode IRIREF() { return getToken(TURTLEParser.IRIREF, 0); }
-		public TerminalNode PrefixedName() { return getToken(TURTLEParser.PrefixedName, 0); }
+		public TerminalNode IRIREF() { return getToken(TurtleParser.IRIREF, 0); }
+		public TerminalNode PrefixedName() { return getToken(TurtleParser.PrefixedName, 0); }
 		public IriContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_iri; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).enterIri(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).enterIri(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof TURTLEListener ) ((TURTLEListener)listener).exitIri(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof TURTLEVisitor ) return ((TURTLEVisitor<? extends T>)visitor).visitIri(this);
-			else return visitor.visitChildren(this);
+			if ( listener instanceof TurtleListener ) ((TurtleListener)listener).exitIri(this);
 		}
 	}
 

@@ -205,7 +205,7 @@
       <node concept="3F2HdR" id="2z4QKYxWIVH" role="3EZMnx">
         <property role="S$F3r" value="true" />
         <property role="2czwfO" value=";" />
-        <ref role="1NtTu8" to="16h3:2z4QKYxWbCZ" />
+        <ref role="1NtTu8" to="16h3:2z4QKYxWbCZ" resolve="predicateObject" />
         <node concept="l2Vlx" id="2L7xBeiK3$p" role="2czzBx" />
         <node concept="lj46D" id="2L7xBeiLIJ5" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -354,7 +354,7 @@
       </node>
       <node concept="3F0ifn" id="2z4QKYxXhfH" role="3EZMnx" />
       <node concept="3F2HdR" id="2z4QKYxX9eN" role="3EZMnx">
-        <ref role="1NtTu8" to="16h3:2z4QKYxVX4P" />
+        <ref role="1NtTu8" to="16h3:2z4QKYxVX4P" resolve="statments" />
         <node concept="VPM3Z" id="2z4QKYxX9eR" role="3F10Kt" />
         <node concept="pj6Ft" id="2L7xBeiOpB4" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -486,7 +486,7 @@
       </node>
       <node concept="3F2HdR" id="2L7xBeiM5$n" role="3EZMnx">
         <property role="2czwfO" value=";" />
-        <ref role="1NtTu8" to="16h3:2L7xBeiM5$s" />
+        <ref role="1NtTu8" to="16h3:2L7xBeiM5$s" resolve="predicateObjectList" />
         <node concept="l2Vlx" id="2L7xBeiM5$q" role="2czzBx" />
         <node concept="lj46D" id="2L7xBeiM5$u" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -536,7 +536,7 @@
         <property role="3F0ifm" value="(" />
       </node>
       <node concept="3F2HdR" id="1p4Xe90hRmp" role="3EZMnx">
-        <ref role="1NtTu8" to="16h3:1p4Xe90hRmf" />
+        <ref role="1NtTu8" to="16h3:1p4Xe90hRmf" resolve="objects" />
         <node concept="l2Vlx" id="1p4Xe90hRms" role="2czzBx" />
         <node concept="lj46D" id="1p4Xe90nV4D" role="3F10Kt">
           <property role="VOm3f" value="true" />

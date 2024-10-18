@@ -63,6 +63,9 @@
         <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
     </language>
+    <language id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML">
+      <concept id="3190666691956613381" name="RML.structure.TriplesMap" flags="ng" index="2YYitQ" />
+    </language>
   </registry>
   <node concept="29aKCY" id="2z4QKYxW8D7">
     <node concept="29d5m5" id="2z4QKYxW9EQ" role="29aKCU">
@@ -92,10 +95,7 @@
       <property role="3V$3am" value="statments" />
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>
-    <node concept="3DQ70j" id="2L7xBeiSEJU" role="lGtFl">
-      <property role="3V$3am" value="statments" />
-      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
-    </node>
+    <node concept="2YYitQ" id="5iB6wpUzbKv" role="29aKCU" />
     <node concept="3DQ70j" id="2L7xBeiR6_6" role="lGtFl">
       <property role="3V$3am" value="statments" />
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
