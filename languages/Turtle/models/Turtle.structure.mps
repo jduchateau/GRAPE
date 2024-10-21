@@ -26,7 +26,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -90,7 +92,7 @@
   </node>
   <node concept="1TIwiD" id="2z4QKYxW8U0">
     <property role="EcuMT" value="2937713717140295296" />
-    <property role="TrG5h" value="AbstractIRI" />
+    <property role="TrG5h" value="Iri" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2z4QKYxWcd6" role="PzmwI">
@@ -102,11 +104,14 @@
     <node concept="PrWs8" id="2z4QKYxWe0y" role="PzmwI">
       <ref role="PrY4T" node="2z4QKYxWdpJ" resolve="Verb" />
     </node>
+    <node concept="PrWs8" id="5tSQ8xWK1cV" role="PzmwI">
+      <ref role="PrY4T" node="5tSQ8xWK1cS" resolve="RessourceIdentifier" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxW8U5">
     <property role="EcuMT" value="2937713717140295301" />
     <property role="TrG5h" value="PrefixedName" />
-    <ref role="1TJDcQ" node="2z4QKYxW8U0" resolve="AbstractIRI" />
+    <ref role="1TJDcQ" node="2z4QKYxW8U0" resolve="Iri" />
     <node concept="1TJgyj" id="2z4QKYxWcM3" role="1TKVEi">
       <property role="IQ2ns" value="2937713717140311171" />
       <property role="20kJfa" value="prefix" />
@@ -225,6 +230,9 @@
     <node concept="t5JxF" id="2z4QKYxWcd9" role="lGtFl">
       <property role="t5JxN" value="TODO Missing collection" />
     </node>
+    <node concept="PrWs8" id="5tSQ8xWOxe0" role="PrDN$">
+      <ref role="PrY4T" node="5tSQ8xWLzCN" resolve="ConstValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxWcd4">
     <property role="EcuMT" value="2937713717140308804" />
@@ -241,11 +249,15 @@
     <node concept="PrWs8" id="2L7xBeiLTK_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="5tSQ8xWK1cT" role="PzmwI">
+      <ref role="PrY4T" node="5tSQ8xWK1cS" resolve="RessourceIdentifier" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxWcM6">
     <property role="EcuMT" value="2937713717140311174" />
-    <property role="TrG5h" value="IRI" />
-    <ref role="1TJDcQ" node="2z4QKYxW8U0" resolve="AbstractIRI" />
+    <property role="TrG5h" value="IriString" />
+    <property role="34LRSv" value="&lt;iri&gt;" />
+    <ref role="1TJDcQ" node="2z4QKYxW8U0" resolve="Iri" />
     <node concept="1TJgyi" id="2z4QKYxWcM7" role="1TKVEl">
       <property role="IQ2nx" value="2937713717140311175" />
       <property role="TrG5h" value="iri" />
@@ -255,11 +267,17 @@
   <node concept="PlHQZ" id="2z4QKYxWdpG">
     <property role="EcuMT" value="2937713717140313708" />
     <property role="TrG5h" value="Object" />
+    <node concept="PrWs8" id="5tSQ8xWOxdY" role="PrDN$">
+      <ref role="PrY4T" node="5tSQ8xWLzCN" resolve="ConstValue" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2z4QKYxWdpJ">
     <property role="TrG5h" value="Verb" />
     <property role="3GE5qa" value="Verb" />
     <property role="EcuMT" value="2937713717140306501" />
+    <node concept="PrWs8" id="5tSQ8xWOxdZ" role="PrDN$">
+      <ref role="PrY4T" node="5tSQ8xWLzCN" resolve="ConstValue" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2z4QKYxWe0w">
     <property role="TrG5h" value="Annotation" />
@@ -315,7 +333,7 @@
       <property role="IQ2ns" value="2937713717140657267" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="iri" />
-      <ref role="20lvS9" node="2z4QKYxW8U0" resolve="AbstractIRI" />
+      <ref role="20lvS9" node="2z4QKYxW8U0" resolve="Iri" />
     </node>
   </node>
   <node concept="1TIwiD" id="2L7xBeiM5zR">
@@ -355,6 +373,14 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2z4QKYxWdpG" resolve="Object" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5tSQ8xWK1cS">
+    <property role="EcuMT" value="6303025759225123640" />
+    <property role="TrG5h" value="RessourceIdentifier" />
+  </node>
+  <node concept="PlHQZ" id="5tSQ8xWLzCN">
+    <property role="EcuMT" value="6303025759225526835" />
+    <property role="TrG5h" value="ConstValue" />
   </node>
 </model>
 

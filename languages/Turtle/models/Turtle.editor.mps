@@ -267,7 +267,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2z4QKYxWWs6">
-    <ref role="1XX52x" to="16h3:2z4QKYxWcM6" resolve="IRI" />
+    <ref role="1XX52x" to="16h3:2z4QKYxWcM6" resolve="IriString" />
     <node concept="3F0A7n" id="2z4QKYxWWs8" role="2wV5jI">
       <ref role="1NtTu8" to="16h3:2z4QKYxWcM7" resolve="iri" />
     </node>
