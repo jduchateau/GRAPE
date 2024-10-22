@@ -135,6 +135,11 @@
       <property role="TrG5h" value="iri" />
       <ref role="AX2Wp" node="2z4QKYxW8Ug" resolve="IRIREF" />
     </node>
+    <node concept="1TJgyi" id="EtjUql2XLc" role="1TKVEl">
+      <property role="IQ2nx" value="764855088606600268" />
+      <property role="TrG5h" value="noName" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="2z4QKYxXpht" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

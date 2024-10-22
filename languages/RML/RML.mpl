@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="RML" uuid="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot path="${module}/models" />
+    <modelRoot type="default" contentPath="${module}">
+      <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
@@ -14,8 +14,8 @@
   <generators>
     <generator alias="main" namespace="RML.generator" uuid="42623156-e224-4a90-bea2-c0b8fb0c630a">
       <models>
-        <modelRoot contentPath="${module}/generator" type="default">
-          <sourceRoot path="${module}/generator/templates" />
+        <modelRoot type="default" contentPath="${module}/generator">
+          <sourceRoot location="templates" />
         </modelRoot>
       </models>
       <facets>

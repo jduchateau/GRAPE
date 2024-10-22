@@ -21,6 +21,7 @@
       <concept id="2937713717140311174" name="Turtle.structure.IriString" flags="ng" index="29d1u9">
         <property id="2937713717140311175" name="iri" index="29d1u8" />
       </concept>
+      <concept id="2937713717140308804" name="Turtle.structure.BlankNode" flags="ng" index="29d1xb" />
       <concept id="2937713717140296806" name="Turtle.structure.Base" flags="ng" index="29d4XD">
         <property id="2937713717140296809" name="iri" index="29d4XA" />
       </concept>
@@ -66,10 +67,6 @@
     <language id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML">
       <concept id="6303025759226768837" name="RML.structure.LogicalSourceDefintion" flags="ng" index="FCvld">
         <child id="6303025759226878442" name="source" index="FCw5y" />
-        <child id="6303025759226878446" name="referenceFormulation" index="FCw5A" />
-      </concept>
-      <concept id="6303025759226768848" name="RML.structure.ReferenceFormulation" flags="ng" index="FCvlo">
-        <property id="6303025759226768867" name="formulation" index="FCvlF" />
       </concept>
       <concept id="6303025759226929064" name="RML.structure.SourceDefintion" flags="ng" index="FCOsw">
         <child id="6303025759227036280" name="identifier" index="FDpFK" />
@@ -139,11 +136,7 @@
     <node concept="29d4XD" id="2z4QKYxWa43" role="29aKCU">
       <property role="29d4XA" value="&lt;http://example.com/ns#&gt;" />
     </node>
-    <node concept="3DQ70j" id="2L7xBeiSEJO" role="lGtFl">
-      <property role="3V$3am" value="statments" />
-      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
-    </node>
-    <node concept="3DQ70j" id="2L7xBeiR6_6" role="lGtFl">
+    <node concept="3DQ70j" id="1HtRgowK8BB" role="lGtFl">
       <property role="3V$3am" value="statments" />
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>
@@ -200,8 +193,8 @@
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>
     <node concept="FCOsw" id="5tSQ8xWRRpx" role="29aKCU">
-      <node concept="29d1u9" id="5tSQ8xWSmoa" role="FDpFK">
-        <property role="29d1u8" value="&lt;#CSVSourceAccess&gt;" />
+      <node concept="29d1xb" id="RW$yYCswWW" role="FDpFK">
+        <property role="TrG5h" value="CSVSource1" />
       </node>
     </node>
     <node concept="3DQ70j" id="5tSQ8xWRCl3" role="lGtFl">
@@ -286,14 +279,6 @@
           </node>
         </node>
       </node>
-      <node concept="FCvld" id="5tSQ8xWQHBB" role="IaUo4">
-        <node concept="FCvlo" id="5tSQ8xWQTYv" role="FCw5A">
-          <property role="FCvlF" value="5tSQ8xWQiRq/CSV" />
-        </node>
-        <node concept="FCOsx" id="5tSQ8xWR71o" role="FCw5y">
-          <ref role="FDazi" node="5tSQ8xWRRpx" />
-        </node>
-      </node>
       <node concept="29d65d" id="5tSQ8xWT4Xr" role="FAC90">
         <node concept="29d650" id="5tSQ8xWT4Xs" role="29d653">
           <node concept="29ckXp" id="5tSQ8xWT4XE" role="29d3Gi">
@@ -309,6 +294,11 @@
         <node concept="29d5ma" id="5tSQ8xWT4XC" role="29d654">
           <property role="29d1ub" value="customLog" />
           <ref role="29d1uc" node="5tSQ8xWT4Xz" resolve="burp" />
+        </node>
+      </node>
+      <node concept="FCvld" id="RW$yYCqjko" role="IaUo4">
+        <node concept="FCOsx" id="RW$yYCtFg0" role="FCw5y">
+          <ref role="FDazi" node="5tSQ8xWRRpx" />
         </node>
       </node>
     </node>
@@ -471,6 +461,14 @@
           <ref role="29d1uc" node="5tSQ8xWT4Xz" resolve="burp" />
         </node>
       </node>
+    </node>
+    <node concept="3DQ70j" id="1xWmcg2CM$1" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    </node>
+    <node concept="3DQ70j" id="1xWmcg2CM$2" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>
     <node concept="29d64P" id="2L7xBeiN$ua" role="29aKCU">
       <node concept="29d1u9" id="2L7xBeiN$ud" role="29d64L">

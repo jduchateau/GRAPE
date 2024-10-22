@@ -14,6 +14,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(converter/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -58,6 +59,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -75,6 +77,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -366,6 +369,22 @@
       <node concept="3Tm1VV" id="1p4Xe90ipfG" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="1p4Xe90ioX9" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="EtjUql0kcA">
+    <property role="TrG5h" value="RdfToMps" />
+    <node concept="3clFb_" id="EtjUql0kec" role="jymVt">
+      <property role="TrG5h" value="load" />
+      <node concept="3cqZAl" id="EtjUql0kee" role="3clF45" />
+      <node concept="3Tm1VV" id="EtjUql0kef" role="1B3o_S" />
+      <node concept="3clFbS" id="EtjUql0keg" role="3clF47" />
+      <node concept="37vLTG" id="EtjUql0kf7" role="3clF46">
+        <property role="TrG5h" value="jenaModel" />
+        <node concept="3uibUv" id="EtjUql0kf6" role="1tU5fm">
+          <ref role="3uigEE" to="t6dh:~Model" resolve="Model" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="EtjUql0kcB" role="1B3o_S" />
   </node>
 </model>
 

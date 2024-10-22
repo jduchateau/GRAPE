@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="Sandbox" uuid="c78af883-84ca-459b-942e-d7318b1c2fd0" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot path="${module}/models" />
+    <modelRoot type="default" contentPath="${module}">
+      <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>

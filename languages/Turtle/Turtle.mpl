@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="Turtle" uuid="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" languageVersion="0" moduleVersion="1">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot path="${module}/models" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/../../lib" type="java_classes">
-      <sourceRoot location="antlr4-runtime-4.13.2.jar" />
-      <sourceRoot location="antlr4-runtime-4.13.2-javadoc.jar" />
+    <modelRoot type="default" contentPath="${module}">
+      <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/../../lib/antlr4-runtime-4.13.2.jar" />
-      <library location="${module}/../../lib/antlr4-runtime-4.13.2-javadoc.jar" />
     </facet>
   </facets>
   <accessoryModels />
   <generators>
     <generator alias="main" namespace="Turtle.generator" uuid="5bcf0042-ffd2-43f5-a3de-99f57660d6c8">
       <models>
-        <modelRoot contentPath="${module}/generator" type="default">
-          <sourceRoot path="${module}/generator/templates" />
+        <modelRoot type="default" contentPath="${module}/generator">
+          <sourceRoot location="templates" />
         </modelRoot>
       </models>
       <facets>
@@ -62,6 +56,7 @@
   </generators>
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">aeba435c-1d30-498a-a895-0c28f7dc9263(converter)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -69,6 +64,7 @@
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
     <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <language slang="l:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67:jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
     <language slang="l:daafa647-f1f7-4b0b-b096-69cd7c8408c0:jetbrains.mps.baseLanguage.regexp" version="0" />
     <language slang="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" version="0" />
@@ -84,6 +80,7 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" version="0" />
     <language slang="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" version="14" />
+    <language slang="l:d7a92d38-f7db-40d0-8431-763b0c3c9f20:jetbrains.mps.lang.intentions" version="1" />
     <language slang="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" version="0" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" version="2" />
@@ -104,8 +101,10 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" version="1" />
+    <module reference="aeba435c-1d30-498a-a895-0c28f7dc9263(converter)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
+    <module reference="d21716c3-baf1-45f3-9b97-590af70d9d38(parser)" version="0" />
   </dependencyVersions>
   <extendedLanguages />
 </language>
