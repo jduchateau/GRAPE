@@ -1,0 +1,87 @@
+# You can copy and paste this template into a new `.gitlab-ci.yml` file.
+# You should not add this template to an existing `.gitlab-ci.yml` file by using the `include:` keyword.
+# To contribute improvements to CI/CD templates, please follow the Development guide at:
+# https://docs.gitlab.com/ee/development/cicd/templates.html
+# This specific template is located at:
+# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Gradle.gitlab-ci.yml
+
+# This is the Gradle build system for JVM applications
+# https://gradle.org/
+# https://github.com/gradle/gradle
+
+image: gradle:jdk11-alpine
+
+before_script:
+  - GRADLE_USER_HOME="$(pwd)/.gradle"
+  - export GRADLE_USER_HOM
+  - apk add curl
+
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  needs: []
+  script:
+    - gradle setup
+    
+    - gradle assemble
+    # - |
+    #   file="build/artifacts/Etlang/build.properties"
+    #   while IFS='=' read -r key value
+    #   do
+    #     key=$(echo $key | tr '.' '_')
+    #     eval ${key}=\${value}
+    #   done < "$file"
+    # - > 
+    #   curl --header "JOB-TOKEN: $CI_JOB_TOKEN" 
+    #   --upload-file build/artifacts/Etlang/Etlang.zip 
+    #   "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/EtlangPlugin/0.1.0/Etlang.zip"
+    # - sed -i.bak "s/versionNumber/${Etlang_version_full}/g" updatePlugins.xml
+    # - > 
+    #   curl --header "JOB-TOKEN: $CI_JOB_TOKEN" 
+    #   --upload-file updatePlugins.xml
+    #   "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/EtlangPlugin/0.1.0/updatePlugins.xml"
+    
+    
+    - gradle buildDistribution
+    # - >
+    #   curl --header "JOB-TOKEN: $CI_JOB_TOKEN" 
+    #   --upload-file build/artifacts/EtlangDistribution/Etlang-${Etlang_build_number}.tar.gz
+    #   "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/EtlangIDE_linux/${Etlang_build_number}/Etlang-${Etlang_build_number}.tar.gz"
+    # - >
+    #   curl --header "JOB-TOKEN: $CI_JOB_TOKEN" 
+    #   --upload-file build/artifacts/EtlangDistribution/Etlang-${Etlang_build_number}.win.zip 
+    #   "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/EtlangIDE_win/${Etlang_build_number}/Etlang-${Etlang_build_number}.win.zip"
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    untracked: true
+  only:
+    changes: 
+      - .mps/*
+      - .gitlab-ci.yml
+      - languages/**/*
+      - solution/RMLEditor.build/**/*
+      - build.gradle.kts
+      - "*.xml"
+
+# pages:
+#   stage: deploy
+#   needs: []
+#   image: python:3-alpine
+#   before_script:
+#     - pip install pipx
+#     - pipx install poetry==1.4
+#     - export PATH="$PATH:/root/.local/bin"
+#   script:
+#     - poetry install
+#     - poetry run mkdocs build --verbose --strict
+#   artifacts:
+#     paths:
+#       - public
+#   rules:
+#     # This ensures that only pushes to the default branch 
+#     # will trigger a pages deploy
+#     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
