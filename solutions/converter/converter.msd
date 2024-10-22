@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="converter" uuid="aeba435c-1d30-498a-a895-0c28f7dc9263" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
@@ -10,10 +10,14 @@
       <sourceRoot location="jena-core.jar" />
       <sourceRoot location="jena-iri.jar" />
     </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="antlr4-runtime.jar" />
+    </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/antlr4-runtime.jar" />
       <library location="${module}/lib/jena-arq.jar" />
       <library location="${module}/lib/jena-base.jar" />
       <library location="${module}/lib/jena-core.jar" />

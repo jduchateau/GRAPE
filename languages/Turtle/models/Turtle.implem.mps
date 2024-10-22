@@ -15,6 +15,7 @@
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(converter/)" />
+    <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -42,6 +43,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -111,6 +113,11 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -385,6 +392,28 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="EtjUql0kcB" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="7Y6GWuSRjQS">
+    <property role="TrG5h" value="TurtleToMps" />
+    <node concept="3clFb_" id="7Y6GWuSRoSc" role="jymVt">
+      <property role="TrG5h" value="load" />
+      <node concept="3Tqbb2" id="7Y6GWuSRoSG" role="3clF45">
+        <ref role="ehGHo" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
+      </node>
+      <node concept="3Tm1VV" id="7Y6GWuSRoSf" role="1B3o_S" />
+      <node concept="3clFbS" id="7Y6GWuSRoSg" role="3clF47">
+        <node concept="3cpWs6" id="7Y6GWuSRRqr" role="3cqZAp">
+          <node concept="10Nm6u" id="7Y6GWuSRRs7" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7Y6GWuSRqbJ" role="3clF46">
+        <property role="TrG5h" value="turtleContent" />
+        <node concept="3uibUv" id="7Y6GWuSRqbI" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="7Y6GWuSRjQT" role="1B3o_S" />
   </node>
 </model>
 

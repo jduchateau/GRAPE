@@ -24,3 +24,5 @@ gradle/
 build/
 .idea/
 .mps-caches/
+
+solutions/converter/lib/*

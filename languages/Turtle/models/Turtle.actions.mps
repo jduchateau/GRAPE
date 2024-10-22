@@ -37,11 +37,17 @@
       <concept id="5584396657084912703" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_NewNode" flags="nn" index="1r4Lsj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -62,6 +68,30 @@
                 </node>
               </node>
               <node concept="2DeJg1" id="2L7xBeiNCTN" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="37WguZ" id="7Y6GWuSVQfE">
+    <property role="3GE5qa" value="Triples" />
+    <property role="TrG5h" value="EmptySubjectTriples" />
+    <node concept="37WvkG" id="7Y6GWuSVQfF" role="37WGs$">
+      <ref role="37XkoT" to="16h3:2z4QKYxWbCU" resolve="SubjectTriples" />
+      <node concept="37Y9Zx" id="7Y6GWuSVQfG" role="37ZfLb">
+        <node concept="3clFbS" id="7Y6GWuSVQfH" role="2VODD2">
+          <node concept="3clFbF" id="7Y6GWuSVQfZ" role="3cqZAp">
+            <node concept="2OqwBi" id="7Y6GWuSVTab" role="3clFbG">
+              <node concept="2OqwBi" id="7Y6GWuSVQtf" role="2Oq$k0">
+                <node concept="1r4Lsj" id="7Y6GWuSVQfY" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="7Y6GWuSVQCX" role="2OqNvi">
+                  <ref role="3TtcxE" to="16h3:2z4QKYxWbCZ" resolve="predicateObject" />
+                </node>
+              </node>
+              <node concept="2DeJg1" id="7Y6GWuSXR2S" role="2OqNvi">
+                <ref role="1A0vxQ" to="16h3:2z4QKYxWbD2" resolve="PredicateObject" />
+              </node>
             </node>
           </node>
         </node>

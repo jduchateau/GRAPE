@@ -27,6 +27,7 @@
       </concept>
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
         <property id="2937713717140295311" name="iri" index="29d5m0" />
+        <property id="764855088606600268" name="noName" index="2v_DfE" />
       </concept>
       <concept id="2937713717140295301" name="Turtle.structure.PrefixedName" flags="ng" index="29d5ma">
         <property id="2937713717140311172" name="name" index="29d1ub" />
@@ -66,7 +67,11 @@
     </language>
     <language id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML">
       <concept id="6303025759226768837" name="RML.structure.LogicalSourceDefintion" flags="ng" index="FCvld">
+        <child id="6303025759226878441" name="identifier" index="FCw5x" />
         <child id="6303025759226878442" name="source" index="FCw5y" />
+      </concept>
+      <concept id="6303025759226768838" name="RML.structure.LogicalSourceReference" flags="ng" index="FCvle">
+        <reference id="6303025759226768839" name="ref" index="FCvlf" />
       </concept>
       <concept id="6303025759226929064" name="RML.structure.SourceDefintion" flags="ng" index="FCOsw">
         <child id="6303025759227036280" name="identifier" index="FDpFK" />
@@ -133,10 +138,35 @@
       <property role="TrG5h" value="rdf" />
       <property role="29d5m0" value="&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;" />
     </node>
+    <node concept="29d5m5" id="7Y6GWuSVQfm" role="29aKCU">
+      <property role="TrG5h" value="ex" />
+      <property role="29d5m0" value="&lt;http://example.org/&gt;" />
+    </node>
     <node concept="29d4XD" id="2z4QKYxWa43" role="29aKCU">
       <property role="29d4XA" value="&lt;http://example.com/ns#&gt;" />
     </node>
-    <node concept="3DQ70j" id="1HtRgowK8BB" role="lGtFl">
+    <node concept="3DQ70j" id="7Y6GWuSRrrh" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    </node>
+    <node concept="29d5m5" id="7Y6GWuSRrrj" role="29aKCU">
+      <property role="29d5m0" value="&lt;http://foo&gt;" />
+      <property role="2v_DfE" value="true" />
+      <property role="TrG5h" value="" />
+    </node>
+    <node concept="3DQ70j" id="7Y6GWuSSLTx" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    </node>
+    <node concept="29d5m5" id="7Y6GWuSSLTz" role="29aKCU">
+      <property role="TrG5h" value="dcat" />
+      <property role="29d5m0" value="&lt;http://www.w3.org/ns/dcat#&gt;" />
+    </node>
+    <node concept="3DQ70j" id="7Y6GWuSRrrz" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    </node>
+    <node concept="3DQ70j" id="7Y6GWuSRrr$" role="lGtFl">
       <property role="3V$3am" value="statments" />
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>
@@ -242,6 +272,18 @@
       <property role="3V$3am" value="statments" />
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>
+    <node concept="FCvld" id="RW$yYCqjko" role="29aKCU">
+      <node concept="FCOsx" id="RW$yYCtFg0" role="FCw5y">
+        <ref role="FDazi" node="5tSQ8xWRRpx" />
+      </node>
+      <node concept="29d1u9" id="7Y6GWuSSMhs" role="FCw5x">
+        <property role="29d1u8" value="&lt;#LS&gt;" />
+      </node>
+    </node>
+    <node concept="3DQ70j" id="7Y6GWuSSMhp" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    </node>
     <node concept="2YYitQ" id="5tSQ8xWMidT" role="29aKCU">
       <node concept="29d1u9" id="5tSQ8xWMidX" role="FIcIW">
         <property role="29d1u8" value="&lt;#TM2&gt;" />
@@ -251,9 +293,16 @@
           <property role="IaUoT" value="http://example.com/{id}" />
         </node>
         <node concept="FGdDq" id="5tSQ8xWMLcL" role="FGdD2" />
-        <node concept="29d5ma" id="5tSQ8xWMLcM" role="FGrfI">
+        <node concept="29d5ma" id="7Y6GWuSSLHM" role="FGrfI">
           <property role="29d1ub" value="Person" />
           <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+        </node>
+        <node concept="29d5ma" id="7Y6GWuSSLHO" role="FGrfI">
+          <property role="29d1ub" value="Thing" />
+          <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+        </node>
+        <node concept="29d1u9" id="7Y6GWuSSLHR" role="FGrfI">
+          <property role="29d1u8" value="&lt;urn://foo.bqr&gt;" />
         </node>
       </node>
       <node concept="Ib$Ef" id="5tSQ8xWOxdQ" role="Ib$Ea">
@@ -296,15 +345,9 @@
           <ref role="29d1uc" node="5tSQ8xWT4Xz" resolve="burp" />
         </node>
       </node>
-      <node concept="FCvld" id="RW$yYCqjko" role="IaUo4">
-        <node concept="FCOsx" id="RW$yYCtFg0" role="FCw5y">
-          <ref role="FDazi" node="5tSQ8xWRRpx" />
-        </node>
+      <node concept="FCvle" id="7Y6GWuSSMht" role="IaUo4">
+        <ref role="FCvlf" node="RW$yYCqjko" />
       </node>
-    </node>
-    <node concept="3DQ70j" id="5tSQ8xWK1cH" role="lGtFl">
-      <property role="3V$3am" value="statments" />
-      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>
     <node concept="3DQ70j" id="5tSQ8xWK1cI" role="lGtFl">
       <property role="3V$3am" value="statments" />
@@ -462,11 +505,42 @@
         </node>
       </node>
     </node>
-    <node concept="3DQ70j" id="1xWmcg2CM$1" role="lGtFl">
+    <node concept="3DQ70j" id="7Y6GWuSWM3K" role="lGtFl">
       <property role="3V$3am" value="statments" />
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>
-    <node concept="3DQ70j" id="1xWmcg2CM$2" role="lGtFl">
+    <node concept="29d64P" id="7Y6GWuSZ018" role="29aKCU">
+      <node concept="29d65d" id="7Y6GWuSZ019" role="29d64K">
+        <node concept="29d650" id="7Y6GWuSZ01a" role="29d653">
+          <node concept="29d5ma" id="7Y6GWuSZ01g" role="29d3Gi">
+            <property role="29d1ub" value="Person" />
+            <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+          </node>
+        </node>
+        <node concept="29d658" id="7Y6GWuSZ01e" role="29d654" />
+      </node>
+      <node concept="29d65d" id="7Y6GWuSZ01i" role="29d64K">
+        <node concept="29d650" id="7Y6GWuSZ01j" role="29d653">
+          <node concept="29ckXp" id="7Y6GWuSZ01o" role="29d3Gi">
+            <property role="29ckXk" value="18" />
+            <node concept="29cGXw" id="7Y6GWuSZ06T" role="29cGXn">
+              <node concept="29d5ma" id="7Y6GWuSZ06U" role="29cGXW">
+                <property role="29d1ub" value="integer" />
+                <ref role="29d1uc" node="2z4QKYxWatB" resolve="xsd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="29d1u9" id="7Y6GWuSZ01m" role="29d654">
+          <property role="29d1u8" value="&lt;http://example.org/Age&gt;" />
+        </node>
+      </node>
+      <node concept="29d5ma" id="7Y6GWuSZ017" role="29d64L">
+        <property role="29d1ub" value="Jakub" />
+        <ref role="29d1uc" node="7Y6GWuSVQfm" resolve="ex" />
+      </node>
+    </node>
+    <node concept="3DQ70j" id="7Y6GWuSXxyn" role="lGtFl">
       <property role="3V$3am" value="statments" />
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>

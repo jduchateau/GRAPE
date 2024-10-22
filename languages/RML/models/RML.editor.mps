@@ -51,7 +51,11 @@
       </concept>
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
@@ -400,8 +404,9 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F1sOY" id="5tSQ8xWMmHZ" role="3EZMnx">
+      <node concept="3F2HdR" id="7Y6GWuSRxEj" role="3EZMnx">
         <ref role="1NtTu8" to="ys6r:5tSQ8xWMmHA" resolve="class" />
+        <node concept="l2Vlx" id="7Y6GWuSRxEl" role="2czzBx" />
       </node>
       <node concept="1QoScp" id="5tSQ8xWMLTU" role="3EZMnx">
         <property role="1QpmdY" value="true" />
@@ -447,8 +452,9 @@
         <node concept="3F0ifn" id="5tSQ8xWMpCY" role="3EZMnx">
           <property role="3F0ifm" value="class" />
         </node>
-        <node concept="3F1sOY" id="5tSQ8xWMpD1" role="3EZMnx">
+        <node concept="3F2HdR" id="7Y6GWuSRy2F" role="3EZMnx">
           <ref role="1NtTu8" to="ys6r:5tSQ8xWMmHA" resolve="class" />
+          <node concept="2iRfu4" id="7Y6GWuSRy2H" role="2czzBx" />
         </node>
         <node concept="2iRfu4" id="5tSQ8xWMpCX" role="2iSdaV" />
       </node>
@@ -759,6 +765,18 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7Y6GWuSSMhu">
+    <property role="3GE5qa" value="LogicalIterator" />
+    <ref role="1XX52x" to="ys6r:5tSQ8xWQiR6" resolve="LogicalSourceReference" />
+    <node concept="1iCGBv" id="7Y6GWuSSMhw" role="2wV5jI">
+      <ref role="1NtTu8" to="ys6r:5tSQ8xWQiR7" resolve="ref" />
+      <node concept="1sVBvm" id="7Y6GWuSSMhy" role="1sWHZn">
+        <node concept="3F1sOY" id="7Y6GWuSSMhA" role="2wV5jI">
+          <ref role="1NtTu8" to="ys6r:5tSQ8xWQHBD" resolve="identifier" />
         </node>
       </node>
     </node>

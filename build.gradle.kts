@@ -1,5 +1,6 @@
 plugins {
     id("com.specificlanguages.mps") version "1.5.0"
+    antlr
 }
 
 repositories {
@@ -22,5 +23,8 @@ stubs {
         //dependency("com.github.typemeta.funcj:funcj-parser:funcj-0.6.18")
         dependency("org.apache.jena:jena-core:5.2.+")
         dependency("org.apache.jena:jena-arq:5.2.+")
+        //ANTLR Runtime
+        dependency("org.antlr:antlr4-runtime:4.13.2")
+        dependency("org.antlr:antlr4:4.13.2")
     }
 }
