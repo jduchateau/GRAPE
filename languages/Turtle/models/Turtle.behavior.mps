@@ -114,7 +114,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="RW$yYCr9q5">
-    <ref role="13h7C2" to="16h3:2z4QKYxWcM6" resolve="IriString" />
+    <ref role="13h7C2" to="16h3:2z4QKYxWcM6" resolve="IriFull" />
     <node concept="13hLZK" id="RW$yYCr9q6" role="13h7CW">
       <node concept="3clFbS" id="RW$yYCr9q7" role="2VODD2" />
     </node>

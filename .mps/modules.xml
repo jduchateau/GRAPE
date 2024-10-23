@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/RML/RML.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Turtle/Turtle.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Sandbox/Sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/TurtlePlugin/TurtlePlugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/converter/converter.msd" folder="" />
     </projectModules>
   </component>

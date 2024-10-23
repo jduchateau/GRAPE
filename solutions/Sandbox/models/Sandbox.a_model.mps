@@ -18,16 +18,17 @@
       <concept id="2937713717140657263" name="Turtle.structure.RdfLiteralTypeAnnotation" flags="ng" index="29cGXw">
         <child id="2937713717140657267" name="iri" index="29cGXW" />
       </concept>
-      <concept id="2937713717140311174" name="Turtle.structure.IriString" flags="ng" index="29d1u9">
+      <concept id="2937713717140311174" name="Turtle.structure.IriFull" flags="ng" index="29d1u9">
         <property id="2937713717140311175" name="iri" index="29d1u8" />
       </concept>
       <concept id="2937713717140308804" name="Turtle.structure.BlankNode" flags="ng" index="29d1xb" />
       <concept id="2937713717140296806" name="Turtle.structure.Base" flags="ng" index="29d4XD">
-        <property id="2937713717140296809" name="iri" index="29d4XA" />
+        <property id="2937713717140296809" name="iri_old" index="29d4XA" />
       </concept>
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
-        <property id="2937713717140295311" name="iri" index="29d5m0" />
-        <property id="764855088606600268" name="noName" index="2v_DfE" />
+        <property id="2937713717140295311" name="iri_old" index="29d5m0" />
+        <property id="764855088606600268" name="emptyName" index="2v_DfE" />
+        <child id="7868724541386564408" name="iri" index="3pzv1Z" />
       </concept>
       <concept id="2937713717140295301" name="Turtle.structure.PrefixedName" flags="ng" index="29d5ma">
         <property id="2937713717140311172" name="name" index="29d1ub" />
@@ -114,13 +115,20 @@
     </language>
   </registry>
   <node concept="29aKCY" id="2z4QKYxW8D7">
+    <property role="TrG5h" value="a_mapping" />
     <node concept="29d5m5" id="2z4QKYxW9EQ" role="29aKCU">
       <property role="29d5m0" value="&lt;http://w3id.org/rml/&gt;" />
       <property role="TrG5h" value="rml" />
+      <node concept="29d1u9" id="6ONkOuPmy5J" role="3pzv1Z">
+        <property role="29d1u8" value="http://w3id.org/rml/" />
+      </node>
     </node>
     <node concept="29d5m5" id="5tSQ8xWT4Xz" role="29aKCU">
       <property role="29d5m0" value="&lt;http://w3id.org/burp/&gt;" />
       <property role="TrG5h" value="burp" />
+      <node concept="29d1u9" id="6ONkOuPmy5K" role="3pzv1Z">
+        <property role="29d1u8" value="http://w3id.org/burp/" />
+      </node>
     </node>
     <node concept="29d5m5" id="2z4QKYxWat$" role="29aKCU">
       <property role="29d5m0" value="&lt;http://xmlns.com/foaf/0.1/&gt;" />
