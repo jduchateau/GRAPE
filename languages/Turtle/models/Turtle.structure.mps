@@ -127,11 +127,6 @@
     <property role="34LRSv" value="@prefix" />
     <property role="3GE5qa" value="Directives" />
     <ref role="1TJDcQ" node="2z4QKYxVX4V" resolve="Directive" />
-    <node concept="1TJgyi" id="2z4QKYxW8Uf" role="1TKVEl">
-      <property role="IQ2nx" value="2937713717140295311" />
-      <property role="TrG5h" value="iri_old" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="EtjUql2XLc" role="1TKVEl">
       <property role="IQ2nx" value="764855088606600268" />
       <property role="TrG5h" value="emptyName" />
@@ -159,11 +154,6 @@
     <property role="34LRSv" value="@base" />
     <property role="3GE5qa" value="Directives" />
     <ref role="1TJDcQ" node="2z4QKYxVX4V" resolve="Directive" />
-    <node concept="1TJgyi" id="2z4QKYxW9hD" role="1TKVEl">
-      <property role="IQ2nx" value="2937713717140296809" />
-      <property role="TrG5h" value="iri_old" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="6ONkOuOFeaA" role="1TKVEl">
       <property role="IQ2nx" value="7868724541385400998" />
       <property role="TrG5h" value="sparqlVariant" />

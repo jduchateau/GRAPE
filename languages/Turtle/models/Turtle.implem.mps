@@ -4,7 +4,6 @@
   <languages>
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,11 +12,9 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="p3ir" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.antlr.v4.runtime(converter/)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
-    <import index="tp3r" ref="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" />
     <import index="6xeh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.antlr.v4.runtime.tree(converter/)" />
-    <import index="1dnc" ref="r:42614b34-038b-44f7-8acc-6c2f415ec6b4(converter.grammar)" />
+    <import index="dcux" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:converter.grammar(converter/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -509,7 +506,7 @@
     <property role="TrG5h" value="TurtleVisitor" />
     <node concept="3Tm1VV" id="1ZC4_Tr45J_" role="1B3o_S" />
     <node concept="3uibUv" id="6ONkOuOEt_m" role="1zkMxy">
-      <ref role="3uigEE" to="1dnc:6ONkOuOTcaX" resolve="TurtleBaseVisitor" />
+      <ref role="3uigEE" to="dcux:~TurtleBaseVisitor" resolve="TurtleBaseVisitor" />
       <node concept="3Tqbb2" id="6ONkOuOExbT" role="11_B2D" />
     </node>
     <node concept="3clFb_" id="6ONkOuOEtFv" role="jymVt">
@@ -520,7 +517,7 @@
       <node concept="37vLTG" id="6ONkOuOEtFx" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="6ONkOuOEtFy" role="1tU5fm">
-          <ref role="3uigEE" to="1dnc:6ONkOuOTb16" resolve="TurtleDocContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser.TurtleDocContext" resolve="TurtleDocContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6ONkOuOEtFB" role="1B3o_S" />
@@ -552,7 +549,7 @@
               <ref role="3cqZAo" node="6ONkOuOEtFx" resolve="ctx" />
             </node>
             <node concept="liA8E" id="6ONkOuOEGji" role="2OqNvi">
-              <ref role="37wK5l" to="1dnc:6ONkOuOTb1k" resolve="statement" />
+              <ref role="37wK5l" to="dcux:~TurtleParser.TurtleDocContext.statement()" resolve="statement" />
             </node>
           </node>
           <node concept="3clFbS" id="6ONkOuOEDz5" role="2LFqv$">
@@ -560,7 +557,7 @@
               <node concept="2OqwBi" id="6ONkOuOEKU9" role="3clFbG">
                 <node concept="2OqwBi" id="6ONkOuOEHtA" role="2Oq$k0">
                   <node concept="37vLTw" id="6ONkOuOEGVd" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6ONkOuOEzDM" resolve="doc" />
+                    <ref role="3cqZAo" node="6ONkOuOEzDM" resolve="node" />
                   </node>
                   <node concept="3Tsc0h" id="6ONkOuOEHVw" role="2OqNvi">
                     <ref role="3TtcxE" to="16h3:2z4QKYxVX4P" resolve="statments" />
@@ -586,11 +583,12 @@
         </node>
         <node concept="3clFbF" id="6ONkOuOF0FJ" role="3cqZAp">
           <node concept="37vLTw" id="6ONkOuOF0FH" role="3clFbG">
-            <ref role="3cqZAo" node="6ONkOuOEzDM" resolve="doc" />
+            <ref role="3cqZAo" node="6ONkOuOEzDM" resolve="node" />
           </node>
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6EEWk_OFpG8" role="jymVt" />
     <node concept="3clFb_" id="6ONkOuONbrO" role="jymVt">
       <property role="TrG5h" value="makeIriFull" />
       <node concept="3clFbS" id="6ONkOuONbrR" role="3clF47">
@@ -619,6 +617,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6EEWk_OFpG9" role="jymVt" />
     <node concept="3clFb_" id="6ONkOuOLjgt" role="jymVt">
       <property role="TrG5h" value="makeIriFull" />
       <node concept="3clFbS" id="6ONkOuOLjgw" role="3clF47">
@@ -699,7 +698,7 @@
       <node concept="37vLTG" id="6ONkOuOF8fk" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="6ONkOuOF8fl" role="1tU5fm">
-          <ref role="3uigEE" to="1dnc:6ONkOuOTb4L" resolve="PrefixIDContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser.PrefixIDContext" resolve="PrefixIDContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6ONkOuOF8fq" role="1B3o_S" />
@@ -721,7 +720,7 @@
                         <ref role="3cqZAo" node="6ONkOuOF8fk" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="6ONkOuOMCvy" role="2OqNvi">
-                        <ref role="37wK5l" to="1dnc:6ONkOuOTb4Z" resolve="IRIREF" />
+                        <ref role="37wK5l" to="dcux:~TurtleParser.PrefixIDContext.IRIREF()" resolve="IRIREF" />
                       </node>
                     </node>
                   </node>
@@ -735,7 +734,7 @@
                       <ref role="3cqZAo" node="6ONkOuOF8fk" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="6ONkOuOIrrA" role="2OqNvi">
-                      <ref role="37wK5l" to="1dnc:6ONkOuOTb4R" resolve="PNAME_NS" />
+                      <ref role="37wK5l" to="dcux:~TurtleParser.PrefixIDContext.PNAME_NS()" resolve="PNAME_NS" />
                     </node>
                   </node>
                   <node concept="liA8E" id="6ONkOuOIrrB" role="2OqNvi">
@@ -753,14 +752,14 @@
                           <ref role="3cqZAo" node="6ONkOuOF8fk" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="6ONkOuOIrrI" role="2OqNvi">
-                          <ref role="37wK5l" to="1dnc:6ONkOuOTb4R" resolve="PNAME_NS" />
+                          <ref role="37wK5l" to="dcux:~TurtleParser.PrefixIDContext.PNAME_NS()" resolve="PNAME_NS" />
                         </node>
                       </node>
                       <node concept="liA8E" id="6ONkOuOIrrJ" role="2OqNvi">
                         <ref role="37wK5l" to="6xeh:~ParseTree.getText()" resolve="getText" />
                       </node>
                     </node>
-                    <node concept="17RlXB" id="6ONkOuOZPfA" role="2OqNvi" />
+                    <node concept="17RlXB" id="71edsA8K4tI" role="2OqNvi" />
                   </node>
                 </node>
               </node>
@@ -775,6 +774,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6EEWk_OFpGa" role="jymVt" />
     <node concept="3clFb_" id="6ONkOuOF8fE" role="jymVt">
       <property role="TrG5h" value="visitSparqlPrefix" />
       <node concept="2AHcQZ" id="6ONkOuOF8fF" role="2AJF6D">
@@ -783,7 +783,7 @@
       <node concept="37vLTG" id="6ONkOuOF8fG" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="6ONkOuOF8fH" role="1tU5fm">
-          <ref role="3uigEE" to="1dnc:6ONkOuOTb7E" resolve="SparqlPrefixContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser.SparqlPrefixContext" resolve="SparqlPrefixContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6ONkOuOF8fM" role="1B3o_S" />
@@ -805,7 +805,7 @@
                         <ref role="3cqZAo" node="6ONkOuOF8fG" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="6ONkOuONJYJ" role="2OqNvi">
-                        <ref role="37wK5l" to="1dnc:6ONkOuOTb7S" resolve="IRIREF" />
+                        <ref role="37wK5l" to="dcux:~TurtleParser.SparqlPrefixContext.IRIREF()" resolve="IRIREF" />
                       </node>
                     </node>
                   </node>
@@ -819,7 +819,7 @@
                       <ref role="3cqZAo" node="6ONkOuOF8fG" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="6ONkOuOHNmb" role="2OqNvi">
-                      <ref role="37wK5l" to="1dnc:6ONkOuOTb7K" resolve="PNAME_NS" />
+                      <ref role="37wK5l" to="dcux:~TurtleParser.SparqlPrefixContext.PNAME_NS()" resolve="PNAME_NS" />
                     </node>
                   </node>
                   <node concept="liA8E" id="6ONkOuOHNmc" role="2OqNvi">
@@ -837,14 +837,14 @@
                           <ref role="3cqZAo" node="6ONkOuOF8fG" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="6ONkOuOIeOV" role="2OqNvi">
-                          <ref role="37wK5l" to="1dnc:6ONkOuOTb7K" resolve="PNAME_NS" />
+                          <ref role="37wK5l" to="dcux:~TurtleParser.SparqlPrefixContext.PNAME_NS()" resolve="PNAME_NS" />
                         </node>
                       </node>
                       <node concept="liA8E" id="6ONkOuOIi9U" role="2OqNvi">
                         <ref role="37wK5l" to="6xeh:~ParseTree.getText()" resolve="getText" />
                       </node>
                     </node>
-                    <node concept="17RlXB" id="6ONkOuOZO05" role="2OqNvi" />
+                    <node concept="17RlXB" id="71edsA8JZqt" role="2OqNvi" />
                   </node>
                 </node>
               </node>
@@ -861,6 +861,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6EEWk_OFpGb" role="jymVt" />
     <node concept="3clFb_" id="6ONkOuOF8g2" role="jymVt">
       <property role="TrG5h" value="visitBase" />
       <node concept="2AHcQZ" id="6ONkOuOF8g3" role="2AJF6D">
@@ -869,7 +870,7 @@
       <node concept="37vLTG" id="6ONkOuOF8g4" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="6ONkOuOF8g5" role="1tU5fm">
-          <ref role="3uigEE" to="1dnc:6ONkOuOTb5O" resolve="BaseContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser.BaseContext" resolve="BaseContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6ONkOuOF8ga" role="1B3o_S" />
@@ -891,7 +892,7 @@
                         <ref role="3cqZAo" node="6ONkOuOF8g4" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="6ONkOuOO2Uz" role="2OqNvi">
-                        <ref role="37wK5l" to="1dnc:6ONkOuOTb5U" resolve="IRIREF" />
+                        <ref role="37wK5l" to="dcux:~TurtleParser.BaseContext.IRIREF()" resolve="IRIREF" />
                       </node>
                     </node>
                   </node>
@@ -908,6 +909,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6EEWk_OFpGc" role="jymVt" />
     <node concept="3clFb_" id="6ONkOuOF8gq" role="jymVt">
       <property role="TrG5h" value="visitSparqlBase" />
       <node concept="2AHcQZ" id="6ONkOuOF8gr" role="2AJF6D">
@@ -916,7 +918,7 @@
       <node concept="37vLTG" id="6ONkOuOF8gs" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="6ONkOuOF8gt" role="1tU5fm">
-          <ref role="3uigEE" to="1dnc:6ONkOuOTb6J" resolve="SparqlBaseContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser.SparqlBaseContext" resolve="SparqlBaseContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6ONkOuOF8gy" role="1B3o_S" />
@@ -929,7 +931,7 @@
             <node concept="2pJPED" id="6ONkOuOHpjO" role="2pJPEn">
               <ref role="2pJxaS" to="16h3:2z4QKYxW9hA" resolve="Base" />
               <node concept="2pIpSj" id="6ONkOuOO6PL" role="2pJxcM">
-                <ref role="2pIpSl" to="16h3:6ONkOuOJEcR" />
+                <ref role="2pIpSl" to="16h3:6ONkOuOJEcR" resolve="iri" />
                 <node concept="36biLy" id="6ONkOuOO6PM" role="28nt2d">
                   <node concept="1rXfSq" id="6ONkOuOO6PN" role="36biLW">
                     <ref role="37wK5l" node="6ONkOuONbrO" resolve="makeIriFull" />
@@ -938,7 +940,7 @@
                         <ref role="3cqZAo" node="6ONkOuOF8gs" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="6ONkOuOO6PQ" role="2OqNvi">
-                        <ref role="37wK5l" to="1dnc:6ONkOuOTb6P" resolve="IRIREF" />
+                        <ref role="37wK5l" to="dcux:~TurtleParser.SparqlBaseContext.IRIREF()" resolve="IRIREF" />
                       </node>
                     </node>
                   </node>

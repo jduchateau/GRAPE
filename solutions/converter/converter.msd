@@ -7,9 +7,12 @@
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="antlr4-runtime.jar" />
     </modelRoot>
+    <modelRoot contentPath="${module}/grammar" type="java_source_stubs">
+      <sourceRoot path="${module}/grammar" />
+    </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no" languageLevel="JAVA_10">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/antlr4-runtime.jar" />
     </facet>

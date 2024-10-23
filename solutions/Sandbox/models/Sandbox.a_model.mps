@@ -23,11 +23,9 @@
       </concept>
       <concept id="2937713717140308804" name="Turtle.structure.BlankNode" flags="ng" index="29d1xb" />
       <concept id="2937713717140296806" name="Turtle.structure.Base" flags="ng" index="29d4XD">
-        <property id="2937713717140296809" name="iri_old" index="29d4XA" />
+        <child id="7868724541386564407" name="iri" index="3pzv1K" />
       </concept>
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
-        <property id="2937713717140295311" name="iri_old" index="29d5m0" />
-        <property id="764855088606600268" name="emptyName" index="2v_DfE" />
         <child id="7868724541386564408" name="iri" index="3pzv1Z" />
       </concept>
       <concept id="2937713717140295301" name="Turtle.structure.PrefixedName" flags="ng" index="29d5ma">
@@ -117,58 +115,51 @@
   <node concept="29aKCY" id="2z4QKYxW8D7">
     <property role="TrG5h" value="a_mapping" />
     <node concept="29d5m5" id="2z4QKYxW9EQ" role="29aKCU">
-      <property role="29d5m0" value="&lt;http://w3id.org/rml/&gt;" />
       <property role="TrG5h" value="rml" />
       <node concept="29d1u9" id="6ONkOuPmy5J" role="3pzv1Z">
         <property role="29d1u8" value="http://w3id.org/rml/" />
       </node>
     </node>
     <node concept="29d5m5" id="5tSQ8xWT4Xz" role="29aKCU">
-      <property role="29d5m0" value="&lt;http://w3id.org/burp/&gt;" />
       <property role="TrG5h" value="burp" />
       <node concept="29d1u9" id="6ONkOuPmy5K" role="3pzv1Z">
         <property role="29d1u8" value="http://w3id.org/burp/" />
       </node>
     </node>
     <node concept="29d5m5" id="2z4QKYxWat$" role="29aKCU">
-      <property role="29d5m0" value="&lt;http://xmlns.com/foaf/0.1/&gt;" />
       <property role="TrG5h" value="foaf" />
+      <node concept="29d1u9" id="71edsA8Q19W" role="3pzv1Z">
+        <property role="29d1u8" value="http://xmlns.com/foaf/0.1/" />
+      </node>
     </node>
     <node concept="29d5m5" id="2z4QKYxWatB" role="29aKCU">
-      <property role="29d5m0" value="&lt;http://www.w3.org/2001/XMLSchema#&gt;" />
       <property role="TrG5h" value="xsd" />
+      <node concept="29d1u9" id="71edsA8Q19X" role="3pzv1Z">
+        <property role="29d1u8" value="http://www.w3.org/2001/XMLSchema#" />
+      </node>
     </node>
-    <node concept="29d5m5" id="2z4QKYxWatE" role="29aKCU">
-      <property role="29d5m0" value="&lt;http://www.w3.org/ns/csvw#&gt;" />
+    <node concept="29d5m5" id="71edsA8Q19Z" role="29aKCU">
       <property role="TrG5h" value="csvw" />
+      <node concept="29d1u9" id="71edsA8Q1a3" role="3pzv1Z">
+        <property role="29d1u8" value="http://www.w3.org/ns/csvw#" />
+      </node>
     </node>
-    <node concept="29d5m5" id="1p4Xe90lxe4" role="29aKCU">
+    <node concept="29d5m5" id="71edsA8Vn8f" role="29aKCU">
       <property role="TrG5h" value="rdf" />
-      <property role="29d5m0" value="&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;" />
+      <node concept="29d1u9" id="71edsA8Vn8k" role="3pzv1Z">
+        <property role="29d1u8" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+      </node>
     </node>
     <node concept="29d5m5" id="7Y6GWuSVQfm" role="29aKCU">
       <property role="TrG5h" value="ex" />
-      <property role="29d5m0" value="&lt;http://example.org/&gt;" />
+      <node concept="29d1u9" id="71edsA8L0D0" role="3pzv1Z">
+        <property role="29d1u8" value="http://example.org/" />
+      </node>
     </node>
     <node concept="29d4XD" id="2z4QKYxWa43" role="29aKCU">
-      <property role="29d4XA" value="&lt;http://example.com/ns#&gt;" />
-    </node>
-    <node concept="3DQ70j" id="7Y6GWuSRrrh" role="lGtFl">
-      <property role="3V$3am" value="statments" />
-      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
-    </node>
-    <node concept="29d5m5" id="7Y6GWuSRrrj" role="29aKCU">
-      <property role="29d5m0" value="&lt;http://foo&gt;" />
-      <property role="2v_DfE" value="true" />
-      <property role="TrG5h" value="" />
-    </node>
-    <node concept="3DQ70j" id="7Y6GWuSSLTx" role="lGtFl">
-      <property role="3V$3am" value="statments" />
-      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
-    </node>
-    <node concept="29d5m5" id="7Y6GWuSSLTz" role="29aKCU">
-      <property role="TrG5h" value="dcat" />
-      <property role="29d5m0" value="&lt;http://www.w3.org/ns/dcat#&gt;" />
+      <node concept="29d1u9" id="71edsA8NGb1" role="3pzv1K">
+        <property role="29d1u8" value="http://example.com/ns#" />
+      </node>
     </node>
     <node concept="3DQ70j" id="7Y6GWuSRrrz" role="lGtFl">
       <property role="3V$3am" value="statments" />
@@ -189,7 +180,7 @@
         <node concept="29d650" id="2z4QKYxWh_O" role="29d653">
           <node concept="29d5ma" id="2z4QKYxWh_Q" role="29d3Gi">
             <property role="29d1ub" value="Table" />
-            <ref role="29d1uc" node="2z4QKYxWatE" resolve="csvw" />
+            <ref role="29d1uc" node="71edsA8Q19Z" resolve="csvw" />
           </node>
         </node>
         <node concept="29d658" id="2z4QKYxWe0r" role="29d654" />
@@ -197,7 +188,7 @@
       <node concept="29d65d" id="2z4QKYxXphd" role="29d64K">
         <node concept="29d5ma" id="2z4QKYxXphf" role="29d654">
           <property role="29d1ub" value="url" />
-          <ref role="29d1uc" node="2z4QKYxWatE" resolve="csvw" />
+          <ref role="29d1uc" node="71edsA8Q19Z" resolve="csvw" />
         </node>
         <node concept="29d650" id="2z4QKYxXphh" role="29d653">
           <node concept="29ckXp" id="2z4QKYxXE8k" role="29d3Gi">
@@ -222,7 +213,7 @@
         </node>
         <node concept="29d5ma" id="1p4Xe90pOjG" role="29d654">
           <property role="29d1ub" value="header" />
-          <ref role="29d1uc" node="2z4QKYxWatE" resolve="csvw" />
+          <ref role="29d1uc" node="71edsA8Q19Z" resolve="csvw" />
         </node>
       </node>
     </node>
@@ -641,7 +632,7 @@
                     <node concept="29d650" id="1p4Xe90ifbS" role="29d653">
                       <node concept="29d5ma" id="1p4Xe90lxe6" role="29d3Gi">
                         <property role="29d1ub" value="List" />
-                        <ref role="29d1uc" node="1p4Xe90lxe4" resolve="rdf" />
+                        <ref role="29d1uc" node="71edsA8Vn8f" resolve="rdf" />
                       </node>
                     </node>
                     <node concept="29d5ma" id="1p4Xe90ifbV" role="29d654">
