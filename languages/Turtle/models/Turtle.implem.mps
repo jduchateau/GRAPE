@@ -15,6 +15,7 @@
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
     <import index="6xeh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.antlr.v4.runtime.tree(converter/)" />
     <import index="dcux" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:converter.grammar(converter/)" />
+    <import index="p3ir" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.antlr.v4.runtime(converter/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -35,6 +36,9 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -53,12 +57,14 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -99,6 +105,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -191,6 +198,7 @@
       <concept id="1175161264766" name="jetbrains.mps.baseLanguage.regexp.structure.LineStartRegexp" flags="ng" index="2t4tHJ" />
       <concept id="1175161300324" name="jetbrains.mps.baseLanguage.regexp.structure.LineEndRegexp" flags="ng" index="2t4AhP" />
       <concept id="3796137614137086346" name="jetbrains.mps.baseLanguage.regexp.structure.ReplaceRegexpOperation" flags="nn" index="Hzkq6">
+        <property id="3796137614137159273" name="globalReplace" index="HyB__" />
         <child id="3796137614137159227" name="search" index="HyB$R" />
       </concept>
       <concept id="1174482753837" name="jetbrains.mps.baseLanguage.regexp.structure.StringLiteralRegexp" flags="ng" index="1OC9wW">
@@ -471,34 +479,125 @@
   </node>
   <node concept="312cEu" id="7Y6GWuSRjQS">
     <property role="TrG5h" value="TurtleToMps" />
-    <node concept="3clFb_" id="7Y6GWuSRoSc" role="jymVt">
+    <node concept="2YIFZL" id="29l9n5i6y3i" role="jymVt">
       <property role="TrG5h" value="load" />
-      <node concept="3Tqbb2" id="7Y6GWuSRoSG" role="3clF45">
-        <ref role="ehGHo" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
-      </node>
-      <node concept="3Tm1VV" id="7Y6GWuSRoSf" role="1B3o_S" />
-      <node concept="3clFbS" id="7Y6GWuSRoSg" role="3clF47">
-        <node concept="3SKdUt" id="6ONkOuOJEbh" role="3cqZAp">
-          <node concept="1PaTwC" id="6ONkOuOJEbi" role="1aUNEU">
-            <node concept="3oM_SD" id="6ONkOuOJEbj" role="1PaTwD">
-              <property role="3oM_SC" value="TODO" />
+      <node concept="3clFbS" id="29l9n5i6y3m" role="3clF47">
+        <node concept="3cpWs8" id="29l9n5i7KyA" role="3cqZAp">
+          <node concept="3cpWsn" id="29l9n5i7KyB" role="3cpWs9">
+            <property role="TrG5h" value="charStream" />
+            <node concept="3uibUv" id="29l9n5i7KyC" role="1tU5fm">
+              <ref role="3uigEE" to="p3ir:~CharStream" resolve="CharStream" />
             </node>
-            <node concept="3oM_SD" id="6ONkOuOJEc0" role="1PaTwD">
-              <property role="3oM_SC" value="Implement" />
-            </node>
-            <node concept="3oM_SD" id="6ONkOuOJEci" role="1PaTwD">
-              <property role="3oM_SC" value="conversion" />
+            <node concept="2YIFZM" id="29l9n5i7KCV" role="33vP2m">
+              <ref role="37wK5l" to="p3ir:~CharStreams.fromString(java.lang.String)" resolve="fromString" />
+              <ref role="1Pybhc" to="p3ir:~CharStreams" resolve="CharStreams" />
+              <node concept="37vLTw" id="29l9n5i7KG2" role="37wK5m">
+                <ref role="3cqZAo" node="29l9n5i6y3u" resolve="turtleContent" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="1ZC4_Tr3ZF$" role="3cqZAp">
-          <node concept="10Nm6u" id="6ONkOuOJE9J" role="3cqZAk" />
+        <node concept="3cpWs8" id="29l9n5i7I6W" role="3cqZAp">
+          <node concept="3cpWsn" id="29l9n5i7I6X" role="3cpWs9">
+            <property role="TrG5h" value="lexer" />
+            <node concept="3uibUv" id="29l9n5i7I6Y" role="1tU5fm">
+              <ref role="3uigEE" to="dcux:~TurtleLexer" resolve="TurtleLexer" />
+            </node>
+            <node concept="2ShNRf" id="29l9n5i7I9u" role="33vP2m">
+              <node concept="1pGfFk" id="29l9n5i7JYK" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" to="dcux:~TurtleLexer(CharStream)" resolve="TurtleLexer" />
+                <node concept="37vLTw" id="29l9n5i7K0o" role="37wK5m">
+                  <ref role="3cqZAo" node="29l9n5i7KyB" resolve="stream" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="29l9n5i7Ppl" role="3cqZAp">
+          <node concept="3cpWsn" id="29l9n5i7Ppm" role="3cpWs9">
+            <property role="TrG5h" value="tokenStream" />
+            <node concept="3uibUv" id="29l9n5i7Ppn" role="1tU5fm">
+              <ref role="3uigEE" to="p3ir:~CommonTokenStream" resolve="CommonTokenStream" />
+            </node>
+            <node concept="2ShNRf" id="29l9n5i7PKb" role="33vP2m">
+              <node concept="1pGfFk" id="29l9n5i7PJZ" role="2ShVmc">
+                <ref role="37wK5l" to="p3ir:~CommonTokenStream.&lt;init&gt;(org.antlr.v4.runtime.TokenSource)" resolve="CommonTokenStream" />
+                <node concept="37vLTw" id="29l9n5i7PNl" role="37wK5m">
+                  <ref role="3cqZAo" node="29l9n5i7I6X" resolve="lexer" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="29l9n5i7KSE" role="3cqZAp">
+          <node concept="3cpWsn" id="29l9n5i7KSF" role="3cpWs9">
+            <property role="TrG5h" value="parser" />
+            <node concept="3uibUv" id="29l9n5i7KSG" role="1tU5fm">
+              <ref role="3uigEE" to="dcux:~TurtleParser" resolve="TurtleParser" />
+            </node>
+            <node concept="2ShNRf" id="29l9n5i7L1K" role="33vP2m">
+              <node concept="1pGfFk" id="29l9n5i7L1$" role="2ShVmc">
+                <ref role="37wK5l" to="dcux:~TurtleParser(TokenStream)" resolve="TurtleParser" />
+                <node concept="37vLTw" id="29l9n5i7PVa" role="37wK5m">
+                  <ref role="3cqZAo" node="29l9n5i7Ppm" resolve="tokenStream" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="29l9n5i7Qqw" role="3cqZAp">
+          <node concept="3cpWsn" id="29l9n5i7Qqx" role="3cpWs9">
+            <property role="TrG5h" value="visitor" />
+            <node concept="3uibUv" id="29l9n5i7Qqy" role="1tU5fm">
+              <ref role="3uigEE" node="1ZC4_Tr45J$" resolve="TurtleVisitor" />
+            </node>
+            <node concept="2ShNRf" id="29l9n5i7QLb" role="33vP2m">
+              <node concept="HV5vD" id="29l9n5i7R6_" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="HV5vE" node="1ZC4_Tr45J$" resolve="TurtleVisitor" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="29l9n5i7XO4" role="3cqZAp">
+          <node concept="3cpWsn" id="29l9n5i7XO5" role="3cpWs9">
+            <property role="TrG5h" value="document" />
+            <node concept="3Tqbb2" id="29l9n5i7XO3" role="1tU5fm">
+              <ref role="ehGHo" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
+            </node>
+            <node concept="2OqwBi" id="29l9n5i7Tsw" role="33vP2m">
+              <node concept="37vLTw" id="29l9n5i7Sus" role="2Oq$k0">
+                <ref role="3cqZAo" node="29l9n5i7Qqx" resolve="visitor" />
+              </node>
+              <node concept="liA8E" id="29l9n5i7Uly" role="2OqNvi">
+                <ref role="37wK5l" node="6ONkOuOEtFv" resolve="visitTurtleDoc" />
+                <node concept="2OqwBi" id="29l9n5i7V5k" role="37wK5m">
+                  <node concept="37vLTw" id="29l9n5i7UwJ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="29l9n5i7KSF" resolve="parser" />
+                  </node>
+                  <node concept="liA8E" id="29l9n5i7WcC" role="2OqNvi">
+                    <ref role="37wK5l" to="dcux:~TurtleParser.turtleDoc()" resolve="turtleDoc" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="29l9n5i7YGO" role="3cqZAp">
+          <node concept="37vLTw" id="29l9n5i7YXi" role="3cqZAk">
+            <ref role="3cqZAo" node="29l9n5i7XO5" resolve="document" />
+          </node>
         </node>
       </node>
-      <node concept="37vLTG" id="7Y6GWuSRqbJ" role="3clF46">
-        <property role="TrG5h" value="turtleContent" />
-        <node concept="17QB3L" id="1ZC4_Tr3TLs" role="1tU5fm" />
+      <node concept="3Tqbb2" id="29l9n5i6y3k" role="3clF45">
+        <ref role="ehGHo" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
       </node>
+      <node concept="37vLTG" id="29l9n5i6y3u" role="3clF46">
+        <property role="TrG5h" value="turtleContent" />
+        <node concept="17QB3L" id="29l9n5i6y3v" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="29l9n5i6y3l" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="7Y6GWuSRjQT" role="1B3o_S" />
   </node>
@@ -646,6 +745,7 @@
                 <ref role="3cqZAo" node="6ONkOuOLk_i" resolve="iriref" />
               </node>
               <node concept="Hzkq6" id="6ONkOuOMnJg" role="2OqNvi">
+                <property role="HyB__" value="true" />
                 <node concept="1OCdqh" id="6ONkOuOMoTl" role="HyB$R">
                   <node concept="1OJ37Q" id="6ONkOuOMoTm" role="1OLpdg">
                     <node concept="1OC9wW" id="6ONkOuOMoTn" role="1OLqdY">
@@ -728,17 +828,29 @@
               </node>
               <node concept="2pJxcG" id="6ONkOuOIrry" role="2pJxcM">
                 <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                <node concept="2OqwBi" id="6ONkOuOIrrz" role="28ntcv">
-                  <node concept="2OqwBi" id="6ONkOuOIrr$" role="2Oq$k0">
-                    <node concept="37vLTw" id="6ONkOuOIrr_" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6ONkOuOF8fk" resolve="ctx" />
+                <node concept="WxPPo" id="29l9n5iagAr" role="28ntcv">
+                  <node concept="2OqwBi" id="29l9n5iapZg" role="WxPPp">
+                    <node concept="2OqwBi" id="29l9n5iamdX" role="2Oq$k0">
+                      <node concept="2OqwBi" id="29l9n5iaiCT" role="2Oq$k0">
+                        <node concept="37vLTw" id="29l9n5iagAp" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6ONkOuOF8fk" resolve="ctx" />
+                        </node>
+                        <node concept="liA8E" id="29l9n5iakom" role="2OqNvi">
+                          <ref role="37wK5l" to="dcux:~TurtleParser.PrefixIDContext.PNAME_NS()" resolve="PNAME_NS" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="29l9n5ianYZ" role="2OqNvi">
+                        <ref role="37wK5l" to="6xeh:~ParseTree.getText()" resolve="getText" />
+                      </node>
                     </node>
-                    <node concept="liA8E" id="6ONkOuOIrrA" role="2OqNvi">
-                      <ref role="37wK5l" to="dcux:~TurtleParser.PrefixIDContext.PNAME_NS()" resolve="PNAME_NS" />
+                    <node concept="Hzkq6" id="29l9n5iarXy" role="2OqNvi">
+                      <node concept="1OJ37Q" id="29l9n5iauuJ" role="HyB$R">
+                        <node concept="1OC9wW" id="29l9n5iatf5" role="1OLpdg">
+                          <property role="1OCb_u" value=":" />
+                        </node>
+                        <node concept="2t4AhP" id="29l9n5iauuI" role="1OLqdY" />
+                      </node>
                     </node>
-                  </node>
-                  <node concept="liA8E" id="6ONkOuOIrrB" role="2OqNvi">
-                    <ref role="37wK5l" to="6xeh:~ParseTree.getText()" resolve="getText" />
                   </node>
                 </node>
               </node>
@@ -813,17 +925,29 @@
               </node>
               <node concept="2pJxcG" id="6ONkOuOHM9X" role="2pJxcM">
                 <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                <node concept="2OqwBi" id="6ONkOuOHNm8" role="28ntcv">
-                  <node concept="2OqwBi" id="6ONkOuOHNm9" role="2Oq$k0">
-                    <node concept="37vLTw" id="6ONkOuOHNma" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6ONkOuOF8fG" resolve="ctx" />
+                <node concept="WxPPo" id="29l9n5iaCRS" role="28ntcv">
+                  <node concept="2OqwBi" id="29l9n5iaMcS" role="WxPPp">
+                    <node concept="2OqwBi" id="29l9n5iaI6s" role="2Oq$k0">
+                      <node concept="2OqwBi" id="29l9n5iaETD" role="2Oq$k0">
+                        <node concept="37vLTw" id="29l9n5iaCRQ" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6ONkOuOF8fG" resolve="ctx" />
+                        </node>
+                        <node concept="liA8E" id="29l9n5iaGiT" role="2OqNvi">
+                          <ref role="37wK5l" to="dcux:~TurtleParser.SparqlPrefixContext.PNAME_NS()" resolve="PNAME_NS" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="29l9n5iaKdk" role="2OqNvi">
+                        <ref role="37wK5l" to="6xeh:~ParseTree.getText()" resolve="getText" />
+                      </node>
                     </node>
-                    <node concept="liA8E" id="6ONkOuOHNmb" role="2OqNvi">
-                      <ref role="37wK5l" to="dcux:~TurtleParser.SparqlPrefixContext.PNAME_NS()" resolve="PNAME_NS" />
+                    <node concept="Hzkq6" id="29l9n5iaOao" role="2OqNvi">
+                      <node concept="1OJ37Q" id="29l9n5ib5oR" role="HyB$R">
+                        <node concept="1OC9wW" id="29l9n5ib6Db" role="1OLpdg">
+                          <property role="1OCb_u" value=":" />
+                        </node>
+                        <node concept="2t4AhP" id="29l9n5ib2Tc" role="1OLqdY" />
+                      </node>
                     </node>
-                  </node>
-                  <node concept="liA8E" id="6ONkOuOHNmc" role="2OqNvi">
-                    <ref role="37wK5l" to="6xeh:~ParseTree.getText()" resolve="getText" />
                   </node>
                 </node>
               </node>

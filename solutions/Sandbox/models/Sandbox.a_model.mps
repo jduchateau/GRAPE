@@ -26,6 +26,8 @@
         <child id="7868724541386564407" name="iri" index="3pzv1K" />
       </concept>
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
+        <property id="764855088606600268" name="emptyName" index="2v_DfE" />
+        <property id="7868724541385396558" name="sparqlVariant" index="3pBS89" />
         <child id="7868724541386564408" name="iri" index="3pzv1Z" />
       </concept>
       <concept id="2937713717140295301" name="Turtle.structure.PrefixedName" flags="ng" index="29d5ma">
@@ -653,6 +655,33 @@
           <property role="29d1ub" value=":predicateObjectMap" />
           <ref role="29d1uc" node="2z4QKYxW9EQ" resolve="rml" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="29aKCY" id="29l9n5ibuEc">
+    <property role="TrG5h" value="address" />
+    <node concept="29d5m5" id="29l9n5ibuEe" role="29aKCU">
+      <property role="TrG5h" value="schema" />
+      <property role="2v_DfE" value="false" />
+      <property role="3pBS89" value="false" />
+      <node concept="29d1u9" id="29l9n5ibuEd" role="3pzv1Z">
+        <property role="29d1u8" value="https://schema.org/" />
+      </node>
+    </node>
+    <node concept="29d5m5" id="29l9n5ibuEg" role="29aKCU">
+      <property role="TrG5h" value="ex" />
+      <property role="2v_DfE" value="false" />
+      <property role="3pBS89" value="false" />
+      <node concept="29d1u9" id="29l9n5ibuEf" role="3pzv1Z">
+        <property role="29d1u8" value="http://example.com/" />
+      </node>
+    </node>
+    <node concept="29d5m5" id="29l9n5ibuEi" role="29aKCU">
+      <property role="TrG5h" value="xsd" />
+      <property role="2v_DfE" value="false" />
+      <property role="3pBS89" value="false" />
+      <node concept="29d1u9" id="29l9n5ibuEh" role="3pzv1Z">
+        <property role="29d1u8" value="http://www.w3.org/2001/XMLSchema#" />
       </node>
     </node>
   </node>
