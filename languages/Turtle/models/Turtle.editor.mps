@@ -7,8 +7,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="etey" ref="r:880eded5-c622-4b9d-8245-f2dcf33963fe(Turtle.implem)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
+    <import index="7gkx" ref="r:3b2ebc91-2c52-45b4-acb1-5330cf3e75a4(Turtle.runtime.prefixer)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" implicit="true" />
@@ -895,14 +895,14 @@
             <node concept="3bvxqY" id="71edsA8Q2ve" role="JncvB" />
             <node concept="3clFbS" id="71edsA8Q2nO" role="Jncv$">
               <node concept="3cpWs6" id="71edsA8TMaZ" role="3cqZAp">
-                <node concept="2YIFZM" id="71edsA8RU9B" role="3cqZAk">
-                  <ref role="37wK5l" to="etey:1p4Xe90kyzr" resolve="getUriFromPrefixName" />
-                  <ref role="1Pybhc" to="etey:1p4Xe90ioX8" resolve="PrefixCompleter" />
-                  <node concept="2OqwBi" id="71edsA8TMRR" role="37wK5m">
-                    <node concept="Jnkvi" id="71edsA8TMjR" role="2Oq$k0">
+                <node concept="2YIFZM" id="5HJ1aQFgS9B" role="3cqZAk">
+                  <ref role="37wK5l" to="7gkx:1p4Xe90kyzr" resolve="getUriFromPrefixName" />
+                  <ref role="1Pybhc" to="7gkx:1p4Xe90ioX8" resolve="PrefixCompleter" />
+                  <node concept="2OqwBi" id="5HJ1aQFgS9C" role="37wK5m">
+                    <node concept="Jnkvi" id="5HJ1aQFgS9D" role="2Oq$k0">
                       <ref role="1M0zk5" node="71edsA8Q2nP" resolve="prefixId" />
                     </node>
-                    <node concept="3TrcHB" id="71edsA8TNCa" role="2OqNvi">
+                    <node concept="3TrcHB" id="5HJ1aQFgS9E" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>

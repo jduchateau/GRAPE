@@ -8,7 +8,6 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle" version="0" />
   </languages>
   <imports>
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
@@ -18,9 +17,9 @@
     <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="etey" ref="r:880eded5-c622-4b9d-8245-f2dcf33963fe(Turtle.implem)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="1y92" ref="r:a5c6ffe8-35ab-484e-86a2-877741559e77(Turtle.runtime.astConverter)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
@@ -355,9 +354,9 @@
                       <node concept="3Tqbb2" id="29l9n5i686f" role="1tU5fm">
                         <ref role="ehGHo" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
                       </node>
-                      <node concept="2YIFZM" id="29l9n5i6zev" role="33vP2m">
-                        <ref role="37wK5l" to="etey:29l9n5i6y3i" resolve="load" />
-                        <ref role="1Pybhc" to="etey:7Y6GWuSRjQS" resolve="TurtleToMps" />
+                      <node concept="2YIFZM" id="5UOHdMJVzA5" role="33vP2m">
+                        <ref role="37wK5l" to="1y92:29l9n5i6y3i" resolve="load" />
+                        <ref role="1Pybhc" to="1y92:7Y6GWuSRjQS" resolve="TurtleToMps" />
                         <node concept="37vLTw" id="29l9n5i6zAT" role="37wK5m">
                           <ref role="3cqZAo" node="29l9n5i6DTQ" resolve="fileContent" />
                         </node>

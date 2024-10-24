@@ -658,30 +658,172 @@
       </node>
     </node>
   </node>
-  <node concept="29aKCY" id="29l9n5ibuEc">
+  <node concept="29aKCY" id="4oMzy$IwYab">
     <property role="TrG5h" value="address" />
-    <node concept="29d5m5" id="29l9n5ibuEe" role="29aKCU">
+    <node concept="29d5m5" id="4oMzy$IwYad" role="29aKCU">
       <property role="TrG5h" value="schema" />
       <property role="2v_DfE" value="false" />
       <property role="3pBS89" value="false" />
-      <node concept="29d1u9" id="29l9n5ibuEd" role="3pzv1Z">
+      <node concept="29d1u9" id="4oMzy$IwYac" role="3pzv1Z">
         <property role="29d1u8" value="https://schema.org/" />
       </node>
     </node>
-    <node concept="29d5m5" id="29l9n5ibuEg" role="29aKCU">
+    <node concept="29d5m5" id="4oMzy$IwYaf" role="29aKCU">
       <property role="TrG5h" value="ex" />
       <property role="2v_DfE" value="false" />
       <property role="3pBS89" value="false" />
-      <node concept="29d1u9" id="29l9n5ibuEf" role="3pzv1Z">
+      <node concept="29d1u9" id="4oMzy$IwYae" role="3pzv1Z">
         <property role="29d1u8" value="http://example.com/" />
       </node>
     </node>
-    <node concept="29d5m5" id="29l9n5ibuEi" role="29aKCU">
+    <node concept="29d5m5" id="4oMzy$IwYah" role="29aKCU">
       <property role="TrG5h" value="xsd" />
       <property role="2v_DfE" value="false" />
       <property role="3pBS89" value="false" />
-      <node concept="29d1u9" id="29l9n5ibuEh" role="3pzv1Z">
+      <node concept="29d1u9" id="4oMzy$IwYag" role="3pzv1Z">
         <property role="29d1u8" value="http://www.w3.org/2001/XMLSchema#" />
+      </node>
+    </node>
+    <node concept="29d64P" id="4oMzy$IwYap" role="29aKCU">
+      <node concept="29d5ma" id="4oMzy$IwYai" role="29d64L">
+        <property role="29d1ub" value="name" />
+        <ref role="29d1uc" to=":4oMzy$IwYaf" />
+      </node>
+      <node concept="29d65d" id="4oMzy$IwYao" role="29d64K">
+        <node concept="29d5ma" id="4oMzy$IwYaj" role="29d654">
+          <property role="29d1ub" value="address" />
+          <ref role="29d1uc" to=":4oMzy$IwYad" />
+        </node>
+        <node concept="29d650" id="4oMzy$IwYal" role="29d653">
+          <node concept="29d5ma" id="4oMzy$IwYak" role="29d3Gi">
+            <property role="29d1ub" value="address1" />
+            <ref role="29d1uc" to=":4oMzy$IwYaf" />
+          </node>
+        </node>
+        <node concept="29d650" id="4oMzy$IwYan" role="29d653">
+          <node concept="29d5ma" id="4oMzy$IwYam" role="29d3Gi">
+            <property role="29d1ub" value="address2" />
+            <ref role="29d1uc" to=":4oMzy$IwYaf" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="29d64P" id="4oMzy$IwYaJ" role="29aKCU">
+      <node concept="29d5ma" id="4oMzy$IwYaq" role="29d64L">
+        <property role="29d1ub" value="address1" />
+        <ref role="29d1uc" to=":4oMzy$IwYaf" />
+      </node>
+      <node concept="29d65d" id="4oMzy$IwYau" role="29d64K">
+        <node concept="29d5ma" id="4oMzy$IwYar" role="29d654">
+          <property role="29d1ub" value="streetAddress" />
+          <ref role="29d1uc" to=":4oMzy$IwYad" />
+        </node>
+        <node concept="29d650" id="4oMzy$IwYat" role="29d653">
+          <node concept="29ckXp" id="4oMzy$IwYas" role="29d3Gi">
+            <property role="29ckXk" value="&quot;Oosterdokskade 67&quot;" />
+          </node>
+        </node>
+      </node>
+      <node concept="29d65d" id="4oMzy$IwYay" role="29d64K">
+        <node concept="29d5ma" id="4oMzy$IwYav" role="29d654">
+          <property role="29d1ub" value="addressRegion" />
+          <ref role="29d1uc" to=":4oMzy$IwYad" />
+        </node>
+        <node concept="29d650" id="4oMzy$IwYax" role="29d653">
+          <node concept="29ckXp" id="4oMzy$IwYaw" role="29d3Gi">
+            <property role="29ckXk" value="&quot;Noord Holland&quot;" />
+          </node>
+        </node>
+      </node>
+      <node concept="29d65d" id="4oMzy$IwYaA" role="29d64K">
+        <node concept="29d5ma" id="4oMzy$IwYaz" role="29d654">
+          <property role="29d1ub" value="addressLocality" />
+          <ref role="29d1uc" to=":4oMzy$IwYad" />
+        </node>
+        <node concept="29d650" id="4oMzy$IwYa_" role="29d653">
+          <node concept="29ckXp" id="4oMzy$IwYa$" role="29d3Gi">
+            <property role="29ckXk" value="&quot;Amsterdam&quot;" />
+          </node>
+        </node>
+      </node>
+      <node concept="29d65d" id="4oMzy$IwYaE" role="29d64K">
+        <node concept="29d5ma" id="4oMzy$IwYaB" role="29d654">
+          <property role="29d1ub" value="postalCode" />
+          <ref role="29d1uc" to=":4oMzy$IwYad" />
+        </node>
+        <node concept="29d650" id="4oMzy$IwYaD" role="29d653">
+          <node concept="29ckXp" id="4oMzy$IwYaC" role="29d3Gi">
+            <property role="29ckXk" value="&quot;1011 DL&quot;" />
+          </node>
+        </node>
+      </node>
+      <node concept="29d65d" id="4oMzy$IwYaI" role="29d64K">
+        <node concept="29d5ma" id="4oMzy$IwYaF" role="29d654">
+          <property role="29d1ub" value="addressCountry" />
+          <ref role="29d1uc" to=":4oMzy$IwYad" />
+        </node>
+        <node concept="29d650" id="4oMzy$IwYaH" role="29d653">
+          <node concept="29ckXp" id="4oMzy$IwYaG" role="29d3Gi">
+            <property role="29ckXk" value="&quot;NL&quot;" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="29d64P" id="4oMzy$IwYb4" role="29aKCU">
+      <node concept="29d5ma" id="4oMzy$IwYaK" role="29d64L">
+        <property role="29d1ub" value="address2" />
+        <ref role="29d1uc" to=":4oMzy$IwYaf" />
+      </node>
+      <node concept="29d65d" id="4oMzy$IwYaO" role="29d64K">
+        <node concept="29d5ma" id="4oMzy$IwYaL" role="29d654">
+          <property role="29d1ub" value="streetAddress" />
+          <ref role="29d1uc" to=":4oMzy$IwYad" />
+        </node>
+        <node concept="29d650" id="4oMzy$IwYaN" role="29d653">
+          <node concept="29ckXp" id="4oMzy$IwYaM" role="29d3Gi">
+            <property role="29ckXk" value="&quot;Hauptplatz 12 Rosenarcade&quot;" />
+          </node>
+        </node>
+      </node>
+      <node concept="29d65d" id="4oMzy$IwYaS" role="29d64K">
+        <node concept="29d5ma" id="4oMzy$IwYaP" role="29d654">
+          <property role="29d1ub" value="addressRegion" />
+          <ref role="29d1uc" to=":4oMzy$IwYad" />
+        </node>
+        <node concept="29d650" id="4oMzy$IwYaR" role="29d653">
+          <node concept="29ckXp" id="4oMzy$IwYaQ" role="29d3Gi">
+            <property role="29ckXk" value="&quot;Tulln an der Donau&quot;" />
+          </node>
+        </node>
+      </node>
+      <node concept="29d65d" id="4oMzy$IwYaW" role="29d64K">
+        <node concept="29d5ma" id="4oMzy$IwYaT" role="29d654">
+          <property role="29d1ub" value="addressLocality" />
+          <ref role="29d1uc" to=":4oMzy$IwYad" />
+        </node>
+        <node concept="29d650" id="4oMzy$IwYaV" role="29d653">
+          <node concept="29ckXp" id="4oMzy$IwYaU" role="29d3Gi">
+            <property role="29ckXk" value="&quot;Lower Austria&quot;" />
+          </node>
+        </node>
+      </node>
+      <node concept="29d65d" id="4oMzy$IwYaZ" role="29d64K">
+        <node concept="29d5ma" id="4oMzy$IwYaX" role="29d654">
+          <property role="29d1ub" value="postalCode" />
+          <ref role="29d1uc" to=":4oMzy$IwYad" />
+        </node>
+        <node concept="29d650" id="4oMzy$IwYaY" role="29d653" />
+      </node>
+      <node concept="29d65d" id="4oMzy$IwYb3" role="29d64K">
+        <node concept="29d5ma" id="4oMzy$IwYb0" role="29d654">
+          <property role="29d1ub" value="addressCountry" />
+          <ref role="29d1uc" to=":4oMzy$IwYad" />
+        </node>
+        <node concept="29d650" id="4oMzy$IwYb2" role="29d653">
+          <node concept="29ckXp" id="4oMzy$IwYb1" role="29d3Gi">
+            <property role="29ckXk" value="&quot;AT&quot;" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
