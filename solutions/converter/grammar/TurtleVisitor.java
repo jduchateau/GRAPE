@@ -41,17 +41,17 @@ public interface TurtleVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitBase(TurtleParser.BaseContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link TurtleParser#sparqlBase}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSparqlBase(TurtleParser.SparqlBaseContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link TurtleParser#sparqlPrefix}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitSparqlPrefix(TurtleParser.SparqlPrefixContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TurtleParser#sparqlBase}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSparqlBase(TurtleParser.SparqlBaseContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link TurtleParser#triples}.
 	 * @param ctx the parse tree
@@ -82,12 +82,6 @@ public interface TurtleVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitSubject(TurtleParser.SubjectContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link TurtleParser#predicate}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitPredicate(TurtleParser.PredicateContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link TurtleParser#object_}.
 	 * @param ctx the parse tree
@@ -124,4 +118,58 @@ public interface TurtleVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitIri(TurtleParser.IriContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TurtleParser#reifier}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitReifier(TurtleParser.ReifierContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TurtleParser#reifiedTriple}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitReifiedTriple(TurtleParser.ReifiedTripleContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TurtleParser#rtSubject}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRtSubject(TurtleParser.RtSubjectContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TurtleParser#rtObject}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRtObject(TurtleParser.RtObjectContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TurtleParser#tripleTerm}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTripleTerm(TurtleParser.TripleTermContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TurtleParser#ttSubject}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTtSubject(TurtleParser.TtSubjectContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TurtleParser#ttObject}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTtObject(TurtleParser.TtObjectContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TurtleParser#annotation}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAnnotation(TurtleParser.AnnotationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TurtleParser#annotationBlock}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAnnotationBlock(TurtleParser.AnnotationBlockContext ctx);
 }
