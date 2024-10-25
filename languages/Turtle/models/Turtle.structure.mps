@@ -74,6 +74,9 @@
     <node concept="PrWs8" id="6ONkOuPh5qZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3h4bPqkjA5l" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxVX4T">
     <property role="TrG5h" value="Statment" />
@@ -84,6 +87,7 @@
     <property role="EcuMT" value="2937713717140246843" />
     <property role="TrG5h" value="Directive" />
     <property role="3GE5qa" value="Directives" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statment" />
   </node>
   <node concept="1TIwiD" id="2z4QKYxVX4W">
@@ -114,6 +118,7 @@
   <node concept="1TIwiD" id="2z4QKYxW8U5">
     <property role="EcuMT" value="2937713717140295301" />
     <property role="TrG5h" value="PrefixedName" />
+    <property role="34LRSv" value="prefix:name" />
     <ref role="1TJDcQ" node="2z4QKYxW8U0" resolve="Iri" />
     <node concept="1TJgyj" id="2z4QKYxWcM3" role="1TKVEi">
       <property role="IQ2ns" value="2937713717140311171" />
