@@ -113,6 +113,12 @@ public interface TurtleVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitRdfLiteral(TurtleParser.RdfLiteralContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link TurtleParser#string}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitString(TurtleParser.StringContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link TurtleParser#iri}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

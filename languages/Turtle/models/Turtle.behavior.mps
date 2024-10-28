@@ -109,12 +109,6 @@
     <language id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes">
       <concept id="8077936094962911282" name="jetbrains.mps.lang.scopes.structure.ParentScope" flags="nn" index="iy90A" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -163,7 +157,6 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
-      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -464,30 +457,6 @@
                         <ref role="3cqZAo" node="3h4bPqktcCf" resolve="uniquePrefix" />
                       </node>
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2xdQw9" id="3h4bPqktcCz" role="3cqZAp">
-              <property role="2xdLsb" value="gZ5fksE/warn" />
-              <node concept="3cpWs3" id="3h4bPqktcC$" role="9lYJi">
-                <node concept="37vLTw" id="3h4bPqktcC_" role="3uHU7w">
-                  <ref role="3cqZAo" node="3h4bPqksFGL" resolve="index" />
-                </node>
-                <node concept="3cpWs3" id="3h4bPqktcCA" role="3uHU7B">
-                  <node concept="3cpWs3" id="3h4bPqktcCB" role="3uHU7B">
-                    <node concept="Xl_RD" id="3h4bPqktcCC" role="3uHU7B">
-                      <property role="Xl_RC" value="Scope PrefixId/2" />
-                    </node>
-                    <node concept="2OqwBi" id="3h4bPqktcCD" role="3uHU7w">
-                      <node concept="37vLTw" id="3h4bPqktcCE" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3h4bPqktcCf" resolve="uniquePrefix" />
-                      </node>
-                      <node concept="34oBXx" id="3h4bPqktcCF" role="2OqNvi" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="3h4bPqktcCG" role="3uHU7w">
-                    <property role="Xl_RC" value=" prefixes at " />
                   </node>
                 </node>
               </node>

@@ -47,6 +47,6 @@ tasks {
         classpath = files(antlrJar)
         mainClass.set("-jar")
         args = listOf(antlrJar.absolutePath, "Turtle.g4", "-no-listener", "-visitor", "-package", "converter.grammar")
-        workingDir = file("solutions/converter/grammar")
+        workingDir = file("languages/Turtle.runtime/grammar")
     }
 }

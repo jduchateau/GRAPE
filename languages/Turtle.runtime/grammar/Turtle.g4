@@ -133,7 +133,7 @@ NumericLiteral
 
 // [19] RDFLiteral ::= String (LANGTAG | '^^' iri)?
 rdfLiteral
-    : String (LANG_DIR | '^^' iri)?
+    : string (LANG_DIR | '^^' iri)?
     ;
 
 // [20] BooleanLiteral ::= 'true' | 'false'
@@ -143,7 +143,7 @@ BooleanLiteral
     ;
 
 // [21] String ::= STRING_LITERAL_QUOTE | STRING_LITERAL_SINGLE_QUOTE | STRING_LITERAL_LONG_SINGLE_QUOTE | STRING_LITERAL_LONG_QUOTE
-String
+string
     : STRING_LITERAL_QUOTE
     | STRING_LITERAL_SINGLE_QUOTE
     | STRING_LITERAL_LONG_SINGLE_QUOTE
@@ -286,22 +286,22 @@ EXPONENT
 
 // [46] STRING_LITERAL_LONG_SINGLE_QUOTE ::= "'''" (("'" | "''")? ([^'\] | ECHAR | UCHAR))* "'''"
 STRING_LITERAL_LONG_SINGLE_QUOTE
-    : '\'\'\'' (('\'' | '\'\'')? ([^'\\] | ECHAR | UCHAR | '"'))* '\'\'\''
+    : '\'\'\'' (('\'' | '\'\'')? ((~ ['\\]) | ECHAR | UCHAR))* '\'\'\''
     ;
 
-// [47] STRING_LITERAL_LONG_QUOTE ::= '"""' (('"' | '""')? (~ ["\\] | ECHAR | UCHAR | '\''))* '"""'
+// [47] STRING_LITERAL_LONG_QUOTE ::=  	'"""' (('"' | '""')? ([^"\] | ECHAR | UCHAR))* '"""'
 STRING_LITERAL_LONG_QUOTE
-    : '"""' (('"' | '""')? (~ ["\\] | ECHAR | UCHAR | '\''))* '"""'
+    : '"""' (('\'' | '\'\'')? ((~ ['\\]) | ECHAR | UCHAR))* '"""'
     ;
 
 // [44] STRING_LITERAL_QUOTE ::= '"' ([^#x22#x5C#x0A#x0D] | ECHAR | UCHAR)* '"'
 STRING_LITERAL_QUOTE
-    : '"' (~ ["\\\r\n] | '\'' | '\\"')* '"'
+    : '"' ((~ [\u0022\u005C\u000A\u000D]) | ECHAR | UCHAR)* '"'
     ;
 
 // [45] STRING_LITERAL_SINGLE_QUOTE ::= "'" ([^#x27#x5C#x0A#x0D] | ECHAR | UCHAR)* "'"
 STRING_LITERAL_SINGLE_QUOTE
-    : '\'' (~ [\u0027\u005C\u000A\u000D] | ECHAR | UCHAR | '"')* '\''
+    : '\'' ((~ [\u0027\u005C\u000A\u000D]) | ECHAR | UCHAR)* '\''
     ;
 
 // [48] UCHAR ::= '\u' HEX HEX HEX HEX | '\U' HEX HEX HEX HEX HEX HEX HEX HEX
@@ -310,7 +310,7 @@ UCHAR
     | '\\U' HEX HEX HEX HEX HEX HEX HEX HEX
     ;
 
-// [49] ECHAR ::= '\' [tbnrf"'\\]
+// [49] ECHAR ::= '\' [tbnrf\"']
 ECHAR
     : '\\' [tbnrf"'\\]
     ;

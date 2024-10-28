@@ -104,6 +104,7 @@
         <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="7667708318090725848" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentAnchorStyleClassItem" flags="ln" index="1Bsynf" />
@@ -658,6 +659,8 @@
         </node>
       </node>
       <node concept="3F0A7n" id="2z4QKYxXE8A" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <property role="1$x2rV" value="&lt;empty string&gt;" />
         <ref role="1NtTu8" to="16h3:2z4QKYxXphr" resolve="value" />
       </node>
       <node concept="3F0ifn" id="2z4QKYxXE8$" role="3EZMnx">
