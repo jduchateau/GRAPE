@@ -26,6 +26,7 @@
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
+      <concept id="767145758118872830" name="jetbrains.mps.lang.actions.structure.NF_Link_SetNewChildOperation" flags="nn" index="2DeJnY" />
       <concept id="1158700664498" name="jetbrains.mps.lang.actions.structure.NodeFactories" flags="ng" index="37WguZ">
         <child id="1158700779049" name="nodeFactory" index="37WGs$" />
       </concept>
@@ -37,8 +38,8 @@
       <concept id="5584396657084912703" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_NewNode" flags="nn" index="1r4Lsj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
-        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -77,21 +78,22 @@
   <node concept="37WguZ" id="7Y6GWuSVQfE">
     <property role="3GE5qa" value="Triples" />
     <property role="TrG5h" value="EmptySubjectTriples" />
-    <node concept="37WvkG" id="7Y6GWuSVQfF" role="37WGs$">
-      <ref role="37XkoT" to="16h3:2z4QKYxWbCU" resolve="SubjectTriples" />
-      <node concept="37Y9Zx" id="7Y6GWuSVQfG" role="37ZfLb">
-        <node concept="3clFbS" id="7Y6GWuSVQfH" role="2VODD2">
-          <node concept="3clFbF" id="7Y6GWuSVQfZ" role="3cqZAp">
-            <node concept="2OqwBi" id="7Y6GWuSVTab" role="3clFbG">
-              <node concept="2OqwBi" id="7Y6GWuSVQtf" role="2Oq$k0">
-                <node concept="1r4Lsj" id="7Y6GWuSVQfY" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="7Y6GWuSVQCX" role="2OqNvi">
-                  <ref role="3TtcxE" to="16h3:2z4QKYxWbCZ" resolve="predicateObject" />
+  </node>
+  <node concept="37WguZ" id="6T7chEgr7eh">
+    <property role="TrG5h" value="EmptyBlankNodePropertyList" />
+    <node concept="37WvkG" id="6T7chEgr7ei" role="37WGs$">
+      <ref role="37XkoT" to="16h3:2L7xBeiM5zR" resolve="BlankNodePropertyList" />
+      <node concept="37Y9Zx" id="6T7chEgr7ej" role="37ZfLb">
+        <node concept="3clFbS" id="6T7chEgr7ek" role="2VODD2">
+          <node concept="3clFbF" id="6T7chEgr7eA" role="3cqZAp">
+            <node concept="2OqwBi" id="6T7chEgr8PI" role="3clFbG">
+              <node concept="2OqwBi" id="6T7chEgr7rH" role="2Oq$k0">
+                <node concept="1r4Lsj" id="6T7chEgr7e_" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6T7chEgr7Ei" role="2OqNvi">
+                  <ref role="3Tt5mk" to="16h3:2L7xBeiM5$s" resolve="predicateObjectList" />
                 </node>
               </node>
-              <node concept="2DeJg1" id="7Y6GWuSXR2S" role="2OqNvi">
-                <ref role="1A0vxQ" to="16h3:2z4QKYxWbD2" resolve="PredicateObject" />
-              </node>
+              <node concept="2DeJnY" id="6T7chEgr9cS" role="2OqNvi" />
             </node>
           </node>
         </node>

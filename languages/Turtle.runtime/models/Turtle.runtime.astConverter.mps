@@ -1709,6 +1709,12 @@
               <node concept="2pJPEk" id="248lfK9BTcY" role="3cqZAk">
                 <node concept="2pJPED" id="248lfK9BTcZ" role="2pJPEn">
                   <ref role="2pJxaS" to="16h3:2L7xBeiM5zR" resolve="BlankNodePropertyList" />
+                  <node concept="2pIpSj" id="6T7chEgkBUf" role="2pJxcM">
+                    <ref role="2pIpSl" to="16h3:2L7xBeiM5$s" resolve="predicateObjectList" />
+                    <node concept="2pJPED" id="6T7chEgkJE5" role="28nt2d">
+                      <ref role="2pJxaS" to="16h3:6T7chEghU4F" resolve="PredicateObjectList" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -2547,7 +2553,7 @@
                   </node>
                 </node>
                 <node concept="Xl_RD" id="6T7chEgbrer" role="3uHU7B">
-                  <property role="Xl_RC" value="UNsuported string=" />
+                  <property role="Xl_RC" value="Unsupported string=" />
                 </node>
               </node>
               <node concept="37vLTw" id="6T7chEgbMj1" role="37wK5m">
@@ -2683,20 +2689,17 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="248lfK9KD7X" role="1B3o_S" />
-      <node concept="2I9FWS" id="248lfK9LSeA" role="3clF45">
-        <ref role="2I9WkF" to="16h3:2z4QKYxWbD2" resolve="PredicateObject" />
-      </node>
       <node concept="3clFbS" id="248lfK9KD89" role="3clF47">
-        <node concept="3cpWs8" id="248lfK9NVUV" role="3cqZAp">
-          <node concept="3cpWsn" id="248lfK9NVUY" role="3cpWs9">
-            <property role="TrG5h" value="nodes" />
-            <node concept="2I9FWS" id="248lfK9NVUT" role="1tU5fm">
-              <ref role="2I9WkF" to="16h3:2z4QKYxWbD2" resolve="PredicateObject" />
+        <node concept="3cpWs8" id="6T7chEgjswP" role="3cqZAp">
+          <node concept="3cpWsn" id="6T7chEgjswS" role="3cpWs9">
+            <property role="TrG5h" value="node" />
+            <node concept="3Tqbb2" id="6T7chEgjswN" role="1tU5fm">
+              <ref role="ehGHo" to="16h3:6T7chEghU4F" resolve="PredicateObjectList" />
             </node>
-            <node concept="2ShNRf" id="5xuladEGLz_" role="33vP2m">
-              <node concept="2T8Vx0" id="5xuladEGEsB" role="2ShVmc">
-                <node concept="2I9FWS" id="5xuladEGEsC" role="2T96Bj">
-                  <ref role="2I9WkF" to="16h3:2z4QKYxWbD2" resolve="PredicateObject" />
+            <node concept="2ShNRf" id="6T7chEgk41H" role="33vP2m">
+              <node concept="3zrR0B" id="6T7chEgk3Yq" role="2ShVmc">
+                <node concept="3Tqbb2" id="6T7chEgk3Yr" role="3zrR0E">
+                  <ref role="ehGHo" to="16h3:6T7chEghU4F" resolve="PredicateObjectList" />
                 </node>
               </node>
             </node>
@@ -2730,24 +2733,15 @@
             </node>
           </node>
           <node concept="3clFbS" id="248lfK9M6ls" role="2LFqv$">
-            <node concept="2xdQw9" id="4oMzy$HXUS_" role="3cqZAp">
-              <property role="2xdLsb" value="h1akgim/info" />
-              <node concept="3cpWs3" id="4oMzy$HYIQ5" role="9lYJi">
-                <node concept="1rXfSq" id="4oMzy$HYQOb" role="3uHU7w">
-                  <ref role="37wK5l" node="248lfK9sTd$" resolve="formatTokenPosition" />
-                  <node concept="37vLTw" id="4oMzy$HZ68o" role="37wK5m">
-                    <ref role="3cqZAo" node="248lfK9KD7U" resolve="ctx" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="4oMzy$HXUSB" role="3uHU7B">
-                  <property role="Xl_RC" value="Visit PredicateObject at " />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="248lfK9NMiO" role="3cqZAp">
               <node concept="2OqwBi" id="248lfK9OjKv" role="3clFbG">
-                <node concept="37vLTw" id="248lfK9OcHY" role="2Oq$k0">
-                  <ref role="3cqZAo" node="248lfK9NVUY" resolve="nodes" />
+                <node concept="2OqwBi" id="6T7chEgkfsh" role="2Oq$k0">
+                  <node concept="37vLTw" id="248lfK9OcHY" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6T7chEgjswS" resolve="node" />
+                  </node>
+                  <node concept="3Tsc0h" id="6T7chEgknPg" role="2OqNvi">
+                    <ref role="3TtcxE" to="16h3:6T7chEghU4G" resolve="list" />
+                  </node>
                 </node>
                 <node concept="TSZUe" id="248lfK9OuE6" role="2OqNvi">
                   <node concept="2pJPEk" id="248lfK9Oz8r" role="25WWJ7">
@@ -2782,45 +2776,14 @@
             </node>
           </node>
         </node>
-        <node concept="2xdQw9" id="4oMzy$HZlzJ" role="3cqZAp">
-          <property role="2xdLsb" value="h1akgim/info" />
-          <node concept="3cpWs3" id="4oMzy$I2lzt" role="9lYJi">
-            <node concept="2OqwBi" id="4oMzy$I2Lvn" role="3uHU7w">
-              <node concept="2OqwBi" id="4oMzy$I2wsp" role="2Oq$k0">
-                <node concept="37vLTw" id="4oMzy$I2tcb" role="2Oq$k0">
-                  <ref role="3cqZAo" node="248lfK9KD7U" resolve="ctx" />
-                </node>
-                <node concept="liA8E" id="4oMzy$I2Dle" role="2OqNvi">
-                  <ref role="37wK5l" to="dcux:~TurtleParser.PredicateObjectListContext.verb()" resolve="verb" />
-                </node>
-              </node>
-              <node concept="liA8E" id="4oMzy$I2Vtp" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
-              </node>
-            </node>
-            <node concept="3cpWs3" id="4oMzy$I1QFX" role="3uHU7B">
-              <node concept="3cpWs3" id="4oMzy$I1e1V" role="3uHU7B">
-                <node concept="Xl_RD" id="4oMzy$I0Foy" role="3uHU7B">
-                  <property role="Xl_RC" value="Count verb objects " />
-                </node>
-                <node concept="2OqwBi" id="4oMzy$I1vaJ" role="3uHU7w">
-                  <node concept="37vLTw" id="4oMzy$I1lO5" role="2Oq$k0">
-                    <ref role="3cqZAo" node="248lfK9NVUY" resolve="nodes" />
-                  </node>
-                  <node concept="34oBXx" id="4oMzy$I1EpL" role="2OqNvi" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="4oMzy$I1YNt" role="3uHU7w">
-                <property role="Xl_RC" value=" from " />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="248lfK9Sg6v" role="3cqZAp">
           <node concept="37vLTw" id="248lfK9SozG" role="3cqZAk">
-            <ref role="3cqZAo" node="248lfK9NVUY" resolve="nodes" />
+            <ref role="3cqZAo" node="6T7chEgjswS" resolve="node" />
           </node>
         </node>
+      </node>
+      <node concept="3Tqbb2" id="6T7chEgiEpr" role="3clF45">
+        <ref role="ehGHo" to="16h3:6T7chEghU4F" resolve="PredicateObjectList" />
       </node>
     </node>
     <node concept="2tJIrI" id="248lfK9PdrW" role="jymVt" />

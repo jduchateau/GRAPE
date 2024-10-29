@@ -179,7 +179,7 @@
     <node concept="13i0hz" id="RW$yYCr8i$" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getPresentationIdentifier" />
+      <property role="TrG5h" value="getIdentifierPresentation" />
       <node concept="3Tm1VV" id="RW$yYCr8i_" role="1B3o_S" />
       <node concept="17QB3L" id="RW$yYCr8iS" role="3clF45" />
       <node concept="3clFbS" id="RW$yYCr8iB" role="3clF47" />

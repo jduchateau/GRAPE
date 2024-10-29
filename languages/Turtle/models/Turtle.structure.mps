@@ -193,9 +193,9 @@
     <node concept="1TJgyj" id="2z4QKYxWbCZ" role="1TKVEi">
       <property role="IQ2ns" value="2937713717140306495" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="predicateObject" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2z4QKYxWbD2" resolve="PredicateObject" />
+      <property role="20kJfa" value="predicateObjectList" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6T7chEghU4F" resolve="PredicateObjectList" />
     </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxWbD2">
@@ -384,8 +384,8 @@
       <property role="IQ2ns" value="3190666691957250332" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="predicateObjectList" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2z4QKYxWbD2" resolve="PredicateObject" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6T7chEghU4F" resolve="PredicateObjectList" />
     </node>
   </node>
   <node concept="1TIwiD" id="1p4Xe90hRmb">
@@ -486,6 +486,18 @@
     </node>
     <node concept="PrWs8" id="248lfK9FnMt" role="PrDN$">
       <ref role="PrY4T" node="2z4QKYxWdpG" resolve="Object" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6T7chEghU4F">
+    <property role="EcuMT" value="7946374057678053675" />
+    <property role="TrG5h" value="PredicateObjectList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="6T7chEghU4G" role="1TKVEi">
+      <property role="IQ2ns" value="7946374057678053676" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2z4QKYxWbD2" resolve="PredicateObject" />
     </node>
   </node>
 </model>
