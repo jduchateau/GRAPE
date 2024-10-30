@@ -32,12 +32,18 @@ stubs {
     }
 }
 
-val antlrJar = file("solutions/converter/lib/antlr4-complete.jar")
+val antlrJar = file("languages/Turtle.runtime/lib/antlr4-complete.jar")
 
 tasks {
+//    register<RunAntScript>("buildDistribution") {
+//        buildScript.set(file("build.xml")) // default: mpsDefaults.buildScript
+//        targets.set(listOf("build"))
+//    }
+
     val downloadAntlr by registering(Download::class) {
         src("https://www.antlr.org/download/antlr-$antlrVersion-complete.jar")
         dest(antlrJar)
+        group = "antlr"
     }
 
     val runAntlr by registering(JavaExec::class) {

@@ -112,7 +112,7 @@
       <ref role="PrY4T" node="2z4QKYxWdpJ" resolve="Verb" />
     </node>
     <node concept="PrWs8" id="5tSQ8xWK1cV" role="PzmwI">
-      <ref role="PrY4T" node="5tSQ8xWK1cS" resolve="RessourceIdentifier" />
+      <ref role="PrY4T" node="17ntPn9eeMy" resolve="RessourceIdentifierDef" />
     </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxW8U5">
@@ -158,6 +158,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2z4QKYxWcM6" resolve="IriFull" />
     </node>
+    <node concept="1TJgyj" id="17ntPn9gYN1" role="1TKVEi">
+      <property role="IQ2ns" value="1285627428970163393" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="fileUrl" />
+      <ref role="20lvS9" node="2z4QKYxWcM6" resolve="IriFull" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxW9hA">
     <property role="EcuMT" value="2937713717140296806" />
@@ -182,6 +188,7 @@
     <property role="EcuMT" value="2937713717140306490" />
     <property role="3GE5qa" value="Triples" />
     <property role="TrG5h" value="SubjectTriples" />
+    <property role="34LRSv" value="subject (verb object)* ." />
     <ref role="1TJDcQ" node="2z4QKYxVX4W" resolve="Triples" />
     <node concept="1TJgyj" id="2z4QKYxWbCY" role="1TKVEi">
       <property role="IQ2ns" value="2937713717140306494" />
@@ -272,7 +279,7 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="5tSQ8xWK1cT" role="PzmwI">
-      <ref role="PrY4T" node="5tSQ8xWK1cS" resolve="RessourceIdentifier" />
+      <ref role="PrY4T" node="17ntPn9eeMy" resolve="RessourceIdentifierDef" />
     </node>
     <node concept="PrWs8" id="248lfK9Bgqc" role="PzmwI">
       <ref role="PrY4T" node="248lfK9Bgqb" resolve="IBlankNode" />
@@ -491,13 +498,40 @@
   <node concept="1TIwiD" id="6T7chEghU4F">
     <property role="EcuMT" value="7946374057678053675" />
     <property role="TrG5h" value="PredicateObjectList" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6T7chEghU4G" role="1TKVEi">
       <property role="IQ2ns" value="7946374057678053676" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="list" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2z4QKYxWbD2" resolve="PredicateObject" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="17ntPn9bc8f">
+    <property role="EcuMT" value="1285627428968645135" />
+    <property role="TrG5h" value="RessourceIdentifierReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="17ntPn9bc8g" role="PzmwI">
+      <ref role="PrY4T" node="5tSQ8xWK1cS" resolve="RessourceIdentifier" />
+    </node>
+    <node concept="PrWs8" id="17ntPn9bc8i" role="PzmwI">
+      <ref role="PrY4T" node="2z4QKYxWcd2" resolve="Subject" />
+    </node>
+    <node concept="PrWs8" id="17ntPn9bc8j" role="PzmwI">
+      <ref role="PrY4T" node="2z4QKYxWdpG" resolve="Object" />
+    </node>
+    <node concept="1TJgyj" id="17ntPn9bc8h" role="1TKVEi">
+      <property role="IQ2ns" value="1285627428968645137" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="17ntPn9eeMy" resolve="RessourceIdentifierDef" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="17ntPn9eeMy">
+    <property role="EcuMT" value="1285627428969442466" />
+    <property role="TrG5h" value="RessourceIdentifierDef" />
+    <node concept="PrWs8" id="17ntPn9eeMz" role="PrDN$">
+      <ref role="PrY4T" node="5tSQ8xWK1cS" resolve="RessourceIdentifier" />
     </node>
   </node>
 </model>

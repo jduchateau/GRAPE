@@ -24,23 +24,6 @@
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
-    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
-        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
-      </concept>
-      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
-        <property id="2756621024541681854" name="text" index="1irPi9" />
-        <child id="1860120738943552534" name="color" index="3PKjny" />
-      </concept>
-      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
-        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
-        <child id="2756621024541675110" name="layers" index="1irR9h" />
-      </concept>
-      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
-      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
-        <property id="1860120738943552481" name="val" index="3PKj8l" />
-      </concept>
-    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
@@ -52,7 +35,6 @@
         <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
-        <child id="8976425910813834639" name="icon" index="3Uehp1" />
       </concept>
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
@@ -430,20 +412,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="29l9n5i5W8f" role="3cqZAp" />
-      </node>
-    </node>
-    <node concept="1irR5M" id="6ONkOuPduvq" role="3Uehp1">
-      <property role="2$rrk2" value="turtleImportIcon" />
-      <node concept="1irR9n" id="6ONkOuPduvx" role="1irR9h">
-        <node concept="3PKj8D" id="6ONkOuPduvz" role="3PKjn_">
-          <property role="3PKj8l" value="0c479c" />
-        </node>
-      </node>
-      <node concept="1irPie" id="6ONkOuPduvA" role="1irR9h">
-        <property role="1irPi9" value="T" />
-        <node concept="3PKj8D" id="6ONkOuPduvD" role="3PKjny">
-          <property role="3PKj8l" value="ffffff" />
-        </node>
       </node>
     </node>
     <node concept="1DS2jV" id="6ONkOuPgQCk" role="1NuT2Z">

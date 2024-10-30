@@ -408,7 +408,7 @@
     <property role="EcuMT" value="8169920669490978445" />
     <property role="3GE5qa" value="LogicalIterator" />
     <property role="TrG5h" value="SourceInlineDef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="75xoT0k8pUe" role="PzmwI">
       <ref role="PrY4T" node="5tSQ8xWQTYB" resolve="SourceDef" />
     </node>

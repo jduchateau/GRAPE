@@ -101,7 +101,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="75xoT0k4g8b" role="2OqNvi">
-                <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getPresentationIdentifier" />
+                <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getIdentifierPresentation" />
               </node>
             </node>
           </node>

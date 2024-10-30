@@ -660,7 +660,7 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="RW$yYCsOA_" role="2OqNvi">
-                    <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getPresentationIdentifier" />
+                    <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getIdentifierPresentation" />
                   </node>
                 </node>
               </node>
@@ -754,7 +754,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="RW$yYCrXY$" role="2OqNvi">
-                <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getPresentationIdentifier" />
+                <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getIdentifierPresentation" />
               </node>
             </node>
           </node>
@@ -798,7 +798,7 @@
           <property role="3F0ifm" value="source" />
         </node>
         <node concept="3F1sOY" id="75xoT0k3_Gt" role="3EZMnx">
-          <ref role="1NtTu8" to="ys6r:5tSQ8xWQHBE" />
+          <ref role="1NtTu8" to="ys6r:5tSQ8xWQHBE" resolve="source" />
         </node>
       </node>
       <node concept="3EZMnI" id="75xoT0k3_Gu" role="3EZMnx">
@@ -807,7 +807,7 @@
           <property role="3F0ifm" value="reference formulation" />
         </node>
         <node concept="3F1sOY" id="75xoT0k3_Gx" role="3EZMnx">
-          <ref role="1NtTu8" to="ys6r:5tSQ8xWQHBI" />
+          <ref role="1NtTu8" to="ys6r:5tSQ8xWQHBI" resolve="referenceFormulation" />
         </node>
       </node>
       <node concept="3EZMnI" id="75xoT0k3_Gy" role="3EZMnx">
@@ -833,7 +833,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="75xoT0k3A0A" role="3EZMnx">
-        <ref role="1NtTu8" to="ys6r:5tSQ8xWQHBE" />
+        <ref role="1NtTu8" to="ys6r:5tSQ8xWQHBE" resolve="source" />
       </node>
       <node concept="3F0ifn" id="75xoT0k3A0B" role="3EZMnx">
         <property role="3F0ifm" value="referenceFormulation" />
@@ -843,7 +843,7 @@
       </node>
       <node concept="3F1sOY" id="75xoT0k3A0D" role="3EZMnx">
         <property role="1$x2rV" value="&lt;default&gt;" />
-        <ref role="1NtTu8" to="ys6r:5tSQ8xWQHBI" />
+        <ref role="1NtTu8" to="ys6r:5tSQ8xWQHBI" resolve="referenceFormulation" />
       </node>
       <node concept="3F0ifn" id="75xoT0k3A0E" role="3EZMnx">
         <property role="3F0ifm" value="iterator" />
@@ -864,7 +864,7 @@
     <ref role="aqKnT" to="ys6r:5tSQ8xWQiR6" resolve="LogicalSourceReference" />
     <node concept="22hDWj" id="75xoT0k5xyJ" role="22hAXT" />
     <node concept="3XHNnq" id="75xoT0k5xyK" role="3ft7WO">
-      <ref role="3XGfJA" to="ys6r:5tSQ8xWQiR7" />
+      <ref role="3XGfJA" to="ys6r:5tSQ8xWQiR7" resolve="ref" />
       <node concept="1WAQ3h" id="75xoT0k5xyL" role="1WZ6D9">
         <node concept="3clFbS" id="75xoT0k5xyM" role="2VODD2">
           <node concept="3clFbF" id="75xoT0k5xNi" role="3cqZAp">
@@ -910,7 +910,7 @@
       </node>
       <node concept="3F1sOY" id="75xoT0k8FY9" role="3EZMnx">
         <property role="1$x2rV" value="rml:UTF-8" />
-        <ref role="1NtTu8" to="ys6r:5tSQ8xWRka0" />
+        <ref role="1NtTu8" to="ys6r:5tSQ8xWRka0" resolve="encoding" />
       </node>
       <node concept="3F0ifn" id="75xoT0k8FYa" role="3EZMnx">
         <property role="3F0ifm" value="null" />
@@ -927,7 +927,7 @@
         <property role="3F0ifm" value="compression" />
       </node>
       <node concept="3F1sOY" id="75xoT0k8FYh" role="3EZMnx">
-        <ref role="1NtTu8" to="ys6r:5tSQ8xWRka1" />
+        <ref role="1NtTu8" to="ys6r:5tSQ8xWRka1" resolve="compression" />
       </node>
       <node concept="3F0ifn" id="75xoT0k8FYi" role="3EZMnx">
         <property role="3F0ifm" value="}" />

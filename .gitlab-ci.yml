@@ -1,7 +1,3 @@
-# You can copy and paste this template into a new `.gitlab-ci.yml` file.
-# You should not add this template to an existing `.gitlab-ci.yml` file by using the `include:` keyword.
-# To contribute improvements to CI/CD templates, please follow the Development guide at:
-# https://docs.gitlab.com/ee/development/cicd/templates.html
 # This specific template is located at:
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Gradle.gitlab-ci.yml
 
@@ -18,7 +14,7 @@ before_script:
 
 stages:
   - build
-  - test
+#  - test
   - deploy
 
 build:
@@ -28,22 +24,22 @@ build:
     - gradle setup
     
     - gradle assemble
-    # - |
-    #   file="build/artifacts/Etlang/build.properties"
-    #   while IFS='=' read -r key value
-    #   do
-    #     key=$(echo $key | tr '.' '_')
-    #     eval ${key}=\${value}
-    #   done < "$file"
-    # - > 
-    #   curl --header "JOB-TOKEN: $CI_JOB_TOKEN" 
-    #   --upload-file build/artifacts/Etlang/Etlang.zip 
-    #   "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/EtlangPlugin/0.1.0/Etlang.zip"
-    # - sed -i.bak "s/versionNumber/${Etlang_version_full}/g" updatePlugins.xml
-    # - > 
-    #   curl --header "JOB-TOKEN: $CI_JOB_TOKEN" 
-    #   --upload-file updatePlugins.xml
-    #   "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/EtlangPlugin/0.1.0/updatePlugins.xml"
+    - |
+       file="build/artifacts/RML-editor-lang/build.properties"
+       while IFS='=' read -r key value
+       do
+         key=$(echo $key | tr '.' '_')
+         eval ${key}=\${value}
+       done < "$file"
+     - >
+       curl --header "JOB-TOKEN: $CI_JOB_TOKEN"
+       --upload-file build/artifacts/RML-editor-lang/RmlEditorLang.zip
+       "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/RmlEditorLangPlugin/0.1.0/RmlEditorLang.zip"
+     - sed -i.bak "s/versionNumber/${RML-editor-lang.version_lang}/g" updatePlugins.xml
+     - > 
+       curl --header "JOB-TOKEN: $CI_JOB_TOKEN" 
+       --upload-file updatePlugins.xml
+       "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/RmlEditorLangPlugin/0.1.0/updatePlugins.xml"
     
     
     - gradle buildDistribution
@@ -63,7 +59,8 @@ build:
       - .mps/*
       - .gitlab-ci.yml
       - languages/**/*
-      - solution/RMLEditor.build/**/*
+      - solutions/TurtlePlugin/*
+      - solution/RML-editor-lang.build/**/*
       - build.gradle.kts
       - "*.xml"
 

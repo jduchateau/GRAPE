@@ -955,7 +955,7 @@
           <node concept="2ShNRf" id="4oMzy$IiB$w" role="YScLw">
             <node concept="1pGfFk" id="4oMzy$IiLdg" role="2ShVmc">
               <property role="373rjd" value="true" />
-              <ref role="37wK5l" node="248lfK9zZn$" />
+              <ref role="37wK5l" node="248lfK9zZn$" resolve="TurtleVisitor.AstConversionException" />
               <node concept="Xl_RD" id="4oMzy$IiTb$" role="37wK5m">
                 <property role="Xl_RC" value="Unexpected statement (must be triples or directive)" />
               </node>
@@ -1575,7 +1575,7 @@
                     </node>
                   </node>
                   <node concept="2pIpSj" id="248lfK9gaP2" role="2pJxcM">
-                    <ref role="2pIpSl" to="16h3:2z4QKYxWbCZ" resolve="predicateObject" />
+                    <ref role="2pIpSl" to="16h3:2z4QKYxWbCZ" resolve="predicateObjectList" />
                     <node concept="36biLy" id="248lfK9gpEQ" role="28nt2d">
                       <node concept="1rXfSq" id="248lfK9grVS" role="36biLW">
                         <ref role="37wK5l" node="248lfK9KD7S" resolve="visitPredicateObjectList" />
@@ -1931,7 +1931,7 @@
           <node concept="2ShNRf" id="248lfK9oCGA" role="YScLw">
             <node concept="1pGfFk" id="4bbS9YoJvZW" role="2ShVmc">
               <property role="373rjd" value="true" />
-              <ref role="37wK5l" node="248lfK9zZn$" />
+              <ref role="37wK5l" node="248lfK9zZn$" resolve="TurtleVisitor.AstConversionException" />
               <node concept="3cpWs3" id="4bbS9YoK1Aw" role="37wK5m">
                 <node concept="2OqwBi" id="4bbS9YoK9AJ" role="3uHU7w">
                   <node concept="37vLTw" id="4bbS9YoK1K4" role="2Oq$k0">
@@ -2542,7 +2542,7 @@
           <node concept="2ShNRf" id="6T7chEgbb5l" role="YScLw">
             <node concept="1pGfFk" id="6T7chEgbjXj" role="2ShVmc">
               <property role="373rjd" value="true" />
-              <ref role="37wK5l" node="248lfK9zZn$" />
+              <ref role="37wK5l" node="248lfK9zZn$" resolve="TurtleVisitor.AstConversionException" />
               <node concept="3cpWs3" id="6T7chEgcatK" role="37wK5m">
                 <node concept="2OqwBi" id="6T7chEgcfyl" role="3uHU7w">
                   <node concept="37vLTw" id="6T7chEgca$l" role="2Oq$k0">
@@ -2568,11 +2568,11 @@
       <node concept="37vLTG" id="6T7chEfUIgA" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="6T7chEfUIgB" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.StringContext" resolve="StringContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser.StringContext" resolve="TurtleParser.StringContext" />
         </node>
       </node>
       <node concept="2AHcQZ" id="6T7chEfV7s3" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="6T7chEg3a5E" role="jymVt" />
@@ -3330,7 +3330,7 @@
                           <node concept="liA8E" id="18nb7lEKyGW" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~StringBuilder.append(char)" resolve="append" />
                             <node concept="37vLTw" id="18nb7lEK_dI" role="37wK5m">
-                              <ref role="3cqZAo" node="18nb7lEJsPw" resolve="c" />
+                              <ref role="3cqZAo" node="18nb7lEJsPw" resolve="current" />
                             </node>
                           </node>
                         </node>
@@ -3360,7 +3360,7 @@
                 </node>
                 <node concept="3clFbC" id="18nb7lEJyd0" role="3uHU7B">
                   <node concept="37vLTw" id="18nb7lEJvx7" role="3uHU7B">
-                    <ref role="3cqZAo" node="18nb7lEJsPw" resolve="c" />
+                    <ref role="3cqZAo" node="18nb7lEJsPw" resolve="current" />
                   </node>
                   <node concept="1Xhbcc" id="18nb7lEJzBE" role="3uHU7w">
                     <property role="1XhdNS" value="\\" />
@@ -3377,7 +3377,7 @@
                       <node concept="liA8E" id="18nb7lEKQyS" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuilder.append(char)" resolve="append" />
                         <node concept="37vLTw" id="18nb7lEKSi6" role="37wK5m">
-                          <ref role="3cqZAo" node="18nb7lEJsPw" resolve="c" />
+                          <ref role="3cqZAo" node="18nb7lEJsPw" resolve="current" />
                         </node>
                       </node>
                     </node>
