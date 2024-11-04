@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c46f6533-bf12-48b8-8ac2-eaefbd221744(RML-editor-lang.build)">
+<model ref="r:c46f6533-bf12-48b8-8ac2-eaefbd221744(RmlEditorLang.build)">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />

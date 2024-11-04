@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="RML-editor-lang.build" uuid="e50dda87-5e86-4ad2-9030-8d02500cea68" moduleVersion="0">
+<solution name="RmlEditorLang.build" uuid="e50dda87-5e86-4ad2-9030-8d02500cea68" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
@@ -19,7 +19,7 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="e50dda87-5e86-4ad2-9030-8d02500cea68(RML-editor-lang.build)" version="0" />
+    <module reference="e50dda87-5e86-4ad2-9030-8d02500cea68(RmlEditorLang.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
   </dependencyVersions>
 </solution>

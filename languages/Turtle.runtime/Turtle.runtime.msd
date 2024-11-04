@@ -12,7 +12,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="yes" languageLevel="JAVA_10">
+    <facet type="java" compile="mps" classes="mps" ext="no" languageLevel="JAVA_10">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/antlr4-runtime.jar" />
       <source location="${module}/grammar" />
