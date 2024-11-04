@@ -25,21 +25,21 @@ build:
     
     - gradle assemble
     - |
-       file="build/artifacts/RML-editor-lang/build.properties"
-       while IFS='=' read -r key value
-       do
-         key=$(echo $key | tr '.' '_')
-         eval ${key}=\${value}
-       done < "$file"
-     - >
-       curl --header "JOB-TOKEN: $CI_JOB_TOKEN"
-       --upload-file build/artifacts/RML-editor-lang/RmlEditorLang.zip
-       "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/RmlEditorLangPlugin/0.1.0/RmlEditorLang.zip"
-     - sed -i.bak "s/versionNumber/${RML-editor-lang.version_lang}/g" updatePlugins.xml
-     - > 
-       curl --header "JOB-TOKEN: $CI_JOB_TOKEN" 
-       --upload-file updatePlugins.xml
-       "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/RmlEditorLangPlugin/0.1.0/updatePlugins.xml"
+      file="build/artifacts/RML-editor-lang/build.properties"
+      while IFS='=' read -r key value
+      do
+        key=$(echo $key | tr '.' '_')
+        eval ${key}=\${value}
+      done < "$file"
+    - >
+      curl --header "JOB-TOKEN: $CI_JOB_TOKEN"
+      --upload-file build/artifacts/RML-editor-lang/RmlEditorLang.zip
+      "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/RmlEditorLangPlugin/0.1.0/RmlEditorLang.zip"
+    - sed -i.bak "s/versionNumber/${RML-editor-lang.version_lang}/g" updatePlugins.xml
+    - > 
+      curl --header "JOB-TOKEN: $CI_JOB_TOKEN" 
+      --upload-file updatePlugins.xml
+      "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/RmlEditorLangPlugin/0.1.0/updatePlugins.xml"
     
     
     - gradle buildDistribution
