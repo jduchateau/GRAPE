@@ -720,14 +720,14 @@
         <node concept="3Y090L" id="75xoT0kdTX1" role="29d64K">
           <node concept="29d65d" id="75xoT0kdTX2" role="3Y090Q">
             <node concept="29d650" id="75xoT0kdTX3" role="29d653">
-              <node concept="2YzXU4" id="75xoT0kdTX8" role="29d3Gi">
+              <node concept="raruj" id="75xoT0kdTXb" role="lGtFl" />
+              <node concept="2YzXU4" id="3llsBCcbTJp" role="29d3Gi">
                 <node concept="3Y090L" id="75xoT0kdTXa" role="2YzXXJ">
                   <node concept="5jKBG" id="75xoT0kdW8R" role="lGtFl">
                     <ref role="v9R2y" node="75xoT0k6Yk$" resolve="reduce_LogicalSourceDef" />
                   </node>
                 </node>
               </node>
-              <node concept="raruj" id="75xoT0kdTXb" role="lGtFl" />
             </node>
             <node concept="29d5ma" id="75xoT0kdTX6" role="29d654">
               <property role="29d1ub" value="logicalSource" />

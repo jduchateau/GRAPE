@@ -2253,8 +2253,8 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4oMzy$HJQdV" role="1B3o_S" />
-      <node concept="3uibUv" id="4oMzy$HJQe6" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      <node concept="3Tqbb2" id="3llsBCcNJfa" role="3clF45">
+        <ref role="ehGHo" to="16h3:2z4QKYxXphm" resolve="RdfLiteral" />
       </node>
       <node concept="3clFbS" id="4oMzy$HJQe7" role="3clF47">
         <node concept="2xdQw9" id="4oMzy$HTN4K" role="3cqZAp">

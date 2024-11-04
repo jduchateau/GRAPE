@@ -1,32 +1,38 @@
 import de.undercouch.gradle.tasks.download.Download
 
-plugins {
-    id("com.specificlanguages.mps") version "1.5.0"
-    id("de.undercouch.download") version "5.6.0"
+buildscript {
+    repositories {
+        maven("https://artifacts.itemis.cloud/repository/maven-mps")
+        mavenCentral()
+    }
 }
 
 repositories {
-    maven("https://artifacts.itemis.cloud/repository/maven-mps") { name = "itemis" }
+    maven("https://artifacts.itemis.cloud/repository/maven-mps")
     mavenCentral()
-    maven("https://jitpack.io")
 }
+
+plugins {
+    id("com.specificlanguages.mps") version "1.8.0"
+    id("de.undercouch.download") version "5.6.0"
+}
+
 
 dependencies {
     mps("com.jetbrains:mps:2024.1.+")
     // generation("de.itemis.mps:extensions:2021.3.+")
 }
 
+tasks.named<Wrapper>("wrapper") {
+    gradleVersion = "8.1.1"
+}
 
 val antlrVersion = "4.13.2"
 
 // build.gradle.kts
 stubs {
     register("stubs") {
-        destinationDir("solutions/converter/lib")
-        //dependency("com.github.petitparser:java-petitparser:2.3.+")
-        //dependency("com.github.typemeta.funcj:funcj-parser:funcj-0.6.18")
-        //dependency("org.apache.jena:jena-core:5.2.+")
-        //dependency("org.apache.jena:jena-arq:5.2.+")
+        destinationDir("languages/Turtle.runtime/lib")
         //ANTLR Runtime
         dependency("org.antlr:antlr4-runtime:$antlrVersion")
     }

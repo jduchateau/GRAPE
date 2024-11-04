@@ -15,7 +15,7 @@ TEST-*.xml
 junit*.properties
 
 # sample-using-mps-extensions
-build.xml
+#build.xml
 source_gen/
 source_gen.caches/
 classes_gen/
@@ -25,4 +25,8 @@ build/
 .idea/
 .mps-caches/
 
-solutions/converter/lib/*
+languages/Turtle.runtime/lib/*
+
+/gradlew
+/gradlew.bat
+/gradle/wrapper/

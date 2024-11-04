@@ -152,7 +152,7 @@
     </language>
   </registry>
   <node concept="1l3spW" id="2CHbgKhgN9K">
-    <property role="TrG5h" value="RML-editor-lang" />
+    <property role="TrG5h" value="RmlEditorLangPlugin" />
     <property role="2DA0ip" value="../.." />
     <node concept="2kB4xC" id="3x0FUHjWU8n" role="1l3spd">
       <property role="TrG5h" value="version_lang" />

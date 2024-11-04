@@ -5,7 +5,7 @@
 # https://gradle.org/
 # https://github.com/gradle/gradle
 
-image: gradle:jdk11-alpine
+image: gradle:8-jdk17-alpine
 
 before_script:
   - GRADLE_USER_HOME="$(pwd)/.gradle"
@@ -42,7 +42,7 @@ build:
       "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/RmlEditorLangPlugin/0.1.0/updatePlugins.xml"
     
     
-    - gradle buildDistribution
+    # - gradle buildDistribution
     # - >
     #   curl --header "JOB-TOKEN: $CI_JOB_TOKEN" 
     #   --upload-file build/artifacts/EtlangDistribution/Etlang-${Etlang_build_number}.tar.gz

@@ -83,7 +83,7 @@
       <property role="2v_DfE" value="true" />
       <property role="TrG5h" value="" />
       <node concept="29d1u9" id="17ntPn92NXT" role="3pzv1Z">
-        <property role="29d1u8" value="htt://example.org/" />
+        <property role="29d1u8" value="http://example.org/" />
       </node>
     </node>
     <node concept="3DQ70j" id="17ntPn92NWC" role="lGtFl">
@@ -243,6 +243,57 @@
       <property role="3V$3am" value="statments" />
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>
+    <node concept="29d64P" id="3llsBCcf0Vc" role="29aKCU">
+      <node concept="3Y090L" id="3llsBCcf0Ve" role="29d64K">
+        <node concept="29d65d" id="3llsBCcf0Vf" role="3Y090Q">
+          <node concept="29d650" id="3llsBCcf0Vg" role="29d653">
+            <node concept="29d5ma" id="3llsBCcf0Vn" role="29d3Gi">
+              <property role="29d1ub" value="LogicalSource" />
+              <ref role="29d1uc" node="17ntPn92NW$" resolve="rml" />
+            </node>
+          </node>
+          <node concept="29d658" id="3llsBCcf0Vj" role="29d654" />
+        </node>
+        <node concept="29d65d" id="3llsBCcf0Vp" role="3Y090Q">
+          <node concept="29d650" id="3llsBCcf0Vq" role="29d653">
+            <node concept="29d5ma" id="3llsBCcf0Vv" role="29d3Gi">
+              <property role="29d1ub" value="JSONPath" />
+              <ref role="29d1uc" node="17ntPn92NW$" resolve="rml" />
+            </node>
+          </node>
+          <node concept="29d5ma" id="3llsBCcf0Vt" role="29d654">
+            <property role="29d1ub" value="referenceFromaulation" />
+            <ref role="29d1uc" node="17ntPn92NW$" resolve="rml" />
+          </node>
+        </node>
+        <node concept="29d65d" id="3llsBCcf0Vx" role="3Y090Q">
+          <node concept="29d650" id="3llsBCcf0Vy" role="29d653">
+            <node concept="3oYVlq" id="3llsBCcf0VB" role="29d3Gi">
+              <ref role="3oYVl4" node="17ntPn92NX9" resolve="FileSource" />
+            </node>
+          </node>
+          <node concept="29d5ma" id="3llsBCcf0V_" role="29d654">
+            <property role="29d1ub" value="source" />
+            <ref role="29d1uc" node="17ntPn92NW$" resolve="rml" />
+          </node>
+        </node>
+        <node concept="29d65d" id="3llsBCcf0VD" role="3Y090Q">
+          <node concept="29d650" id="3llsBCcf0VL" role="29d653">
+            <node concept="29ckXp" id="3llsBCcf0VM" role="29d3Gi">
+              <property role="29ckXk" value="$.vertices" />
+            </node>
+          </node>
+          <node concept="29d5ma" id="3llsBCcf0VH" role="29d654">
+            <property role="29d1ub" value="iterator" />
+            <ref role="29d1uc" node="17ntPn92NW$" resolve="rml" />
+          </node>
+        </node>
+      </node>
+      <node concept="29d5ma" id="3llsBCcf0Vb" role="29d64L">
+        <property role="29d1ub" value="VerticesLS" />
+        <ref role="29d1uc" node="17ntPn92NXR" resolve="" />
+      </node>
+    </node>
     <node concept="3DQ70j" id="17ntPn9bc5C" role="lGtFl">
       <property role="3V$3am" value="statments" />
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
@@ -264,8 +315,8 @@
             <ref role="29d1uc" node="17ntPn92NW$" resolve="rml" />
           </node>
           <node concept="29d650" id="17ntPn9jMDY" role="29d653">
-            <node concept="3oYVlq" id="17ntPn9pmsT" role="29d3Gi">
-              <ref role="3oYVl4" node="17ntPn9jjUB" />
+            <node concept="3oYVlq" id="3llsBCcf0VR" role="29d3Gi">
+              <ref role="3oYVl4" node="3llsBCcf0Vb" />
             </node>
           </node>
         </node>
@@ -502,6 +553,29 @@
                   </node>
                   <node concept="29d5ma" id="6ynJ0lXvqH6" role="29d654">
                     <property role="29d1ub" value="predicate" />
+                    <ref role="29d1uc" node="17ntPn92NW$" resolve="rml" />
+                  </node>
+                </node>
+                <node concept="29d65d" id="3llsBCcf0UW" role="3Y090Q">
+                  <node concept="29d650" id="3llsBCcwYiR" role="29d653">
+                    <node concept="2YzXU4" id="3llsBCcwYiS" role="29d3Gi">
+                      <node concept="3Y090L" id="3llsBCcwYiT" role="2YzXXJ">
+                        <node concept="29d65d" id="3llsBCcwYiU" role="3Y090Q">
+                          <node concept="29d650" id="3llsBCcwYiV" role="29d653">
+                            <node concept="29ckXp" id="3llsBCcwYiW" role="29d3Gi">
+                              <property role="29ckXk" value="http://example.org/point/{$.vertices[@][0]}-{$.vertices[@][1]}-{$.vertices[@][2]}" />
+                            </node>
+                          </node>
+                          <node concept="29d5ma" id="3llsBCcwYiX" role="29d654">
+                            <property role="29d1ub" value="template" />
+                            <ref role="29d1uc" node="17ntPn92NW$" resolve="rml" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="29d5ma" id="3llsBCcf0V0" role="29d654">
+                    <property role="29d1ub" value="objectMap" />
                     <ref role="29d1uc" node="17ntPn92NW$" resolve="rml" />
                   </node>
                 </node>
