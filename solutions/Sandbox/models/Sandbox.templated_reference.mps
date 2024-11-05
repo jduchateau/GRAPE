@@ -235,7 +235,7 @@
         </node>
       </node>
       <node concept="29d5ma" id="17ntPn9jjUB" role="29d64L">
-        <property role="29d1ub" value="PointsLS" />
+        <property role="29d1ub" value="CityObjectBoundariesLS" />
         <ref role="29d1uc" node="17ntPn92NXR" resolve="" />
       </node>
     </node>
@@ -311,7 +311,7 @@
         </node>
         <node concept="29d65d" id="17ntPn9bc5S" role="3Y090Q">
           <node concept="29d5ma" id="17ntPn9bc5W" role="29d654">
-            <property role="29d1ub" value="logicallSource" />
+            <property role="29d1ub" value="logicalSource" />
             <ref role="29d1uc" node="17ntPn92NW$" resolve="rml" />
           </node>
           <node concept="29d650" id="17ntPn9jMDY" role="29d653">

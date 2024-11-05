@@ -110,7 +110,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="75xoT0k8pVn">
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="Source" />
     <ref role="1M2myG" to="ys6r:5tSQ8xWQTYC" resolve="SourceNamedDef" />
     <node concept="EnEH3" id="75xoT0k8pVo" role="1MhHOB">
       <ref role="EomxK" to="tpck:hqLvdgl" resolve="resolveInfo" />
@@ -134,6 +134,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="75xoT0kgf8r">
+    <property role="3GE5qa" value="POM" />
     <ref role="1M2myG" to="ys6r:5tSQ8xWNmRs" resolve="ObjectMap" />
     <node concept="9SLcT" id="75xoT0kgfmI" role="9SGkU">
       <node concept="3clFbS" id="75xoT0kgfmJ" role="2VODD2">

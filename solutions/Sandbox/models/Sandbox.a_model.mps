@@ -66,6 +66,16 @@
       </concept>
     </language>
     <language id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML">
+      <concept id="3543407481847299707" name="RML.structure.ReferencingObjectMap" flags="ng" index="28P8wJ">
+        <reference id="3543407481847299709" name="parentTriplesMap" index="28P8wD" />
+        <child id="3543407481847299714" name="joinCondition" index="28P8zm" />
+      </concept>
+      <concept id="3543407481847299716" name="RML.structure.JoinCondition" flags="ng" index="28P8zg">
+        <child id="3543407481847299718" name="childMap" index="28P8zi" />
+        <child id="3543407481847299719" name="parentMap" index="28P8zj" />
+      </concept>
+      <concept id="3543407481851128128" name="RML.structure.ParentMap" flags="ng" index="2b7xWk" />
+      <concept id="3543407481851128127" name="RML.structure.ChildMap" flags="ng" index="2b7xXF" />
       <concept id="6303025759226768837" name="RML.structure.LogicalSourceNamedDef" flags="ng" index="FCvld">
         <child id="6303025759226878441" name="identifier" index="FCw5x" />
       </concept>
@@ -244,9 +254,17 @@
     </node>
     <node concept="FCvld" id="75xoT0k3Nof" role="29aKCU">
       <node concept="29d1xb" id="75xoT0k3Noi" role="FCw5x">
-        <property role="TrG5h" value="LS1" />
+        <property role="TrG5h" value="LSPeople" />
       </node>
       <node concept="FCOsx" id="75xoT0k3Nok" role="FCw5y">
+        <ref role="FDazi" node="5tSQ8xWRRpx" resolve="_:CSVSource1" />
+      </node>
+    </node>
+    <node concept="FCvld" id="34GH_iU6ANx" role="29aKCU">
+      <node concept="29d1xb" id="34GH_iU6ANy" role="FCw5x">
+        <property role="TrG5h" value="LSProjects" />
+      </node>
+      <node concept="FCOsx" id="34GH_iU6ANz" role="FCw5y">
         <ref role="FDazi" node="5tSQ8xWRRpx" resolve="_:CSVSource1" />
       </node>
     </node>
@@ -254,10 +272,46 @@
       <property role="3V$3am" value="statments" />
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>
+    <node concept="2YYitQ" id="34GH_iU2z01" role="29aKCU">
+      <node concept="Ib$Ef" id="34GH_iU2z0f" role="Ib$Ea">
+        <node concept="FHrll" id="34GH_iU2z0g" role="FHrlg">
+          <node concept="IaUoN" id="34GH_iU2z0j" role="FGdDe">
+            <node concept="29d5ma" id="34GH_iU2z0m" role="FJIaS">
+              <property role="29d1ub" value="name" />
+              <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+            </node>
+          </node>
+        </node>
+        <node concept="FHrlk" id="34GH_iU2z0o" role="FHrli">
+          <node concept="IaUoZ" id="34GH_iU2z0q" role="FGdDe">
+            <property role="FJGrp" value="project_name" />
+          </node>
+        </node>
+      </node>
+      <node concept="IaUod" id="34GH_iU2z02" role="2YYcL1">
+        <node concept="29d5ma" id="34GH_iU2z0b" role="FGrfI">
+          <property role="29d1ub" value="Project" />
+          <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+        </node>
+        <node concept="IaUoX" id="34GH_iU2z0d" role="FGdDe">
+          <property role="IaUoT" value="http://example.org/project/{project_slug}" />
+        </node>
+      </node>
+      <node concept="29d1xb" id="34GH_iU2z05" role="FIcIW">
+        <property role="TrG5h" value="TMProjects" />
+      </node>
+      <node concept="FCvle" id="34GH_iU6ANF" role="IaUo4">
+        <ref role="FCvlf" node="34GH_iU6ANx" resolve="_:LSProjects" />
+      </node>
+    </node>
+    <node concept="3DQ70j" id="34GH_iU2z00" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    </node>
     <node concept="2YYitQ" id="5tSQ8xWMidT" role="29aKCU">
       <node concept="3Y090L" id="6T7chEgmu84" role="FAC90" />
       <node concept="29d1u9" id="5tSQ8xWMidX" role="FIcIW">
-        <property role="29d1u8" value="&lt;#TM2&gt;" />
+        <property role="29d1u8" value="#TMPerson" />
       </node>
       <node concept="IaUod" id="5tSQ8xWMz6_" role="2YYcL1">
         <node concept="IaUoX" id="5tSQ8xWMDtE" role="FGdDe">
@@ -302,6 +356,31 @@
             <node concept="IaUoN" id="75xoT0kh7s5" role="FGdDe">
               <node concept="29ckXp" id="75xoT0kh7s8" role="FJIaS">
                 <property role="29ckXk" value="fr" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="Ib$Ef" id="34GH_iU2yZP" role="Ib$Ea">
+        <node concept="FHrll" id="34GH_iU2yZQ" role="FHrlg">
+          <node concept="IaUoN" id="34GH_iU2yZT" role="FGdDe">
+            <node concept="29d5ma" id="34GH_iU2yZW" role="FJIaS">
+              <property role="29d1ub" value="project" />
+              <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+            </node>
+          </node>
+        </node>
+        <node concept="28P8wJ" id="34GH_iU2z0E" role="FHrli">
+          <ref role="28P8wD" node="34GH_iU2z01" />
+          <node concept="28P8zg" id="34GH_iUlVj6" role="28P8zm">
+            <node concept="2b7xXF" id="34GH_iUlVj7" role="28P8zi">
+              <node concept="IaUoZ" id="34GH_iUlVjb" role="FGdDe">
+                <property role="FJGrp" value="project_id" />
+              </node>
+            </node>
+            <node concept="2b7xWk" id="34GH_iUlVj9" role="28P8zj">
+              <node concept="IaUoZ" id="34GH_iUlVjd" role="FGdDe">
+                <property role="FJGrp" value="project_id" />
               </node>
             </node>
           </node>
@@ -380,7 +459,7 @@
         </node>
       </node>
       <node concept="29d1xb" id="6T7chEgo$SG" role="29d64L">
-        <property role="TrG5h" value="TM2" />
+        <property role="TrG5h" value="TMPersonEquiv" />
       </node>
     </node>
   </node>

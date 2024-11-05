@@ -314,6 +314,7 @@
   <node concept="PlHQZ" id="2z4QKYxWe0w">
     <property role="TrG5h" value="Annotation" />
     <property role="EcuMT" value="2937713717140316191" />
+    <property role="3GE5qa" value="Star" />
   </node>
   <node concept="1TIwiD" id="2z4QKYxXphk">
     <property role="EcuMT" value="2937713717140624468" />
@@ -532,6 +533,40 @@
     <property role="TrG5h" value="RessourceIdentifierDef" />
     <node concept="PrWs8" id="17ntPn9eeMz" role="PrDN$">
       <ref role="PrY4T" node="5tSQ8xWK1cS" resolve="RessourceIdentifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="34GH_iUxB07">
+    <property role="EcuMT" value="3543407481856618503" />
+    <property role="3GE5qa" value="Star" />
+    <property role="TrG5h" value="Reifier" />
+    <property role="34LRSv" value="~ reifier" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="34GH_iUxB0e" role="PzmwI">
+      <ref role="PrY4T" node="2z4QKYxWe0w" resolve="Annotation" />
+    </node>
+    <node concept="1TJgyj" id="34GH_iUxB0g" role="1TKVEi">
+      <property role="IQ2ns" value="3543407481856618512" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="identifier" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5tSQ8xWK1cS" resolve="RessourceIdentifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="34GH_iUxB0b">
+    <property role="EcuMT" value="3543407481856618507" />
+    <property role="3GE5qa" value="Star" />
+    <property role="TrG5h" value="AnnotationBlock" />
+    <property role="34LRSv" value="{| annotation block |}" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="34GH_iUxB0d" role="PzmwI">
+      <ref role="PrY4T" node="2z4QKYxWe0w" resolve="Annotation" />
+    </node>
+    <node concept="1TJgyj" id="34GH_iUxB0G" role="1TKVEi">
+      <property role="IQ2ns" value="3543407481856618540" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="predicateObjectList" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6T7chEghU4F" resolve="PredicateObjectList" />
     </node>
   </node>
 </model>

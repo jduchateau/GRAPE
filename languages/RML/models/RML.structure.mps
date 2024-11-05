@@ -89,6 +89,7 @@
   <node concept="1TIwiD" id="5iB6wpUyl29">
     <property role="EcuMT" value="6099872835424571529" />
     <property role="TrG5h" value="PredicateObjectMap" />
+    <property role="3GE5qa" value="POM" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5tSQ8xWNmRo" role="1TKVEi">
       <property role="IQ2ns" value="6303025759225998808" />
@@ -102,7 +103,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="objectMap" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="5tSQ8xWNmRs" resolve="ObjectMap" />
+      <ref role="20lvS9" node="34GH_iTYbzm" resolve="IObjectMap" />
     </node>
   </node>
   <node concept="PlHQZ" id="5iB6wpUzbK4">
@@ -274,6 +275,7 @@
   <node concept="1TIwiD" id="5tSQ8xWNmRs">
     <property role="TrG5h" value="ObjectMap" />
     <property role="EcuMT" value="6303025759225998812" />
+    <property role="3GE5qa" value="POM" />
     <ref role="1TJDcQ" node="5tSQ8xWM0b3" resolve="TermMap" />
     <node concept="1TJgyj" id="75xoT0kgf8q" role="1TKVEi">
       <property role="IQ2ns" value="8169920669493031450" />
@@ -281,10 +283,14 @@
       <property role="20kJfa" value="annotation" />
       <ref role="20lvS9" node="75xoT0kgf8n" resolve="LiteralAnnotationTermMap" />
     </node>
+    <node concept="PrWs8" id="34GH_iTYbzo" role="PzmwI">
+      <ref role="PrY4T" node="34GH_iTYbzm" resolve="IObjectMap" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5tSQ8xWNmRt">
     <property role="TrG5h" value="PredicateMap" />
     <property role="EcuMT" value="6303025759225998813" />
+    <property role="3GE5qa" value="POM" />
     <ref role="1TJDcQ" node="5tSQ8xWM0b3" resolve="TermMap" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWQiR5">
@@ -331,7 +337,7 @@
   </node>
   <node concept="PlHQZ" id="5tSQ8xWQTYB">
     <property role="TrG5h" value="SourceDef" />
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="Source" />
     <property role="EcuMT" value="6303025759226878450" />
     <node concept="1TJgyi" id="5tSQ8xWRka3" role="1TKVEl">
       <property role="IQ2nx" value="6303025759227036291" />
@@ -354,7 +360,7 @@
   <node concept="1TIwiD" id="5tSQ8xWQTYC">
     <property role="EcuMT" value="6303025759226929064" />
     <property role="TrG5h" value="SourceNamedDef" />
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="Source" />
     <ref role="1TJDcQ" to="16h3:2z4QKYxVX4T" resolve="Statment" />
     <node concept="PrWs8" id="5tSQ8xWQTYH" role="PzmwI">
       <ref role="PrY4T" node="5tSQ8xWQTYB" resolve="SourceDef" />
@@ -372,7 +378,7 @@
   <node concept="1TIwiD" id="5tSQ8xWQTYD">
     <property role="EcuMT" value="6303025759226929065" />
     <property role="TrG5h" value="SourceRef" />
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="Source" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5tSQ8xWQTYE" role="PzmwI">
       <ref role="PrY4T" node="75xoT0k8pUh" resolve="SourceUse" />
@@ -404,18 +410,9 @@
       <ref role="PrY4T" node="75xoT0k3_4K" resolve="LogicalSourceUse" />
     </node>
   </node>
-  <node concept="1TIwiD" id="75xoT0k8pUd">
-    <property role="EcuMT" value="8169920669490978445" />
-    <property role="3GE5qa" value="LogicalIterator" />
-    <property role="TrG5h" value="SourceInlineDef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="75xoT0k8pUe" role="PzmwI">
-      <ref role="PrY4T" node="5tSQ8xWQTYB" resolve="SourceDef" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="75xoT0k8pUh">
     <property role="EcuMT" value="8169920669490978449" />
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="Source" />
     <property role="TrG5h" value="SourceUse" />
   </node>
   <node concept="1TIwiD" id="75xoT0kgf8n">
@@ -433,6 +430,75 @@
     <property role="EcuMT" value="8169920669493031449" />
     <property role="TrG5h" value="DatatypeMap" />
     <ref role="1TJDcQ" node="75xoT0kgf8n" resolve="LiteralAnnotationTermMap" />
+  </node>
+  <node concept="1TIwiD" id="34GH_iTY3TV">
+    <property role="EcuMT" value="3543407481847299707" />
+    <property role="TrG5h" value="ReferencingObjectMap" />
+    <property role="3GE5qa" value="POM" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="34GH_iTY3TX" role="1TKVEi">
+      <property role="IQ2ns" value="3543407481847299709" />
+      <property role="20kJfa" value="parentTriplesMap" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2L7xBeiJE45" resolve="TriplesMap" />
+    </node>
+    <node concept="1TJgyj" id="34GH_iTY3U2" role="1TKVEi">
+      <property role="IQ2ns" value="3543407481847299714" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="joinCondition" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="34GH_iTY3U4" resolve="JoinCondition" />
+    </node>
+    <node concept="PrWs8" id="34GH_iTYbzn" role="PzmwI">
+      <ref role="PrY4T" node="34GH_iTYbzm" resolve="IObjectMap" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="34GH_iTY3U4">
+    <property role="TrG5h" value="JoinCondition" />
+    <property role="EcuMT" value="3543407481847299716" />
+    <property role="3GE5qa" value="POM" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="34GH_iTY3U6" role="1TKVEi">
+      <property role="IQ2ns" value="3543407481847299718" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="childMap" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="34GH_iUcE$Z" resolve="ChildMap" />
+    </node>
+    <node concept="1TJgyj" id="34GH_iTY3U7" role="1TKVEi">
+      <property role="IQ2ns" value="3543407481847299719" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="parentMap" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="34GH_iUcE_0" resolve="ParentMap" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="34GH_iTYbzm">
+    <property role="EcuMT" value="3543407481847331030" />
+    <property role="TrG5h" value="IObjectMap" />
+    <property role="3GE5qa" value="POM" />
+  </node>
+  <node concept="1TIwiD" id="34GH_iU6AN$">
+    <property role="EcuMT" value="3543407481849539812" />
+    <property role="TrG5h" value="SourceNamedDefCSV" />
+    <property role="3GE5qa" value="Source" />
+    <ref role="1TJDcQ" node="5tSQ8xWQTYC" resolve="SourceNamedDef" />
+  </node>
+  <node concept="1TIwiD" id="34GH_iUcE$Z">
+    <property role="TrG5h" value="ChildMap" />
+    <property role="EcuMT" value="3543407481851128127" />
+    <ref role="1TJDcQ" node="5tSQ8xWM0b5" resolve="ExpressionMap" />
+    <node concept="t5JxF" id="34GH_iUcE_5" role="lGtFl">
+      <property role="t5JxN" value="A child map (rml:ChildMap) is an expression map, which MUST include references that exist in the logical source of the parent triples map that contains the referencing object map, or it should have a constant value." />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="34GH_iUcE_0">
+    <property role="TrG5h" value="ParentMap" />
+    <property role="EcuMT" value="3543407481851128128" />
+    <ref role="1TJDcQ" node="5tSQ8xWM0b5" resolve="ExpressionMap" />
+    <node concept="t5JxF" id="34GH_iUcE_4" role="lGtFl">
+      <property role="t5JxN" value="A parent map (rml:ParentMap) is an expression map, which MUST include references that exist in the logical source of the referencing object map's parent triples map, or it should have a constant value." />
+    </node>
   </node>
 </model>
 
