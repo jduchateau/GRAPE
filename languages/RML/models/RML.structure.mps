@@ -16,6 +16,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -229,6 +230,7 @@
     <property role="EcuMT" value="6303025759225643723" />
     <property role="TrG5h" value="BlankNodeTT" />
     <property role="3GE5qa" value="TermType" />
+    <property role="34LRSv" value="blank node" />
     <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0be">
@@ -241,30 +243,35 @@
     <property role="EcuMT" value="6303025759225643729" />
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="LiteralTT" />
+    <property role="34LRSv" value="literal" />
     <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0bi">
     <property role="EcuMT" value="6303025759225643730" />
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="IriTT" />
+    <property role="34LRSv" value="iri" />
     <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0bk">
     <property role="EcuMT" value="6303025759225643732" />
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="UnsafeIriTT" />
+    <property role="34LRSv" value="unsafe iri" />
     <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0bm">
     <property role="EcuMT" value="6303025759225643734" />
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="UriTT" />
+    <property role="34LRSv" value="uri" />
     <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0bp">
     <property role="EcuMT" value="6303025759225643737" />
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="UnsafeUriTT" />
+    <property role="34LRSv" value="unsafe uri" />
     <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWMmHH">
