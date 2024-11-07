@@ -1008,7 +1008,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="71edsA8PdzW" role="2OqNvi">
-                <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getIdentifierPresentation" />
+                <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getShortIdentifier" />
               </node>
             </node>
           </node>
@@ -1514,7 +1514,7 @@
                   <node concept="2OqwBi" id="17ntPn9jNmA" role="3clFbG">
                     <node concept="pncrf" id="17ntPn9jMUH" role="2Oq$k0" />
                     <node concept="2qgKlT" id="17ntPn9jNMh" role="2OqNvi">
-                      <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getIdentifierPresentation" />
+                      <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getShortIdentifier" />
                     </node>
                   </node>
                 </node>

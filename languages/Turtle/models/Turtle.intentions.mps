@@ -511,17 +511,17 @@
                       <node concept="2pJPED" id="3llsBCcfhQW" role="28nt2d">
                         <ref role="2pJxaS" to="16h3:2z4QKYxWbD2" resolve="PredicateObject" />
                         <node concept="2pIpSj" id="3llsBCcfik5" role="2pJxcM">
-                          <ref role="2pIpSl" to="16h3:2z4QKYxWbDb" />
+                          <ref role="2pIpSl" to="16h3:2z4QKYxWbDb" resolve="verb" />
                           <node concept="36biLy" id="3llsBCcfir7" role="28nt2d">
                             <node concept="10Nm6u" id="3llsBCcfir5" role="36biLW" />
                           </node>
                         </node>
                         <node concept="2pIpSj" id="3llsBCcfi6s" role="2pJxcM">
-                          <ref role="2pIpSl" to="16h3:2z4QKYxWbDc" />
+                          <ref role="2pIpSl" to="16h3:2z4QKYxWbDc" resolve="object" />
                           <node concept="2pJPED" id="3llsBCcfis_" role="28nt2d">
                             <ref role="2pJxaS" to="16h3:2z4QKYxWbDf" resolve="AnnotatedObject" />
                             <node concept="2pIpSj" id="3llsBCcfitX" role="2pJxcM">
-                              <ref role="2pIpSl" to="16h3:2z4QKYxWe0t" />
+                              <ref role="2pIpSl" to="16h3:2z4QKYxWe0t" resolve="object" />
                               <node concept="36biLy" id="3llsBCcfiut" role="28nt2d">
                                 <node concept="2Sf5sV" id="3llsBCcncaV" role="36biLW" />
                               </node>
@@ -577,21 +577,21 @@
                   <node concept="2pJPED" id="3llsBCcthKI" role="28nt2d">
                     <ref role="2pJxaS" to="16h3:2L7xBeiM5zR" resolve="BlankNodePropertyList" />
                     <node concept="2pIpSj" id="3llsBCcthKJ" role="2pJxcM">
-                      <ref role="2pIpSl" to="16h3:2L7xBeiM5$s" />
+                      <ref role="2pIpSl" to="16h3:2L7xBeiM5$s" resolve="predicateObjectList" />
                       <node concept="2pJPED" id="3llsBCcthKK" role="28nt2d">
                         <ref role="2pJxaS" to="16h3:6T7chEghU4F" resolve="PredicateObjectList" />
                         <node concept="2pIpSj" id="3llsBCcthKL" role="2pJxcM">
-                          <ref role="2pIpSl" to="16h3:6T7chEghU4G" />
+                          <ref role="2pIpSl" to="16h3:6T7chEghU4G" resolve="list" />
                           <node concept="2pJPED" id="3llsBCcthKM" role="28nt2d">
                             <ref role="2pJxaS" to="16h3:2z4QKYxWbD2" resolve="PredicateObject" />
                             <node concept="2pIpSj" id="3llsBCcthKN" role="2pJxcM">
-                              <ref role="2pIpSl" to="16h3:2z4QKYxWbDb" />
+                              <ref role="2pIpSl" to="16h3:2z4QKYxWbDb" resolve="verb" />
                               <node concept="36biLy" id="3llsBCcthKO" role="28nt2d">
                                 <node concept="10Nm6u" id="3llsBCcthKP" role="36biLW" />
                               </node>
                             </node>
                             <node concept="2pIpSj" id="3llsBCcthKQ" role="2pJxcM">
-                              <ref role="2pIpSl" to="16h3:2z4QKYxWbDc" />
+                              <ref role="2pIpSl" to="16h3:2z4QKYxWbDc" resolve="object" />
                               <node concept="36be1Y" id="3llsBCcthUa" role="28nt2d">
                                 <node concept="36biLy" id="3llsBCcthUB" role="36be1Z">
                                   <node concept="2Sf5sV" id="3llsBCcthV9" role="36biLW" />
@@ -613,7 +613,7 @@
             <node concept="2Sf5sV" id="3llsBCcthKX" role="2Oq$k0" />
             <node concept="1P9Npp" id="3llsBCcthKY" role="2OqNvi">
               <node concept="37vLTw" id="3llsBCcthKZ" role="1P9ThW">
-                <ref role="3cqZAo" node="3llsBCcthKF" resolve="newList" />
+                <ref role="3cqZAo" node="3llsBCcthKF" resolve="newNode" />
               </node>
             </node>
           </node>

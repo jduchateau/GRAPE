@@ -543,7 +543,7 @@
     <property role="3GE5qa" value="Star" />
     <property role="TrG5h" value="Reifier" />
     <property role="34LRSv" value="~ reifier" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="34GH_iUxB0e" role="PzmwI">
       <ref role="PrY4T" node="2z4QKYxWe0w" resolve="Annotation" />
     </node>
@@ -560,7 +560,7 @@
     <property role="3GE5qa" value="Star" />
     <property role="TrG5h" value="AnnotationBlock" />
     <property role="34LRSv" value="{| annotation block |}" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="34GH_iUxB0d" role="PzmwI">
       <ref role="PrY4T" node="2z4QKYxWe0w" resolve="Annotation" />
     </node>

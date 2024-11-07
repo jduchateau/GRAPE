@@ -759,7 +759,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="RW$yYCrXY$" role="2OqNvi">
-                <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getIdentifierPresentation" />
+                <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getShortIdentifier" />
               </node>
             </node>
           </node>
@@ -885,7 +885,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="75xoT0k5zV4" role="2OqNvi">
-                  <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getIdentifierPresentation" />
+                  <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getShortIdentifier" />
                 </node>
               </node>
             </node>

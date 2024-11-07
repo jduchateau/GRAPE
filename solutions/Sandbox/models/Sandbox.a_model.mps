@@ -387,7 +387,7 @@
         </node>
       </node>
       <node concept="FCvle" id="75xoT0k622J" role="IaUo4">
-        <ref role="FCvlf" node="75xoT0k3Nof" resolve="_:LS1" />
+        <ref role="FCvlf" node="75xoT0k3Nof" resolve="_:LSPeople" />
       </node>
     </node>
     <node concept="3DQ70j" id="6T7chEgo$SE" role="lGtFl">
@@ -446,7 +446,7 @@
                   </node>
                   <node concept="29d5ma" id="6T7chEgshC9" role="29d654">
                     <property role="29d1ub" value="class" />
-                    <ref role="29d1uc" node="6T7chEgtZQ9" resolve="" />
+                    <ref role="29d1uc" node="2z4QKYxW9EQ" resolve="rml" />
                   </node>
                 </node>
               </node>
