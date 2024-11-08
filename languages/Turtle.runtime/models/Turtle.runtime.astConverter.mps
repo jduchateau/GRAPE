@@ -1745,7 +1745,7 @@
       </node>
       <node concept="3Tm1VV" id="248lfK9Badk" role="1B3o_S" />
       <node concept="3Tqbb2" id="248lfK9Beoi" role="3clF45">
-        <ref role="ehGHo" to="16h3:248lfK9Bgqb" resolve="IBlankNode" />
+        <ref role="ehGHo" to="16h3:25MWlU6hxXc" resolve="BlankNode" />
       </node>
       <node concept="37vLTG" id="248lfK9BpQq" role="3clF46">
         <property role="TrG5h" value="blankNodeCtx" />

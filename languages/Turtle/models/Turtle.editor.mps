@@ -770,7 +770,7 @@
       <node concept="2iRfu4" id="2z4QKYxXE8r" role="2iSdaV" />
       <node concept="3F1sOY" id="2z4QKYxXE8D" role="3EZMnx">
         <property role="39s7Ar" value="true" />
-        <property role="1$x2rV" value="&lt;no lang or type&gt;" />
+        <property role="1$x2rV" value="&lt;lang or type&gt;" />
         <ref role="1NtTu8" to="16h3:2z4QKYxXxho" resolve="annotation" />
         <node concept="A1WHr" id="1p4Xe90rMcp" role="3vIgyS">
           <ref role="2ZyFGn" to="16h3:2z4QKYxXxhp" resolve="RdfLiteralAnnotation" />
@@ -798,6 +798,7 @@
           <property role="3F0ifm" value="annotation" />
         </node>
         <node concept="3F1sOY" id="1p4Xe90s$Oy" role="3EZMnx">
+          <property role="1$x2rV" value="&lt;lang or type&gt;" />
           <ref role="1NtTu8" to="16h3:2z4QKYxXxho" resolve="annotation" />
         </node>
         <node concept="2iRfu4" id="1p4Xe90s$Ou" role="2iSdaV" />
@@ -837,7 +838,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2L7xBeiLTKA">
-    <ref role="1XX52x" to="16h3:2z4QKYxWcd4" resolve="BlankNode" />
+    <ref role="1XX52x" to="16h3:2z4QKYxWcd4" resolve="BlankNodeName" />
     <node concept="3EZMnI" id="2L7xBeiLTKC" role="2wV5jI">
       <node concept="3F0ifn" id="2L7xBeiLTKI" role="3EZMnx">
         <property role="3F0ifm" value="_:" />
@@ -1065,7 +1066,7 @@
         </node>
       </node>
       <node concept="2kknPJ" id="7Y6GWuSV9wZ" role="2klrvf">
-        <ref role="2ZyFGn" to="16h3:2z4QKYxWcd2" resolve="Subject" />
+        <ref role="2ZyFGn" to="16h3:2z4QKYxWcd2" resolve="ISubject" />
       </node>
     </node>
   </node>

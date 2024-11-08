@@ -88,50 +88,10 @@
   <node concept="1M2fIO" id="75xoT0k4cy$">
     <property role="3GE5qa" value="LogicalIterator" />
     <ref role="1M2myG" to="ys6r:5tSQ8xWQiR5" resolve="LogicalSourceNamedDef" />
-    <node concept="EnEH3" id="75xoT0k4cy_" role="1MhHOB">
-      <ref role="EomxK" to="tpck:hqLvdgl" resolve="resolveInfo" />
-      <node concept="Eqf_E" id="75xoT0k4c$H" role="EtsB7">
-        <node concept="3clFbS" id="75xoT0k4c$I" role="2VODD2">
-          <node concept="3cpWs6" id="75xoT0k4cP_" role="3cqZAp">
-            <node concept="2OqwBi" id="75xoT0k4eZG" role="3cqZAk">
-              <node concept="2OqwBi" id="75xoT0k4dLG" role="2Oq$k0">
-                <node concept="EsrRn" id="75xoT0k4dm5" role="2Oq$k0" />
-                <node concept="3TrEf2" id="75xoT0k4ey4" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ys6r:5tSQ8xWQHBD" resolve="identifier" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="75xoT0k4g8b" role="2OqNvi">
-                <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getShortIdentifier" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="75xoT0k8pVn">
     <property role="3GE5qa" value="Source" />
     <ref role="1M2myG" to="ys6r:5tSQ8xWQTYC" resolve="SourceNamedDef" />
-    <node concept="EnEH3" id="75xoT0k8pVo" role="1MhHOB">
-      <ref role="EomxK" to="tpck:hqLvdgl" resolve="resolveInfo" />
-      <node concept="Eqf_E" id="75xoT0k8pXx" role="EtsB7">
-        <node concept="3clFbS" id="75xoT0k8pXy" role="2VODD2">
-          <node concept="3clFbF" id="75xoT0k8qez" role="3cqZAp">
-            <node concept="2OqwBi" id="75xoT0k8s9u" role="3clFbG">
-              <node concept="2OqwBi" id="75xoT0k8qGn" role="2Oq$k0">
-                <node concept="EsrRn" id="75xoT0k8qey" role="2Oq$k0" />
-                <node concept="3TrEf2" id="75xoT0k8rE1" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ys6r:5tSQ8xWRk9S" resolve="identifier" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="75xoT0k8sAO" role="2OqNvi">
-                <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getShortIdentifier" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="75xoT0kgf8r">
     <property role="3GE5qa" value="POM" />
@@ -174,6 +134,29 @@
         <node concept="3cpWs6" id="75xoT0kgl8V" role="3cqZAp">
           <node concept="3clFbT" id="75xoT0kgln4" role="3cqZAk">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="25MWlU639kG">
+    <ref role="1M2myG" to="ys6r:25MWlU63704" resolve="NamedDefintionTriples" />
+    <node concept="EnEH3" id="25MWlU639kH" role="1MhHOB">
+      <ref role="EomxK" to="tpck:hqLvdgl" resolve="resolveInfo" />
+      <node concept="Eqf_E" id="25MWlU639ma" role="EtsB7">
+        <node concept="3clFbS" id="25MWlU639mb" role="2VODD2">
+          <node concept="3clFbF" id="25MWlU639Br" role="3cqZAp">
+            <node concept="2OqwBi" id="25MWlU63aMd" role="3clFbG">
+              <node concept="2OqwBi" id="25MWlU63a5f" role="2Oq$k0">
+                <node concept="EsrRn" id="25MWlU639Bq" role="2Oq$k0" />
+                <node concept="3TrEf2" id="25MWlU63azu" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ys6r:25MWlU5UpGJ" resolve="identifier" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="25MWlU63aXq" role="2OqNvi">
+                <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getShortIdentifier" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

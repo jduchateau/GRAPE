@@ -271,7 +271,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="6T7chEggsAX">
-    <ref role="WuzLi" to="16h3:2z4QKYxWcd4" resolve="BlankNode" />
+    <ref role="WuzLi" to="16h3:2z4QKYxWcd4" resolve="BlankNodeName" />
     <node concept="11bSqf" id="6T7chEggsAY" role="11c4hB">
       <node concept="3clFbS" id="6T7chEggsAZ" role="2VODD2">
         <node concept="lc7rE" id="6T7chEggsBo" role="3cqZAp">
