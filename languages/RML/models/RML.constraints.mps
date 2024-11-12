@@ -95,7 +95,7 @@
   </node>
   <node concept="1M2fIO" id="75xoT0kgf8r">
     <property role="3GE5qa" value="POM" />
-    <ref role="1M2myG" to="ys6r:5tSQ8xWNmRs" resolve="ObjectMap" />
+    <ref role="1M2myG" to="ys6r:5tSQ8xWNmRs" resolve="ValueBasedObjectMap" />
     <node concept="9SLcT" id="75xoT0kgfmI" role="9SGkU">
       <node concept="3clFbS" id="75xoT0kgfmJ" role="2VODD2">
         <node concept="Jncv_" id="75xoT0kgjQN" role="3cqZAp">

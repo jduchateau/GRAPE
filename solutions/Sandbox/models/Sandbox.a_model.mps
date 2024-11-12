@@ -98,7 +98,7 @@
       </concept>
       <concept id="6303025759225643729" name="RML.structure.LiteralTT" flags="ng" index="FGdDp" />
       <concept id="6303025759225643730" name="RML.structure.IriTT" flags="ng" index="FGdDq" />
-      <concept id="6303025759225998812" name="RML.structure.ObjectMap" flags="ng" index="FHrlk">
+      <concept id="6303025759225998812" name="RML.structure.ValueBasedObjectMap" flags="ng" index="FHrlk">
         <child id="8169920669493031450" name="annotation" index="1_8p6a" />
       </concept>
       <concept id="6303025759225998813" name="RML.structure.PredicateMap" flags="ng" index="FHrll" />
@@ -349,7 +349,7 @@
         <ref role="FCvlf" node="34GH_iU6ANx" resolve="_:LSProjects" />
       </node>
       <node concept="29d5ma" id="25MWlU6qG2j" role="2$AQDL">
-        <property role="29d1ub" value="ProjectsTM" />
+        <property role="29d1ub" value="TMProjects" />
         <ref role="29d1uc" node="6T7chEgtZQ9" resolve="" />
       </node>
     </node>
@@ -394,9 +394,6 @@
           </node>
         </node>
         <node concept="FHrlk" id="5tSQ8xWOxdT" role="FHrli">
-          <node concept="IaUoZ" id="5tSQ8xWOWJ2" role="FGdDe">
-            <property role="FJGrp" value="nickname" />
-          </node>
           <node concept="FGdDp" id="75xoT0kh7s2" role="FGdD2" />
           <node concept="1_8p68" id="75xoT0kh7s3" role="1_8p6a">
             <node concept="IaUoN" id="75xoT0kh7s5" role="FGdDe">
@@ -404,6 +401,9 @@
                 <property role="29ckXk" value="fr" />
               </node>
             </node>
+          </node>
+          <node concept="IaUoZ" id="5PE8eazKPkz" role="FGdDe">
+            <property role="FJGrp" value="nickname" />
           </node>
         </node>
       </node>
@@ -513,19 +513,43 @@
               <node concept="3Y090L" id="25MWlU6SY$6" role="2YzXXJ">
                 <node concept="29d65d" id="25MWlU6T2nD" role="3Y090Q">
                   <node concept="29d650" id="25MWlU6T2ob" role="29d653">
-                    <node concept="29d5ma" id="25MWlU6T2od" role="29d3Gi">
-                      <property role="29d1ub" value="lastName" />
-                      <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+                    <node concept="2YzXU4" id="5PE8ea$3uhO" role="29d3Gi">
+                      <node concept="3Y090L" id="5PE8ea$3uhP" role="2YzXXJ">
+                        <node concept="29d65d" id="5PE8ea$3uhQ" role="3Y090Q">
+                          <node concept="29d5ma" id="5PE8ea$3uhN" role="29d654">
+                            <property role="29d1ub" value="constant" />
+                            <ref role="29d1uc" node="2z4QKYxW9EQ" resolve="rml" />
+                          </node>
+                          <node concept="29d650" id="5PE8ea$3uhR" role="29d653">
+                            <node concept="29d5ma" id="5PE8ea$3uhS" role="29d3Gi">
+                              <property role="29d1ub" value="lastName" />
+                              <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                   <node concept="29d650" id="25MWlU6T2nE" role="29d653">
-                    <node concept="29d5ma" id="25MWlU6T2of" role="29d3Gi">
-                      <property role="29d1ub" value="nickname" />
-                      <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+                    <node concept="2YzXU4" id="5PE8ea$3uhU" role="29d3Gi">
+                      <node concept="3Y090L" id="5PE8ea$3uhV" role="2YzXXJ">
+                        <node concept="29d65d" id="5PE8ea$3uhW" role="3Y090Q">
+                          <node concept="29d5ma" id="5PE8ea$3uhT" role="29d654">
+                            <property role="29d1ub" value="constant" />
+                            <ref role="29d1uc" node="2z4QKYxW9EQ" resolve="rml" />
+                          </node>
+                          <node concept="29d650" id="5PE8ea$3uhX" role="29d653">
+                            <node concept="29d5ma" id="5PE8ea$3uhY" role="29d3Gi">
+                              <property role="29d1ub" value="nickname" />
+                              <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
-                  <node concept="29d5ma" id="25MWlU6T2nV" role="29d654">
-                    <property role="29d1ub" value="predicate" />
+                  <node concept="29d5ma" id="5PE8ea$3uhM" role="29d654">
+                    <property role="29d1ub" value="predicateMap" />
                     <ref role="29d1uc" node="2z4QKYxW9EQ" resolve="rml" />
                   </node>
                 </node>
@@ -560,13 +584,25 @@
               <node concept="3Y090L" id="25MWlU6SY_5" role="2YzXXJ">
                 <node concept="29d65d" id="25MWlU6T2rO" role="3Y090Q">
                   <node concept="29d650" id="25MWlU6T2rP" role="29d653">
-                    <node concept="29d5ma" id="25MWlU6T2tP" role="29d3Gi">
-                      <property role="29d1ub" value="project" />
-                      <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+                    <node concept="2YzXU4" id="5PE8ea$3uit" role="29d3Gi">
+                      <node concept="3Y090L" id="5PE8ea$3uiu" role="2YzXXJ">
+                        <node concept="29d65d" id="5PE8ea$3uiv" role="3Y090Q">
+                          <node concept="29d5ma" id="5PE8ea$3uis" role="29d654">
+                            <property role="29d1ub" value="constant" />
+                            <ref role="29d1uc" node="2z4QKYxW9EQ" resolve="rml" />
+                          </node>
+                          <node concept="29d650" id="5PE8ea$3uiw" role="29d653">
+                            <node concept="29d5ma" id="5PE8ea$3uix" role="29d3Gi">
+                              <property role="29d1ub" value="project" />
+                              <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
-                  <node concept="29d5ma" id="25MWlU6T2s6" role="29d654">
-                    <property role="29d1ub" value="predicate" />
+                  <node concept="29d5ma" id="5PE8ea$3uir" role="29d654">
+                    <property role="29d1ub" value="predicateMap" />
                     <ref role="29d1uc" node="2z4QKYxW9EQ" resolve="rml" />
                   </node>
                 </node>
@@ -576,7 +612,7 @@
                       <node concept="3Y090L" id="25MWlU6Vzha" role="2YzXXJ">
                         <node concept="29d65d" id="25MWlU6Vzhp" role="3Y090Q">
                           <node concept="29d650" id="25MWlU6Vzhq" role="29d653">
-                            <node concept="3oYVlq" id="25MWlU6VznA" role="29d3Gi">
+                            <node concept="3oYVlq" id="5PE8ea$pwJI" role="29d3Gi">
                               <ref role="3oYVl4" node="25MWlU6qG2j" />
                             </node>
                           </node>
@@ -591,23 +627,47 @@
                               <node concept="3Y090L" id="25MWlU6Vzk1" role="2YzXXJ">
                                 <node concept="29d65d" id="25MWlU6Vzk2" role="3Y090Q">
                                   <node concept="29d650" id="25MWlU6Vzk3" role="29d653">
-                                    <node concept="29ckXp" id="25MWlU6Vzmg" role="29d3Gi">
-                                      <property role="29ckXk" value="project_id" />
+                                    <node concept="2YzXU4" id="5PE8ea$3uim" role="29d3Gi">
+                                      <node concept="3Y090L" id="5PE8ea$3uin" role="2YzXXJ">
+                                        <node concept="29d65d" id="5PE8ea$3uio" role="3Y090Q">
+                                          <node concept="29d5ma" id="5PE8ea$3uil" role="29d654">
+                                            <property role="29d1ub" value="reference" />
+                                            <ref role="29d1uc" node="2z4QKYxW9EQ" resolve="rml" />
+                                          </node>
+                                          <node concept="29d650" id="5PE8ea$3uip" role="29d653">
+                                            <node concept="29ckXp" id="5PE8ea$3uiq" role="29d3Gi">
+                                              <property role="29ckXk" value="project_id" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
                                     </node>
                                   </node>
-                                  <node concept="29d5ma" id="25MWlU6Vzkk" role="29d654">
-                                    <property role="29d1ub" value="child" />
+                                  <node concept="29d5ma" id="5PE8ea$3uik" role="29d654">
+                                    <property role="29d1ub" value="childMap" />
                                     <ref role="29d1uc" node="2z4QKYxW9EQ" resolve="rml" />
                                   </node>
                                 </node>
                                 <node concept="29d65d" id="25MWlU6Vzli" role="3Y090Q">
                                   <node concept="29d650" id="25MWlU6Vzlj" role="29d653">
-                                    <node concept="29ckXp" id="25MWlU6VzmH" role="29d3Gi">
-                                      <property role="29ckXk" value="project_id" />
+                                    <node concept="2YzXU4" id="5PE8ea$3ui$" role="29d3Gi">
+                                      <node concept="3Y090L" id="5PE8ea$3ui_" role="2YzXXJ">
+                                        <node concept="29d65d" id="5PE8ea$3uiA" role="3Y090Q">
+                                          <node concept="29d5ma" id="5PE8ea$3uiz" role="29d654">
+                                            <property role="29d1ub" value="reference" />
+                                            <ref role="29d1uc" node="2z4QKYxW9EQ" resolve="rml" />
+                                          </node>
+                                          <node concept="29d650" id="5PE8ea$3uiB" role="29d653">
+                                            <node concept="29ckXp" id="5PE8ea$3uiC" role="29d3Gi">
+                                              <property role="29ckXk" value="project_id" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
                                     </node>
                                   </node>
-                                  <node concept="29d5ma" id="25MWlU6Vzl$" role="29d654">
-                                    <property role="29d1ub" value="parent" />
+                                  <node concept="29d5ma" id="5PE8ea$3uiy" role="29d654">
+                                    <property role="29d1ub" value="parentMap" />
                                     <ref role="29d1uc" node="2z4QKYxW9EQ" resolve="rml" />
                                   </node>
                                 </node>

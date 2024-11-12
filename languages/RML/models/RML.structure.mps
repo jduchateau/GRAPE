@@ -98,7 +98,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="objectMap" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="34GH_iTYbzm" resolve="IObjectMap" />
+      <ref role="20lvS9" node="34GH_iTYbzm" resolve="ObjectMap" />
     </node>
   </node>
   <node concept="PlHQZ" id="5iB6wpUzbK4">
@@ -274,7 +274,7 @@
     <ref role="1TJDcQ" node="5tSQ8xWM0b3" resolve="TermMap" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWNmRs">
-    <property role="TrG5h" value="ObjectMap" />
+    <property role="TrG5h" value="ValueBasedObjectMap" />
     <property role="EcuMT" value="6303025759225998812" />
     <property role="3GE5qa" value="POM" />
     <ref role="1TJDcQ" node="5tSQ8xWM0b3" resolve="TermMap" />
@@ -285,7 +285,7 @@
       <ref role="20lvS9" node="75xoT0kgf8n" resolve="LiteralAnnotationTermMap" />
     </node>
     <node concept="PrWs8" id="34GH_iTYbzo" role="PzmwI">
-      <ref role="PrY4T" node="34GH_iTYbzm" resolve="IObjectMap" />
+      <ref role="PrY4T" node="34GH_iTYbzm" resolve="ObjectMap" />
     </node>
   </node>
   <node concept="1TIwiD" id="5tSQ8xWNmRt">
@@ -438,7 +438,7 @@
       <ref role="20lvS9" node="34GH_iTY3U4" resolve="JoinCondition" />
     </node>
     <node concept="PrWs8" id="34GH_iTYbzn" role="PzmwI">
-      <ref role="PrY4T" node="34GH_iTYbzm" resolve="IObjectMap" />
+      <ref role="PrY4T" node="34GH_iTYbzm" resolve="ObjectMap" />
     </node>
   </node>
   <node concept="1TIwiD" id="34GH_iTY3U4">
@@ -463,7 +463,7 @@
   </node>
   <node concept="PlHQZ" id="34GH_iTYbzm">
     <property role="EcuMT" value="3543407481847331030" />
-    <property role="TrG5h" value="IObjectMap" />
+    <property role="TrG5h" value="ObjectMap" />
     <property role="3GE5qa" value="POM" />
   </node>
   <node concept="1TIwiD" id="34GH_iU6AN$">
