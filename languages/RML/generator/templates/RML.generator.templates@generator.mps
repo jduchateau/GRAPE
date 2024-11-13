@@ -772,7 +772,6 @@
   </node>
   <node concept="13MO4I" id="75xoT0keJSw">
     <property role="TrG5h" value="reduce_SubjectMap" />
-    <property role="3GE5qa" value="Expression" />
     <ref role="3gUMe" to="ys6r:5iB6wpUzbKb" resolve="SubjectMap" />
     <node concept="29aKCY" id="7x$r2txiBTF" role="13RCb5">
       <property role="TrG5h" value="tmp" />

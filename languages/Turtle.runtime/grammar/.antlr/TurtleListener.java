@@ -177,6 +177,16 @@ public interface TurtleListener extends ParseTreeListener {
 	 */
 	void exitRdfLiteral(TurtleParser.RdfLiteralContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link TurtleParser#string}.
+	 * @param ctx the parse tree
+	 */
+	void enterString(TurtleParser.StringContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link TurtleParser#string}.
+	 * @param ctx the parse tree
+	 */
+	void exitString(TurtleParser.StringContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link TurtleParser#iri}.
 	 * @param ctx the parse tree
 	 */

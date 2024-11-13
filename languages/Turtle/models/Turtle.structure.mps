@@ -2,9 +2,11 @@
 <model ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)">
   <persistence version="9" />
   <languages>
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -132,14 +134,8 @@
     <node concept="1TJgyj" id="6ONkOuOJEcS" role="1TKVEi">
       <property role="IQ2ns" value="7868724541386564408" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="iri" />
+      <property role="20kJfa" value="namespace" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2z4QKYxWcM6" resolve="IriFull" />
-    </node>
-    <node concept="1TJgyj" id="17ntPn9gYN1" role="1TKVEi">
-      <property role="IQ2ns" value="1285627428970163393" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="fileUrl" />
       <ref role="20lvS9" node="2z4QKYxWcM6" resolve="IriFull" />
     </node>
   </node>
@@ -550,6 +546,18 @@
     </node>
     <node concept="PrWs8" id="248lfK9FnMt" role="PzmwI">
       <ref role="PrY4T" node="2z4QKYxWdpG" resolve="Object" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1R$stKKUELR">
+    <property role="EcuMT" value="2153971712317369463" />
+    <property role="TrG5h" value="SingleStatmentComment" />
+    <property role="34LRSv" value="# comment" />
+    <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statment" />
+    <node concept="1TJgyj" id="1R$stKKUF3t" role="1TKVEi">
+      <property role="IQ2ns" value="2153971712317370589" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="line" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6J5A" resolve="Line" />
     </node>
   </node>
 </model>

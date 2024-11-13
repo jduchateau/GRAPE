@@ -33,8 +33,9 @@ val antlrVersion = "4.13.2"
 stubs {
     register("stubs") {
         destinationDir("languages/Turtle.runtime/lib")
-        //ANTLR Runtime
         dependency("org.antlr:antlr4-runtime:$antlrVersion")
+        dependency("org.apache.jena:jena-arq:5.2.0")
+        dependency("org.apache.jena:jena-querybuilder:5.2.0")
     }
 }
 

@@ -8,7 +8,7 @@
   </languages>
   <imports>
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
-    <import index="7gkx" ref="r:3b2ebc91-2c52-45b4-acb1-5330cf3e75a4(Turtle.runtime.prefixer)" />
+    <import index="5hed" ref="r:a8b1fda0-89ff-474b-ab43-cbd38563b06d(Turtle.runtime.prefixer)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -403,7 +403,7 @@
                 <property role="3F0ifm" value=":" />
               </node>
               <node concept="3F1sOY" id="3h4bPqkhafr" role="3EZMnx">
-                <ref role="1NtTu8" to="16h3:6ONkOuOJEcS" resolve="iri" />
+                <ref role="1NtTu8" to="16h3:6ONkOuOJEcS" resolve="namespace" />
               </node>
             </node>
           </node>
@@ -667,7 +667,7 @@
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F1sOY" id="6ONkOuPledp" role="3EZMnx">
-        <ref role="1NtTu8" to="16h3:6ONkOuOJEcS" resolve="iri" />
+        <ref role="1NtTu8" to="16h3:6ONkOuOJEcS" resolve="namespace" />
       </node>
       <node concept="2iRfu4" id="2z4QKYxX25k" role="2iSdaV" />
     </node>
@@ -685,21 +685,12 @@
       <node concept="3EZMnI" id="17ntPn9h0yd" role="3EZMnx">
         <node concept="VPM3Z" id="17ntPn9h0yf" role="3F10Kt" />
         <node concept="3F0ifn" id="17ntPn9h0yj" role="3EZMnx">
-          <property role="3F0ifm" value="iri" />
+          <property role="3F0ifm" value="namespace" />
         </node>
         <node concept="3F1sOY" id="17ntPn9h0yo" role="3EZMnx">
-          <ref role="1NtTu8" to="16h3:6ONkOuOJEcS" resolve="iri" />
+          <ref role="1NtTu8" to="16h3:6ONkOuOJEcS" resolve="namespace" />
         </node>
         <node concept="2iRfu4" id="17ntPn9h0yi" role="2iSdaV" />
-      </node>
-      <node concept="3EZMnI" id="17ntPn9h0yv" role="3EZMnx">
-        <node concept="2iRfu4" id="17ntPn9h0yw" role="2iSdaV" />
-        <node concept="3F0ifn" id="17ntPn9h0ys" role="3EZMnx">
-          <property role="3F0ifm" value="file at" />
-        </node>
-        <node concept="3F1sOY" id="17ntPn9h0y$" role="3EZMnx">
-          <ref role="1NtTu8" to="16h3:17ntPn9gYN1" resolve="fileUrl" />
-        </node>
       </node>
     </node>
   </node>
@@ -1005,7 +996,7 @@
               <node concept="2OqwBi" id="7Y6GWuSUpOJ" role="2Oq$k0">
                 <node concept="1WAUZh" id="7Y6GWuSUpmz" role="2Oq$k0" />
                 <node concept="3TrEf2" id="71edsA8Pc7U" role="2OqNvi">
-                  <ref role="3Tt5mk" to="16h3:6ONkOuOJEcS" resolve="iri" />
+                  <ref role="3Tt5mk" to="16h3:6ONkOuOJEcS" resolve="namespace" />
                 </node>
               </node>
               <node concept="2qgKlT" id="71edsA8PdzW" role="2OqNvi">
@@ -1112,8 +1103,8 @@
             <node concept="3clFbS" id="71edsA8Q2nO" role="Jncv$">
               <node concept="3cpWs6" id="71edsA8TMaZ" role="3cqZAp">
                 <node concept="2YIFZM" id="5HJ1aQFgS9B" role="3cqZAk">
-                  <ref role="37wK5l" to="7gkx:1p4Xe90kyzr" resolve="getUriFromPrefixName" />
-                  <ref role="1Pybhc" to="7gkx:1p4Xe90ioX8" resolve="PrefixCompleter" />
+                  <ref role="37wK5l" to="5hed:1p4Xe90kyzr" resolve="getUriFromPrefixName" />
+                  <ref role="1Pybhc" to="5hed:1p4Xe90ioX8" resolve="PrefixCompleter" />
                   <node concept="2OqwBi" id="5HJ1aQFgS9C" role="37wK5m">
                     <node concept="Jnkvi" id="5HJ1aQFgS9D" role="2Oq$k0">
                       <ref role="1M0zk5" node="71edsA8Q2nP" resolve="prefixId" />
@@ -1134,8 +1125,8 @@
             <node concept="3clFbS" id="75xoT0keKSH" role="3clFbx">
               <node concept="3cpWs6" id="75xoT0keQPP" role="3cqZAp">
                 <node concept="2YIFZM" id="75xoT0keRGt" role="3cqZAk">
-                  <ref role="37wK5l" to="7gkx:1p4Xe90kyzr" resolve="getUriFromPrefixName" />
-                  <ref role="1Pybhc" to="7gkx:1p4Xe90ioX8" resolve="PrefixCompleter" />
+                  <ref role="37wK5l" to="5hed:1p4Xe90kyzr" resolve="getUriFromPrefixName" />
+                  <ref role="1Pybhc" to="5hed:1p4Xe90ioX8" resolve="PrefixCompleter" />
                   <node concept="2OqwBi" id="75xoT0keSLy" role="37wK5m">
                     <node concept="1yR$tW" id="75xoT0keS3f" role="2Oq$k0" />
                     <node concept="3TrcHB" id="75xoT0keTsZ" role="2OqNvi">
