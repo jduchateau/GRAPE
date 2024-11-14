@@ -28,14 +28,17 @@ tasks.named<Wrapper>("wrapper") {
 }
 
 val antlrVersion = "4.13.2"
+val jenaVersion = "5.2.0"
 
 // build.gradle.kts
 stubs {
     register("stubs") {
         destinationDir("languages/Turtle.runtime/lib")
         dependency("org.antlr:antlr4-runtime:$antlrVersion")
-        dependency("org.apache.jena:jena-arq:5.2.0")
-        dependency("org.apache.jena:jena-querybuilder:5.2.0")
+        dependency("org.apache.jena:jena-arq:$jenaVersion")
+        dependency("org.apache.jena:jena-querybuilder:$jenaVersion")
+        dependency("org.apache.jena:jena-rdfconnection:$jenaVersion")
+        dependency("org.apache.httpcomponents.client5:httpclient5:5.4.1")
     }
 }
 

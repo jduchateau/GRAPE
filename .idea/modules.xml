@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/languages/RML/RML.iml" filepath="$PROJECT_DIR$/languages/RML/RML.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RML-Editor-lang.iml" filepath="$PROJECT_DIR$/.idea/modules/RML-Editor-lang.iml" />
       <module fileurl="file://$PROJECT_DIR$/languages/Turtle/Turtle.iml" filepath="$PROJECT_DIR$/languages/Turtle/Turtle.iml" />
       <module fileurl="file://$PROJECT_DIR$/languages/RML/generator/generator.iml" filepath="$PROJECT_DIR$/languages/RML/generator/generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/languages/Turtle/generator/generator2.iml" filepath="$PROJECT_DIR$/languages/Turtle/generator/generator2.iml" />

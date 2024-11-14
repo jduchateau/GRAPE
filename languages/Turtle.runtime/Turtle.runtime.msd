@@ -14,33 +14,13 @@
       <sourceRoot path="${module}/lib/jena-arq.jar" />
       <sourceRoot path="${module}/lib/jena-iri.jar" />
       <sourceRoot path="${module}/lib/jena-querybuilder.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="jena-querybuilder.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="caffeine.jar" />
-      <sourceRoot location="collection.jar" />
-      <sourceRoot location="commons-codec.jar" />
-      <sourceRoot location="commons-collections4.jar" />
-      <sourceRoot location="commons-compress.jar" />
-      <sourceRoot location="commons-csv.jar" />
-      <sourceRoot location="commons-io.jar" />
-      <sourceRoot location="commons-lang3.jar" />
-      <sourceRoot location="error_prone_annotations.jar" />
-      <sourceRoot location="gson.jar" />
-      <sourceRoot location="jakarta.json.jar" />
-      <sourceRoot location="jcl-over-slf4j.jar" />
-      <sourceRoot location="libthrift.jar" />
-      <sourceRoot location="protobuf-java.jar" />
-      <sourceRoot location="RoaringBitmap.jar" />
-      <sourceRoot location="slf4j-api.jar" />
-      <sourceRoot location="titanium-json-ld.jar" />
+      <sourceRoot path="${module}/lib/jena-rdfconnection.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no" languageLevel="JAVA_10">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/jena-rdfconnection.jar" />
       <library location="${module}/lib/caffeine.jar" />
       <library location="${module}/lib/collection.jar" />
       <library location="${module}/lib/commons-codec.jar" />
@@ -71,7 +51,6 @@
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)</dependency>
     <dependency reexport="false">daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)</dependency>
-    <dependency reexport="false">d9e6c08a-a7b1-4ef6-8c54-57d93e9e0ce0(jetbrains.mps.tool.common)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
   </dependencies>
   <languageVersions>
@@ -114,7 +93,6 @@
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
-    <module reference="d9e6c08a-a7b1-4ef6-8c54-57d93e9e0ce0(jetbrains.mps.tool.common)" version="0" />
   </dependencyVersions>
 </solution>
 

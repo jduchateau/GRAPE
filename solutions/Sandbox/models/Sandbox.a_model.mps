@@ -28,7 +28,6 @@
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
         <property id="764855088606600268" name="emptyName" index="2v_DfE" />
         <child id="7868724541386564408" name="namespace" index="3pzv1Z" />
-        <child id="3837997897235857887" name="modules" index="3OcWWv" />
       </concept>
       <concept id="2937713717140295301" name="Turtle.structure.PrefixedName" flags="ng" index="29d5ma">
         <property id="2937713717140311172" name="name" index="29d1ub" />
@@ -51,10 +50,6 @@
       </concept>
       <concept id="1285627428968645135" name="Turtle.structure.RessourceIdentifierReference" flags="ng" index="3oYVlq">
         <reference id="1285627428968645137" name="ref" index="3oYVl4" />
-      </concept>
-      <concept id="3837997897235857886" name="Turtle.structure.OntologyModule" flags="ng" index="3OcWWu">
-        <property id="3837997897235861475" name="ontologyAt" index="3OcW4z" />
-        <property id="3837997897235861476" name="shapesAt" index="3OcW4$" />
       </concept>
       <concept id="7946374057678053675" name="Turtle.structure.PredicateObjectList" flags="ng" index="3Y090L">
         <child id="7946374057678053676" name="list" index="3Y090Q" />
@@ -144,10 +139,6 @@
     <property role="TrG5h" value="a_mapping" />
     <node concept="29d5m5" id="2z4QKYxW9EQ" role="29aKCU">
       <property role="TrG5h" value="rml" />
-      <node concept="3OcWWu" id="3l3jG31vnZZ" role="3OcWWv">
-        <property role="3OcW4z" value="https://kg-construct.github.io/rml-core/ontology/rml-core.owl" />
-        <property role="3OcW4$" value="https://kg-construct.github.io/rml-core/shapes/core.ttl" />
-      </node>
       <node concept="29d1u9" id="6ONkOuPmy5J" role="3pzv1Z">
         <property role="29d1u8" value="http://w3id.org/rml/" />
       </node>
@@ -203,7 +194,7 @@
     <node concept="29d5m5" id="1R$stKL1Etz" role="29aKCU">
       <property role="TrG5h" value="grel" />
       <node concept="29d1u9" id="1R$stKL1Et_" role="3pzv1Z">
-        <property role="29d1u8" value="https://users.ugent.be/~bjdmeest/function/grel.ttl#" />
+        <property role="29d1u8" value="http://users.ugent.be/~bjdmeest/function/grel.ttl#" />
       </node>
     </node>
     <node concept="3DQ70j" id="1R$stKL1EtC" role="lGtFl">
