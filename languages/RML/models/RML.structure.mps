@@ -149,8 +149,9 @@
   </node>
   <node concept="1TIwiD" id="5iB6wpUzbKP">
     <property role="EcuMT" value="6099872835424795701" />
-    <property role="TrG5h" value="ConstanteExpr" />
+    <property role="TrG5h" value="ConstantExpr" />
     <property role="3GE5qa" value="Expression" />
+    <property role="34LRSv" value="constant" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5iB6wpUzbKR" role="PzmwI">
       <ref role="PrY4T" node="5iB6wpUzbKt" resolve="Expression" />
@@ -167,6 +168,7 @@
     <property role="EcuMT" value="6099872835424795705" />
     <property role="TrG5h" value="RefrenceExpr" />
     <property role="3GE5qa" value="Expression" />
+    <property role="34LRSv" value="reference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5iB6wpUzbKU" role="PzmwI">
       <ref role="PrY4T" node="5iB6wpUzbKt" resolve="Expression" />
@@ -183,6 +185,7 @@
   <node concept="1TIwiD" id="5iB6wpUzbKV">
     <property role="EcuMT" value="6099872835424795707" />
     <property role="TrG5h" value="TemplateExpr" />
+    <property role="34LRSv" value="template" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5iB6wpUzbKX" role="PzmwI">
       <ref role="PrY4T" node="5iB6wpUzbKt" resolve="Expression" />
@@ -507,7 +510,7 @@
     <property role="EcuMT" value="2153971712317369461" />
     <property role="TrG5h" value="FunctionExecutionExpr" />
     <property role="3GE5qa" value="Expression" />
-    <property role="34LRSv" value="function execution" />
+    <property role="34LRSv" value="functionExecution" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="1R$stKKXd$U" role="PzmwI">
       <ref role="PrY4T" node="5iB6wpUzbKt" resolve="Expression" />
