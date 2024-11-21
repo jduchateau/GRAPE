@@ -2,7 +2,6 @@
 <model ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
