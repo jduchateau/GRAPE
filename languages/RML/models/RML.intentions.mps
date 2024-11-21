@@ -210,7 +210,7 @@
             <node concept="2ShNRf" id="25MWlU5Cwof" role="2Oq$k0">
               <node concept="1pGfFk" id="25MWlU5Cwtn" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="clop:4WD8E3kC5oD" resolve="ReplaceRMLShortcuts" />
+                <ref role="37wK5l" to="clop:4WD8E3kC5oD" resolve="ReplaceRmlShortcuts" />
                 <node concept="2OqwBi" id="25MWlU5CwFa" role="37wK5m">
                   <node concept="2Sf5sV" id="25MWlU5Cwu1" role="2Oq$k0" />
                   <node concept="2Xjw5R" id="25MWlU5Cx7y" role="2OqNvi">
@@ -261,7 +261,7 @@
               <node concept="2ShNRf" id="25MWlU5F$57" role="HW$Y0">
                 <node concept="1pGfFk" id="25MWlU5F$58" role="2ShVmc">
                   <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="clop:4WD8E3kC5oD" />
+                  <ref role="37wK5l" to="clop:4WD8E3kC5oD" resolve="ReplaceRmlShortcuts" />
                   <node concept="2OqwBi" id="25MWlU5F$59" role="37wK5m">
                     <node concept="2Sf5sV" id="25MWlU5F$5a" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="25MWlU5F$5b" role="2OqNvi">

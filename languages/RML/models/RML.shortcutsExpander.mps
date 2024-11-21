@@ -317,136 +317,136 @@
       <property role="TrG5h" value="known_shortcuts" />
       <node concept="2hMVRd" id="25MWlU5A0Yo" role="1tU5fm">
         <node concept="3uibUv" id="25MWlU5A13y" role="2hN53Y">
-          <ref role="3uigEE" node="25MWlU5_RY6" />
+          <ref role="3uigEE" node="25MWlU5_RY6" resolve="ShortcutExpandArgs" />
         </node>
       </node>
       <node concept="3Tm6S6" id="25MWlU5A0r8" role="1B3o_S" />
       <node concept="2ShNRf" id="25MWlU5A1NV" role="33vP2m">
         <node concept="2i4dXS" id="25MWlU5A1Np" role="2ShVmc">
           <node concept="3uibUv" id="25MWlU5A1Nq" role="HW$YZ">
-            <ref role="3uigEE" node="25MWlU5_RY6" />
+            <ref role="3uigEE" node="25MWlU5_RY6" resolve="ShortcutExpandArgs" />
           </node>
           <node concept="2ry78W" id="25MWlU5_XJR" role="HW$Y0">
-            <ref role="2ryb1Q" node="25MWlU5_RY6" />
+            <ref role="2ryb1Q" node="25MWlU5_RY6" resolve="ShortcutExpandArgs" />
             <node concept="2r$n1x" id="25MWlU5_YNl" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_YV8" />
+              <ref role="2r$qp6" node="25MWlU5_YV8" resolve="oldPredicate" />
               <node concept="Xl_RD" id="25MWlU5_Zi1" role="2r_lH1">
                 <property role="Xl_RC" value="subject" />
               </node>
             </node>
             <node concept="2r$n1x" id="25MWlU5_XRo" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_S2d" />
+              <ref role="2r$qp6" node="25MWlU5_S2d" resolve="newPredicate" />
               <node concept="Xl_RD" id="25MWlU5_XZS" role="2r_lH1">
                 <property role="Xl_RC" value="subjectMap" />
               </node>
             </node>
             <node concept="2r$n1x" id="25MWlU5_Ykk" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_SK2" />
+              <ref role="2r$qp6" node="25MWlU5_SK2" resolve="expressionPredicate" />
               <node concept="Xl_RD" id="25MWlU5_Y$2" role="2r_lH1">
                 <property role="Xl_RC" value="constant" />
               </node>
             </node>
           </node>
           <node concept="2ry78W" id="25MWlU5A3kA" role="HW$Y0">
-            <ref role="2ryb1Q" node="25MWlU5_RY6" />
+            <ref role="2ryb1Q" node="25MWlU5_RY6" resolve="ShortcutExpandArgs" />
             <node concept="2r$n1x" id="25MWlU5A3kB" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_YV8" />
+              <ref role="2r$qp6" node="25MWlU5_YV8" resolve="oldPredicate" />
               <node concept="Xl_RD" id="25MWlU5A3kC" role="2r_lH1">
                 <property role="Xl_RC" value="predicate" />
               </node>
             </node>
             <node concept="2r$n1x" id="25MWlU5A3kD" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_S2d" />
+              <ref role="2r$qp6" node="25MWlU5_S2d" resolve="newPredicate" />
               <node concept="Xl_RD" id="25MWlU5A3kE" role="2r_lH1">
                 <property role="Xl_RC" value="predicateMap" />
               </node>
             </node>
             <node concept="2r$n1x" id="25MWlU5A3kF" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_SK2" />
+              <ref role="2r$qp6" node="25MWlU5_SK2" resolve="expressionPredicate" />
               <node concept="Xl_RD" id="25MWlU5A3kG" role="2r_lH1">
                 <property role="Xl_RC" value="constant" />
               </node>
             </node>
           </node>
           <node concept="2ry78W" id="25MWlU5A4n8" role="HW$Y0">
-            <ref role="2ryb1Q" node="25MWlU5_RY6" />
+            <ref role="2ryb1Q" node="25MWlU5_RY6" resolve="ShortcutExpandArgs" />
             <node concept="2r$n1x" id="25MWlU5A4n9" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_YV8" />
+              <ref role="2r$qp6" node="25MWlU5_YV8" resolve="oldPredicate" />
               <node concept="Xl_RD" id="25MWlU5A4na" role="2r_lH1">
                 <property role="Xl_RC" value="object" />
               </node>
             </node>
             <node concept="2r$n1x" id="25MWlU5A4nb" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_S2d" />
+              <ref role="2r$qp6" node="25MWlU5_S2d" resolve="newPredicate" />
               <node concept="Xl_RD" id="25MWlU5A4nc" role="2r_lH1">
                 <property role="Xl_RC" value="objectMap" />
               </node>
             </node>
             <node concept="2r$n1x" id="25MWlU5A4nd" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_SK2" />
+              <ref role="2r$qp6" node="25MWlU5_SK2" resolve="expressionPredicate" />
               <node concept="Xl_RD" id="25MWlU5A4ne" role="2r_lH1">
                 <property role="Xl_RC" value="constant" />
               </node>
             </node>
           </node>
           <node concept="2ry78W" id="25MWlU5A4Ia" role="HW$Y0">
-            <ref role="2ryb1Q" node="25MWlU5_RY6" />
+            <ref role="2ryb1Q" node="25MWlU5_RY6" resolve="ShortcutExpandArgs" />
             <node concept="2r$n1x" id="25MWlU5A4Ib" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_YV8" />
+              <ref role="2r$qp6" node="25MWlU5_YV8" resolve="oldPredicate" />
               <node concept="Xl_RD" id="25MWlU5A4Ic" role="2r_lH1">
                 <property role="Xl_RC" value="graph" />
               </node>
             </node>
             <node concept="2r$n1x" id="25MWlU5A4Id" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_S2d" />
+              <ref role="2r$qp6" node="25MWlU5_S2d" resolve="newPredicate" />
               <node concept="Xl_RD" id="25MWlU5A4Ie" role="2r_lH1">
                 <property role="Xl_RC" value="graphMap" />
               </node>
             </node>
             <node concept="2r$n1x" id="25MWlU5A4If" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_SK2" />
+              <ref role="2r$qp6" node="25MWlU5_SK2" resolve="expressionPredicate" />
               <node concept="Xl_RD" id="25MWlU5A4Ig" role="2r_lH1">
                 <property role="Xl_RC" value="constant" />
               </node>
             </node>
           </node>
           <node concept="2ry78W" id="25MWlU5A4Qe" role="HW$Y0">
-            <ref role="2ryb1Q" node="25MWlU5_RY6" />
+            <ref role="2ryb1Q" node="25MWlU5_RY6" resolve="ShortcutExpandArgs" />
             <node concept="2r$n1x" id="25MWlU5A4Qf" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_YV8" />
+              <ref role="2r$qp6" node="25MWlU5_YV8" resolve="oldPredicate" />
               <node concept="Xl_RD" id="25MWlU5A4Qg" role="2r_lH1">
                 <property role="Xl_RC" value="datatype" />
               </node>
             </node>
             <node concept="2r$n1x" id="25MWlU5A4Qh" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_S2d" />
+              <ref role="2r$qp6" node="25MWlU5_S2d" resolve="newPredicate" />
               <node concept="Xl_RD" id="25MWlU5A4Qi" role="2r_lH1">
                 <property role="Xl_RC" value="datatypeMap" />
               </node>
             </node>
             <node concept="2r$n1x" id="25MWlU5A4Qj" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_SK2" />
+              <ref role="2r$qp6" node="25MWlU5_SK2" resolve="expressionPredicate" />
               <node concept="Xl_RD" id="25MWlU5A4Qk" role="2r_lH1">
                 <property role="Xl_RC" value="constant" />
               </node>
             </node>
           </node>
           <node concept="2ry78W" id="25MWlU5A4YA" role="HW$Y0">
-            <ref role="2ryb1Q" node="25MWlU5_RY6" />
+            <ref role="2ryb1Q" node="25MWlU5_RY6" resolve="ShortcutExpandArgs" />
             <node concept="2r$n1x" id="25MWlU5A4YB" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_YV8" />
+              <ref role="2r$qp6" node="25MWlU5_YV8" resolve="oldPredicate" />
               <node concept="Xl_RD" id="25MWlU5A4YC" role="2r_lH1">
                 <property role="Xl_RC" value="language" />
               </node>
             </node>
             <node concept="2r$n1x" id="25MWlU5A4YD" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_S2d" />
+              <ref role="2r$qp6" node="25MWlU5_S2d" resolve="newPredicate" />
               <node concept="Xl_RD" id="25MWlU5A4YE" role="2r_lH1">
                 <property role="Xl_RC" value="languageMap" />
               </node>
             </node>
             <node concept="2r$n1x" id="25MWlU5A4YF" role="2r_Bvh">
-              <ref role="2r$qp6" node="25MWlU5_SK2" />
+              <ref role="2r$qp6" node="25MWlU5_SK2" resolve="expressionPredicate" />
               <node concept="Xl_RD" id="25MWlU5A4YG" role="2r_lH1">
                 <property role="Xl_RC" value="constant" />
               </node>
@@ -565,7 +565,7 @@
           <node concept="3cpWsn" id="25MWlU5C7O4" role="3cpWs9">
             <property role="TrG5h" value="args" />
             <node concept="3uibUv" id="25MWlU5C7fS" role="1tU5fm">
-              <ref role="3uigEE" node="25MWlU5_RY6" />
+              <ref role="3uigEE" node="25MWlU5_RY6" resolve="ShortcutExpandArgs" />
             </node>
             <node concept="2OqwBi" id="25MWlU5C7O5" role="33vP2m">
               <node concept="37vLTw" id="25MWlU5C7O6" role="2Oq$k0">
@@ -659,7 +659,7 @@
                 <ref role="3cqZAo" node="25MWlU5C7O4" resolve="args" />
               </node>
               <node concept="2sxana" id="25MWlU5CfIg" role="2OqNvi">
-                <ref role="2sxfKC" node="25MWlU5_S2d" />
+                <ref role="2sxfKC" node="25MWlU5_S2d" resolve="newPredicate" />
               </node>
             </node>
             <node concept="2OqwBi" id="25MWlU5Ckmz" role="37wK5m">
@@ -667,7 +667,7 @@
                 <ref role="3cqZAo" node="25MWlU5C7O4" resolve="args" />
               </node>
               <node concept="2sxana" id="25MWlU5Cl0d" role="2OqNvi">
-                <ref role="2sxfKC" node="25MWlU5_SK2" />
+                <ref role="2sxfKC" node="25MWlU5_SK2" resolve="expressionPredicate" />
               </node>
             </node>
           </node>
@@ -823,7 +823,7 @@
                     <ref role="2Gs0qQ" node="25MWlU5AaOf" resolve="args" />
                   </node>
                   <node concept="2sxana" id="25MWlU5Agt7" role="2OqNvi">
-                    <ref role="2sxfKC" node="25MWlU5_YV8" />
+                    <ref role="2sxfKC" node="25MWlU5_YV8" resolve="oldPredicate" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="25MWlU5Aj2d" role="37wK5m">
@@ -831,7 +831,7 @@
                     <ref role="2Gs0qQ" node="25MWlU5AaOf" resolve="args" />
                   </node>
                   <node concept="2sxana" id="25MWlU5Akig" role="2OqNvi">
-                    <ref role="2sxfKC" node="25MWlU5_S2d" />
+                    <ref role="2sxfKC" node="25MWlU5_S2d" resolve="newPredicate" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="25MWlU5Amvs" role="37wK5m">
@@ -839,7 +839,7 @@
                     <ref role="2Gs0qQ" node="25MWlU5AaOf" resolve="args" />
                   </node>
                   <node concept="2sxana" id="25MWlU5AnJN" role="2OqNvi">
-                    <ref role="2sxfKC" node="25MWlU5_SK2" />
+                    <ref role="2sxfKC" node="25MWlU5_SK2" resolve="expressionPredicate" />
                   </node>
                 </node>
               </node>

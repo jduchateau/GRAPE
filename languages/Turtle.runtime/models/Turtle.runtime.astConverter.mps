@@ -1216,7 +1216,7 @@
               <node concept="2pJPED" id="5xuladF2ORV" role="2pJPEn">
                 <ref role="2pJxaS" to="16h3:2z4QKYxW8Ua" resolve="PrefixId" />
                 <node concept="2pIpSj" id="5xuladF2ORW" role="2pJxcM">
-                  <ref role="2pIpSl" to="16h3:6ONkOuOJEcS" resolve="iri" />
+                  <ref role="2pIpSl" to="16h3:6ONkOuOJEcS" resolve="namespace" />
                   <node concept="36biLy" id="5xuladF2ORX" role="28nt2d">
                     <node concept="1rXfSq" id="5xuladF2ORY" role="36biLW">
                       <ref role="37wK5l" node="6ONkOuONbrO" resolve="makeIriFull" />
@@ -1670,7 +1670,7 @@
             <node concept="3cpWs6" id="248lfK9BTcI" role="3cqZAp">
               <node concept="2pJPEk" id="248lfK9BTcJ" role="3cqZAk">
                 <node concept="2pJPED" id="248lfK9BTcK" role="2pJPEn">
-                  <ref role="2pJxaS" to="16h3:2z4QKYxWcd4" resolve="BlankNode" />
+                  <ref role="2pJxaS" to="16h3:2z4QKYxWcd4" resolve="BlankNodeName" />
                   <node concept="2pJxcG" id="248lfK9BTcL" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
                     <node concept="WxPPo" id="248lfK9BTcM" role="28ntcv">

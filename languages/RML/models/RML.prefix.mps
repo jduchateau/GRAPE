@@ -269,7 +269,7 @@
                       </node>
                     </node>
                     <node concept="2pIpSj" id="3UFA6ZbO1Dx" role="2pJxcM">
-                      <ref role="2pIpSl" to="16h3:6ONkOuOJEcS" resolve="iri" />
+                      <ref role="2pIpSl" to="16h3:6ONkOuOJEcS" resolve="namespace" />
                       <node concept="2pJPED" id="3UFA6ZbO1Dy" role="28nt2d">
                         <ref role="2pJxaS" to="16h3:2z4QKYxWcM6" resolve="IriFull" />
                         <node concept="2pJxcG" id="3UFA6ZbO1Dz" role="2pJxcM">

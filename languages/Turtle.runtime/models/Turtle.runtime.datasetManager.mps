@@ -225,7 +225,7 @@
       <property role="TrG5h" value="instance" />
       <node concept="3Tm6S6" id="3l3jG31o0oW" role="1B3o_S" />
       <node concept="3uibUv" id="3l3jG31o0pt" role="1tU5fm">
-        <ref role="3uigEE" node="6tKZDNaiTly" resolve="DatasetManager" />
+        <ref role="3uigEE" node="6tKZDNaiTly" resolve="RdfDatasetsManager" />
       </node>
     </node>
     <node concept="2YIFZL" id="3l3jG31o0qT" role="jymVt">
@@ -235,7 +235,7 @@
           <node concept="3cpWsn" id="3l3jG31o0vx" role="3cpWs9">
             <property role="TrG5h" value="manager" />
             <node concept="3uibUv" id="3l3jG31o0ty" role="1tU5fm">
-              <ref role="3uigEE" node="6tKZDNaiTly" resolve="DatasetManager" />
+              <ref role="3uigEE" node="6tKZDNaiTly" resolve="RdfDatasetsManager" />
             </node>
             <node concept="37vLTw" id="3l3jG31o0vy" role="33vP2m">
               <ref role="3cqZAo" node="3l3jG31o0pE" resolve="instance" />
@@ -274,7 +274,7 @@
                   <node concept="37vLTI" id="3l3jG31o1ed" role="3clFbG">
                     <node concept="2ShNRf" id="3l3jG31o1fu" role="37vLTx">
                       <node concept="1pGfFk" id="3l3jG31o3mD" role="2ShVmc">
-                        <ref role="37wK5l" node="3l3jG31o3jK" resolve="DatasetManager" />
+                        <ref role="37wK5l" node="3l3jG31o3jK" resolve="RdfDatasetsManager" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="3l3jG31o17g" role="37vLTJ">
@@ -294,7 +294,7 @@
       </node>
       <node concept="3Tm1VV" id="3l3jG31o0qc" role="1B3o_S" />
       <node concept="3uibUv" id="3l3jG31o0qE" role="3clF45">
-        <ref role="3uigEE" node="6tKZDNaiTly" resolve="DatasetManager" />
+        <ref role="3uigEE" node="6tKZDNaiTly" resolve="RdfDatasetsManager" />
       </node>
     </node>
     <node concept="2tJIrI" id="4U8KRdWPv8v" role="jymVt" />
@@ -325,6 +325,39 @@
     </node>
     <node concept="2tJIrI" id="2fsGeYB6nTI" role="jymVt" />
     <node concept="2tJIrI" id="2fsGeYB6nTJ" role="jymVt" />
+    <node concept="3clFb_" id="SvC7sQHqWJ" role="jymVt">
+      <property role="TrG5h" value="replaceDataset" />
+      <node concept="3clFbS" id="SvC7sQHqWK" role="3clF47">
+        <node concept="3clFbF" id="SvC7sQHDug" role="3cqZAp">
+          <node concept="2OqwBi" id="SvC7sQHF$b" role="3clFbG">
+            <node concept="37vLTw" id="SvC7sQHDuf" role="2Oq$k0">
+              <ref role="3cqZAo" node="2fsGeYB7d6F" resolve="dataset" />
+            </node>
+            <node concept="liA8E" id="SvC7sQHGmF" role="2OqNvi">
+              <ref role="37wK5l" to="sg7y:~Dataset.replaceNamedModel(java.lang.String,org.apache.jena.rdf.model.Model)" resolve="replaceNamedModel" />
+              <node concept="37vLTw" id="SvC7sQHP75" role="37wK5m">
+                <ref role="3cqZAo" node="SvC7sQHMKo" resolve="name" />
+              </node>
+              <node concept="37vLTw" id="SvC7sQHUdQ" role="37wK5m">
+                <ref role="3cqZAo" node="SvC7sQHKjd" resolve="model" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="SvC7sQHqWH" role="3clF45" />
+      <node concept="3Tm1VV" id="SvC7sQHqWI" role="1B3o_S" />
+      <node concept="37vLTG" id="SvC7sQHMKo" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="SvC7sQHOUz" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="SvC7sQHKjd" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="SvC7sQHKjc" role="1tU5fm">
+          <ref role="3uigEE" to="t6dh:~Model" resolve="Model" />
+        </node>
+      </node>
+    </node>
     <node concept="3clFb_" id="2fsGeYB6vna" role="jymVt">
       <property role="TrG5h" value="getDataset" />
       <node concept="3clFbS" id="2fsGeYB6vnd" role="3clF47">
@@ -379,7 +412,7 @@
         <node concept="3clFbH" id="4s9PdvyK_av" role="3cqZAp" />
       </node>
       <node concept="2AHcQZ" id="2fsGeYAUMPL" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="2fsGeYB6$ms" role="jymVt" />
@@ -456,7 +489,7 @@
           <node concept="3cpWsn" id="4U8KRdW_Rxh" role="3cpWs9">
             <property role="TrG5h" value="cacheDir" />
             <node concept="3uibUv" id="4U8KRdW_Rxj" role="1tU5fm">
-              <ref role="3uigEE" to="guwi:~File" resolve="java.io.File" />
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
             </node>
             <node concept="2ShNRf" id="4U8KRdW_SqH" role="33vP2m">
               <node concept="1pGfFk" id="4U8KRdW_Srv" role="2ShVmc">
@@ -577,7 +610,7 @@
                 <node concept="1rXfSq" id="7fyVMyCRKfy" role="33vP2m">
                   <ref role="37wK5l" node="7fyVMyCDNwP" resolve="downloadRdfFile" />
                   <node concept="37vLTw" id="7fyVMyCRMqU" role="37wK5m">
-                    <ref role="3cqZAo" node="3l3jG31YDUG" resolve="url" />
+                    <ref role="3cqZAo" node="3l3jG31YDUG" resolve="uri" />
                   </node>
                   <node concept="37vLTw" id="7fyVMyCRO3D" role="37wK5m">
                     <ref role="3cqZAo" node="4U8KRdWApWM" resolve="outputFile" />
@@ -593,7 +626,7 @@
                     <property role="2xdLsb" value="gZ5fh_4/error" />
                     <node concept="3cpWs3" id="7fyVMyCS4mB" role="9lYJi">
                       <node concept="37vLTw" id="7fyVMyCS4MK" role="3uHU7w">
-                        <ref role="3cqZAo" node="3l3jG31YDUG" resolve="url" />
+                        <ref role="3cqZAo" node="3l3jG31YDUG" resolve="uri" />
                       </node>
                       <node concept="Xl_RD" id="3l3jG31YFaw" role="3uHU7B">
                         <property role="Xl_RC" value="Failed to fetch the RDF data: " />
@@ -608,7 +641,7 @@
                   <property role="2xdLsb" value="h1akgim/info" />
                   <node concept="3cpWs3" id="4U8KRdWG9cn" role="9lYJi">
                     <node concept="37vLTw" id="4U8KRdWGcdl" role="3uHU7w">
-                      <ref role="3cqZAo" node="3l3jG31YDy4" resolve="urlString" />
+                      <ref role="3cqZAo" node="3l3jG31YDy4" resolve="iri" />
                     </node>
                     <node concept="3cpWs3" id="4U8KRdWFWTs" role="3uHU7B">
                       <node concept="3cpWs3" id="4U8KRdWFIA3" role="3uHU7B">
@@ -705,7 +738,7 @@
                       <node concept="liA8E" id="3l3jG31Z3yj" role="2OqNvi">
                         <ref role="37wK5l" to="ptfq:~RDFParserBuilder.lang(org.apache.jena.riot.Lang)" resolve="lang" />
                         <node concept="37vLTw" id="4U8KRdX5of7" role="37wK5m">
-                          <ref role="3cqZAo" node="4U8KRdX5of2" resolve="contentTypeToLang" />
+                          <ref role="3cqZAo" node="4U8KRdX5of2" resolve="lang" />
                         </node>
                       </node>
                     </node>
@@ -963,7 +996,7 @@
         <node concept="TUZQ0" id="7fyVMyCME3W" role="3nqlJM">
           <property role="TUZQ4" value="The URI from which to download the RDF file." />
           <node concept="zr_55" id="7fyVMyCME3Y" role="zr_5Q">
-            <ref role="zr_51" node="7fyVMyCDX0c" resolve="url" />
+            <ref role="zr_51" node="7fyVMyCDX0c" resolve="uri" />
           </node>
         </node>
         <node concept="TUZQ0" id="7fyVMyCME3Z" role="3nqlJM">

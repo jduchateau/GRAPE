@@ -335,7 +335,7 @@
         <node concept="17QB3L" id="5N3KvtC9YCf" role="3rvQeY" />
         <node concept="_YKpA" id="5N3KvtC9YFP" role="3rvSg0">
           <node concept="3uibUv" id="5N3KvtC9YJI" role="_ZDj9">
-            <ref role="3uigEE" node="1R$stKLDIbY" resolve="Parameter" />
+            <ref role="3uigEE" node="1R$stKLDIbY" resolve="FunctionInputParameter" />
           </node>
         </node>
       </node>
@@ -363,7 +363,7 @@
             <property role="TrG5h" value="cache" />
             <node concept="_YKpA" id="5N3KvtCbgzB" role="1tU5fm">
               <node concept="3uibUv" id="5N3KvtCbgzE" role="_ZDj9">
-                <ref role="3uigEE" node="1R$stKLDIbY" resolve="Parameter" />
+                <ref role="3uigEE" node="1R$stKLDIbY" resolve="FunctionInputParameter" />
               </node>
             </node>
             <node concept="3EllGN" id="5N3KvtCbi0a" role="33vP2m">
@@ -427,11 +427,11 @@
             <property role="TrG5h" value="parameters" />
             <node concept="_YKpA" id="5N3KvtCaAWe" role="1tU5fm">
               <node concept="3uibUv" id="5N3KvtCaAWh" role="_ZDj9">
-                <ref role="3uigEE" node="1R$stKLDIbY" resolve="Parameter" />
+                <ref role="3uigEE" node="1R$stKLDIbY" resolve="FunctionInputParameter" />
               </node>
             </node>
             <node concept="1rXfSq" id="5N3KvtCaEtN" role="33vP2m">
-              <ref role="37wK5l" node="5N3KvtC9YNB" resolve="getFunctionParameters" />
+              <ref role="37wK5l" node="5N3KvtC9YNB" resolve="queryFunctionParams" />
               <node concept="37vLTw" id="5N3KvtCaEtO" role="37wK5m">
                 <ref role="3cqZAo" node="5N3KvtCa3zm" resolve="fullId" />
               </node>
@@ -468,13 +468,13 @@
         </node>
         <node concept="3clFbF" id="5N3KvtCa3zx" role="3cqZAp">
           <node concept="37vLTw" id="5N3KvtCaEtU" role="3clFbG">
-            <ref role="3cqZAo" node="5N3KvtCaEtM" resolve="functionParameters" />
+            <ref role="3cqZAo" node="5N3KvtCaEtM" resolve="parameters" />
           </node>
         </node>
       </node>
       <node concept="_YKpA" id="5N3KvtCa3zE" role="3clF45">
         <node concept="3uibUv" id="5N3KvtCa3zF" role="_ZDj9">
-          <ref role="3uigEE" node="1R$stKLDIbY" resolve="Parameter" />
+          <ref role="3uigEE" node="1R$stKLDIbY" resolve="FunctionInputParameter" />
         </node>
       </node>
       <node concept="37vLTG" id="5N3KvtCa3zG" role="3clF46">
@@ -702,13 +702,13 @@
             <property role="TrG5h" value="parameters" />
             <node concept="2BANLN" id="5N3KvtC9YOS" role="1tU5fm">
               <node concept="3uibUv" id="5N3KvtC9YOT" role="_ZDj9">
-                <ref role="3uigEE" node="1R$stKLDIbY" resolve="Parameter" />
+                <ref role="3uigEE" node="1R$stKLDIbY" resolve="FunctionInputParameter" />
               </node>
             </node>
             <node concept="2ShNRf" id="5N3KvtC9YOU" role="33vP2m">
               <node concept="2Jqq0_" id="5N3KvtC9YOV" role="2ShVmc">
                 <node concept="3uibUv" id="5N3KvtC9YOW" role="HW$YZ">
-                  <ref role="3uigEE" node="1R$stKLDIbY" resolve="Parameter" />
+                  <ref role="3uigEE" node="1R$stKLDIbY" resolve="FunctionInputParameter" />
                 </node>
               </node>
             </node>
@@ -883,7 +883,7 @@
                           </node>
                           <node concept="TSZUe" id="5N3KvtC9YQm" role="2OqNvi">
                             <node concept="2ry78W" id="5N3KvtC9YQn" role="25WWJ7">
-                              <ref role="2ryb1Q" node="1R$stKLDIbY" resolve="Parameter" />
+                              <ref role="2ryb1Q" node="1R$stKLDIbY" resolve="FunctionInputParameter" />
                               <node concept="2r$n1x" id="5N3KvtC9YQo" role="2r_Bvh">
                                 <ref role="2r$qp6" node="1R$stKLDIce" resolve="name" />
                                 <node concept="37vLTw" id="5N3KvtC9YQp" role="2r_lH1">
@@ -897,7 +897,7 @@
                                 </node>
                               </node>
                               <node concept="2r$n1x" id="5N3KvtC9YQs" role="2r_Bvh">
-                                <ref role="2r$qp6" node="1R$stKLDIcp" resolve="type" />
+                                <ref role="2r$qp6" node="1R$stKLDIcp" resolve="typeIdentifier" />
                                 <node concept="2OqwBi" id="1h8QYeps2j" role="2r_lH1">
                                   <node concept="37vLTw" id="5N3KvtC9YQt" role="2Oq$k0">
                                     <ref role="3cqZAo" node="1h8QYeoZcf" resolve="type" />
@@ -981,7 +981,7 @@
       </node>
       <node concept="_YKpA" id="5N3KvtC9YQL" role="3clF45">
         <node concept="3uibUv" id="5N3KvtC9YQM" role="_ZDj9">
-          <ref role="3uigEE" node="1R$stKLDIbY" resolve="Parameter" />
+          <ref role="3uigEE" node="1R$stKLDIbY" resolve="FunctionInputParameter" />
         </node>
       </node>
       <node concept="37vLTG" id="5N3KvtC9YND" role="3clF46">

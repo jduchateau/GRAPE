@@ -86,12 +86,17 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
+      <concept id="7832771629084799699" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginVendor" flags="ng" index="2iUeEo">
+        <property id="7832771629084799702" name="name" index="2iUeEt" />
+        <property id="7832771629084799701" name="url" index="2iUeEu" />
+      </concept>
       <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
         <reference id="6592112598314586626" name="group" index="m$f5T" />
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="1359186315025500371" name="xml" index="20twgj" />
+        <child id="7832771629084912518" name="vendor" index="2iVFfd" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
@@ -238,6 +243,10 @@
           <property role="3o6i5n" value="com.intellij.modules.platform" />
         </node>
       </node>
+      <node concept="2iUeEo" id="uIuTxPbUTy" role="2iVFfd">
+        <property role="2iUeEt" value="Jakub Duchateau at ULiège" />
+        <property role="2iUeEu" value="https://uliege.be" />
+      </node>
     </node>
     <node concept="2G$12M" id="2CHbgKhgNaf" role="3989C9">
       <property role="TrG5h" value="RmlEditorLang" />
@@ -312,6 +321,11 @@
         <node concept="1SiIV0" id="5N3KvtBLjDB" role="3bR37C">
           <node concept="3bR9La" id="5N3KvtBLjDC" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="uIuTxOQGL1" role="3bR37C">
+          <node concept="3bR9La" id="uIuTxOQGL2" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
       </node>

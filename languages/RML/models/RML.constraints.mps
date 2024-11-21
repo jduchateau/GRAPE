@@ -76,14 +76,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1M2fIO" id="75xoT0k4cy$">
-    <property role="3GE5qa" value="LogicalIterator" />
-    <ref role="1M2myG" to="ys6r:5tSQ8xWQiR5" resolve="LogicalSourceNamedDef" />
-  </node>
-  <node concept="1M2fIO" id="75xoT0k8pVn">
-    <property role="3GE5qa" value="Source" />
-    <ref role="1M2myG" to="ys6r:5tSQ8xWQTYC" resolve="SourceNamedDef" />
-  </node>
   <node concept="1M2fIO" id="75xoT0kgf8r">
     <property role="3GE5qa" value="POM" />
     <ref role="1M2myG" to="ys6r:5tSQ8xWNmRs" resolve="ValueBasedObjectMap" />

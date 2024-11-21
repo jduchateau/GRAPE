@@ -16,11 +16,10 @@
       <concept id="2937713717140311174" name="Turtle.structure.IriFull" flags="ng" index="29d1u9">
         <property id="2937713717140311175" name="iri" index="29d1u8" />
       </concept>
-      <concept id="2937713717140308804" name="Turtle.structure.BlankNode" flags="ng" index="29d1xb" />
+      <concept id="2937713717140308804" name="Turtle.structure.BlankNodeName" flags="ng" index="29d1xb" />
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
         <property id="764855088606600268" name="emptyName" index="2v_DfE" />
-        <child id="1285627428970163393" name="fileUrl" index="3o_9Ik" />
-        <child id="7868724541386564408" name="iri" index="3pzv1Z" />
+        <child id="7868724541386564408" name="namespace" index="3pzv1Z" />
       </concept>
       <concept id="2937713717140295301" name="Turtle.structure.PrefixedName" flags="ng" index="29d5ma">
         <property id="2937713717140311172" name="name" index="29d1ub" />
@@ -74,9 +73,6 @@
       <property role="TrG5h" value="cj" />
       <node concept="29d1u9" id="17ntPn9gYMZ" role="3pzv1Z">
         <property role="29d1u8" value="https://www.cityjson.org/ont/cityjson.ttl#" />
-      </node>
-      <node concept="29d1u9" id="17ntPn9hvkY" role="3o_9Ik">
-        <property role="29d1u8" value="https://cdn.jsdelivr.net/gh/aly1551995/CityJSON-LD@main/Ontology/cityjson.ttl" />
       </node>
     </node>
     <node concept="29d5m5" id="17ntPn92NXR" role="29aKCU">

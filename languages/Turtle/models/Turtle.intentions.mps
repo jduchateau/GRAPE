@@ -3,16 +3,26 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
+    <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" />
+    <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="l9o4" ref="r:e4273218-7450-45c5-9cd5-20d845a8ca31(Turtle.runtime.parser)" />
+    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" implicit="true" />
   </imports>
   <registry>
+    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
+      <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -25,6 +35,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -55,6 +68,7 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -65,6 +79,9 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -135,6 +152,12 @@
       </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -613,6 +636,120 @@
             <node concept="1P9Npp" id="3llsBCcthKY" role="2OqNvi">
               <node concept="37vLTw" id="3llsBCcthKZ" role="1P9ThW">
                 <ref role="3cqZAo" node="3llsBCcthKF" resolve="newNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="SvC7sQHlw3">
+    <property role="TrG5h" value="ReloadRDF" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
+    <node concept="2S6ZIM" id="SvC7sQHlw4" role="2ZfVej">
+      <node concept="3clFbS" id="SvC7sQHlw5" role="2VODD2">
+        <node concept="3clFbF" id="SvC7sQHlKZ" role="3cqZAp">
+          <node concept="Xl_RD" id="SvC7sQHlKY" role="3clFbG">
+            <property role="Xl_RC" value="Refresh RDF" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="SvC7sQHlw6" role="2ZfgGD">
+      <node concept="3clFbS" id="SvC7sQHlw7" role="2VODD2">
+        <node concept="3cpWs8" id="SvC7sQI1Rg" role="3cqZAp">
+          <node concept="3cpWsn" id="SvC7sQI1Rh" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="SvC7sQI1QH" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="2YIFZM" id="SvC7sQI1Ri" role="33vP2m">
+              <ref role="37wK5l" to="alof:~ProjectHelper.getProject(org.jetbrains.mps.openapi.module.SRepository)" resolve="getProject" />
+              <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+              <node concept="2OqwBi" id="SvC7sQI1Rj" role="37wK5m">
+                <node concept="1XNTG" id="SvC7sQI1Rk" role="2Oq$k0" />
+                <node concept="liA8E" id="SvC7sQI1Rl" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2xdQw9" id="SvC7sQIoXd" role="3cqZAp">
+          <property role="2xdLsb" value="h1akgim/info" />
+          <node concept="3cpWs3" id="SvC7sQIsPY" role="9lYJi">
+            <node concept="Xl_RD" id="SvC7sQIseG" role="3uHU7w">
+              <property role="Xl_RC" value=") to RDF." />
+            </node>
+            <node concept="3cpWs3" id="SvC7sQIse$" role="3uHU7B">
+              <node concept="3cpWs3" id="SvC7sQIp1u" role="3uHU7B">
+                <node concept="3cpWs3" id="SvC7sQIqNc" role="3uHU7B">
+                  <node concept="2OqwBi" id="SvC7sQIrd0" role="3uHU7w">
+                    <node concept="2Sf5sV" id="SvC7sQIqNK" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="SvC7sQIrC2" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="SvC7sQIp1$" role="3uHU7B">
+                    <property role="Xl_RC" value="Prepare reloading TurtleDoc(" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="SvC7sQIseE" role="3uHU7w">
+                  <property role="Xl_RC" value=" from " />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="SvC7sQItRK" role="3uHU7w">
+                <node concept="37vLTw" id="SvC7sQItak" role="2Oq$k0">
+                  <ref role="3cqZAo" node="SvC7sQI1Rh" resolve="project" />
+                </node>
+                <node concept="liA8E" id="SvC7sQIuCb" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getName()" resolve="getName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="SvC7sQHZ9$" role="3cqZAp">
+          <node concept="2YIFZM" id="SvC7sQHZaJ" role="3clFbG">
+            <ref role="37wK5l" to="l9o4:SvC7sQHnx3" resolve="refresh" />
+            <ref role="1Pybhc" to="l9o4:5c3_2MtXFTk" resolve="TurtleToRDF" />
+            <node concept="37vLTw" id="SvC7sQI1ST" role="37wK5m">
+              <ref role="3cqZAo" node="SvC7sQI1Rh" resolve="project" />
+            </node>
+            <node concept="2Sf5sV" id="SvC7sQI1Uv" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="2xdQw9" id="SvC7sQIvf5" role="3cqZAp">
+          <property role="2xdLsb" value="h1akgim/info" />
+          <node concept="3cpWs3" id="SvC7sQIvf6" role="9lYJi">
+            <node concept="Xl_RD" id="SvC7sQIvf7" role="3uHU7w">
+              <property role="Xl_RC" value=") to RDF." />
+            </node>
+            <node concept="3cpWs3" id="SvC7sQIvf8" role="3uHU7B">
+              <node concept="3cpWs3" id="SvC7sQIvf9" role="3uHU7B">
+                <node concept="3cpWs3" id="SvC7sQIvfa" role="3uHU7B">
+                  <node concept="2OqwBi" id="SvC7sQIvfb" role="3uHU7w">
+                    <node concept="2Sf5sV" id="SvC7sQIvfc" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="SvC7sQIvfd" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="SvC7sQIvfe" role="3uHU7B">
+                    <property role="Xl_RC" value="Done reloading TurtleDoc(" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="SvC7sQIvff" role="3uHU7w">
+                  <property role="Xl_RC" value=" from " />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="SvC7sQIvfg" role="3uHU7w">
+                <node concept="37vLTw" id="SvC7sQIvfh" role="2Oq$k0">
+                  <ref role="3cqZAo" node="SvC7sQI1Rh" resolve="project" />
+                </node>
+                <node concept="liA8E" id="SvC7sQIvfi" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getName()" resolve="getName" />
+                </node>
               </node>
             </node>
           </node>

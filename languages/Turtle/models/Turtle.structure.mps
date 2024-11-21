@@ -171,7 +171,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="subject" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2z4QKYxWcd2" resolve="ISubject" />
+      <ref role="20lvS9" node="2z4QKYxWcd2" resolve="Subject" />
     </node>
     <node concept="1TJgyj" id="2z4QKYxWbCZ" role="1TKVEi">
       <property role="IQ2ns" value="2937713717140306495" />
@@ -360,7 +360,7 @@
     <property role="34LRSv" value="( collection )" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1p4Xe90hRmd" role="PzmwI">
-      <ref role="PrY4T" node="2z4QKYxWcd2" resolve="ISubject" />
+      <ref role="PrY4T" node="2z4QKYxWcd2" resolve="Subject" />
     </node>
     <node concept="PrWs8" id="1p4Xe90hRme" role="PzmwI">
       <ref role="PrY4T" node="2z4QKYxWdpG" resolve="Object" />
@@ -464,7 +464,7 @@
       <ref role="PrY4T" node="5tSQ8xWK1cS" resolve="RessourceIdentifier" />
     </node>
     <node concept="PrWs8" id="17ntPn9bc8i" role="PzmwI">
-      <ref role="PrY4T" node="2z4QKYxWcd2" resolve="ISubject" />
+      <ref role="PrY4T" node="2z4QKYxWcd2" resolve="Subject" />
     </node>
     <node concept="PrWs8" id="17ntPn9bc8j" role="PzmwI">
       <ref role="PrY4T" node="2z4QKYxWdpG" resolve="Object" />
