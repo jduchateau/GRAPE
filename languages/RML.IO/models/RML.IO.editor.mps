@@ -285,7 +285,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="75xoT0k3_Gi">
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="LogicalSource" />
     <ref role="1XX52x" to="qx9m:5iB6wpUzbK4" resolve="LogicalSourceDef" />
     <node concept="3EZMnI" id="75xoT0k3_Gk" role="6VMZX">
       <node concept="2iRkQZ" id="75xoT0k3_Gl" role="2iSdaV" />
@@ -405,7 +405,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5tSQ8xWQHBP">
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="LogicalSource" />
     <ref role="1XX52x" to="qx9m:5tSQ8xWQiR5" resolve="LogicalSourceNamedDef" />
     <node concept="3EZMnI" id="5tSQ8xWQHDP" role="6VMZX">
       <node concept="2iRkQZ" id="5tSQ8xWQHDQ" role="2iSdaV" />
@@ -482,7 +482,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7Y6GWuSSMhu">
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="LogicalSource" />
     <ref role="1XX52x" to="qx9m:5tSQ8xWQiR6" resolve="LogicalSourceReference" />
     <node concept="3EZMnI" id="75xoT0k3Nom" role="2wV5jI">
       <node concept="l2Vlx" id="75xoT0k3Non" role="2iSdaV" />
@@ -504,7 +504,7 @@
     </node>
   </node>
   <node concept="22mcaB" id="75xoT0k5xyI">
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="LogicalSource" />
     <ref role="aqKnT" to="qx9m:5tSQ8xWQiR6" resolve="LogicalSourceReference" />
     <node concept="22hDWj" id="75xoT0k5xyJ" role="22hAXT" />
     <node concept="3XHNnq" id="75xoT0k5xyK" role="3ft7WO">

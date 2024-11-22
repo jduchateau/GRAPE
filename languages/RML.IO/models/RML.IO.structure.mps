@@ -116,7 +116,7 @@
   <node concept="PlHQZ" id="5iB6wpUzbK4">
     <property role="EcuMT" value="6099872835424795652" />
     <property role="TrG5h" value="LogicalSourceDef" />
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="LogicalSource" />
     <node concept="1TJgyj" id="5tSQ8xWQHBE" role="1TKVEi">
       <property role="IQ2ns" value="6303025759226878442" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -139,7 +139,7 @@
   <node concept="1TIwiD" id="75xoT0k3_ow">
     <property role="EcuMT" value="8169920669489714720" />
     <property role="TrG5h" value="LogicalSourceInlineDef" />
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="LogicalSource" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="75xoT0k3_ox" role="PzmwI">
       <ref role="PrY4T" to="16h3:2z4QKYxWdpG" resolve="Object" />
@@ -154,7 +154,7 @@
   <node concept="1TIwiD" id="5tSQ8xWQiR5">
     <property role="EcuMT" value="6303025759226768837" />
     <property role="TrG5h" value="LogicalSourceNamedDef" />
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="LogicalSource" />
     <ref role="1TJDcQ" to="ys6r:25MWlU63704" resolve="NamedDefintionTriples" />
     <node concept="PrWs8" id="5tSQ8xWQuCM" role="PzmwI">
       <ref role="PrY4T" node="5iB6wpUzbK4" resolve="LogicalSourceDef" />
@@ -166,7 +166,7 @@
   <node concept="1TIwiD" id="5tSQ8xWQiR6">
     <property role="EcuMT" value="6303025759226768838" />
     <property role="TrG5h" value="LogicalSourceReference" />
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="LogicalSource" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5tSQ8xWQiR7" role="1TKVEi">
       <property role="IQ2ns" value="6303025759226768839" />

@@ -67,7 +67,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="22bbLClIsWN">
-    <property role="3GE5qa" value="LogicalIterator" />
+    <property role="3GE5qa" value="LogicalSource" />
     <ref role="13h7C2" to="qx9m:5iB6wpUzbK4" resolve="LogicalSourceDef" />
     <node concept="13hLZK" id="22bbLClIsWO" role="13h7CW">
       <node concept="3clFbS" id="22bbLClIsWP" role="2VODD2" />

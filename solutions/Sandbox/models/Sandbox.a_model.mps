@@ -32,7 +32,6 @@
       <concept id="2937713717140657263" name="Turtle.structure.RdfLiteralTypeAnnotation" flags="ng" index="29cGXw">
         <child id="2937713717140657267" name="iri" index="29cGXW" />
       </concept>
-      <concept id="2937713717140313708" name="Turtle.structure.Object" flags="ngI" index="29d0Pz" />
       <concept id="2937713717140311174" name="Turtle.structure.IriFull" flags="ng" index="29d1u9">
         <property id="2937713717140311175" name="iri" index="29d1u8" />
       </concept>
@@ -56,7 +55,6 @@
         <child id="2937713717140316189" name="object" index="29d3Gi" />
       </concept>
       <concept id="2937713717140306503" name="Turtle.structure.TypeVerb" flags="ng" index="29d658" />
-      <concept id="2937713717140306501" name="Turtle.structure.Verb" flags="ngI" index="29d65a" />
       <concept id="2937713717140306498" name="Turtle.structure.PredicateObject" flags="ng" index="29d65d">
         <child id="2937713717140306508" name="object" index="29d653" />
         <child id="2937713717140306507" name="verb" index="29d654" />
@@ -280,23 +278,7 @@
         <property role="29d1ub" value="Source" />
         <ref role="29d1uc" node="6T7chEgtZQ9" resolve="" />
       </node>
-      <node concept="3Y090L" id="pZc6UDfx8d" role="2JlPsR">
-        <node concept="29d65d" id="22bbLClGelF" role="3Y090Q">
-          <node concept="29d650" id="22bbLClGelG" role="29d653">
-            <node concept="29d0Pz" id="22bbLClGelH" role="29d3Gi" />
-          </node>
-          <node concept="29d65a" id="22bbLClGelI" role="29d654" />
-        </node>
-        <node concept="29d65d" id="22bbLClGelT" role="3Y090Q">
-          <node concept="29d650" id="22bbLClGelU" role="29d653">
-            <node concept="29d0Pz" id="22bbLClGelV" role="29d3Gi" />
-          </node>
-          <node concept="29d650" id="22bbLClGelX" role="29d653">
-            <node concept="29d0Pz" id="22bbLClGelY" role="29d3Gi" />
-          </node>
-          <node concept="29d65a" id="22bbLClGelW" role="29d654" />
-        </node>
-      </node>
+      <node concept="3Y090L" id="1C709xVnaF9" role="2JlPsR" />
     </node>
     <node concept="3DQ70j" id="25MWlU5MosV" role="lGtFl">
       <property role="3V$3am" value="statments" />
@@ -361,12 +343,6 @@
               </node>
             </node>
             <node concept="29d658" id="22bbLClH7mK" role="29d654" />
-          </node>
-          <node concept="29d65d" id="22bbLClH7mQ" role="3Y090Q">
-            <node concept="29d650" id="22bbLClH7mR" role="29d653">
-              <node concept="29d0Pz" id="22bbLClH7mS" role="29d3Gi" />
-            </node>
-            <node concept="29d65a" id="22bbLClH7mT" role="29d654" />
           </node>
         </node>
       </node>
