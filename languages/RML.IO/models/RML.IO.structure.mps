@@ -185,7 +185,7 @@
     <property role="EcuMT" value="468146138112354128" />
     <property role="3GE5qa" value="Source" />
     <property role="TrG5h" value="SourceInlineDef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="pZc6UDa6th" role="PzmwI">
       <ref role="PrY4T" node="5tSQ8xWQTYB" resolve="SourceDef" />
     </node>

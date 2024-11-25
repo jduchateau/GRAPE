@@ -64,6 +64,7 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="7667708318090725848" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentAnchorStyleClassItem" flags="ln" index="1Bsynf" />
+      <concept id="7667708318090877006" name="jetbrains.mps.lang.editor.structure.IndentLayoutWrapAnchorStyleClassItem" flags="ln" index="1Bt7hp" />
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
@@ -333,21 +334,6 @@
         <node concept="lj46D" id="75xoT0k3A0_" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="pVoyu" id="22bbLClIsxL" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-          <node concept="3nzxsE" id="22bbLClIsxN" role="3n$kyP">
-            <node concept="3clFbS" id="22bbLClIsxO" role="2VODD2">
-              <node concept="3clFbF" id="22bbLClI$DL" role="3cqZAp">
-                <node concept="2OqwBi" id="22bbLClI_hR" role="3clFbG">
-                  <node concept="pncrf" id="22bbLClI$DK" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="22bbLClI_Q3" role="2OqNvi">
-                    <ref role="37wK5l" to="2tc5:22bbLClItqu" resolve="shouldDisplayMultiline" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="l2Vlx" id="22bbLClH7mV" role="2iSdaV" />
         <node concept="3F0ifn" id="75xoT0k3A0$" role="3EZMnx">
           <property role="3F0ifm" value="from" />
@@ -402,6 +388,9 @@
         </node>
       </node>
       <node concept="l2Vlx" id="75xoT0k3A0H" role="2iSdaV" />
+      <node concept="1Bt7hp" id="KJ$AktwdE7" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="5tSQ8xWQHBP">
@@ -588,7 +577,7 @@
           <property role="3F0ifm" value="editor access" />
         </node>
         <node concept="3F1sOY" id="pZc6UDa6tO" role="3EZMnx">
-          <ref role="1NtTu8" to="qx9m:pZc6UDa6tl" />
+          <ref role="1NtTu8" to="qx9m:pZc6UDa6tl" resolve="access" />
         </node>
         <node concept="2iRfu4" id="pZc6UDa6tK" role="2iSdaV" />
       </node>

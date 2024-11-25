@@ -4,9 +4,7 @@
   <languages>
     <use id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle" version="0" />
   </languages>
-  <imports>
-    <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" />
-  </imports>
+  <imports />
   <registry>
     <language id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle">
       <concept id="2937713717140246833" name="Turtle.structure.TurtleDoc" flags="ng" index="29aKCY">
@@ -86,7 +84,7 @@
         </node>
         <node concept="29d65d" id="M0URkk9vZj" role="3Y090Q">
           <node concept="29d5ma" id="M0URkk9vZ3" role="29d654">
-            <property role="29d1ub" value="logicalSOurce" />
+            <property role="29d1ub" value="logicalSource" />
             <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
           </node>
           <node concept="29d650" id="M0URkk9vZi" role="29d653">

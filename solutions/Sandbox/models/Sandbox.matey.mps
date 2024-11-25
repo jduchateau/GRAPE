@@ -4,16 +4,16 @@
   <languages>
     <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="0" />
     <use id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle" version="0" />
-    <use id="4d376ef7-201b-4497-bbe5-6b936a6ab3d7" name="RML.FNML" version="0" />
     <use id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO" version="0" />
   </languages>
-  <imports>
-    <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" />
-  </imports>
+  <imports />
   <registry>
     <language id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle">
       <concept id="2937713717140246833" name="Turtle.structure.TurtleDoc" flags="ng" index="29aKCY">
         <child id="2937713717140246837" name="statments" index="29aKCU" />
+      </concept>
+      <concept id="2937713717140624470" name="Turtle.structure.RdfLiteral" flags="ng" index="29ckXp">
+        <property id="2937713717140624475" name="value" index="29ckXk" />
       </concept>
       <concept id="2937713717140311174" name="Turtle.structure.IriFull" flags="ng" index="29d1u9">
         <property id="2937713717140311175" name="iri" index="29d1u8" />
@@ -26,7 +26,16 @@
         <property id="2937713717140311172" name="name" index="29d1ub" />
         <reference id="2937713717140311171" name="prefix" index="29d1uc" />
       </concept>
-      <concept id="7946374057678053675" name="Turtle.structure.PredicateObjectList" flags="ng" index="3Y090L" />
+      <concept id="2937713717140306511" name="Turtle.structure.AnnotatedObject" flags="ng" index="29d650">
+        <child id="2937713717140316189" name="object" index="29d3Gi" />
+      </concept>
+      <concept id="2937713717140306498" name="Turtle.structure.PredicateObject" flags="ng" index="29d65d">
+        <child id="2937713717140306508" name="object" index="29d653" />
+        <child id="2937713717140306507" name="verb" index="29d654" />
+      </concept>
+      <concept id="7946374057678053675" name="Turtle.structure.PredicateObjectList" flags="ng" index="3Y090L">
+        <child id="7946374057678053676" name="list" index="3Y090Q" />
+      </concept>
     </language>
     <language id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO">
       <concept id="6303025759226768837" name="RML.IO.structure.LogicalSourceNamedDef" flags="ng" index="FCvld" />
@@ -42,6 +51,7 @@
         <child id="6303025759226878446" name="referenceFormulation" index="FCw5A" />
       </concept>
       <concept id="468146138112354128" name="RML.IO.structure.SourceInlineDef" flags="ng" index="2JlPsY" />
+      <concept id="8169920669489714720" name="RML.IO.structure.LogicalSourceInlineDef" flags="ng" index="1_rNmK" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -57,6 +67,16 @@
       </concept>
     </language>
     <language id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML">
+      <concept id="3543407481847299707" name="RML.structure.ReferencingObjectMap" flags="ng" index="28P8wJ">
+        <reference id="3543407481847299709" name="parentTriplesMap" index="28P8wD" />
+        <child id="3543407481847299714" name="joinCondition" index="28P8zm" />
+      </concept>
+      <concept id="3543407481847299716" name="RML.structure.JoinCondition" flags="ng" index="28P8zg">
+        <child id="3543407481847299718" name="childMap" index="28P8zi" />
+        <child id="3543407481847299719" name="parentMap" index="28P8zj" />
+      </concept>
+      <concept id="3543407481851128128" name="RML.structure.ParentMap" flags="ng" index="2b7xWk" />
+      <concept id="3543407481851128127" name="RML.structure.ChildMap" flags="ng" index="2b7xXF" />
       <concept id="2410254138872534997" name="RML.structure.NamedDefintionTriples" flags="ng" index="2$AQqb">
         <child id="2410254138872535855" name="identifier" index="2$AQDL" />
       </concept>
@@ -168,6 +188,194 @@
       </node>
       <node concept="FCvle" id="pZc6UDfx8c" role="IaUo4">
         <ref role="FCvlf" node="pZc6UD7Kfr" resolve="_:LSPeople" />
+      </node>
+    </node>
+  </node>
+  <node concept="29aKCY" id="KJ$AktwcE9">
+    <property role="TrG5h" value="Advanced_PeopleAndMovies" />
+    <node concept="29d5m5" id="KJ$AktwcEa" role="29aKCU">
+      <property role="TrG5h" value="ex" />
+      <node concept="29d1u9" id="KJ$AktwcEc" role="3pzv1Z">
+        <property role="29d1u8" value="http://example.org/" />
+      </node>
+    </node>
+    <node concept="29d5m5" id="KJ$Akt$cxA" role="29aKCU">
+      <property role="TrG5h" value="burp" />
+      <node concept="29d1u9" id="KJ$Akt$cxE" role="3pzv1Z">
+        <property role="29d1u8" value="http://w3id.org/burp/" />
+      </node>
+    </node>
+    <node concept="29d5m5" id="KJ$Akt$cxJ" role="29aKCU">
+      <property role="TrG5h" value="rml" />
+      <node concept="29d1u9" id="KJ$Akt$cxN" role="3pzv1Z">
+        <property role="29d1u8" value="http://w3id.org/rml/" />
+      </node>
+    </node>
+    <node concept="29d5m5" id="KJ$Akt$cxT" role="29aKCU">
+      <property role="TrG5h" value="foaf" />
+      <node concept="29d1u9" id="KJ$Akt$cxV" role="3pzv1Z">
+        <property role="29d1u8" value="http://xmlns.com/foaf/0.1/" />
+      </node>
+    </node>
+    <node concept="29d5m5" id="KJ$Akt$cyU" role="29aKCU">
+      <property role="TrG5h" value="schema" />
+      <node concept="29d1u9" id="KJ$Akt$cyY" role="3pzv1Z">
+        <property role="29d1u8" value="http://schema.org/" />
+      </node>
+    </node>
+    <node concept="29d5m5" id="Z8G4BA_o1d" role="29aKCU">
+      <property role="TrG5h" value="schema" />
+      <node concept="29d1u9" id="Z8G4BA_o1h" role="3pzv1Z">
+        <property role="29d1u8" value="http://schema.org/" />
+      </node>
+    </node>
+    <node concept="3DQ70j" id="KJ$Akt$cxS" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    </node>
+    <node concept="2YYitQ" id="KJ$AktwcEh" role="29aKCU">
+      <node concept="Ib$Ef" id="KJ$Akt$cxX" role="Ib$Ea">
+        <node concept="FHrll" id="KJ$Akt$cxY" role="FHrlg">
+          <node concept="IaUoN" id="KJ$Akt$cy3" role="FGdDe">
+            <node concept="29d5ma" id="KJ$Akt$cy1" role="FJIaS">
+              <property role="29d1ub" value="name" />
+              <ref role="29d1uc" node="KJ$AktwcEa" resolve="ex" />
+            </node>
+          </node>
+        </node>
+        <node concept="FHrlk" id="KJ$Akt$cy6" role="FHrli">
+          <node concept="IaUoZ" id="KJ$Akt$cy4" role="FGdDe">
+            <property role="FJGrp" value="firstname" />
+          </node>
+        </node>
+      </node>
+      <node concept="Ib$Ef" id="KJ$Akt$cyd" role="Ib$Ea">
+        <node concept="FHrll" id="KJ$Akt$cye" role="FHrlg">
+          <node concept="IaUoN" id="KJ$Akt$cyj" role="FGdDe">
+            <node concept="29d5ma" id="KJ$Akt$cyh" role="FJIaS">
+              <property role="29d1ub" value="likes" />
+              <ref role="29d1uc" node="KJ$AktwcEa" resolve="ex" />
+            </node>
+          </node>
+        </node>
+        <node concept="28P8wJ" id="KJ$Akt$cz0" role="FHrli">
+          <ref role="28P8wD" node="KJ$Akt$cyo" resolve="_:Movies" />
+          <node concept="28P8zg" id="KJ$Akt$czv" role="28P8zm">
+            <node concept="2b7xXF" id="KJ$Akt$czw" role="28P8zi">
+              <node concept="IaUoZ" id="KJ$Akt$cz$" role="FGdDe">
+                <property role="FJGrp" value="movie" />
+              </node>
+            </node>
+            <node concept="2b7xWk" id="KJ$Akt$czy" role="28P8zj">
+              <node concept="IaUoZ" id="KJ$Akt$czF" role="FGdDe">
+                <property role="FJGrp" value="slug" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_rNmK" id="KJ$AktwcEn" role="IaUo4">
+        <property role="FB9vU" value="$.person[*]" />
+        <node concept="2JlPsY" id="KJ$Akt$cxt" role="FCw5y">
+          <node concept="3Y090L" id="KJ$Akt$cxv" role="2JlPsR">
+            <node concept="29d65d" id="KJ$Akt$cxx" role="3Y090Q">
+              <node concept="29d650" id="KJ$Akt$cxy" role="29d653">
+                <node concept="29ckXp" id="KJ$Akt$cxH" role="29d3Gi">
+                  <property role="29ckXk" value="persons.json" />
+                </node>
+              </node>
+              <node concept="29d5ma" id="KJ$Akt$cxF" role="29d654">
+                <property role="29d1ub" value="relativePath" />
+                <ref role="29d1uc" node="KJ$Akt$cxA" resolve="burp" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="29d5ma" id="KJ$Akt$cxO" role="FCw5A">
+          <property role="29d1ub" value="JSONPath" />
+          <ref role="29d1uc" node="KJ$Akt$cxJ" resolve="rml" />
+        </node>
+      </node>
+      <node concept="IaUod" id="KJ$AktwcEj" role="2YYcL1">
+        <node concept="IaUoX" id="KJ$Akt$cxP" role="FGdDe">
+          <property role="IaUoT" value="person/${firstname}" />
+        </node>
+        <node concept="29d5ma" id="KJ$Akt$cxW" role="FGrfI">
+          <property role="29d1ub" value="Person" />
+          <ref role="29d1uc" node="KJ$Akt$cxT" resolve="foaf" />
+        </node>
+      </node>
+      <node concept="29d1xb" id="KJ$AktwcEm" role="2$AQDL">
+        <property role="TrG5h" value="Person" />
+      </node>
+    </node>
+    <node concept="3DQ70j" id="KJ$Akt$cym" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    </node>
+    <node concept="2YYitQ" id="KJ$Akt$cyo" role="29aKCU">
+      <node concept="1_rNmK" id="KJ$Akt$cyC" role="IaUo4">
+        <node concept="2JlPsY" id="KJ$Akt$cyF" role="FCw5y">
+          <node concept="3Y090L" id="KJ$Akt$cyH" role="2JlPsR">
+            <node concept="29d65d" id="KJ$Akt$cyJ" role="3Y090Q">
+              <node concept="29d650" id="KJ$Akt$cyK" role="29d653">
+                <node concept="29ckXp" id="KJ$Akt$cyP" role="29d3Gi">
+                  <property role="29ckXk" value="movies.csv" />
+                </node>
+              </node>
+              <node concept="29d5ma" id="KJ$Akt$cyN" role="29d654">
+                <property role="29d1ub" value="relativePath" />
+                <ref role="29d1uc" node="KJ$Akt$cxA" resolve="burp" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="29d5ma" id="KJ$Akt$cyQ" role="FCw5A">
+          <property role="29d1ub" value="CSV" />
+          <ref role="29d1uc" node="KJ$Akt$cxJ" resolve="rml" />
+        </node>
+      </node>
+      <node concept="IaUod" id="KJ$Akt$cyq" role="2YYcL1">
+        <node concept="IaUoX" id="KJ$Akt$cyR" role="FGdDe">
+          <property role="IaUoT" value="movie/${slug}" />
+        </node>
+        <node concept="29d5ma" id="KJ$Akt$cyZ" role="FGrfI">
+          <property role="29d1ub" value="Movie" />
+          <ref role="29d1uc" node="Z8G4BA_o1d" resolve="schema" />
+        </node>
+      </node>
+      <node concept="29d1xb" id="KJ$Akt$cyB" role="2$AQDL">
+        <property role="TrG5h" value="Movies" />
+      </node>
+      <node concept="Ib$Ef" id="KJ$Akt$cz6" role="Ib$Ea">
+        <node concept="FHrll" id="KJ$Akt$cz7" role="FHrlg">
+          <node concept="IaUoN" id="KJ$Akt$czc" role="FGdDe">
+            <node concept="29d5ma" id="KJ$Akt$cza" role="FJIaS">
+              <property role="29d1ub" value="name" />
+              <ref role="29d1uc" node="Z8G4BA_o1d" resolve="schema" />
+            </node>
+          </node>
+        </node>
+        <node concept="FHrlk" id="KJ$Akt$czf" role="FHrli">
+          <node concept="IaUoZ" id="KJ$Akt$czd" role="FGdDe">
+            <property role="FJGrp" value="title" />
+          </node>
+        </node>
+      </node>
+      <node concept="Ib$Ef" id="KJ$Akt$czh" role="Ib$Ea">
+        <node concept="FHrll" id="KJ$Akt$czi" role="FHrlg">
+          <node concept="IaUoN" id="KJ$Akt$czr" role="FGdDe">
+            <node concept="29d5ma" id="KJ$Akt$czp" role="FJIaS">
+              <property role="29d1ub" value="year" />
+              <ref role="29d1uc" node="KJ$AktwcEa" resolve="ex" />
+            </node>
+          </node>
+        </node>
+        <node concept="FHrlk" id="KJ$Akt$czu" role="FHrli">
+          <node concept="IaUoZ" id="KJ$Akt$czs" role="FGdDe">
+            <property role="FJGrp" value="year" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

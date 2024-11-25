@@ -17,9 +17,7 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" />
     <import index="7jzd" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model.impl(Turtle.runtime/)" />
-    <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
     <import index="4c5q" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.datatypes.xsd.impl(Turtle.runtime/)" />
-    <import index="8ias" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.graph(Turtle.runtime/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="75q8" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.datatypes.xsd(Turtle.runtime/)" implicit="true" />
   </imports>
@@ -1464,7 +1462,7 @@
                   <ref role="2Gs0qQ" node="55UoUlYa2Gn" resolve="predObjs" />
                 </node>
                 <node concept="3Tsc0h" id="55UoUlXWe3L" role="2OqNvi">
-                  <ref role="3TtcxE" to="16h3:2z4QKYxWbDc" />
+                  <ref role="3TtcxE" to="16h3:2z4QKYxWbDc" resolve="object" />
                 </node>
               </node>
               <node concept="3clFbS" id="55UoUlXWbqZ" role="2LFqv$">
@@ -1525,7 +1523,7 @@
                     <node concept="liA8E" id="55UoUlXWv_N" role="2OqNvi">
                       <ref role="37wK5l" to="t6dh:~Model.add(org.apache.jena.rdf.model.Statement)" resolve="add" />
                       <node concept="37vLTw" id="55UoUlYalnA" role="37wK5m">
-                        <ref role="3cqZAo" node="55UoUlYajps" resolve="stmt" />
+                        <ref role="3cqZAo" node="55UoUlYajps" resolve="statement" />
                       </node>
                     </node>
                   </node>
@@ -1806,24 +1804,7 @@
           </node>
           <node concept="2jNDYi" id="55UoUlXZfOu" role="2jNA6F">
             <node concept="9aQIb" id="55UoUlXZfOw" role="2jNDYt">
-              <node concept="3clFbS" id="55UoUlXZfOy" role="9aQI4">
-                <node concept="3cpWs6" id="55UoUlXZhPv" role="3cqZAp">
-                  <node concept="2OqwBi" id="55UoUlXZhSX" role="3cqZAk">
-                    <node concept="37vLTw" id="55UoUlXZhSY" role="2Oq$k0">
-                      <ref role="3cqZAo" node="55UoUlXZ3Md" resolve="model" />
-                    </node>
-                    <node concept="liA8E" id="55UoUlXZhSZ" role="2OqNvi">
-                      <ref role="37wK5l" to="t6dh:~ModelCon.createLiteral(java.lang.String)" resolve="createLiteral" />
-                      <node concept="2OqwBi" id="55UoUlXZhT0" role="37wK5m">
-                        <node concept="13iPFW" id="55UoUlXZhT1" role="2Oq$k0" />
-                        <node concept="3TrcHB" id="55UoUlXZhT2" role="2OqNvi">
-                          <ref role="3TsBF5" to="16h3:2z4QKYxXphr" resolve="value" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
+              <node concept="3clFbS" id="55UoUlXZfOy" role="9aQI4" />
             </node>
           </node>
           <node concept="aOSgX" id="55UoUlXZhe_" role="aOSgK">
@@ -1890,6 +1871,22 @@
               </node>
             </node>
             <node concept="aMNgE" id="55UoUlXZhhL" role="dK$qS" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="55UoUlXZhPv" role="3cqZAp">
+          <node concept="2OqwBi" id="55UoUlXZhSX" role="3cqZAk">
+            <node concept="37vLTw" id="55UoUlXZhSY" role="2Oq$k0">
+              <ref role="3cqZAo" node="55UoUlXZ3Md" resolve="model" />
+            </node>
+            <node concept="liA8E" id="55UoUlXZhSZ" role="2OqNvi">
+              <ref role="37wK5l" to="t6dh:~ModelCon.createLiteral(java.lang.String)" resolve="createLiteral" />
+              <node concept="2OqwBi" id="55UoUlXZhT0" role="37wK5m">
+                <node concept="13iPFW" id="55UoUlXZhT1" role="2Oq$k0" />
+                <node concept="3TrcHB" id="55UoUlXZhT2" role="2OqNvi">
+                  <ref role="3TsBF5" to="16h3:2z4QKYxXphr" resolve="value" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -2253,7 +2250,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="55UoUlYabD4" role="2OqNvi">
-              <ref role="37wK5l" node="55UoUlYa2wG" resolve="addPropertyObjectToSubject" />
+              <ref role="37wK5l" node="55UoUlYa2wG" resolve="addToSubject" />
               <node concept="37vLTw" id="55UoUlYabJf" role="37wK5m">
                 <ref role="3cqZAo" node="55UoUlY9EZ0" resolve="model" />
               </node>
@@ -2265,7 +2262,7 @@
         </node>
         <node concept="3clFbF" id="55UoUlY9YjU" role="3cqZAp">
           <node concept="37vLTw" id="55UoUlYa0Kv" role="3clFbG">
-            <ref role="3cqZAo" node="55UoUlYa0Kp" resolve="createResource" />
+            <ref role="3cqZAo" node="55UoUlYa0Kp" resolve="bnode" />
           </node>
         </node>
       </node>
