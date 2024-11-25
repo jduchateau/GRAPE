@@ -8,6 +8,9 @@
   </languages>
   <imports>
     <import index="qx9m" ref="r:5f21b94e-6c55-4230-951a-dc8170ceeb15(RML.IO.structure)" />
+    <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" />
+    <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -19,6 +22,7 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="1225194472832" name="isVirtual" index="13i0it" />
+        <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
@@ -27,12 +31,29 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -41,8 +62,19 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -63,6 +95,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -93,6 +133,154 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="55UoUlYLhu4">
+    <property role="3GE5qa" value="LogicalSource" />
+    <ref role="13h7C2" to="qx9m:75xoT0k3_ow" resolve="LogicalSourceInlineDef" />
+    <node concept="13hLZK" id="55UoUlYLhu5" role="13h7CW">
+      <node concept="3clFbS" id="55UoUlYLhu6" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="55UoUlYLhun" role="13h7CS">
+      <property role="TrG5h" value="convertObject" />
+      <ref role="13i0hy" to="4g9:55UoUlXVZUB" resolve="convertObject" />
+      <node concept="3Tm1VV" id="55UoUlYLhuo" role="1B3o_S" />
+      <node concept="3clFbS" id="55UoUlYLhut" role="3clF47">
+        <node concept="3SKdUt" id="55UoUlYLhw7" role="3cqZAp">
+          <node concept="1PaTwC" id="55UoUlYLhw8" role="1aUNEU">
+            <node concept="3oM_SD" id="55UoUlYLhw9" role="1PaTwD">
+              <property role="3oM_SC" value="TODO" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLlgz" role="1PaTwD">
+              <property role="3oM_SC" value="LogicalSourceInlineDef" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLlgO" role="1PaTwD">
+              <property role="3oM_SC" value="direct" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLlh5" role="1PaTwD">
+              <property role="3oM_SC" value="conversion" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLlh6" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLlhn" role="1PaTwD">
+              <property role="3oM_SC" value="RDFNode" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLli8" role="1PaTwD">
+              <property role="3oM_SC" value="(if" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLlkd" role="1PaTwD">
+              <property role="3oM_SC" value="generators" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLlku" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLlkv" role="1PaTwD">
+              <property role="3oM_SC" value="really" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLll0" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLll1" role="1PaTwD">
+              <property role="3oM_SC" value="slow)" />
+            </node>
+          </node>
+        </node>
+        <node concept="YS8fn" id="55UoUlYLkpA" role="3cqZAp">
+          <node concept="2ShNRf" id="55UoUlYLkpB" role="YScLw">
+            <node concept="1pGfFk" id="55UoUlYLkpC" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <node concept="Xl_RD" id="55UoUlYLkpD" role="37wK5m">
+                <property role="Xl_RC" value="TODO LogicalSourceInlineDef -&gt; RDFNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="55UoUlYLhuu" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="55UoUlYLhuv" role="1tU5fm">
+          <ref role="3uigEE" to="t6dh:~Model" resolve="Model" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="55UoUlYLhuw" role="3clF45">
+        <ref role="3uigEE" to="t6dh:~RDFNode" resolve="RDFNode" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="55UoUlYLhw$">
+    <property role="3GE5qa" value="LogicalSource" />
+    <ref role="13h7C2" to="qx9m:5tSQ8xWQiR6" resolve="LogicalSourceReference" />
+    <node concept="13hLZK" id="55UoUlYLhw_" role="13h7CW">
+      <node concept="3clFbS" id="55UoUlYLhwA" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="55UoUlYLhwR" role="13h7CS">
+      <property role="TrG5h" value="convertObject" />
+      <ref role="13i0hy" to="4g9:55UoUlXVZUB" resolve="convertObject" />
+      <node concept="3Tm1VV" id="55UoUlYLhwS" role="1B3o_S" />
+      <node concept="3clFbS" id="55UoUlYLhwX" role="3clF47">
+        <node concept="3SKdUt" id="55UoUlYLhxT" role="3cqZAp">
+          <node concept="1PaTwC" id="55UoUlYLhxU" role="1aUNEU">
+            <node concept="3oM_SD" id="55UoUlYLhxV" role="1PaTwD">
+              <property role="3oM_SC" value="TODO" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLjow" role="1PaTwD">
+              <property role="3oM_SC" value="LogicalSourceReference" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLjox" role="1PaTwD">
+              <property role="3oM_SC" value="direct" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLjoy" role="1PaTwD">
+              <property role="3oM_SC" value="conversion" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLjoz" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLl_s" role="1PaTwD">
+              <property role="3oM_SC" value="RDFNode" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLl_t" role="1PaTwD">
+              <property role="3oM_SC" value="(if" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLl_u" role="1PaTwD">
+              <property role="3oM_SC" value="generators" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLl_v" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLl_w" role="1PaTwD">
+              <property role="3oM_SC" value="really" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLl_x" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="55UoUlYLl_y" role="1PaTwD">
+              <property role="3oM_SC" value="slow)" />
+            </node>
+          </node>
+        </node>
+        <node concept="YS8fn" id="55UoUlYLhyU" role="3cqZAp">
+          <node concept="2ShNRf" id="55UoUlYLhJQ" role="YScLw">
+            <node concept="1pGfFk" id="55UoUlYLhPI" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <node concept="Xl_RD" id="55UoUlYLhTp" role="37wK5m">
+                <property role="Xl_RC" value="TODO LogicalSourceReference -&gt; RDFNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="55UoUlYLhwY" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="55UoUlYLhwZ" role="1tU5fm">
+          <ref role="3uigEE" to="t6dh:~Model" resolve="Model" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="55UoUlYLhx0" role="3clF45">
+        <ref role="3uigEE" to="t6dh:~RDFNode" resolve="RDFNode" />
       </node>
     </node>
   </node>

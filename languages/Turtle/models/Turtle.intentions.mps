@@ -16,6 +16,7 @@
     <import index="l9o4" ref="r:e4273218-7450-45c5-9cd5-20d845a8ca31(Turtle.runtime.parser)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="v1em" ref="r:16b78da9-9284-48a9-b286-7a5138f8d98f(Turtle.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -711,12 +712,9 @@
           </node>
         </node>
         <node concept="3clFbF" id="SvC7sQHZ9$" role="3cqZAp">
-          <node concept="2YIFZM" id="SvC7sQHZaJ" role="3clFbG">
-            <ref role="37wK5l" to="l9o4:SvC7sQHnx3" resolve="refresh" />
-            <ref role="1Pybhc" to="l9o4:5c3_2MtXFTk" resolve="TurtleToRDF" />
-            <node concept="37vLTw" id="SvC7sQI1ST" role="37wK5m">
-              <ref role="3cqZAo" node="SvC7sQI1Rh" resolve="project" />
-            </node>
+          <node concept="2YIFZM" id="55UoUlXIGkf" role="3clFbG">
+            <ref role="37wK5l" to="v1em:SvC7sQHnx3" resolve="refresh" />
+            <ref role="1Pybhc" to="v1em:5c3_2MtXFTk" resolve="TurtleToRDF" />
             <node concept="2Sf5sV" id="SvC7sQI1Uv" role="37wK5m" />
           </node>
         </node>
