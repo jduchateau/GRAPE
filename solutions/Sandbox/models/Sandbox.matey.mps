@@ -127,7 +127,7 @@
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>
     <node concept="FCvld" id="pZc6UD7Kfr" role="29aKCU">
-      <property role="FB9vU" value="$." />
+      <property role="FB9vU" value="$.persons[*]" />
       <node concept="29d1xb" id="pZc6UD7Kfu" role="2$AQDL">
         <property role="TrG5h" value="LSPeople" />
       </node>

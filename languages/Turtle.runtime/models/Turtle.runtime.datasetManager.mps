@@ -1049,10 +1049,5 @@
     </node>
     <node concept="3Tm1VV" id="3l3jG31oaeL" role="1B3o_S" />
   </node>
-  <node concept="312cEu" id="58i3qeVBnc">
-    <property role="TrG5h" value="TurtleParser" />
-    <node concept="3Tm1VV" id="58i3qeVBnd" role="1B3o_S" />
-    <node concept="2tJIrI" id="58i3qeVZpK" role="jymVt" />
-  </node>
 </model>
 
