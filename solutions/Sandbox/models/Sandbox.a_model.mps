@@ -124,9 +124,7 @@
       </concept>
       <concept id="6303025759225643729" name="RML.structure.LiteralTT" flags="ng" index="FGdDp" />
       <concept id="6303025759225643730" name="RML.structure.IriTT" flags="ng" index="FGdDq" />
-      <concept id="6303025759225998812" name="RML.structure.ValueBasedObjectMap" flags="ng" index="FHrlk">
-        <child id="8169920669493031450" name="annotation" index="1_8p6a" />
-      </concept>
+      <concept id="6303025759225998812" name="RML.structure.ValueBasedObjectMap" flags="ng" index="FHrlk" />
       <concept id="6303025759225998813" name="RML.structure.PredicateMap" flags="ng" index="FHrll" />
       <concept id="6099872835424795659" name="RML.structure.SubjectMap" flags="ng" index="IaUod">
         <child id="6303025759225736038" name="class" index="FGrfI" />
@@ -150,7 +148,6 @@
         <child id="6099872835424571532" name="predicateObjectMap" index="Ib$Ea" />
         <child id="3190666691956656690" name="subjectMap" index="2YYcL1" />
       </concept>
-      <concept id="8169920669493031448" name="RML.structure.LanguageMap" flags="ng" index="1_8p68" />
     </language>
   </registry>
   <node concept="29aKCY" id="2z4QKYxW8D7">
@@ -371,13 +368,6 @@
           </node>
         </node>
         <node concept="FHrlk" id="1R$stKLpttg" role="FHrli">
-          <node concept="1_8p68" id="1R$stKLsTfU" role="1_8p6a">
-            <node concept="IaUoN" id="1R$stKLsTwJ" role="FGdDe">
-              <node concept="29ckXp" id="3$pvt2gzDZW" role="FJIaS">
-                <property role="29ckXk" value="fr" />
-              </node>
-            </node>
-          </node>
           <node concept="FGdDp" id="1R$stKLDGxs" role="FGdD2" />
           <node concept="H3HQD" id="5c3_2MtXFYx" role="FGdDe">
             <node concept="H4ayu" id="5c3_2MtXFYz" role="H4ays">

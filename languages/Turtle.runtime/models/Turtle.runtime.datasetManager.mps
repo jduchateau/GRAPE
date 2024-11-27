@@ -324,40 +324,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2fsGeYB6nTI" role="jymVt" />
-    <node concept="2tJIrI" id="2fsGeYB6nTJ" role="jymVt" />
-    <node concept="3clFb_" id="SvC7sQHqWJ" role="jymVt">
-      <property role="TrG5h" value="replaceDataset" />
-      <node concept="3clFbS" id="SvC7sQHqWK" role="3clF47">
-        <node concept="3clFbF" id="SvC7sQHDug" role="3cqZAp">
-          <node concept="2OqwBi" id="SvC7sQHF$b" role="3clFbG">
-            <node concept="37vLTw" id="SvC7sQHDuf" role="2Oq$k0">
-              <ref role="3cqZAo" node="2fsGeYB7d6F" resolve="dataset" />
-            </node>
-            <node concept="liA8E" id="SvC7sQHGmF" role="2OqNvi">
-              <ref role="37wK5l" to="sg7y:~Dataset.replaceNamedModel(java.lang.String,org.apache.jena.rdf.model.Model)" resolve="replaceNamedModel" />
-              <node concept="37vLTw" id="SvC7sQHP75" role="37wK5m">
-                <ref role="3cqZAo" node="SvC7sQHMKo" resolve="name" />
-              </node>
-              <node concept="37vLTw" id="SvC7sQHUdQ" role="37wK5m">
-                <ref role="3cqZAo" node="SvC7sQHKjd" resolve="model" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3cqZAl" id="SvC7sQHqWH" role="3clF45" />
-      <node concept="3Tm1VV" id="SvC7sQHqWI" role="1B3o_S" />
-      <node concept="37vLTG" id="SvC7sQHMKo" role="3clF46">
-        <property role="TrG5h" value="name" />
-        <node concept="17QB3L" id="SvC7sQHOUz" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="SvC7sQHKjd" role="3clF46">
-        <property role="TrG5h" value="model" />
-        <node concept="3uibUv" id="SvC7sQHKjc" role="1tU5fm">
-          <ref role="3uigEE" to="t6dh:~Model" resolve="Model" />
-        </node>
-      </node>
-    </node>
     <node concept="3clFb_" id="2fsGeYB6vna" role="jymVt">
       <property role="TrG5h" value="getDataset" />
       <node concept="3clFbS" id="2fsGeYB6vnd" role="3clF47">
