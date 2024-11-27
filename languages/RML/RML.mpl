@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="RML" uuid="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" languageVersion="0" moduleVersion="0">
+<language namespace="RML" uuid="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" languageVersion="0" moduleVersion="1">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

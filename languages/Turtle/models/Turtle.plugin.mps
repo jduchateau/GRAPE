@@ -32,6 +32,8 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="5hed" ref="r:a8b1fda0-89ff-474b-ab43-cbd38563b06d(Turtle.runtime.prefixer)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="fy8e" ref="r:89c0fb70-0977-7777-a076-5906f9d8630f(jetbrains.mps.make.facets)" implicit="true" />
   </imports>
   <registry>
@@ -632,13 +634,13 @@
                                           </node>
                                         </node>
                                         <node concept="2r$n1x" id="7t9lQsl1o9v" role="2r_Bvh">
-                                          <ref role="2r$qp6" node="1C709xVuV2E" resolve="model" />
+                                          <ref role="2r$qp6" node="1C709xVuV2E" resolve="jenaModel" />
                                           <node concept="37vLTw" id="7t9lQsl1o9w" role="2r_lH1">
                                             <ref role="3cqZAo" node="7t9lQsl1o9n" resolve="jenaModel" />
                                           </node>
                                         </node>
                                         <node concept="2r$n1x" id="7t9lQsl1o9x" role="2r_Bvh">
-                                          <ref role="2r$qp6" node="1C709xVuV2M" resolve="name" />
+                                          <ref role="2r$qp6" node="1C709xVuV2M" resolve="docName" />
                                           <node concept="2OqwBi" id="7t9lQsl1o9y" role="2r_lH1">
                                             <node concept="37vLTw" id="7t9lQsl1o9z" role="2Oq$k0">
                                               <ref role="3cqZAo" node="7t9lQsl1o9H" resolve="it" />
@@ -681,7 +683,7 @@
                           </node>
                           <node concept="2OqwBi" id="7t9lQskXz8i" role="3uHU7w">
                             <node concept="37vLTw" id="7t9lQskXwrQ" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7t9lQsl1o8X" resolve="jenaModel" />
+                              <ref role="3cqZAo" node="7t9lQsl1o8X" resolve="namedRdfModels" />
                             </node>
                             <node concept="34oBXx" id="7t9lQskXA36" role="2OqNvi" />
                           </node>
@@ -736,7 +738,7 @@
       </node>
       <node concept="3D36IL" id="6yuUHoIpRet" role="3D36I4">
         <node concept="3D27Fh" id="6yuUHoIpReu" role="3D36IM">
-          <ref role="3uigEE" node="6yuUHoIpU5f" resolve="GenRdfModels" />
+          <ref role="3uigEE" node="6yuUHoIpU5f" resolve="RdfGenOutcomeResource" />
         </node>
       </node>
     </node>
@@ -1213,20 +1215,19 @@
                             </node>
                             <node concept="3clFbJ" id="7t9lQsl3C6e" role="3cqZAp">
                               <node concept="3clFbS" id="7t9lQsl3C6g" role="3clFbx">
-                                <node concept="3cpWs8" id="3Q3_FC7BZT4" role="3cqZAp">
-                                  <node concept="3cpWsn" id="3Q3_FC7BZT5" role="3cpWs9">
-                                    <property role="TrG5h" value="originNode" />
-                                    <node concept="3uibUv" id="3Q3_FC7BZby" role="1tU5fm">
-                                      <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
-                                    </node>
-                                    <node concept="2OqwBi" id="3Q3_FC7BZT6" role="33vP2m">
-                                      <node concept="37vLTw" id="3Q3_FC7BZT7" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="55UoUlXWrUZ" resolve="model" />
-                                      </node>
-                                      <node concept="liA8E" id="3Q3_FC7BZT8" role="2OqNvi">
-                                        <ref role="37wK5l" to="t6dh:~ModelCon.createProperty(java.lang.String)" resolve="createProperty" />
-                                        <node concept="Xl_RD" id="3Q3_FC7BZT9" role="37wK5m">
-                                          <property role="Xl_RC" value="http://uliege.be/turml/originNode" />
+                                <node concept="3cpWs8" id="7NlO_H3XgIV" role="3cqZAp">
+                                  <node concept="3cpWsn" id="7NlO_H3XgIW" role="3cpWs9">
+                                    <property role="TrG5h" value="nodeRef" />
+                                    <node concept="17QB3L" id="7NlO_H3Xk23" role="1tU5fm" />
+                                    <node concept="2YIFZM" id="7NlO_H403Yc" role="33vP2m">
+                                      <ref role="37wK5l" to="w1kc:~SNodePointer.serialize(org.jetbrains.mps.openapi.model.SNodeReference)" resolve="serialize" />
+                                      <ref role="1Pybhc" to="w1kc:~SNodePointer" resolve="SNodePointer" />
+                                      <node concept="2OqwBi" id="7NlO_H3XgIY" role="37wK5m">
+                                        <node concept="37vLTw" id="7NlO_H3XgIZ" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="3Q3_FC7x_fk" resolve="inputNode" />
+                                        </node>
+                                        <node concept="liA8E" id="7NlO_H3XgJ0" role="2OqNvi">
+                                          <ref role="37wK5l" to="mhbf:~SNode.getReference()" resolve="getReference" />
                                         </node>
                                       </node>
                                     </node>
@@ -1250,21 +1251,12 @@
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="37vLTw" id="3Q3_FC7C6hn" role="37wK5m">
-                                        <ref role="3cqZAo" node="3Q3_FC7BZT5" resolve="originNode" />
+                                      <node concept="10M0yZ" id="7NlO_H3VkFd" role="37wK5m">
+                                        <ref role="3cqZAo" to="5hed:7NlO_H3VhwB" resolve="originNode" />
+                                        <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="TuRML" />
                                       </node>
-                                      <node concept="2OqwBi" id="3Q3_FC7Cna4" role="37wK5m">
-                                        <node concept="2OqwBi" id="3Q3_FC7BvRX" role="2Oq$k0">
-                                          <node concept="37vLTw" id="3Q3_FC7BuhZ" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="3Q3_FC7x_fk" resolve="inputNode" />
-                                          </node>
-                                          <node concept="liA8E" id="3Q3_FC7BxO8" role="2OqNvi">
-                                            <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
-                                          </node>
-                                        </node>
-                                        <node concept="liA8E" id="3Q3_FC7Cqit" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
-                                        </node>
+                                      <node concept="37vLTw" id="7NlO_H3XgJ2" role="37wK5m">
+                                        <ref role="3cqZAo" node="7NlO_H3XgIW" resolve="nodeRef" />
                                       </node>
                                     </node>
                                   </node>
@@ -1357,7 +1349,7 @@
       <property role="TrG5h" value="rdfTextGen" />
       <node concept="15KeVb" id="29GCOLu4MBm" role="15LFui">
         <property role="3HPxAp" value="7fB872ucjBA/AFTER" />
-        <ref role="15KeV8" node="6yuUHoIpNHP" resolve="genRDF" />
+        <ref role="15KeV8" node="6yuUHoIpNHP" resolve="rdfGen" />
       </node>
       <node concept="2aLE7I" id="29GCOLu4J$c" role="ElM8M">
         <node concept="ElOhj" id="29GCOLu4J$d" role="2aLE7H">
@@ -1385,10 +1377,10 @@
                       <node concept="3cpWs3" id="29GCOLu50KK" role="1daK9t">
                         <node concept="2OqwBi" id="29GCOLu51Qb" role="3uHU7w">
                           <node concept="2GrUjf" id="29GCOLu50L8" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="29GCOLu4UZD" resolve="model" />
+                            <ref role="2Gs0qQ" node="29GCOLu4UZD" resolve="nModel" />
                           </node>
                           <node concept="2sxana" id="29GCOLu53a2" role="2OqNvi">
-                            <ref role="2sxfKC" node="1C709xVuV2M" resolve="name" />
+                            <ref role="2sxfKC" node="1C709xVuV2M" resolve="docName" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="29GCOLu4ZKD" role="3uHU7B">
@@ -1463,10 +1455,10 @@
                           <node concept="3cpWs3" id="7t9lQsl7iRp" role="3uHU7B">
                             <node concept="2OqwBi" id="7t9lQsl6rTM" role="3uHU7w">
                               <node concept="2GrUjf" id="7t9lQsl6qQS" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="29GCOLu4UZD" resolve="model" />
+                                <ref role="2Gs0qQ" node="29GCOLu4UZD" resolve="nModel" />
                               </node>
                               <node concept="2sxana" id="7t9lQsl6tIA" role="2OqNvi">
-                                <ref role="2sxfKC" node="1C709xVuV2M" resolve="name" />
+                                <ref role="2sxfKC" node="1C709xVuV2M" resolve="docName" />
                               </node>
                             </node>
                             <node concept="3cpWs3" id="7t9lQsl7T4g" role="3uHU7B">
@@ -1523,7 +1515,7 @@
                                           <ref role="2Gs0qQ" node="29GCOLu4UZD" resolve="nModel" />
                                         </node>
                                         <node concept="2sxana" id="7t9lQslg9Wu" role="2OqNvi">
-                                          <ref role="2sxfKC" node="1C709xVuV2M" resolve="name" />
+                                          <ref role="2sxfKC" node="1C709xVuV2M" resolve="docName" />
                                         </node>
                                       </node>
                                     </node>
@@ -1556,10 +1548,10 @@
                             </node>
                             <node concept="2OqwBi" id="29GCOLu7i0A" role="37wK5m">
                               <node concept="2GrUjf" id="29GCOLu7i0B" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="29GCOLu4UZD" resolve="model" />
+                                <ref role="2Gs0qQ" node="29GCOLu4UZD" resolve="nModel" />
                               </node>
                               <node concept="2sxana" id="29GCOLu7i0C" role="2OqNvi">
-                                <ref role="2sxfKC" node="1C709xVuV2E" resolve="model" />
+                                <ref role="2sxfKC" node="1C709xVuV2E" resolve="jenaModel" />
                               </node>
                             </node>
                             <node concept="10M0yZ" id="6eCVKKCcXef" role="37wK5m">
@@ -1577,10 +1569,10 @@
                                 </node>
                                 <node concept="2OqwBi" id="6eCVKKCgmCJ" role="3uHU7w">
                                   <node concept="2GrUjf" id="6eCVKKCglsS" role="2Oq$k0">
-                                    <ref role="2Gs0qQ" node="29GCOLu4UZD" resolve="model" />
+                                    <ref role="2Gs0qQ" node="29GCOLu4UZD" resolve="nModel" />
                                   </node>
                                   <node concept="2sxana" id="6eCVKKCgqP2" role="2OqNvi">
-                                    <ref role="2sxfKC" node="1C709xVuV2M" resolve="name" />
+                                    <ref role="2sxfKC" node="1C709xVuV2M" resolve="docName" />
                                   </node>
                                 </node>
                               </node>
@@ -1620,7 +1612,7 @@
       </node>
       <node concept="3D36IL" id="29GCOLu4JL0" role="3D36I5">
         <node concept="3D27Fh" id="29GCOLu4JL1" role="3D36IM">
-          <ref role="3uigEE" node="6yuUHoIpU5f" resolve="GenRdfModels" />
+          <ref role="3uigEE" node="6yuUHoIpU5f" resolve="RdfGenOutcomeResource" />
         </node>
       </node>
     </node>
@@ -1659,7 +1651,7 @@
                             <ref role="2Gs0qQ" node="3Q3_FC7EqTD" resolve="model" />
                           </node>
                           <node concept="2sxana" id="3Q3_FC7EqTM" role="2OqNvi">
-                            <ref role="2sxfKC" node="1C709xVuV2M" resolve="name" />
+                            <ref role="2sxfKC" node="1C709xVuV2M" resolve="docName" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="3Q3_FC7EqTN" role="3uHU7B">
@@ -1702,7 +1694,7 @@
                                       <ref role="2Gs0qQ" node="3Q3_FC7EqTD" resolve="model" />
                                     </node>
                                     <node concept="2sxana" id="7t9lQslgyjX" role="2OqNvi">
-                                      <ref role="2sxfKC" node="1C709xVuV2M" resolve="name" />
+                                      <ref role="2sxfKC" node="1C709xVuV2M" resolve="docName" />
                                     </node>
                                   </node>
                                 </node>
@@ -1723,14 +1715,14 @@
                             <ref role="37wK5l" to="ptfq:~RDFDataMgr.write(java.io.StringWriter,org.apache.jena.rdf.model.Model,org.apache.jena.riot.Lang)" resolve="write" />
                             <ref role="1Pybhc" to="ptfq:~RDFDataMgr" resolve="RDFDataMgr" />
                             <node concept="37vLTw" id="3Q3_FC7EqU3" role="37wK5m">
-                              <ref role="3cqZAo" node="3Q3_FC7EqUw" resolve="outputStream" />
+                              <ref role="3cqZAo" node="3Q3_FC7EqUw" resolve="stringWriter" />
                             </node>
                             <node concept="2OqwBi" id="3Q3_FC7EqU4" role="37wK5m">
                               <node concept="2GrUjf" id="3Q3_FC7EqU5" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="3Q3_FC7EqTD" resolve="model" />
                               </node>
                               <node concept="2sxana" id="3Q3_FC7EqU6" role="2OqNvi">
-                                <ref role="2sxfKC" node="1C709xVuV2E" resolve="model" />
+                                <ref role="2sxfKC" node="1C709xVuV2E" resolve="jenaModel" />
                               </node>
                             </node>
                             <node concept="10M0yZ" id="3Q3_FC7EqU7" role="37wK5m">
@@ -1750,7 +1742,7 @@
                                   <ref role="2Gs0qQ" node="3Q3_FC7EqTD" resolve="model" />
                                 </node>
                                 <node concept="2sxana" id="3Q3_FC7EqUf" role="2OqNvi">
-                                  <ref role="2sxfKC" node="1C709xVuV2M" resolve="name" />
+                                  <ref role="2sxfKC" node="1C709xVuV2M" resolve="docName" />
                                 </node>
                               </node>
                             </node>
@@ -1769,7 +1761,7 @@
                                   <ref role="2Gs0qQ" node="3Q3_FC7EqTD" resolve="model" />
                                 </node>
                                 <node concept="2sxana" id="3Q3_FC7EGLR" role="2OqNvi">
-                                  <ref role="2sxfKC" node="1C709xVuV2M" resolve="name" />
+                                  <ref role="2sxfKC" node="1C709xVuV2M" resolve="docName" />
                                 </node>
                               </node>
                             </node>
@@ -1810,7 +1802,7 @@
       </node>
       <node concept="3D36IL" id="3Q3_FC71mTL" role="3D36I5">
         <node concept="3D27Fh" id="3Q3_FC71mTM" role="3D36IM">
-          <ref role="3uigEE" node="6yuUHoIpU5f" resolve="GenRdfModels" />
+          <ref role="3uigEE" node="6yuUHoIpU5f" resolve="RdfGenOutcomeResource" />
         </node>
       </node>
       <node concept="3D36IL" id="3Q3_FC7n0iE" role="3D36I4">
@@ -1862,7 +1854,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="3Q3_FC7n6Qg" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>

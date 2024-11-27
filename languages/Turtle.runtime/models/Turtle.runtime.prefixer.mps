@@ -94,7 +94,9 @@
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
-      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <property id="1221565133444" name="isFinal" index="1EXbeo" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -1700,6 +1702,55 @@
     <node concept="2pR195" id="1h8QYewvfJ" role="2d5$Xr">
       <ref role="3uigEE" node="41P2F0Gl3vh" resolve="RessourceInNamespace" />
     </node>
+  </node>
+  <node concept="312cEu" id="7NlO_H3Vhiq">
+    <property role="1EXbeo" value="true" />
+    <property role="TrG5h" value="TuRML" />
+    <node concept="Wx3nA" id="7NlO_H3VhjE" role="jymVt">
+      <property role="TrG5h" value="NS" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7NlO_H3Vhj2" role="1B3o_S" />
+      <node concept="17QB3L" id="7NlO_H3Vhjw" role="1tU5fm" />
+      <node concept="Xl_RD" id="7NlO_H3Vhki" role="33vP2m">
+        <property role="Xl_RC" value="http://uliege.be/turml/" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7NlO_H3VhwB" role="jymVt">
+      <property role="TrG5h" value="originNode" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="7NlO_H3VhwC" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
+      </node>
+      <node concept="2YIFZM" id="7NlO_H3Vhxs" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createProperty(java.lang.String)" resolve="createProperty" />
+        <node concept="3cpWs3" id="7NlO_H3Vhxt" role="37wK5m">
+          <node concept="37vLTw" id="7NlO_H3Vhxu" role="3uHU7B">
+            <ref role="3cqZAo" node="7NlO_H3VhjE" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="7NlO_H3Vhxv" role="3uHU7w">
+            <property role="Xl_RC" value="originNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7NlO_H3VhwH" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="7NlO_H3VhmN" role="jymVt" />
+    <node concept="Wx3nA" id="7NlO_H3VhSX" role="jymVt">
+      <property role="TrG5h" value="NS_Graph_Default" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7NlO_H3VhRj" role="1B3o_S" />
+      <node concept="17QB3L" id="7NlO_H3VhSF" role="1tU5fm" />
+      <node concept="3cpWs3" id="7NlO_H3Vj0p" role="33vP2m">
+        <node concept="Xl_RD" id="7NlO_H3Vj0$" role="3uHU7w">
+          <property role="Xl_RC" value="graph/" />
+        </node>
+        <node concept="37vLTw" id="7NlO_H3Vi0c" role="3uHU7B">
+          <ref role="3cqZAo" node="7NlO_H3VhjE" resolve="NS" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="7NlO_H3Vhir" role="1B3o_S" />
   </node>
 </model>
 

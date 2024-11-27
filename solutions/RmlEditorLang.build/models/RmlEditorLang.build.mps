@@ -849,6 +849,44 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7PPLA3R2PEz" role="3bR37C">
+          <node concept="1BurEX" id="7PPLA3R2PE$" role="1SiIV1">
+            <node concept="55IIr" id="7PPLA3R2PEu" role="1BurEY">
+              <node concept="2Ry0Ak" id="7PPLA3R2PEv" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7PPLA3R2PEw" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.runtime" />
+                  <node concept="2Ry0Ak" id="7PPLA3R2PEx" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7PPLA3R2PEy" role="2Ry0An">
+                      <property role="2Ry0Am" value="jena-shacl.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5XzZTwunvHq" role="3bR37C">
+          <node concept="3bR9La" id="5XzZTwunvHr" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ZViq9oppal" resolve="jetbrains.mps.make.facets" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5XzZTwunvHs" role="3bR37C">
+          <node concept="3bR9La" id="5XzZTwunvHt" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5XzZTwunvHu" role="3bR37C">
+          <node concept="3bR9La" id="5XzZTwunvHv" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5XzZTwunvHw" role="3bR37C">
+          <node concept="3bR9La" id="5XzZTwunvHx" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2CHbgKhgNae" role="2G$12L">
         <property role="TrG5h" value="TurtlePlugin" />

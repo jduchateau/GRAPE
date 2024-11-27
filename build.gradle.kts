@@ -38,6 +38,7 @@ stubs {
         dependency("org.apache.jena:jena-arq:$jenaVersion")
         dependency("org.apache.jena:jena-querybuilder:$jenaVersion")
         dependency("org.apache.jena:jena-rdfconnection:$jenaVersion")
+        dependency("org.apache.jena:jena-shacl:$jenaVersion")
         dependency("org.apache.httpcomponents.client5:httpclient5:5.4.1")
     }
 }
