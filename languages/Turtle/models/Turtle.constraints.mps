@@ -155,7 +155,7 @@
               <property role="TrG5h" value="triples" />
               <node concept="A3Dl8" id="17ntPn9iJIR" role="1tU5fm">
                 <node concept="3Tqbb2" id="17ntPn9iJIU" role="A3Ik2">
-                  <ref role="ehGHo" to="16h3:2z4QKYxVX4W" resolve="Triples" />
+                  <ref role="ehGHo" to="16h3:2z4QKYxVX4W" resolve="TriplesStatment" />
                 </node>
               </node>
               <node concept="2OqwBi" id="17ntPn9iJM7" role="33vP2m">
@@ -176,7 +176,7 @@
                 </node>
                 <node concept="v3k3i" id="17ntPn9iJMf" role="2OqNvi">
                   <node concept="chp4Y" id="25MWlU5Tg_d" role="v3oSu">
-                    <ref role="cht4Q" to="16h3:2z4QKYxVX4W" resolve="Triples" />
+                    <ref role="cht4Q" to="16h3:2z4QKYxVX4W" resolve="TriplesStatment" />
                   </node>
                 </node>
               </node>
@@ -272,6 +272,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="n6bVFlY4AF">
+    <ref role="1M2myG" to="16h3:2L7xBeiM5zR" resolve="BlankNodePropertyList" />
   </node>
 </model>
 

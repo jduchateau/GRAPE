@@ -276,7 +276,6 @@
         <property id="6332851714983843871" name="severity" index="2xdLsb" />
         <child id="5721587534047265374" name="message" index="9lYJi" />
         <child id="5721587534047265375" name="throwable" index="9lYJj" />
-        <child id="2096919206290089922" name="hint" index="1wxasE" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1488,30 +1487,6 @@
                                   <ref role="3cqZAo" node="7PPLA3Rltp1" resolve="resolve" />
                                 </node>
                               </node>
-                            </node>
-                          </node>
-                          <node concept="2xdQw9" id="7PPLA3Rm638" role="3cqZAp">
-                            <property role="2xdLsb" value="h1akgim/info" />
-                            <node concept="3cpWs3" id="7PPLA3RmnXq" role="9lYJi">
-                              <node concept="37vLTw" id="7PPLA3Rmpyr" role="3uHU7w">
-                                <ref role="3cqZAo" node="7PPLA3Rltp1" resolve="resolve" />
-                              </node>
-                              <node concept="3cpWs3" id="7PPLA3Rmi42" role="3uHU7B">
-                                <node concept="3cpWs3" id="7PPLA3RmeMd" role="3uHU7B">
-                                  <node concept="Xl_RD" id="7PPLA3Rm63a" role="3uHU7B">
-                                    <property role="Xl_RC" value="ORIGIN OF " />
-                                  </node>
-                                  <node concept="37vLTw" id="7PPLA3Rmgmh" role="3uHU7w">
-                                    <ref role="3cqZAo" node="7PPLA3Rj$cg" resolve="rdfNode" />
-                                  </node>
-                                </node>
-                                <node concept="Xl_RD" id="7PPLA3RmjBI" role="3uHU7w">
-                                  <property role="Xl_RC" value=" IS " />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="37vLTw" id="7PPLA3RoClh" role="1wxasE">
-                              <ref role="3cqZAo" node="7PPLA3Rltp1" resolve="resolve" />
                             </node>
                           </node>
                         </node>

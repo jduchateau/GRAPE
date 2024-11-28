@@ -89,7 +89,7 @@
   </node>
   <node concept="1TIwiD" id="2z4QKYxVX4W">
     <property role="EcuMT" value="2937713717140246844" />
-    <property role="TrG5h" value="Triples" />
+    <property role="TrG5h" value="TriplesStatment" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="Triples" />
     <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statment" />
@@ -165,7 +165,7 @@
     <property role="3GE5qa" value="Triples" />
     <property role="TrG5h" value="SubjectTriples" />
     <property role="34LRSv" value="subject (verb object)* ." />
-    <ref role="1TJDcQ" node="2z4QKYxVX4W" resolve="Triples" />
+    <ref role="1TJDcQ" node="2z4QKYxVX4W" resolve="TriplesStatment" />
     <node concept="1TJgyj" id="2z4QKYxWbCY" role="1TKVEi">
       <property role="IQ2ns" value="2937713717140306494" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -179,6 +179,9 @@
       <property role="20kJfa" value="predicateObjectList" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6T7chEghU4F" resolve="PredicateObjectList" />
+    </node>
+    <node concept="PrWs8" id="n6bVFlXZDL" role="PzmwI">
+      <ref role="PrY4T" node="n6bVFlXZi_" resolve="Triples" />
     </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxWbD2">
@@ -233,6 +236,7 @@
   <node concept="PlHQZ" id="2z4QKYxWcd2">
     <property role="TrG5h" value="Subject" />
     <property role="EcuMT" value="2937713717140295287" />
+    <property role="3GE5qa" value="RDF" />
     <node concept="PrWs8" id="5tSQ8xWOxe0" role="PrDN$">
       <ref role="PrY4T" node="5tSQ8xWLzCN" resolve="ConstValue" />
     </node>
@@ -264,6 +268,7 @@
   <node concept="PlHQZ" id="2z4QKYxWdpG">
     <property role="EcuMT" value="2937713717140313708" />
     <property role="TrG5h" value="Object" />
+    <property role="3GE5qa" value="RDF" />
     <node concept="PrWs8" id="5tSQ8xWOxdY" role="PrDN$">
       <ref role="PrY4T" node="5tSQ8xWLzCN" resolve="ConstValue" />
     </node>
@@ -569,6 +574,11 @@
   <node concept="PlHQZ" id="2fsGeYBaac1">
     <property role="TrG5h" value="RessourceIdentifierPrefixed" />
     <property role="EcuMT" value="2584134829551952641" />
+  </node>
+  <node concept="PlHQZ" id="n6bVFlXZi_">
+    <property role="EcuMT" value="416072495078569125" />
+    <property role="TrG5h" value="Triples" />
+    <property role="3GE5qa" value="RDF" />
   </node>
 </model>
 

@@ -959,19 +959,9 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7t9lQskU2Jt" role="3bR37C">
-          <node concept="3bR9La" id="7t9lQskU2Ju" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:rD7wKO5Iy" resolve="MPS.TextGen" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7t9lQskU2Jv" role="3bR37C">
           <node concept="3bR9La" id="7t9lQskU2Jw" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7t9lQskU2Jx" role="3bR37C">
-          <node concept="3bR9La" id="7t9lQskU2Jy" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
         <node concept="1SiIV0" id="7t9lQskU2Jz" role="3bR37C">

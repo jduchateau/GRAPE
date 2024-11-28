@@ -575,6 +575,7 @@
   <node concept="2ZfgGJ" id="3llsBCcf0VV">
     <property role="TrG5h" value="SuroundObjectByBlankNodePropertyList" />
     <property role="2ZfUl0" value="true" />
+    <property role="3GE5qa" value="RDF" />
     <ref role="2ZfgGC" to="16h3:2z4QKYxWdpG" resolve="Object" />
     <node concept="2S6ZIM" id="3llsBCcf0VW" role="2ZfVej">
       <node concept="3clFbS" id="3llsBCcf0VX" role="2VODD2">

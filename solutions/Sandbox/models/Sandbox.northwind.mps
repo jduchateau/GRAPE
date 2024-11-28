@@ -87,40 +87,84 @@
             <property role="29d1ub" value="logicalSource" />
             <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
           </node>
-          <node concept="29d650" id="M0URkk9vZi" role="29d653">
-            <node concept="2YzXU4" id="M0URkk9vZh" role="29d3Gi">
-              <node concept="3Y090L" id="M0URkk9vZ4" role="2YzXXJ">
-                <node concept="29d65d" id="M0URkk9vZ8" role="3Y090Q">
-                  <node concept="29d5ma" id="M0URkk9vZ5" role="29d654">
-                    <property role="29d1ub" value="tableSchema" />
-                    <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
-                  </node>
-                  <node concept="29d650" id="M0URkk9vZ7" role="29d653">
-                    <node concept="29ckXp" id="M0URkk9vZ6" role="29d3Gi">
-                      <property role="29ckXk" value="Demo" />
+          <node concept="29d650" id="7cYw35iWpV6" role="29d653">
+            <node concept="2YzXU4" id="7cYw35iWpV4" role="29d3Gi">
+              <node concept="3Y090L" id="7cYw35iWpV5" role="2YzXXJ">
+                <node concept="29d65d" id="7cYw35iWpV7" role="3Y090Q">
+                  <node concept="29d650" id="7cYw35iWpV8" role="29d653">
+                    <node concept="29d5ma" id="7cYw35iWpVd" role="29d3Gi">
+                      <property role="29d1ub" value="LogicalSource" />
+                      <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
                     </node>
+                  </node>
+                  <node concept="29d658" id="7cYw35iWpVb" role="29d654" />
+                </node>
+                <node concept="29d65d" id="7cYw35iWu91" role="3Y090Q">
+                  <node concept="29d650" id="M0URkk9vZi" role="29d653">
+                    <node concept="2YzXU4" id="M0URkk9vZh" role="29d3Gi">
+                      <node concept="3Y090L" id="M0URkk9vZ4" role="2YzXXJ">
+                        <node concept="29d65d" id="M0URkk9vZ8" role="3Y090Q">
+                          <node concept="29d5ma" id="M0URkk9vZ5" role="29d654">
+                            <property role="29d1ub" value="tableSchema" />
+                            <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
+                          </node>
+                          <node concept="29d650" id="M0URkk9vZ7" role="29d653">
+                            <node concept="29ckXp" id="M0URkk9vZ6" role="29d3Gi">
+                              <property role="29ckXk" value="Demo" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="29d65d" id="M0URkk9vZc" role="3Y090Q">
+                          <node concept="29d5ma" id="M0URkk9vZ9" role="29d654">
+                            <property role="29d1ub" value="tableOwner" />
+                            <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
+                          </node>
+                          <node concept="29d650" id="M0URkk9vZb" role="29d653">
+                            <node concept="29ckXp" id="M0URkk9vZa" role="29d3Gi">
+                              <property role="29ckXk" value="demo" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="29d65d" id="M0URkk9vZg" role="3Y090Q">
+                          <node concept="29d5ma" id="M0URkk9vZd" role="29d654">
+                            <property role="29d1ub" value="tableName" />
+                            <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
+                          </node>
+                          <node concept="29d650" id="M0URkk9vZf" role="29d653">
+                            <node concept="29ckXp" id="M0URkk9vZe" role="29d3Gi">
+                              <property role="29ckXk" value="Categories" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="29d5ma" id="7cYw35iWu95" role="29d654">
+                    <property role="29d1ub" value="source" />
+                    <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
                   </node>
                 </node>
-                <node concept="29d65d" id="M0URkk9vZc" role="3Y090Q">
-                  <node concept="29d5ma" id="M0URkk9vZ9" role="29d654">
-                    <property role="29d1ub" value="tableOwner" />
-                    <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
-                  </node>
-                  <node concept="29d650" id="M0URkk9vZb" role="29d653">
-                    <node concept="29ckXp" id="M0URkk9vZa" role="29d3Gi">
-                      <property role="29ckXk" value="demo" />
+                <node concept="29d65d" id="7cYw35iWu9f" role="3Y090Q">
+                  <node concept="29d650" id="7cYw35iWu9g" role="29d653">
+                    <node concept="29d5ma" id="7cYw35iWu9l" role="29d3Gi">
+                      <property role="29d1ub" value="SQL2008Query" />
+                      <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
                     </node>
+                  </node>
+                  <node concept="29d5ma" id="7cYw35iWu9j" role="29d654">
+                    <property role="29d1ub" value="referenceFormulation" />
+                    <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
                   </node>
                 </node>
-                <node concept="29d65d" id="M0URkk9vZg" role="3Y090Q">
-                  <node concept="29d5ma" id="M0URkk9vZd" role="29d654">
-                    <property role="29d1ub" value="tableName" />
-                    <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
-                  </node>
-                  <node concept="29d650" id="M0URkk9vZf" role="29d653">
-                    <node concept="29ckXp" id="M0URkk9vZe" role="29d3Gi">
-                      <property role="29ckXk" value="Categories" />
+                <node concept="29d65d" id="7cYw35iWu9n" role="3Y090Q">
+                  <node concept="29d650" id="7cYw35iWu9o" role="29d653">
+                    <node concept="29ckXp" id="7cYw35iWu9t" role="29d3Gi">
+                      <property role="29ckXk" value="SELECT * from Categories" />
                     </node>
+                  </node>
+                  <node concept="29d5ma" id="7cYw35iWu9r" role="29d654">
+                    <property role="29d1ub" value="iterator" />
+                    <ref role="29d1uc" node="M0URkk9vYW" resolve="rml" />
                   </node>
                 </node>
               </node>
