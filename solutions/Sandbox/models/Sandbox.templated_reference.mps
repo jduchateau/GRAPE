@@ -3,6 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle" version="0" />
+    <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="0" />
+    <use id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO" version="0" />
   </languages>
   <imports />
   <registry>
@@ -588,6 +590,221 @@
         <property role="29d1ub" value="CityObject" />
         <ref role="29d1uc" node="17ntPn92NXR" resolve="" />
       </node>
+    </node>
+  </node>
+  <node concept="29aKCY" id="tPE8s$3jAh">
+    <property role="TrG5h" value="trsimple" />
+    <node concept="29d5m5" id="tPE8s$3jAi" role="29aKCU">
+      <property role="TrG5h" value="rml" />
+      <node concept="29d1u9" id="tPE8s$3jAj" role="3pzv1Z">
+        <property role="29d1u8" value="http://w3id.org/rml/" />
+      </node>
+    </node>
+    <node concept="29d5m5" id="tPE8s$3jAk" role="29aKCU">
+      <property role="TrG5h" value="cj" />
+      <node concept="29d1u9" id="tPE8s$3jAl" role="3pzv1Z">
+        <property role="29d1u8" value="https://www.cityjson.org/ont/cityjson.ttl#" />
+      </node>
+    </node>
+    <node concept="29d5m5" id="tPE8s$3jAm" role="29aKCU">
+      <property role="2v_DfE" value="true" />
+      <property role="TrG5h" value="" />
+      <node concept="29d1u9" id="tPE8s$3jAn" role="3pzv1Z">
+        <property role="29d1u8" value="http://example.org/" />
+      </node>
+    </node>
+    <node concept="3DQ70j" id="tPE8s$3jAo" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    </node>
+    <node concept="29d64P" id="tPE8s$3jAp" role="29aKCU">
+      <node concept="3Y090L" id="tPE8s$3jAq" role="29d64K">
+        <node concept="29d65d" id="tPE8s$3jAr" role="3Y090Q">
+          <node concept="29d650" id="tPE8s$3jAs" role="29d653">
+            <node concept="29d5ma" id="tPE8s$3jAt" role="29d3Gi">
+              <property role="29d1ub" value="RelativePathSource" />
+              <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+            </node>
+          </node>
+          <node concept="29d658" id="tPE8s$3jAu" role="29d654" />
+        </node>
+        <node concept="29d65d" id="tPE8s$3jAv" role="3Y090Q">
+          <node concept="29d650" id="tPE8s$3jAw" role="29d653">
+            <node concept="29d5ma" id="tPE8s$3jAx" role="29d3Gi">
+              <property role="29d1ub" value="MappingDirectory" />
+              <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+            </node>
+          </node>
+          <node concept="29d5ma" id="tPE8s$3jAy" role="29d654">
+            <property role="29d1ub" value="root" />
+            <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+          </node>
+        </node>
+        <node concept="29d65d" id="tPE8s$3jAz" role="3Y090Q">
+          <node concept="29d650" id="tPE8s$3jA$" role="29d653">
+            <node concept="29ckXp" id="tPE8s$3jA_" role="29d3Gi">
+              <property role="29ckXk" value="multipoint.city.json" />
+            </node>
+          </node>
+          <node concept="29d5ma" id="tPE8s$3jAA" role="29d654">
+            <property role="29d1ub" value="path" />
+            <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+          </node>
+        </node>
+      </node>
+      <node concept="29d1xb" id="tPE8s$3jAB" role="29d64L">
+        <property role="TrG5h" value="FileSource" />
+      </node>
+    </node>
+    <node concept="3DQ70j" id="tPE8s$3jAW" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    </node>
+    <node concept="29d64P" id="tPE8s$3jAX" role="29aKCU">
+      <node concept="3Y090L" id="tPE8s$3jAY" role="29d64K">
+        <node concept="29d65d" id="tPE8s$3jAZ" role="3Y090Q">
+          <node concept="29d650" id="tPE8s$3jB0" role="29d653">
+            <node concept="29d5ma" id="tPE8s$3jB1" role="29d3Gi">
+              <property role="29d1ub" value="LogicalSource" />
+              <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+            </node>
+          </node>
+          <node concept="29d658" id="tPE8s$3jB2" role="29d654" />
+        </node>
+        <node concept="29d65d" id="tPE8s$3jB3" role="3Y090Q">
+          <node concept="29d650" id="tPE8s$3jB4" role="29d653">
+            <node concept="29d5ma" id="tPE8s$3jB5" role="29d3Gi">
+              <property role="29d1ub" value="JSONPath" />
+              <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+            </node>
+          </node>
+          <node concept="29d5ma" id="tPE8s$3jB6" role="29d654">
+            <property role="29d1ub" value="referenceFormulation" />
+            <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+          </node>
+        </node>
+        <node concept="29d65d" id="tPE8s$3jB7" role="3Y090Q">
+          <node concept="29d650" id="tPE8s$3jB8" role="29d653">
+            <node concept="29d1xb" id="tPE8s$3jB9" role="29d3Gi">
+              <property role="TrG5h" value="FileSource" />
+            </node>
+          </node>
+          <node concept="29d5ma" id="tPE8s$3jBa" role="29d654">
+            <property role="29d1ub" value="source" />
+            <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+          </node>
+        </node>
+        <node concept="29d65d" id="tPE8s$3jBb" role="3Y090Q">
+          <node concept="29d650" id="tPE8s$3jBc" role="29d653">
+            <node concept="29ckXp" id="tPE8s$3jBd" role="29d3Gi">
+              <property role="29ckXk" value="$.CityObjects..geometry[?@.type=='MultiPoint'].boundaries[*]" />
+            </node>
+          </node>
+          <node concept="29d5ma" id="tPE8s$3jBe" role="29d654">
+            <property role="29d1ub" value="iterator" />
+            <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+          </node>
+        </node>
+      </node>
+      <node concept="29d5ma" id="tPE8s$3jBf" role="29d64L">
+        <property role="29d1ub" value="CityObjectBoundariesLS" />
+        <ref role="29d1uc" node="tPE8s$3jAm" resolve="" />
+      </node>
+    </node>
+    <node concept="3DQ70j" id="tPE8s$3jCN" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    </node>
+    <node concept="29d64P" id="tPE8s$3jCO" role="29aKCU">
+      <node concept="3Y090L" id="tPE8s$3jCP" role="29d64K">
+        <node concept="29d65d" id="tPE8s$3jCQ" role="3Y090Q">
+          <node concept="29d650" id="tPE8s$3jCR" role="29d653">
+            <node concept="29d5ma" id="tPE8s$3jCS" role="29d3Gi">
+              <property role="29d1ub" value="TriplesMap" />
+              <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+            </node>
+          </node>
+          <node concept="29d658" id="tPE8s$3jCT" role="29d654" />
+        </node>
+        <node concept="29d65d" id="tPE8s$3jCU" role="3Y090Q">
+          <node concept="29d650" id="tPE8s$3jCV" role="29d653">
+            <node concept="3oYVlq" id="tPE8s$3jCW" role="29d3Gi">
+              <ref role="3oYVl4" node="tPE8s$3jBf" />
+            </node>
+          </node>
+          <node concept="29d5ma" id="tPE8s$3jCX" role="29d654">
+            <property role="29d1ub" value="logicalSource" />
+            <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+          </node>
+        </node>
+        <node concept="29d65d" id="tPE8s$3jCY" role="3Y090Q">
+          <node concept="29d650" id="tPE8s$3jCZ" role="29d653">
+            <node concept="29d5ma" id="tPE8s$3jD0" role="29d3Gi">
+              <property role="29d1ub" value="CityObject" />
+              <ref role="29d1uc" node="tPE8s$3jAk" resolve="cj" />
+            </node>
+          </node>
+          <node concept="29d5ma" id="tPE8s$3jD1" role="29d654">
+            <property role="29d1ub" value="subject" />
+            <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+          </node>
+        </node>
+        <node concept="29d65d" id="tPE8s$3jD2" role="3Y090Q">
+          <node concept="29d650" id="tPE8s$3jD3" role="29d653">
+            <node concept="2YzXU4" id="tPE8s$3jD4" role="29d3Gi">
+              <node concept="3Y090L" id="tPE8s$3jD5" role="2YzXXJ">
+                <node concept="29d65d" id="tPE8s$3jD6" role="3Y090Q">
+                  <node concept="29d650" id="tPE8s$3jD7" role="29d653">
+                    <node concept="29d5ma" id="tPE8s$3jD8" role="29d3Gi">
+                      <property role="29d1ub" value="hasPoint" />
+                      <ref role="29d1uc" node="tPE8s$3jAk" resolve="cj" />
+                    </node>
+                  </node>
+                  <node concept="29d5ma" id="tPE8s$3jD9" role="29d654">
+                    <property role="29d1ub" value="predicate" />
+                    <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+                  </node>
+                </node>
+                <node concept="29d65d" id="tPE8s$3jDa" role="3Y090Q">
+                  <node concept="29d650" id="tPE8s$3jDb" role="29d653">
+                    <node concept="2YzXU4" id="tPE8s$3jDc" role="29d3Gi">
+                      <node concept="3Y090L" id="tPE8s$3jDd" role="2YzXXJ">
+                        <node concept="29d65d" id="tPE8s$3jDe" role="3Y090Q">
+                          <node concept="29d650" id="tPE8s$3jDf" role="29d653">
+                            <node concept="29ckXp" id="tPE8s$3jDg" role="29d3Gi">
+                              <property role="29ckXk" value="http://example.org/point/{$.vertices[@][0]}-{$.vertices[@][1]}-{$.vertices[@][2]}" />
+                            </node>
+                          </node>
+                          <node concept="29d5ma" id="tPE8s$3jDh" role="29d654">
+                            <property role="29d1ub" value="template" />
+                            <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="29d5ma" id="tPE8s$3jDi" role="29d654">
+                    <property role="29d1ub" value="objectMap" />
+                    <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="29d5ma" id="tPE8s$3jDj" role="29d654">
+            <property role="29d1ub" value="predicateObjectMap" />
+            <ref role="29d1uc" node="tPE8s$3jAi" resolve="rml" />
+          </node>
+        </node>
+      </node>
+      <node concept="29d5ma" id="tPE8s$3jDk" role="29d64L">
+        <property role="29d1ub" value="CityObject" />
+        <ref role="29d1uc" node="tPE8s$3jAm" resolve="" />
+      </node>
+    </node>
+    <node concept="3DQ70j" id="tPE8s$Cku$" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
     </node>
   </node>
 </model>

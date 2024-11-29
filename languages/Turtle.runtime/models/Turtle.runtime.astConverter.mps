@@ -1522,7 +1522,7 @@
       </node>
       <node concept="3Tm1VV" id="248lfK9eGZ3" role="1B3o_S" />
       <node concept="3Tqbb2" id="248lfK9eGZe" role="3clF45">
-        <ref role="ehGHo" to="16h3:2z4QKYxVX4W" resolve="Triples" />
+        <ref role="ehGHo" to="16h3:2z4QKYxVX4W" resolve="TriplesStatment" />
       </node>
       <node concept="3clFbS" id="248lfK9eGZf" role="3clF47">
         <node concept="2xdQw9" id="5xuladFmuuc" role="3cqZAp">

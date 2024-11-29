@@ -2230,7 +2230,7 @@
           <node concept="3cpWsn" id="25MWlU5QVqb" role="3cpWs9">
             <property role="TrG5h" value="ref" />
             <node concept="3Tqbb2" id="25MWlU5QVi1" role="1tU5fm">
-              <ref role="ehGHo" to="16h3:2z4QKYxVX4W" resolve="Triples" />
+              <ref role="ehGHo" to="16h3:2z4QKYxVX4W" resolve="TriplesStatment" />
             </node>
             <node concept="2OqwBi" id="25MWlU5QVqc" role="33vP2m">
               <node concept="37vLTw" id="25MWlU5QVqd" role="2Oq$k0">

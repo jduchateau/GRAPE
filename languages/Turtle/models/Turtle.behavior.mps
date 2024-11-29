@@ -2461,7 +2461,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="55UoUlYabD4" role="2OqNvi">
-              <ref role="37wK5l" node="55UoUlYa2wG" resolve="addToSubject" />
+              <ref role="37wK5l" node="55UoUlYa2wG" resolve="convertTriples" />
               <node concept="37vLTw" id="55UoUlYabJf" role="37wK5m">
                 <ref role="3cqZAo" node="55UoUlY9EZ0" resolve="model" />
               </node>

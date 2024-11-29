@@ -530,7 +530,7 @@
                       <node concept="2OqwBi" id="71edsA8ZWn3" role="2Oq$k0">
                         <node concept="2WthIp" id="71edsA8ZUCT" role="2Oq$k0" />
                         <node concept="1DTwFV" id="71edsA8ZXTF" role="2OqNvi">
-                          <ref role="2WH_rO" node="6ONkOuPgQCk" resolve="model" />
+                          <ref role="2WH_rO" node="6ONkOuPgQCk" resolve="smodel" />
                         </node>
                       </node>
                       <node concept="liA8E" id="71edsA8ZYfa" role="2OqNvi">
@@ -1834,7 +1834,7 @@
     <property role="TrG5h" value="TurtleRefreshDataset" />
     <node concept="ftmFs" id="7PPLA3RvdIV" role="ftER_">
       <node concept="tCFHf" id="7PPLA3RvdIX" role="ftvYc">
-        <ref role="tCJdB" node="7PPLA3RvdIu" />
+        <ref role="tCJdB" node="7PPLA3RvdIu" resolve="RefreshRDFTurtle" />
       </node>
     </node>
     <node concept="tT9cl" id="5XzZTwuk4C2" role="2f5YQi">

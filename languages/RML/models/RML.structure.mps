@@ -361,7 +361,7 @@
   <node concept="1TIwiD" id="25MWlU63704">
     <property role="TrG5h" value="NamedDefintionTriples" />
     <property role="EcuMT" value="2410254138872534997" />
-    <ref role="1TJDcQ" to="16h3:2z4QKYxVX4W" resolve="Triples" />
+    <ref role="1TJDcQ" to="16h3:2z4QKYxVX4W" resolve="TriplesStatment" />
     <node concept="1TJgyj" id="25MWlU5UpGJ" role="1TKVEi">
       <property role="IQ2ns" value="2410254138872535855" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

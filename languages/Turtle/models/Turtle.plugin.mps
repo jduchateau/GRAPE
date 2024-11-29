@@ -876,7 +876,7 @@
             <node concept="2OqwBi" id="n6bVFlVzj6" role="37vLTJ">
               <node concept="Xjq3P" id="n6bVFlVzj7" role="2Oq$k0" />
               <node concept="2OwXpG" id="n6bVFlVzj8" role="2OqNvi">
-                <ref role="2Oxat5" node="n6bVFlVziX" resolve="createDefaultModel" />
+                <ref role="2Oxat5" node="n6bVFlVziX" resolve="jenaModel" />
               </node>
             </node>
             <node concept="2YIFZM" id="n6bVFlVzj9" role="37vLTx">
@@ -948,7 +948,7 @@
                     <node concept="3clFbF" id="KJ$Aktrn5Y" role="3cqZAp">
                       <node concept="2OqwBi" id="KJ$AktroRH" role="3clFbG">
                         <node concept="37vLTw" id="KJ$Aktrn5W" role="2Oq$k0">
-                          <ref role="3cqZAo" node="n6bVFlVziX" resolve="createDefaultModel" />
+                          <ref role="3cqZAo" node="n6bVFlVziX" resolve="jenaModel" />
                         </node>
                         <node concept="liA8E" id="KJ$AktrrK_" role="2OqNvi">
                           <ref role="37wK5l" to="t6dh:~Model.setNsPrefix(java.lang.String,java.lang.String)" resolve="setNsPrefix" />
@@ -1010,7 +1010,7 @@
                           <node concept="2qgKlT" id="55UoUlXW4Nu" role="2OqNvi">
                             <ref role="37wK5l" to="4g9:55UoUlXVZTe" resolve="convertSubject" />
                             <node concept="37vLTw" id="55UoUlY9HQN" role="37wK5m">
-                              <ref role="3cqZAo" node="n6bVFlVziX" resolve="createDefaultModel" />
+                              <ref role="3cqZAo" node="n6bVFlVziX" resolve="jenaModel" />
                             </node>
                           </node>
                         </node>
@@ -1049,7 +1049,7 @@
                               <node concept="2qgKlT" id="55UoUlXWa07" role="2OqNvi">
                                 <ref role="37wK5l" to="4g9:55UoUlXVXgC" resolve="convertVerb" />
                                 <node concept="37vLTw" id="55UoUlY9IPD" role="37wK5m">
-                                  <ref role="3cqZAo" node="n6bVFlVziX" resolve="createDefaultModel" />
+                                  <ref role="3cqZAo" node="n6bVFlVziX" resolve="jenaModel" />
                                 </node>
                               </node>
                             </node>
@@ -1082,7 +1082,7 @@
                                   <node concept="2qgKlT" id="55UoUlXWkbG" role="2OqNvi">
                                     <ref role="37wK5l" to="4g9:55UoUlXVZUB" resolve="convertObject" />
                                     <node concept="37vLTw" id="55UoUlY9JO$" role="37wK5m">
-                                      <ref role="3cqZAo" node="n6bVFlVziX" resolve="createDefaultModel" />
+                                      <ref role="3cqZAo" node="n6bVFlVziX" resolve="jenaModel" />
                                     </node>
                                   </node>
                                 </node>
@@ -1118,7 +1118,7 @@
                                 </node>
                                 <node concept="2OqwBi" id="3Q3_FC7zNTU" role="33vP2m">
                                   <node concept="37vLTw" id="3Q3_FC7zNTV" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="n6bVFlVziX" resolve="createDefaultModel" />
+                                    <ref role="3cqZAo" node="n6bVFlVziX" resolve="jenaModel" />
                                   </node>
                                   <node concept="liA8E" id="3Q3_FC7zNTW" role="2OqNvi">
                                     <ref role="37wK5l" to="t6dh:~Model.createStatement(org.apache.jena.rdf.model.Resource,org.apache.jena.rdf.model.Property,org.apache.jena.rdf.model.RDFNode)" resolve="createStatement" />
@@ -1138,7 +1138,7 @@
                             <node concept="3clFbF" id="55UoUlXWtBU" role="3cqZAp">
                               <node concept="2OqwBi" id="55UoUlXWuDo" role="3clFbG">
                                 <node concept="37vLTw" id="55UoUlXWtBS" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="n6bVFlVziX" resolve="createDefaultModel" />
+                                  <ref role="3cqZAo" node="n6bVFlVziX" resolve="jenaModel" />
                                 </node>
                                 <node concept="liA8E" id="55UoUlXWv_N" role="2OqNvi">
                                   <ref role="37wK5l" to="t6dh:~Model.add(org.apache.jena.rdf.model.Statement)" resolve="add" />
@@ -1194,13 +1194,13 @@
                                 <node concept="3clFbF" id="3Q3_FC7xE4j" role="3cqZAp">
                                   <node concept="2OqwBi" id="3Q3_FC7xFZp" role="3clFbG">
                                     <node concept="37vLTw" id="3Q3_FC7xE4h" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="n6bVFlVziX" resolve="createDefaultModel" />
+                                      <ref role="3cqZAo" node="n6bVFlVziX" resolve="jenaModel" />
                                     </node>
                                     <node concept="liA8E" id="3Q3_FC7xJt1" role="2OqNvi">
                                       <ref role="37wK5l" to="t6dh:~ModelCon.add(org.apache.jena.rdf.model.Resource,org.apache.jena.rdf.model.Property,java.lang.String)" resolve="add" />
                                       <node concept="2OqwBi" id="3Q3_FC7CdlB" role="37wK5m">
                                         <node concept="37vLTw" id="3Q3_FC7_TrY" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="n6bVFlVziX" resolve="createDefaultModel" />
+                                          <ref role="3cqZAo" node="n6bVFlVziX" resolve="jenaModel" />
                                         </node>
                                         <node concept="liA8E" id="3Q3_FC7CgLJ" role="2OqNvi">
                                           <ref role="37wK5l" to="t6dh:~Model.createResource(org.apache.jena.rdf.model.Statement)" resolve="createResource" />
@@ -1287,7 +1287,7 @@
         </node>
         <node concept="3cpWs6" id="KJ$Aktrjjy" role="3cqZAp">
           <node concept="37vLTw" id="KJ$Aktrkrd" role="3cqZAk">
-            <ref role="3cqZAo" node="n6bVFlVziX" resolve="createDefaultModel" />
+            <ref role="3cqZAo" node="n6bVFlVziX" resolve="jenaModel" />
           </node>
         </node>
       </node>
