@@ -607,11 +607,11 @@
                 <node concept="1pGfFk" id="7PPLA3Rkim2" role="2ShVmc">
                   <property role="373rjd" value="true" />
                   <ref role="37wK5l" to="iwug:7PPLA3Rk1cJ" resolve="Tracer" />
-                  <node concept="37vLTw" id="7PPLA3Rkim1" role="37wK5m">
-                    <ref role="3cqZAo" node="7PPLA3Rc8TZ" resolve="graphName" />
-                  </node>
                   <node concept="37vLTw" id="tPE8szBefX" role="37wK5m">
                     <ref role="3cqZAo" node="tPE8szBefR" resolve="model" />
+                  </node>
+                  <node concept="1YBJjd" id="7HX6VHL9HSe" role="37wK5m">
+                    <ref role="1YBMHb" node="7NlO_H451pd" resolve="turtleDoc" />
                   </node>
                 </node>
               </node>
@@ -643,8 +643,13 @@
                 </node>
                 <node concept="liA8E" id="7PPLA3RnPvt" role="2OqNvi">
                   <ref role="37wK5l" to="iwug:7PPLA3RiL0c" resolve="originSubject" />
-                  <node concept="37vLTw" id="7PPLA3Rt2Gm" role="37wK5m">
-                    <ref role="3cqZAo" node="7PPLA3Rt2Gi" resolve="focusNode" />
+                  <node concept="2OqwBi" id="7HX6VHKY_i6" role="37wK5m">
+                    <node concept="2GrUjf" id="7HX6VHKY$Xj" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="6$HV1vB$4xk" resolve="entry" />
+                    </node>
+                    <node concept="liA8E" id="7HX6VHKYBdT" role="2OqNvi">
+                      <ref role="37wK5l" to="il7g:~ReportEntry.focusNode()" resolve="focusNode" />
+                    </node>
                   </node>
                 </node>
               </node>

@@ -1376,13 +1376,8 @@
               <node concept="37vLTw" id="41P2F0Gn3JL" role="37wK5m">
                 <ref role="3cqZAo" node="41P2F0Gn3JF" resolve="namespaceIri" />
               </node>
-              <node concept="2OqwBi" id="7C_2uwsp03v" role="37wK5m">
-                <node concept="37vLTw" id="7C_2uwsoYq7" role="2Oq$k0">
-                  <ref role="3cqZAo" node="41P2F0Glah3" resolve="prefix" />
-                </node>
-                <node concept="3TrcHB" id="7C_2uwsp1FN" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                </node>
+              <node concept="37vLTw" id="7HX6VHKvBKT" role="37wK5m">
+                <ref role="3cqZAo" node="41P2F0Gn3JF" resolve="namespaceIri" />
               </node>
             </node>
           </node>
@@ -1414,7 +1409,7 @@
               <node concept="1pGfFk" id="41P2F0GmQn6" role="2ShVmc">
                 <ref role="37wK5l" to="sg7y:~ParameterizedSparqlString.&lt;init&gt;(java.lang.String)" resolve="ParameterizedSparqlString" />
                 <node concept="Xl_RD" id="41P2F0GmdLn" role="37wK5m">
-                  <property role="Xl_RC" value="SELECT ?identifier ?type WHERE { ?identifier ?verb ?object . FILTER(STRSTARTS(STR(?identifier), ?namespace)) OPTIONAL{ ?identifier a ?type} }" />
+                  <property role="Xl_RC" value="SELECT ?identifier ?type WHERE { GRAPH ?g { ?identifier ?verb ?object . FILTER(STRSTARTS(STR(?identifier), ?namespace)) OPTIONAL{ ?identifier a ?type} } }" />
                 </node>
               </node>
             </node>
@@ -1431,6 +1426,22 @@
                 <property role="Xl_RC" value="namespace" />
               </node>
               <node concept="37vLTw" id="41P2F0Gn4nD" role="37wK5m">
+                <ref role="3cqZAo" node="41P2F0Gn3JF" resolve="namespaceIri" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7HX6VHKvJZE" role="3cqZAp">
+          <node concept="2OqwBi" id="7HX6VHKvJZF" role="3clFbG">
+            <node concept="37vLTw" id="7HX6VHKvJZG" role="2Oq$k0">
+              <ref role="3cqZAo" node="41P2F0GmOB1" resolve="queryString" />
+            </node>
+            <node concept="liA8E" id="7HX6VHKvJZH" role="2OqNvi">
+              <ref role="37wK5l" to="sg7y:~ParameterizedSparqlString.setIri(java.lang.String,java.lang.String)" resolve="setIri" />
+              <node concept="Xl_RD" id="7HX6VHKvJZI" role="37wK5m">
+                <property role="Xl_RC" value="g" />
+              </node>
+              <node concept="37vLTw" id="7HX6VHKvJZJ" role="37wK5m">
                 <ref role="3cqZAo" node="41P2F0Gn3JF" resolve="namespaceIri" />
               </node>
             </node>
