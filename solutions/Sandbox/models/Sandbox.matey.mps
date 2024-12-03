@@ -26,6 +26,10 @@
         <property id="2937713717140311172" name="name" index="29d1ub" />
         <reference id="2937713717140311171" name="prefix" index="29d1uc" />
       </concept>
+      <concept id="2937713717140306490" name="Turtle.structure.SubjectTriples" flags="ng" index="29d64P">
+        <child id="2937713717140306495" name="predicateObjectList" index="29d64K" />
+        <child id="2937713717140306494" name="subject" index="29d64L" />
+      </concept>
       <concept id="2937713717140306511" name="Turtle.structure.AnnotatedObject" flags="ng" index="29d650">
         <child id="2937713717140316189" name="object" index="29d3Gi" />
       </concept>
@@ -33,6 +37,7 @@
         <child id="2937713717140306508" name="object" index="29d653" />
         <child id="2937713717140306507" name="verb" index="29d654" />
       </concept>
+      <concept id="1285627428969442466" name="Turtle.structure.RessourceIdentifierDef" flags="ngI" index="3oVTJR" />
       <concept id="7946374057678053675" name="Turtle.structure.PredicateObjectList" flags="ng" index="3Y090L">
         <child id="7946374057678053676" name="list" index="3Y090Q" />
       </concept>
@@ -88,6 +93,7 @@
       <concept id="6099872835424795659" name="RML.structure.SubjectMap" flags="ng" index="IaUod">
         <child id="6303025759225736038" name="class" index="FGrfI" />
       </concept>
+      <concept id="6099872835424795677" name="RML.structure.Expression" flags="ngI" index="IaUor" />
       <concept id="6099872835424795701" name="RML.structure.ConstantExpr" flags="ng" index="IaUoN">
         <child id="6303025759225526832" name="value" index="FJIaS" />
       </concept>
@@ -106,6 +112,7 @@
         <child id="6099872835424571532" name="predicateObjectMap" index="Ib$Ea" />
         <child id="3190666691956656690" name="subjectMap" index="2YYcL1" />
       </concept>
+      <concept id="8169920669489713456" name="RML.structure.LogicalSourceUse" flags="ngI" index="1_rNaw" />
     </language>
   </registry>
   <node concept="29aKCY" id="M0URkkgBQ0">
@@ -153,25 +160,45 @@
             </node>
           </node>
         </node>
+        <node concept="FHrll" id="3MxBlnYAFfV" role="FHrlg">
+          <node concept="IaUoN" id="3MxBlnYAFfY" role="FGdDe">
+            <node concept="29d1u9" id="3MxBlnYAFfX" role="FJIaS">
+              <property role="29d1u8" value="#tschuss" />
+            </node>
+          </node>
+        </node>
         <node concept="FHrlk" id="M0URkkiKIW" role="FHrli">
           <node concept="IaUoZ" id="M0URkkiKIV" role="FGdDe">
             <property role="FJGrp" value="firstname" />
           </node>
         </node>
       </node>
-      <node concept="Ib$Ef" id="M0URkkiKJ5" role="Ib$Ea">
-        <node concept="FHrll" id="M0URkkiKJ6" role="FHrlg">
-          <node concept="IaUoN" id="M0URkkiKJb" role="FGdDe">
-            <node concept="29d5ma" id="M0URkkiKJ9" role="FJIaS">
+      <node concept="Ib$Ef" id="2ZAgtJQWEh0" role="Ib$Ea">
+        <node concept="FHrll" id="2ZAgtJQWEh1" role="FHrlg">
+          <node concept="IaUoN" id="2ZAgtJQWEhe" role="FGdDe">
+            <node concept="29d5ma" id="2ZAgtJQWEhc" role="FJIaS">
               <property role="29d1ub" value="lastName" />
               <ref role="29d1uc" node="M0URkkgBQq" resolve="foaf" />
             </node>
           </node>
         </node>
-        <node concept="FHrlk" id="M0URkkiKJe" role="FHrli">
-          <node concept="IaUoZ" id="M0URkkiKJc" role="FGdDe">
+        <node concept="FHrlk" id="2ZAgtJQWEh6" role="FHrli">
+          <node concept="IaUoZ" id="2ZAgtJQWEh4" role="FGdDe">
             <property role="FJGrp" value="lastname" />
           </node>
+        </node>
+      </node>
+      <node concept="Ib$Ef" id="2ZAgtJQWEhg" role="Ib$Ea">
+        <node concept="FHrll" id="3MxBlnYyMSV" role="FHrlg">
+          <node concept="IaUoN" id="3MxBlnYyMSZ" role="FGdDe">
+            <node concept="29d5ma" id="3MxBlnYyMSX" role="FJIaS">
+              <property role="29d1ub" value="currentProject" />
+              <ref role="29d1uc" node="M0URkkgBQq" resolve="foaf" />
+            </node>
+          </node>
+        </node>
+        <node concept="FHrlk" id="3MxBlnYyMT2" role="FHrli">
+          <node concept="IaUoZ" id="3MxBlnYyMT0" role="FGdDe" />
         </node>
       </node>
       <node concept="IaUod" id="M0URkkgBQ8" role="2YYcL1">
@@ -188,6 +215,23 @@
       </node>
       <node concept="FCvle" id="pZc6UDfx8c" role="IaUo4">
         <ref role="FCvlf" node="pZc6UD7Kfr" resolve="_:LSPeople" />
+      </node>
+    </node>
+    <node concept="3DQ70j" id="4p4374YyAFJ" role="lGtFl">
+      <property role="3V$3am" value="statments" />
+      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    </node>
+    <node concept="2YYitQ" id="4p4374YyAKg" role="29aKCU">
+      <node concept="1_rNaw" id="4p4374YyAKh" role="IaUo4" />
+      <node concept="IaUod" id="4p4374YyAKi" role="2YYcL1">
+        <node concept="IaUor" id="4p4374YyAKj" role="FGdDe" />
+      </node>
+      <node concept="3oVTJR" id="4p4374YyAKk" role="2$AQDL" />
+    </node>
+    <node concept="29d64P" id="FW04tx06Jw" role="29aKCU">
+      <node concept="3Y090L" id="FW04tx06Jy" role="29d64K" />
+      <node concept="29d1u9" id="FW04tx06Jv" role="29d64L">
+        <property role="29d1u8" value="iri" />
       </node>
     </node>
   </node>

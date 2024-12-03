@@ -8,9 +8,9 @@
   <imports>
     <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
-    <import index="hufk" ref="r:5ba026cd-d06f-49ce-96b8-92af87ff03fc(RML.turtleUpgrade)" />
+    <import index="hufk" ref="r:5ba026cd-d06f-49ce-96b8-92af87ff03fc(RML.promoterTurtle)" />
     <import index="clop" ref="r:0d4fc9f9-45ef-4ad9-aacb-a99d98ad2874(RML.shortcutsExpander)" />
-    <import index="92dq" ref="r:454ebbf5-1dda-4c8d-a1bf-46962f6c82a0(RML.turtleParser)" />
+    <import index="92dq" ref="r:454ebbf5-1dda-4c8d-a1bf-46962f6c82a0(RML.promoterRdf)" />
     <import index="iwug" ref="r:76e4946f-2d00-47d5-ae37-e0c3a55829b1(Turtle.runtime.datasetManager)" />
     <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" />
   </imports>

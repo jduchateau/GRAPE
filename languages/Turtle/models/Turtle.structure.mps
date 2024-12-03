@@ -580,5 +580,10 @@
     <property role="TrG5h" value="Triples" />
     <property role="3GE5qa" value="RDF" />
   </node>
+  <node concept="1TIwiD" id="4p4374YDSWg">
+    <property role="EcuMT" value="5063185561593286416" />
+    <property role="TrG5h" value="EmptyStatment" />
+    <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statment" />
+  </node>
 </model>
 

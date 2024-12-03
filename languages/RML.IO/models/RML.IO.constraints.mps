@@ -29,7 +29,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="75xoT0k8pVn">
-    <property role="3GE5qa" value="Source" />
+    <property role="3GE5qa" value="Source.Use" />
     <ref role="1M2myG" to="qx9m:5tSQ8xWQTYC" resolve="SourceNamedDef" />
   </node>
   <node concept="1M2fIO" id="75xoT0k4cy$">

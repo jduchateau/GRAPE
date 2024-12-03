@@ -6,7 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="hufk" ref="r:5ba026cd-d06f-49ce-96b8-92af87ff03fc(RML.turtleUpgrade)" />
+    <import index="hufk" ref="r:5ba026cd-d06f-49ce-96b8-92af87ff03fc(RML.promoterTurtle)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
     <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" implicit="true" />
   </imports>
@@ -90,8 +90,8 @@
     </language>
   </registry>
   <node concept="_UgoZ" id="tPE8szTGEd">
-    <property role="TrG5h" value="UpgradeTurtleRML" />
-    <property role="_Wzho" value="Upgrade Turtle to RML constructs" />
+    <property role="TrG5h" value="PromoteTurtleRML" />
+    <property role="_Wzho" value="Promote Turtle to RML constructs" />
     <node concept="_XfAh" id="7HX6VHKC7aI" role="_YvDr">
       <property role="_XH9r" value="Upgrade TriplesMap" />
       <property role="1iWc8x" value="true" />
