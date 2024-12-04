@@ -61,7 +61,7 @@
               <node concept="2OqwBi" id="3EB406$9pzN" role="2Oq$k0">
                 <node concept="1r4Lsj" id="3EB406$9pp_" role="2Oq$k0" />
                 <node concept="3TrEf2" id="3EB406$9q0R" role="2OqNvi">
-                  <ref role="3Tt5mk" to="qx9m:FW04txtQU3" />
+                  <ref role="3Tt5mk" to="qx9m:FW04txtQU3" resolve="source" />
                 </node>
               </node>
               <node concept="2DeJnY" id="1xDVdsnoSBw" role="2OqNvi">

@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -11,18 +10,12 @@
     <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tve8" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.util.iterator(Turtle.runtime/)" />
-    <import index="nn8r" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.shacl(Turtle.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="ptfq" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.riot(Turtle.runtime/)" />
-    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
-    <import index="wgw2" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.shacl.lib(Turtle.runtime/)" />
     <import index="sg7y" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.query(Turtle.runtime/)" />
-    <import index="ryek" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.util(Turtle.runtime/)" />
     <import index="21a2" ref="r:659e3dc3-5306-45e9-bef0-f5fd17f0422d(RML.prefix)" />
     <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
     <import index="qx9m" ref="r:5f21b94e-6c55-4230-951a-dc8170ceeb15(RML.IO.structure)" />
-    <import index="hvbj" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.shared(Turtle.runtime/)" />
     <import index="5hed" ref="r:a8b1fda0-89ff-474b-ab43-cbd38563b06d(Turtle.runtime.prefixer)" />
     <import index="iwug" ref="r:76e4946f-2d00-47d5-ae37-e0c3a55829b1(Turtle.runtime.datasetManager)" />
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" />
@@ -1709,7 +1702,7 @@
                 <ref role="3cqZAo" node="7cYw35ipFCi" resolve="triplesMap" />
               </node>
               <node concept="3TrEf2" id="7HX6VHKf_Kn" role="2OqNvi">
-                <ref role="3Tt5mk" to="ys6r:25MWlU5UpGJ" />
+                <ref role="3Tt5mk" to="ys6r:25MWlU5UpGJ" resolve="identifier" />
               </node>
             </node>
           </node>
@@ -3528,7 +3521,7 @@
                   <node concept="liA8E" id="tPE8sze3dS" role="2OqNvi">
                     <ref role="37wK5l" to="iwug:tPE8szbvFV" resolve="originObject" />
                     <node concept="37vLTw" id="tPE8s$aSUL" role="37wK5m">
-                      <ref role="3cqZAo" node="7cYw35iQFH5" resolve="stmt" />
+                      <ref role="3cqZAo" node="7cYw35iQFH5" resolve="constStmt" />
                     </node>
                   </node>
                 </node>
@@ -3589,7 +3582,7 @@
           <node concept="3y3z36" id="7HX6VHKlO1m" role="3clFbw">
             <node concept="10Nm6u" id="7HX6VHKlS6l" role="3uHU7w" />
             <node concept="37vLTw" id="7HX6VHKlKIo" role="3uHU7B">
-              <ref role="3cqZAo" node="7cYw35iQFH5" resolve="stmt" />
+              <ref role="3cqZAo" node="7cYw35iQFH5" resolve="constStmt" />
             </node>
           </node>
         </node>
@@ -3625,7 +3618,7 @@
                       <node concept="WxPPo" id="7HX6VHKkhrr" role="28ntcv">
                         <node concept="2OqwBi" id="7HX6VHKklMI" role="WxPPp">
                           <node concept="37vLTw" id="7HX6VHKkhrp" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7HX6VHKhF_F" resolve="stmt" />
+                            <ref role="3cqZAo" node="7HX6VHKhF_F" resolve="templStmt" />
                           </node>
                           <node concept="liA8E" id="7HX6VHKkqCI" role="2OqNvi">
                             <ref role="37wK5l" to="t6dh:~Statement.getString()" resolve="getString" />

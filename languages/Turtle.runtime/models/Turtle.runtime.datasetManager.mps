@@ -1314,7 +1314,7 @@
             <node concept="2OqwBi" id="7PPLA3RkPhr" role="37vLTJ">
               <node concept="Xjq3P" id="7PPLA3RkPaa" role="2Oq$k0" />
               <node concept="2OwXpG" id="7PPLA3RkPmt" role="2OqNvi">
-                <ref role="2Oxat5" node="7PPLA3RkNqq" resolve="model" />
+                <ref role="2Oxat5" node="7PPLA3RkNqq" resolve="smodel" />
               </node>
             </node>
           </node>
@@ -1349,7 +1349,7 @@
             <node concept="2OqwBi" id="7HX6VHL7rz9" role="37vLTJ">
               <node concept="Xjq3P" id="7HX6VHL7roK" role="2Oq$k0" />
               <node concept="2OwXpG" id="7HX6VHL7rPg" role="2OqNvi">
-                <ref role="2Oxat5" node="7HX6VHL7rbk" resolve="graphName" />
+                <ref role="2Oxat5" node="7HX6VHL7rbk" resolve="jenaModel" />
               </node>
             </node>
           </node>
@@ -1587,7 +1587,7 @@
                 <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                 <node concept="2OqwBi" id="tPE8szctTo" role="37wK5m">
                   <node concept="37vLTw" id="tPE8szctTp" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7PPLA3RkNqq" resolve="model" />
+                    <ref role="3cqZAo" node="7PPLA3RkNqq" resolve="smodel" />
                   </node>
                   <node concept="liA8E" id="tPE8szctTq" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />

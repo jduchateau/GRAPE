@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0f7194d3-66aa-4eee-abaf-1729d6c8dd2c(RML.functions)">
+<model ref="r:ca802deb-5ff1-413c-8dfe-e9903e29ccdb(RML.FNML.param)">
   <persistence version="9" />
   <languages>
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="sg7y" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.query(Turtle.runtime/)" />
-    <import index="9ci3" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.arq.querybuilder(Turtle.runtime/)" />
-    <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" />
-    <import index="fia8" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.vocabulary(Turtle.runtime/)" />
-    <import index="iwug" ref="r:76e4946f-2d00-47d5-ae37-e0c3a55829b1(Turtle.runtime.datasetManager)" />
-    <import index="6roo" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdfconnection(Turtle.runtime/)" />
-    <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
-    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="lhc4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.annotations(MPS.OpenAPI/)" />
-    <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" />
+    <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
+    <import index="sg7y" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.query(Turtle.runtime/)" />
+    <import index="iwug" ref="r:76e4946f-2d00-47d5-ae37-e0c3a55829b1(Turtle.runtime.datasetManager)" />
+    <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" />
+    <import index="6roo" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdfconnection(Turtle.runtime/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -49,7 +51,6 @@
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
-        <property id="2523873803623706117" name="isMultiline" index="hSjvv" />
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
@@ -65,9 +66,6 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -179,8 +177,8 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -435,17 +433,22 @@
               <node concept="37vLTw" id="5N3KvtCaEtO" role="37wK5m">
                 <ref role="3cqZAo" node="5N3KvtCa3zm" resolve="fullId" />
               </node>
-              <node concept="2OqwBi" id="5N3KvtCaEtP" role="37wK5m">
-                <node concept="2OqwBi" id="5N3KvtCaEtQ" role="2Oq$k0">
-                  <node concept="37vLTw" id="5N3KvtCaEtR" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5N3KvtCa3zs" resolve="prefixed" />
+              <node concept="2OqwBi" id="1xDVdsojoB8" role="37wK5m">
+                <node concept="2OqwBi" id="1xDVdsoj_la" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1xDVdsoj_lb" role="2Oq$k0">
+                    <node concept="37vLTw" id="1xDVdsoj_lc" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5N3KvtCa3zs" resolve="prefixed" />
+                    </node>
+                    <node concept="2qgKlT" id="1xDVdsoj_ld" role="2OqNvi">
+                      <ref role="37wK5l" to="4g9:2fsGeYBaamH" resolve="getPrefix" />
+                    </node>
                   </node>
-                  <node concept="2qgKlT" id="5N3KvtCaEtS" role="2OqNvi">
-                    <ref role="37wK5l" to="4g9:2fsGeYBaamH" resolve="getPrefix" />
+                  <node concept="3TrEf2" id="1xDVdsojmQs" role="2OqNvi">
+                    <ref role="3Tt5mk" to="16h3:6ONkOuOJEcS" />
                   </node>
                 </node>
-                <node concept="3TrcHB" id="5N3KvtCaEtT" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                <node concept="2qgKlT" id="1xDVdsojq7c" role="2OqNvi">
+                  <ref role="37wK5l" to="4g9:17ntPn9kXuX" resolve="getFullIdentifier" />
                 </node>
               </node>
             </node>
@@ -513,190 +516,84 @@
           </node>
         </node>
         <node concept="3clFbH" id="5N3KvtC9YNR" role="3cqZAp" />
-        <node concept="3cpWs8" id="5N3KvtC9YNS" role="3cqZAp">
-          <node concept="3cpWsn" id="5N3KvtC9YNT" role="3cpWs9">
-            <property role="TrG5h" value="queryBuilder" />
-            <node concept="3uibUv" id="5N3KvtC9YNU" role="1tU5fm">
-              <ref role="3uigEE" to="9ci3:~SelectBuilder" resolve="SelectBuilder" />
+        <node concept="3cpWs8" id="1xDVdsobxTy" role="3cqZAp">
+          <node concept="3cpWsn" id="1xDVdsobxTz" role="3cpWs9">
+            <property role="TrG5h" value="queryParam" />
+            <node concept="3uibUv" id="1xDVdsobxT$" role="1tU5fm">
+              <ref role="3uigEE" to="sg7y:~ParameterizedSparqlString" resolve="ParameterizedSparqlString" />
             </node>
-            <node concept="2OqwBi" id="5N3KvtC9YNV" role="33vP2m">
-              <property role="hSjvv" value="true" />
-              <node concept="2OqwBi" id="5N3KvtC9YNW" role="2Oq$k0">
-                <property role="hSjvv" value="true" />
-                <node concept="2OqwBi" id="5N3KvtC9YNX" role="2Oq$k0">
-                  <property role="hSjvv" value="true" />
-                  <node concept="2OqwBi" id="5N3KvtC9YNY" role="2Oq$k0">
-                    <property role="hSjvv" value="true" />
-                    <node concept="2OqwBi" id="5N3KvtC9YNZ" role="2Oq$k0">
-                      <property role="hSjvv" value="true" />
-                      <node concept="2OqwBi" id="5N3KvtC9YO0" role="2Oq$k0">
-                        <property role="hSjvv" value="true" />
-                        <node concept="2OqwBi" id="5N3KvtC9YO1" role="2Oq$k0">
-                          <property role="hSjvv" value="true" />
-                          <node concept="2OqwBi" id="5N3KvtC9YO2" role="2Oq$k0">
-                            <property role="hSjvv" value="true" />
-                            <node concept="2OqwBi" id="5N3KvtC9YO3" role="2Oq$k0">
-                              <property role="hSjvv" value="true" />
-                              <node concept="2OqwBi" id="5N3KvtC9YO4" role="2Oq$k0">
-                                <property role="hSjvv" value="true" />
-                                <node concept="2OqwBi" id="5N3KvtC9YO5" role="2Oq$k0">
-                                  <property role="hSjvv" value="true" />
-                                  <node concept="2OqwBi" id="5N3KvtC9YO6" role="2Oq$k0">
-                                    <property role="hSjvv" value="true" />
-                                    <node concept="2OqwBi" id="5N3KvtC9YO7" role="2Oq$k0">
-                                      <property role="hSjvv" value="true" />
-                                      <node concept="2ShNRf" id="5N3KvtC9YO8" role="2Oq$k0">
-                                        <node concept="1pGfFk" id="5N3KvtC9YO9" role="2ShVmc">
-                                          <ref role="37wK5l" to="9ci3:~SelectBuilder.&lt;init&gt;()" resolve="SelectBuilder" />
-                                        </node>
-                                      </node>
-                                      <node concept="liA8E" id="5N3KvtC9YOa" role="2OqNvi">
-                                        <ref role="37wK5l" to="9ci3:~AbstractQueryBuilder.addPrefix(java.lang.String,java.lang.String)" resolve="addPrefix" />
-                                        <node concept="Xl_RD" id="5N3KvtC9YOb" role="37wK5m">
-                                          <property role="Xl_RC" value="fno" />
-                                        </node>
-                                        <node concept="Xl_RD" id="5N3KvtC9YOc" role="37wK5m">
-                                          <property role="Xl_RC" value="https://w3id.org/function/ontology#" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                    <node concept="liA8E" id="5N3KvtC9YOd" role="2OqNvi">
-                                      <ref role="37wK5l" to="9ci3:~AbstractQueryBuilder.addPrefix(java.lang.String,java.lang.String)" resolve="addPrefix" />
-                                      <node concept="Xl_RD" id="5N3KvtC9YOe" role="37wK5m">
-                                        <property role="Xl_RC" value="rdf" />
-                                      </node>
-                                      <node concept="Xl_RD" id="5N3KvtC9YOf" role="37wK5m">
-                                        <property role="Xl_RC" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="liA8E" id="5N3KvtC9YOg" role="2OqNvi">
-                                    <ref role="37wK5l" to="9ci3:~SelectBuilder.addVar(java.lang.Object)" resolve="addVar" />
-                                    <node concept="Xl_RD" id="5N3KvtC9YOh" role="37wK5m">
-                                      <property role="Xl_RC" value="?name" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="5N3KvtC9YOi" role="2OqNvi">
-                                  <ref role="37wK5l" to="9ci3:~SelectBuilder.addVar(java.lang.Object)" resolve="addVar" />
-                                  <node concept="Xl_RD" id="5N3KvtC9YOj" role="37wK5m">
-                                    <property role="Xl_RC" value="?type" />
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="5N3KvtC9YOk" role="2OqNvi">
-                                <ref role="37wK5l" to="9ci3:~SelectBuilder.addVar(java.lang.Object)" resolve="addVar" />
-                                <node concept="Xl_RD" id="5N3KvtC9YOl" role="37wK5m">
-                                  <property role="Xl_RC" value="?required" />
-                                </node>
-                              </node>
+            <node concept="2ShNRf" id="1xDVdsobCZI" role="33vP2m">
+              <node concept="1pGfFk" id="1xDVdsobCZs" role="2ShVmc">
+                <ref role="37wK5l" to="sg7y:~ParameterizedSparqlString.&lt;init&gt;(java.lang.String)" resolve="ParameterizedSparqlString" />
+                <node concept="3cpWs3" id="1xDVdsocsDa" role="37wK5m">
+                  <node concept="3cpWs3" id="1xDVdsocCcd" role="3uHU7B">
+                    <node concept="3cpWs3" id="1xDVdsocxlb" role="3uHU7B">
+                      <node concept="3cpWs3" id="1xDVdsodTbk" role="3uHU7B">
+                        <node concept="3cpWs3" id="1xDVdsoc9w1" role="3uHU7B">
+                          <node concept="3cpWs3" id="1xDVdsodlkm" role="3uHU7B">
+                            <node concept="Xl_RD" id="1xDVdsodlks" role="3uHU7B">
+                              <property role="Xl_RC" value="PREFIX fno: &lt;https://w3id.org/function/ontology#&gt; " />
                             </node>
-                            <node concept="liA8E" id="5N3KvtC9YOm" role="2OqNvi">
-                              <ref role="37wK5l" to="9ci3:~SelectBuilder.addVar(java.lang.Object)" resolve="addVar" />
-                              <node concept="Xl_RD" id="5N3KvtC9YOn" role="37wK5m">
-                                <property role="Xl_RC" value="?identifier" />
-                              </node>
+                            <node concept="Xl_RD" id="1xDVdsodlku" role="3uHU7w">
+                              <property role="Xl_RC" value="PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; " />
                             </node>
                           </node>
-                          <node concept="liA8E" id="5N3KvtC9YOo" role="2OqNvi">
-                            <ref role="37wK5l" to="9ci3:~SelectBuilder.addWhere(java.lang.Object,java.lang.Object,java.lang.Object)" resolve="addWhere" />
-                            <node concept="2YIFZM" id="5N3KvtC9YOp" role="37wK5m">
-                              <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
-                              <ref role="37wK5l" to="t6dh:~ResourceFactory.createResource(java.lang.String)" resolve="createResource" />
-                              <node concept="37vLTw" id="5N3KvtC9YOq" role="37wK5m">
-                                <ref role="3cqZAo" node="5N3KvtC9YND" resolve="fullUri" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="5N3KvtC9YOr" role="37wK5m">
-                              <property role="Xl_RC" value="fno:expects" />
-                            </node>
-                            <node concept="Xl_RD" id="5N3KvtC9YOs" role="37wK5m">
-                              <property role="Xl_RC" value="?paramsList" />
-                            </node>
+                          <node concept="Xl_RD" id="1xDVdsodTbq" role="3uHU7w">
+                            <property role="Xl_RC" value="SELECT ?name ?type ?required ?identifier " />
                           </node>
                         </node>
-                        <node concept="liA8E" id="5N3KvtC9YOt" role="2OqNvi">
-                          <ref role="37wK5l" to="9ci3:~SelectBuilder.addWhere(java.lang.Object,java.lang.Object,java.lang.Object)" resolve="addWhere" />
-                          <node concept="Xl_RD" id="5N3KvtC9YOu" role="37wK5m">
-                            <property role="Xl_RC" value="?paramsList" />
-                          </node>
-                          <node concept="Xl_RD" id="5N3KvtC9YOv" role="37wK5m">
-                            <property role="Xl_RC" value="rdf:rest*/rdf:first" />
-                          </node>
-                          <node concept="Xl_RD" id="5N3KvtC9YOw" role="37wK5m">
-                            <property role="Xl_RC" value="?param" />
-                          </node>
+                        <node concept="Xl_RD" id="1xDVdsodTbs" role="3uHU7w">
+                          <property role="Xl_RC" value="WHERE { GRAPH ?graph { " />
                         </node>
                       </node>
-                      <node concept="liA8E" id="5N3KvtC9YOx" role="2OqNvi">
-                        <ref role="37wK5l" to="9ci3:~SelectBuilder.addWhere(java.lang.Object,java.lang.Object,java.lang.Object)" resolve="addWhere" />
-                        <node concept="Xl_RD" id="5N3KvtC9YOy" role="37wK5m">
-                          <property role="Xl_RC" value="?param" />
-                        </node>
-                        <node concept="10M0yZ" id="5N3KvtC9YOz" role="37wK5m">
-                          <ref role="1PxDUh" to="fia8:~RDF" resolve="RDF" />
-                          <ref role="3cqZAo" to="fia8:~RDF.type" resolve="type" />
-                        </node>
-                        <node concept="Xl_RD" id="5N3KvtC9YO$" role="37wK5m">
-                          <property role="Xl_RC" value="fno:Parameter" />
-                        </node>
+                      <node concept="Xl_RD" id="1xDVdsocCcj" role="3uHU7w">
+                        <property role="Xl_RC" value="?funId fno:expects ?paramsList . ?paramsList rdf:rest*/rdf:first ?param . " />
                       </node>
                     </node>
-                    <node concept="liA8E" id="5N3KvtC9YO_" role="2OqNvi">
-                      <ref role="37wK5l" to="9ci3:~SelectBuilder.addWhere(java.lang.Object,java.lang.Object,java.lang.Object)" resolve="addWhere" />
-                      <node concept="Xl_RD" id="5N3KvtC9YOA" role="37wK5m">
-                        <property role="Xl_RC" value="?param" />
-                      </node>
-                      <node concept="Xl_RD" id="5N3KvtC9YOB" role="37wK5m">
-                        <property role="Xl_RC" value="fno:name" />
-                      </node>
-                      <node concept="Xl_RD" id="5N3KvtC9YOC" role="37wK5m">
-                        <property role="Xl_RC" value="?name" />
-                      </node>
+                    <node concept="Xl_RD" id="1xDVdsocCcl" role="3uHU7w">
+                      <property role="Xl_RC" value="?param rdf:type fno:Parameter . ?param fno:name ?name . ?param fno:type ?type . ?param fno:predicate ?identifier . " />
                     </node>
                   </node>
-                  <node concept="liA8E" id="5N3KvtC9YOD" role="2OqNvi">
-                    <ref role="37wK5l" to="9ci3:~SelectBuilder.addWhere(java.lang.Object,java.lang.Object,java.lang.Object)" resolve="addWhere" />
-                    <node concept="Xl_RD" id="5N3KvtC9YOE" role="37wK5m">
-                      <property role="Xl_RC" value="?param" />
-                    </node>
-                    <node concept="Xl_RD" id="5N3KvtC9YOF" role="37wK5m">
-                      <property role="Xl_RC" value="fno:type" />
-                    </node>
-                    <node concept="Xl_RD" id="5N3KvtC9YOG" role="37wK5m">
-                      <property role="Xl_RC" value="?type" />
-                    </node>
+                  <node concept="Xl_RD" id="1xDVdsocsDi" role="3uHU7w">
+                    <property role="Xl_RC" value="OPTIONAL { ?param fno:required ?required } } } " />
                   </node>
-                </node>
-                <node concept="liA8E" id="5N3KvtC9YOH" role="2OqNvi">
-                  <ref role="37wK5l" to="9ci3:~SelectBuilder.addWhere(java.lang.Object,java.lang.Object,java.lang.Object)" resolve="addWhere" />
-                  <node concept="Xl_RD" id="5N3KvtC9YOI" role="37wK5m">
-                    <property role="Xl_RC" value="?param" />
-                  </node>
-                  <node concept="Xl_RD" id="5N3KvtC9YOJ" role="37wK5m">
-                    <property role="Xl_RC" value="fno:predicate" />
-                  </node>
-                  <node concept="Xl_RD" id="5N3KvtC9YOK" role="37wK5m">
-                    <property role="Xl_RC" value="?identifier" />
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="5N3KvtC9YOL" role="2OqNvi">
-                <ref role="37wK5l" to="9ci3:~SelectBuilder.addOptional(java.lang.Object,java.lang.Object,java.lang.Object)" resolve="addOptional" />
-                <node concept="Xl_RD" id="5N3KvtC9YOM" role="37wK5m">
-                  <property role="Xl_RC" value="?param" />
-                </node>
-                <node concept="Xl_RD" id="5N3KvtC9YON" role="37wK5m">
-                  <property role="Xl_RC" value="fno:required" />
-                </node>
-                <node concept="Xl_RD" id="5N3KvtC9YOO" role="37wK5m">
-                  <property role="Xl_RC" value="?required" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5N3KvtC9YOP" role="3cqZAp" />
+        <node concept="3clFbF" id="1xDVdsocKX6" role="3cqZAp">
+          <node concept="2OqwBi" id="1xDVdsocSzs" role="3clFbG">
+            <node concept="37vLTw" id="1xDVdsocKX4" role="2Oq$k0">
+              <ref role="3cqZAo" node="1xDVdsobxTz" resolve="queryParam" />
+            </node>
+            <node concept="liA8E" id="1xDVdsocVfq" role="2OqNvi">
+              <ref role="37wK5l" to="sg7y:~ParameterizedSparqlString.setIri(java.lang.String,java.lang.String)" resolve="setIri" />
+              <node concept="Xl_RD" id="1xDVdsocYlP" role="37wK5m">
+                <property role="Xl_RC" value="graph" />
+              </node>
+              <node concept="37vLTw" id="1xDVdsod4HT" role="37wK5m">
+                <ref role="3cqZAo" node="5N3KvtC9YNF" resolve="prefix" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1xDVdsodf09" role="3cqZAp">
+          <node concept="2OqwBi" id="1xDVdsodjVZ" role="3clFbG">
+            <node concept="37vLTw" id="1xDVdsodf07" role="2Oq$k0">
+              <ref role="3cqZAo" node="1xDVdsobxTz" resolve="queryParam" />
+            </node>
+            <node concept="liA8E" id="1xDVdsodxq4" role="2OqNvi">
+              <ref role="37wK5l" to="sg7y:~ParameterizedSparqlString.setIri(java.lang.String,java.lang.String)" resolve="setIri" />
+              <node concept="Xl_RD" id="1xDVdsod$sD" role="37wK5m">
+                <property role="Xl_RC" value="funId" />
+              </node>
+              <node concept="37vLTw" id="1xDVdsodDMO" role="37wK5m">
+                <ref role="3cqZAo" node="5N3KvtC9YND" resolve="fullUri" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="5N3KvtC9YOQ" role="3cqZAp">
           <node concept="3cpWsn" id="5N3KvtC9YOR" role="3cpWs9">
             <property role="TrG5h" value="parameters" />
@@ -721,12 +618,12 @@
             <node concept="3uibUv" id="5N3KvtC9YP0" role="1tU5fm">
               <ref role="3uigEE" to="sg7y:~Query" resolve="Query" />
             </node>
-            <node concept="2OqwBi" id="5N3KvtC9YP1" role="33vP2m">
+            <node concept="2OqwBi" id="1xDVdsodOy9" role="33vP2m">
               <node concept="37vLTw" id="5N3KvtC9YP2" role="2Oq$k0">
-                <ref role="3cqZAo" node="5N3KvtC9YNT" resolve="queryBuilder" />
+                <ref role="3cqZAo" node="1xDVdsobxTz" resolve="queryParam" />
               </node>
-              <node concept="liA8E" id="5N3KvtC9YP3" role="2OqNvi">
-                <ref role="37wK5l" to="9ci3:~AbstractQueryBuilder.build()" resolve="build" />
+              <node concept="liA8E" id="1xDVdsodP$$" role="2OqNvi">
+                <ref role="37wK5l" to="sg7y:~ParameterizedSparqlString.asQuery()" resolve="asQuery" />
               </node>
             </node>
           </node>
@@ -991,9 +888,6 @@
       <node concept="37vLTG" id="5N3KvtC9YNF" role="3clF46">
         <property role="TrG5h" value="prefix" />
         <node concept="17QB3L" id="5N3KvtC9YNG" role="1tU5fm" />
-        <node concept="2AHcQZ" id="5N3KvtC9YNH" role="2AJF6D">
-          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
-        </node>
       </node>
       <node concept="3Tm6S6" id="5N3KvtCaAdp" role="1B3o_S" />
     </node>

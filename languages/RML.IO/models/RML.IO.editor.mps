@@ -318,7 +318,7 @@
         </node>
       </node>
       <node concept="3yfXC2" id="1xDVdsnw98v" role="3F10Kt">
-        <ref role="3ygfmf" to="qx9m:5tSQ8xWR71q" />
+        <ref role="3ygfmf" to="qx9m:5tSQ8xWR71q" resolve="ref" />
       </node>
     </node>
   </node>
@@ -742,7 +742,7 @@
         </node>
         <node concept="3F1sOY" id="FW04txtoqm" role="3EZMnx">
           <property role="1$x2rV" value="default" />
-          <ref role="1NtTu8" to="qx9m:5tSQ8xWRka0" />
+          <ref role="1NtTu8" to="qx9m:5tSQ8xWRka0" resolve="encoding" />
         </node>
         <node concept="2iRfu4" id="FW04txtoqh" role="2iSdaV" />
       </node>
@@ -752,14 +752,14 @@
         </node>
         <node concept="3F1sOY" id="FW04txtpvr" role="3EZMnx">
           <property role="1$x2rV" value="default" />
-          <ref role="1NtTu8" to="qx9m:5tSQ8xWRka1" />
+          <ref role="1NtTu8" to="qx9m:5tSQ8xWRka1" resolve="compression" />
         </node>
         <node concept="2iRfu4" id="FW04txtpvp" role="2iSdaV" />
       </node>
       <node concept="3F1sOY" id="pZc6UDa6v1" role="3EZMnx">
         <property role="39s7Ar" value="true" />
         <property role="1$x2rV" value="&lt;&lt; custom property &gt;&gt;" />
-        <ref role="1NtTu8" to="qx9m:pZc6UDa6tp" />
+        <ref role="1NtTu8" to="qx9m:pZc6UDa6tp" resolve="list" />
       </node>
       <node concept="l2Vlx" id="pZc6UDdhZk" role="2iSdaV" />
       <node concept="1Bsynf" id="22bbLClIrXj" role="3F10Kt">

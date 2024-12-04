@@ -133,12 +133,12 @@
         <child id="6303025759225643718" name="value" index="FGdDe" />
       </concept>
       <concept id="6303025759225643729" name="RML.structure.LiteralTT" flags="ng" index="FGdDp" />
+      <concept id="6303025759225643730" name="RML.structure.IriTT" flags="ng" index="FGdDq" />
       <concept id="6303025759225998812" name="RML.structure.ValueBasedObjectMap" flags="ng" index="FHrlk" />
       <concept id="6303025759225998813" name="RML.structure.PredicateMap" flags="ng" index="FHrll" />
       <concept id="6099872835424795659" name="RML.structure.SubjectMap" flags="ng" index="IaUod">
         <child id="6303025759225736038" name="class" index="FGrfI" />
       </concept>
-      <concept id="6099872835424795677" name="RML.structure.Expression" flags="ngI" index="IaUor" />
       <concept id="6099872835424795701" name="RML.structure.ConstantExpr" flags="ng" index="IaUoN">
         <child id="6303025759225526832" name="value" index="FJIaS" />
       </concept>
@@ -506,21 +506,28 @@
           </node>
         </node>
         <node concept="FHrlk" id="1xDVdsnWhQE" role="FHrli">
-          <node concept="H3HQD" id="1xDVdsnWibj" role="FGdDe">
-            <node concept="H4ayu" id="1xDVdsnWibl" role="H4ays">
-              <node concept="IaUoN" id="1xDVdsnWibn" role="FGdDe">
-                <node concept="29d5ma" id="1xDVdsnWigQ" role="FJIaS">
-                  <property role="29d1ub" value="string_trim" />
+          <node concept="H3HQD" id="1xDVdso6hoV" role="FGdDe">
+            <node concept="H4ayu" id="1xDVdso6hoX" role="H4ays">
+              <node concept="IaUoN" id="1xDVdso6hoZ" role="FGdDe">
+                <node concept="29d5ma" id="1xDVdso6hu5" role="FJIaS">
+                  <property role="29d1ub" value="string_substring" />
                   <ref role="29d1uc" node="1R$stKL1Etz" resolve="grel" />
                 </node>
               </node>
             </node>
-            <node concept="GSHqK" id="1xDVdso2n11" role="GSHqR">
-              <node concept="GSHqG" id="1xDVdso2n12" role="GSHqM">
-                <node concept="IaUor" id="1xDVdso2n13" role="FGdDe" />
+            <node concept="GSHqK" id="1xDVdso6hza" role="GSHqR">
+              <node concept="GSHqG" id="1xDVdso6hzb" role="GSHqM">
+                <node concept="IaUoN" id="1xDVdsoqIaz" role="FGdDe">
+                  <node concept="29ckXp" id="1xDVdsoqIws" role="FJIaS">
+                    <property role="29ckXk" value="http://ex.org/from" />
+                  </node>
+                </node>
+                <node concept="FGdDq" id="1xDVdsoqIlv" role="FGdD2" />
               </node>
-              <node concept="FGdDb" id="1xDVdso2n14" role="GSHqH">
-                <node concept="IaUor" id="1xDVdso2n15" role="FGdDe" />
+              <node concept="FGdDb" id="1xDVdso6hzd" role="GSHqH">
+                <node concept="IaUoZ" id="1xDVdsoqI_U" role="FGdDe">
+                  <property role="FJGrp" value="primary" />
+                </node>
               </node>
             </node>
           </node>
@@ -786,7 +793,7 @@
         <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
       </node>
       <node concept="FCOsx" id="4po4Attjz3N" role="FCw5y">
-        <ref role="FDazi" node="4po4Attjz3M" />
+        <ref role="FDazi" node="4po4Attjz3M" resolve="&lt;JsonFileSource&gt;" />
       </node>
     </node>
     <node concept="1SSSdx" id="4po4AtthAYY" role="29aKCU" />

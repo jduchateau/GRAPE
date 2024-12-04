@@ -110,6 +110,7 @@
       <concept id="3190666691957250295" name="Turtle.structure.BlankNodePropertyList" flags="ng" index="2YzXU4">
         <child id="3190666691957250332" name="predicateObjectList" index="2YzXXJ" />
       </concept>
+      <concept id="5063185561593286416" name="Turtle.structure.EmptyStatment" flags="ng" index="1SSSdx" />
       <concept id="7946374057678053675" name="Turtle.structure.PredicateObjectList" flags="ng" index="3Y090L">
         <child id="7946374057678053676" name="list" index="3Y090Q" />
       </concept>
@@ -669,7 +670,7 @@
                               <node concept="3clFbF" id="4po4Att6XmB" role="3cqZAp">
                                 <node concept="2OqwBi" id="4po4Att6XmC" role="3clFbG">
                                   <node concept="3TrEf2" id="4po4Att6XmD" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="qx9m:5tSQ8xWRka0" />
+                                    <ref role="3Tt5mk" to="qx9m:5tSQ8xWRka0" resolve="encoding" />
                                   </node>
                                   <node concept="30H73N" id="4po4Att6XmE" role="2Oq$k0" />
                                 </node>
@@ -691,7 +692,7 @@
                               <node concept="2OqwBi" id="4po4Att6XmL" role="2Oq$k0">
                                 <node concept="30H73N" id="4po4Att6XmM" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="4po4Att6XmN" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="qx9m:5tSQ8xWRka0" />
+                                  <ref role="3Tt5mk" to="qx9m:5tSQ8xWRka0" resolve="encoding" />
                                 </node>
                               </node>
                               <node concept="3x8VRR" id="4po4Att6XmO" role="2OqNvi" />
@@ -712,7 +713,7 @@
                               <node concept="3clFbF" id="4po4Att6XmV" role="3cqZAp">
                                 <node concept="2OqwBi" id="4po4Att6XmW" role="3clFbG">
                                   <node concept="3TrEf2" id="4po4Att6XmX" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="qx9m:5tSQ8xWRka1" />
+                                    <ref role="3Tt5mk" to="qx9m:5tSQ8xWRka1" resolve="compression" />
                                   </node>
                                   <node concept="30H73N" id="4po4Att6XmY" role="2Oq$k0" />
                                 </node>
@@ -734,7 +735,7 @@
                               <node concept="2OqwBi" id="4po4Att6Xn5" role="2Oq$k0">
                                 <node concept="30H73N" id="4po4Att6Xn6" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="4po4Att6Xn7" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="qx9m:5tSQ8xWRka1" />
+                                  <ref role="3Tt5mk" to="qx9m:5tSQ8xWRka1" resolve="compression" />
                                 </node>
                               </node>
                               <node concept="3x8VRR" id="4po4Att6Xn8" role="2OqNvi" />
@@ -843,7 +844,7 @@
                           <node concept="3clFbF" id="4po4Att6Xnf" role="3cqZAp">
                             <node concept="2OqwBi" id="4po4Att6Xng" role="3clFbG">
                               <node concept="3TrEf2" id="4po4Att6Xnh" role="2OqNvi">
-                                <ref role="3Tt5mk" to="qx9m:pZc6UDa6tp" />
+                                <ref role="3Tt5mk" to="qx9m:pZc6UDa6tp" resolve="list" />
                               </node>
                               <node concept="30H73N" id="4po4Att6Xni" role="2Oq$k0" />
                             </node>
@@ -867,6 +868,129 @@
         </node>
         <node concept="2YzXU4" id="4po4Att6Xnm" role="29d64L">
           <node concept="3Y090L" id="4po4Att6Xnn" role="2YzXXJ" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="bUwia" id="1xDVdsotCSH">
+    <property role="TrG5h" value="DirectoryRoot" />
+    <node concept="3aamgX" id="1xDVdsotCSI" role="3acgRq">
+      <ref role="30HIoZ" to="qx9m:FW04txtQWs" resolve="CurrentWorkingDirectoryRoot" />
+      <node concept="1Koe21" id="1xDVdsotCSK" role="1lVwrX">
+        <node concept="29aKCY" id="1xDVdsotCSO" role="1Koe22">
+          <property role="TrG5h" value="tmp" />
+          <node concept="29d5m5" id="1xDVdsotCSP" role="29aKCU">
+            <property role="TrG5h" value="rml" />
+            <node concept="29d1u9" id="1xDVdsotCSR" role="3pzv1Z">
+              <property role="29d1u8" value="http://w3id.org/rml/" />
+            </node>
+          </node>
+          <node concept="29d64P" id="1xDVdsotCUe" role="29aKCU">
+            <node concept="3Y090L" id="1xDVdsotCUg" role="29d64K">
+              <node concept="29d65d" id="1xDVdsotCUi" role="3Y090Q">
+                <node concept="29d650" id="1xDVdsotCUj" role="29d653">
+                  <node concept="29d5ma" id="1xDVdsotCST" role="29d3Gi">
+                    <property role="29d1ub" value="CurrentWorkingDirectory" />
+                    <ref role="29d1uc" node="1xDVdsotCSP" resolve="rml" />
+                  </node>
+                  <node concept="raruj" id="1xDVdsotCUo" role="lGtFl" />
+                </node>
+                <node concept="29d5ma" id="1xDVdsotCUm" role="29d654">
+                  <property role="29d1ub" value="root" />
+                  <ref role="29d1uc" node="1xDVdsotCSP" resolve="rml" />
+                </node>
+              </node>
+            </node>
+            <node concept="29d1u9" id="1xDVdsotCUd" role="29d64L">
+              <property role="29d1u8" value="source" />
+            </node>
+          </node>
+          <node concept="1SSSdx" id="1xDVdsotCUb" role="29aKCU" />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="1xDVdsotCUp" role="3acgRq">
+      <ref role="30HIoZ" to="qx9m:FW04txtQWD" resolve="MappingDirectoryRoot" />
+      <node concept="1Koe21" id="1xDVdsotCUq" role="1lVwrX">
+        <node concept="29aKCY" id="1xDVdsotCUr" role="1Koe22">
+          <property role="TrG5h" value="tmp" />
+          <node concept="29d5m5" id="1xDVdsotCUs" role="29aKCU">
+            <property role="TrG5h" value="rml" />
+            <node concept="29d1u9" id="1xDVdsotCUt" role="3pzv1Z">
+              <property role="29d1u8" value="http://w3id.org/rml/" />
+            </node>
+          </node>
+          <node concept="29d64P" id="1xDVdsotCUu" role="29aKCU">
+            <node concept="3Y090L" id="1xDVdsotCUv" role="29d64K">
+              <node concept="29d65d" id="1xDVdsotCUw" role="3Y090Q">
+                <node concept="29d650" id="1xDVdsotCUx" role="29d653">
+                  <node concept="29d5ma" id="1xDVdsotCUy" role="29d3Gi">
+                    <property role="29d1ub" value="MappingDirectory" />
+                    <ref role="29d1uc" node="1xDVdsotCUs" resolve="rml" />
+                  </node>
+                  <node concept="raruj" id="1xDVdsotCUz" role="lGtFl" />
+                </node>
+                <node concept="29d5ma" id="1xDVdsotCU$" role="29d654">
+                  <property role="29d1ub" value="root" />
+                  <ref role="29d1uc" node="1xDVdsotCUs" resolve="rml" />
+                </node>
+              </node>
+            </node>
+            <node concept="29d1u9" id="1xDVdsotCU_" role="29d64L">
+              <property role="29d1u8" value="source" />
+            </node>
+          </node>
+          <node concept="1SSSdx" id="1xDVdsotCUA" role="29aKCU" />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="1xDVdsotCUB" role="3acgRq">
+      <ref role="30HIoZ" to="qx9m:FW04txtQWI" resolve="CustomDirectoryRoot" />
+      <node concept="1Koe21" id="1xDVdsotCUC" role="1lVwrX">
+        <node concept="29aKCY" id="1xDVdsotCUD" role="1Koe22">
+          <property role="TrG5h" value="tmp" />
+          <node concept="29d5m5" id="1xDVdsotCUE" role="29aKCU">
+            <property role="TrG5h" value="rml" />
+            <node concept="29d1u9" id="1xDVdsotCUF" role="3pzv1Z">
+              <property role="29d1u8" value="http://w3id.org/rml/" />
+            </node>
+          </node>
+          <node concept="29d64P" id="1xDVdsotCUG" role="29aKCU">
+            <node concept="3Y090L" id="1xDVdsotCUH" role="29d64K">
+              <node concept="29d65d" id="1xDVdsotCUI" role="3Y090Q">
+                <node concept="29d650" id="1xDVdsotCUJ" role="29d653">
+                  <node concept="raruj" id="1xDVdsotCUL" role="lGtFl" />
+                  <node concept="29ckXp" id="1xDVdsotCUQ" role="29d3Gi">
+                    <property role="29ckXk" value="path" />
+                    <node concept="17Uvod" id="1xDVdsotCUR" role="lGtFl">
+                      <property role="2qtEX9" value="value" />
+                      <property role="P4ACc" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140624470/2937713717140624475" />
+                      <node concept="3zFVjK" id="1xDVdsotCUU" role="3zH0cK">
+                        <node concept="3clFbS" id="1xDVdsotCUV" role="2VODD2">
+                          <node concept="3clFbF" id="1xDVdsotCV1" role="3cqZAp">
+                            <node concept="2OqwBi" id="1xDVdsotCUW" role="3clFbG">
+                              <node concept="3TrcHB" id="1xDVdsotCUZ" role="2OqNvi">
+                                <ref role="3TsBF5" to="qx9m:FW04txtQWK" resolve="path" />
+                              </node>
+                              <node concept="30H73N" id="1xDVdsotCV0" role="2Oq$k0" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="29d5ma" id="1xDVdsotCUM" role="29d654">
+                  <property role="29d1ub" value="root" />
+                  <ref role="29d1uc" node="1xDVdsotCUE" resolve="rml" />
+                </node>
+              </node>
+            </node>
+            <node concept="29d1u9" id="1xDVdsotCUN" role="29d64L">
+              <property role="29d1u8" value="source" />
+            </node>
+          </node>
+          <node concept="1SSSdx" id="1xDVdsotCUO" role="29aKCU" />
         </node>
       </node>
     </node>

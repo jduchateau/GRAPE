@@ -181,7 +181,7 @@
     <property role="3GE5qa" value="Source.Root" />
     <property role="TrG5h" value="MappingDirectoryRoot" />
     <property role="34LRSv" value="mapping dir." />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="FW04txtQWG" role="PzmwI">
       <ref role="PrY4T" node="FW04txtQWx" resolve="DirectoryRoot" />
     </node>
@@ -191,7 +191,7 @@
     <property role="3GE5qa" value="Source.Root" />
     <property role="TrG5h" value="CustomDirectoryRoot" />
     <property role="34LRSv" value="custom dir." />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="FW04txtQWJ" role="PzmwI">
       <ref role="PrY4T" node="FW04txtQWx" resolve="DirectoryRoot" />
     </node>

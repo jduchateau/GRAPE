@@ -1253,7 +1253,7 @@
                   <node concept="WxPPo" id="2ZAgtJQBwZa" role="28ntcv">
                     <node concept="2YIFZM" id="2ZAgtJQBxtR" role="WxPPp">
                       <ref role="37wK5l" node="2ZAgtJQAohc" resolve="cleanAround" />
-                      <ref role="1Pybhc" node="2ZAgtJQAnhk" resolve="StringUtils" />
+                      <ref role="1Pybhc" node="2ZAgtJQAnhk" resolve="StringCleaning" />
                       <node concept="ub8z3" id="2ZAgtJQBxxQ" role="37wK5m" />
                       <node concept="1Xhbcc" id="2ZAgtJQBxGV" role="37wK5m">
                         <property role="1XhdNS" value="&lt;" />
@@ -1319,7 +1319,7 @@
                     <property role="Xl_RC" value="&lt;" />
                   </node>
                   <node concept="37vLTw" id="2ZAgtJQENW4" role="3uHU7w">
-                    <ref role="3cqZAo" node="2ZAgtJQENVZ" resolve="cleanAround" />
+                    <ref role="3cqZAo" node="2ZAgtJQENVZ" resolve="cleanPattern" />
                   </node>
                 </node>
               </node>
@@ -1611,7 +1611,7 @@
                   <node concept="WxPPo" id="75xoT0kxzje" role="28ntcv">
                     <node concept="2YIFZM" id="2ZAgtJQA_4L" role="WxPPp">
                       <ref role="37wK5l" node="2ZAgtJQAAk3" resolve="cleanAround" />
-                      <ref role="1Pybhc" node="2ZAgtJQAnhk" resolve="StringUtils" />
+                      <ref role="1Pybhc" node="2ZAgtJQAnhk" resolve="StringCleaning" />
                       <node concept="ub8z3" id="2ZAgtJQA_5E" role="37wK5m" />
                       <node concept="1Xhbcc" id="2ZAgtJQBmu2" role="37wK5m">
                         <property role="1XhdNS" value="&quot;" />
@@ -1635,7 +1635,7 @@
                 <node concept="3cpWs3" id="2ZAgtJQBjJi" role="3uHU7B">
                   <node concept="2YIFZM" id="2ZAgtJQBl0y" role="3uHU7w">
                     <ref role="37wK5l" node="2ZAgtJQAAk3" resolve="cleanAround" />
-                    <ref role="1Pybhc" node="2ZAgtJQAnhk" resolve="StringUtils" />
+                    <ref role="1Pybhc" node="2ZAgtJQAnhk" resolve="StringCleaning" />
                     <node concept="ub8z3" id="2ZAgtJQBl1H" role="37wK5m" />
                     <node concept="1Xhbcc" id="2ZAgtJQBlzd" role="37wK5m">
                       <property role="1XhdNS" value="&quot;" />
