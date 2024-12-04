@@ -44,9 +44,7 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
-      <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1147468630220" name="propertyGetter" index="EtsB7" />
@@ -57,7 +55,6 @@
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
-        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213098023997" name="property" index="1MhHOB" />
       </concept>
     </language>
@@ -152,23 +149,6 @@
               </node>
               <node concept="2qgKlT" id="25MWlU63aXq" role="2OqNvi">
                 <ref role="37wK5l" to="4g9:RW$yYCr8i$" resolve="getShortIdentifier" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="2ZAgtJQ$8ZB">
-    <ref role="1M2myG" to="ys6r:75xoT0k3_4K" resolve="LogicalSourceUse" />
-    <node concept="9S07l" id="2ZAgtJQ$8ZC" role="9Vyp8">
-      <node concept="3clFbS" id="2ZAgtJQ$8ZD" role="2VODD2">
-        <node concept="3clFbF" id="2ZAgtJQ$9dp" role="3cqZAp">
-          <node concept="2OqwBi" id="2ZAgtJQ$9_N" role="3clFbG">
-            <node concept="nLn13" id="2ZAgtJQ$9do" role="2Oq$k0" />
-            <node concept="1mIQ4w" id="2ZAgtJQ$9IZ" role="2OqNvi">
-              <node concept="chp4Y" id="2ZAgtJQ$9YB" role="cj9EA">
-                <ref role="cht4Q" to="ys6r:5iB6wpUzbKt" resolve="Expression" />
               </node>
             </node>
           </node>

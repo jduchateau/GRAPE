@@ -77,9 +77,6 @@
         <child id="791507941088259715" name="source" index="1FyQV4" />
       </concept>
       <concept id="6303025759226768837" name="RML.IO.structure.LogicalSourceNamedDef" flags="ng" index="FCvld" />
-      <concept id="6303025759226768838" name="RML.IO.structure.LogicalSourceReference" flags="ng" index="FCvle">
-        <reference id="6303025759226768839" name="ref" index="FCvlf" />
-      </concept>
       <concept id="6303025759226929064" name="RML.IO.structure.SourceNamedDef" flags="ng" index="FCOsw" />
       <concept id="6303025759226929065" name="RML.IO.structure.SourceRef" flags="ng" index="FCOsx">
         <reference id="6303025759226982490" name="ref" index="FDazi" />
@@ -95,7 +92,9 @@
         <child id="6303025759226878442" name="source" index="FCw5y" />
         <child id="6303025759226878446" name="referenceFormulation" index="FCw5A" />
       </concept>
+      <concept id="468146138112354128" name="RML.IO.structure.SourceInlineDef" flags="ng" index="2JlPsY" />
       <concept id="8169920669490978449" name="RML.IO.structure.SourceUse" flags="ngI" index="1_gfO1" />
+      <concept id="8169920669489714720" name="RML.IO.structure.LogicalSourceInlineDef" flags="ng" index="1_rNmK" />
       <concept id="791507941088259886" name="RML.IO.structure.CustomDirectoryRoot" flags="ng" index="1FyQXD" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -132,7 +131,6 @@
         <child id="6303025759225643718" name="value" index="FGdDe" />
       </concept>
       <concept id="6303025759225643729" name="RML.structure.LiteralTT" flags="ng" index="FGdDp" />
-      <concept id="6303025759225643730" name="RML.structure.IriTT" flags="ng" index="FGdDq" />
       <concept id="6303025759225998812" name="RML.structure.ValueBasedObjectMap" flags="ng" index="FHrlk" />
       <concept id="6303025759225998813" name="RML.structure.PredicateMap" flags="ng" index="FHrll" />
       <concept id="6099872835424795659" name="RML.structure.SubjectMap" flags="ng" index="IaUod">
@@ -157,6 +155,7 @@
         <child id="6099872835424571532" name="predicateObjectMap" index="Ib$Ea" />
         <child id="3190666691956656690" name="subjectMap" index="2YYcL1" />
       </concept>
+      <concept id="8169920669489713456" name="RML.structure.LogicalSourceUse" flags="ngI" index="1_rNaw" />
     </language>
   </registry>
   <node concept="29aKCY" id="2z4QKYxW8D7">
@@ -332,9 +331,13 @@
         <property role="29d1ub" value="ProjectsLS" />
         <ref role="29d1uc" node="6T7chEgtZQ9" resolve="" />
       </node>
-      <node concept="1_gfO1" id="4po4Attgl_9" role="FCw5y" />
+      <node concept="2JlPsY" id="3EB406$9CzL" role="FCw5y">
+        <node concept="FCOsJ" id="3EB406$9CC8" role="1FyQV4">
+          <property role="1Fxk42" value="h" />
+          <node concept="3Y090L" id="3EB406$9CCa" role="2JlPsR" />
+        </node>
+      </node>
     </node>
-    <node concept="1SSSdx" id="4po4Attgl_a" role="29aKCU" />
     <node concept="1SSSdx" id="4po4Attf_F8" role="29aKCU" />
     <node concept="FCvld" id="75xoT0k3Nof" role="29aKCU">
       <node concept="29d5ma" id="25MWlU6qFHl" role="2$AQDL">
@@ -360,7 +363,6 @@
           </node>
         </node>
         <node concept="FHrlk" id="1R$stKLpttg" role="FHrli">
-          <node concept="FGdDp" id="1R$stKLDGxs" role="FGdD2" />
           <node concept="H3HQD" id="5c3_2MtXFYx" role="FGdDe">
             <node concept="H4ayu" id="5c3_2MtXFYz" role="H4ays">
               <node concept="IaUoN" id="5c3_2MtXFY_" role="FGdDe">
@@ -414,12 +416,12 @@
           <property role="IaUoT" value="http://example.org/project/{project_slug}" />
         </node>
       </node>
-      <node concept="FCvle" id="34GH_iU6ANF" role="IaUo4">
-        <ref role="FCvlf" node="34GH_iU6ANx" resolve=":ProjectsLS" />
-      </node>
       <node concept="29d5ma" id="25MWlU6qG2j" role="2$AQDL">
         <property role="29d1ub" value="TMProjects" />
         <ref role="29d1uc" node="6T7chEgtZQ9" resolve="" />
+      </node>
+      <node concept="1_rNmK" id="3EB406$8Yxb" role="IaUo4">
+        <node concept="1_gfO1" id="3EB406$8Yxd" role="FCw5y" />
       </node>
     </node>
     <node concept="3DQ70j" id="34GH_iU2z00" role="lGtFl">
@@ -432,7 +434,6 @@
         <node concept="IaUoX" id="5tSQ8xWMDtE" role="FGdDe">
           <property role="IaUoT" value="http://example.com/{id}" />
         </node>
-        <node concept="FGdDq" id="5tSQ8xWMLcL" role="FGdD2" />
         <node concept="29d5ma" id="7Y6GWuSSLHM" role="FGrfI">
           <property role="29d1ub" value="Person" />
           <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
@@ -459,11 +460,11 @@
             </node>
           </node>
         </node>
-        <node concept="FHrlk" id="5tSQ8xWOxdT" role="FHrli">
-          <node concept="FGdDp" id="75xoT0kh7s2" role="FGdD2" />
-          <node concept="IaUoZ" id="5PE8eazKPkz" role="FGdDe">
+        <node concept="FHrlk" id="3EB406$3voH" role="FHrli">
+          <node concept="IaUoZ" id="3EB406$3voG" role="FGdDe">
             <property role="FJGrp" value="nickname" />
           </node>
+          <node concept="FGdDp" id="3EB406$514C" role="FGdD2" />
         </node>
       </node>
       <node concept="Ib$Ef" id="34GH_iU2yZP" role="Ib$Ea">
@@ -491,13 +492,11 @@
           </node>
         </node>
       </node>
-      <node concept="FCvle" id="75xoT0k622J" role="IaUo4">
-        <ref role="FCvlf" node="75xoT0k3Nof" resolve=":PeopleLS" />
-      </node>
       <node concept="29d5ma" id="25MWlU6s3Jq" role="2$AQDL">
         <property role="29d1ub" value="TMPerson" />
         <ref role="29d1uc" node="6T7chEgtZQ9" resolve="" />
       </node>
+      <node concept="1_rNaw" id="3EB406$518Q" role="IaUo4" />
     </node>
     <node concept="3DQ70j" id="7C_2uwsiZUt" role="lGtFl">
       <property role="3V$3am" value="statments" />

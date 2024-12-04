@@ -16,25 +16,6 @@
   <imports>
     <import index="qx9m" ref="r:5f21b94e-6c55-4230-951a-dc8170ceeb15(RML.IO.structure)" />
   </imports>
-  <registry>
-    <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
-        <reference id="1213093996982" name="concept" index="1M2myG" />
-      </concept>
-    </language>
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
-    </language>
-  </registry>
-  <node concept="1M2fIO" id="75xoT0k8pVn">
-    <property role="3GE5qa" value="Source.Use" />
-    <ref role="1M2myG" to="qx9m:5tSQ8xWQTYC" resolve="SourceNamedDef" />
-  </node>
-  <node concept="1M2fIO" id="75xoT0k4cy$">
-    <property role="3GE5qa" value="LogicalSource" />
-    <ref role="1M2myG" to="qx9m:5tSQ8xWQiR5" resolve="LogicalSourceNamedDef" />
-  </node>
+  <registry />
 </model>
 
