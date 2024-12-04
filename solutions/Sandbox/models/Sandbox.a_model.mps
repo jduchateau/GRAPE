@@ -77,6 +77,9 @@
         <child id="791507941088259715" name="source" index="1FyQV4" />
       </concept>
       <concept id="6303025759226768837" name="RML.IO.structure.LogicalSourceNamedDef" flags="ng" index="FCvld" />
+      <concept id="6303025759226768838" name="RML.IO.structure.LogicalSourceReference" flags="ng" index="FCvle">
+        <reference id="6303025759226768839" name="ref" index="FCvlf" />
+      </concept>
       <concept id="6303025759226929064" name="RML.IO.structure.SourceNamedDef" flags="ng" index="FCOsw" />
       <concept id="6303025759226929065" name="RML.IO.structure.SourceRef" flags="ng" index="FCOsx">
         <reference id="6303025759226982490" name="ref" index="FDazi" />
@@ -93,9 +96,8 @@
         <child id="6303025759226878446" name="referenceFormulation" index="FCw5A" />
       </concept>
       <concept id="468146138112354128" name="RML.IO.structure.SourceInlineDef" flags="ng" index="2JlPsY" />
-      <concept id="8169920669490978449" name="RML.IO.structure.SourceUse" flags="ngI" index="1_gfO1" />
       <concept id="8169920669489714720" name="RML.IO.structure.LogicalSourceInlineDef" flags="ng" index="1_rNmK" />
-      <concept id="791507941088259886" name="RML.IO.structure.CustomDirectoryRoot" flags="ng" index="1FyQXD" />
+      <concept id="791507941088259881" name="RML.IO.structure.MappingDirectoryRoot" flags="ng" index="1FyQXI" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -136,6 +138,7 @@
       <concept id="6099872835424795659" name="RML.structure.SubjectMap" flags="ng" index="IaUod">
         <child id="6303025759225736038" name="class" index="FGrfI" />
       </concept>
+      <concept id="6099872835424795677" name="RML.structure.Expression" flags="ngI" index="IaUor" />
       <concept id="6099872835424795701" name="RML.structure.ConstantExpr" flags="ng" index="IaUoN">
         <child id="6303025759225526832" name="value" index="FJIaS" />
       </concept>
@@ -155,7 +158,6 @@
         <child id="6099872835424571532" name="predicateObjectMap" index="Ib$Ea" />
         <child id="3190666691956656690" name="subjectMap" index="2YYcL1" />
       </concept>
-      <concept id="8169920669489713456" name="RML.structure.LogicalSourceUse" flags="ngI" index="1_rNaw" />
     </language>
   </registry>
   <node concept="29aKCY" id="2z4QKYxW8D7">
@@ -344,8 +346,8 @@
         <property role="29d1ub" value="PeopleLS" />
         <ref role="29d1uc" node="6T7chEgtZQ9" resolve="" />
       </node>
-      <node concept="FCOsx" id="75xoT0k3Nok" role="FCw5y">
-        <ref role="FDazi" node="5tSQ8xWRRpx" resolve=":Source" />
+      <node concept="FCOsx" id="1xDVdsnw8WW" role="FCw5y">
+        <ref role="FDazi" node="4po4Attjz3M" resolve="&lt;JsonFileSource&gt;" />
       </node>
     </node>
     <node concept="3DQ70j" id="7Y6GWuSSMhp" role="lGtFl">
@@ -421,7 +423,9 @@
         <ref role="29d1uc" node="6T7chEgtZQ9" resolve="" />
       </node>
       <node concept="1_rNmK" id="3EB406$8Yxb" role="IaUo4">
-        <node concept="1_gfO1" id="3EB406$8Yxd" role="FCw5y" />
+        <node concept="FCOsx" id="1xDVdsntp1R" role="FCw5y">
+          <ref role="FDazi" node="4po4Attjz3M" resolve="&lt;JsonFileSource&gt;" />
+        </node>
       </node>
     </node>
     <node concept="3DQ70j" id="34GH_iU2z00" role="lGtFl">
@@ -471,7 +475,7 @@
         <node concept="FHrll" id="34GH_iU2yZQ" role="FHrlg">
           <node concept="IaUoN" id="34GH_iU2yZT" role="FGdDe">
             <node concept="29d5ma" id="34GH_iU2yZW" role="FJIaS">
-              <property role="29d1ub" value="project" />
+              <property role="29d1ub" value="currentProject" />
               <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
             </node>
           </node>
@@ -492,11 +496,43 @@
           </node>
         </node>
       </node>
+      <node concept="Ib$Ef" id="1xDVdsnVIg6" role="Ib$Ea">
+        <node concept="FHrll" id="1xDVdsnVIg7" role="FHrlg">
+          <node concept="IaUoN" id="1xDVdsnVIlf" role="FGdDe">
+            <node concept="29d5ma" id="1xDVdsnVIld" role="FJIaS">
+              <property role="29d1ub" value="primaryTopic" />
+              <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
+            </node>
+          </node>
+        </node>
+        <node concept="FHrlk" id="1xDVdsnWhQE" role="FHrli">
+          <node concept="H3HQD" id="1xDVdsnWibj" role="FGdDe">
+            <node concept="H4ayu" id="1xDVdsnWibl" role="H4ays">
+              <node concept="IaUoN" id="1xDVdsnWibn" role="FGdDe">
+                <node concept="29d5ma" id="1xDVdsnWigQ" role="FJIaS">
+                  <property role="29d1ub" value="string_trim" />
+                  <ref role="29d1uc" node="1R$stKL1Etz" resolve="grel" />
+                </node>
+              </node>
+            </node>
+            <node concept="GSHqK" id="1xDVdso2n11" role="GSHqR">
+              <node concept="GSHqG" id="1xDVdso2n12" role="GSHqM">
+                <node concept="IaUor" id="1xDVdso2n13" role="FGdDe" />
+              </node>
+              <node concept="FGdDb" id="1xDVdso2n14" role="GSHqH">
+                <node concept="IaUor" id="1xDVdso2n15" role="FGdDe" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="29d5ma" id="25MWlU6s3Jq" role="2$AQDL">
         <property role="29d1ub" value="TMPerson" />
         <ref role="29d1uc" node="6T7chEgtZQ9" resolve="" />
       </node>
-      <node concept="1_rNaw" id="3EB406$518Q" role="IaUo4" />
+      <node concept="FCvle" id="1xDVdsn$PO2" role="IaUo4">
+        <ref role="FCvlf" node="75xoT0k3Nof" resolve=":PeopleLS" />
+      </node>
     </node>
     <node concept="3DQ70j" id="7C_2uwsiZUt" role="lGtFl">
       <property role="3V$3am" value="statments" />
@@ -734,10 +770,10 @@
         <property role="1Fxk42" value="file.json" />
         <property role="FDpCb" value="hello" />
         <node concept="3Y090L" id="4po4Attit_4" role="2JlPsR" />
-        <node concept="1FyQXD" id="4po4AttjIJU" role="1Fxk40" />
+        <node concept="1FyQXI" id="1xDVdsnrSp5" role="1Fxk40" />
       </node>
-      <node concept="29d1u9" id="4po4Attjz5L" role="2$AQDL">
-        <property role="29d1u8" value="Source" />
+      <node concept="29d1u9" id="1xDVdsnqPPd" role="2$AQDL">
+        <property role="29d1u8" value="JsonFileSource" />
       </node>
     </node>
     <node concept="FCvld" id="4po4AtthAYZ" role="29aKCU">

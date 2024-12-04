@@ -190,6 +190,7 @@
     <property role="EcuMT" value="791507941088259886" />
     <property role="3GE5qa" value="Source.Root" />
     <property role="TrG5h" value="CustomDirectoryRoot" />
+    <property role="34LRSv" value="custom dir." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="FW04txtQWJ" role="PzmwI">
       <ref role="PrY4T" node="FW04txtQWx" resolve="DirectoryRoot" />

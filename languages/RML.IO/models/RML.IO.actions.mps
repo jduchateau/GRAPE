@@ -30,7 +30,6 @@
         <child id="1158700779049" name="nodeFactory" index="37WGs$" />
       </concept>
       <concept id="1158700725281" name="jetbrains.mps.lang.actions.structure.NodeFactory" flags="ig" index="37WvkG">
-        <property id="1158952310477" name="description" index="3mWdv0" />
         <reference id="1158700943156" name="applicableConcept" index="37XkoT" />
         <child id="1158701448518" name="setupFunction" index="37ZfLb" />
       </concept>
@@ -46,40 +45,12 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
   <node concept="37WguZ" id="FW04txti1m">
-    <property role="TrG5h" value="Source" />
-    <node concept="37WvkG" id="FW04txti1n" role="37WGs$">
-      <property role="3mWdv0" value="CSV" />
-      <ref role="37XkoT" to="qx9m:5tSQ8xWQTYC" resolve="SourceNamedDef" />
-      <node concept="37Y9Zx" id="FW04txti1o" role="37ZfLb">
-        <node concept="3clFbS" id="FW04txti1p" role="2VODD2" />
-      </node>
-    </node>
-    <node concept="37WvkG" id="FW04txti1E" role="37WGs$">
-      <property role="3mWdv0" value="JSON" />
-      <ref role="37XkoT" to="qx9m:5tSQ8xWQTYC" resolve="SourceNamedDef" />
-      <node concept="37Y9Zx" id="FW04txti1F" role="37ZfLb">
-        <node concept="3clFbS" id="FW04txti1G" role="2VODD2" />
-      </node>
-    </node>
-    <node concept="37WvkG" id="FW04txti1X" role="37WGs$">
-      <property role="3mWdv0" value="SQL" />
-      <ref role="37XkoT" to="qx9m:5tSQ8xWQTYC" resolve="SourceNamedDef" />
-      <node concept="37Y9Zx" id="FW04txti1Y" role="37ZfLb">
-        <node concept="3clFbS" id="FW04txti1Z" role="2VODD2" />
-      </node>
-    </node>
-  </node>
-  <node concept="37WguZ" id="3EB406$9pph">
-    <property role="3GE5qa" value="Source.Use" />
     <property role="TrG5h" value="Source" />
     <node concept="37WvkG" id="3EB406$9ppi" role="37WGs$">
       <ref role="37XkoT" to="qx9m:4po4Att4z07" resolve="WithSourceDef" />
@@ -90,10 +61,10 @@
               <node concept="2OqwBi" id="3EB406$9pzN" role="2Oq$k0">
                 <node concept="1r4Lsj" id="3EB406$9pp_" role="2Oq$k0" />
                 <node concept="3TrEf2" id="3EB406$9q0R" role="2OqNvi">
-                  <ref role="3Tt5mk" to="qx9m:FW04txtQU3" resolve="source" />
+                  <ref role="3Tt5mk" to="qx9m:FW04txtQU3" />
                 </node>
               </node>
-              <node concept="2DeJnY" id="3EB406$9qPP" role="2OqNvi">
+              <node concept="2DeJnY" id="1xDVdsnoSBw" role="2OqNvi">
                 <ref role="1A9B2P" to="qx9m:FW04txuk4O" resolve="BaseSource" />
               </node>
             </node>
