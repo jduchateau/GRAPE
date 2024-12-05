@@ -407,7 +407,7 @@
                 <property role="Xl_RC" value="CONSTRUCT { ?x ?to ?sm . ?sm ?toSub ?y . &lt;&lt; ?sm ?toSub ?y&gt;&gt; ?originVerb ?origin . } " />
               </node>
               <node concept="Xl_RD" id="tPE8s$dmR7" role="3uHU7w">
-                <property role="Xl_RC" value="WHERE { BIND(BNODE() AS ?sm) ?x ?from ?y. OPTIONAL {&lt;&lt; ?x ?from ?y &gt;&gt; ?originVerb ?origin.} }" />
+                <property role="Xl_RC" value="WHERE { ?x ?from ?y. OPTIONAL {&lt;&lt; ?x ?from ?y &gt;&gt; ?originVerb ?origin.} BIND(BNODE() AS ?sm) }" />
               </node>
             </node>
           </node>

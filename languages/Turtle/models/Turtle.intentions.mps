@@ -327,6 +327,7 @@
   </node>
   <node concept="2S6QgY" id="17ntPn9bexU">
     <property role="TrG5h" value="RIR_Unlink" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="16h3:17ntPn9bc8f" resolve="RessourceIdentifierReference" />
     <node concept="2S6ZIM" id="17ntPn9bexV" role="2ZfVej">
       <node concept="3clFbS" id="17ntPn9bexW" role="2VODD2">
@@ -1119,7 +1120,7 @@
               <node concept="3clFbS" id="3Q3_FC7EqU0" role="1zxBo7">
                 <node concept="3clFbF" id="3Q3_FC7EqU1" role="3cqZAp">
                   <node concept="2YIFZM" id="3Q3_FC7EqU2" role="3clFbG">
-                    <ref role="37wK5l" to="ptfq:~RDFDataMgr.write(java.io.StringWriter,org.apache.jena.rdf.model.Model,org.apache.jena.riot.Lang)" resolve="write" />
+                    <ref role="37wK5l" to="ptfq:~RDFDataMgr.write(java.io.StringWriter,org.apache.jena.rdf.model.Model,org.apache.jena.riot.RDFFormat)" resolve="write" />
                     <ref role="1Pybhc" to="ptfq:~RDFDataMgr" resolve="RDFDataMgr" />
                     <node concept="37vLTw" id="3Q3_FC7EqU3" role="37wK5m">
                       <ref role="3cqZAo" node="3Q3_FC7EqUw" resolve="stringWriter" />
@@ -1127,9 +1128,9 @@
                     <node concept="37vLTw" id="tPE8szMMO5" role="37wK5m">
                       <ref role="3cqZAo" node="tPE8szMIC8" resolve="jenaModel" />
                     </node>
-                    <node concept="10M0yZ" id="tPE8s$9JRT" role="37wK5m">
-                      <ref role="3cqZAo" to="ptfq:~Lang.TURTLE" resolve="TURTLE" />
-                      <ref role="1PxDUh" to="ptfq:~Lang" resolve="Lang" />
+                    <node concept="10M0yZ" id="1e4IJAnc3Eu" role="37wK5m">
+                      <ref role="3cqZAo" to="ptfq:~RDFFormat.TURTLE_PRETTY" resolve="TURTLE_PRETTY" />
+                      <ref role="1PxDUh" to="ptfq:~RDFFormat" resolve="RDFFormat" />
                     </node>
                   </node>
                 </node>
