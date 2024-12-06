@@ -49,7 +49,8 @@
     <echoxml file="${build.tmp}/default/RmlEditor.jar/META-INF/plugin.xml">
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>RmlEditorLang</id>
-        <name>RmlEditorLang</name>
+        <name>Turtle+RML Editor</name>
+        <description>A Turtle and RML Editor</description>
         <version>${version_lang}</version>
         <vendor url="https://uliege.be">Jakub Duchateau at ULiège</vendor>
         <depends>com.intellij.modules.platform</depends>
@@ -101,14 +102,11 @@
           <module ref="a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
-          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
           <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="cl" />
           <module ref="aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.runtime)" kind="cl" />
-          <module ref="2ceafd02-76ba-4461-bab8-ed444f318d4b(TurtlePlugin)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
           <module ref="019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)" kind="cl" />
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="cl" />
-          <module ref="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
           <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
           <module ref="f8e20673-3f65-44e9-84c0-c4a4b6ede37e(jetbrains.mps.make.facets)" kind="cl" />
@@ -216,6 +214,7 @@
           <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="cl" />
           <module ref="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" kind="cl" />
           <module ref="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" kind="cl" />
+          <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
           <module ref="f8e20673-3f65-44e9-84c0-c4a4b6ede37e(jetbrains.mps.make.facets)" kind="cl" />
           <module ref="a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)" kind="cl" />
           <module ref="df9d410f-2ebb-43f7-893a-483a4f085250(jetbrains.mps.smodel.resources)" kind="cl" />
@@ -365,7 +364,6 @@
           <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="rt" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
-          <module ref="134ef213-c518-42b0-b12c-c109aa13d320(collections_trove.runtime)" kind="rt" />
           <module ref="7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)" kind="rt" />
           <module ref="a9a7bf57-15e6-4d28-adc1-be146e415fe5(de.itemis.mps.editor.math.runtime)" kind="rt" />
           <module ref="0fcee1cf-8f59-441b-b9c7-7ff7bdd6bc97(de.itemis.mps.editor.math.symbols)" kind="rt" />
@@ -383,12 +381,11 @@
           <module ref="3f98f4e2-decf-4e97-bf80-9109e8b759ab(jetbrains.mps.lang.feedback.problem.rt)" kind="rt" />
           <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
           <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="528ff3b9-5fc4-40dd-931f-c6ce3650640e(jetbrains.mps.lang.migration.runtime)" kind="rt" />
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
           <module ref="3330376f-82a0-45ed-ae50-a320ee8b0b63(jetbrains.mps.lang.script.rt)" kind="rt" />
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
-          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
-          <module ref="4d376ef7-201b-4497-bbe5-6b936a6ab3d7(RML.FNML)" kind="cl" />
           <module ref="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" kind="cl" />
           <module ref="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" kind="cl" />
           <module ref="aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.runtime)" kind="cl" />
@@ -402,7 +399,6 @@
           <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
           <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
           <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
-          <language id="l:73736c50-f124-433b-b789-2828a15a0adc:jetbrains.mps.baseLanguage.collections.trove" />
           <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
           <language id="l:96ee7a94-411d-4cf8-9b94-96cad7e52411:jetbrains.mps.baseLanguage.jdk7" />
           <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
@@ -430,6 +426,7 @@
           <language id="l:517077fd-e44f-4338-a475-1d29781dfdb8:jetbrains.mps.lang.feedback.skeleton" />
           <language id="l:d7a92d38-f7db-40d0-8431-763b0c3c9f20:jetbrains.mps.lang.intentions" />
           <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:90746344-04fd-4286-97d5-b46ae6a81709:jetbrains.mps.lang.migration" />
           <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
           <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
           <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
@@ -473,9 +470,7 @@
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" kind="cl" />
-          <module ref="4d376ef7-201b-4497-bbe5-6b936a6ab3d7(RML.FNML)" kind="cl" />
           <module ref="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" kind="cl" />
-          <module ref="4e3ddd3e-e949-4f1c-82f4-dc93617035ec(RML.IO.generator)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d:Turtle" />
@@ -557,6 +552,7 @@
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" kind="cl" />
+          <module ref="aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.runtime)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
         </dependencies>
         <uses>
@@ -700,13 +696,12 @@
           <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="rt" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
-          <module ref="7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)" kind="rt" />
-          <module ref="7037b32c-9607-4f8e-81bd-1f028a4c117b(de.slisson.mps.reflection.runtime)" kind="rt" />
           <module ref="af19274f-5f89-42dd-8f3c-c9932448f7f2(jetbrains.mps.analyzers.runtime)" kind="rt" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
           <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" kind="rt" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
           <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
@@ -722,7 +717,6 @@
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
         </dependencies>
         <uses>
-          <language id="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" />
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
           <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
           <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
@@ -753,6 +747,7 @@
           <language id="l:033598a4-76a9-47e1-ac89-a300c0fceab8:jetbrains.mps.lang.feedback.problem" />
           <language id="l:db2a46c2-ebec-4b6c-b6c2-f9b55b9b6f8a:jetbrains.mps.lang.feedback.problem.failingRule" />
           <language id="l:517077fd-e44f-4338-a475-1d29781dfdb8:jetbrains.mps.lang.feedback.skeleton" />
+          <language id="l:d7a92d38-f7db-40d0-8431-763b0c3c9f20:jetbrains.mps.lang.intentions" />
           <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
           <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
           <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
@@ -896,7 +891,6 @@
       <plugin path="${artifacts.mps}/plugins/mps-make" id="jetbrains.mps.ide.make" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
       <plugin path="${artifacts.mps}/plugins/mps-tooltips" id="jetbrains.mps.editor.tooltips" />
-      <plugin path="${artifacts.mps}/plugins/mps-trove" id="jetbrains.mps.trove" />
       <plugin path="${artifacts.mps}/plugins/mps-vcs" id="jetbrains.mps.vcs" />
       <plugin path="${artifacts.mps}/plugins/vcs-git" id="Git4Idea" />
       <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
@@ -933,7 +927,6 @@
         <path location="${basedir}/languages/Turtle/source_gen" />
         <path location="${basedir}/languages/Turtle.runtime/grammar" />
         <path location="${basedir}/languages/Turtle.runtime/source_gen" />
-        <path location="${basedir}/solutions/TurtlePlugin/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -955,13 +948,13 @@
         <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${basedir}/languages/Turtle.runtime/lib/antlr4-runtime.jar" />
         <fileset file="${basedir}/languages/Turtle.runtime/lib/jena-rdfconnection.jar" />
@@ -1007,12 +1000,10 @@
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
@@ -1021,7 +1012,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/make/jetbrains.mps.make.facets.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-make/languages/jetbrains.mps.ide.make.jar" />
       </classpath>
     </javac>
   </target>
@@ -1054,13 +1044,13 @@
         <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${basedir}/languages/Turtle.runtime/lib/antlr4-runtime.jar" />
         <fileset file="${basedir}/languages/Turtle.runtime/lib/jena-rdfconnection.jar" />
@@ -1106,12 +1096,10 @@
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
@@ -1212,6 +1200,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/make/jetbrains.mps.make.facets.jar" />
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
@@ -1223,7 +1212,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.TurtlePlugin" depends="java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.TurtlePlugin" depends="java.compile.Turtle, java.compile.Turtle.runtime, fetchDependencies">
     <mkdir dir="${basedir}/solutions/TurtlePlugin/source_gen" />
     <mkdir dir="${build.tmp}/java/out/TurtlePlugin" />
     <javac destdir="${build.tmp}/java/out/TurtlePlugin" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1259,6 +1248,8 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <pathelement path="${build.tmp}/java/out/Turtle" />
+        <pathelement path="${build.tmp}/java/out/Turtle.runtime" />
         <fileset file="${basedir}/languages/Turtle.runtime/lib/antlr4-runtime.jar" />
         <fileset file="${basedir}/languages/Turtle.runtime/lib/jena-rdfconnection.jar" />
         <fileset file="${basedir}/languages/Turtle.runtime/lib/caffeine.jar" />
@@ -1305,7 +1296,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/make/jetbrains.mps.make.facets.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/TurtlePlugin">
@@ -1319,7 +1309,6 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/RML/source_gen" />
-        <path location="${basedir}/languages/RML.FNML/source_gen" />
         <path location="${basedir}/languages/RML.IO/source_gen" />
       </src>
       <classpath>
@@ -1391,7 +1380,6 @@
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mps}/lib/trove.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-trove/languages/collections_trove.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.symbols.jar" />
@@ -1403,7 +1391,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-trove/languages/trove-2.1.0.jar" />
         <pathelement path="${build.tmp}/java/out/Turtle" />
         <pathelement path="${build.tmp}/java/out/Turtle.runtime" />
       </classpath>
@@ -1489,7 +1476,6 @@
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mps}/lib/trove.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-trove/languages/collections_trove.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.symbols.jar" />
@@ -1501,7 +1487,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-trove/languages/trove-2.1.0.jar" />
         <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
@@ -1510,7 +1495,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.RML.generator" depends="java.compile.RML, java.compile.RML.FNML, java.compile.RML.IO, java.compile.RML.IO.generator, java.compile.Turtle, java.compile.Turtle.runtime, fetchDependencies">
+  <target name="java.compile.RML.generator" depends="java.compile.RML, java.compile.RML.IO, java.compile.Turtle, java.compile.Turtle.runtime, fetchDependencies">
     <mkdir dir="${basedir}/languages/RML/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/RML.generator" />
     <javac destdir="${build.tmp}/java/out/RML.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1544,9 +1529,7 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <pathelement path="${build.tmp}/java/out/RML" />
-        <pathelement path="${build.tmp}/java/out/RML.FNML" />
         <pathelement path="${build.tmp}/java/out/RML.IO" />
-        <pathelement path="${build.tmp}/java/out/RML.IO.generator" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
@@ -1602,7 +1585,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.RML.FNML" depends="java.compile.Turtle, java.compile.java.modules.cycle.2, fetchDependencies">
+  <target name="java.compile.RML.FNML" depends="java.compile.RML, java.compile.Turtle, java.compile.Turtle.runtime, fetchDependencies">
     <mkdir dir="${basedir}/languages/RML.FNML/source_gen" />
     <mkdir dir="${build.tmp}/java/out/RML.FNML" />
     <javac destdir="${build.tmp}/java/out/RML.FNML" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1635,10 +1618,37 @@
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <pathelement path="${build.tmp}/java/out/RML" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/Turtle" />
+        <pathelement path="${build.tmp}/java/out/Turtle.runtime" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/antlr4-runtime.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/jena-rdfconnection.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/caffeine.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/collection.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/commons-codec.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/commons-collections4.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/commons-compress.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/commons-csv.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/commons-io.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/commons-lang3.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/error_prone_annotations.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/gson.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/jakarta.json.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/jcl-over-slf4j.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/libthrift.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/protobuf-java.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/RoaringBitmap.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/slf4j-api.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/titanium-json-ld.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/jena-querybuilder.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/jena-arq.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/jena-base.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/jena-core.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/jena-iri.jar" />
+        <fileset file="${basedir}/languages/Turtle.runtime/lib/jena-shacl.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
@@ -1664,7 +1674,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/RML.FNML">
@@ -1842,8 +1851,6 @@
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mps}/lib/trove.jar" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />

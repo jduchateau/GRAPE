@@ -27,9 +27,7 @@
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="8ias" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.graph(Turtle.runtime/)" />
-    <import index="6roo" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdfconnection(Turtle.runtime/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="drpk" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.make(MPS.Platform/)" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
     <import index="tpcq" ref="r:00000000-0000-4000-0000-011c89590286(jetbrains.mps.lang.core.plugin)" />
@@ -44,8 +42,6 @@
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="5hed" ref="r:a8b1fda0-89ff-474b-ab43-cbd38563b06d(Turtle.runtime.prefixer)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
-    <import index="d6g0" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.sparql.path(Turtle.runtime/)" />
-    <import index="rc2y" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.sparql.path.eval(Turtle.runtime/)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -117,6 +113,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
@@ -475,6 +472,35 @@
       <node concept="37vLTG" id="tPE8szgmkl" role="3clF46">
         <property role="TrG5h" value="turtleDoc" />
         <node concept="3Tqbb2" id="tPE8szgmkk" role="1tU5fm">
+          <ref role="ehGHo" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="1e4IJAnt8Yf" role="jymVt">
+      <property role="TrG5h" value="hasModel" />
+      <node concept="3clFbS" id="1e4IJAnt8Yi" role="3clF47">
+        <node concept="3clFbF" id="1e4IJAntemz" role="3cqZAp">
+          <node concept="2OqwBi" id="1e4IJAntfEc" role="3clFbG">
+            <node concept="37vLTw" id="1e4IJAntemy" role="2Oq$k0">
+              <ref role="3cqZAo" node="2fsGeYB7d6F" resolve="dataset" />
+            </node>
+            <node concept="liA8E" id="1e4IJAnthCt" role="2OqNvi">
+              <ref role="37wK5l" to="sg7y:~Dataset.containsNamedModel(java.lang.String)" resolve="containsNamedModel" />
+              <node concept="1rXfSq" id="1e4IJAntjXh" role="37wK5m">
+                <ref role="37wK5l" node="tPE8szdrUq" resolve="graphName" />
+                <node concept="37vLTw" id="1e4IJAntnwS" role="37wK5m">
+                  <ref role="3cqZAo" node="1e4IJAntbou" resolve="turtleDoc" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1e4IJAnt6eS" role="1B3o_S" />
+      <node concept="10P_77" id="1e4IJAnt8QZ" role="3clF45" />
+      <node concept="37vLTG" id="1e4IJAntbou" role="3clF46">
+        <property role="TrG5h" value="turtleDoc" />
+        <node concept="3Tqbb2" id="1e4IJAntbot" role="1tU5fm">
           <ref role="ehGHo" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
         </node>
       </node>

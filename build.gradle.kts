@@ -1,9 +1,13 @@
 import de.undercouch.gradle.tasks.download.Download
+import dev.bmac.gradle.intellij.UpdateXmlTask
+import dev.bmac.gradle.intellij.UploadPluginTask
+import java.util.*
 
 buildscript {
     repositories {
         maven("https://artifacts.itemis.cloud/repository/maven-mps")
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 
@@ -15,8 +19,8 @@ repositories {
 plugins {
     id("com.specificlanguages.mps") version "1.8.0"
     id("de.undercouch.download") version "5.6.0"
+    id("dev.bmac.intellij.plugin-uploader") version "1.3.5"
 }
-
 
 dependencies {
     mps("com.jetbrains:mps:2024.1.+")
@@ -30,7 +34,6 @@ tasks.named<Wrapper>("wrapper") {
 val antlrVersion = "4.13.2"
 val jenaVersion = "5.2.0"
 
-// build.gradle.kts
 stubs {
     register("stubs") {
         destinationDir("languages/Turtle.runtime/lib")
@@ -45,12 +48,12 @@ stubs {
 
 val antlrJar = file("languages/Turtle.runtime/lib/antlr4-complete.jar")
 
-tasks {
-//    register<RunAntScript>("buildDistribution") {
-//        buildScript.set(file("build.xml")) // default: mpsDefaults.buildScript
-//        targets.set(listOf("build"))
-//    }
+val privateToken = System.getenv("CI_JOB_TOKEN") ?: properties["private-token"] as String?
+val gitlabApiUrlBase = System.getenv("CI_API_V4_URL") ?: properties["gitlab.api.url"] as String?
+val gitlabProjectId = System.getenv("CI_PROJECT_ID") ?: properties["gitlab.project.id"] as String?
 
+val pluginArtefactDirectory = "build/artifacts/RmlEditorLangPlugin"
+tasks {
     val downloadAntlr by registering(Download::class) {
         src("https://www.antlr.org/download/antlr-$antlrVersion-complete.jar")
         dest(antlrJar)
@@ -66,4 +69,49 @@ tasks {
         args = listOf(antlrJar.absolutePath, "Turtle.g4", "-no-listener", "-visitor", "-package", "converter.grammar")
         workingDir = file("languages/Turtle.runtime/grammar")
     }
+
+    val uploadToGitLab by registering {
+        group = "release"
+        description = "Upload the build plugin to the GitLab registry on new release"
+        doLast {
+            exec {
+                commandLine(
+                    "curl", "--header", "PRIVATE-TOKEN: $privateToken",
+                    "--upload-file", "$pluginArtefactDirectory/RmlEditorLang.zip",
+                    "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/RmlEditorLangPlugin/0.1.0/RmlEditorLang.zip"
+                )
+            }
+
+            val updatePluginsFile = file("updatePlugins.xml")
+            updatePluginsFile.writeText(updatePluginsFile.readText().replace("versionNumber", getLanguageVersion()))
+
+            exec {
+                commandLine(
+                    "curl", "--header", "PRIVATE-TOKEN: $privateToken",
+                    "--upload-file", "updatePlugins.xml",
+                    "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/RmlEditorLangPlugin/0.1.0/updatePlugins.xml"
+                )
+            }
+        }
+    }
+
+    register<UpdateXmlTask>("updateLocalPluginXml") {
+        updateFile.set(file("updatePlugins.xml"))
+        downloadUrl.set("$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/RmlEditorLangPlugin/0.1.0/RmlEditorLang.zip")
+        pluginName.set("Turtle+RML Editor for MPS")
+        pluginId.set("be.uliege.jduchateau.turmleditor")
+
+        version.set(getLanguageVersion())
+        // All readme lines except the first one (title)
+        pluginDescription.set(file("Readme.md").readLines().drop(1).joinToString("\n"))
+        // changeNotes.set(file("change-notes.txt").readText())
+        sinceBuild.set("241")
+    }
+}
+
+fun getLanguageVersion(): String {
+    val buildPropertiesFile = file("$pluginArtefactDirectory/build.properties")
+    val properties = Properties().apply { load(buildPropertiesFile.inputStream()) }
+    val versionLang = properties["RmlEditorLangPlugin.version_lang"] as String
+    return versionLang
 }

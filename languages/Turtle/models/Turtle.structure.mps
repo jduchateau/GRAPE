@@ -562,7 +562,8 @@
   <node concept="1TIwiD" id="1R$stKKUELR">
     <property role="EcuMT" value="2153971712317369463" />
     <property role="TrG5h" value="SingleStatmentComment" />
-    <property role="34LRSv" value="# comment" />
+    <property role="34LRSv" value="#" />
+    <property role="R4oN_" value="Comment" />
     <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statment" />
     <node concept="1TJgyj" id="1R$stKKUF3t" role="1TKVEi">
       <property role="IQ2ns" value="2153971712317370589" />

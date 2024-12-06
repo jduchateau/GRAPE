@@ -3,12 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tp1t" ref="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" />
-    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
   </imports>
   <registry>
@@ -90,6 +87,27 @@
                 </node>
               </node>
               <node concept="2DeJnY" id="6T7chEgr9cS" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="37WguZ" id="1e4IJAnoZM1">
+    <property role="TrG5h" value="CommentFactory" />
+    <node concept="37WvkG" id="1e4IJAnoZM2" role="37WGs$">
+      <ref role="37XkoT" to="16h3:1R$stKKUELR" resolve="SingleStatmentComment" />
+      <node concept="37Y9Zx" id="1e4IJAnoZM3" role="37ZfLb">
+        <node concept="3clFbS" id="1e4IJAnoZM4" role="2VODD2">
+          <node concept="3clFbF" id="1e4IJAnoZMm" role="3cqZAp">
+            <node concept="2OqwBi" id="1e4IJAnp0me" role="3clFbG">
+              <node concept="2OqwBi" id="1e4IJAnoZXE" role="2Oq$k0">
+                <node concept="1r4Lsj" id="1e4IJAnoZMl" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1e4IJAnp097" role="2OqNvi">
+                  <ref role="3Tt5mk" to="16h3:1R$stKKUF3t" resolve="line" />
+                </node>
+              </node>
+              <node concept="2DeJnY" id="1e4IJAnp0Il" role="2OqNvi" />
             </node>
           </node>
         </node>

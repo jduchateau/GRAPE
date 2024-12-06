@@ -20,12 +20,12 @@ public class TurtleParser extends Parser {
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
 		T__9=10, T__10=11, T__11=12, T__12=13, T__13=14, T__14=15, T__15=16, T__16=17, 
 		T__17=18, T__18=19, T__19=20, NumericLiteral=21, BooleanLiteral=22, BlankNode=23, 
-		IRIREF=24, PNAME_NS=25, PrefixedName=26, PNAME_LN=27, WS=28, PN_PREFIX=29, 
-		BLANK_NODE_LABEL=30, LANG_DIR=31, INTEGER=32, DECIMAL=33, DOUBLE=34, EXPONENT=35, 
-		STRING_LITERAL_LONG_SINGLE_QUOTE=36, STRING_LITERAL_LONG_QUOTE=37, STRING_LITERAL_QUOTE=38, 
-		STRING_LITERAL_SINGLE_QUOTE=39, UCHAR=40, ECHAR=41, ANON_WS=42, ANON=43, 
-		PN_CHARS_BASE=44, PN_CHARS_U=45, PN_CHARS=46, PN_LOCAL=47, PLX=48, PERCENT=49, 
-		HEX=50, PN_LOCAL_ESC=51, LC=52;
+		IRIREF=24, PNAME_NS=25, PrefixedName=26, PNAME_LN=27, WS=28, NL=29, PN_PREFIX=30, 
+		BLANK_NODE_LABEL=31, LANG_DIR=32, INTEGER=33, DECIMAL=34, DOUBLE=35, EXPONENT=36, 
+		STRING_LITERAL_LONG_SINGLE_QUOTE=37, STRING_LITERAL_LONG_QUOTE=38, STRING_LITERAL_QUOTE=39, 
+		STRING_LITERAL_SINGLE_QUOTE=40, UCHAR=41, ECHAR=42, ANON_WS=43, ANON=44, 
+		PN_CHARS_BASE=45, PN_CHARS_U=46, PN_CHARS=47, PN_LOCAL=48, PLX=49, PERCENT=50, 
+		HEX=51, PN_LOCAL_ESC=52, LC=53;
 	public static final int
 		RULE_turtleDoc = 0, RULE_statement = 1, RULE_directive = 2, RULE_prefixID = 3, 
 		RULE_base = 4, RULE_sparqlPrefix = 5, RULE_sparqlBase = 6, RULE_triples = 7, 
@@ -59,8 +59,8 @@ public class TurtleParser extends Parser {
 			null, null, null, null, null, null, null, null, null, null, null, null, 
 			null, null, null, null, null, null, null, null, null, "NumericLiteral", 
 			"BooleanLiteral", "BlankNode", "IRIREF", "PNAME_NS", "PrefixedName", 
-			"PNAME_LN", "WS", "PN_PREFIX", "BLANK_NODE_LABEL", "LANG_DIR", "INTEGER", 
-			"DECIMAL", "DOUBLE", "EXPONENT", "STRING_LITERAL_LONG_SINGLE_QUOTE", 
+			"PNAME_LN", "WS", "NL", "PN_PREFIX", "BLANK_NODE_LABEL", "LANG_DIR", 
+			"INTEGER", "DECIMAL", "DOUBLE", "EXPONENT", "STRING_LITERAL_LONG_SINGLE_QUOTE", 
 			"STRING_LITERAL_LONG_QUOTE", "STRING_LITERAL_QUOTE", "STRING_LITERAL_SINGLE_QUOTE", 
 			"UCHAR", "ECHAR", "ANON_WS", "ANON", "PN_CHARS_BASE", "PN_CHARS_U", "PN_CHARS", 
 			"PN_LOCAL", "PLX", "PERCENT", "HEX", "PN_LOCAL_ESC", "LC"
@@ -1069,7 +1069,7 @@ public class TurtleParser extends Parser {
 			setState(160);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 1030890883584L) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 2061683034624L) != 0)) {
 				{
 				{
 				setState(157);
@@ -1206,7 +1206,7 @@ public class TurtleParser extends Parser {
 			{
 			setState(171);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 1030792151040L) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 2061584302080L) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -1855,7 +1855,7 @@ public class TurtleParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u00014\u00e5\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
+		"\u0004\u00015\u00e5\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
 		"\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004\u0002"+
 		"\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007\u0007\u0007\u0002"+
 		"\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0002\u000b\u0007\u000b\u0002"+
@@ -1891,7 +1891,7 @@ public class TurtleParser extends Parser {
 		"\u001a\u0001\u001a\u0005\u001a\u00dc\b\u001a\n\u001a\f\u001a\u00df\t\u001a"+
 		"\u0001\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0000\u0000"+
 		"\u001c\u0000\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014\u0016\u0018"+
-		"\u001a\u001c\u001e \"$&(*,.0246\u0000\u0002\u0001\u0000$\'\u0002\u0000"+
+		"\u001a\u001c\u001e \"$&(*,.0246\u0000\u0002\u0001\u0000%(\u0002\u0000"+
 		"\u0018\u0018\u001a\u001a\u00f1\u0000;\u0001\u0000\u0000\u0000\u0002D\u0001"+
 		"\u0000\u0000\u0000\u0004J\u0001\u0000\u0000\u0000\u0006L\u0001\u0000\u0000"+
 		"\u0000\bQ\u0001\u0000\u0000\u0000\nU\u0001\u0000\u0000\u0000\fY\u0001"+
@@ -1959,7 +1959,7 @@ public class TurtleParser extends Parser {
 		"\u009e\u0001\u0000\u0000\u0000\u00a0\u00a1\u0001\u0000\u0000\u0000\u00a1"+
 		"\u00a3\u0001\u0000\u0000\u0000\u00a2\u00a0\u0001\u0000\u0000\u0000\u00a3"+
 		"\u00a4\u0005\f\u0000\u0000\u00a4\u001f\u0001\u0000\u0000\u0000\u00a5\u00a9"+
-		"\u0003\"\u0011\u0000\u00a6\u00aa\u0005\u001f\u0000\u0000\u00a7\u00a8\u0005"+
+		"\u0003\"\u0011\u0000\u00a6\u00aa\u0005 \u0000\u0000\u00a7\u00a8\u0005"+
 		"\r\u0000\u0000\u00a8\u00aa\u0003$\u0012\u0000\u00a9\u00a6\u0001\u0000"+
 		"\u0000\u0000\u00a9\u00a7\u0001\u0000\u0000\u0000\u00a9\u00aa\u0001\u0000"+
 		"\u0000\u0000\u00aa!\u0001\u0000\u0000\u0000\u00ab\u00ac\u0007\u0000\u0000"+

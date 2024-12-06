@@ -10,9 +10,11 @@
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
     <import index="5hed" ref="r:a8b1fda0-89ff-474b-ab43-cbd38563b06d(Turtle.runtime.prefixer)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
+    <import index="iwug" ref="r:76e4946f-2d00-47d5-ae37-e0c3a55829b1(Turtle.runtime.datasetManager)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -113,7 +115,6 @@
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
-      <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="8998492695583125082" name="jetbrains.mps.lang.editor.structure.SubstituteFeature_MatchingText" flags="ng" index="16NfWO">
         <child id="8998492695583129244" name="query" index="16NeZM" />
       </concept>
@@ -148,6 +149,7 @@
       </concept>
       <concept id="701160265283677816" name="jetbrains.mps.lang.editor.structure.TransparentStyleSheetItem" flags="ln" index="3noiJN" />
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
+      <concept id="7580468736840446506" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_model" flags="nn" index="1rpKSd" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
         <reference id="9122903797312247166" name="style" index="1wgcnl" />
@@ -331,6 +333,11 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
@@ -1546,7 +1553,11 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="35HoNQ" id="75xoT0kmf6x" role="2czzBI" />
+      <node concept="3F0ifn" id="1e4IJAnukY9" role="2czzBI">
+        <node concept="VPxyj" id="1e4IJAnullZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="ljvvj" id="34GH_iUS53h" role="3F10Kt">
         <property role="VOm3f" value="true" />
         <node concept="3nzxsE" id="34GH_iUScU7" role="3n$kyP">
@@ -2059,6 +2070,64 @@
     <node concept="22hDWj" id="FW04txdw6F" role="22hAXT" />
     <node concept="1Qtc8_" id="FW04txdw6H" role="IW6Ez">
       <node concept="2j_NTm" id="FW04txdw6J" role="1Qtc8$" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1e4IJAnnKRC">
+    <ref role="1XX52x" to="16h3:1R$stKKUELR" resolve="SingleStatmentComment" />
+    <node concept="3EZMnI" id="1e4IJAnnKRE" role="2wV5jI">
+      <ref role="1k5W1q" to="tpco:3VARyd8XcQs" resolve="Comment" />
+      <node concept="3F0ifn" id="1e4IJAnnKRI" role="3EZMnx">
+        <property role="3F0ifm" value="#" />
+      </node>
+      <node concept="3F1sOY" id="1e4IJAnnKRL" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
+        <ref role="1NtTu8" to="16h3:1R$stKKUF3t" resolve="line" />
+      </node>
+      <node concept="l2Vlx" id="1e4IJAnnKRH" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="3ICUPy" id="1e4IJAnsWWF">
+    <ref role="aqKnT" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
+    <node concept="22hDWj" id="1e4IJAnsWWG" role="22hAXT" />
+    <node concept="1Qtc8_" id="1e4IJAnsWWH" role="IW6Ez">
+      <node concept="2j_NTm" id="1e4IJAnsWWJ" role="1Qtc8$" />
+      <node concept="IWgqT" id="1e4IJAnsWWM" role="1Qtc8A">
+        <node concept="1hCUdq" id="1e4IJAnsWWN" role="1hCUd6">
+          <node concept="3clFbS" id="1e4IJAnsWWO" role="2VODD2">
+            <node concept="3clFbF" id="1e4IJAnsZfV" role="3cqZAp">
+              <node concept="3K4zz7" id="1e4IJAnttpe" role="3clFbG">
+                <node concept="Xl_RD" id="1e4IJAnttEI" role="3K4E3e">
+                  <property role="Xl_RC" value="Reload RDF Graph" />
+                </node>
+                <node concept="Xl_RD" id="1e4IJAnttXv" role="3K4GZi">
+                  <property role="Xl_RC" value="Load RDF Graph" />
+                </node>
+                <node concept="2OqwBi" id="1e4IJAnt05P" role="3K4Cdx">
+                  <node concept="2YIFZM" id="1e4IJAnsZza" role="2Oq$k0">
+                    <ref role="37wK5l" to="iwug:3l3jG31o0qT" resolve="getInstance" />
+                    <ref role="1Pybhc" to="iwug:6tKZDNaiTly" resolve="RdfDatasetsManager" />
+                  </node>
+                  <node concept="liA8E" id="1e4IJAnt0_h" role="2OqNvi">
+                    <ref role="37wK5l" to="iwug:1e4IJAnt8Yf" resolve="hasModel" />
+                    <node concept="7Obwk" id="1e4IJAntrsT" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="1e4IJAnsWWP" role="IWgqQ">
+          <node concept="3clFbS" id="1e4IJAnsWWQ" role="2VODD2">
+            <node concept="3clFbF" id="7PPLA3RuMLR" role="3cqZAp">
+              <node concept="2YIFZM" id="7PPLA3RuMN$" role="3clFbG">
+                <ref role="37wK5l" to="iwug:7PPLA3RuubZ" resolve="generate" />
+                <ref role="1Pybhc" to="iwug:7PPLA3RusgH" resolve="GenerateTurtle" />
+                <node concept="1rpKSd" id="1e4IJAnsYFJ" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

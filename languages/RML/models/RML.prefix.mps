@@ -521,6 +521,26 @@
       </node>
       <node concept="3Tm1VV" id="7cYw35ipc_t" role="1B3o_S" />
     </node>
+    <node concept="Wx3nA" id="6zcUDwvgvaB" role="jymVt">
+      <property role="TrG5h" value="CurrentWorkingDirectory" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="6zcUDwvgu1l" role="1B3o_S" />
+      <node concept="3uibUv" id="6zcUDwvgv2I" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+      </node>
+      <node concept="2YIFZM" id="6zcUDwvgyh6" role="33vP2m">
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createResource(java.lang.String)" resolve="createResource" />
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <node concept="3cpWs3" id="6zcUDwvgzDL" role="37wK5m">
+          <node concept="Xl_RD" id="6zcUDwvgzDW" role="3uHU7w">
+            <property role="Xl_RC" value="CurrentWorkingDirectory" />
+          </node>
+          <node concept="37vLTw" id="6zcUDwvgyxJ" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="Wx3nA" id="7cYw35ipc_u" role="jymVt">
       <property role="TrG5h" value="MappingDirectory" />
       <property role="3TUv4t" value="true" />
@@ -1670,6 +1690,26 @@
       </node>
       <node concept="3Tm1VV" id="7cYw35ipcFr" role="1B3o_S" />
     </node>
+    <node concept="Wx3nA" id="6zcUDwvQCPw" role="jymVt">
+      <property role="TrG5h" value="Source" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="6zcUDwvQCPx" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
+      </node>
+      <node concept="2YIFZM" id="6zcUDwvQCPy" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createProperty(java.lang.String)" resolve="createProperty" />
+        <node concept="3cpWs3" id="6zcUDwvQCPz" role="37wK5m">
+          <node concept="37vLTw" id="6zcUDwvQCP$" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="6zcUDwvQCP_" role="3uHU7w">
+            <property role="Xl_RC" value="Source" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6zcUDwvQCPA" role="1B3o_S" />
+    </node>
     <node concept="Wx3nA" id="7cYw35ipcFs" role="jymVt">
       <property role="TrG5h" value="strategy" />
       <property role="3TUv4t" value="true" />
@@ -1810,6 +1850,7 @@
       </node>
       <node concept="3Tm1VV" id="7cYw35ipcG5" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="6zcUDwvgswd" role="jymVt" />
   </node>
 </model>
 

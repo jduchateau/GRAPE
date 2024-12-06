@@ -103,6 +103,7 @@
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
+        <child id="2172791612906637490" name="description" index="3s6cr7" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
@@ -233,7 +234,7 @@
       <property role="m$_wk" value="RmlEditorLang" />
       <node concept="3_J27D" id="2CHbgKhgNah" role="m$_yQ">
         <node concept="3Mxwew" id="2CHbgKhgNai" role="3MwsjC">
-          <property role="3MwjfP" value="RmlEditorLang" />
+          <property role="3MwjfP" value="Turtle+RML Editor" />
         </node>
       </node>
       <node concept="3_J27D" id="2CHbgKhgNaj" role="m$_w8">
@@ -261,6 +262,11 @@
       <node concept="2iUeEo" id="uIuTxPbUTy" role="2iVFfd">
         <property role="2iUeEt" value="Jakub Duchateau at ULiège" />
         <property role="2iUeEu" value="https://uliege.be" />
+      </node>
+      <node concept="3_J27D" id="70TM3__1kkX" role="3s6cr7">
+        <node concept="3Mxwew" id="70TM3__1kkY" role="3MwsjC">
+          <property role="3MwjfP" value="A Turtle and RML Editor" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="2CHbgKhgNaf" role="3989C9">
@@ -339,11 +345,6 @@
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
-        <node concept="1SiIV0" id="uIuTxOQGL1" role="3bR37C">
-          <node concept="3bR9La" id="uIuTxOQGL2" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="dhpOjPSRC5" role="3bR37C">
           <node concept="3bR9La" id="dhpOjPSRC6" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1ZViq9oppal" resolve="jetbrains.mps.make.facets" />
@@ -367,16 +368,6 @@
         <node concept="1SiIV0" id="2ZAgtJQgjOt" role="3bR37C">
           <node concept="3bR9La" id="2ZAgtJQgjOu" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2ZAgtJQgjOv" role="3bR37C">
-          <node concept="3bR9La" id="2ZAgtJQgjOw" role="1SiIV1">
-            <ref role="3bR37D" node="2CHbgKhgNae" resolve="TurtlePlugin" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="FW04tx2reD" role="3bR37C">
-          <node concept="3bR9La" id="FW04tx2reE" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4x" resolve="jetbrains.mps.lang.constraints" />
           </node>
         </node>
       </node>
@@ -907,6 +898,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
           </node>
         </node>
+        <node concept="1SiIV0" id="49jMNNeY42J" role="3bR37C">
+          <node concept="3bR9La" id="49jMNNeY42K" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2CHbgKhgNae" role="2G$12L">
         <property role="TrG5h" value="TurtlePlugin" />
@@ -1058,19 +1054,9 @@
               </node>
             </node>
           </node>
-          <node concept="1SiIV0" id="dhpOjPSSEC" role="3bR37C">
-            <node concept="3bR9La" id="dhpOjPSSED" role="1SiIV1">
-              <ref role="3bR37D" node="dhpOjPSRWh" resolve="RML.FNML" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="dhpOjPSSJe" role="3bR37C">
             <node concept="3bR9La" id="dhpOjPSSJf" role="1SiIV1">
               <ref role="3bR37D" node="dhpOjPSSjD" resolve="RML.IO" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="dhpOjPSSJg" role="3bR37C">
-            <node concept="3bR9La" id="dhpOjPSSJh" role="1SiIV1">
-              <ref role="3bR37D" node="dhpOjPSSF3" resolve="RML.IO.generator" />
             </node>
           </node>
         </node>
@@ -1099,11 +1085,6 @@
             <ref role="3bR37D" node="2CHbgKhgNa8" resolve="Turtle.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="dhpOjPSSEy" role="3bR37C">
-          <node concept="3bR9La" id="dhpOjPSSEz" role="1SiIV1">
-            <ref role="3bR37D" node="dhpOjPSRWh" resolve="RML.FNML" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="dhpOjPSSJ8" role="3bR37C">
           <node concept="3bR9La" id="dhpOjPSSJ9" role="1SiIV1">
             <ref role="3bR37D" node="dhpOjPSSjD" resolve="RML.IO" />
@@ -1112,11 +1093,6 @@
         <node concept="1SiIV0" id="2ZAgtJQgjQE" role="3bR37C">
           <node concept="3bR9La" id="2ZAgtJQgjQF" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="FW04tx2rgO" role="3bR37C">
-          <node concept="3bR9La" id="FW04tx2rgP" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
       </node>
@@ -1207,6 +1183,11 @@
             <node concept="3qWCbU" id="7t9lQskU2T1" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1e4IJAnhObj" role="3bR37C">
+          <node concept="3bR9La" id="1e4IJAnhObk" role="1SiIV1">
+            <ref role="3bR37D" node="2CHbgKhgNa8" resolve="Turtle.runtime" />
           </node>
         </node>
       </node>

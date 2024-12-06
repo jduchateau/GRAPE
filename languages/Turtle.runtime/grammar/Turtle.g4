@@ -246,7 +246,10 @@ PNAME_LN
 
 // [50] WS ::= #x20 | #x9 | #xD | #xA
 WS
-    : ([\t\r\n\u000C] | ' ')+ -> skip
+    : ([\t\u000C] | ' ')+ -> skip
+    ;
+NL
+    : ('\r'?'\n') -> channel(HIDDEN)
     ;
 
 // [55] PN_PREFIX ::= PN_CHARS_BASE ((PN_CHARS | '.')* PN_CHARS)?
@@ -410,5 +413,5 @@ PN_LOCAL_ESC
     ;
 
 LC
-    : '#' ~[\r\n]+ -> channel(HIDDEN)
+    : '#' ~[\r\n]* -> channel(HIDDEN)
     ;

@@ -108,14 +108,108 @@
             <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
           </node>
         </node>
+        <node concept="29d65d" id="1e4IJAnukzg" role="3Y090Q">
+          <node concept="29d650" id="1e4IJAnukzh" role="29d653">
+            <node concept="29ckXp" id="1e4IJAnva$A" role="29d3Gi">
+              <property role="29ckXk" value="/people" />
+            </node>
+          </node>
+          <node concept="29d5ma" id="1e4IJAnukzk" role="29d654">
+            <property role="29d1ub" value="iterator" />
+            <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
+          </node>
+        </node>
+        <node concept="29d65d" id="1e4IJAnukzm" role="3Y090Q">
+          <node concept="29d650" id="1e4IJAnukzn" role="29d653">
+            <node concept="2YzXU4" id="1e4IJAnukzs" role="29d3Gi">
+              <node concept="3Y090L" id="1e4IJAnukzu" role="2YzXXJ">
+                <node concept="29d65d" id="6zcUDwvUo4D" role="3Y090Q">
+                  <node concept="29d650" id="6zcUDwvUo4E" role="29d653">
+                    <node concept="29d5ma" id="1e4IJAnva$r" role="29d3Gi">
+                      <property role="29d1ub" value="Source" />
+                      <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
+                    </node>
+                  </node>
+                  <node concept="29d650" id="1e4IJAnva$o" role="29d653">
+                    <node concept="29d5ma" id="1e4IJAnva$t" role="29d3Gi">
+                      <property role="29d1ub" value="RelativePathSource" />
+                      <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
+                    </node>
+                  </node>
+                  <node concept="29d658" id="6zcUDwvUo4H" role="29d654" />
+                </node>
+                <node concept="29d65d" id="1e4IJAnva$v" role="3Y090Q">
+                  <node concept="29d650" id="1e4IJAnva$w" role="29d653">
+                    <node concept="29ckXp" id="1e4IJAnva$_" role="29d3Gi">
+                      <property role="29ckXk" value="person.xml" />
+                    </node>
+                  </node>
+                  <node concept="29d5ma" id="1e4IJAnva$z" role="29d654">
+                    <property role="29d1ub" value="path" />
+                    <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
+                  </node>
+                </node>
+                <node concept="29d65d" id="1e4IJAnva$G" role="3Y090Q">
+                  <node concept="29d650" id="1e4IJAnva$H" role="29d653">
+                    <node concept="29ckXp" id="1e4IJAnva$M" role="29d3Gi">
+                      <property role="29ckXk" value="data/" />
+                    </node>
+                  </node>
+                  <node concept="29d5ma" id="1e4IJAnva$K" role="29d654">
+                    <property role="29d1ub" value="root" />
+                    <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
+                  </node>
+                </node>
+                <node concept="29d65d" id="6zcUDwvVpC9" role="3Y090Q">
+                  <node concept="29d650" id="6zcUDwvVpCa" role="29d653">
+                    <node concept="29d5ma" id="6zcUDwvVpCf" role="29d3Gi">
+                      <property role="29d1ub" value="UTF-16" />
+                      <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
+                    </node>
+                  </node>
+                  <node concept="29d5ma" id="6zcUDwvVpCd" role="29d654">
+                    <property role="29d1ub" value="encoding" />
+                    <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
+                  </node>
+                </node>
+                <node concept="29d65d" id="6zcUDwvVpCh" role="3Y090Q">
+                  <node concept="29d650" id="6zcUDwvVpCi" role="29d653">
+                    <node concept="29ckXp" id="6zcUDwvVpCn" role="29d3Gi">
+                      <property role="29ckXk" value="NA" />
+                    </node>
+                  </node>
+                  <node concept="29d5ma" id="6zcUDwvVpCl" role="29d654">
+                    <property role="29d1ub" value="null" />
+                    <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
+                  </node>
+                </node>
+                <node concept="29d65d" id="6zcUDwvVpCq" role="3Y090Q">
+                  <node concept="29d650" id="6zcUDwvVpCr" role="29d653">
+                    <node concept="29d5ma" id="6zcUDww5pGE" role="29d3Gi">
+                      <property role="29d1ub" value="targzip" />
+                      <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
+                    </node>
+                  </node>
+                  <node concept="29d5ma" id="6zcUDwvVpCu" role="29d654">
+                    <property role="29d1ub" value="compression" />
+                    <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="29d5ma" id="1e4IJAnukzq" role="29d654">
+            <property role="29d1ub" value="source" />
+            <ref role="29d1uc" node="7HX6VHKtPWE" resolve="rml" />
+          </node>
+        </node>
       </node>
       <node concept="29d5ma" id="YWtlusLc7f" role="29d64L">
-        <property role="29d1ub" value="LSPeopleTTL" />
+        <property role="29d1ub" value="LSPeople" />
         <ref role="29d1uc" node="7HX6VHKtPWB" resolve="" />
       </node>
     </node>
     <node concept="1SSSdx" id="YWtlusLc6Z" role="29aKCU" />
-    <node concept="1SSSdx" id="YWtlusLc70" role="29aKCU" />
     <node concept="29d64P" id="7HX6VHKtPRq" role="29aKCU">
       <node concept="3Y090L" id="7HX6VHKtPRr" role="29d64K">
         <node concept="29d65d" id="7HX6VHKtPRs" role="3Y090Q">
@@ -309,11 +403,10 @@
         </node>
       </node>
       <node concept="29d5ma" id="7HX6VHKtPS$" role="29d64L">
-        <property role="29d1ub" value="TMPersonEquiv" />
+        <property role="29d1ub" value="TMPerson" />
         <ref role="29d1uc" node="7HX6VHKtPWB" resolve="" />
       </node>
     </node>
-    <node concept="1SSSdx" id="FW04txti0X" role="29aKCU" />
   </node>
 </model>
 
