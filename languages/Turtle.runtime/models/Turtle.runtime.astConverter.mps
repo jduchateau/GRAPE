@@ -500,7 +500,7 @@
             <node concept="2ShNRf" id="29l9n5i7QLb" role="33vP2m">
               <node concept="1pGfFk" id="7Oz00ZH0_h0" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" node="7t4AKO$OzpO" />
+                <ref role="37wK5l" node="7t4AKO$OzpO" resolve="TurtleVisitor" />
                 <node concept="37vLTw" id="7Oz00ZH0_gZ" role="37wK5m">
                   <ref role="3cqZAo" node="29l9n5i7Ppm" resolve="tokenStream" />
                 </node>
@@ -1025,7 +1025,7 @@
                         <ref role="3cqZAo" node="6r99biSFLP_" resolve="tokIdx" />
                       </node>
                       <node concept="37vLTw" id="6r99biSI_0_" role="1y566C">
-                        <ref role="3cqZAo" node="7t4AKO$LVpx" resolve="commentChannel" />
+                        <ref role="3cqZAo" node="7t4AKO$LVpx" resolve="prevTokens" />
                       </node>
                     </node>
                   </node>
@@ -1228,7 +1228,7 @@
                             </node>
                             <node concept="2OqwBi" id="6r99biSLPz9" role="3uHU7w">
                               <node concept="37vLTw" id="6r99biSLIw0" role="2Oq$k0">
-                                <ref role="3cqZAo" node="7t4AKO$LVpx" resolve="prevTokensChannel" />
+                                <ref role="3cqZAo" node="7t4AKO$LVpx" resolve="prevTokens" />
                               </node>
                               <node concept="34oBXx" id="6r99biSLUmV" role="2OqNvi" />
                             </node>
@@ -1249,7 +1249,7 @@
               <node concept="3eOVzh" id="6r99biSGGO5" role="1Dwp0S">
                 <node concept="2OqwBi" id="6r99biSGXbq" role="3uHU7w">
                   <node concept="37vLTw" id="6r99biSGQrW" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7t4AKO$LVpx" resolve="commentChannel" />
+                    <ref role="3cqZAo" node="7t4AKO$LVpx" resolve="prevTokens" />
                   </node>
                   <node concept="34oBXx" id="6r99biSH23q" role="2OqNvi" />
                 </node>
@@ -1266,7 +1266,7 @@
           </node>
           <node concept="3y3z36" id="7Oz00ZGL_$Q" role="3clFbw">
             <node concept="37vLTw" id="7Oz00ZGLt2u" role="3uHU7B">
-              <ref role="3cqZAo" node="7t4AKO$LVpx" resolve="commentChannel" />
+              <ref role="3cqZAo" node="7t4AKO$LVpx" resolve="prevTokens" />
             </node>
             <node concept="10Nm6u" id="7Oz00ZH66lb" role="3uHU7w" />
           </node>

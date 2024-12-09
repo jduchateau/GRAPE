@@ -1671,7 +1671,7 @@
   <node concept="24kQdi" id="17ntPn9bdA5">
     <ref role="1XX52x" to="16h3:17ntPn9bc8f" resolve="RessourceIdentifierReference" />
     <node concept="1iCGBv" id="6qpuMwcRFsg" role="2wV5jI">
-      <ref role="1NtTu8" to="16h3:17ntPn9bc8h" />
+      <ref role="1NtTu8" to="16h3:17ntPn9bc8h" resolve="ref" />
       <node concept="1sVBvm" id="6qpuMwcRFsi" role="1sWHZn">
         <node concept="3SHvHV" id="1e4IJAn6Mrd" role="2wV5jI" />
       </node>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="RML" uuid="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" languageVersion="0" moduleVersion="3">
+<language namespace="RML" uuid="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" languageVersion="0" moduleVersion="4">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -51,7 +51,7 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-        <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="3" />
+        <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="4" />
         <module reference="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" version="0" />
         <module reference="42623156-e224-4a90-bea2-c0b8fb0c630a(RML.generator)" version="0" />
         <module reference="7960e2b8-b54e-4e5b-82c2-6aee4b0625de(RML.runtime)" version="0" />
@@ -65,6 +65,8 @@
     <dependency reexport="false">aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.runtime)</dependency>
     <dependency reexport="false">b59f8083-a287-4777-a331-17daee969f66(RML.IO)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+    <dependency reexport="false">019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)</dependency>
+    <dependency reexport="false">39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="2" />
@@ -92,6 +94,7 @@
     <language slang="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" version="14" />
     <language slang="l:d7a92d38-f7db-40d0-8431-763b0c3c9f20:jetbrains.mps.lang.intentions" version="1" />
     <language slang="l:90746344-04fd-4286-97d5-b46ae6a81709:jetbrains.mps.lang.migration" version="2" />
+    <language slang="l:9882f4ad-1955-46fe-8269-94189e5dbbf2:jetbrains.mps.lang.migration.util" version="0" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" version="2" />
     <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="5" />
@@ -109,11 +112,18 @@
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
+    <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
+    <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="3" />
+    <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+    <module reference="39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)" version="0" />
+    <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="4" />
     <module reference="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" version="0" />
     <module reference="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" version="3" />
     <module reference="aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.runtime)" version="0" />
+    <module reference="bfbdd672-7ff5-403f-af4f-16da5226f34c(jetbrains.mps.findUsages.runtime)" version="0" />
+    <module reference="019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)" version="0" />
+    <module reference="25092e07-e655-497c-92fb-558a8e3080ed(jetbrains.mps.ide.ui)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>

@@ -15,7 +15,9 @@
       <concept id="2937713717140311174" name="Turtle.structure.IriFull" flags="ng" index="29d1u9">
         <property id="2937713717140311175" name="iri" index="29d1u8" />
       </concept>
-      <concept id="2937713717140308804" name="Turtle.structure.BlankNodeName" flags="ng" index="29d1xb" />
+      <concept id="2937713717140296806" name="Turtle.structure.Base" flags="ng" index="29d4XD">
+        <child id="7868724541386564407" name="iri" index="3pzv1K" />
+      </concept>
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
         <child id="7868724541386564408" name="namespace" index="3pzv1Z" />
       </concept>
@@ -23,6 +25,7 @@
         <property id="2937713717140311172" name="name" index="29d1ub" />
         <reference id="2937713717140311171" name="prefix" index="29d1uc" />
       </concept>
+      <concept id="5063185561593286416" name="Turtle.structure.EmptyStatment" flags="ng" index="1SSSdx" />
       <concept id="7946374057678053675" name="Turtle.structure.PredicateObjectList" flags="ng" index="3Y090L" />
     </language>
     <language id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO">
@@ -120,9 +123,6 @@
     </node>
     <node concept="FCvld" id="pZc6UD7Kfr" role="29aKCU">
       <property role="FB9vU" value="$.persons[*]" />
-      <node concept="29d1xb" id="pZc6UD7Kfu" role="2$AQDL">
-        <property role="TrG5h" value="LSPeople" />
-      </node>
       <node concept="29d5ma" id="pZc6UD7Kfv" role="FCw5A">
         <property role="29d1ub" value="JSONPath" />
         <ref role="29d1uc" node="M0URkkgBQ1" resolve="rml" />
@@ -132,6 +132,9 @@
           <property role="1Fxk42" value="people.json" />
           <node concept="3Y090L" id="1xDVdsoqJNj" role="2JlPsR" />
         </node>
+      </node>
+      <node concept="29d1u9" id="4$wSEF3Lzp6" role="2$AQDL">
+        <property role="29d1u8" value="PersonLogicalSource" />
       </node>
     </node>
     <node concept="3DQ70j" id="pZc6UD7Kfq" role="lGtFl">
@@ -185,11 +188,11 @@
           <ref role="29d1uc" node="M0URkkgBQq" resolve="foaf" />
         </node>
       </node>
-      <node concept="29d1xb" id="M0URkkgBQb" role="2$AQDL">
-        <property role="TrG5h" value="PersonMapping" />
-      </node>
       <node concept="FCvle" id="pZc6UDfx8c" role="IaUo4">
         <ref role="FCvlf" node="pZc6UD7Kfr" resolve="_:LSPeople" />
+      </node>
+      <node concept="29d1u9" id="4$wSEF3Lzp8" role="2$AQDL">
+        <property role="29d1u8" value="Person" />
       </node>
     </node>
     <node concept="3DQ70j" id="4p4374YyAFJ" role="lGtFl">
@@ -229,16 +232,12 @@
         <property role="29d1u8" value="http://schema.org/" />
       </node>
     </node>
-    <node concept="29d5m5" id="Z8G4BA_o1d" role="29aKCU">
-      <property role="TrG5h" value="schema" />
-      <node concept="29d1u9" id="Z8G4BA_o1h" role="3pzv1Z">
-        <property role="29d1u8" value="http://schema.org/" />
+    <node concept="29d4XD" id="4$wSEF3LzKp" role="29aKCU">
+      <node concept="29d1u9" id="4$wSEF3LzKr" role="3pzv1K">
+        <property role="29d1u8" value="http://example.com/" />
       </node>
     </node>
-    <node concept="3DQ70j" id="KJ$Akt$cxS" role="lGtFl">
-      <property role="3V$3am" value="statments" />
-      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
-    </node>
+    <node concept="1SSSdx" id="4$wSEF3NDn4" role="29aKCU" />
     <node concept="2YYitQ" id="KJ$AktwcEh" role="29aKCU">
       <node concept="Ib$Ef" id="KJ$Akt$cxX" role="Ib$Ea">
         <node concept="FHrll" id="KJ$Akt$cxY" role="FHrlg">
@@ -302,14 +301,11 @@
           <ref role="29d1uc" node="KJ$Akt$cxT" resolve="foaf" />
         </node>
       </node>
-      <node concept="29d1xb" id="KJ$AktwcEm" role="2$AQDL">
-        <property role="TrG5h" value="Person" />
+      <node concept="29d1u9" id="4$wSEF3Lzpa" role="2$AQDL">
+        <property role="29d1u8" value="Person" />
       </node>
     </node>
-    <node concept="3DQ70j" id="KJ$Akt$cym" role="lGtFl">
-      <property role="3V$3am" value="statments" />
-      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
-    </node>
+    <node concept="1SSSdx" id="4$wSEF3NDn5" role="29aKCU" />
     <node concept="2YYitQ" id="KJ$Akt$cyo" role="29aKCU">
       <node concept="1_rNmK" id="KJ$Akt$cyC" role="IaUo4">
         <node concept="29d5ma" id="KJ$Akt$cyQ" role="FCw5A">
@@ -329,18 +325,15 @@
         </node>
         <node concept="29d5ma" id="KJ$Akt$cyZ" role="FGrfI">
           <property role="29d1ub" value="Movie" />
-          <ref role="29d1uc" node="Z8G4BA_o1d" resolve="schema" />
+          <ref role="29d1uc" node="KJ$Akt$cyU" resolve="schema" />
         </node>
-      </node>
-      <node concept="29d1xb" id="KJ$Akt$cyB" role="2$AQDL">
-        <property role="TrG5h" value="Movies" />
       </node>
       <node concept="Ib$Ef" id="KJ$Akt$cz6" role="Ib$Ea">
         <node concept="FHrll" id="KJ$Akt$cz7" role="FHrlg">
           <node concept="IaUoN" id="KJ$Akt$czc" role="FGdDe">
             <node concept="29d5ma" id="KJ$Akt$cza" role="FJIaS">
               <property role="29d1ub" value="name" />
-              <ref role="29d1uc" node="Z8G4BA_o1d" resolve="schema" />
+              <ref role="29d1uc" node="KJ$Akt$cyU" resolve="schema" />
             </node>
           </node>
         </node>
@@ -364,6 +357,9 @@
             <property role="FJGrp" value="year" />
           </node>
         </node>
+      </node>
+      <node concept="29d1u9" id="4$wSEF3Lzpc" role="2$AQDL">
+        <property role="29d1u8" value="Movie" />
       </node>
     </node>
   </node>

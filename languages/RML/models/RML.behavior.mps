@@ -175,7 +175,7 @@
                 <property role="Xl_RC" value=" " />
               </node>
               <node concept="37vLTw" id="79nZzwqMIqZ" role="3uHU7B">
-                <ref role="3cqZAo" node="79nZzwqMIqT" resolve="string" />
+                <ref role="3cqZAo" node="79nZzwqMIqT" resolve="alias" />
               </node>
             </node>
             <node concept="2OqwBi" id="79nZzwqMvOI" role="3uHU7w">

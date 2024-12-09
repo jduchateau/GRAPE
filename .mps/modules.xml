@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/languages/RML/RML.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Turtle.runtime/Turtle.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Turtle/Turtle.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/RMLPlugin/RMLPlugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/RmlEditorLang.build/RmlEditorLang.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Sandbox/Sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TurtlePlugin/TurtlePlugin.msd" folder="" />

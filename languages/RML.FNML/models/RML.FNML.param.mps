@@ -444,7 +444,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="1xDVdsojmQs" role="2OqNvi">
-                    <ref role="3Tt5mk" to="16h3:6ONkOuOJEcS" />
+                    <ref role="3Tt5mk" to="16h3:6ONkOuOJEcS" resolve="namespace" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="1xDVdsojq7c" role="2OqNvi">
