@@ -903,6 +903,24 @@
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
+        <node concept="1SiIV0" id="o7HNFUKDa0" role="3bR37C">
+          <node concept="1BurEX" id="o7HNFUKDa1" role="1SiIV1">
+            <node concept="55IIr" id="o7HNFUKD9V" role="1BurEY">
+              <node concept="2Ry0Ak" id="o7HNFUKD9W" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="o7HNFUKD9X" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.runtime" />
+                  <node concept="2Ry0Ak" id="o7HNFUKD9Y" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="o7HNFUKD9Z" role="2Ry0An">
+                      <property role="2Ry0Am" value="burp.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2CHbgKhgNae" role="2G$12L">
         <property role="TrG5h" value="TurtlePlugin" />
@@ -1093,6 +1111,16 @@
         <node concept="1SiIV0" id="2ZAgtJQgjQE" role="3bR37C">
           <node concept="3bR9La" id="2ZAgtJQgjQF" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="o7HNFUKDc7" role="3bR37C">
+          <node concept="3bR9La" id="o7HNFUKDc8" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="o7HNFUKDc9" role="3bR37C">
+          <node concept="3bR9La" id="o7HNFUKDca" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
           </node>
         </node>
       </node>
