@@ -39,6 +39,7 @@
       <concept id="6303025759226929063" name="RML.IO.structure.BaseSource" flags="ng" index="FCOsJ">
         <property id="791507941088379205" name="path" index="1Fxk42" />
         <child id="468146138112354137" name="list" index="2JlPsR" />
+        <child id="791507941088379207" name="root" index="1Fxk40" />
       </concept>
       <concept id="6099872835424795652" name="RML.IO.structure.LogicalSourceDef" flags="ngI" index="IaUo2">
         <property id="6303025759227498354" name="iterator" index="FB9vU" />
@@ -47,6 +48,7 @@
       </concept>
       <concept id="468146138112354128" name="RML.IO.structure.SourceInlineDef" flags="ng" index="2JlPsY" />
       <concept id="8169920669489714720" name="RML.IO.structure.LogicalSourceInlineDef" flags="ng" index="1_rNmK" />
+      <concept id="791507941088259868" name="RML.IO.structure.CurrentWorkingDirectoryRoot" flags="ng" index="1FyQXr" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -131,6 +133,7 @@
         <node concept="FCOsJ" id="1xDVdsoqJNi" role="1FyQV4">
           <property role="1Fxk42" value="people.json" />
           <node concept="3Y090L" id="1xDVdsoqJNj" role="2JlPsR" />
+          <node concept="1FyQXr" id="5YpSZx52LtA" role="1Fxk40" />
         </node>
       </node>
       <node concept="29d1u9" id="4$wSEF3Lzp6" role="2$AQDL">
@@ -289,6 +292,7 @@
           <node concept="FCOsJ" id="1xDVdsoyAW1" role="1FyQV4">
             <property role="1Fxk42" value="person.json" />
             <node concept="3Y090L" id="1xDVdsoyAW2" role="2JlPsR" />
+            <node concept="1FyQXr" id="5YpSZx52LtB" role="1Fxk40" />
           </node>
         </node>
       </node>

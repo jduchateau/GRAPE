@@ -130,7 +130,6 @@
       <concept id="6099872835424795659" name="RML.structure.SubjectMap" flags="ng" index="IaUod">
         <child id="6303025759225736038" name="class" index="FGrfI" />
       </concept>
-      <concept id="6099872835424795677" name="RML.structure.Expression" flags="ngI" index="IaUor" />
       <concept id="6099872835424795701" name="RML.structure.ConstantExpr" flags="ng" index="IaUoN">
         <child id="6303025759225526832" name="value" index="FJIaS" />
       </concept>
@@ -267,6 +266,11 @@
           <node concept="29d5ma" id="5k3Dpos7QlY" role="29d654">
             <property role="29d1ub" value="test" />
             <ref role="29d1uc" node="7Y6GWuSVQfm" resolve="ex" />
+          </node>
+          <node concept="29d650" id="o7HNFVEoDT" role="29d653">
+            <node concept="C55Ff" id="o7HNFVEoDV" role="29d3Gi">
+              <property role="C55F8" value="15" />
+            </node>
           </node>
         </node>
       </node>
@@ -547,7 +551,11 @@
                 </node>
               </node>
               <node concept="FGdDb" id="5k3Dpos6loL" role="GSHqH">
-                <node concept="IaUor" id="5k3Dpos7Pcg" role="FGdDe" />
+                <node concept="IaUoN" id="o7HNFVEoJR" role="FGdDe">
+                  <node concept="C55Ff" id="o7HNFVEoJP" role="FJIaS">
+                    <property role="C55F8" value="3" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

@@ -24,7 +24,6 @@
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no" languageLevel="JAVA_10">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/burp.jar" />
       <library location="${module}/lib/jena-shacl.jar" />
       <library location="${module}/lib/jena-rdfconnection.jar" />
       <library location="${module}/lib/caffeine.jar" />
