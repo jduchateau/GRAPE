@@ -4,6 +4,8 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1460,22 +1462,17 @@
   <node concept="24kQdi" id="248lfK98_i8">
     <property role="3GE5qa" value="Literal" />
     <ref role="1XX52x" to="16h3:248lfK970SU" resolve="DoubleLiteral" />
-    <node concept="3F0A7n" id="248lfK98_ia" role="2wV5jI">
+    <node concept="3F0A7n" id="5k3DposbfpV" role="2wV5jI">
       <property role="1$x2rV" value="&lt;double&gt;" />
       <ref role="1NtTu8" to="16h3:248lfK970SW" resolve="valueString" />
-      <ref role="1k5W1q" node="6qpuMwcOz1_" resolve="LiteralNumber" />
     </node>
   </node>
   <node concept="24kQdi" id="248lfK98_ic">
     <property role="3GE5qa" value="Literal" />
     <ref role="1XX52x" to="16h3:248lfK970SP" resolve="DecimalLiteral" />
-    <node concept="3EZMnI" id="248lfK98_ie" role="2wV5jI">
-      <node concept="3F0A7n" id="248lfK98_ii" role="3EZMnx">
-        <property role="1$x2rV" value="&lt;decimal&gt;" />
-        <ref role="1NtTu8" to="16h3:248lfK9a0Lj" resolve="valueString" />
-        <ref role="1k5W1q" node="6qpuMwcOz1_" resolve="LiteralNumber" />
-      </node>
-      <node concept="2iRfu4" id="248lfK98_ih" role="2iSdaV" />
+    <node concept="3F0A7n" id="5k3Dposbfq7" role="2wV5jI">
+      <property role="1$x2rV" value="&lt;decimal&gt;" />
+      <ref role="1NtTu8" to="16h3:248lfK9a0Lj" resolve="valueString" />
     </node>
   </node>
   <node concept="24kQdi" id="248lfK9b9jP">
