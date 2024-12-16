@@ -283,14 +283,14 @@
         </node>
       </node>
       <node concept="1_rNmK" id="KJ$AktwcEn" role="IaUo4">
-        <property role="FB9vU" value="$.person[*]" />
+        <property role="FB9vU" value="$.persons[*]" />
         <node concept="29d5ma" id="KJ$Akt$cxO" role="FCw5A">
           <property role="29d1ub" value="JSONPath" />
           <ref role="29d1uc" node="KJ$Akt$cxJ" resolve="rml" />
         </node>
         <node concept="2JlPsY" id="1xDVdsoyAVZ" role="FCw5y">
           <node concept="FCOsJ" id="1xDVdsoyAW1" role="1FyQV4">
-            <property role="1Fxk42" value="person.json" />
+            <property role="1Fxk42" value="people.json" />
             <node concept="3Y090L" id="1xDVdsoyAW2" role="2JlPsR" />
             <node concept="1FyQXr" id="5YpSZx52LtB" role="1Fxk40" />
           </node>
@@ -298,7 +298,7 @@
       </node>
       <node concept="IaUod" id="KJ$AktwcEj" role="2YYcL1">
         <node concept="IaUoX" id="KJ$Akt$cxP" role="FGdDe">
-          <property role="IaUoT" value="person/${firstname}" />
+          <property role="IaUoT" value="http://example.com/person/{firstname}" />
         </node>
         <node concept="29d5ma" id="KJ$Akt$cxW" role="FGrfI">
           <property role="29d1ub" value="Person" />
@@ -320,12 +320,13 @@
           <node concept="FCOsJ" id="1xDVdsoyAW5" role="1FyQV4">
             <property role="1Fxk42" value="movies.csv" />
             <node concept="3Y090L" id="1xDVdsoyAW6" role="2JlPsR" />
+            <node concept="1FyQXr" id="62epo3iWS3s" role="1Fxk40" />
           </node>
         </node>
       </node>
       <node concept="IaUod" id="KJ$Akt$cyq" role="2YYcL1">
         <node concept="IaUoX" id="KJ$Akt$cyR" role="FGdDe">
-          <property role="IaUoT" value="movie/${slug}" />
+          <property role="IaUoT" value="http://example.com/movie/{slug}" />
         </node>
         <node concept="29d5ma" id="KJ$Akt$cyZ" role="FGrfI">
           <property role="29d1ub" value="Movie" />
