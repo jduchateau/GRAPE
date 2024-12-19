@@ -111,6 +111,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -161,6 +162,7 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="8680547451703937984" name="com.mbeddr.mpsutil.blutil.structure.ItExpr" flags="ng" index="aMNgE" />
@@ -1672,92 +1674,150 @@
                 </node>
               </node>
               <node concept="3clFbS" id="55UoUlXWbqZ" role="2LFqv$">
-                <node concept="3cpWs8" id="55UoUlYa5MQ" role="3cqZAp">
-                  <node concept="3cpWsn" id="55UoUlYa5MR" role="3cpWs9">
-                    <property role="TrG5h" value="object" />
-                    <node concept="3uibUv" id="55UoUlYa5Lz" role="1tU5fm">
-                      <ref role="3uigEE" to="t6dh:~RDFNode" resolve="RDFNode" />
+                <node concept="3clFbJ" id="rvt8naRuEU" role="3cqZAp">
+                  <node concept="3clFbS" id="rvt8naRuEW" role="3clFbx">
+                    <node concept="3cpWs8" id="55UoUlYa5MQ" role="3cqZAp">
+                      <node concept="3cpWsn" id="55UoUlYa5MR" role="3cpWs9">
+                        <property role="TrG5h" value="object" />
+                        <node concept="3uibUv" id="55UoUlYa5Lz" role="1tU5fm">
+                          <ref role="3uigEE" to="t6dh:~RDFNode" resolve="RDFNode" />
+                        </node>
+                        <node concept="2OqwBi" id="55UoUlYa5MS" role="33vP2m">
+                          <node concept="2OqwBi" id="55UoUlYa5MT" role="2Oq$k0">
+                            <node concept="2GrUjf" id="55UoUlYa5MU" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="55UoUlXWbqV" resolve="obj" />
+                            </node>
+                            <node concept="3TrEf2" id="55UoUlYa5MV" role="2OqNvi">
+                              <ref role="3Tt5mk" to="16h3:2z4QKYxWe0t" resolve="object" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="55UoUlYa5MW" role="2OqNvi">
+                            <ref role="37wK5l" node="55UoUlXVZUB" resolve="convertObject" />
+                            <node concept="37vLTw" id="55UoUlYa5MX" role="37wK5m">
+                              <ref role="3cqZAo" node="55UoUlYa2EP" resolve="model" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
-                    <node concept="2OqwBi" id="55UoUlYa5MS" role="33vP2m">
-                      <node concept="2OqwBi" id="55UoUlYa5MT" role="2Oq$k0">
-                        <node concept="2GrUjf" id="55UoUlYa5MU" role="2Oq$k0">
+                    <node concept="3cpWs8" id="55UoUlYajpr" role="3cqZAp">
+                      <node concept="3cpWsn" id="55UoUlYajps" role="3cpWs9">
+                        <property role="TrG5h" value="statement" />
+                        <node concept="3uibUv" id="55UoUlYajmW" role="1tU5fm">
+                          <ref role="3uigEE" to="t6dh:~Statement" resolve="Statement" />
+                        </node>
+                        <node concept="2OqwBi" id="55UoUlYajpt" role="33vP2m">
+                          <node concept="37vLTw" id="55UoUlYajpu" role="2Oq$k0">
+                            <ref role="3cqZAo" node="55UoUlYa2EP" resolve="model" />
+                          </node>
+                          <node concept="liA8E" id="55UoUlYajpv" role="2OqNvi">
+                            <ref role="37wK5l" to="t6dh:~Model.createStatement(org.apache.jena.rdf.model.Resource,org.apache.jena.rdf.model.Property,org.apache.jena.rdf.model.RDFNode)" resolve="createStatement" />
+                            <node concept="37vLTw" id="55UoUlYajpw" role="37wK5m">
+                              <ref role="3cqZAo" node="55UoUlYa2Fr" resolve="subject" />
+                            </node>
+                            <node concept="37vLTw" id="55UoUlYajpx" role="37wK5m">
+                              <ref role="3cqZAo" node="55UoUlYa7vQ" resolve="predicate" />
+                            </node>
+                            <node concept="37vLTw" id="55UoUlYajpy" role="37wK5m">
+                              <ref role="3cqZAo" node="55UoUlYa5MR" resolve="object" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="55UoUlXWtBU" role="3cqZAp">
+                      <node concept="2OqwBi" id="55UoUlXWuDo" role="3clFbG">
+                        <node concept="37vLTw" id="55UoUlXWtBS" role="2Oq$k0">
+                          <ref role="3cqZAo" node="55UoUlYa2EP" resolve="model" />
+                        </node>
+                        <node concept="liA8E" id="55UoUlXWv_N" role="2OqNvi">
+                          <ref role="37wK5l" to="t6dh:~Model.add(org.apache.jena.rdf.model.Statement)" resolve="add" />
+                          <node concept="37vLTw" id="55UoUlYalnA" role="37wK5m">
+                            <ref role="3cqZAo" node="55UoUlYajps" resolve="statement" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="n6bVFlXEFV" role="3cqZAp">
+                      <node concept="2YIFZM" id="n6bVFlXMZ8" role="3clFbG">
+                        <ref role="37wK5l" to="v1em:n6bVFlXLeR" resolve="addOriginInfo" />
+                        <ref role="1Pybhc" to="v1em:5c3_2MtXFTk" resolve="TurtleToRDF" />
+                        <node concept="2GrUjf" id="n6bVFlUH9O" role="37wK5m">
                           <ref role="2Gs0qQ" node="55UoUlXWbqV" resolve="obj" />
                         </node>
-                        <node concept="3TrEf2" id="55UoUlYa5MV" role="2OqNvi">
+                        <node concept="2OqwBi" id="n6bVFlULHW" role="37wK5m">
+                          <node concept="37vLTw" id="n6bVFlUICe" role="2Oq$k0">
+                            <ref role="3cqZAo" node="55UoUlYa2EP" resolve="model" />
+                          </node>
+                          <node concept="liA8E" id="n6bVFlUNqN" role="2OqNvi">
+                            <ref role="37wK5l" to="t6dh:~Model.createResource(org.apache.jena.rdf.model.Statement)" resolve="createResource" />
+                            <node concept="37vLTw" id="n6bVFlUPsF" role="37wK5m">
+                              <ref role="3cqZAo" node="55UoUlYajps" resolve="statement" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="n6bVFlURzt" role="37wK5m">
+                          <ref role="3cqZAo" node="55UoUlYa2EP" resolve="model" />
+                        </node>
+                        <node concept="2OqwBi" id="n6bVFlXWXn" role="37wK5m">
+                          <node concept="13iPFW" id="n6bVFlXWFH" role="2Oq$k0" />
+                          <node concept="I4A8Y" id="n6bVFlXY52" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1Wc70l" id="rvt8naT3Jm" role="3clFbw">
+                    <node concept="2OqwBi" id="rvt8naRx0B" role="3uHU7B">
+                      <node concept="2OqwBi" id="rvt8naRvs8" role="2Oq$k0">
+                        <node concept="2GrUjf" id="rvt8naRv9z" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="55UoUlXWbqV" resolve="obj" />
+                        </node>
+                        <node concept="3TrEf2" id="rvt8naRvXy" role="2OqNvi">
                           <ref role="3Tt5mk" to="16h3:2z4QKYxWe0t" resolve="object" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="55UoUlYa5MW" role="2OqNvi">
-                        <ref role="37wK5l" node="55UoUlXVZUB" resolve="convertObject" />
-                        <node concept="37vLTw" id="55UoUlYa5MX" role="37wK5m">
-                          <ref role="3cqZAo" node="55UoUlYa2EP" resolve="model" />
+                      <node concept="3x8VRR" id="rvt8naT3y1" role="2OqNvi" />
+                    </node>
+                    <node concept="2OqwBi" id="rvt8naRBTt" role="3uHU7w">
+                      <node concept="2OqwBi" id="rvt8naRBTu" role="2Oq$k0">
+                        <node concept="2GrUjf" id="rvt8naRBTv" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="55UoUlXWbqV" resolve="obj" />
+                        </node>
+                        <node concept="3TrEf2" id="rvt8naRBTw" role="2OqNvi">
+                          <ref role="3Tt5mk" to="16h3:2z4QKYxWe0t" resolve="object" />
+                        </node>
+                      </node>
+                      <node concept="1mIQ4w" id="rvt8naRBTx" role="2OqNvi">
+                        <node concept="chp4Y" id="rvt8naRBTy" role="cj9EA">
+                          <ref role="cht4Q" to="16h3:2z4QKYxWdpG" resolve="Object" />
                         </node>
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="3cpWs8" id="55UoUlYajpr" role="3cqZAp">
-                  <node concept="3cpWsn" id="55UoUlYajps" role="3cpWs9">
-                    <property role="TrG5h" value="statement" />
-                    <node concept="3uibUv" id="55UoUlYajmW" role="1tU5fm">
-                      <ref role="3uigEE" to="t6dh:~Statement" resolve="Statement" />
-                    </node>
-                    <node concept="2OqwBi" id="55UoUlYajpt" role="33vP2m">
-                      <node concept="37vLTw" id="55UoUlYajpu" role="2Oq$k0">
-                        <ref role="3cqZAo" node="55UoUlYa2EP" resolve="model" />
-                      </node>
-                      <node concept="liA8E" id="55UoUlYajpv" role="2OqNvi">
-                        <ref role="37wK5l" to="t6dh:~Model.createStatement(org.apache.jena.rdf.model.Resource,org.apache.jena.rdf.model.Property,org.apache.jena.rdf.model.RDFNode)" resolve="createStatement" />
-                        <node concept="37vLTw" id="55UoUlYajpw" role="37wK5m">
-                          <ref role="3cqZAo" node="55UoUlYa2Fr" resolve="subject" />
+                  <node concept="9aQIb" id="rvt8naT6Xz" role="9aQIa">
+                    <node concept="3clFbS" id="rvt8naT6X$" role="9aQI4">
+                      <node concept="2xdQw9" id="rvt8naT7u1" role="3cqZAp">
+                        <property role="2xdLsb" value="gZ5fh_4/error" />
+                        <node concept="3cpWs3" id="rvt8naT9MH" role="9lYJi">
+                          <node concept="2OqwBi" id="rvt8naTgnz" role="3uHU7w">
+                            <node concept="2OqwBi" id="rvt8naTbbC" role="2Oq$k0">
+                              <node concept="2GrUjf" id="rvt8naTajK" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="55UoUlXWbqV" resolve="obj" />
+                              </node>
+                              <node concept="3TrEf2" id="rvt8naTf6q" role="2OqNvi">
+                                <ref role="3Tt5mk" to="16h3:2z4QKYxWe0t" resolve="object" />
+                              </node>
+                            </node>
+                            <node concept="2Iv5rx" id="rvt8naTgMD" role="2OqNvi" />
+                          </node>
+                          <node concept="Xl_RD" id="rvt8naT7u3" role="3uHU7B">
+                            <property role="Xl_RC" value="Object is not valid :" />
+                          </node>
                         </node>
-                        <node concept="37vLTw" id="55UoUlYajpx" role="37wK5m">
-                          <ref role="3cqZAo" node="55UoUlYa7vQ" resolve="predicate" />
-                        </node>
-                        <node concept="37vLTw" id="55UoUlYajpy" role="37wK5m">
-                          <ref role="3cqZAo" node="55UoUlYa5MR" resolve="object" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="55UoUlXWtBU" role="3cqZAp">
-                  <node concept="2OqwBi" id="55UoUlXWuDo" role="3clFbG">
-                    <node concept="37vLTw" id="55UoUlXWtBS" role="2Oq$k0">
-                      <ref role="3cqZAo" node="55UoUlYa2EP" resolve="model" />
-                    </node>
-                    <node concept="liA8E" id="55UoUlXWv_N" role="2OqNvi">
-                      <ref role="37wK5l" to="t6dh:~Model.add(org.apache.jena.rdf.model.Statement)" resolve="add" />
-                      <node concept="37vLTw" id="55UoUlYalnA" role="37wK5m">
-                        <ref role="3cqZAo" node="55UoUlYajps" resolve="statement" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="n6bVFlXEFV" role="3cqZAp">
-                  <node concept="2YIFZM" id="n6bVFlXMZ8" role="3clFbG">
-                    <ref role="37wK5l" to="v1em:n6bVFlXLeR" resolve="addOriginInfo" />
-                    <ref role="1Pybhc" to="v1em:5c3_2MtXFTk" resolve="TurtleToRDF" />
-                    <node concept="2GrUjf" id="n6bVFlUH9O" role="37wK5m">
-                      <ref role="2Gs0qQ" node="55UoUlXWbqV" resolve="obj" />
-                    </node>
-                    <node concept="2OqwBi" id="n6bVFlULHW" role="37wK5m">
-                      <node concept="37vLTw" id="n6bVFlUICe" role="2Oq$k0">
-                        <ref role="3cqZAo" node="55UoUlYa2EP" resolve="model" />
-                      </node>
-                      <node concept="liA8E" id="n6bVFlUNqN" role="2OqNvi">
-                        <ref role="37wK5l" to="t6dh:~Model.createResource(org.apache.jena.rdf.model.Statement)" resolve="createResource" />
-                        <node concept="37vLTw" id="n6bVFlUPsF" role="37wK5m">
-                          <ref role="3cqZAo" node="55UoUlYajps" resolve="statement" />
+                        <node concept="2GrUjf" id="rvt8naT8vt" role="1wxasE">
+                          <ref role="2Gs0qQ" node="55UoUlXWbqV" resolve="obj" />
                         </node>
                       </node>
-                    </node>
-                    <node concept="37vLTw" id="n6bVFlURzt" role="37wK5m">
-                      <ref role="3cqZAo" node="55UoUlYa2EP" resolve="model" />
-                    </node>
-                    <node concept="2OqwBi" id="n6bVFlXWXn" role="37wK5m">
-                      <node concept="13iPFW" id="n6bVFlXWFH" role="2Oq$k0" />
-                      <node concept="I4A8Y" id="n6bVFlXY52" role="2OqNvi" />
                     </node>
                   </node>
                 </node>

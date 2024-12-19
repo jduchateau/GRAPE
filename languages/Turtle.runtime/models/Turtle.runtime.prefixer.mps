@@ -1716,14 +1716,14 @@
   </node>
   <node concept="312cEu" id="7NlO_H3Vhiq">
     <property role="1EXbeo" value="true" />
-    <property role="TrG5h" value="TuRML" />
+    <property role="TrG5h" value="GRAPE" />
     <node concept="Wx3nA" id="7NlO_H3VhjE" role="jymVt">
       <property role="TrG5h" value="NS" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="7NlO_H3Vhj2" role="1B3o_S" />
       <node concept="17QB3L" id="7NlO_H3Vhjw" role="1tU5fm" />
       <node concept="Xl_RD" id="7NlO_H3Vhki" role="33vP2m">
-        <property role="Xl_RC" value="http://uliege.be/turml/" />
+        <property role="Xl_RC" value="http://uliege.be/grape/" />
       </node>
     </node>
     <node concept="Wx3nA" id="7NlO_H3VhwB" role="jymVt">

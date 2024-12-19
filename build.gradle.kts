@@ -12,8 +12,8 @@ buildscript {
 }
 
 repositories {
+    // maven("https://jitpack.io")
     maven("https://artifacts.itemis.cloud/repository/maven-mps")
-    maven("https://jitpack.io")
     mavenCentral()
 }
 
@@ -45,7 +45,7 @@ stubs {
         dependency("org.apache.jena:jena-shacl:$jenaVersion")
         dependency("org.apache.httpcomponents.client5:httpclient5:5.4.1")
         dependency("org.slf4j:slf4j-simple:2.0.16")
-        dependency("com.github.kg-construct:BURP:v0.1.1")
+        // dependency("com.github.kg-construct:BURP:v0.1.1")
     }
 }
 
