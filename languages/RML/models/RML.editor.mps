@@ -676,11 +676,8 @@
       </node>
       <node concept="jtD6x" id="2ZAgtJQFPdp" role="3EZMnx">
         <node concept="3F2HdR" id="5tSQ8xWNxVz" role="1BQ6eu">
-          <ref role="1NtTu8" to="ys6r:5tSQ8xWNmRo" resolve="predicateMap" />
+          <ref role="1NtTu8" to="ys6r:5tSQ8xWNmRo" />
           <node concept="2iRkQZ" id="3iDRm_z3sJE" role="2czzBx" />
-          <node concept="pj6Ft" id="5tSQ8xWQ6Mg" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
       </node>
       <node concept="3EZMnI" id="2ZAgtJQPyKP" role="3EZMnx">
