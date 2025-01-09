@@ -26,6 +26,8 @@ plugins {
 dependencies {
     mps("com.jetbrains:mps:2024.1.+")
     generation("de.itemis.mps:extensions:2024.1.+")
+    //generation("com.mbeddr:mbeddr:2024.1.+")
+    //generation("com.mbeddr:platform:2024.1.+")
 }
 
 tasks.named<Wrapper>("wrapper") {
