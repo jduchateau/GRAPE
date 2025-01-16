@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="RmlEditorLang.build" uuid="e50dda87-5e86-4ad2-9030-8d02500cea68" moduleVersion="0">
+<solution name="GRAPE.build" uuid="e50dda87-5e86-4ad2-9030-8d02500cea68" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -20,7 +20,7 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="e50dda87-5e86-4ad2-9030-8d02500cea68(RmlEditorLang.build)" version="0" />
+    <module reference="e50dda87-5e86-4ad2-9030-8d02500cea68(GRAPE.build)" version="0" />
     <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
   </dependencyVersions>

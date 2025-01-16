@@ -190,11 +190,11 @@
           <ref role="29d1uc" node="M0URkkgBQq" resolve="foaf" />
         </node>
       </node>
-      <node concept="FCvle" id="pZc6UDfx8c" role="IaUo4">
-        <ref role="FCvlf" node="pZc6UD7Kfr" resolve="_:LSPeople" />
-      </node>
       <node concept="29d1u9" id="4$wSEF3Lzp8" role="2$AQDL">
         <property role="29d1u8" value="Person" />
+      </node>
+      <node concept="FCvle" id="pZc6UDfx8c" role="IaUo4">
+        <ref role="FCvlf" node="pZc6UD7Kfr" resolve="_:LSPeople" />
       </node>
     </node>
     <node concept="3DQ70j" id="4p4374YyAFJ" role="lGtFl">
