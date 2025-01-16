@@ -1,0 +1,29 @@
+@prefix rml: <http://w3id.org/rml/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@base <http://example.org> .
+
+<PersonLogicalSource>
+    rml:source [
+        rml:root rml:CurrentWorkingDirectory ;
+        rml:path "people.json"
+    ] ;
+    rml:referenceFormulation rml:JSONPath ;
+    rml:iterator "$.persons[*]"
+.
+
+<Person>
+    rml:logicalSource <PersonLogicalSource> ;
+    rml:subjectMap [
+        rml:template "http://example.com/{firstname}" ;
+        rml:class foaf:Person
+    ] ;
+    rml:predicateObjectMap [
+        rml:predicate foaf:firstName ;
+        rml:objectMap [ rml:reference "firstname" ]
+    ] ;
+    rml:predicateObjectMap [
+        rml:predicate foaf:lastName ;
+        rml:objectMap [ rml:reference "lastname" ]
+    ]
+.
+

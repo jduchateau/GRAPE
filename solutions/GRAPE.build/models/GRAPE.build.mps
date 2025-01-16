@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c46f6533-bf12-48b8-8ac2-eaefbd221744(RmlEditorLang.build)">
+<model ref="r:c46f6533-bf12-48b8-8ac2-eaefbd221744(GRAPE.build)">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -160,7 +160,7 @@
     </language>
   </registry>
   <node concept="1l3spW" id="2CHbgKhgN9K">
-    <property role="TrG5h" value="RmlEditorLangPlugin" />
+    <property role="TrG5h" value="GrapePlugin" />
     <property role="2DA0ip" value="../.." />
     <node concept="2kB4xC" id="3x0FUHjWU8n" role="1l3spd">
       <property role="TrG5h" value="version_lang" />
@@ -201,7 +201,7 @@
       <node concept="3981dG" id="2CHbgKhgNau" role="39821P">
         <node concept="3_J27D" id="2CHbgKhgNav" role="Nbhlr">
           <node concept="3Mxwew" id="2CHbgKhgNaw" role="3MwsjC">
-            <property role="3MwjfP" value="RmlEditorLang.zip" />
+            <property role="3MwjfP" value="GrapePlugin.zip" />
           </node>
         </node>
         <node concept="m$_wl" id="2CHbgKhgNax" role="39821P">
@@ -231,7 +231,7 @@
       </node>
     </node>
     <node concept="m$_wf" id="2CHbgKhgNag" role="3989C9">
-      <property role="m$_wk" value="RmlEditorLang" />
+      <property role="m$_wk" value="GRAPE" />
       <node concept="3_J27D" id="2CHbgKhgNah" role="m$_yQ">
         <node concept="3Mxwew" id="2CHbgKhgNai" role="3MwsjC">
           <property role="3MwjfP" value="Turtle+RML Editor" />
@@ -250,7 +250,7 @@
       </node>
       <node concept="3_J27D" id="2CHbgKhgNan" role="m_cZH">
         <node concept="3Mxwew" id="2CHbgKhgNao" role="3MwsjC">
-          <property role="3MwjfP" value="RmlEditor" />
+          <property role="3MwjfP" value="GRAPE" />
         </node>
       </node>
       <node concept="2pNNFK" id="2CHbgKhgNap" role="20twgj">
@@ -270,7 +270,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="2CHbgKhgNaf" role="3989C9">
-      <property role="TrG5h" value="RmlEditorLang" />
+      <property role="TrG5h" value="GrapeGroup" />
       <node concept="1E1JtD" id="2CHbgKhgN9W" role="2G$12L">
         <property role="TrG5h" value="Turtle" />
         <property role="3LESm3" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" />
@@ -903,24 +903,6 @@
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
-        <node concept="1SiIV0" id="o7HNFUKDa0" role="3bR37C">
-          <node concept="1BurEX" id="o7HNFUKDa1" role="1SiIV1">
-            <node concept="55IIr" id="o7HNFUKD9V" role="1BurEY">
-              <node concept="2Ry0Ak" id="o7HNFUKD9W" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="o7HNFUKD9X" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="o7HNFUKD9Y" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="o7HNFUKD9Z" role="2Ry0An">
-                      <property role="2Ry0Am" value="burp.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="1E1JtA" id="2CHbgKhgNae" role="2G$12L">
         <property role="TrG5h" value="TurtlePlugin" />
@@ -1111,16 +1093,6 @@
         <node concept="1SiIV0" id="2ZAgtJQgjQE" role="3bR37C">
           <node concept="3bR9La" id="2ZAgtJQgjQF" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="o7HNFUKDc7" role="3bR37C">
-          <node concept="3bR9La" id="o7HNFUKDc8" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="o7HNFUKDc9" role="3bR37C">
-          <node concept="3bR9La" id="o7HNFUKDca" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
           </node>
         </node>
       </node>

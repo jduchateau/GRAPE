@@ -57,7 +57,7 @@ val privateToken = System.getenv("CI_JOB_TOKEN") ?: properties["private-token"] 
 val gitlabApiUrlBase = System.getenv("CI_API_V4_URL") ?: properties["gitlab.api.url"] as String?
 val gitlabProjectId = System.getenv("CI_PROJECT_ID") ?: properties["gitlab.project.id"] as String?
 
-val pluginArtefactDirectory = "build/artifacts/RmlEditorLangPlugin"
+val pluginArtefactDirectory = "build/artifacts/GrapePlugin"
 tasks {
     val downloadAntlr by registering(Download::class) {
         src("https://www.antlr.org/download/antlr-$antlrVersion-complete.jar")
@@ -82,8 +82,8 @@ tasks {
             exec {
                 commandLine(
                     "curl", "--header", "PRIVATE-TOKEN: $privateToken",
-                    "--upload-file", "$pluginArtefactDirectory/RmlEditorLang.zip",
-                    "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/RmlEditorLangPlugin/0.1.0/RmlEditorLang.zip"
+                    "--upload-file", "$pluginArtefactDirectory/GrapePlugin.zip",
+                    "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/0.1.0/GrapePlugin.zip"
                 )
             }
 
@@ -94,7 +94,7 @@ tasks {
                 commandLine(
                     "curl", "--header", "PRIVATE-TOKEN: $privateToken",
                     "--upload-file", "updatePlugins.xml",
-                    "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/RmlEditorLangPlugin/0.1.0/updatePlugins.xml"
+                    "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/0.1.0/updatePlugins.xml"
                 )
             }
         }
@@ -102,9 +102,9 @@ tasks {
 
     register<UpdateXmlTask>("updateLocalPluginXml") {
         updateFile.set(file("updatePlugins.xml"))
-        downloadUrl.set("$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/RmlEditorLangPlugin/0.1.0/RmlEditorLang.zip")
-        pluginName.set("Turtle+RML Editor for MPS")
-        pluginId.set("be.uliege.jduchateau.turmleditor")
+        downloadUrl.set("$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/0.1.0/GrapePlugin.zip")
+        pluginName.set("GRAPE: Turtle and RML Editor for MPS")
+        pluginId.set("be.uliege.jduchateau.grape")
 
         version.set(getLanguageVersion())
         // All readme lines except the first one (title)
@@ -117,6 +117,6 @@ tasks {
 fun getLanguageVersion(): String {
     val buildPropertiesFile = file("$pluginArtefactDirectory/build.properties")
     val properties = Properties().apply { load(buildPropertiesFile.inputStream()) }
-    val versionLang = properties["RmlEditorLangPlugin.version_lang"] as String
+    val versionLang = properties["GrapePlugin.version_lang"] as String
     return versionLang
 }
