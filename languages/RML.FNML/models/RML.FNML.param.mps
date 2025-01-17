@@ -182,8 +182,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -539,7 +549,7 @@
                             </node>
                           </node>
                           <node concept="Xl_RD" id="1xDVdsodTbq" role="3uHU7w">
-                            <property role="Xl_RC" value="SELECT ?name ?type ?required ?identifier " />
+                            <property role="Xl_RC" value="SELECT ?param ?name ?type ?required ?predicate " />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="1xDVdsodTbs" role="3uHU7w">
@@ -551,7 +561,7 @@
                       </node>
                     </node>
                     <node concept="Xl_RD" id="1xDVdsocCcl" role="3uHU7w">
-                      <property role="Xl_RC" value="?param rdf:type fno:Parameter . ?param fno:name ?name . ?param fno:type ?type . ?param fno:predicate ?identifier . " />
+                      <property role="Xl_RC" value="?param rdf:type fno:Parameter . ?param fno:name ?name . ?param fno:type ?type . ?param fno:predicate ?predicate . " />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="1xDVdsocsDi" role="3uHU7w">
@@ -716,23 +726,49 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3cpWs8" id="5N3KvtC9YPW" role="3cqZAp">
-                        <node concept="3cpWsn" id="5N3KvtC9YPX" role="3cpWs9">
+                      <node concept="1X3_iC" id="5CLzBYqdK9D" role="lGtFl">
+                        <property role="3V$3am" value="statement" />
+                        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                        <node concept="3cpWs8" id="5N3KvtC9YPW" role="8Wnug">
+                          <node concept="3cpWsn" id="5N3KvtC9YPX" role="3cpWs9">
+                            <property role="TrG5h" value="predicate" />
+                            <node concept="17QB3L" id="5N3KvtC9YPY" role="1tU5fm" />
+                            <node concept="2OqwBi" id="5N3KvtC9YPZ" role="33vP2m">
+                              <node concept="2OqwBi" id="5N3KvtC9YQ0" role="2Oq$k0">
+                                <node concept="37vLTw" id="5N3KvtC9YQ1" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="5N3KvtC9YPz" resolve="row" />
+                                </node>
+                                <node concept="liA8E" id="5N3KvtC9YQ2" role="2OqNvi">
+                                  <ref role="37wK5l" to="sg7y:~QuerySolution.getResource(java.lang.String)" resolve="getResource" />
+                                  <node concept="Xl_RD" id="5N3KvtC9YQ3" role="37wK5m">
+                                    <property role="Xl_RC" value="predicate" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="5N3KvtC9YQ4" role="2OqNvi">
+                                <ref role="37wK5l" to="t6dh:~Resource.getURI()" resolve="getURI" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="5CLzBYqdGyF" role="3cqZAp">
+                        <node concept="3cpWsn" id="5CLzBYqdGyG" role="3cpWs9">
                           <property role="TrG5h" value="identifier" />
-                          <node concept="17QB3L" id="5N3KvtC9YPY" role="1tU5fm" />
-                          <node concept="2OqwBi" id="5N3KvtC9YPZ" role="33vP2m">
-                            <node concept="2OqwBi" id="5N3KvtC9YQ0" role="2Oq$k0">
-                              <node concept="37vLTw" id="5N3KvtC9YQ1" role="2Oq$k0">
+                          <node concept="17QB3L" id="5CLzBYqdGyH" role="1tU5fm" />
+                          <node concept="2OqwBi" id="5CLzBYqdGyI" role="33vP2m">
+                            <node concept="2OqwBi" id="5CLzBYqdGyJ" role="2Oq$k0">
+                              <node concept="37vLTw" id="5CLzBYqdGyK" role="2Oq$k0">
                                 <ref role="3cqZAo" node="5N3KvtC9YPz" resolve="row" />
                               </node>
-                              <node concept="liA8E" id="5N3KvtC9YQ2" role="2OqNvi">
+                              <node concept="liA8E" id="5CLzBYqdGyL" role="2OqNvi">
                                 <ref role="37wK5l" to="sg7y:~QuerySolution.getResource(java.lang.String)" resolve="getResource" />
-                                <node concept="Xl_RD" id="5N3KvtC9YQ3" role="37wK5m">
-                                  <property role="Xl_RC" value="identifier" />
+                                <node concept="Xl_RD" id="5CLzBYqdGyM" role="37wK5m">
+                                  <property role="Xl_RC" value="param" />
                                 </node>
                               </node>
                             </node>
-                            <node concept="liA8E" id="5N3KvtC9YQ4" role="2OqNvi">
+                            <node concept="liA8E" id="5CLzBYqdGyN" role="2OqNvi">
                               <ref role="37wK5l" to="t6dh:~Resource.getURI()" resolve="getURI" />
                             </node>
                           </node>
@@ -789,8 +825,8 @@
                               </node>
                               <node concept="2r$n1x" id="5N3KvtC9YQq" role="2r_Bvh">
                                 <ref role="2r$qp6" node="1R$stKLDIc$" resolve="identifier" />
-                                <node concept="37vLTw" id="5N3KvtC9YQr" role="2r_lH1">
-                                  <ref role="3cqZAo" node="5N3KvtC9YPX" resolve="identifier" />
+                                <node concept="37vLTw" id="5CLzBYqdRAE" role="2r_lH1">
+                                  <ref role="3cqZAo" node="5CLzBYqdGyG" resolve="identifier" />
                                 </node>
                               </node>
                               <node concept="2r$n1x" id="5N3KvtC9YQs" role="2r_Bvh">
