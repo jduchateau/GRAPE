@@ -4937,13 +4937,8 @@
                   <ref role="3cqZAo" to="21a2:6zcUDwvgvaB" resolve="CurrentWorkingDirectory" />
                   <ref role="1PxDUh" to="21a2:7cYw35ipc$I" resolve="RML" />
                 </node>
-                <node concept="2OqwBi" id="6zcUDwvfhMS" role="3uHU7B">
-                  <node concept="37vLTw" id="6zcUDwvf0Ju" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6zcUDwvf0Jq" resolve="resource" />
-                  </node>
-                  <node concept="liA8E" id="6zcUDwvfmpk" role="2OqNvi">
-                    <ref role="37wK5l" to="t6dh:~Resource.getURI()" resolve="getURI" />
-                  </node>
+                <node concept="37vLTw" id="6zcUDwvf0Ju" role="3uHU7B">
+                  <ref role="3cqZAo" node="6zcUDwvf0Jq" resolve="resource" />
                 </node>
               </node>
             </node>
@@ -4962,13 +4957,19 @@
                   <ref role="3cqZAo" to="21a2:7cYw35ipc_u" resolve="MappingDirectory" />
                   <ref role="1PxDUh" to="21a2:7cYw35ipc$I" resolve="RML" />
                 </node>
-                <node concept="2OqwBi" id="6zcUDwvhjZC" role="3uHU7B">
-                  <node concept="37vLTw" id="6zcUDwvhjZD" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6zcUDwvf0Jq" resolve="resource" />
-                  </node>
-                  <node concept="liA8E" id="6zcUDwvhjZE" role="2OqNvi">
-                    <ref role="37wK5l" to="t6dh:~Resource.getURI()" resolve="getURI" />
-                  </node>
+                <node concept="37vLTw" id="6zcUDwvhjZD" role="3uHU7B">
+                  <ref role="3cqZAo" node="6zcUDwvf0Jq" resolve="resource" />
+                </node>
+              </node>
+            </node>
+            <node concept="2xdQw9" id="3_KkwYSmRRv" role="3cqZAp">
+              <property role="2xdLsb" value="gZ5fksE/warn" />
+              <node concept="3cpWs3" id="3_KkwYSmRRw" role="9lYJi">
+                <node concept="Xl_RD" id="3_KkwYSmRRx" role="3uHU7B">
+                  <property role="Xl_RC" value="Prepare Source rml:root unexpected resource " />
+                </node>
+                <node concept="37vLTw" id="3_KkwYSmRRy" role="3uHU7w">
+                  <ref role="3cqZAo" node="6zcUDwvf0Jq" resolve="resource" />
                 </node>
               </node>
             </node>
@@ -4985,11 +4986,11 @@
         <node concept="2xdQw9" id="6zcUDwvigwg" role="3cqZAp">
           <property role="2xdLsb" value="gZ5fksE/warn" />
           <node concept="3cpWs3" id="6zcUDwvjl7W" role="9lYJi">
-            <node concept="37vLTw" id="6zcUDwvjpCT" role="3uHU7w">
-              <ref role="3cqZAo" node="6zcUDwvc1B3" resolve="rootObject" />
-            </node>
             <node concept="Xl_RD" id="6zcUDwvigwi" role="3uHU7B">
               <property role="Xl_RC" value="Prepare Source rml:root unexpected object " />
+            </node>
+            <node concept="37vLTw" id="6zcUDwvjpCT" role="3uHU7w">
+              <ref role="3cqZAo" node="6zcUDwvc1B3" resolve="rootObject" />
             </node>
           </node>
         </node>
