@@ -2,6 +2,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @base <http://example.org> .
 
+# Example adapted from Matey
+# https://rml.io/yarrrml/matey/
+
 <PersonLogicalSource>
     rml:source [
         rml:root rml:CurrentWorkingDirectory ;

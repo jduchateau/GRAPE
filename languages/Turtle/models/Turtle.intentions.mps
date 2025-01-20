@@ -502,34 +502,6 @@
       </node>
     </node>
   </node>
-  <node concept="2S6QgY" id="SvC7sQHlw3">
-    <property role="TrG5h" value="ReloadRDF" />
-    <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
-    <node concept="2S6ZIM" id="SvC7sQHlw4" role="2ZfVej">
-      <node concept="3clFbS" id="SvC7sQHlw5" role="2VODD2">
-        <node concept="3clFbF" id="SvC7sQHlKZ" role="3cqZAp">
-          <node concept="Xl_RD" id="SvC7sQHlKY" role="3clFbG">
-            <property role="Xl_RC" value="Refresh RDF" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="SvC7sQHlw6" role="2ZfgGD">
-      <node concept="3clFbS" id="SvC7sQHlw7" role="2VODD2">
-        <node concept="3clFbF" id="7PPLA3RuMLR" role="3cqZAp">
-          <node concept="2YIFZM" id="7PPLA3RuMN$" role="3clFbG">
-            <ref role="37wK5l" to="iwug:7PPLA3RuubZ" resolve="generate" />
-            <ref role="1Pybhc" to="iwug:7PPLA3RusgH" resolve="GenerateTurtle" />
-            <node concept="2OqwBi" id="7PPLA3Rvd9J" role="37wK5m">
-              <node concept="2Sf5sV" id="7PPLA3RvcV1" role="2Oq$k0" />
-              <node concept="I4A8Y" id="7PPLA3Rvdrx" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="2S6QgY" id="7t9lQsltFdE">
     <property role="TrG5h" value="HasOriginInfoInGraph" />
     <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />

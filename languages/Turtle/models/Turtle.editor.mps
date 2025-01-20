@@ -894,6 +894,18 @@
         </node>
         <node concept="2iRfu4" id="17ntPn9h0yi" role="2iSdaV" />
       </node>
+      <node concept="3EZMnI" id="55GAnElbUHj" role="3EZMnx">
+        <node concept="VPM3Z" id="55GAnElbUHl" role="3F10Kt" />
+        <node concept="3F0ifn" id="55GAnElbUHp" role="3EZMnx">
+          <property role="3F0ifm" value="vocabulary" />
+        </node>
+        <node concept="3F0A7n" id="55GAnElepzn" role="3EZMnx">
+          <property role="1$x2rV" value="same as namespace" />
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="16h3:55GAnEleoF5" resolve="vocabulary" />
+        </node>
+        <node concept="2iRfu4" id="55GAnElbUHo" role="2iSdaV" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="2z4QKYxX9ev">

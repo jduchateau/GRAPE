@@ -23,7 +23,6 @@
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1000,11 +999,13 @@
         <node concept="3cpWs8" id="7Oz00ZGOLxh" role="3cqZAp">
           <node concept="3cpWsn" id="7Oz00ZGOLxk" role="3cpWs9">
             <property role="TrG5h" value="stmts" />
-            <node concept="2I9FWS" id="7Oz00ZGOLxf" role="1tU5fm" />
+            <node concept="2I9FWS" id="7Oz00ZGOLxf" role="1tU5fm">
+              <ref role="2I9WkF" to="16h3:2z4QKYxVX4T" resolve="Statment" />
+            </node>
             <node concept="2ShNRf" id="7Oz00ZGP5Fg" role="33vP2m">
               <node concept="2T8Vx0" id="7Oz00ZGP5BX" role="2ShVmc">
                 <node concept="2I9FWS" id="7Oz00ZGP5BY" role="2T96Bj">
-                  <ref role="2I9WkF" to="tpee:fzclF8l" resolve="Statement" />
+                  <ref role="2I9WkF" to="16h3:2z4QKYxVX4T" resolve="Statment" />
                 </node>
               </node>
             </node>
