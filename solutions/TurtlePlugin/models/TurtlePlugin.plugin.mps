@@ -1775,7 +1775,7 @@
   </node>
   <node concept="sE7Ow" id="7PPLA3RvdIu">
     <property role="1rBW0U" value="true" />
-    <property role="TrG5h" value="RefreshRDFTurtle" />
+    <property role="TrG5h" value="ReloadRDFTurtle" />
     <property role="2uzpH1" value="Reload RDF Graph" />
     <node concept="1DS2jV" id="5XzZTwuky1P" role="1NuT2Z">
       <property role="TrG5h" value="mpsProject" />
