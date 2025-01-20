@@ -107,6 +107,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -1366,6 +1367,36 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="55GAnElfSMU" role="3cqZAp">
+          <node concept="3cpWsn" id="55GAnElfSMX" role="3cpWs9">
+            <property role="TrG5h" value="vocabulary" />
+            <node concept="17QB3L" id="55GAnElfSMS" role="1tU5fm" />
+            <node concept="3K4zz7" id="55GAnElgcB9" role="33vP2m">
+              <node concept="2OqwBi" id="55GAnElgfEo" role="3K4E3e">
+                <node concept="37vLTw" id="55GAnElgeVZ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="41P2F0Glah3" resolve="prefix" />
+                </node>
+                <node concept="3TrcHB" id="55GAnElggIc" role="2OqNvi">
+                  <ref role="3TsBF5" to="16h3:55GAnEleoF5" resolve="vocabulary" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="55GAnElghjD" role="3K4GZi">
+                <ref role="3cqZAo" node="41P2F0Gn3JF" resolve="namespaceIri" />
+              </node>
+              <node concept="2OqwBi" id="55GAnElg7Ey" role="3K4Cdx">
+                <node concept="2OqwBi" id="55GAnElfZqt" role="2Oq$k0">
+                  <node concept="37vLTw" id="55GAnElfWUz" role="2Oq$k0">
+                    <ref role="3cqZAo" node="41P2F0Glah3" resolve="prefix" />
+                  </node>
+                  <node concept="3TrcHB" id="55GAnElg0cr" role="2OqNvi">
+                    <ref role="3TsBF5" to="16h3:55GAnEleoF5" resolve="vocabulary" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="55GAnElg9NA" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="41P2F0Glw$j" role="3cqZAp">
           <node concept="2OqwBi" id="41P2F0Glxns" role="3clFbG">
             <node concept="37vLTw" id="41P2F0Glw$h" role="2Oq$k0">
@@ -1374,7 +1405,7 @@
             <node concept="liA8E" id="41P2F0GlxLT" role="2OqNvi">
               <ref role="37wK5l" to="iwug:2fsGeYB6DRB" resolve="loadDataForIri" />
               <node concept="37vLTw" id="41P2F0Gn3JL" role="37wK5m">
-                <ref role="3cqZAo" node="41P2F0Gn3JF" resolve="namespaceIri" />
+                <ref role="3cqZAo" node="55GAnElfSMX" resolve="vocabulary" />
               </node>
               <node concept="37vLTw" id="7HX6VHKvBKT" role="37wK5m">
                 <ref role="3cqZAo" node="41P2F0Gn3JF" resolve="namespaceIri" />

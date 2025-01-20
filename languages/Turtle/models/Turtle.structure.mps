@@ -130,6 +130,11 @@
       <property role="TrG5h" value="sparqlVariant" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="55GAnEleoF5" role="1TKVEl">
+      <property role="IQ2nx" value="5867233166325549765" />
+      <property role="TrG5h" value="vocabulary" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="2z4QKYxXpht" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

@@ -641,7 +641,7 @@
     </node>
     <node concept="2tJIrI" id="2fsGeYB6$ms" role="jymVt" />
     <node concept="3clFb_" id="2fsGeYB6DRB" role="jymVt">
-      <property role="TrG5h" value="loadDataForIri" />
+      <property role="TrG5h" value="loadDataForUri" />
       <node concept="3clFbS" id="2fsGeYB6DRE" role="3clF47">
         <node concept="3clFbJ" id="4s9PdvyIGCU" role="3cqZAp">
           <node concept="3clFbS" id="4s9PdvyIGCW" role="3clFbx">
