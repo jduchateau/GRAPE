@@ -196,11 +196,5 @@
       <node concept="3Tm1VV" id="79nZzwqMurY" role="1B3o_S" />
     </node>
   </node>
-  <node concept="13h7C7" id="1xDVdsnPFhj">
-    <ref role="13h7C2" to="ys6r:2L7xBeiJE45" resolve="TriplesMap" />
-    <node concept="13hLZK" id="1xDVdsnPFhk" role="13h7CW">
-      <node concept="3clFbS" id="1xDVdsnPFhl" role="2VODD2" />
-    </node>
-  </node>
 </model>
 
