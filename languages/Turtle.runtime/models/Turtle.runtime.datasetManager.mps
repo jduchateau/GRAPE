@@ -700,7 +700,7 @@
             <node concept="17QB3L" id="4U8KRdW_Uyl" role="1tU5fm" />
             <node concept="3cpWs3" id="4U8KRdW_WxT" role="33vP2m">
               <node concept="Xl_RD" id="4U8KRdW_WxU" role="3uHU7w">
-                <property role="Xl_RC" value="/RmlEditor" />
+                <property role="Xl_RC" value="/GRAPE-RdfDatasets" />
               </node>
               <node concept="2YIFZM" id="2fsGeYAYHj7" role="3uHU7B">
                 <ref role="37wK5l" to="bd8o:~PathManager.getSystemPath()" resolve="getSystemPath" />
@@ -983,6 +983,16 @@
                     </node>
                     <node concept="37vLTw" id="7PPLA3RaDYS" role="37wK5m">
                       <ref role="3cqZAo" node="7C_2uwslYq$" resolve="graphIdUri" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6HPNHJfx6GJ" role="3cqZAp">
+                  <node concept="2OqwBi" id="6HPNHJfx9QT" role="3clFbG">
+                    <node concept="37vLTw" id="6HPNHJfx6GH" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4U8KRdWApWM" resolve="outputFile" />
+                    </node>
+                    <node concept="liA8E" id="6HPNHJfxcit" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.deleteOnExit()" resolve="deleteOnExit" />
                     </node>
                   </node>
                 </node>
