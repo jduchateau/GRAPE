@@ -29,16 +29,16 @@ https://gitlab.uliege.be/api/v4/projects/6137/packages/generic/RmlEditorLangPlug
 
 ### Turtle in GRAPE
 
-TODO Turtle Screenshot to be added
+![Screenshot of a simple turtle document](img/turtle_example.png)
 
 - **Turtle 1.1** is fully implemented. 
-- Comments and empty line only at statment positions
-- Autocompletion of local names
-- Autocompletion in prefix declaration of the namespace IRIs with prefix.cc
+- Comments and empty line only at statement positions
+- Autocompletion of local names in `PrefixedName`
+- Autocompletion of namespace IRIs within prefix declaration `PrefixId` with prefix.cc
 - **Local RDF Dataset**: Downloads RDF data for defined prefixes, enabling querying and suggestions.
 - **Import from text**: Imports a textual Turtle file, it will be parsed with an Antlr generated parser for Turtle 1.2, with support for empty line and comments at the statment positions, and then the CST converted to the AST.
     > [!TIP]
-    > Try importing a turtle file with `Import a Turtle File` on a *model in the logical view*, you will then be prompt to select a file and a turtle document should appeare in the selected model prompty after.
+    > Try importing a turtle file with `Import a Turtle File` on a *model in the logical view*, you will then be prompted to select a file and a turtle document should appear in the selected model shortly after.
 
 - **Export to text**: Converts the AST back to text, with the textGen aspect.
     > [!TIP]
@@ -52,7 +52,7 @@ TODO Turtle Screenshot to be added
 
 ### RML in GRAPE
 
-TODO RML Screenshot to be added
+![Screenshot of the application with the person RML mapping](img/app_people_run.png)
 
 **Specs**: RML-Core is fully implemented, RML-FNML and RML-IO are partially implemented. The notations are specifically designed to be lighter than the turtle conterparts.
 
@@ -66,15 +66,11 @@ Use `Check model` with a right-click in the Logical View (left menu) or with all
 > [!TIP]
 > You may use `F5` to refresh the validation.
 
-**Mapping Execution**: Supports running RML mappings with the **BURP engine**, offering (nearly) one-click run configurations.
+**Mapping Execution**: Supports running RML mappings with the _BURP engine_ from the interface. 
 
-**RML from existing Turtle mappings**: Generates RML structures from existing Turtle documents.
-
-
-
-### How to extend ?
-
-
+**RML from existing Turtle mappings**: 
+  Generates RML structures from a RDF Graph, that means you need to (re-)load the RDF Graph before, 
+  then can use _Promote to RML constructs_ context action on Turtle document.
 
 ## From source
 
