@@ -32,8 +32,11 @@ https://gitlab.uliege.be/api/v4/projects/6137/packages/generic/RmlEditorLangPlug
 ![Screenshot of a simple turtle document](img/turtle_example.png)
 
 - **Turtle 1.1** is fully implemented. 
+- Some Turtle-Star annotation of Turtle 1.2 are available as well. 
 - Comments and empty line only at statement positions
-- Autocompletion of local names in `PrefixedName`
+- Autocompletion of local names in `PrefixedName`, the namespace is dereferenced to attempt to retrieve a machine readable vocabulary. 
+> [!TIP]
+> If your vocabulary namespace does not point to machine readable formats, open the inspector (Ctrl+Alt+I) while hovering the prefix declaration in question and specify in the Inspection view the vocabulary URL.
 - Autocompletion of namespace IRIs within prefix declaration `PrefixId` with prefix.cc
 - **Local RDF Dataset**: Downloads RDF data for defined prefixes, enabling querying and suggestions.
 - **Import from text**: Imports a textual Turtle file, it will be parsed with an Antlr generated parser for Turtle 1.2, with support for empty line and comments at the statment positions, and then the CST converted to the AST.
@@ -49,6 +52,19 @@ https://gitlab.uliege.be/api/v4/projects/6137/packages/generic/RmlEditorLangPlug
   - the subject node id is kept by adding a predicate object to it: `?subject grape:originNode ?origin`.
   > [!TIP]
   > Uses `Preview RDF` to see the generated RDF graph with the origin. This action enable to see the serialized to text Jena RDF Model of the document.
+
+<details>
+<summary>Some Implementation details</summary>
+
+The Turtle AST structures were created based on the grammar, with the introduction of references links and introductions of abstracts concepts and interfaces to adapt to the object-oriented way of defining structures in MPS. 
+
+For example, `PrefixedName` holds a reference pointer to a `PrefixId` node instead of keeping the prefix as a string. 
+Similarly, `ReferenceIdentifierReference` allows referencing any resource with a subject, linking them during editing and renaming.
+
+The editor aspect simulates a Turtle file, controlling new lines and alignments to maintain visual resemblance with the original imported file. While traditional Turtle parsers ignore empty lines and comments, our implementation retains them at the top position to preserve the original file's appearance.
+
+</details>
+
 
 ### RML in GRAPE
 
