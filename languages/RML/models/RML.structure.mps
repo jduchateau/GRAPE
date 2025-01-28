@@ -211,7 +211,7 @@
     <property role="TrG5h" value="BlankNodeTT" />
     <property role="3GE5qa" value="TermType" />
     <property role="34LRSv" value="blank node" />
-    <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
+    <ref role="1TJDcQ" node="1VY2WX9dMsc" resolve="NodeTermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0be">
     <property role="TrG5h" value="TermType" />
@@ -231,28 +231,28 @@
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="IriTT" />
     <property role="34LRSv" value="iri" />
-    <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
+    <ref role="1TJDcQ" node="1VY2WX9eIbO" resolve="NamedNodeTermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0bk">
     <property role="EcuMT" value="6303025759225643732" />
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="UnsafeIriTT" />
     <property role="34LRSv" value="unsafe iri" />
-    <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
+    <ref role="1TJDcQ" node="1VY2WX9eIbO" resolve="NamedNodeTermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0bm">
     <property role="EcuMT" value="6303025759225643734" />
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="UriTT" />
     <property role="34LRSv" value="uri" />
-    <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
+    <ref role="1TJDcQ" node="1VY2WX9eIbO" resolve="NamedNodeTermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0bp">
     <property role="EcuMT" value="6303025759225643737" />
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="UnsafeUriTT" />
     <property role="34LRSv" value="unsafe uri" />
-    <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
+    <ref role="1TJDcQ" node="1VY2WX9eIbO" resolve="NamedNodeTermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWMmHH">
     <property role="TrG5h" value="GraphMap" />
@@ -269,7 +269,7 @@
       <property role="IQ2ns" value="8169920669493031450" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="annotation" />
-      <ref role="20lvS9" node="75xoT0kgf8n" resolve="LiteralAnnotationTermMap" />
+      <ref role="20lvS9" node="75xoT0kgf8n" resolve="LiteralAnnotationExpressionMap" />
     </node>
     <node concept="PrWs8" id="34GH_iTYbzo" role="PzmwI">
       <ref role="PrY4T" node="34GH_iTYbzm" resolve="ObjectMap" />
@@ -286,20 +286,20 @@
     <property role="TrG5h" value="LogicalSourceUse" />
   </node>
   <node concept="1TIwiD" id="75xoT0kgf8n">
-    <property role="TrG5h" value="LiteralAnnotationTermMap" />
+    <property role="TrG5h" value="LiteralAnnotationExpressionMap" />
     <property role="EcuMT" value="8169920669493031446" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="5tSQ8xWM0b3" resolve="TermMap" />
+    <ref role="1TJDcQ" node="5tSQ8xWM0b5" resolve="ExpressionMap" />
   </node>
   <node concept="1TIwiD" id="75xoT0kgf8o">
     <property role="EcuMT" value="8169920669493031448" />
     <property role="TrG5h" value="LanguageMap" />
-    <ref role="1TJDcQ" node="75xoT0kgf8n" resolve="LiteralAnnotationTermMap" />
+    <ref role="1TJDcQ" node="75xoT0kgf8n" resolve="LiteralAnnotationExpressionMap" />
   </node>
   <node concept="1TIwiD" id="75xoT0kgf8p">
     <property role="EcuMT" value="8169920669493031449" />
     <property role="TrG5h" value="DatatypeMap" />
-    <ref role="1TJDcQ" node="75xoT0kgf8n" resolve="LiteralAnnotationTermMap" />
+    <ref role="1TJDcQ" node="75xoT0kgf8n" resolve="LiteralAnnotationExpressionMap" />
   </node>
   <node concept="1TIwiD" id="34GH_iTY3TV">
     <property role="EcuMT" value="3543407481847299707" />
@@ -379,6 +379,20 @@
     <node concept="PrWs8" id="25MWlU5Upvm" role="PzmwI">
       <ref role="PrY4T" to="tpck:hqLv6T6" resolve="IResolveInfo" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1VY2WX9dMsc">
+    <property role="EcuMT" value="2233235450136831756" />
+    <property role="3GE5qa" value="TermType" />
+    <property role="R5$K7" value="true" />
+    <property role="TrG5h" value="NodeTermType" />
+    <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
+  </node>
+  <node concept="1TIwiD" id="1VY2WX9eIbO">
+    <property role="EcuMT" value="2233235450137076468" />
+    <property role="3GE5qa" value="TermType" />
+    <property role="TrG5h" value="NamedNodeTermType" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="1VY2WX9dMsc" resolve="NodeTermType" />
   </node>
 </model>
 
