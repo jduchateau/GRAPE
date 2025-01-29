@@ -272,7 +272,7 @@
       <node concept="3clFbS" id="1VY2WX9iTcu" role="3clF47">
         <node concept="3clFbF" id="1VY2WX9j8H3" role="3cqZAp">
           <node concept="35c_gC" id="1VY2WX9j8H2" role="3clFbG">
-            <ref role="35c_gD" to="ys6r:1VY2WX9dMsc" resolve="NodeTermType" />
+            <ref role="35c_gD" to="ys6r:1VY2WX9dMsc" resolve="ResourceTermType" />
           </node>
         </node>
       </node>
@@ -309,7 +309,7 @@
       <node concept="3clFbS" id="1VY2WX9j8YG" role="3clF47">
         <node concept="3clFbF" id="1VY2WX9j9pe" role="3cqZAp">
           <node concept="35c_gC" id="1VY2WX9j9pd" role="3clFbG">
-            <ref role="35c_gD" to="ys6r:1VY2WX9eIbO" resolve="NamedNodeTermType" />
+            <ref role="35c_gD" to="ys6r:1VY2WX9eIbO" resolve="NamedResourceTermType" />
           </node>
         </node>
       </node>
@@ -345,7 +345,7 @@
       <node concept="3clFbS" id="1VY2WX9j9FH" role="3clF47">
         <node concept="3clFbF" id="1VY2WX9ja5q" role="3cqZAp">
           <node concept="35c_gC" id="1VY2WX9ja5p" role="3clFbG">
-            <ref role="35c_gD" to="ys6r:1VY2WX9dMsc" resolve="NodeTermType" />
+            <ref role="35c_gD" to="ys6r:1VY2WX9dMsc" resolve="ResourceTermType" />
           </node>
         </node>
       </node>

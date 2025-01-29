@@ -205,7 +205,7 @@
           </node>
         </node>
         <node concept="m$_wl" id="2CHbgKhgNax" role="39821P">
-          <ref role="m_rDy" node="2CHbgKhgNag" resolve="RmlEditorLang" />
+          <ref role="m_rDy" node="2CHbgKhgNag" resolve="GRAPE" />
           <node concept="pUk6x" id="2CHbgKhgNay" role="pUk7w" />
           <node concept="398223" id="2lDY4vKjYAs" role="39821P">
             <node concept="3_J27D" id="2lDY4vKjYAt" role="Nbhlr">
@@ -243,7 +243,7 @@
         </node>
       </node>
       <node concept="m$f5U" id="2CHbgKhgNal" role="m$_yh">
-        <ref role="m$f5T" node="2CHbgKhgNaf" resolve="RmlEditorLang" />
+        <ref role="m$f5T" node="2CHbgKhgNaf" resolve="GrapeGroup" />
       </node>
       <node concept="m$_yC" id="2CHbgKhgNam" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />

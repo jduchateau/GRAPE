@@ -51,7 +51,7 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-        <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="4" />
+        <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="5" />
         <module reference="4d376ef7-201b-4497-bbe5-6b936a6ab3d7(RML.FNML)" version="0" />
         <module reference="10423818-6577-4029-bebb-3861e9ee197b(RML.FNML.generator)" version="0" />
         <module reference="42623156-e224-4a90-bea2-c0b8fb0c630a(RML.generator)" version="0" />
@@ -103,7 +103,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="4" />
+    <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="5" />
     <module reference="4d376ef7-201b-4497-bbe5-6b936a6ab3d7(RML.FNML)" version="0" />
     <module reference="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" version="3" />
     <module reference="aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.runtime)" version="0" />

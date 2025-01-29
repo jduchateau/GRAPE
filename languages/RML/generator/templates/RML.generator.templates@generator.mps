@@ -900,7 +900,7 @@
                     <node concept="2OqwBi" id="7NlO_H3h$Ay" role="2Oq$k0">
                       <node concept="30H73N" id="7NlO_H3hzT5" role="2Oq$k0" />
                       <node concept="3TrEf2" id="7NlO_H3h_oS" role="2OqNvi">
-                        <ref role="3Tt5mk" to="ys6r:75xoT0kgf8q" resolve="annotation" />
+                        <ref role="3Tt5mk" to="ys6r:55wIQ$REuhE" resolve="annotation" />
                       </node>
                     </node>
                     <node concept="3w_OXm" id="7NlO_H3hAPf" role="2OqNvi" />
@@ -1048,7 +1048,7 @@
                                   <node concept="2OqwBi" id="4$wSEF3NGPY" role="JncvB">
                                     <node concept="30H73N" id="4$wSEF3NGPZ" role="2Oq$k0" />
                                     <node concept="3TrEf2" id="4$wSEF3NGQ0" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="ys6r:34GH_iTY3TX" />
+                                      <ref role="3Tt5mk" to="ys6r:34GH_iTY3TX" resolve="parentTriplesMap" />
                                     </node>
                                   </node>
                                   <node concept="3clFbS" id="4$wSEF3NGQ1" role="Jncv$">
@@ -1057,7 +1057,7 @@
                                         <node concept="2pJPED" id="4$wSEF3NGQ4" role="2pJPEn">
                                           <ref role="2pJxaS" to="16h3:2z4QKYxWbDf" resolve="AnnotatedObject" />
                                           <node concept="2pIpSj" id="4$wSEF3NGQ5" role="2pJxcM">
-                                            <ref role="2pIpSl" to="16h3:2z4QKYxWe0t" />
+                                            <ref role="2pIpSl" to="16h3:2z4QKYxWe0t" resolve="object" />
                                             <node concept="36biLy" id="4$wSEF3NGQ6" role="28nt2d">
                                               <node concept="1PxgMI" id="4$wSEF3NGQ7" role="36biLW">
                                                 <property role="1BlNFB" value="true" />
@@ -1088,12 +1088,12 @@
                                   <node concept="2OqwBi" id="4$wSEF3NGQf" role="3clFbG">
                                     <node concept="2OqwBi" id="4$wSEF3NGQg" role="2Oq$k0">
                                       <node concept="3TrEf2" id="4$wSEF3NGQh" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="ys6r:34GH_iTY3TX" />
+                                        <ref role="3Tt5mk" to="ys6r:34GH_iTY3TX" resolve="parentTriplesMap" />
                                       </node>
                                       <node concept="30H73N" id="4$wSEF3NGQi" role="2Oq$k0" />
                                     </node>
                                     <node concept="3TrEf2" id="4$wSEF3NGQj" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="ys6r:25MWlU5UpGJ" />
+                                      <ref role="3Tt5mk" to="ys6r:25MWlU5UpGJ" resolve="identifier" />
                                     </node>
                                   </node>
                                 </node>
@@ -1122,7 +1122,7 @@
                               <node concept="3clFbF" id="4$wSEF3NHFu" role="3cqZAp">
                                 <node concept="2OqwBi" id="4$wSEF3NHFv" role="3clFbG">
                                   <node concept="3Tsc0h" id="4$wSEF3NHFw" role="2OqNvi">
-                                    <ref role="3TtcxE" to="ys6r:34GH_iTY3U2" />
+                                    <ref role="3TtcxE" to="ys6r:34GH_iTY3U2" resolve="joinCondition" />
                                   </node>
                                   <node concept="30H73N" id="4$wSEF3NHFx" role="2Oq$k0" />
                                 </node>
@@ -1238,7 +1238,7 @@
                                         <node concept="2OqwBi" id="34GH_iUcGpR" role="3clFbG">
                                           <node concept="2OqwBi" id="34GH_iUcG3t" role="2Oq$k0">
                                             <node concept="3TrEf2" id="34GH_iUcG3w" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="ys6r:34GH_iTY3U7" />
+                                              <ref role="3Tt5mk" to="ys6r:34GH_iTY3U7" resolve="parentMap" />
                                             </node>
                                             <node concept="30H73N" id="34GH_iUcG3x" role="2Oq$k0" />
                                           </node>

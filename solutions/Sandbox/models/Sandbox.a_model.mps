@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle" version="0" />
-    <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="0" />
+    <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="1" />
     <use id="4d376ef7-201b-4497-bbe5-6b936a6ab3d7" name="RML.FNML" version="0" />
     <use id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO" version="0" />
   </languages>

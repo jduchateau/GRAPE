@@ -1403,7 +1403,7 @@
               <ref role="3cqZAo" node="41P2F0GltW6" resolve="dsm" />
             </node>
             <node concept="liA8E" id="41P2F0GlxLT" role="2OqNvi">
-              <ref role="37wK5l" to="iwug:2fsGeYB6DRB" resolve="loadDataForIri" />
+              <ref role="37wK5l" to="iwug:2fsGeYB6DRB" resolve="loadDataForUri" />
               <node concept="37vLTw" id="41P2F0Gn3JL" role="37wK5m">
                 <ref role="3cqZAo" node="55GAnElfSMX" resolve="vocabulary" />
               </node>

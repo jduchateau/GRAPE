@@ -443,7 +443,7 @@
   </node>
   <node concept="3wDVqS" id="1BfOPR_iRve">
     <property role="TrG5h" value="BurpDoc" />
-    <ref role="3wDP8j" node="1BfOPR_iRIH" resolve="RmlBurp" />
+    <ref role="3wDP8j" node="1BfOPR_iRIH" resolve="RmlEnginBurp" />
     <node concept="yHkDc" id="1BfOPR_iRvf" role="yHkHg">
       <node concept="yHkD3" id="7yLt8tTSJNQ" role="yHkCN">
         <property role="TrG5h" value="myNodeChooser" />
@@ -489,7 +489,7 @@
           <node concept="3clFbF" id="7yLt8tTSJOw" role="3cqZAp">
             <node concept="37vLTI" id="7yLt8tTSJOB" role="3clFbG">
               <node concept="yHkD2" id="7byHRlLCkkw" role="37vLTJ">
-                <ref role="3cqZAo" node="7yLt8tTSJNQ" resolve="myChooser" />
+                <ref role="3cqZAo" node="7yLt8tTSJNQ" resolve="myNodeChooser" />
               </node>
               <node concept="2OqwBi" id="7yLt8tTSJHL" role="37vLTx">
                 <node concept="yHkDH" id="7yLt8tTSJHM" role="2Oq$k0">
@@ -533,7 +533,7 @@
               <node concept="liA8E" id="7yLt8tTSJIY" role="2OqNvi">
                 <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object)" resolve="add" />
                 <node concept="yHkD2" id="7yLt8tTSJP8" role="37wK5m">
-                  <ref role="3cqZAo" node="7yLt8tTSJNQ" resolve="myChooser" />
+                  <ref role="3cqZAo" node="7yLt8tTSJNQ" resolve="myNodeChooser" />
                 </node>
                 <node concept="1rwKMM" id="7yLt8tTSJJ0" role="37wK5m">
                   <property role="1rwKMK" value="field" />
@@ -621,7 +621,7 @@
                 </node>
                 <node concept="10Nm6u" id="o7HNFUWgzG" role="37wK5m" />
                 <node concept="37vLTw" id="o7HNFUWnt4" role="37wK5m">
-                  <ref role="3cqZAo" node="o7HNFUWlKt" resolve="descriptior" />
+                  <ref role="3cqZAo" node="o7HNFUWlKt" resolve="burpDescriptor" />
                 </node>
               </node>
             </node>
@@ -711,7 +711,7 @@
                 </node>
                 <node concept="10Nm6u" id="5YpSZx507Mg" role="37wK5m" />
                 <node concept="37vLTw" id="5YpSZx517iw" role="37wK5m">
-                  <ref role="3cqZAo" node="5YpSZx5030l" resolve="newFile" />
+                  <ref role="3cqZAo" node="5YpSZx5030l" resolve="outputDescriptor" />
                 </node>
               </node>
             </node>
@@ -840,7 +840,7 @@
           <node concept="3clFbF" id="4$wSEF3$eEU" role="3cqZAp">
             <node concept="2OqwBi" id="4$wSEF3$gnF" role="3clFbG">
               <node concept="yHkD2" id="4$wSEF3$eET" role="2Oq$k0">
-                <ref role="3cqZAo" node="7yLt8tTSJNQ" resolve="myChooser" />
+                <ref role="3cqZAo" node="7yLt8tTSJNQ" resolve="myNodeChooser" />
               </node>
               <node concept="liA8E" id="4$wSEF3$nzf" role="2OqNvi">
                 <ref role="37wK5l" to="jkm4:~ComponentWithBrowseButton.dispose()" resolve="dispose" />
@@ -972,7 +972,7 @@
   <node concept="RBi3j" id="1BfOPR_lkqX">
     <property role="35f5FB" value="true" />
     <property role="3gLNDv" value="myRunConfiguration" />
-    <ref role="yIonz" node="1BfOPR_iRve" resolve="RmlBurpDoc" />
+    <ref role="yIonz" node="1BfOPR_iRve" resolve="BurpDoc" />
     <node concept="3CCWSg" id="1BfOPR_lkr1" role="35uJNn">
       <node concept="3clFbS" id="1BfOPR_lkr2" role="2VODD2">
         <node concept="3clFbJ" id="4rQxhXh3uPP" role="3cqZAp">
@@ -1197,7 +1197,7 @@
                                     </node>
                                   </node>
                                   <node concept="37vLTw" id="o7HNFVmTbs" role="3uHU7w">
-                                    <ref role="3cqZAo" node="o7HNFVmTbm" resolve="name" />
+                                    <ref role="3cqZAo" node="o7HNFVmTbm" resolve="modelName" />
                                   </node>
                                 </node>
                                 <node concept="Xl_RD" id="o7HNFUS_9e" role="3uHU7w">
@@ -1801,14 +1801,14 @@
               <property role="TrG5h" value="config" />
               <node concept="2ShNRf" id="o7HNFV0FKO" role="33vP2m">
                 <node concept="30w_07" id="o7HNFV1GBf" role="2ShVmc">
-                  <ref role="30w_06" node="1BfOPR_iRve" resolve="RmlBurpDoc" />
+                  <ref role="30w_06" node="1BfOPR_iRve" resolve="BurpDoc" />
                   <node concept="37vLTw" id="5YpSZx4Stgb" role="uV2A8">
-                    <ref role="3cqZAo" node="5YpSZx4Stg5" resolve="string" />
+                    <ref role="3cqZAo" node="5YpSZx4Stg5" resolve="configName" />
                   </node>
                 </node>
               </node>
               <node concept="yHkHH" id="o7HNFV1MDQ" role="1tU5fm">
-                <ref role="yHkHG" node="1BfOPR_iRve" resolve="RmlBurpDoc" />
+                <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpDoc" />
               </node>
             </node>
           </node>
@@ -1821,7 +1821,7 @@
               </node>
               <node concept="2OqwBi" id="1BfOPR_p3Mi" role="37vLTJ">
                 <node concept="37vLTw" id="1BfOPR_p1QP" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1BfOPR_p1QM" resolve="run_configuration" />
+                  <ref role="3cqZAo" node="1BfOPR_p1QM" resolve="config" />
                 </node>
                 <node concept="yHkDZ" id="1BfOPR_p627" role="2OqNvi">
                   <ref role="yHkDY" node="1BfOPR_ld9U" resolve="rmlConfig" />
@@ -2083,7 +2083,7 @@
             <node concept="2OqwBi" id="4$wSEF3B41o" role="3clFbG">
               <node concept="2OqwBi" id="1BfOPR_pbtw" role="2Oq$k0">
                 <node concept="37vLTw" id="1BfOPR_p90N" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1BfOPR_p1QM" resolve="run_configuration" />
+                  <ref role="3cqZAo" node="1BfOPR_p1QM" resolve="config" />
                 </node>
                 <node concept="yHkDZ" id="1BfOPR_pe8j" role="2OqNvi">
                   <ref role="yHkDY" node="1BfOPR_oP4D" resolve="turtleDocPointer" />
@@ -2098,7 +2098,7 @@
           <node concept="3clFbF" id="1BfOPR_p9xV" role="3cqZAp">
             <node concept="10QFUN" id="o7HNFV2Vz4" role="3clFbG">
               <node concept="3nJ2Q3" id="o7HNFV2Wia" role="10QFUM">
-                <ref role="yHkHG" node="1BfOPR_iRve" resolve="RmlBurpDoc" />
+                <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpDoc" />
               </node>
               <node concept="37vLTw" id="1BfOPR_p9xT" role="10QFUP">
                 <ref role="3cqZAo" node="1BfOPR_p1QM" resolve="config" />
@@ -2109,7 +2109,7 @@
       </node>
     </node>
     <node concept="3nJ2Q3" id="1BfOPR_oJSj" role="2w4Pho">
-      <ref role="yHkHG" node="1BfOPR_iRve" resolve="RmlBurpDoc" />
+      <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpDoc" />
     </node>
   </node>
   <node concept="2LYoGX" id="4$wSEF3CJTW">
@@ -2145,14 +2145,14 @@
               <node concept="37vLTI" id="o7HNFV9NUx" role="3clFbG">
                 <node concept="2OqwBi" id="o7HNFV9PwU" role="37vLTx">
                   <node concept="37vLTw" id="o7HNFV9Oiq" role="2Oq$k0">
-                    <ref role="3cqZAo" node="j$XAJDK0E2" resolve="burpFile" />
+                    <ref role="3cqZAo" node="j$XAJDK0E2" resolve="burpFolder" />
                   </node>
                   <node concept="liA8E" id="o7HNFV9Sc3" role="2OqNvi">
                     <ref role="37wK5l" to="guwi:~File.getParentFile()" resolve="getParentFile" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="o7HNFV9LQw" role="37vLTJ">
-                  <ref role="3cqZAo" node="j$XAJDK0E2" resolve="burpFile" />
+                  <ref role="3cqZAo" node="j$XAJDK0E2" resolve="burpFolder" />
                 </node>
               </node>
             </node>
@@ -2160,7 +2160,7 @@
               <property role="2xdLsb" value="gZ5fksE/warn" />
               <node concept="3cpWs3" id="o7HNFVhCNO" role="9lYJi">
                 <node concept="37vLTw" id="o7HNFVhO0e" role="3uHU7w">
-                  <ref role="3cqZAo" node="j$XAJDK0E2" resolve="burpFile" />
+                  <ref role="3cqZAo" node="j$XAJDK0E2" resolve="burpFolder" />
                 </node>
                 <node concept="Xl_RD" id="o7HNFVhCNQ" role="3uHU7B">
                   <property role="Xl_RC" value="Burp.jar provided as file going to parent " />
@@ -2170,7 +2170,7 @@
           </node>
           <node concept="2OqwBi" id="o7HNFV9HXW" role="3clFbw">
             <node concept="37vLTw" id="o7HNFV9G6Z" role="2Oq$k0">
-              <ref role="3cqZAo" node="j$XAJDK0E2" resolve="burpFile" />
+              <ref role="3cqZAo" node="j$XAJDK0E2" resolve="burpFolder" />
             </node>
             <node concept="liA8E" id="o7HNFV9K_k" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~File.isFile()" resolve="isFile" />
@@ -2200,7 +2200,7 @@
           </node>
           <node concept="2OqwBi" id="j$XAJDK0Es" role="2GsD0m">
             <node concept="37vLTw" id="3GM_nagT$MP" role="2Oq$k0">
-              <ref role="3cqZAo" node="j$XAJDK0E2" resolve="antLibFile" />
+              <ref role="3cqZAo" node="j$XAJDK0E2" resolve="burpFolder" />
             </node>
             <node concept="liA8E" id="j$XAJDK0Eu" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~File.listFiles()" resolve="listFiles" />
@@ -2582,7 +2582,7 @@
               <node concept="2LYoGL" id="5YpSZx4WP4b" role="2LYoGw">
                 <ref role="2LYoGK" to="go48:14R2qyOBxbQ" resolve="workingDirectory" />
                 <node concept="37vLTw" id="5YpSZx4Yajx" role="2LYoGN">
-                  <ref role="3cqZAo" node="5YpSZx4Yajo" resolve="file" />
+                  <ref role="3cqZAo" node="5YpSZx4Yajo" resolve="workingFolder" />
                 </node>
               </node>
             </node>

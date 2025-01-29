@@ -2081,7 +2081,7 @@
                 <ref role="37wK5l" to="75q8:~XSDDatatype.loadXSDSimpleTypes(org.apache.jena.datatypes.TypeMapper)" resolve="loadXSDSimpleTypes" />
                 <ref role="1Pybhc" to="75q8:~XSDDatatype" resolve="XSDDatatype" />
                 <node concept="37vLTw" id="7s28hc94XGL" role="37wK5m">
-                  <ref role="3cqZAo" node="7s28hc92Gv9" resolve="mapper" />
+                  <ref role="3cqZAo" node="7s28hc92Gv9" resolve="types" />
                 </node>
               </node>
             </node>
@@ -2091,7 +2091,7 @@
                 <ref role="1Pybhc" to="9sez:~IteratorUtils" resolve="IteratorUtils" />
                 <node concept="2OqwBi" id="7s28hc92GCR" role="37wK5m">
                   <node concept="37vLTw" id="7s28hc92Gvc" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7s28hc92Gv9" resolve="mapper" />
+                    <ref role="3cqZAo" node="7s28hc92Gv9" resolve="types" />
                   </node>
                   <node concept="liA8E" id="7s28hc92GSy" role="2OqNvi">
                     <ref role="37wK5l" to="hilh:~TypeMapper.listTypes()" resolve="listTypes" />
@@ -2119,11 +2119,11 @@
                         <node concept="2OqwBi" id="7s28hc97Nvm" role="2Oq$k0">
                           <node concept="7Obwk" id="7s28hc97Nvn" role="2Oq$k0" />
                           <node concept="3TrEf2" id="7s28hc97Nvo" role="2OqNvi">
-                            <ref role="3Tt5mk" to="16h3:2z4QKYxWcM3" />
+                            <ref role="3Tt5mk" to="16h3:2z4QKYxWcM3" resolve="prefix" />
                           </node>
                         </node>
                         <node concept="3TrEf2" id="7s28hc97Nvp" role="2OqNvi">
-                          <ref role="3Tt5mk" to="16h3:6ONkOuOJEcS" />
+                          <ref role="3Tt5mk" to="16h3:6ONkOuOJEcS" resolve="namespace" />
                         </node>
                       </node>
                       <node concept="2qgKlT" id="7s28hc97Nvq" role="2OqNvi">
@@ -2163,11 +2163,11 @@
                             <node concept="2OqwBi" id="7s28hc93jRj" role="2Oq$k0">
                               <node concept="7Obwk" id="7s28hc93jRk" role="2Oq$k0" />
                               <node concept="3TrEf2" id="7s28hc93jRl" role="2OqNvi">
-                                <ref role="3Tt5mk" to="16h3:2z4QKYxWcM3" />
+                                <ref role="3Tt5mk" to="16h3:2z4QKYxWcM3" resolve="prefix" />
                               </node>
                             </node>
                             <node concept="3TrEf2" id="7s28hc93jRm" role="2OqNvi">
-                              <ref role="3Tt5mk" to="16h3:6ONkOuOJEcS" />
+                              <ref role="3Tt5mk" to="16h3:6ONkOuOJEcS" resolve="namespace" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="7s28hc93jRn" role="2OqNvi">

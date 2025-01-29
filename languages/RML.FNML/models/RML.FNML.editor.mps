@@ -327,7 +327,7 @@
         <property role="3F0ifm" value="function" />
       </node>
       <node concept="3F1sOY" id="2ZAgtJQhxfV" role="3EZMnx">
-        <ref role="1NtTu8" to="vlcd:1R$stKKXd_0" />
+        <ref role="1NtTu8" to="vlcd:1R$stKKXd_0" resolve="function" />
       </node>
       <node concept="3F0ifn" id="2ZAgtJQhxfY" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -357,7 +357,7 @@
       </node>
       <node concept="3F2HdR" id="2ZAgtJQhxi5" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="vlcd:1R$stKL1EtF" />
+        <ref role="1NtTu8" to="vlcd:1R$stKL1EtF" resolve="input" />
         <node concept="l2Vlx" id="2ZAgtJQhxi7" role="2czzBx" />
         <node concept="tppnM" id="3iDRm_z4KK9" role="sWeuL">
           <node concept="ljvvj" id="3iDRm_z4KKa" role="3F10Kt">
@@ -401,13 +401,13 @@
     <node concept="3EZMnI" id="1R$stKL6cZA" role="2wV5jI">
       <node concept="l2Vlx" id="1R$stKL6cZB" role="2iSdaV" />
       <node concept="3F1sOY" id="1R$stKL6cZ$" role="3EZMnx">
-        <ref role="1NtTu8" to="vlcd:1R$stKL1EtI" />
+        <ref role="1NtTu8" to="vlcd:1R$stKL1EtI" resolve="parameterMap" />
       </node>
       <node concept="3F0ifn" id="1R$stKL6cZD" role="3EZMnx">
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="1R$stKL6cZG" role="3EZMnx">
-        <ref role="1NtTu8" to="vlcd:1R$stKL1EtL" />
+        <ref role="1NtTu8" to="vlcd:1R$stKL1EtL" resolve="inputValueMap" />
       </node>
     </node>
   </node>
