@@ -46,7 +46,7 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="4" />
+    <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="5" />
     <module reference="fd17b12e-3cbf-4173-af34-d391c94a7760(RMLPlugin)" version="0" />
     <module reference="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" version="3" />
     <module reference="22250116-183c-4e90-8450-b6a13dd8998b(jetbrains.mps.baseLanguage.execution.util)" version="0" />

@@ -2,7 +2,7 @@
 <model ref="r:91ff5a21-1ba0-4bd6-bad7-63694ea6afba(Sandbox.matey)">
   <persistence version="9" />
   <languages>
-    <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="0" />
+    <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="1" />
     <use id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle" version="0" />
     <use id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO" version="0" />
     <use id="4d376ef7-201b-4497-bbe5-6b936a6ab3d7" name="RML.FNML" version="0" />
@@ -25,6 +25,13 @@
       <concept id="2937713717140295301" name="Turtle.structure.PrefixedName" flags="ng" index="29d5ma">
         <property id="2937713717140311172" name="name" index="29d1ub" />
         <reference id="2937713717140311171" name="prefix" index="29d1uc" />
+      </concept>
+      <concept id="2937713717140306490" name="Turtle.structure.SubjectTriples" flags="ng" index="29d64P">
+        <child id="2937713717140306495" name="predicateObjectList" index="29d64K" />
+        <child id="2937713717140306494" name="subject" index="29d64L" />
+      </concept>
+      <concept id="1285627428968645135" name="Turtle.structure.RessourceIdentifierReference" flags="ng" index="3oYVlq">
+        <reference id="1285627428968645137" name="ref" index="3oYVl4" />
       </concept>
       <concept id="5063185561593286416" name="Turtle.structure.EmptyStatment" flags="ng" index="1SSSdx" />
       <concept id="7946374057678053675" name="Turtle.structure.PredicateObjectList" flags="ng" index="3Y090L" />
@@ -81,9 +88,11 @@
       <concept id="6303025759225643717" name="RML.structure.ExpressionMap" flags="ng" index="FGdDd">
         <child id="6303025759225643718" name="value" index="FGdDe" />
       </concept>
+      <concept id="6303025759225736045" name="RML.structure.GraphMap" flags="ng" index="FGrf_" />
       <concept id="6303025759225998812" name="RML.structure.ValueBasedObjectMap" flags="ng" index="FHrlk" />
       <concept id="6303025759225998813" name="RML.structure.PredicateMap" flags="ng" index="FHrll" />
       <concept id="6099872835424795659" name="RML.structure.SubjectMap" flags="ng" index="IaUod">
+        <child id="6303025759225736041" name="graphMap" index="FGrfx" />
         <child id="6303025759225736038" name="class" index="FGrfI" />
       </concept>
       <concept id="6099872835424795701" name="RML.structure.ConstantExpr" flags="ng" index="IaUoN">
@@ -96,6 +105,7 @@
         <property id="6303025759225519697" name="reference" index="FJGrp" />
       </concept>
       <concept id="6099872835424571529" name="RML.structure.PredicateObjectMap" flags="ng" index="Ib$Ef">
+        <child id="3355257623985582870" name="graphMap" index="p1bou" />
         <child id="6303025759225998808" name="predicateMap" index="FHrlg" />
         <child id="6303025759225998810" name="objectMap" index="FHrli" />
       </concept>
@@ -125,10 +135,14 @@
         <property role="29d1u8" value="http://example.org" />
       </node>
     </node>
-    <node concept="3DQ70j" id="M0URkkiLm7" role="lGtFl">
-      <property role="3V$3am" value="statments" />
-      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
+    <node concept="1SSSdx" id="5e0pfd$1Fz$" role="29aKCU" />
+    <node concept="29d64P" id="5e0pfd$1FzC" role="29aKCU">
+      <node concept="3Y090L" id="5e0pfd$1FzE" role="29d64K" />
+      <node concept="29d1u9" id="5e0pfd$1FzF" role="29d64L">
+        <property role="29d1u8" value="g/myGraph" />
+      </node>
     </node>
+    <node concept="1SSSdx" id="5e0pfd$1FzA" role="29aKCU" />
     <node concept="FCvld" id="pZc6UD7Kfr" role="29aKCU">
       <property role="FB9vU" value="$.persons[*]" />
       <node concept="29d5ma" id="pZc6UD7Kfv" role="FCw5A">
@@ -152,16 +166,23 @@
     </node>
     <node concept="2YYitQ" id="M0URkkgBQ7" role="29aKCU">
       <node concept="Ib$Ef" id="M0URkkgBQu" role="Ib$Ea">
-        <node concept="FHrll" id="M0URkkgBQv" role="FHrlg">
-          <node concept="IaUoN" id="M0URkkgBQ$" role="FGdDe">
-            <node concept="29d5ma" id="M0URkkiKIC" role="FJIaS">
+        <node concept="FHrll" id="641tyB4ga09" role="FHrlg">
+          <node concept="IaUoN" id="641tyB4ga0a" role="FGdDe">
+            <node concept="29d5ma" id="641tyB4ga0c" role="FJIaS">
               <property role="29d1ub" value="firstName" />
               <ref role="29d1uc" node="M0URkkgBQq" resolve="foaf" />
             </node>
           </node>
         </node>
-        <node concept="FHrlk" id="M0URkkiKIW" role="FHrli">
-          <node concept="IaUoZ" id="M0URkkiKIV" role="FGdDe">
+        <node concept="FGrf_" id="5e0pfd$1Fzs" role="p1bou">
+          <node concept="IaUoN" id="5e0pfd$1Fzu" role="FGdDe">
+            <node concept="3oYVlq" id="5e0pfd$1FzG" role="FJIaS">
+              <ref role="3oYVl4" node="5e0pfd$1FzF" />
+            </node>
+          </node>
+        </node>
+        <node concept="FHrlk" id="5tr7N07vV0c" role="FHrli">
+          <node concept="IaUoZ" id="5tr7N07vV0b" role="FGdDe">
             <property role="FJGrp" value="firstname" />
           </node>
         </node>
@@ -180,6 +201,13 @@
             <property role="FJGrp" value="lastname" />
           </node>
         </node>
+        <node concept="FGrf_" id="5e0pfd$1FzI" role="p1bou">
+          <node concept="IaUoN" id="5e0pfd$1FzK" role="FGdDe">
+            <node concept="3oYVlq" id="5e0pfd$1FzN" role="FJIaS">
+              <ref role="3oYVl4" node="5e0pfd$1FzF" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="IaUod" id="M0URkkgBQ8" role="2YYcL1">
         <node concept="IaUoX" id="M0URkkgBQn" role="FGdDe">
@@ -189,12 +217,19 @@
           <property role="29d1ub" value="Person" />
           <ref role="29d1uc" node="M0URkkgBQq" resolve="foaf" />
         </node>
+        <node concept="FGrf_" id="5e0pfd$1FzP" role="FGrfx">
+          <node concept="IaUoN" id="5e0pfd$1FzR" role="FGdDe">
+            <node concept="3oYVlq" id="5e0pfd$1FzU" role="FJIaS">
+              <ref role="3oYVl4" node="5e0pfd$1FzF" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="29d1u9" id="4$wSEF3Lzp8" role="2$AQDL">
         <property role="29d1u8" value="Person" />
       </node>
       <node concept="FCvle" id="pZc6UDfx8c" role="IaUo4">
-        <ref role="FCvlf" node="pZc6UD7Kfr" resolve="_:LSPeople" />
+        <ref role="FCvlf" node="pZc6UD7Kfr" resolve="&lt;PersonLogicalSource&gt;" />
       </node>
     </node>
     <node concept="3DQ70j" id="4p4374YyAFJ" role="lGtFl">
@@ -266,7 +301,7 @@
           </node>
         </node>
         <node concept="28P8wJ" id="KJ$Akt$cz0" role="FHrli">
-          <ref role="28P8wD" node="KJ$Akt$cyo" resolve="_:Movies" />
+          <ref role="28P8wD" node="KJ$Akt$cyo" resolve="&lt;Movie&gt;" />
           <node concept="28P8zg" id="KJ$Akt$czv" role="28P8zm">
             <node concept="2b7xXF" id="KJ$Akt$czw" role="28P8zi">
               <node concept="IaUoZ" id="KJ$Akt$cz$" role="FGdDe">

@@ -1907,7 +1907,7 @@
     <property role="TrG5h" value="TurtleRefreshDataset" />
     <node concept="ftmFs" id="7PPLA3RvdIV" role="ftER_">
       <node concept="tCFHf" id="7PPLA3RvdIX" role="ftvYc">
-        <ref role="tCJdB" node="7PPLA3RvdIu" resolve="RefreshRDFTurtle" />
+        <ref role="tCJdB" node="7PPLA3RvdIu" resolve="ReloadRDFTurtle" />
       </node>
     </node>
     <node concept="tT9cl" id="5XzZTwuk4C2" role="2f5YQi">

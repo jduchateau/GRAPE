@@ -327,7 +327,7 @@
                 <node concept="2bSWHS" id="4YJJv9On4XG" role="2OqNvi" />
               </node>
               <node concept="37vLTw" id="4YJJv9On_1w" role="1sKFgg">
-                <ref role="3cqZAo" node="4YJJv9OnazU" resolve="lsDef" />
+                <ref role="3cqZAo" node="4YJJv9OnazU" resolve="namedDef" />
               </node>
             </node>
           </node>

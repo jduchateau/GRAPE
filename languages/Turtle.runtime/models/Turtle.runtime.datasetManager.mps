@@ -1271,7 +1271,7 @@
             </node>
             <node concept="10M0yZ" id="tPE8szduLq" role="3uHU7B">
               <ref role="3cqZAo" to="5hed:7NlO_H3VhSX" resolve="NS_Graph_Default" />
-              <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="TuRML" />
+              <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
             </node>
           </node>
         </node>
@@ -1447,7 +1447,7 @@
                 <ref role="37wK5l" to="t6dh:~Resource.getProperty(org.apache.jena.rdf.model.Property)" resolve="getProperty" />
                 <node concept="10M0yZ" id="7HX6VHKZC3L" role="37wK5m">
                   <ref role="3cqZAo" to="5hed:7NlO_H3VhwB" resolve="originNode" />
-                  <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="TuRML" />
+                  <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
                 </node>
               </node>
             </node>
@@ -1528,7 +1528,7 @@
                 </node>
                 <node concept="10M0yZ" id="tPE8szc3Q2" role="37wK5m">
                   <ref role="3cqZAo" to="5hed:7NlO_H3VhwB" resolve="originNode" />
-                  <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="TuRML" />
+                  <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
                 </node>
               </node>
             </node>
@@ -2140,7 +2140,7 @@
                                                 <node concept="3cpWs3" id="7NlO_H3D_hI" role="33vP2m">
                                                   <node concept="10M0yZ" id="6$HV1vBzLyi" role="3uHU7B">
                                                     <ref role="3cqZAo" to="5hed:7NlO_H3VhSX" resolve="NS_Graph_Default" />
-                                                    <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="TuRML" />
+                                                    <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
                                                   </node>
                                                   <node concept="2OqwBi" id="7NlO_H3D_hK" role="3uHU7w">
                                                     <node concept="2GrUjf" id="7NlO_H3D_hL" role="2Oq$k0">

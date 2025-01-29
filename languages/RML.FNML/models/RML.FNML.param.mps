@@ -514,7 +514,7 @@
                 <ref role="1Pybhc" to="iwug:6tKZDNaiTly" resolve="RdfDatasetsManager" />
               </node>
               <node concept="liA8E" id="5N3KvtC9YNO" role="2OqNvi">
-                <ref role="37wK5l" to="iwug:2fsGeYB6DRB" resolve="loadDataForIri" />
+                <ref role="37wK5l" to="iwug:2fsGeYB6DRB" resolve="loadDataForUri" />
                 <node concept="37vLTw" id="5N3KvtC9YNP" role="37wK5m">
                   <ref role="3cqZAo" node="5N3KvtC9YND" resolve="fullUri" />
                 </node>

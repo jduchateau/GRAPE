@@ -2,6 +2,7 @@
 <model ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)">
   <persistence version="9" />
   <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -10,6 +11,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -193,6 +197,12 @@
       <property role="20kJfa" value="termType" />
       <ref role="20lvS9" node="5tSQ8xWM0be" resolve="TermType" />
     </node>
+    <node concept="1TJgyj" id="55wIQ$REuhE" role="1TKVEi">
+      <property role="IQ2ns" value="5863892775416226922" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="annotation" />
+      <ref role="20lvS9" node="75xoT0kgf8n" resolve="LiteralAnnotationExpressionMap" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0b5">
     <property role="TrG5h" value="ExpressionMap" />
@@ -211,7 +221,7 @@
     <property role="TrG5h" value="BlankNodeTT" />
     <property role="3GE5qa" value="TermType" />
     <property role="34LRSv" value="blank node" />
-    <ref role="1TJDcQ" node="1VY2WX9dMsc" resolve="NodeTermType" />
+    <ref role="1TJDcQ" node="1VY2WX9dMsc" resolve="ResourceTermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0be">
     <property role="TrG5h" value="TermType" />
@@ -231,28 +241,28 @@
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="IriTT" />
     <property role="34LRSv" value="iri" />
-    <ref role="1TJDcQ" node="1VY2WX9eIbO" resolve="NamedNodeTermType" />
+    <ref role="1TJDcQ" node="1VY2WX9eIbO" resolve="NamedResourceTermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0bk">
     <property role="EcuMT" value="6303025759225643732" />
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="UnsafeIriTT" />
     <property role="34LRSv" value="unsafe iri" />
-    <ref role="1TJDcQ" node="1VY2WX9eIbO" resolve="NamedNodeTermType" />
+    <ref role="1TJDcQ" node="1VY2WX9eIbO" resolve="NamedResourceTermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0bm">
     <property role="EcuMT" value="6303025759225643734" />
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="UriTT" />
     <property role="34LRSv" value="uri" />
-    <ref role="1TJDcQ" node="1VY2WX9eIbO" resolve="NamedNodeTermType" />
+    <ref role="1TJDcQ" node="1VY2WX9eIbO" resolve="NamedResourceTermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0bp">
     <property role="EcuMT" value="6303025759225643737" />
     <property role="3GE5qa" value="TermType" />
     <property role="TrG5h" value="UnsafeUriTT" />
     <property role="34LRSv" value="unsafe uri" />
-    <ref role="1TJDcQ" node="1VY2WX9eIbO" resolve="NamedNodeTermType" />
+    <ref role="1TJDcQ" node="1VY2WX9eIbO" resolve="NamedResourceTermType" />
   </node>
   <node concept="1TIwiD" id="5tSQ8xWMmHH">
     <property role="TrG5h" value="GraphMap" />
@@ -268,8 +278,11 @@
     <node concept="1TJgyj" id="75xoT0kgf8q" role="1TKVEi">
       <property role="IQ2ns" value="8169920669493031450" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="annotation" />
+      <property role="20kJfa" value="annotation_old" />
       <ref role="20lvS9" node="75xoT0kgf8n" resolve="LiteralAnnotationExpressionMap" />
+      <node concept="asaX9" id="55wIQ$REuhG" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;RML.structure.TermMap&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="34GH_iTYbzo" role="PzmwI">
       <ref role="PrY4T" node="34GH_iTYbzm" resolve="ObjectMap" />
@@ -384,15 +397,15 @@
     <property role="EcuMT" value="2233235450136831756" />
     <property role="3GE5qa" value="TermType" />
     <property role="R5$K7" value="true" />
-    <property role="TrG5h" value="NodeTermType" />
+    <property role="TrG5h" value="ResourceTermType" />
     <ref role="1TJDcQ" node="5tSQ8xWM0be" resolve="TermType" />
   </node>
   <node concept="1TIwiD" id="1VY2WX9eIbO">
     <property role="EcuMT" value="2233235450137076468" />
     <property role="3GE5qa" value="TermType" />
-    <property role="TrG5h" value="NamedNodeTermType" />
+    <property role="TrG5h" value="NamedResourceTermType" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="1VY2WX9dMsc" resolve="NodeTermType" />
+    <ref role="1TJDcQ" node="1VY2WX9dMsc" resolve="ResourceTermType" />
   </node>
 </model>
 

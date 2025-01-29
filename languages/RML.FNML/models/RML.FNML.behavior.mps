@@ -191,7 +191,7 @@
                   <node concept="2OqwBi" id="1h8QYehNBV" role="1m5AlR">
                     <node concept="2OqwBi" id="1h8QYehNBW" role="2Oq$k0">
                       <node concept="3TrEf2" id="1h8QYehNBY" role="2OqNvi">
-                        <ref role="3Tt5mk" to="vlcd:1R$stKKXd_0" />
+                        <ref role="3Tt5mk" to="vlcd:1R$stKKXd_0" resolve="function" />
                       </node>
                       <node concept="2OqwBi" id="1h8QYehOev" role="2Oq$k0">
                         <node concept="2Xjw5R" id="1h8QYehOex" role="2OqNvi">
@@ -205,12 +205,12 @@
                       </node>
                     </node>
                     <node concept="3TrEf2" id="1h8QYehNBZ" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ys6r:5tSQ8xWM0b6" />
+                      <ref role="3Tt5mk" to="ys6r:5tSQ8xWM0b6" resolve="value" />
                     </node>
                   </node>
                 </node>
                 <node concept="3TrEf2" id="1h8QYehNC0" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ys6r:5tSQ8xWLzCK" />
+                  <ref role="3Tt5mk" to="ys6r:5tSQ8xWLzCK" resolve="value" />
                 </node>
               </node>
             </node>
@@ -384,7 +384,7 @@
       <node concept="3clFbS" id="1VY2WX9jb$o" role="3clF47">
         <node concept="3clFbF" id="1VY2WX9jcRZ" role="3cqZAp">
           <node concept="35c_gC" id="1VY2WX9jcRY" role="3clFbG">
-            <ref role="35c_gD" to="ys6r:1VY2WX9eIbO" resolve="RdfNodeIdentifierTermType" />
+            <ref role="35c_gD" to="ys6r:1VY2WX9eIbO" resolve="NamedNodeTermType" />
           </node>
         </node>
       </node>
@@ -420,7 +420,7 @@
       <node concept="3clFbS" id="1VY2WX9jePE" role="3clF47">
         <node concept="3clFbF" id="1VY2WX9jfmI" role="3cqZAp">
           <node concept="35c_gC" id="1VY2WX9jfmH" role="3clFbG">
-            <ref role="35c_gD" to="ys6r:1VY2WX9eIbO" resolve="RdfNamedNodeTermType" />
+            <ref role="35c_gD" to="ys6r:1VY2WX9eIbO" resolve="NamedNodeTermType" />
           </node>
         </node>
       </node>
