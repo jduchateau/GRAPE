@@ -15,15 +15,41 @@ The goal is to create an extensible framework that:
 - Serves as a middle ground between purely textual, form-based, and fully graphical or block-based editors.
 - Makes working with RDF data more intuitive and enjoyable.
 
-## Install Plugin
+## Getting started
 
-Install MPS 2024.1.1 and download the plugin from the packages repository.
+### Setup
 
-Or add the following url to the [custom plugin repositories in MPS](https://www.jetbrains.com/help/mps/custom-plugin-repositories.html) and install `Turtle+RML` from the plugin manager.
+Install [MPS 2024.1.1](https://www.jetbrains.com/mps/download/previous.html#version20241) then install the plugin or clone this repo (start from sources).
 
+#### Using the plugin
+
+Add the following *Plugin Repositories*, more infos in [custom plugin repositories in MPS](https://www.jetbrains.com/help/mps/custom-plugin-repositories.html):
 ```
-https://gitlab.uliege.be/api/v4/projects/6137/packages/generic/RmlEditorLangPlugin/0.1.0/updatePlugins.zip
+https://gitlab.uliege.be/api/v4/projects/6137/packages/generic/GrapePlugin/0.1.0/updatePlugins.zip
 ```
+
+Then install `Grape` plugin from the marketplace.
+
+Instead you can also download the package from the [package registery](https://gitlab.uliege.be/Jakub.Duchateau/grape/-/packages) and install it from file.
+
+#### From source
+
+You will need:
+- MPS 2024.1.1
+- Gradle 8.1.1
+- Java 21
+- A clone of this repo
+
+To start:
+1. ensure the right version of gradle either you have installed it, or run `gradle wrapper` which generates the right `./gradlew` wrapper
+2. run `gradle setup` (or `./gradlew setup`), it should download the libraries
+3. open (or restart) MPS, so that dependencies are correcly loaded in Turtle.runtime
+4. then rebuild `Turtle` and `RML` languages in that order, you may ignore the warnings the first time.
+
+### Your first mapping in GRAPE
+
+
+
 
 ## Detailed Features
 
@@ -88,18 +114,6 @@ Use `Check model` with a right-click in the Logical View (left menu) or with all
   Generates RML structures from a RDF Graph, that means you need to (re-)load the RDF Graph before, 
   then can use _Promote to RML constructs_ context action on Turtle document.
 
-## From source
-
-You will need:
-- MPS 2024.1.1
-- Gradle 8.1.1
-- Java
-
-To start:
-1. ensure the right version of gradle either with `gradle wrapper` and then using `./gradlew` or install the right version.
-2. run `gradle setup`, it should download the libraries
-3. open (or restart) mps, so that java_stubs in Turtle.runtime are correctly loaded
-4. then rebuild `Turtle` and `RML`.
 
 ## Academic
 
