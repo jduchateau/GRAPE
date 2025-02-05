@@ -64,21 +64,20 @@ build:
       - build.gradle.kts
       - "*.xml"
 
-# pages:
-#   stage: deploy
-#   needs: []
-#   image: python:3-alpine
-#   before_script:
-#     - pip install pipx
-#     - pipx install poetry==1.4
-#     - export PATH="$PATH:/root/.local/bin"
-#   script:
-#     - poetry install
-#     - poetry run mkdocs build --verbose --strict
-#   artifacts:
-#     paths:
-#       - public
-#   rules:
-#     # This ensures that only pushes to the default branch 
-#     # will trigger a pages deploy
-#     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+pages:
+ stage: deploy
+ needs: []
+ image: python:3-alpine
+ before_script:
+   - pip install poetry
+   - poetry config virtualenvs.create false
+   - poetry install
+ script:
+   - poetry run mkdocs build --verbose --strict
+ artifacts:
+   paths:
+     - public
+ rules:
+   # This ensures that only pushes to the default branch
+   # will trigger a pages deploy
+   - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH

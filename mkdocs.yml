@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: >
+  GRAPE: Guiding RML Authoring with a Projectional Editor
+site_url: https://jakub.duchateau.gitlabpages.uliege.be/GRAPE
+site_dir: public
+
+repo_url: https://gitlab.uliege.be/Jakub.Duchateau/GRAPE
+repo_name: Gitlab.Uliège/GRAPE
+
+copyright: >
+  Copyright © 2024-2025 Jakub Duchateau, University of Liège
+
+theme:
+  icon:
+    repo: fontawesome/brands/git-alt
+  name: material
+  features:
+    - navigation.footer
+    - content.code.copy
+  palette: # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep-purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep-purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+watch:
+  - Readme.md
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - pymdownx.keys
