@@ -26,7 +26,7 @@ The model properties dialogue opens, you can add `Turtle` and `RML` languages in
 To add the languages, you can also use ++ctrl+l++ and search for the languages.
 If it cannot find the languages, ensure the plugin is installed and enabled.
 
-## Writing the mappings
+## Your first mappings
 
 ### Discover the data
 
@@ -52,8 +52,8 @@ along with the target Turtle output we aim to generate:
 
 ### Create Your Turtle Document
 
-Let's get started by creating a new Turtle document in the Logical View, 
-Right-click on your model and select **New | Turtle | TurtleDoc**.
+Let's get started by creating a new Turtle document.
+In the Logical View, right-click on your model and select **New | Turtle | TurtleDoc**.
 If Turtle isn't available, import it in the model by pressing ++ctrl+l++ and search for Turtle.
 
 ![Screenshot of an empty Turtle Document](assets/images/new_turtle_doc.png#only-light)
@@ -161,7 +161,7 @@ TODO Video
 ### Export
 
 We could have got here quicker if we had the mapping already in turtle.
-Fortunately, now here we have them. 
+Fortunately, now we have it. 
 
 To export them,
 right-click on the document in the logical view (or in the empty space of the document editor)
@@ -186,7 +186,7 @@ In your new module, ensure we have all the languages: Turtle, RML, RML.IO, RML.F
 
 In the logical view, right-click on the module and select **![](assets/images/icon_turtle_import.png) Import a Turtle File**, then select the `.ttl` file to be imported. The document should appear in the selected module. 
 
-To create the RML structures, the editor also needs the RDF Graph version of the turtle document therefore use ![icon_rdf_graph](assets/images/icon_rdf_graph.png) **Reload RDF Graph** from the logical view or the first line of your document.
+To create the RML structures, the editor also needs the RDF Graph version of the turtle document, therefore, use ![](assets/images/icon_refresh_rdf.png) **Reload RDF Graph** from the logical view or the first line of your document.
 
 Then on the first line of the document use **Promote RML constructs**.
 Using the Turtle AST and the RDF Graph, it will insert the RML constructs in the document, so once converted you can remove the turtle version from the document.w

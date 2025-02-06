@@ -2,35 +2,29 @@
 @prefix schema: <http://schema.org/> .
 @prefix ex: <http://example.org/> .
 
-<http://example.com/person/Sarah>
+<http://example.com/person/Sarah> a foaf:Person ;
     foaf:firstName "Sarah" ;
     foaf:lastName "BLADINCK" ;
-    ex:likes <http://example.com/movie/fotr> ;
-    a foaf:Person .
+    ex:likes <http://example.com/movie/fotr> .
 
-<http://example.com/person/Jane>
+<http://example.com/person/Jane> a foaf:Person ;
     foaf:firstName "Jane" ;
     foaf:lastName "SMITH" ;
-    ex:likes <http://example.com/movie/wam> ;
-    a foaf:Person .
+    ex:likes <http://example.com/movie/wam> .
 
-<http://example.com/person/John>
+<http://example.com/person/John> a foaf:Person ;
     foaf:firstName "John" ;
     foaf:lastName "DOE" ;
-    ex:likes <http://example.com/movie/wam> ;
-    a foaf:Person .
+    ex:likes <http://example.com/movie/wam> .
 
-<http://example.com/movie/wam>
+<http://example.com/movie/wam> a schema:Movie ;
     schema:name "We Are Marshall" ;
-    ex:year "2006" ;
-    a schema:Movie .
+    ex:year "2006" .
 
-<http://example.com/movie/fotr>
+<http://example.com/movie/fotr> a schema:Movie ;
     schema:name "The Fellowship of the Ring" ;
-    ex:year "2001" ;
-    a schema:Movie .
+    ex:year "2001" .
 
-<http://example.com/movie/sw>
+<http://example.com/movie/sw> a schema:Movie ;
     schema:name "Star Wars" ;
-    ex:year "1977" ;
-    a schema:Movie .
+    ex:year "1977" .
