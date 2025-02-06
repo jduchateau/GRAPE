@@ -112,7 +112,7 @@
   </registry>
   <node concept="2S6QgY" id="4po4Attj0sx">
     <property role="3GE5qa" value="Source.Use" />
-    <property role="TrG5h" value="ConvertToNamed" />
+    <property role="TrG5h" value="ConvertToNamedSource" />
     <ref role="2ZfgGC" to="qx9m:pZc6UDa6tg" resolve="SourceInlineDef" />
     <node concept="2S6ZIM" id="4po4Attj0sy" role="2ZfVej">
       <node concept="3clFbS" id="4po4Attj0sz" role="2VODD2">
@@ -234,7 +234,7 @@
   </node>
   <node concept="2S6QgY" id="4YJJv9Omqv9">
     <property role="3GE5qa" value="LogicalSource" />
-    <property role="TrG5h" value="ConvertToNamed" />
+    <property role="TrG5h" value="ConvertToNamedLogicalSource" />
     <ref role="2ZfgGC" to="qx9m:75xoT0k3_ow" resolve="LogicalSourceInlineDef" />
     <node concept="2S6ZIM" id="4YJJv9Omqva" role="2ZfVej">
       <node concept="3clFbS" id="4YJJv9Omqvb" role="2VODD2">

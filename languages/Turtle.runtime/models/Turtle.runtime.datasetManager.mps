@@ -42,6 +42,7 @@
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="5hed" ref="r:a8b1fda0-89ff-474b-ab43-cbd38563b06d(Turtle.runtime.prefixer)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="7jzd" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model.impl(Turtle.runtime/)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -121,6 +122,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -645,14 +649,103 @@
       <node concept="3clFbS" id="2fsGeYB6DRE" role="3clF47">
         <node concept="3clFbJ" id="4s9PdvyIGCU" role="3cqZAp">
           <node concept="3clFbS" id="4s9PdvyIGCW" role="3clFbx">
-            <node concept="3clFbF" id="2fsGeYBbG4A" role="3cqZAp">
-              <node concept="1rXfSq" id="2fsGeYB72S7" role="3clFbG">
-                <ref role="37wK5l" node="3l3jG31YDmS" resolve="download" />
-                <node concept="37vLTw" id="2fsGeYB72S8" role="37wK5m">
+            <node concept="2xdQw9" id="2A3mVPz2yAa" role="3cqZAp">
+              <property role="2xdLsb" value="h1akgim/info" />
+              <node concept="3cpWs3" id="2A3mVPz2Jab" role="9lYJi">
+                <node concept="37vLTw" id="2A3mVPz2JYm" role="3uHU7w">
                   <ref role="3cqZAo" node="2fsGeYB6MOp" resolve="graphLocationUri" />
                 </node>
-                <node concept="37vLTw" id="2fsGeYB72S9" role="37wK5m">
-                  <ref role="3cqZAo" node="7C_2uwslECK" resolve="graphIdUri" />
+                <node concept="Xl_RD" id="2A3mVPz2yAc" role="3uHU7B">
+                  <property role="Xl_RC" value="Jena download model from " />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="2A3mVPz0791" role="3cqZAp">
+              <node concept="3cpWsn" id="2A3mVPz0792" role="3cpWs9">
+                <property role="TrG5h" value="model" />
+                <node concept="3uibUv" id="2A3mVPz05YF" role="1tU5fm">
+                  <ref role="3uigEE" to="t6dh:~Model" resolve="Model" />
+                </node>
+                <node concept="2OqwBi" id="2A3mVPz0793" role="33vP2m">
+                  <node concept="2ShNRf" id="2A3mVPz0794" role="2Oq$k0">
+                    <node concept="1pGfFk" id="2A3mVPz0795" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="7jzd:~MemoryModelGetter.&lt;init&gt;()" resolve="MemoryModelGetter" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2A3mVPz0796" role="2OqNvi">
+                    <ref role="37wK5l" to="7jzd:~MemoryModelGetter.getModel(java.lang.String)" resolve="getModel" />
+                    <node concept="37vLTw" id="2A3mVPz0797" role="37wK5m">
+                      <ref role="3cqZAo" node="2fsGeYB6MOp" resolve="graphLocationUri" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="2A3mVPz0oM9" role="3cqZAp">
+              <node concept="3clFbS" id="2A3mVPz0oMb" role="3clFbx">
+                <node concept="2xdQw9" id="2A3mVPz2Mo$" role="3cqZAp">
+                  <property role="2xdLsb" value="h1akgim/info" />
+                  <node concept="3cpWs3" id="2A3mVPz3ltg" role="9lYJi">
+                    <node concept="37vLTw" id="2A3mVPz3mmb" role="3uHU7w">
+                      <ref role="3cqZAo" node="2fsGeYB6MOp" resolve="graphLocationUri" />
+                    </node>
+                    <node concept="3cpWs3" id="2A3mVPz3c6x" role="3uHU7B">
+                      <node concept="3cpWs3" id="2A3mVPz2Mo_" role="3uHU7B">
+                        <node concept="Xl_RD" id="2A3mVPz2MoB" role="3uHU7B">
+                          <property role="Xl_RC" value="RDF Graph acquired " />
+                        </node>
+                        <node concept="37vLTw" id="2A3mVPz37Wh" role="3uHU7w">
+                          <ref role="3cqZAo" node="7C_2uwslECK" resolve="graphIdUri" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="2A3mVPz3eKi" role="3uHU7w">
+                        <property role="Xl_RC" value=" from " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="2A3mVPz0dXs" role="3cqZAp">
+                  <node concept="1rXfSq" id="2A3mVPz0dXq" role="3clFbG">
+                    <ref role="37wK5l" node="7PPLA3R9mQx" resolve="addOrReplaceModel" />
+                    <node concept="37vLTw" id="2A3mVPz0gcS" role="37wK5m">
+                      <ref role="3cqZAo" node="2A3mVPz0792" resolve="model" />
+                    </node>
+                    <node concept="37vLTw" id="2A3mVPz0k$e" role="37wK5m">
+                      <ref role="3cqZAo" node="7C_2uwslECK" resolve="graphIdUri" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="2A3mVPz0zTA" role="3clFbw">
+                <node concept="3y3z36" id="2A3mVPz0Kgv" role="3uHU7B">
+                  <node concept="10Nm6u" id="2A3mVPz0MMO" role="3uHU7w" />
+                  <node concept="37vLTw" id="2A3mVPz0Ab8" role="3uHU7B">
+                    <ref role="3cqZAo" node="2A3mVPz0792" resolve="model" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="2A3mVPz0tYs" role="3uHU7w">
+                  <node concept="37vLTw" id="2A3mVPz0r0S" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2A3mVPz0792" resolve="model" />
+                  </node>
+                  <node concept="liA8E" id="2A3mVPz0xH1" role="2OqNvi">
+                    <ref role="37wK5l" to="t6dh:~Model.isEmpty()" resolve="isEmpty" />
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="2A3mVPz0WXi" role="9aQIa">
+                <node concept="3clFbS" id="2A3mVPz0WXj" role="9aQI4">
+                  <node concept="3clFbF" id="2fsGeYBbG4A" role="3cqZAp">
+                    <node concept="1rXfSq" id="2fsGeYB72S7" role="3clFbG">
+                      <ref role="37wK5l" node="3l3jG31YDmS" resolve="download" />
+                      <node concept="37vLTw" id="2fsGeYB72S8" role="37wK5m">
+                        <ref role="3cqZAo" node="2fsGeYB6MOp" resolve="graphLocationUri" />
+                      </node>
+                      <node concept="37vLTw" id="2fsGeYB72S9" role="37wK5m">
+                        <ref role="3cqZAo" node="7C_2uwslECK" resolve="graphIdUri" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

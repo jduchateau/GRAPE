@@ -16,14 +16,18 @@
       <sourceRoot path="${module}/lib/jena-querybuilder.jar" />
       <sourceRoot path="${module}/lib/jena-rdfconnection.jar" />
       <sourceRoot path="${module}/lib/jena-shacl.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="burp.jar" />
+      <sourceRoot path="${module}/lib/burp.jar" />
+      <sourceRoot path="${module}/lib/collection.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no" languageLevel="JAVA_10">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/burp.jar" />
+      <library location="${module}/lib/httpclient5.jar" />
+      <library location="${module}/lib/httpcore5-h2.jar" />
+      <library location="${module}/lib/httpcore5.jar" />
+      <library location="${module}/lib/slf4j-simple.jar" />
       <library location="${module}/lib/jena-shacl.jar" />
       <library location="${module}/lib/jena-rdfconnection.jar" />
       <library location="${module}/lib/caffeine.jar" />

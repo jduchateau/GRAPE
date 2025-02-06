@@ -234,16 +234,13 @@
       <property role="m$_wk" value="GRAPE" />
       <node concept="3_J27D" id="2CHbgKhgNah" role="m$_yQ">
         <node concept="3Mxwew" id="2CHbgKhgNai" role="3MwsjC">
-          <property role="3MwjfP" value="Turtle+RML Editor" />
+          <property role="3MwjfP" value="GRAPE: Turtle and RML editor" />
         </node>
       </node>
       <node concept="3_J27D" id="2CHbgKhgNaj" role="m$_w8">
         <node concept="3Mxwey" id="3x0FUHjWU90" role="3MwsjC">
           <ref role="3Mxwex" node="3x0FUHjWU8n" resolve="version_lang" />
         </node>
-      </node>
-      <node concept="m$f5U" id="2CHbgKhgNal" role="m$_yh">
-        <ref role="m$f5T" node="2CHbgKhgNaf" resolve="GrapeGroup" />
       </node>
       <node concept="m$_yC" id="2CHbgKhgNam" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
@@ -261,16 +258,19 @@
       </node>
       <node concept="2iUeEo" id="uIuTxPbUTy" role="2iVFfd">
         <property role="2iUeEt" value="Jakub Duchateau at ULiège" />
-        <property role="2iUeEu" value="https://uliege.be" />
+        <property role="2iUeEu" value="https://gitlab.uliege.be/Jakub.Duchateau/grape" />
       </node>
-      <node concept="3_J27D" id="70TM3__1kkX" role="3s6cr7">
-        <node concept="3Mxwew" id="70TM3__1kkY" role="3MwsjC">
-          <property role="3MwjfP" value="A Turtle and RML Editor" />
+      <node concept="3_J27D" id="6fdPYAXC17o" role="3s6cr7">
+        <node concept="3Mxwew" id="6fdPYAXC17p" role="3MwsjC">
+          <property role="3MwjfP" value="Provides support for Turtle and RML in MPS." />
         </node>
+      </node>
+      <node concept="m$f5U" id="v_r5au2HIW" role="m$_yh">
+        <ref role="m$f5T" node="2CHbgKhgNaf" resolve="GrapeGroup" />
       </node>
     </node>
     <node concept="2G$12M" id="2CHbgKhgNaf" role="3989C9">
-      <property role="TrG5h" value="GrapeGroup" />
+      <property role="TrG5h" value="Grape" />
       <node concept="1E1JtD" id="2CHbgKhgN9W" role="2G$12L">
         <property role="TrG5h" value="Turtle" />
         <property role="3LESm3" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" />
@@ -903,6 +903,21 @@
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
+        <node concept="3rtmxn" id="v_r5au3Mrx" role="3bR31x">
+          <node concept="3LXTmp" id="v_r5au3Mry" role="3rtmxm">
+            <node concept="55IIr" id="v_r5au3Mrz" role="3LXTmr">
+              <node concept="2Ry0Ak" id="v_r5au3Mr$" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="v_r5au3Mr_" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.runtime" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="v_r5au3MrB" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2CHbgKhgNae" role="2G$12L">
         <property role="TrG5h" value="TurtlePlugin" />
@@ -988,6 +1003,21 @@
         <node concept="1SiIV0" id="7t9lQskU2J_" role="3bR37C">
           <node concept="3bR9La" id="7t9lQskU2JA" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="v_r5au3Mt_" role="3bR31x">
+          <node concept="3LXTmp" id="v_r5au3MtA" role="3rtmxm">
+            <node concept="55IIr" id="v_r5au3MtB" role="3LXTmr">
+              <node concept="2Ry0Ak" id="v_r5au3MtC" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="v_r5au3MtD" role="2Ry0An">
+                  <property role="2Ry0Am" value="TurtlePlugin" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="v_r5au3MtF" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
+            </node>
           </node>
         </node>
       </node>
@@ -1096,10 +1126,97 @@
           </node>
         </node>
       </node>
-      <node concept="1E1JtD" id="dhpOjPSRWh" role="2G$12L">
+      <node concept="1E1JtA" id="v_r5au3LEF" role="2G$12L">
+        <property role="TrG5h" value="RMLPlugin" />
+        <property role="3LESm3" value="fd17b12e-3cbf-4173-af34-d391c94a7760" />
         <property role="BnDLt" value="true" />
+        <node concept="55IIr" id="v_r5au3LEI" role="3LF7KH">
+          <node concept="2Ry0Ak" id="v_r5au3LSv" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="v_r5au3LWs" role="2Ry0An">
+              <property role="2Ry0Am" value="RMLPlugin" />
+              <node concept="2Ry0Ak" id="v_r5au3M0p" role="2Ry0An">
+                <property role="2Ry0Am" value="RMLPlugin.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="v_r5au3M4D" role="3bR37C">
+          <node concept="3bR9La" id="v_r5au3M4E" role="1SiIV1">
+            <ref role="3bR37D" node="2CHbgKhgN9W" resolve="Turtle" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="v_r5au3M4F" role="3bR37C">
+          <node concept="3bR9La" id="v_r5au3M4G" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:5xa9wY2vh9z" resolve="jetbrains.mps.execution.library" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="v_r5au3M4H" role="3bR37C">
+          <node concept="3bR9La" id="v_r5au3M4I" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="v_r5au3M4J" role="3bR37C">
+          <node concept="3bR9La" id="v_r5au3M4K" role="1SiIV1">
+            <ref role="3bR37D" node="2CHbgKhgNa2" resolve="RML" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="v_r5au3M4L" role="3bR37C">
+          <node concept="3bR9La" id="v_r5au3M4M" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:5xa9wY2vh9N" resolve="jetbrains.mps.execution.configurations.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="v_r5au3M4N" role="3bR37C">
+          <node concept="3bR9La" id="v_r5au3M4O" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:5xa9wY2vhaQ" resolve="jetbrains.mps.baseLanguage.execution.util" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="v_r5au3M4P" role="3bR37C">
+          <node concept="3bR9La" id="v_r5au3M4Q" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="v_r5au3M4V" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="v_r5au3M4W" role="1HemKq">
+            <node concept="55IIr" id="v_r5au3M4R" role="3LXTmr">
+              <node concept="2Ry0Ak" id="v_r5au3M4S" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="v_r5au3M4T" role="2Ry0An">
+                  <property role="2Ry0Am" value="RMLPlugin" />
+                  <node concept="2Ry0Ak" id="v_r5au3M4U" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="v_r5au3M4X" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="v_r5au3M7d" role="3bR31x">
+          <node concept="3LXTmp" id="v_r5au3M7e" role="3rtmxm">
+            <node concept="55IIr" id="v_r5au3M7f" role="3LXTmr">
+              <node concept="2Ry0Ak" id="v_r5au3M7g" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="v_r5au3M7h" role="2Ry0An">
+                  <property role="2Ry0Am" value="RMLPlugin" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="v_r5au3M7j" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="dhpOjPSRWh" role="2G$12L">
         <property role="TrG5h" value="RML.FNML" />
         <property role="3LESm3" value="4d376ef7-201b-4497-bbe5-6b936a6ab3d7" />
+        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="dhpOjPSRWk" role="3LF7KH">
           <node concept="2Ry0Ak" id="dhpOjPSS3R" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
@@ -1192,9 +1309,9 @@
         </node>
       </node>
       <node concept="1E1JtD" id="dhpOjPSSjD" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="RML.IO" />
         <property role="3LESm3" value="b59f8083-a287-4777-a331-17daee969f66" />
+        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="dhpOjPSSjG" role="3LF7KH">
           <node concept="2Ry0Ak" id="dhpOjPSSt7" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
