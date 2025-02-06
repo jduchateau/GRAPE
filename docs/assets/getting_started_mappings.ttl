@@ -1,0 +1,72 @@
+@prefix rml:    <http://w3id.org/rml/> .
+@prefix grel:   <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix ex:     <http://example.org/> .
+
+@base <http://example.com/> .
+
+<Person>
+    rml:logicalSource [
+        rml:source [
+            rml:root rml:CurrentWorkingDirectory ;
+            rml:path "people.json"
+        ] ;
+        rml:referenceFormulation rml:JSONPath ;
+        rml:iterator "$.persons[*]"
+    ] ;
+    rml:subjectMap [
+        rml:template "http://example.com/person/{firstname}" ;
+        rml:class foaf:Person
+    ] ;
+    rml:predicateObjectMap [
+        rml:predicate foaf:firstName ;
+        rml:objectMap [ rml:reference "firstname" ]
+    ] ;
+    rml:predicateObjectMap [
+        rml:predicate foaf:lastName ;
+        rml:objectMap [
+         rml:functionExecution [
+             rml:functionMap [ rml:constant grel:toUpperCase ] ;
+             rml:input [
+                 rml:parameterMap [ rml:constant grel:valueParam ] ;
+                 rml:inputValueMap [ rml:reference "lastname" ] ]
+         ]
+        ]
+    ] ;
+    rml:predicateObjectMap [
+        rml:predicate ex:likes ;
+        rml:objectMap [
+         rml:parentTriplesMap <Movie> ;
+         rml:joinCondition [
+             rml:childMap [ rml:reference "movie" ] ;
+             rml:parentMap [ rml:reference "slug" ]
+         ]
+        ]
+    ]
+.
+
+
+<Movie>
+    a rml:TriplesMap ;
+    rml:logicalSource [
+        rml:source [
+            rml:root rml:CurrentWorkingDirectory ;
+            rml:path "movies.csv"
+        ] ;
+        rml:referenceFormulation rml:CSV
+    ] ;
+    rml:subjectMap [
+         rml:template "http://example.com/movie/{slug}" ;
+         rml:class schema:Movie
+    ] ;
+    rml:predicateObjectMap [
+        rml:predicate schema:name ;
+        rml:objectMap [ rml:reference "title" ]
+    ] ;
+    rml:predicateObjectMap [
+        rml:predicate ex:year ;
+        rml:objectMap [ rml:reference "year" ]
+    ]
+.
+

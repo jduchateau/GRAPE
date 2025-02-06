@@ -1,0 +1,36 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix ex: <http://example.org/> .
+
+<http://example.com/person/Sarah>
+    foaf:firstName "Sarah" ;
+    foaf:lastName "BLADINCK" ;
+    ex:likes <http://example.com/movie/fotr> ;
+    a foaf:Person .
+
+<http://example.com/person/Jane>
+    foaf:firstName "Jane" ;
+    foaf:lastName "SMITH" ;
+    ex:likes <http://example.com/movie/wam> ;
+    a foaf:Person .
+
+<http://example.com/person/John>
+    foaf:firstName "John" ;
+    foaf:lastName "DOE" ;
+    ex:likes <http://example.com/movie/wam> ;
+    a foaf:Person .
+
+<http://example.com/movie/wam>
+    schema:name "We Are Marshall" ;
+    ex:year "2006" ;
+    a schema:Movie .
+
+<http://example.com/movie/fotr>
+    schema:name "The Fellowship of the Ring" ;
+    ex:year "2001" ;
+    a schema:Movie .
+
+<http://example.com/movie/sw>
+    schema:name "Star Wars" ;
+    ex:year "1977" ;
+    a schema:Movie .

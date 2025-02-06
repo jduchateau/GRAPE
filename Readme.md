@@ -2,7 +2,7 @@
 
 [//]: # (--8<-- [start:features])
 
-This prototype aims to enhance authoring of RML mappings by providing a projectional editor (also known as structural editing) for RML mapping documents using JetBrains MPS. 
+This prototype aims to enhance **authoring of RML mappings** by providing a _projectional editor_ (also known as _structural editing_) for RML mapping documents using JetBrains MPS. 
 
 It offers:
 
@@ -12,6 +12,7 @@ It offers:
     - RML-FNML: function execution in expression
     - RML-IO: logical source and source
 - Import/Export of mapping files
+- Run mappings with the BURP engine
 - Balance between guidance and freedom of editing
 
 [//]: # (--8<-- [end:features])

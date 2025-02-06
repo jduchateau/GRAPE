@@ -14,10 +14,13 @@ copyright: >
 theme:
   icon:
     repo: fontawesome/brands/git-alt
+    logo: material/fruit-grapes-outline
   name: material
   features:
     - navigation.footer
     - content.code.copy
+    - content.tabs.link
+    - content.code.annotate
   palette: # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
@@ -42,6 +45,10 @@ theme:
 
 watch:
   - Readme.md
+plugins:
+  - search
+  - table-reader
+
 markdown_extensions:
   - toc:
       permalink: true
@@ -54,3 +61,9 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - mkdocs_graphviz
