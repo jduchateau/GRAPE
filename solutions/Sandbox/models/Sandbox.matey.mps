@@ -9,9 +9,24 @@
   </languages>
   <imports />
   <registry>
+    <language id="4d376ef7-201b-4497-bbe5-6b936a6ab3d7" name="RML.FNML">
+      <concept id="2153971712319203184" name="RML.FNML.structure.ParameterMap" flags="ng" index="GSHqG" />
+      <concept id="2153971712319203180" name="RML.FNML.structure.Input" flags="ng" index="GSHqK">
+        <child id="2153971712319203185" name="inputValueMap" index="GSHqH" />
+        <child id="2153971712319203182" name="parameterMap" index="GSHqM" />
+      </concept>
+      <concept id="2153971712317369461" name="RML.FNML.structure.FunctionExecutionExpr" flags="ng" index="H3HQD">
+        <child id="2153971712319203179" name="input" index="GSHqR" />
+        <child id="2153971712318036288" name="function" index="H4ays" />
+      </concept>
+      <concept id="2153971712318036290" name="RML.FNML.structure.FunctionMap" flags="ng" index="H4ayu" />
+    </language>
     <language id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle">
       <concept id="2937713717140246833" name="Turtle.structure.TurtleDoc" flags="ng" index="29aKCY">
         <child id="2937713717140246837" name="statments" index="29aKCU" />
+      </concept>
+      <concept id="2937713717140624470" name="Turtle.structure.RdfLiteral" flags="ng" index="29ckXp">
+        <property id="2937713717140624475" name="value" index="29ckXk" />
       </concept>
       <concept id="2937713717140311174" name="Turtle.structure.IriFull" flags="ng" index="29d1u9">
         <property id="2937713717140311175" name="iri" index="29d1u8" />
@@ -20,6 +35,7 @@
         <child id="7868724541386564407" name="iri" index="3pzv1K" />
       </concept>
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
+        <property id="5867233166325549765" name="vocabulary" index="34lheZ" />
         <child id="7868724541386564408" name="namespace" index="3pzv1Z" />
       </concept>
       <concept id="2937713717140295301" name="Turtle.structure.PrefixedName" flags="ng" index="29d5ma">
@@ -30,11 +46,20 @@
         <child id="2937713717140306495" name="predicateObjectList" index="29d64K" />
         <child id="2937713717140306494" name="subject" index="29d64L" />
       </concept>
+      <concept id="2937713717140306511" name="Turtle.structure.AnnotatedObject" flags="ng" index="29d650">
+        <child id="2937713717140316189" name="object" index="29d3Gi" />
+      </concept>
+      <concept id="2937713717140306498" name="Turtle.structure.PredicateObject" flags="ng" index="29d65d">
+        <child id="2937713717140306508" name="object" index="29d653" />
+        <child id="2937713717140306507" name="verb" index="29d654" />
+      </concept>
       <concept id="1285627428968645135" name="Turtle.structure.RessourceIdentifierReference" flags="ng" index="3oYVlq">
         <reference id="1285627428968645137" name="ref" index="3oYVl4" />
       </concept>
       <concept id="5063185561593286416" name="Turtle.structure.EmptyStatment" flags="ng" index="1SSSdx" />
-      <concept id="7946374057678053675" name="Turtle.structure.PredicateObjectList" flags="ng" index="3Y090L" />
+      <concept id="7946374057678053675" name="Turtle.structure.PredicateObjectList" flags="ng" index="3Y090L">
+        <child id="7946374057678053676" name="list" index="3Y090Q" />
+      </concept>
     </language>
     <language id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO">
       <concept id="5068821615757897735" name="RML.IO.structure.WithSourceDef" flags="ngI" index="riy9w">
@@ -85,6 +110,7 @@
       <concept id="2410254138872534997" name="RML.structure.NamedDefintionTriples" flags="ng" index="2$AQqb">
         <child id="2410254138872535855" name="identifier" index="2$AQDL" />
       </concept>
+      <concept id="6303025759225643715" name="RML.structure.TermMap" flags="ng" index="FGdDb" />
       <concept id="6303025759225643717" name="RML.structure.ExpressionMap" flags="ng" index="FGdDd">
         <child id="6303025759225643718" name="value" index="FGdDe" />
       </concept>
@@ -137,7 +163,18 @@
     </node>
     <node concept="1SSSdx" id="5e0pfd$1Fz$" role="29aKCU" />
     <node concept="29d64P" id="5e0pfd$1FzC" role="29aKCU">
-      <node concept="3Y090L" id="5e0pfd$1FzE" role="29d64K" />
+      <node concept="3Y090L" id="5e0pfd$1FzE" role="29d64K">
+        <node concept="29d65d" id="4ugsP3clJXj" role="3Y090Q">
+          <node concept="29d650" id="4ugsP3clJXk" role="29d653">
+            <node concept="29ckXp" id="4ugsP3clJXp" role="29d3Gi">
+              <property role="29ckXk" value="MyGraph" />
+            </node>
+          </node>
+          <node concept="29d1u9" id="4ugsP3clJXo" role="29d654">
+            <property role="29d1u8" value="name" />
+          </node>
+        </node>
+      </node>
       <node concept="29d1u9" id="5e0pfd$1FzF" role="29d64L">
         <property role="29d1u8" value="g/myGraph" />
       </node>
@@ -265,10 +302,18 @@
     </node>
     <node concept="29d5m5" id="KJ$Akt$cyU" role="29aKCU">
       <property role="TrG5h" value="schema" />
+      <property role="34lheZ" value="https://schema.org/version/latest/schemaorg-current-https.ttl" />
       <node concept="29d1u9" id="KJ$Akt$cyY" role="3pzv1Z">
         <property role="29d1u8" value="http://schema.org/" />
       </node>
     </node>
+    <node concept="29d5m5" id="167NyB6oxcF" role="29aKCU">
+      <property role="TrG5h" value="grel" />
+      <node concept="29d1u9" id="167NyB6oxcJ" role="3pzv1Z">
+        <property role="29d1u8" value="http://users.ugent.be/~bjdmeest/function/grel.ttl#" />
+      </node>
+    </node>
+    <node concept="1SSSdx" id="31y6m9A7iZa" role="29aKCU" />
     <node concept="29d4XD" id="4$wSEF3LzKp" role="29aKCU">
       <node concept="29d1u9" id="4$wSEF3LzKr" role="3pzv1K">
         <property role="29d1u8" value="http://example.com/" />
@@ -280,14 +325,51 @@
         <node concept="FHrll" id="KJ$Akt$cxY" role="FHrlg">
           <node concept="IaUoN" id="KJ$Akt$cy3" role="FGdDe">
             <node concept="29d5ma" id="KJ$Akt$cy1" role="FJIaS">
-              <property role="29d1ub" value="name" />
-              <ref role="29d1uc" node="KJ$AktwcEa" resolve="ex" />
+              <property role="29d1ub" value="firstName" />
+              <ref role="29d1uc" node="KJ$Akt$cxT" resolve="foaf" />
             </node>
           </node>
         </node>
         <node concept="FHrlk" id="KJ$Akt$cy6" role="FHrli">
           <node concept="IaUoZ" id="KJ$Akt$cy4" role="FGdDe">
             <property role="FJGrp" value="firstname" />
+          </node>
+        </node>
+      </node>
+      <node concept="Ib$Ef" id="167NyB6oxcp" role="Ib$Ea">
+        <node concept="FHrll" id="167NyB6oxcq" role="FHrlg">
+          <node concept="IaUoN" id="167NyB6oxcr" role="FGdDe">
+            <node concept="29d5ma" id="167NyB6oxcu" role="FJIaS">
+              <property role="29d1ub" value="lastName" />
+              <ref role="29d1uc" node="KJ$Akt$cxT" resolve="foaf" />
+            </node>
+          </node>
+        </node>
+        <node concept="FHrlk" id="167NyB6oxcD" role="FHrli">
+          <node concept="H3HQD" id="167NyB6oxcz" role="FGdDe">
+            <node concept="GSHqK" id="167NyB6oxcM" role="GSHqR">
+              <node concept="GSHqG" id="167NyB6oxcN" role="GSHqM">
+                <node concept="IaUoN" id="167NyB6oxcS" role="FGdDe">
+                  <node concept="29d5ma" id="167NyB6oxcR" role="FJIaS">
+                    <property role="29d1ub" value="valueParam" />
+                    <ref role="29d1uc" node="167NyB6oxcF" resolve="grel" />
+                  </node>
+                </node>
+              </node>
+              <node concept="FGdDb" id="167NyB6oxcP" role="GSHqH">
+                <node concept="IaUoZ" id="167NyB6oxcw" role="FGdDe">
+                  <property role="FJGrp" value="lastname" />
+                </node>
+              </node>
+            </node>
+            <node concept="H4ayu" id="167NyB6oxc$" role="H4ays">
+              <node concept="IaUoN" id="167NyB6oxcA" role="FGdDe">
+                <node concept="29d5ma" id="167NyB6oxcK" role="FJIaS">
+                  <property role="29d1ub" value="toUpperCase" />
+                  <ref role="29d1uc" node="167NyB6oxcF" resolve="grel" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
