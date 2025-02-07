@@ -115,9 +115,9 @@ But let's start by adding the prefixes we will need, you can type them as previo
 ```
 
 !!! INFO "Autocompletion for schema.org"
-    When you are on the `schema` prefix declaration, open the inspector ++ctrl+alt+i++ and enter the following **vocabulary** url:
+    When you are on the `schema` prefix declaration, open the inspector ++ctrl+alt+i++ and enter the following **vocabulary** url, make sure both are http or https:
     ```
-    https://schema.org/version/latest/schemaorg-current-https.ttl
+    https://schema.org/version/latest/schemaorg-current-http.ttl
     ```
     We need to do this because the namespace does not serve the full vocabulary in a machine-readable format for auto-completion.
 
@@ -144,7 +144,7 @@ In the <Person> TriplesMap,
 we will add a predicate object map with predicate `ex:likes`.
 For the object select the parentTriplesMap `<Movies>` and provide the child reference `movie` and parent reference `slug`.
 
-TODO Video
+<div style="padding:63.21% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1054434795?h=ec12d26900&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Getting Started 3: Movie TriplesMap"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ### Lastname in uppercase
 
@@ -154,7 +154,7 @@ We can use a function in the RML mapping to achieve this, start by importing the
 Then we will adapt the `foaf:lastName` predicate object map, remove the reference (or copy it) and place a functionExecution in the object position.
 Type the function so `grel:toUpperCase`, move in between the parenthesis and add an argument, in the parameter names use completion to select the input parameter denoted with ![a yellow f](assets/images/icon_function.png) and as value uses the reference to the last name (or paste it).
 
-TODO Video
+<div style="padding:63.21% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1054436598?h=ae6590bd97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Getting Started 4: toUpperCase lastname"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ## Export & Import Mappings
 
@@ -191,4 +191,4 @@ To create the RML structures, the editor also needs the RDF Graph version of the
 Then on the first line of the document use **Promote RML constructs**.
 Using the Turtle AST and the RDF Graph, it will insert the RML constructs in the document, so once converted you can remove the turtle version from the document.w
 
-TODO Video
+<div style="padding:54.58% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1053670824?h=5896274e8d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Demo Import and Edit RML"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
