@@ -54,37 +54,42 @@ along with the target Turtle output we aim to generate:
 
 Let's get started by creating a new Turtle document.
 In the Logical View, right-click on your model and select **New | Turtle | TurtleDoc**.
-If Turtle isn't available, import it in the model by pressing ++ctrl+l++ and search for Turtle.
+
+!!! INFO
+    If Turtle isn't available, import it in the model by pressing ++ctrl+l++ and search for Turtle.
 
 ![Screenshot of an empty Turtle Document](assets/images/new_turtle_doc.png#only-light)
 ![Screenshot of an empty Turtle Document](assets/images/new_turtle_doc_dark.png#only-dark)
 
-To get comfortable with structural editing, let's start by adding the necessary prefixes and some placeholder nodes.
+???+ NOTE "Write some turtle (optional)"
+    To get comfortable with structural editing, let's start by adding the necessary prefixes and some placeholder nodes.
 
+    - Place your cursor on `<<< ... >>>` and press ++ctrl+space++ to see valid constructs.
+    - Type `@prefix`, select it from the list, and fill in the prefix field with `foaf`.
+    - Use ++tab++ to move to the IRI field and try ++ctrl+space++ to autocomplete the FOAF namespace URI (http://xmlns.com/foaf/0.1/).
 
-- Place your cursor on `<<< ... >>>` and press ++ctrl+space++ to see valid constructs.
-- Type `@prefix`, select it from the list, and fill in the prefix field with `foaf`.
-- Use ++tab++ to move to the IRI field and try ++ctrl+space++ to autocomplete the FOAF namespace URI (http://xmlns.com/foaf/0.1/).
+    <div style="padding:75.1% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1054084957?h=838c8ca88c&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Turtle me node"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-<div style="padding:75.1% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1054084957?h=838c8ca88c&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Turtle me node"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    Next, let's create a `<me>` node:
 
-Next, let's create a `<me>` node:
-
-- Go to the next line with ++enter++ to create a new node.
-- Type `me`, select `<me>` from the completion list, and press ++tab++ and ++enter++ to create a predicate-object pair.
-- In the predicate position, use completion to enter `foaf:firstName`, and in the object position, write your name as a string.
-- To add another predicate-object, place your cursor before the `.` or on `foaf:firstName` and hit ++enter++, where you can enter your `lastName` for example.
+    - Go to the next line with ++enter++ to create a new node.
+    - Type `me`, select `<me>` from the completion list, and press ++tab++ and ++enter++ to create a predicate-object pair.
+    - In the predicate position, use completion to enter `foaf:firstName`, and in the object position, write your name as a string.
+    - To add another predicate-object, place your cursor before the `.` or on `foaf:firstName` and hit ++enter++, where you can enter your `lastName` for example.
 
 Once you're ready, let's move on to writing RML!
 
 ### People TriplesMap
 
+We will start by creating a TriplesMap for the people data.
+
 First, ensure `RML` and `RML.IO` are imported with ++ctrl+l++ or navigate to the **Model Properties | Used Languages**.
+And add the `rml` prefix to the top of the document.
 
-On an empty line, insert a new `TriplesMap`, then fill the details, errors are shown ed red and are invalid nodes:
+On an empty line, insert a new `TriplesMap`, then fill the details:
 
-- **Name**: Give it a name, such as <Person>.
-- **Logical Source**: Use completion to fill the from field with an inline logical source and an inline source. 
+- **Name**: Give it a name, such as `<Person>`.
+- **Logical Source**: Use completion ++ctrl+space++ to fill the from field with an inline logical source and an inline source. 
   Set the **path** to `people.json`,
   the **root directory** to the `current working directory`,
   the **referenceFormulation** to `rml:JSONPath` (you will need to define the `rml` prefix if not already done).,
@@ -156,14 +161,9 @@ Type the function so `grel:toUpperCase`, move in between the parenthesis and add
 
 <div style="padding:63.21% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1054436598?h=ae6590bd97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Getting Started 4: toUpperCase lastname"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-## Export & Import Mappings
+## Export Mappings
 
-### Export
-
-We could have got here quicker if we had the mapping already in turtle.
-Fortunately, now we have it. 
-
-To export them,
+To export a document to text,
 right-click on the document in the logical view (or in the empty space of the document editor)
 and **Preview Generated Text** ++ctrl+alt+shift+f9++.
 Copy-paste the content of that file on your disk in a **.ttl** file.
@@ -174,13 +174,13 @@ Copy-paste the content of that file on your disk in a **.ttl** file.
     --8<-- "docs/assets/getting_started_mappings.ttl"
     ```
 
-### Import
+## Import Mappings
 
 We will:
 
 - Create a new model, see how in [prepare the project](#prepare-the-project),
-- Import the turtle textual file
-- Convert to RML concepts
+- Import a turtle textual file containg RML mappings,
+- Convert the Turtle to RML concepts.
 
 In your new module, ensure we have all the languages: Turtle, RML, RML.IO, RML.FNML.
 
@@ -189,6 +189,6 @@ In the logical view, right-click on the module and select **![](assets/images/ic
 To create the RML structures, the editor also needs the RDF Graph version of the turtle document, therefore, use ![](assets/images/icon_refresh_rdf.png) **Reload RDF Graph** from the logical view or the first line of your document.
 
 Then on the first line of the document use **Promote RML constructs**.
-Using the Turtle AST and the RDF Graph, it will insert the RML constructs in the document, so once converted you can remove the turtle version from the document.w
+Using the Turtle AST and the RDF Graph, it will insert the RML constructs in the document, so once converted you can remove the turtle version from the document.
 
 <div style="padding:54.58% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1053670824?h=5896274e8d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Demo Import and Edit RML"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
