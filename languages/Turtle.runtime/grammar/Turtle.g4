@@ -225,7 +225,7 @@ annotationBlock
 
 // [35] IRIREF ::= '<' ([^#x00-#x20<>"{}|^`\] | UCHAR)* '>'
 IRIREF
-    : '<' (PN_CHARS | '.' | ':' | '/' | '\\' | '#' | '@' | '%' | '&' | UCHAR)* '>'
+    : '<' (~[\u0000-\u0020<>"{}|^`\\] | UCHAR)* '>'
     ;
 
 // [36] PNAME_NS ::= PN_PREFIX? ':'
