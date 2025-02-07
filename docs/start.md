@@ -35,7 +35,8 @@ focusing on the integration of data about People and Movies.
 
 Our objective is to map these data sources into a unified Turtle output.
 Below, you'll find a preview of the data files we'll be working with,
-along with the target Turtle output we aim to generate:
+along with the target Turtle output we aim to generate.
+Store them on your disk in a directory to follow along.
 
 === "people.json"
     ```json
@@ -97,17 +98,30 @@ On an empty line, insert a new `TriplesMap`, then fill the details:
 - **Subject**: Input the **template**: `http://example.org/person/{firstname}` and assign it the **class** `foaf:Person`.
 - **Predicate-Object Maps**: Continue by defining predicate-object maps for _firstname_ and _lastname_ using references.
 
-Once done we can check the mappings by running them in an RML Engin.
-
-
-<div style="padding:88.02% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1054175241?h=bd68d5747f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Getting Started 2: Person Map"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-!!! TIP "Creating new nodes in the AST"
+??? TIP "Creating new nodes in the AST"
     To create your second predicate-object-map, ensure the cursor is after the brace `}` of hit ++enter++.
 
     Or with the cursor on the keyword predicate and ++shift+enter++ to add it before the current one.
 
     Or select the predicate object with mouse or ++ctrl+up++ (or ++ctrl+w++) and you can add a child before or after with ++enter++ or ++shift+enter++.
+
+<div style="padding:88.02% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1054175241?h=bd68d5747f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Getting Started 2: Person Map"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+#### Running RML mappings 
+
+Once done, we can check the mappings by running them in an RML Engin.
+
+To run the mappings, right-click on the document in the logical view and select **Modify Run Configuration...**.
+In the dialogue, change the working directory to the one containing the data files, then **Run** the configuration from the upper right corner or ++shift+f10++.
+
+![Screenshot of the Run Configuration dialog](assets/images/run_config.png#only-light)
+![Screenshot of the Run Configuration dialog](assets/images/run_config_dark.png#only-dark)
+
+The output should be displayed in the Run tool window that will open from the bottom.
+
+![Screenshot of the IDE with Run tool window opened](assets/images/app_people_run.png)
+
+
 
 ### Movies TriplesMap
 
