@@ -15,9 +15,9 @@
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
     <import index="sg7y" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.query(Turtle.runtime/)" />
-    <import index="iwug" ref="r:76e4946f-2d00-47d5-ae37-e0c3a55829b1(Turtle.runtime.datasetManager)" />
     <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" />
     <import index="6roo" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdfconnection(Turtle.runtime/)" />
+    <import index="cyoz" ref="r:ef2b4066-69f7-4d14-91ae-0386ca39f157(Turtle.datasetManager)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -510,11 +510,11 @@
             </node>
             <node concept="2OqwBi" id="5N3KvtC9YNM" role="33vP2m">
               <node concept="2YIFZM" id="5N3KvtC9YNN" role="2Oq$k0">
-                <ref role="37wK5l" to="iwug:3l3jG31o0qT" resolve="getInstance" />
-                <ref role="1Pybhc" to="iwug:6tKZDNaiTly" resolve="RdfDatasetsManager" />
+                <ref role="37wK5l" to="cyoz:3l3jG31o0qT" resolve="getInstance" />
+                <ref role="1Pybhc" to="cyoz:6tKZDNaiTly" resolve="RdfDatasetsManager" />
               </node>
               <node concept="liA8E" id="5N3KvtC9YNO" role="2OqNvi">
-                <ref role="37wK5l" to="iwug:2fsGeYB6DRB" resolve="loadDataForUri" />
+                <ref role="37wK5l" to="cyoz:2fsGeYB6DRB" resolve="loadDataForUri" />
                 <node concept="37vLTw" id="5N3KvtC9YNP" role="37wK5m">
                   <ref role="3cqZAo" node="5N3KvtC9YND" resolve="fullUri" />
                 </node>

@@ -45,7 +45,7 @@
     <import index="bcn8" ref="r:0e3b77a4-c2c4-4ca6-a3b1-df5ad0152a9c(jetbrains.mps.ide.make)" />
     <import index="v1em" ref="r:16b78da9-9284-48a9-b286-7a5138f8d98f(Turtle.plugin)" />
     <import index="yo81" ref="r:4ea5a78b-cb8a-4831-b227-f7860a22491d(jetbrains.mps.make.resources)" />
-    <import index="iwug" ref="r:76e4946f-2d00-47d5-ae37-e0c3a55829b1(Turtle.runtime.datasetManager)" />
+    <import index="cyoz" ref="r:ef2b4066-69f7-4d14-91ae-0386ca39f157(Turtle.datasetManager)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -1796,8 +1796,8 @@
           <node concept="3clFbS" id="4SbU915ZxJH" role="3clFbx">
             <node concept="3clFbF" id="7PPLA3Rwh5U" role="3cqZAp">
               <node concept="2YIFZM" id="7PPLA3Rwh6Y" role="3clFbG">
-                <ref role="37wK5l" to="iwug:5XzZTwukA9O" resolve="generate" />
-                <ref role="1Pybhc" to="iwug:7PPLA3RusgH" resolve="GenerateTurtle" />
+                <ref role="37wK5l" to="cyoz:5XzZTwukA9O" resolve="generate" />
+                <ref role="1Pybhc" to="cyoz:7PPLA3RusgH" resolve="GenerateTurtle" />
                 <node concept="2OqwBi" id="7PPLA3RwxEY" role="37wK5m">
                   <node concept="2WthIp" id="7PPLA3Rwww2" role="2Oq$k0" />
                   <node concept="1DTwFV" id="7PPLA3RwyzZ" role="2OqNvi">
@@ -1838,8 +1838,8 @@
               <node concept="3clFbS" id="4SbU915ZDy1" role="2LFqv$">
                 <node concept="3clFbF" id="4SbU915ZE4m" role="3cqZAp">
                   <node concept="2YIFZM" id="4SbU915ZE5U" role="3clFbG">
-                    <ref role="37wK5l" to="iwug:5XzZTwukA9O" resolve="generate" />
-                    <ref role="1Pybhc" to="iwug:7PPLA3RusgH" resolve="GenerateTurtle" />
+                    <ref role="37wK5l" to="cyoz:5XzZTwukA9O" resolve="generate" />
+                    <ref role="1Pybhc" to="cyoz:7PPLA3RusgH" resolve="GenerateTurtle" />
                     <node concept="2GrUjf" id="4SbU915ZE7t" role="37wK5m">
                       <ref role="2Gs0qQ" node="4SbU915ZDxX" resolve="model" />
                     </node>

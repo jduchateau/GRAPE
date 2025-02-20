@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:76e4946f-2d00-47d5-ae37-e0c3a55829b1(Turtle.runtime.datasetManager)">
+<model ref="r:ef2b4066-69f7-4d14-91ae-0386ca39f157(Turtle.datasetManager)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -10,6 +10,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="0" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="lhc4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.annotations(MPS.OpenAPI/)" />
@@ -40,9 +41,9 @@
     <import index="et5u" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.messages(MPS.Core/)" />
     <import index="i9so" ref="r:9e5578e0-37f0-4c9b-a301-771bcb453678(jetbrains.mps.make.script)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
-    <import index="5hed" ref="r:a8b1fda0-89ff-474b-ab43-cbd38563b06d(Turtle.runtime.prefixer)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="7jzd" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model.impl(Turtle.runtime/)" />
+    <import index="tqna" ref="r:cc7e3d7f-6cc3-45ed-8929-4ebc0ff93d08(Turtle.prefixer)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -1409,8 +1410,67 @@
     <node concept="2YIFZL" id="tPE8szdrUq" role="jymVt">
       <property role="TrG5h" value="graphName" />
       <node concept="3clFbS" id="tPE8szdrUt" role="3clF47">
-        <node concept="3clFbF" id="tPE8szduED" role="3cqZAp">
-          <node concept="3cpWs3" id="tPE8szdwnM" role="3clFbG">
+        <node concept="2xdQw9" id="1uUgCWYAdmU" role="3cqZAp">
+          <property role="2xdLsb" value="gZ5fh_4/error" />
+          <node concept="3cpWs3" id="1uUgCWYDBTj" role="9lYJi">
+            <node concept="3cpWs3" id="1uUgCWYDwQe" role="3uHU7B">
+              <node concept="3cpWs3" id="1uUgCWYAgWZ" role="3uHU7B">
+                <node concept="Xl_RD" id="1uUgCWYAdmW" role="3uHU7B">
+                  <property role="Xl_RC" value="GraphName=" />
+                </node>
+                <node concept="2OqwBi" id="1uUgCWYDsd$" role="3uHU7w">
+                  <node concept="37vLTw" id="1uUgCWYDsd_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="tPE8szdug7" resolve="turtleDoc" />
+                  </node>
+                  <node concept="3TrcHB" id="1uUgCWYDsdA" role="2OqNvi">
+                    <ref role="3TsBF5" to="16h3:6WRbFH1LSPi" resolve="datasetName" />
+                  </node>
+                </node>
+              </node>
+              <node concept="Xl_RD" id="1uUgCWYDzBe" role="3uHU7w">
+                <property role="Xl_RC" value="   /" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1uUgCWYDGnn" role="3uHU7w">
+              <node concept="37vLTw" id="1uUgCWYDGno" role="2Oq$k0">
+                <ref role="3cqZAo" node="tPE8szdug7" resolve="turtleDoc" />
+              </node>
+              <node concept="3TrcHB" id="1uUgCWYDGnp" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="1uUgCWYDLm6" role="1wxasE">
+            <ref role="3cqZAo" node="tPE8szdug7" resolve="turtleDoc" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6WRbFH1NrO4" role="3cqZAp">
+          <node concept="3clFbS" id="6WRbFH1NrO6" role="3clFbx">
+            <node concept="3cpWs6" id="6WRbFH1NC2o" role="3cqZAp">
+              <node concept="2OqwBi" id="6WRbFH1NKIQ" role="3cqZAk">
+                <node concept="37vLTw" id="6WRbFH1NJHV" role="2Oq$k0">
+                  <ref role="3cqZAo" node="tPE8szdug7" resolve="turtleDoc" />
+                </node>
+                <node concept="3TrcHB" id="6WRbFH1NLZQ" role="2OqNvi">
+                  <ref role="3TsBF5" to="16h3:6WRbFH1LSPi" resolve="datasetName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6WRbFH1NwMD" role="3clFbw">
+            <node concept="2OqwBi" id="6WRbFH1NtHt" role="2Oq$k0">
+              <node concept="37vLTw" id="6WRbFH1NsGD" role="2Oq$k0">
+                <ref role="3cqZAo" node="tPE8szdug7" resolve="turtleDoc" />
+              </node>
+              <node concept="3TrcHB" id="6WRbFH1NuII" role="2OqNvi">
+                <ref role="3TsBF5" to="16h3:6WRbFH1LSPi" resolve="datasetName" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="6WRbFH1NEIu" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6WRbFH1N_yM" role="3cqZAp">
+          <node concept="3cpWs3" id="tPE8szdwnM" role="3cqZAk">
             <node concept="2OqwBi" id="tPE8szdxx_" role="3uHU7w">
               <node concept="37vLTw" id="tPE8szdwKt" role="2Oq$k0">
                 <ref role="3cqZAo" node="tPE8szdug7" resolve="turtleDoc" />
@@ -1420,8 +1480,8 @@
               </node>
             </node>
             <node concept="10M0yZ" id="tPE8szduLq" role="3uHU7B">
-              <ref role="3cqZAo" to="5hed:7NlO_H3VhSX" resolve="NS_Graph_Default" />
-              <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
+              <ref role="3cqZAo" to="tqna:7NlO_H3VhSX" resolve="NS_Graph_Default" />
+              <ref role="1PxDUh" to="tqna:7NlO_H3Vhiq" resolve="GRAPE" />
             </node>
           </node>
         </node>
@@ -1596,8 +1656,8 @@
               <node concept="liA8E" id="7HX6VHKZC3K" role="2OqNvi">
                 <ref role="37wK5l" to="t6dh:~Resource.getProperty(org.apache.jena.rdf.model.Property)" resolve="getProperty" />
                 <node concept="10M0yZ" id="7HX6VHKZC3L" role="37wK5m">
-                  <ref role="3cqZAo" to="5hed:7NlO_H3VhwB" resolve="originNode" />
-                  <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
+                  <ref role="3cqZAo" to="tqna:7NlO_H3VhwB" resolve="originNode" />
+                  <ref role="1PxDUh" to="tqna:7NlO_H3Vhiq" resolve="GRAPE" />
                 </node>
               </node>
             </node>
@@ -1677,8 +1737,8 @@
                   </node>
                 </node>
                 <node concept="10M0yZ" id="tPE8szc3Q2" role="37wK5m">
-                  <ref role="3cqZAo" to="5hed:7NlO_H3VhwB" resolve="originNode" />
-                  <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
+                  <ref role="3cqZAo" to="tqna:7NlO_H3VhwB" resolve="originNode" />
+                  <ref role="1PxDUh" to="tqna:7NlO_H3Vhiq" resolve="GRAPE" />
                 </node>
               </node>
             </node>
@@ -2283,26 +2343,6 @@
                                             </node>
                                           </node>
                                           <node concept="3clFbS" id="7t9lQslnyLr" role="2LFqv$">
-                                            <node concept="3cpWs8" id="7NlO_H3D_hG" role="3cqZAp">
-                                              <node concept="3cpWsn" id="7NlO_H3D_hH" role="3cpWs9">
-                                                <property role="TrG5h" value="graphName" />
-                                                <node concept="17QB3L" id="7NlO_H3Dztf" role="1tU5fm" />
-                                                <node concept="3cpWs3" id="7NlO_H3D_hI" role="33vP2m">
-                                                  <node concept="10M0yZ" id="6$HV1vBzLyi" role="3uHU7B">
-                                                    <ref role="3cqZAo" to="5hed:7NlO_H3VhSX" resolve="NS_Graph_Default" />
-                                                    <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
-                                                  </node>
-                                                  <node concept="2OqwBi" id="7NlO_H3D_hK" role="3uHU7w">
-                                                    <node concept="2GrUjf" id="7NlO_H3D_hL" role="2Oq$k0">
-                                                      <ref role="2Gs0qQ" node="7t9lQslnyLp" resolve="nModel" />
-                                                    </node>
-                                                    <node concept="2sxana" id="7NlO_H3D_hM" role="2OqNvi">
-                                                      <ref role="2sxfKC" to="v1em:1C709xVuV2M" resolve="docName" />
-                                                    </node>
-                                                  </node>
-                                                </node>
-                                              </node>
-                                            </node>
                                             <node concept="3clFbF" id="7PPLA3R9NYV" role="3cqZAp">
                                               <node concept="2OqwBi" id="7PPLA3R9PiN" role="3clFbG">
                                                 <node concept="37vLTw" id="7PPLA3R9NYT" role="2Oq$k0">
@@ -2318,8 +2358,13 @@
                                                       <ref role="2sxfKC" to="v1em:1C709xVuV2E" resolve="jenaModel" />
                                                     </node>
                                                   </node>
-                                                  <node concept="37vLTw" id="7PPLA3R9Zst" role="37wK5m">
-                                                    <ref role="3cqZAo" node="7NlO_H3D_hH" resolve="graphName" />
+                                                  <node concept="2OqwBi" id="1uUgCWYFRDT" role="37wK5m">
+                                                    <node concept="2GrUjf" id="1uUgCWYFPs7" role="2Oq$k0">
+                                                      <ref role="2Gs0qQ" node="7t9lQslnyLp" resolve="nModel" />
+                                                    </node>
+                                                    <node concept="2sxana" id="1uUgCWYFTBA" role="2OqNvi">
+                                                      <ref role="2sxfKC" to="v1em:1uUgCWYFYuL" resolve="graphName" />
+                                                    </node>
                                                   </node>
                                                 </node>
                                               </node>

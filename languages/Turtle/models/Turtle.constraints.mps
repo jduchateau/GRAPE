@@ -273,8 +273,5 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="n6bVFlY4AF">
-    <ref role="1M2myG" to="16h3:2L7xBeiM5zR" resolve="BlankNodePropertyList" />
-  </node>
 </model>
 

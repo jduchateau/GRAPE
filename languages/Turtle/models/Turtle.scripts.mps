@@ -6,8 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="bwn" ref="r:03099f6a-99c9-42f3-953b-9ee649d55a38(Turtle.runtime.rir)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
+    <import index="e8do" ref="r:35578203-4f09-4ab7-98e2-80f4883301ac(Turtle.rir)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -98,8 +98,8 @@
                 <ref role="ehGHo" to="16h3:17ntPn9eeMy" resolve="RessourceIdentifierDef" />
               </node>
               <node concept="2YIFZM" id="7HX6VHKISLh" role="33vP2m">
-                <ref role="37wK5l" to="bwn:7HX6VHKIrCz" resolve="findFirstSubjectDef" />
-                <ref role="1Pybhc" to="bwn:7HX6VHKIqFE" resolve="LinkRir" />
+                <ref role="37wK5l" to="e8do:7HX6VHKIrCz" resolve="findFirstSubjectDef" />
+                <ref role="1Pybhc" to="e8do:7HX6VHKIqFE" resolve="LinkRir" />
                 <node concept="_YI3z" id="7HX6VHKISLi" role="37wK5m" />
               </node>
             </node>
@@ -142,8 +142,8 @@
           <node concept="3clFbF" id="7HX6VHKINUU" role="3cqZAp">
             <node concept="2OqwBi" id="7HX6VHKIPZR" role="3clFbG">
               <node concept="2YIFZM" id="7HX6VHKIO9L" role="2Oq$k0">
-                <ref role="37wK5l" to="bwn:7HX6VHKIrCz" resolve="findFirstSubjectDef" />
-                <ref role="1Pybhc" to="bwn:7HX6VHKIqFE" resolve="LinkRir" />
+                <ref role="37wK5l" to="e8do:7HX6VHKIrCz" resolve="findFirstSubjectDef" />
+                <ref role="1Pybhc" to="e8do:7HX6VHKIqFE" resolve="LinkRir" />
                 <node concept="_YI3z" id="7HX6VHKIP$U" role="37wK5m" />
               </node>
               <node concept="3x8VRR" id="7HX6VHKIQyB" role="2OqNvi" />

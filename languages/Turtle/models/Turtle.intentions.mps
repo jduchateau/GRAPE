@@ -11,14 +11,12 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="iwug" ref="r:76e4946f-2d00-47d5-ae37-e0c3a55829b1(Turtle.runtime.datasetManager)" />
     <import index="sg7y" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.query(Turtle.runtime/)" />
     <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" />
     <import index="6roo" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdfconnection(Turtle.runtime/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="5hed" ref="r:a8b1fda0-89ff-474b-ab43-cbd38563b06d(Turtle.runtime.prefixer)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
@@ -26,6 +24,8 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="ptfq" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.riot(Turtle.runtime/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="tqna" ref="r:cc7e3d7f-6cc3-45ed-8929-4ebc0ff93d08(Turtle.prefixer)" />
+    <import index="cyoz" ref="r:ef2b4066-69f7-4d14-91ae-0386ca39f157(Turtle.datasetManager)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -571,11 +571,11 @@
               <node concept="3cpWsn" id="7t9lQsltLXi" role="3cpWs9">
                 <property role="TrG5h" value="datasetManager" />
                 <node concept="3uibUv" id="7t9lQsltLWA" role="1tU5fm">
-                  <ref role="3uigEE" to="iwug:6tKZDNaiTly" resolve="RdfDatasetsManager" />
+                  <ref role="3uigEE" to="cyoz:6tKZDNaiTly" resolve="RdfDatasetsManager" />
                 </node>
                 <node concept="2YIFZM" id="7t9lQsltLXj" role="33vP2m">
-                  <ref role="37wK5l" to="iwug:3l3jG31o0qT" resolve="getInstance" />
-                  <ref role="1Pybhc" to="iwug:6tKZDNaiTly" resolve="RdfDatasetsManager" />
+                  <ref role="37wK5l" to="cyoz:3l3jG31o0qT" resolve="getInstance" />
+                  <ref role="1Pybhc" to="cyoz:6tKZDNaiTly" resolve="RdfDatasetsManager" />
                 </node>
               </node>
             </node>
@@ -590,7 +590,7 @@
                     <ref role="3cqZAo" node="7t9lQsltLXi" resolve="datasetManager" />
                   </node>
                   <node concept="liA8E" id="7NlO_H3qsGq" role="2OqNvi">
-                    <ref role="37wK5l" to="iwug:2fsGeYB6vna" resolve="getDataset" />
+                    <ref role="37wK5l" to="cyoz:2fsGeYB6vna" resolve="getDataset" />
                   </node>
                 </node>
               </node>
@@ -610,8 +610,8 @@
                     </node>
                   </node>
                   <node concept="10M0yZ" id="7NlO_H40dZ3" role="3uHU7B">
-                    <ref role="3cqZAo" to="5hed:7NlO_H3VhSX" resolve="NS_Graph_Default" />
-                    <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
+                    <ref role="3cqZAo" to="tqna:7NlO_H3VhSX" resolve="NS_Graph_Default" />
+                    <ref role="1PxDUh" to="tqna:7NlO_H3Vhiq" resolve="GRAPE" />
                   </node>
                 </node>
               </node>
@@ -743,8 +743,8 @@
                     <property role="Xl_RC" value="originProperty" />
                   </node>
                   <node concept="10M0yZ" id="7NlO_H3VE1U" role="37wK5m">
-                    <ref role="3cqZAo" to="5hed:7NlO_H3VhwB" resolve="originNode" />
-                    <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
+                    <ref role="3cqZAo" to="tqna:7NlO_H3VhwB" resolve="originNode" />
+                    <ref role="1PxDUh" to="tqna:7NlO_H3Vhiq" resolve="GRAPE" />
                   </node>
                 </node>
               </node>
@@ -1023,11 +1023,11 @@
                 </node>
                 <node concept="2OqwBi" id="tPE8szMIC9" role="33vP2m">
                   <node concept="2YIFZM" id="tPE8szMICa" role="2Oq$k0">
-                    <ref role="37wK5l" to="iwug:3l3jG31o0qT" resolve="getInstance" />
-                    <ref role="1Pybhc" to="iwug:6tKZDNaiTly" resolve="RdfDatasetsManager" />
+                    <ref role="37wK5l" to="cyoz:3l3jG31o0qT" resolve="getInstance" />
+                    <ref role="1Pybhc" to="cyoz:6tKZDNaiTly" resolve="RdfDatasetsManager" />
                   </node>
                   <node concept="liA8E" id="tPE8szMICb" role="2OqNvi">
-                    <ref role="37wK5l" to="iwug:tPE8szgjJt" resolve="getModel" />
+                    <ref role="37wK5l" to="cyoz:tPE8szgjJt" resolve="getModel" />
                     <node concept="2Sf5sV" id="tPE8szMICc" role="37wK5m" />
                   </node>
                 </node>
@@ -1129,8 +1129,8 @@
                           </node>
                         </node>
                         <node concept="2YIFZM" id="tPE8szORR6" role="37wK5m">
-                          <ref role="37wK5l" to="iwug:tPE8szdrUq" resolve="graphName" />
-                          <ref role="1Pybhc" to="iwug:6tKZDNaiTly" resolve="RdfDatasetsManager" />
+                          <ref role="37wK5l" to="cyoz:tPE8szdrUq" resolve="graphName" />
+                          <ref role="1Pybhc" to="cyoz:6tKZDNaiTly" resolve="RdfDatasetsManager" />
                           <node concept="2Sf5sV" id="tPE8szOSTd" role="37wK5m" />
                         </node>
                       </node>
@@ -1206,6 +1206,72 @@
             <node concept="10Nm6u" id="tPE8szLAUq" role="3uHU7w" />
             <node concept="37vLTw" id="tPE8szLym4" role="3uHU7B">
               <ref role="3cqZAo" node="tPE8szOWAI" resolve="ideaProject" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="4W9um29$ssC">
+    <property role="3GE5qa" value="Directives" />
+    <property role="TrG5h" value="ClearCompletionCache" />
+    <ref role="2ZfgGC" to="16h3:2z4QKYxW8Ua" resolve="PrefixId" />
+    <node concept="2S6ZIM" id="4W9um29$ssD" role="2ZfVej">
+      <node concept="3clFbS" id="4W9um29$ssE" role="2VODD2">
+        <node concept="3clFbF" id="4W9um29$BYs" role="3cqZAp">
+          <node concept="Xl_RD" id="4W9um29$BYr" role="3clFbG">
+            <property role="Xl_RC" value="Empty Completion Cache" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="4W9um29$ssF" role="2ZfgGD">
+      <node concept="3clFbS" id="4W9um29$ssG" role="2VODD2">
+        <node concept="3clFbF" id="4W9um29$Eyb" role="3cqZAp">
+          <node concept="2OqwBi" id="4W9um29$Hqd" role="3clFbG">
+            <node concept="2YIFZM" id="4W9um29$EzO" role="2Oq$k0">
+              <ref role="37wK5l" to="tqna:3l3jG31o0qT" resolve="getInstance" />
+              <ref role="1Pybhc" to="tqna:4qVl4MKaA5c" resolve="PrefixManager" />
+              <node concept="2OqwBi" id="4W9um29$EOQ" role="37wK5m">
+                <node concept="2Sf5sV" id="4W9um29$E$_" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="4W9um29$GKw" role="2OqNvi">
+                  <node concept="1xMEDy" id="4W9um29$GKy" role="1xVPHs">
+                    <node concept="chp4Y" id="4W9um29$GP7" role="ri$Ld">
+                      <ref role="cht4Q" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="4W9um29$HHC" role="2OqNvi">
+              <ref role="37wK5l" to="tqna:4W9um29$RYa" resolve="clearCacheOfNamespace" />
+              <node concept="2Sf5sV" id="4W9um29AiHN" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="4W9um29AiNE" role="2ZfVeh">
+      <node concept="3clFbS" id="4W9um29AiNF" role="2VODD2">
+        <node concept="3clFbF" id="4W9um29Aj3o" role="3cqZAp">
+          <node concept="2OqwBi" id="4W9um29Aj3q" role="3clFbG">
+            <node concept="2YIFZM" id="4W9um29Aj3r" role="2Oq$k0">
+              <ref role="37wK5l" to="tqna:3l3jG31o0qT" resolve="getInstance" />
+              <ref role="1Pybhc" to="tqna:4qVl4MKaA5c" resolve="PrefixManager" />
+              <node concept="2OqwBi" id="4W9um29Aj3s" role="37wK5m">
+                <node concept="2Sf5sV" id="4W9um29Aj3t" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="4W9um29Aj3u" role="2OqNvi">
+                  <node concept="1xMEDy" id="4W9um29Aj3v" role="1xVPHs">
+                    <node concept="chp4Y" id="4W9um29Aj3w" role="ri$Ld">
+                      <ref role="cht4Q" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="4W9um29Aj3x" role="2OqNvi">
+              <ref role="37wK5l" to="tqna:6WRbFH1WJie" resolve="hasCacheOfNamespace" />
+              <node concept="2Sf5sV" id="4W9um29Aj3y" role="37wK5m" />
             </node>
           </node>
         </node>
