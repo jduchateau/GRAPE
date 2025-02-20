@@ -16,8 +16,8 @@
     <import index="vlcd" ref="r:9c483e7f-4677-47bd-bdb0-47e44b33c5eb(RML.FNML.structure)" />
     <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
-    <import index="5hed" ref="r:a8b1fda0-89ff-474b-ab43-cbd38563b06d(Turtle.runtime.prefixer)" />
     <import index="25cs" ref="r:ca802deb-5ff1-413c-8dfe-e9903e29ccdb(RML.FNML.param)" />
+    <import index="tqna" ref="r:cc7e3d7f-6cc3-45ed-8929-4ebc0ff93d08(Turtle.prefixer)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="op0d" ref="r:746a2b00-2d0b-4ef5-95dd-0f4cffeffe24(RML.FNML.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
@@ -677,11 +677,11 @@
                 <node concept="3cpWsn" id="1h8QYei9T1" role="3cpWs9">
                   <property role="TrG5h" value="prefixer" />
                   <node concept="3uibUv" id="1h8QYei9T2" role="1tU5fm">
-                    <ref role="3uigEE" to="5hed:4qVl4MKaA5c" resolve="PrefixManager" />
+                    <ref role="3uigEE" to="tqna:4qVl4MKaA5c" resolve="PrefixManager" />
                   </node>
                   <node concept="2YIFZM" id="1h8QYei9T3" role="33vP2m">
-                    <ref role="37wK5l" to="5hed:3l3jG31o0qT" resolve="getInstance" />
-                    <ref role="1Pybhc" to="5hed:4qVl4MKaA5c" resolve="PrefixManager" />
+                    <ref role="37wK5l" to="tqna:3l3jG31o0qT" resolve="getInstance" />
+                    <ref role="1Pybhc" to="tqna:4qVl4MKaA5c" resolve="PrefixManager" />
                     <node concept="2OqwBi" id="1h8QYei9T4" role="37wK5m">
                       <node concept="3bvxqY" id="1h8QYeiart" role="2Oq$k0" />
                       <node concept="2Xjw5R" id="1h8QYei9T6" role="2OqNvi">
@@ -706,7 +706,7 @@
                       <ref role="3cqZAo" node="1h8QYei9T1" resolve="prefixer" />
                     </node>
                     <node concept="liA8E" id="1h8QYeiaHU" role="2OqNvi">
-                      <ref role="37wK5l" to="5hed:4qVl4MKaCQJ" resolve="getBestIdentifier" />
+                      <ref role="37wK5l" to="tqna:4qVl4MKaCQJ" resolve="getBestIdentifier" />
                       <node concept="2OqwBi" id="1h8QYeiaHV" role="37wK5m">
                         <node concept="2ZBlsa" id="1h8QYeiaHW" role="2Oq$k0" />
                         <node concept="2sxana" id="1h8QYeiaHX" role="2OqNvi">
@@ -765,11 +765,11 @@
                   <node concept="3cpWsn" id="1h8QYeA8Wn" role="3cpWs9">
                     <property role="TrG5h" value="prefixer" />
                     <node concept="3uibUv" id="1h8QYeA8Wo" role="1tU5fm">
-                      <ref role="3uigEE" to="5hed:4qVl4MKaA5c" resolve="PrefixManager" />
+                      <ref role="3uigEE" to="tqna:4qVl4MKaA5c" resolve="PrefixManager" />
                     </node>
                     <node concept="2YIFZM" id="1h8QYeA8Wp" role="33vP2m">
-                      <ref role="37wK5l" to="5hed:3l3jG31o0qT" resolve="getInstance" />
-                      <ref role="1Pybhc" to="5hed:4qVl4MKaA5c" resolve="PrefixManager" />
+                      <ref role="37wK5l" to="tqna:3l3jG31o0qT" resolve="getInstance" />
+                      <ref role="1Pybhc" to="tqna:4qVl4MKaA5c" resolve="PrefixManager" />
                       <node concept="2OqwBi" id="1h8QYeA8Wq" role="37wK5m">
                         <node concept="3bvxqY" id="1h8QYeA8Wr" role="2Oq$k0" />
                         <node concept="2Xjw5R" id="1h8QYeA8Ws" role="2OqNvi">
@@ -791,7 +791,7 @@
                         <ref role="3cqZAo" node="1h8QYeA8Wn" resolve="prefixer" />
                       </node>
                       <node concept="liA8E" id="1h8QYeA9Ff" role="2OqNvi">
-                        <ref role="37wK5l" to="5hed:1h8QYeupTa" resolve="getPrefixedIdentifier" />
+                        <ref role="37wK5l" to="tqna:1h8QYeupTa" resolve="getPrefixedIdentifier" />
                         <node concept="2OqwBi" id="1h8QYeA9Fg" role="37wK5m">
                           <node concept="2ZBlsa" id="1h8QYeA9Fh" role="2Oq$k0" />
                           <node concept="2sxana" id="1h8QYeAnUv" role="2OqNvi">
@@ -801,7 +801,7 @@
                       </node>
                     </node>
                     <node concept="3uibUv" id="1h8QYeAl05" role="1tU5fm">
-                      <ref role="3uigEE" to="5hed:4qVl4MKcVbY" resolve="PrefixedName" />
+                      <ref role="3uigEE" to="tqna:4qVl4MKcVbY" resolve="PrefixedName" />
                     </node>
                   </node>
                 </node>
@@ -829,7 +829,7 @@
                         <ref role="3cqZAo" node="1h8QYeA9Fb" resolve="bestId" />
                       </node>
                       <node concept="liA8E" id="1h8QYeADne" role="2OqNvi">
-                        <ref role="37wK5l" to="5hed:1h8QYeAv_c" resolve="presentation" />
+                        <ref role="37wK5l" to="tqna:1h8QYeAv_c" resolve="presentation" />
                       </node>
                     </node>
                   </node>

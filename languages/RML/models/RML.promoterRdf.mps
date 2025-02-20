@@ -16,12 +16,12 @@
     <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
     <import index="qx9m" ref="r:5f21b94e-6c55-4230-951a-dc8170ceeb15(RML.IO.structure)" />
-    <import index="5hed" ref="r:a8b1fda0-89ff-474b-ab43-cbd38563b06d(Turtle.runtime.prefixer)" />
-    <import index="iwug" ref="r:76e4946f-2d00-47d5-ae37-e0c3a55829b1(Turtle.runtime.datasetManager)" />
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="fia8" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.vocabulary(Turtle.runtime/)" />
     <import index="vlcd" ref="r:9c483e7f-4677-47bd-bdb0-47e44b33c5eb(RML.FNML.structure)" />
+    <import index="tqna" ref="r:cc7e3d7f-6cc3-45ed-8929-4ebc0ff93d08(Turtle.prefixer)" />
+    <import index="cyoz" ref="r:ef2b4066-69f7-4d14-91ae-0386ca39f157(Turtle.datasetManager)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -512,8 +512,8 @@
                 <property role="Xl_RC" value="originVerb" />
               </node>
               <node concept="10M0yZ" id="tPE8s$ngzB" role="37wK5m">
-                <ref role="3cqZAo" to="5hed:7NlO_H3VhwB" resolve="originNode" />
-                <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
+                <ref role="3cqZAo" to="tqna:7NlO_H3VhwB" resolve="originNode" />
+                <ref role="1PxDUh" to="tqna:7NlO_H3Vhiq" resolve="GRAPE" />
               </node>
             </node>
           </node>
@@ -1319,13 +1319,13 @@
     <node concept="312cEg" id="7cYw35itWHQ" role="jymVt">
       <property role="TrG5h" value="prefixer" />
       <node concept="3uibUv" id="7cYw35itWHP" role="1tU5fm">
-        <ref role="3uigEE" to="5hed:4qVl4MKaA5c" resolve="PrefixManager" />
+        <ref role="3uigEE" to="tqna:4qVl4MKaA5c" resolve="PrefixManager" />
       </node>
     </node>
     <node concept="312cEg" id="tPE8szcMmC" role="jymVt">
       <property role="TrG5h" value="tracer" />
       <node concept="3uibUv" id="tPE8szcMmD" role="1tU5fm">
-        <ref role="3uigEE" to="iwug:7PPLA3RiJVk" resolve="Tracer" />
+        <ref role="3uigEE" to="cyoz:7PPLA3RiJVk" resolve="Tracer" />
       </node>
     </node>
     <node concept="2tJIrI" id="7cYw35iu4gy" role="jymVt" />
@@ -1369,8 +1369,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="7cYw35itWI3" role="37vLTx">
-              <ref role="37wK5l" to="5hed:3l3jG31o0qT" resolve="getInstance" />
-              <ref role="1Pybhc" to="5hed:4qVl4MKaA5c" resolve="PrefixManager" />
+              <ref role="37wK5l" to="tqna:3l3jG31o0qT" resolve="getInstance" />
+              <ref role="1Pybhc" to="tqna:4qVl4MKaA5c" resolve="PrefixManager" />
               <node concept="37vLTw" id="7cYw35itWI4" role="37wK5m">
                 <ref role="3cqZAo" node="7cYw35ioTBf" resolve="mappingsTurtle" />
               </node>
@@ -1386,8 +1386,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="tPE8szTlGs" role="37vLTx">
-              <ref role="37wK5l" to="iwug:tPE8szdrUq" resolve="graphName" />
-              <ref role="1Pybhc" to="iwug:6tKZDNaiTly" resolve="RdfDatasetsManager" />
+              <ref role="37wK5l" to="cyoz:tPE8szdrUq" resolve="graphName" />
+              <ref role="1Pybhc" to="cyoz:6tKZDNaiTly" resolve="RdfDatasetsManager" />
               <node concept="37vLTw" id="tPE8szTlGt" role="37wK5m">
                 <ref role="3cqZAo" node="7cYw35ioTBf" resolve="mappingsTurtle" />
               </node>
@@ -1405,7 +1405,7 @@
             <node concept="2ShNRf" id="tPE8szcVY_" role="37vLTx">
               <node concept="1pGfFk" id="tPE8szd0zs" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="iwug:7PPLA3Rk1cJ" resolve="Tracer" />
+                <ref role="37wK5l" to="cyoz:7PPLA3Rk1cJ" resolve="Tracer" />
                 <node concept="2OqwBi" id="tPE8szdaoi" role="37wK5m">
                   <node concept="37vLTw" id="tPE8szd9Q_" role="2Oq$k0">
                     <ref role="3cqZAo" node="7cYw35ioTBf" resolve="mappingsTurtle" />
@@ -2306,7 +2306,7 @@
                         <ref role="3cqZAo" node="tPE8szcMmC" resolve="tracer" />
                       </node>
                       <node concept="liA8E" id="tPE8s$$Ro0" role="2OqNvi">
-                        <ref role="37wK5l" to="iwug:tPE8szbvFV" resolve="originObject" />
+                        <ref role="37wK5l" to="cyoz:tPE8szbvFV" resolve="originObject" />
                         <node concept="37vLTw" id="tPE8s$$Ro1" role="37wK5m">
                           <ref role="3cqZAo" node="tPE8s$$uNV" resolve="refFormStmt" />
                         </node>
@@ -3379,7 +3379,7 @@
                           <ref role="3cqZAo" node="tPE8szcMmC" resolve="tracer" />
                         </node>
                         <node concept="liA8E" id="tPE8s$MPc_" role="2OqNvi">
-                          <ref role="37wK5l" to="iwug:tPE8szbvFV" resolve="originObject" />
+                          <ref role="37wK5l" to="cyoz:tPE8szbvFV" resolve="originObject" />
                           <node concept="37vLTw" id="tPE8s$MPcA" role="37wK5m">
                             <ref role="3cqZAo" node="tPE8s$LLSS" resolve="termTypeStmt" />
                           </node>
@@ -3591,7 +3591,7 @@
                     <ref role="3cqZAo" node="tPE8szcMmC" resolve="tracer" />
                   </node>
                   <node concept="liA8E" id="tPE8sze3dS" role="2OqNvi">
-                    <ref role="37wK5l" to="iwug:tPE8szbvFV" resolve="originObject" />
+                    <ref role="37wK5l" to="cyoz:tPE8szbvFV" resolve="originObject" />
                     <node concept="37vLTw" id="tPE8s$aSUL" role="37wK5m">
                       <ref role="3cqZAo" node="7cYw35iQFH5" resolve="constStmt" />
                     </node>
@@ -4002,7 +4002,7 @@
                                   <ref role="3cqZAo" node="6WRbFH1D9y6" resolve="input" />
                                 </node>
                                 <node concept="3TrEf2" id="6WRbFH1FQgy" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="vlcd:1R$stKL1EtL" />
+                                  <ref role="3Tt5mk" to="vlcd:1R$stKL1EtL" resolve="inputValueMap" />
                                 </node>
                               </node>
                             </node>
@@ -4142,7 +4142,7 @@
                   <ref role="3cqZAo" node="7cYw35itWHQ" resolve="prefixer" />
                 </node>
                 <node concept="liA8E" id="7cYw35iucMI" role="2OqNvi">
-                  <ref role="37wK5l" to="5hed:4qVl4MKaCQJ" resolve="getBestIdentifier" />
+                  <ref role="37wK5l" to="tqna:4qVl4MKaCQJ" resolve="getBestIdentifier" />
                   <node concept="2OqwBi" id="7cYw35iui7r" role="37wK5m">
                     <node concept="37vLTw" id="7cYw35iugEU" role="2Oq$k0">
                       <ref role="3cqZAo" node="7cYw35isCBb" resolve="resource" />
@@ -4190,7 +4190,7 @@
               <ref role="3cqZAo" node="7cYw35itWHQ" resolve="prefixer" />
             </node>
             <node concept="liA8E" id="7cYw35iLvuy" role="2OqNvi">
-              <ref role="37wK5l" to="5hed:4qVl4MKaCQJ" resolve="getBestIdentifier" />
+              <ref role="37wK5l" to="tqna:4qVl4MKaCQJ" resolve="getBestIdentifier" />
               <node concept="2OqwBi" id="7cYw35iLvuz" role="37wK5m">
                 <node concept="37vLTw" id="7cYw35iLvu$" role="2Oq$k0">
                   <ref role="3cqZAo" node="7cYw35i_JLa" resolve="resource" />
@@ -4477,8 +4477,8 @@
             </node>
             <node concept="TSZUe" id="6zcUDwvNxB3" role="2OqNvi">
               <node concept="10M0yZ" id="6zcUDwvNF0s" role="25WWJ7">
-                <ref role="3cqZAo" to="5hed:7NlO_H3VhwB" resolve="originNode" />
-                <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
+                <ref role="3cqZAo" to="tqna:7NlO_H3VhwB" resolve="originNode" />
+                <ref role="1PxDUh" to="tqna:7NlO_H3Vhiq" resolve="GRAPE" />
               </node>
             </node>
           </node>
@@ -4729,7 +4729,7 @@
                       <ref role="3cqZAo" node="tPE8szcMmC" resolve="tracer" />
                     </node>
                     <node concept="liA8E" id="6zcUDwvtEVG" role="2OqNvi">
-                      <ref role="37wK5l" to="iwug:tPE8szbvFV" resolve="originObject" />
+                      <ref role="37wK5l" to="cyoz:tPE8szbvFV" resolve="originObject" />
                       <node concept="37vLTw" id="6zcUDwvtEVH" role="37wK5m">
                         <ref role="3cqZAo" node="6zcUDwvrPCP" resolve="compressionStatement" />
                       </node>
@@ -4838,7 +4838,7 @@
                       <ref role="3cqZAo" node="tPE8szcMmC" resolve="tracer" />
                     </node>
                     <node concept="liA8E" id="6zcUDwvwqzz" role="2OqNvi">
-                      <ref role="37wK5l" to="iwug:tPE8szbvFV" resolve="originObject" />
+                      <ref role="37wK5l" to="cyoz:tPE8szbvFV" resolve="originObject" />
                       <node concept="37vLTw" id="6zcUDwvwqz$" role="37wK5m">
                         <ref role="3cqZAo" node="6zcUDwvuNNk" resolve="encodingStatement" />
                       </node>
@@ -5059,7 +5059,7 @@
                                 <ref role="3cqZAo" node="tPE8szcMmC" resolve="tracer" />
                               </node>
                               <node concept="liA8E" id="6zcUDwvJmke" role="2OqNvi">
-                                <ref role="37wK5l" to="iwug:tPE8szbvFV" resolve="originObject" />
+                                <ref role="37wK5l" to="cyoz:tPE8szbvFV" resolve="originObject" />
                                 <node concept="37vLTw" id="6zcUDwvJmkf" role="37wK5m">
                                   <ref role="3cqZAo" node="6zcUDwvE43e" resolve="it" />
                                 </node>

@@ -32,8 +32,9 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="5hed" ref="r:a8b1fda0-89ff-474b-ab43-cbd38563b06d(Turtle.runtime.prefixer)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="tqna" ref="r:cc7e3d7f-6cc3-45ed-8929-4ebc0ff93d08(Turtle.prefixer)" />
+    <import index="cyoz" ref="r:ef2b4066-69f7-4d14-91ae-0386ca39f157(Turtle.datasetManager)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -462,6 +463,19 @@
                               <node concept="3$u5V9" id="7t9lQsl1o93" role="2OqNvi">
                                 <node concept="1bVj0M" id="7t9lQsl1o94" role="23t8la">
                                   <node concept="3clFbS" id="7t9lQsl1o95" role="1bW5cS">
+                                    <node concept="3cpWs8" id="1uUgCWYG9D2" role="3cqZAp">
+                                      <node concept="3cpWsn" id="1uUgCWYG9D3" role="3cpWs9">
+                                        <property role="TrG5h" value="graphName" />
+                                        <node concept="17QB3L" id="1uUgCWYG9_N" role="1tU5fm" />
+                                        <node concept="2YIFZM" id="1uUgCWYG9D4" role="33vP2m">
+                                          <ref role="37wK5l" to="cyoz:tPE8szdrUq" resolve="graphName" />
+                                          <ref role="1Pybhc" to="cyoz:6tKZDNaiTly" resolve="RdfDatasetsManager" />
+                                          <node concept="37vLTw" id="1uUgCWYG9D5" role="37wK5m">
+                                            <ref role="3cqZAo" node="7t9lQsl1o9H" resolve="it" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
                                     <node concept="1daRAt" id="T5I9s5zDJ4" role="3cqZAp">
                                       <node concept="3cpWs3" id="7t9lQsl1o97" role="1daK9t">
                                         <node concept="3cpWs3" id="7t9lQsl1o9b" role="3uHU7B">
@@ -525,16 +539,16 @@
                                     <node concept="3cpWs6" id="7t9lQsl1o9r" role="3cqZAp">
                                       <node concept="2ry78W" id="7t9lQsl1o9s" role="3cqZAk">
                                         <ref role="2ryb1Q" node="1C709xVuV2a" resolve="NamedRdfModel" />
-                                        <node concept="2r$n1x" id="7t9lQsl1o9t" role="2r_Bvh">
-                                          <ref role="2r$qp6" node="1C709xVuXzt" resolve="turtleDoc" />
-                                          <node concept="37vLTw" id="7t9lQsl1o9u" role="2r_lH1">
-                                            <ref role="3cqZAo" node="7t9lQsl1o9H" resolve="it" />
-                                          </node>
-                                        </node>
                                         <node concept="2r$n1x" id="7t9lQsl1o9v" role="2r_Bvh">
                                           <ref role="2r$qp6" node="1C709xVuV2E" resolve="jenaModel" />
                                           <node concept="37vLTw" id="7t9lQsl1o9w" role="2r_lH1">
                                             <ref role="3cqZAo" node="7t9lQsl1o9n" resolve="jenaModel" />
+                                          </node>
+                                        </node>
+                                        <node concept="2r$n1x" id="1uUgCWYG7X7" role="2r_Bvh">
+                                          <ref role="2r$qp6" node="1uUgCWYFYuL" resolve="graphName" />
+                                          <node concept="37vLTw" id="1uUgCWYGaoy" role="2r_lH1">
+                                            <ref role="3cqZAo" node="1uUgCWYG9D3" resolve="graphName" />
                                           </node>
                                         </node>
                                         <node concept="2r$n1x" id="7t9lQsl1o9x" role="2r_Bvh">
@@ -676,11 +690,9 @@
       <property role="TrG5h" value="docName" />
       <node concept="17QB3L" id="1C709xVuVe6" role="2lK19J" />
     </node>
-    <node concept="2lGYhJ" id="1C709xVuXzt" role="2pHZQ9">
-      <property role="TrG5h" value="turtleDoc" />
-      <node concept="3Tqbb2" id="1C709xVuYj8" role="2lK19J">
-        <ref role="ehGHo" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
-      </node>
+    <node concept="2lGYhJ" id="1uUgCWYFYuL" role="2pHZQ9">
+      <property role="TrG5h" value="graphName" />
+      <node concept="17QB3L" id="1uUgCWYFYJR" role="2lK19J" />
     </node>
     <node concept="2lGYhJ" id="1C709xVuV2E" role="2pHZQ9">
       <property role="TrG5h" value="jenaModel" />
@@ -1126,8 +1138,8 @@
                                             </node>
                                           </node>
                                           <node concept="10M0yZ" id="7NlO_H3VkFd" role="37wK5m">
-                                            <ref role="3cqZAo" to="5hed:7NlO_H3VhwB" resolve="originNode" />
-                                            <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
+                                            <ref role="3cqZAo" to="tqna:7NlO_H3VhwB" resolve="originNode" />
+                                            <ref role="1PxDUh" to="tqna:7NlO_H3Vhiq" resolve="GRAPE" />
                                           </node>
                                           <node concept="37vLTw" id="7NlO_H3XgJ2" role="37wK5m">
                                             <ref role="3cqZAo" node="7NlO_H3XgIW" resolve="nodeRef" />
@@ -1289,8 +1301,8 @@
                     <ref role="3cqZAo" node="n6bVFlUmXi" resolve="toResource" />
                   </node>
                   <node concept="10M0yZ" id="18sS9KKhj3x" role="37wK5m">
-                    <ref role="3cqZAo" to="5hed:7NlO_H3VhwB" resolve="originNode" />
-                    <ref role="1PxDUh" to="5hed:7NlO_H3Vhiq" resolve="GRAPE" />
+                    <ref role="3cqZAo" to="tqna:7NlO_H3VhwB" resolve="originNode" />
+                    <ref role="1PxDUh" to="tqna:7NlO_H3Vhiq" resolve="GRAPE" />
                   </node>
                   <node concept="37vLTw" id="n6bVFlV9j1" role="37wK5m">
                     <ref role="3cqZAo" node="n6bVFlV9iR" resolve="nodeRef" />

@@ -12,9 +12,9 @@
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" />
-    <import index="iwug" ref="r:76e4946f-2d00-47d5-ae37-e0c3a55829b1(Turtle.runtime.datasetManager)" />
     <import index="92dq" ref="r:454ebbf5-1dda-4c8d-a1bf-46962f6c82a0(RML.promoterRdf)" />
     <import index="dvzw" ref="r:1ab49751-3fc1-4885-8e5c-71c73f1e202f(Turtle.editor)" />
+    <import index="cyoz" ref="r:ef2b4066-69f7-4d14-91ae-0386ca39f157(Turtle.datasetManager)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" implicit="true" />
@@ -1765,11 +1765,11 @@
                 </node>
                 <node concept="2OqwBi" id="tPE8szg_ym" role="33vP2m">
                   <node concept="2YIFZM" id="tPE8szg_yn" role="2Oq$k0">
-                    <ref role="37wK5l" to="iwug:3l3jG31o0qT" resolve="getInstance" />
-                    <ref role="1Pybhc" to="iwug:6tKZDNaiTly" resolve="RdfDatasetsManager" />
+                    <ref role="37wK5l" to="cyoz:3l3jG31o0qT" resolve="getInstance" />
+                    <ref role="1Pybhc" to="cyoz:6tKZDNaiTly" resolve="RdfDatasetsManager" />
                   </node>
                   <node concept="liA8E" id="tPE8szg_yo" role="2OqNvi">
-                    <ref role="37wK5l" to="iwug:tPE8szgjJt" resolve="getModel" />
+                    <ref role="37wK5l" to="cyoz:tPE8szgjJt" resolve="getModel" />
                     <node concept="7Obwk" id="1e4IJAnkwA1" role="37wK5m" />
                   </node>
                 </node>

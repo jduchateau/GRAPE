@@ -74,6 +74,11 @@
     <node concept="PrWs8" id="3h4bPqkjA5l" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="1TJgyi" id="6WRbFH1LSPi" role="1TKVEl">
+      <property role="IQ2nx" value="8013925443726445906" />
+      <property role="TrG5h" value="datasetName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxVX4T">
     <property role="TrG5h" value="Statment" />
@@ -134,6 +139,11 @@
       <property role="IQ2nx" value="5867233166325549765" />
       <property role="TrG5h" value="vocabulary" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6WRbFH1PAuY" role="1TKVEl">
+      <property role="IQ2nx" value="8013925443727419326" />
+      <property role="TrG5h" value="disableVocabularyDownload" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="PrWs8" id="2z4QKYxXpht" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

@@ -93,8 +93,14 @@
     <node concept="1TJgyj" id="5tSQ8xWQHBI" role="1TKVEi">
       <property role="IQ2ns" value="6303025759226878446" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="referenceFormulation" />
+      <property role="20kJfa" value="referenceFormulation_old" />
       <ref role="20lvS9" to="16h3:2z4QKYxW8U0" resolve="Iri" />
+    </node>
+    <node concept="1TJgyj" id="5k8WOM8oJQ5" role="1TKVEi">
+      <property role="IQ2ns" value="6127414803068812677" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="referenceFormulation" />
+      <ref role="20lvS9" node="5k8WOM8oJQ9" resolve="ReferenceFormulation" />
     </node>
     <node concept="1TJgyi" id="5tSQ8xWT4XM" role="1TKVEl">
       <property role="IQ2nx" value="6303025759227498354" />
@@ -255,6 +261,70 @@
       <property role="20kJfa" value="source" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="FW04txuk4P" resolve="SourceDef" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5k8WOM8oJQ9">
+    <property role="EcuMT" value="6127414803068812681" />
+    <property role="TrG5h" value="ReferenceFormulation" />
+  </node>
+  <node concept="1TIwiD" id="5k8WOM8oJQd">
+    <property role="EcuMT" value="6127414803068812685" />
+    <property role="TrG5h" value="ReferenceFormulationCSV" />
+    <property role="34LRSv" value="CSV" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="5k8WOM8oJQe" role="PzmwI">
+      <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5k8WOM8oJQf">
+    <property role="EcuMT" value="6127414803068812687" />
+    <property role="TrG5h" value="ReferenceFormulationJSONPath" />
+    <property role="34LRSv" value="JSONPath" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="1yLetCTrE49" role="PzmwI">
+      <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1yLetCTrE3M">
+    <property role="EcuMT" value="1779266937217261810" />
+    <property role="TrG5h" value="ReferenceFormulationCustom" />
+    <property role="34LRSv" value="&lt;other&gt;" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="1yLetCTrE3N" role="1TKVEi">
+      <property role="IQ2ns" value="1779266937217261811" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="value" />
+      <ref role="20lvS9" to="16h3:2z4QKYxWcd2" resolve="Subject" />
+    </node>
+    <node concept="PrWs8" id="1yLetCTvBgC" role="PzmwI">
+      <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1yLetCTrE3T">
+    <property role="EcuMT" value="1779266937217261817" />
+    <property role="TrG5h" value="ReferenceFormulationXPath" />
+    <property role="34LRSv" value="XPath" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="1yLetCTrE4c" role="PzmwI">
+      <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1yLetCTrE3X">
+    <property role="EcuMT" value="1779266937217261821" />
+    <property role="TrG5h" value="ReferenceFormulationSQL2008Query" />
+    <property role="34LRSv" value="SQL2008Query" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="1yLetCTrE4a" role="PzmwI">
+      <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1yLetCTrE41">
+    <property role="EcuMT" value="1779266937217261825" />
+    <property role="TrG5h" value="ReferenceFormulationSQL2008Table" />
+    <property role="34LRSv" value="SQL2008Table" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="1yLetCTrE4b" role="PzmwI">
+      <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulation" />
     </node>
   </node>
 </model>
