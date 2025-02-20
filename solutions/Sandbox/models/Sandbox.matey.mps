@@ -77,9 +77,11 @@
       <concept id="6099872835424795652" name="RML.IO.structure.LogicalSourceDef" flags="ngI" index="IaUo2">
         <property id="6303025759227498354" name="iterator" index="FB9vU" />
         <child id="6303025759226878442" name="source" index="FCw5y" />
-        <child id="6303025759226878446" name="referenceFormulation" index="FCw5A" />
+        <child id="6303025759226878446" name="referenceFormulation_old" index="FCw5A" />
+        <child id="6127414803068812677" name="referenceFormulation" index="3tqwV9" />
       </concept>
       <concept id="468146138112354128" name="RML.IO.structure.SourceInlineDef" flags="ng" index="2JlPsY" />
+      <concept id="6127414803068812687" name="RML.IO.structure.ReferenceFormulationJSONPath" flags="ng" index="3tqwV3" />
       <concept id="8169920669489714720" name="RML.IO.structure.LogicalSourceInlineDef" flags="ng" index="1_rNmK" />
       <concept id="791507941088259868" name="RML.IO.structure.CurrentWorkingDirectoryRoot" flags="ng" index="1FyQXr" />
     </language>
@@ -182,10 +184,6 @@
     <node concept="1SSSdx" id="5e0pfd$1FzA" role="29aKCU" />
     <node concept="FCvld" id="pZc6UD7Kfr" role="29aKCU">
       <property role="FB9vU" value="$.persons[*]" />
-      <node concept="29d5ma" id="pZc6UD7Kfv" role="FCw5A">
-        <property role="29d1ub" value="JSONPath" />
-        <ref role="29d1uc" node="M0URkkgBQ1" resolve="rml" />
-      </node>
       <node concept="2JlPsY" id="1xDVdsoqJNg" role="FCw5y">
         <node concept="FCOsJ" id="1xDVdsoqJNi" role="1FyQV4">
           <property role="1Fxk42" value="people.json" />
@@ -196,6 +194,7 @@
       <node concept="29d1u9" id="4$wSEF3Lzp6" role="2$AQDL">
         <property role="29d1u8" value="PersonLogicalSource" />
       </node>
+      <node concept="3tqwV3" id="1yLetCTAOUJ" role="3tqwV9" />
     </node>
     <node concept="3DQ70j" id="pZc6UD7Kfq" role="lGtFl">
       <property role="3V$3am" value="statments" />
@@ -400,10 +399,6 @@
       </node>
       <node concept="1_rNmK" id="KJ$AktwcEn" role="IaUo4">
         <property role="FB9vU" value="$.persons[*]" />
-        <node concept="29d5ma" id="KJ$Akt$cxO" role="FCw5A">
-          <property role="29d1ub" value="JSONPath" />
-          <ref role="29d1uc" node="KJ$Akt$cxJ" resolve="rml" />
-        </node>
         <node concept="2JlPsY" id="1xDVdsoyAVZ" role="FCw5y">
           <node concept="FCOsJ" id="1xDVdsoyAW1" role="1FyQV4">
             <property role="1Fxk42" value="people.json" />
@@ -411,6 +406,7 @@
             <node concept="1FyQXr" id="5YpSZx52LtB" role="1Fxk40" />
           </node>
         </node>
+        <node concept="3tqwV3" id="1yLetCTAOUI" role="3tqwV9" />
       </node>
       <node concept="IaUod" id="KJ$AktwcEj" role="2YYcL1">
         <node concept="IaUoX" id="KJ$Akt$cxP" role="FGdDe">
