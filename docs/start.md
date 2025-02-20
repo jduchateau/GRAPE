@@ -1,8 +1,14 @@
 # Getting started
 
-This tutorial assumes that you are already familiar with knowledge graphs and RDF (Resource Description Framework).
+This tutorial assumes that you are already familiar with knowledge graphs and RDF (Resource Description Framework). And after settings things up, we will create a simple RML mapping from JSON and CSV to create a simple Graph with people and movies.
+
+??? QUESTION "Need help?"
+    If at some point you need help, [create an issue](https://gitlab.uliege.be/JakubDuchateau/grape/-/issues/new) if you have one, or drop us an email: [Jakub Duchateau](https://www.uliege.be/cms/c_9054334/fr?uid=u190657){ target="_blank" }.
+
 
 ## Prepare the project
+
+Have you installed MPS and GRAPE? If not, go back to [Installation](install.md) to follow along.
 
 In MPS, a _Project_ has multiple _Solutions_ or _Languages_.
 Each Solution can have multiples modules which in turn store root nodes,
@@ -24,7 +30,7 @@ From the _Logical View_, create a new model, keep the default options.
 
 The model properties dialogue opens, you can add `Turtle` and `RML` languages in the Used Languages tabs.
 To add the languages, you can also use ++ctrl+l++ and search for the languages.
-If it cannot find the languages, ensure the plugin is installed and enabled.
+If it cannot find the languages, ensure the plugin is enabled.
 
 ## Your first mappings
 
@@ -34,7 +40,7 @@ In this tutorial, we will expand on the example introduced with Matey,
 focusing on the integration of data about People and Movies.
 
 Our objective is to map these data sources into a unified Turtle output.
-Below, you'll find a preview of the data files we'll be working with,
+Below, you will find a preview of the data files we will be working with,
 along with the target Turtle output we aim to generate.
 Store them on your disk in a directory to follow along.
 
@@ -57,7 +63,7 @@ Let's get started by creating a new Turtle document.
 In the Logical View, right-click on your model and select **New | Turtle | TurtleDoc**.
 
 !!! INFO
-    If Turtle isn't available, import it in the model by pressing ++ctrl+l++ and search for Turtle.
+    If Turtle is not available, import it in the model by pressing ++ctrl+l++ and search for Turtle.
 
 ![Screenshot of an empty Turtle Document](assets/images/new_turtle_doc.png#only-light)
 ![Screenshot of an empty Turtle Document](assets/images/new_turtle_doc_dark.png#only-dark)
@@ -78,7 +84,7 @@ In the Logical View, right-click on your model and select **New | Turtle | Turtl
     - In the predicate position, use completion to enter `foaf:firstName`, and in the object position, write your name as a string.
     - To add another predicate-object, place your cursor before the `.` or on `foaf:firstName` and hit ++enter++, where you can enter your `lastName` for example.
 
-Once you're ready, let's move on to writing RML!
+Once you are ready, let us move on to writing RML!
 
 ### People TriplesMap
 
@@ -127,7 +133,7 @@ The output should be displayed in the Run tool window that will open from the bo
 
 We will continue by creating the movie triples and then linking them with the person that likes them.
 
-But let's start by adding the prefixes we will need, you can type them as previously:
+But let us start by adding the prefixes we will need, you can type them as previously:
 ```turtle hl_lines="2"
 @prefix ex: <http://example.org/> .
 @prefix schema: <http://schema.org/> .
@@ -158,7 +164,7 @@ The link will be done with child reference `movie` and parent reference `slug`.
     Then you can reference the named logical source in the triples map.
 
 
-Next, let's link people to their favorite movies.
+Next, let us link people to their favorite movies.
 In the <Person> TriplesMap,
 we will add a predicate object map with predicate `ex:likes`.
 For the object select the parentTriplesMap `<Movies>` and provide the child reference `movie` and parent reference `slug`.
@@ -206,3 +212,23 @@ Then on the first line of the document use **Promote RML constructs**.
 Using the Turtle AST and the RDF Graph, it will insert the RML constructs in the document, so once converted you can remove the turtle version from the document.
 
 <div style="padding:54.58% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1053670824?h=5896274e8d&texttrack=en&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Demo Import and Edit RML"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+## Conclusion
+
+### :tada: Congratulations!
+
+When you have reached this point,
+you have learned all the basics of creating and running RML mappings in the _GRAPE editor_.
+You have successfully mapped data from JSON and CSV files to a unified RDF Graph,
+and you have even applied functions to transform data during the mapping process all that within a _projectional editor_.
+
+**How did that go?**
+We would be very grateful if you leave us some [feedback by email](https://www.uliege.be/cms/c_9054334/fr?uid=u190657){ target="_blank" } or with the form bellow.
+
+TODO Feedback Form :heart:
+
+What to do next? There are several paths you can follow:
+
+- if you already have RML mappings, you can try to import and edith them further in GRAPE,
+- for your next mapping task, try to reuse GRAPE. If something is not there yet, you always can export it to turtle to continue on your own,
+- if you would like to learn RML better, you can go read the specs at [RML Ontology Modules Portal](https://kg-construct.github.io/rml-resources/portal/){ target="_blank" }.
