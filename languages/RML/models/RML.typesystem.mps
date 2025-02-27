@@ -9,14 +9,13 @@
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
-    <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" />
-    <import index="nn8r" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.shacl(Turtle.runtime/)" />
-    <import index="sg7y" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.query(Turtle.runtime/)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
-    <import index="8ias" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.graph(Turtle.runtime/)" />
-    <import index="il7g" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.shacl.validation(Turtle.runtime/)" />
     <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" />
     <import index="cyoz" ref="r:ef2b4066-69f7-4d14-91ae-0386ca39f157(Turtle.datasetManager)" />
+    <import index="t6dh" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.rdf.model(Turtle.external/)" />
+    <import index="nn8r" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.shacl(Turtle.external/)" />
+    <import index="sg7y" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.query(Turtle.external/)" />
+    <import index="il7g" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.shacl.validation(Turtle.external/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -182,17 +181,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -661,26 +652,6 @@
                   </node>
                   <node concept="1YBJjd" id="7HX6VHL9HSe" role="37wK5m">
                     <ref role="1YBMHb" node="7NlO_H451pd" resolve="turtleDoc" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1X3_iC" id="55wIQ$ROIdg" role="lGtFl">
-            <property role="3V$3am" value="statement" />
-            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-            <node concept="3cpWs8" id="7PPLA3Rt2Gh" role="8Wnug">
-              <node concept="3cpWsn" id="7PPLA3Rt2Gi" role="3cpWs9">
-                <property role="TrG5h" value="focusNode" />
-                <node concept="3uibUv" id="7PPLA3RsX$V" role="1tU5fm">
-                  <ref role="3uigEE" to="8ias:~Node" resolve="Node" />
-                </node>
-                <node concept="2OqwBi" id="7PPLA3Rt2Gj" role="33vP2m">
-                  <node concept="2GrUjf" id="7PPLA3Rt2Gk" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="6$HV1vB$4xk" resolve="entry" />
-                  </node>
-                  <node concept="liA8E" id="7PPLA3Rt2Gl" role="2OqNvi">
-                    <ref role="37wK5l" to="il7g:~ReportEntry.focusNode()" resolve="focusNode" />
                   </node>
                 </node>
               </node>

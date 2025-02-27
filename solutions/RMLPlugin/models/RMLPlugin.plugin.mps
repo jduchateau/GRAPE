@@ -2720,7 +2720,7 @@
             </node>
             <node concept="2OqwBi" id="5ApPkyeM3_Y" role="3uHU7w">
               <node concept="37vLTw" id="5ApPkyeM3iH" role="2Oq$k0">
-                <ref role="3cqZAo" node="5ApPkyeM3iD" resolve="runProfile" />
+                <ref role="3cqZAo" node="5ApPkyeM3iD" resolve="runConfig" />
               </node>
               <node concept="liA8E" id="5ApPkyeM3Qw" role="2OqNvi">
                 <ref role="37wK5l" to="dj99:~RunProfile.getName()" resolve="getName" />
@@ -2820,13 +2820,13 @@
               <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpDoc" />
             </node>
             <node concept="37vLTw" id="5ApPkyeMJdB" role="2ZW6bz">
-              <ref role="3cqZAo" node="5ApPkyeM3iD" resolve="runProfile" />
+              <ref role="3cqZAo" node="5ApPkyeM3iD" resolve="runConfig" />
             </node>
           </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="5ApPkyeLb5m" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>

@@ -12,7 +12,7 @@ buildscript {
 }
 
 repositories {
-    // maven("https://jitpack.io")
+    maven("https://jitpack.io")
     maven("https://artifacts.itemis.cloud/repository/maven-mps")
     mavenCentral()
 }
@@ -26,8 +26,6 @@ plugins {
 dependencies {
     mps("com.jetbrains:mps:2024.1.+")
     generation("de.itemis.mps:extensions:2024.1.3072.+")
-    //generation("com.mbeddr:mbeddr:2024.1.+")
-    //generation("com.mbeddr:platform:2024.1.+")
 }
 
 tasks.named<Wrapper>("wrapper") {
@@ -39,7 +37,7 @@ val jenaVersion = "5.2.0"
 
 stubs {
     register("stubs") {
-        destinationDir("languages/Turtle.runtime/lib")
+        destinationDir("solutions/Turtle.external/lib")
         dependency("org.antlr:antlr4-runtime:$antlrVersion")
         dependency("org.apache.jena:jena-arq:$jenaVersion")
         dependency("org.apache.jena:jena-querybuilder:$jenaVersion")
@@ -47,11 +45,11 @@ stubs {
         dependency("org.apache.jena:jena-shacl:$jenaVersion")
         dependency("org.apache.httpcomponents.client5:httpclient5:5.4.1")
         dependency("org.slf4j:slf4j-simple:2.0.16")
-        // dependency("com.github.kg-construct:BURP:v0.1.2")
+        dependency("com.github.kg-construct:BURP:1ce1c35f90")
     }
 }
 
-val antlrJar = file("languages/Turtle.runtime/lib/antlr4-complete.jar")
+val antlrJar = file("build/dependencies/antlr/antlr4-complete.jar")
 
 val privateToken = System.getenv("CI_JOB_TOKEN") ?: properties["private-token"] as String?
 val gitlabApiUrlBase = System.getenv("CI_API_V4_URL") ?: properties["gitlab.api.url"] as String?

@@ -2,14 +2,16 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/RML.all/RML.all.devkit" folder="RML" />
       <modulePath path="$PROJECT_DIR$/languages/RML.FNML/RML.FNML.mpl" folder="RML" />
       <modulePath path="$PROJECT_DIR$/languages/RML.IO/RML.IO.mpl" folder="RML" />
       <modulePath path="$PROJECT_DIR$/languages/RML/RML.mpl" folder="RML" />
-      <modulePath path="$PROJECT_DIR$/languages/Turtle.runtime/Turtle.runtime.msd" folder="Turtle" />
       <modulePath path="$PROJECT_DIR$/languages/Turtle/Turtle.mpl" folder="Turtle" />
       <modulePath path="$PROJECT_DIR$/solutions/GRAPE.build/GRAPE.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/RMLPlugin/RMLPlugin.msd" folder="RML" />
       <modulePath path="$PROJECT_DIR$/solutions/Sandbox/Sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Turtle.external/Turtle.external.msd" folder="Turtle" />
+      <modulePath path="$PROJECT_DIR$/solutions/Turtle.parser/Turtle.parser.msd" folder="Turtle" />
       <modulePath path="$PROJECT_DIR$/solutions/TurtlePlugin/TurtlePlugin.msd" folder="Turtle" />
     </projectModules>
   </component>

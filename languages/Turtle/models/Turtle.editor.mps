@@ -11,11 +11,11 @@
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
-    <import index="75q8" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.datatypes.xsd(Turtle.runtime/)" />
-    <import index="hilh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.datatypes(Turtle.runtime/)" />
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" />
     <import index="tqna" ref="r:cc7e3d7f-6cc3-45ed-8929-4ebc0ff93d08(Turtle.prefixer)" />
     <import index="cyoz" ref="r:ef2b4066-69f7-4d14-91ae-0386ca39f157(Turtle.datasetManager)" />
+    <import index="75q8" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.datatypes.xsd(Turtle.external/)" />
+    <import index="hilh" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.datatypes(Turtle.external/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -979,7 +979,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="6WRbFH1W_DH" role="2OqNvi">
-                    <ref role="37wK5l" to="tqna:6WRbFH1WJie" resolve="hasIdentifierInNamespace" />
+                    <ref role="37wK5l" to="tqna:6WRbFH1WJie" resolve="hasCacheOfNamespace" />
                     <node concept="pncrf" id="6WRbFH1WWtS" role="37wK5m" />
                   </node>
                 </node>
@@ -1737,7 +1737,7 @@
                       <node concept="Xl_RD" id="7s28hc99HA8" role="3uHU7w">
                         <property role="Xl_RC" value="#" />
                       </node>
-                      <node concept="10M0yZ" id="7s28hc99GDv" role="3uHU7B">
+                      <node concept="10M0yZ" id="5lm2o6pJd$" role="3uHU7B">
                         <ref role="3cqZAo" to="75q8:~XSDDatatype.XSD" resolve="XSD" />
                         <ref role="1PxDUh" to="75q8:~XSDDatatype" resolve="XSDDatatype" />
                       </node>
@@ -2205,11 +2205,11 @@
                   <node concept="3uibUv" id="7s28hc92$vf" role="HW$YZ">
                     <ref role="3uigEE" to="75q8:~XSDDatatype" resolve="XSDDatatype" />
                   </node>
-                  <node concept="10M0yZ" id="7s28hc92Axw" role="HW$Y0">
+                  <node concept="10M0yZ" id="5lm2o6pOYJ" role="HW$Y0">
                     <ref role="3cqZAo" to="75q8:~XSDDatatype.XSDdecimal" resolve="XSDdecimal" />
                     <ref role="1PxDUh" to="75q8:~XSDDatatype" resolve="XSDDatatype" />
                   </node>
-                  <node concept="10M0yZ" id="7s28hc92AKT" role="HW$Y0">
+                  <node concept="10M0yZ" id="5lm2o6pPqu" role="HW$Y0">
                     <ref role="3cqZAo" to="75q8:~XSDDatatype.XSDinteger" resolve="XSDinteger" />
                     <ref role="1PxDUh" to="75q8:~XSDDatatype" resolve="XSDDatatype" />
                   </node>
@@ -2225,11 +2225,11 @@
                     <ref role="3cqZAo" to="75q8:~XSDDatatype.XSDpositiveInteger" resolve="XSDpositiveInteger" />
                     <ref role="1PxDUh" to="75q8:~XSDDatatype" resolve="XSDDatatype" />
                   </node>
-                  <node concept="10M0yZ" id="7s28hc92BMl" role="HW$Y0">
+                  <node concept="10M0yZ" id="5lm2o6pPlQ" role="HW$Y0">
                     <ref role="3cqZAo" to="75q8:~XSDDatatype.XSDnegativeInteger" resolve="XSDnegativeInteger" />
                     <ref role="1PxDUh" to="75q8:~XSDDatatype" resolve="XSDDatatype" />
                   </node>
-                  <node concept="10M0yZ" id="7s28hc92BWh" role="HW$Y0">
+                  <node concept="10M0yZ" id="5lm2o6pP7A" role="HW$Y0">
                     <ref role="3cqZAo" to="75q8:~XSDDatatype.XSDdouble" resolve="XSDdouble" />
                     <ref role="1PxDUh" to="75q8:~XSDDatatype" resolve="XSDDatatype" />
                   </node>
@@ -2255,8 +2255,7 @@
                   <ref role="3uigEE" to="hilh:~TypeMapper" resolve="TypeMapper" />
                 </node>
                 <node concept="2ShNRf" id="7s28hc92Gva" role="33vP2m">
-                  <node concept="1pGfFk" id="7s28hc92Gvb" role="2ShVmc">
-                    <property role="373rjd" value="true" />
+                  <node concept="1pGfFk" id="5lm2o6pS7F" role="2ShVmc">
                     <ref role="37wK5l" to="hilh:~TypeMapper.&lt;init&gt;()" resolve="TypeMapper" />
                   </node>
                 </node>

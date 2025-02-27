@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a5c6ffe8-35ab-484e-86a2-877741559e77(Turtle.runtime.astConverter)">
+<model ref="r:a5c6ffe8-35ab-484e-86a2-877741559e77(Turtle.parser.astConverter)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -13,16 +13,16 @@
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
-    <import index="p3ir" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.antlr.v4.runtime(Turtle.runtime/)" />
-    <import index="dcux" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:converter.grammar(Turtle.runtime/)" />
+    <import index="dcux" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:converter.grammar(Turtle.parser/)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="6xeh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.antlr.v4.runtime.tree(Turtle.runtime/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
+    <import index="p3ir" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.antlr.v4.runtime(Turtle.external/)" />
+    <import index="6xeh" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.antlr.v4.runtime.tree(Turtle.external/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -432,10 +432,10 @@
             <node concept="3uibUv" id="29l9n5i7KyC" role="1tU5fm">
               <ref role="3uigEE" to="p3ir:~CharStream" resolve="CharStream" />
             </node>
-            <node concept="2YIFZM" id="29l9n5i7KCV" role="33vP2m">
+            <node concept="2YIFZM" id="5lm2o61C6Q" role="33vP2m">
               <ref role="37wK5l" to="p3ir:~CharStreams.fromString(java.lang.String)" resolve="fromString" />
               <ref role="1Pybhc" to="p3ir:~CharStreams" resolve="CharStreams" />
-              <node concept="37vLTw" id="29l9n5i7KG2" role="37wK5m">
+              <node concept="37vLTw" id="5lm2o61C6R" role="37wK5m">
                 <ref role="3cqZAo" node="29l9n5i6y3u" resolve="turtleContent" />
               </node>
             </node>

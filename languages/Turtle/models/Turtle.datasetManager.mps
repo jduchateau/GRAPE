@@ -14,11 +14,8 @@
   </languages>
   <imports>
     <import index="lhc4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.annotations(MPS.OpenAPI/)" />
-    <import index="sg7y" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.query(Turtle.runtime/)" />
-    <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
-    <import index="ptfq" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.riot(Turtle.runtime/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
@@ -27,7 +24,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="8ias" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.graph(Turtle.runtime/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="drpk" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.make(MPS.Platform/)" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
@@ -42,8 +38,11 @@
     <import index="i9so" ref="r:9e5578e0-37f0-4c9b-a301-771bcb453678(jetbrains.mps.make.script)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
-    <import index="7jzd" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model.impl(Turtle.runtime/)" />
     <import index="tqna" ref="r:cc7e3d7f-6cc3-45ed-8929-4ebc0ff93d08(Turtle.prefixer)" />
+    <import index="sg7y" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.query(Turtle.external/)" />
+    <import index="t6dh" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.rdf.model(Turtle.external/)" />
+    <import index="ptfq" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.riot(Turtle.external/)" />
+    <import index="8ias" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.graph(Turtle.external/)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -654,7 +653,7 @@
                 <node concept="3uibUv" id="5uoKCxWQHhY" role="1tU5fm">
                   <ref role="3uigEE" to="t6dh:~Model" resolve="Model" />
                 </node>
-                <node concept="2YIFZM" id="5uoKCxWQIuG" role="33vP2m">
+                <node concept="2YIFZM" id="5lm2o66dLR" role="33vP2m">
                   <ref role="37wK5l" to="t6dh:~ModelFactory.createDefaultModel()" resolve="createDefaultModel" />
                   <ref role="1Pybhc" to="t6dh:~ModelFactory" resolve="ModelFactory" />
                 </node>
@@ -1045,9 +1044,9 @@
                     <node concept="3uibUv" id="3l3jG31YDV3" role="1tU5fm">
                       <ref role="3uigEE" to="t6dh:~Model" resolve="Model" />
                     </node>
-                    <node concept="2YIFZM" id="3l3jG31YEvc" role="33vP2m">
-                      <ref role="1Pybhc" to="t6dh:~ModelFactory" resolve="ModelFactory" />
+                    <node concept="2YIFZM" id="5lm2o66oK$" role="33vP2m">
                       <ref role="37wK5l" to="t6dh:~ModelFactory.createDefaultModel()" resolve="createDefaultModel" />
+                      <ref role="1Pybhc" to="t6dh:~ModelFactory" resolve="ModelFactory" />
                     </node>
                   </node>
                 </node>
@@ -1057,10 +1056,10 @@
                     <node concept="3uibUv" id="4U8KRdX52hM" role="1tU5fm">
                       <ref role="3uigEE" to="ptfq:~Lang" resolve="Lang" />
                     </node>
-                    <node concept="2YIFZM" id="4U8KRdX5of3" role="33vP2m">
-                      <ref role="1Pybhc" to="ptfq:~RDFLanguages" resolve="RDFLanguages" />
+                    <node concept="2YIFZM" id="5lm2o66sUe" role="33vP2m">
                       <ref role="37wK5l" to="ptfq:~RDFLanguages.contentTypeToLang(java.lang.String)" resolve="contentTypeToLang" />
-                      <node concept="37vLTw" id="7fyVMyCRV8i" role="37wK5m">
+                      <ref role="1Pybhc" to="ptfq:~RDFLanguages" resolve="RDFLanguages" />
+                      <node concept="37vLTw" id="5lm2o66sUf" role="37wK5m">
                         <ref role="3cqZAo" node="7fyVMyCREHm" resolve="outputContentType" />
                       </node>
                     </node>
@@ -1094,9 +1093,9 @@
                       <property role="hSjvv" value="true" />
                       <node concept="2OqwBi" id="3l3jG31YZh_" role="2Oq$k0">
                         <property role="hSjvv" value="true" />
-                        <node concept="2YIFZM" id="3l3jG31YVYm" role="2Oq$k0">
-                          <ref role="1Pybhc" to="ptfq:~RDFParser" resolve="RDFParser" />
+                        <node concept="2YIFZM" id="5lm2o66zTs" role="2Oq$k0">
                           <ref role="37wK5l" to="ptfq:~RDFParser.create()" resolve="create" />
+                          <ref role="1Pybhc" to="ptfq:~RDFParser" resolve="RDFParser" />
                         </node>
                         <node concept="liA8E" id="3l3jG31YZhA" role="2OqNvi">
                           <ref role="37wK5l" to="ptfq:~RDFParserBuilder.source(java.lang.String)" resolve="source" />
