@@ -102,7 +102,7 @@
           <node concept="17R0WA" id="1yLetCTtZU7" role="3clFbw">
             <node concept="359W_D" id="1yLetCTu07O" role="3uHU7w">
               <ref role="359W_E" to="qx9m:1yLetCTrE3M" resolve="ReferenceFormulationCustom" />
-              <ref role="359W_F" to="qx9m:1yLetCTrE3N" />
+              <ref role="359W_F" to="qx9m:1yLetCTrE3N" resolve="value" />
             </node>
             <node concept="2DA6wF" id="1yLetCTtVSQ" role="3uHU7B" />
           </node>

@@ -17,7 +17,7 @@
     <import index="dvzw" ref="r:1ab49751-3fc1-4885-8e5c-71c73f1e202f(Turtle.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
-    <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" implicit="true" />
+    <import index="t6dh" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.rdf.model(Turtle.external/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -528,7 +528,7 @@
           <property role="3F0ifm" value="reference formulation" />
         </node>
         <node concept="3F1sOY" id="5tSQ8xWQHE9" role="3EZMnx">
-          <ref role="1NtTu8" to="qx9m:5k8WOM8oJQ5" />
+          <ref role="1NtTu8" to="qx9m:5k8WOM8oJQ5" resolve="referenceFormulation" />
         </node>
       </node>
       <node concept="3EZMnI" id="5tSQ8xWT4XO" role="3EZMnx">
@@ -1120,7 +1120,7 @@
   <node concept="24kQdi" id="1yLetCTs$Tg">
     <ref role="1XX52x" to="qx9m:1yLetCTrE3M" resolve="ReferenceFormulationCustom" />
     <node concept="3F1sOY" id="1yLetCTtUOs" role="2wV5jI">
-      <ref role="1NtTu8" to="qx9m:1yLetCTrE3N" />
+      <ref role="1NtTu8" to="qx9m:1yLetCTrE3N" resolve="value" />
     </node>
   </node>
 </model>

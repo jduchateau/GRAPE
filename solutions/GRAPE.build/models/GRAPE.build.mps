@@ -69,6 +69,9 @@
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
+      <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
+        <reference id="5610619299013057365" name="target" index="3ygNvj" />
+      </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
       <concept id="5248329904287794596" name="jetbrains.mps.build.structure.BuildInputFiles" flags="ng" index="3LXTmp">
         <child id="5248329904287794598" name="dir" index="3LXTmr" />
@@ -118,6 +121,7 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
+        <property id="2928402740576877067" name="javaCode" index="3vZFNd" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -148,6 +152,12 @@
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="3189788309731917348" name="runtime" index="1E1XAP" />
         <child id="9200313594498201639" name="generator" index="1TViLv" />
+      </concept>
+      <concept id="322010710375794190" name="jetbrains.mps.build.mps.structure.BuildMps_DevKit" flags="ng" index="3LEwk6">
+        <child id="322010710375832962" name="exports" index="3LEDUa" />
+      </concept>
+      <concept id="322010710375832938" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportLanguage" flags="ng" index="3LEDTy">
+        <reference id="322010710375832947" name="language" index="3LEDTV" />
       </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
@@ -183,14 +193,14 @@
         <ref role="398BVh" node="2CHbgKhgN9N" resolve="mps_home" />
       </node>
     </node>
-    <node concept="2sgV4H" id="32j6SImYw1M" role="1l3spa">
+    <node concept="2sgV4H" id="2$xa9LRKGH7" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
-      <node concept="55IIr" id="32j6SImYw1R" role="2JcizS">
-        <node concept="2Ry0Ak" id="32j6SImYw1W" role="iGT6I">
+      <node concept="55IIr" id="2$xa9LRKGJq" role="2JcizS">
+        <node concept="2Ry0Ak" id="2$xa9LRKGLI" role="iGT6I">
           <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="32j6SImYw21" role="2Ry0An">
+          <node concept="2Ry0Ak" id="2$xa9LRKGLL" role="2Ry0An">
             <property role="2Ry0Am" value="dependencies" />
-            <node concept="2Ry0Ak" id="32j6SImYw26" role="2Ry0An">
+            <node concept="2Ry0Ak" id="2$xa9LRKGLO" role="2Ry0An">
               <property role="2Ry0Am" value="de.itemis.mps.extensions" />
             </node>
           </node>
@@ -207,6 +217,32 @@
         <node concept="m$_wl" id="2CHbgKhgNax" role="39821P">
           <ref role="m_rDy" node="2CHbgKhgNag" resolve="GRAPE" />
           <node concept="pUk6x" id="2CHbgKhgNay" role="pUk7w" />
+          <node concept="3ygNvl" id="5YpRw0YfTqX" role="39821P">
+            <ref role="3ygNvj" to="90a9:2Xjt3l57cXL" />
+          </node>
+          <node concept="3ygNvl" id="1IIGwo$6phv" role="39821P">
+            <ref role="3ygNvj" to="90a9:2Xjt3l57guk" />
+          </node>
+          <node concept="398223" id="2uMhTA67w$9" role="39821P">
+            <node concept="2HvfSZ" id="2uMhTA67wCL" role="39821P">
+              <node concept="55IIr" id="2uMhTA67wCN" role="2HvfZ0">
+                <node concept="2Ry0Ak" id="2uMhTA67wF8" role="iGT6I">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="2uMhTA67wFb" role="2Ry0An">
+                    <property role="2Ry0Am" value="Turtle.parser" />
+                    <node concept="2Ry0Ak" id="2uMhTA67wFe" role="2Ry0An">
+                      <property role="2Ry0Am" value="grammar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3_J27D" id="2uMhTA67w$b" role="Nbhlr">
+              <node concept="3Mxwew" id="2uMhTA67wAu" role="3MwsjC">
+                <property role="3MwjfP" value="grammar" />
+              </node>
+            </node>
+          </node>
           <node concept="398223" id="2lDY4vKjYAs" role="39821P">
             <node concept="3_J27D" id="2lDY4vKjYAt" role="Nbhlr">
               <node concept="3Mxwew" id="2lDY4vKjYAz" role="3MwsjC">
@@ -215,11 +251,11 @@
             </node>
             <node concept="2HvfSZ" id="12UDXPr01WT" role="39821P">
               <node concept="55IIr" id="12UDXPr01YP" role="2HvfZ0">
-                <node concept="2Ry0Ak" id="12UDXPr020L" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="12UDXPr024F" role="2Ry0An">
-                    <property role="2Ry0Am" value="Turtle.runtime" />
-                    <node concept="2Ry0Ak" id="12UDXPr026A" role="2Ry0An">
+                <node concept="2Ry0Ak" id="2uMhTA67wqW" role="iGT6I">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="2uMhTA67wtg" role="2Ry0An">
+                    <property role="2Ry0Am" value="Turtle.external" />
+                    <node concept="2Ry0Ak" id="2uMhTA67wtj" role="2Ry0An">
                       <property role="2Ry0Am" value="lib" />
                     </node>
                   </node>
@@ -258,7 +294,7 @@
       </node>
       <node concept="2iUeEo" id="uIuTxPbUTy" role="2iVFfd">
         <property role="2iUeEt" value="Jakub Duchateau at ULiège" />
-        <property role="2iUeEu" value="https://gitlab.uliege.be/Jakub.Duchateau/grape" />
+        <property role="2iUeEu" value="https://gitlab.uliege.be/JakubDuchateau/grape" />
       </node>
       <node concept="3_J27D" id="6fdPYAXC17o" role="3s6cr7">
         <node concept="3Mxwew" id="6fdPYAXC17p" role="3MwsjC">
@@ -274,6 +310,7 @@
       <node concept="1E1JtD" id="2CHbgKhgN9W" role="2G$12L">
         <property role="TrG5h" value="Turtle" />
         <property role="3LESm3" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" />
+        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="2CHbgKhgN9R" role="3LF7KH">
           <node concept="2Ry0Ak" id="2CHbgKhgN9S" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
@@ -315,14 +352,6 @@
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
-        </node>
-        <node concept="1SiIV0" id="2CHbgKhgNbo" role="3bR37C">
-          <node concept="3bR9La" id="2CHbgKhgNbp" role="1SiIV1">
-            <ref role="3bR37D" node="2CHbgKhgNa8" resolve="Turtle.runtime" />
-          </node>
-        </node>
-        <node concept="1E0d5M" id="2CHbgKhgNbu" role="1E1XAP">
-          <ref role="1E0d5P" node="2CHbgKhgNa8" resolve="Turtle.runtime" />
         </node>
         <node concept="3rtmxn" id="2lDY4vKlB4o" role="3bR31x">
           <node concept="3LXTmp" id="2lDY4vKlB4p" role="3rtmxm">
@@ -369,91 +398,55 @@
             <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2uMhTA67wgR" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wgS" role="1SiIV1">
+            <ref role="3bR37D" node="2uMhTA67w7Y" resolve="Turtle.parser" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wgT" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wgU" role="1SiIV1">
+            <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="2uMhTA67wgZ" role="1E1XAP">
+          <ref role="1E0d5P" node="3VbHlF$1B66" resolve="Turtle.external" />
+        </node>
+        <node concept="1E0d5M" id="2uMhTA67wh0" role="1E1XAP">
+          <ref role="1E0d5P" node="2uMhTA67w7Y" resolve="Turtle.parser" />
+        </node>
       </node>
-      <node concept="1E1JtA" id="2CHbgKhgNa8" role="2G$12L">
-        <property role="TrG5h" value="Turtle.runtime" />
-        <property role="3LESm3" value="aeba435c-1d30-498a-a895-0c28f7dc9263" />
-        <node concept="55IIr" id="2CHbgKhgNa3" role="3LF7KH">
-          <node concept="2Ry0Ak" id="2CHbgKhgNa4" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="2CHbgKhgNa5" role="2Ry0An">
-              <property role="2Ry0Am" value="Turtle.runtime" />
-              <node concept="2Ry0Ak" id="2CHbgKhgNa6" role="2Ry0An">
-                <property role="2Ry0Am" value="Turtle.runtime.msd" />
+      <node concept="1E1JtA" id="3VbHlF$1B66" role="2G$12L">
+        <property role="TrG5h" value="Turtle.external" />
+        <property role="BnDLt" value="true" />
+        <property role="3LESm3" value="7affc86d-0488-4d79-a2c7-6c2c1b5f071b" />
+        <property role="3vZFNd" value="3kCd1ud3JDD/compile_ext" />
+        <node concept="55IIr" id="3VbHlF$1B69" role="3LF7KH">
+          <node concept="2Ry0Ak" id="3VbHlF$1B6c" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="2uMhTA67w8e" role="2Ry0An">
+              <property role="2Ry0Am" value="Turtle.external" />
+              <node concept="2Ry0Ak" id="2uMhTA67w8h" role="2Ry0An">
+                <property role="2Ry0Am" value="Turtle.external.msd" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="2CHbgKhgNb4" role="3bR37C">
-          <node concept="3bR9La" id="2CHbgKhgNb5" role="1SiIV1">
+        <node concept="1SiIV0" id="2uMhTA67w8m" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67w8n" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2CHbgKhgNb6" role="3bR37C">
-          <node concept="3bR9La" id="2CHbgKhgNb7" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1YAozCvot2i" resolve="jetbrains.mps.baseLanguage.regexp" />
-          </node>
-        </node>
-        <node concept="1BupzO" id="2CHbgKhgNbc" role="3bR31x">
-          <property role="3ZfqAx" value="models" />
-          <property role="1Hdu6h" value="true" />
-          <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="2CHbgKhgNbd" role="1HemKq">
-            <node concept="55IIr" id="2CHbgKhgNb8" role="3LXTmr">
-              <node concept="2Ry0Ak" id="2CHbgKhgNb9" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="2CHbgKhgNba" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="2CHbgKhgNbb" role="2Ry0An">
-                    <property role="2Ry0Am" value="models" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="2CHbgKhgNbe" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2CHbgKhgNbE" role="3bR37C">
-          <node concept="3bR9La" id="2CHbgKhgNbF" role="1SiIV1">
-            <ref role="3bR37D" node="2CHbgKhgN9W" resolve="Turtle" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="49jMNNeY42J" role="3bR37C">
-          <node concept="3bR9La" id="49jMNNeY42K" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="46W0yxsctZf" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsctZg" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsctZa" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsctZb" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsctZc" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsctZd" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67w8t" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w8u" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w8o" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w8p" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w8q" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w8r" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsctZe" role="2Ry0An">
-                      <property role="2Ry0Am" value="burp.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2lDY4vKlB0Y" role="3bR37C">
-          <node concept="1BurEX" id="2lDY4vKlB0Z" role="1SiIV1">
-            <node concept="55IIr" id="2lDY4vKlB0T" role="1BurEY">
-              <node concept="2Ry0Ak" id="2lDY4vKlB0U" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="2lDY4vKlB0V" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="2lDY4vKlB0W" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="2lDY4vKlB0X" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67w8s" role="2Ry0An">
                       <property role="2Ry0Am" value="antlr4-runtime.jar" />
                     </node>
                   </node>
@@ -462,142 +455,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="5N3KvtBLjE1" role="3bR37C">
-          <node concept="1BurEX" id="5N3KvtBLjE2" role="1SiIV1">
-            <node concept="55IIr" id="5N3KvtBLjDW" role="1BurEY">
-              <node concept="2Ry0Ak" id="5N3KvtBLjDX" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5N3KvtBLjDY" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="5N3KvtBLjDZ" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67w8$" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w8_" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w8v" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w8w" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w8x" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w8y" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="5N3KvtBLjE0" role="2Ry0An">
-                      <property role="2Ry0Am" value="jena-rdfconnection.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5N3KvtBLjFZ" role="3bR37C">
-          <node concept="1BurEX" id="5N3KvtBLjG0" role="1SiIV1">
-            <node concept="55IIr" id="5N3KvtBLjFU" role="1BurEY">
-              <node concept="2Ry0Ak" id="5N3KvtBLjFV" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5N3KvtBLjFW" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="5N3KvtBLjFX" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="5N3KvtBLjFY" role="2Ry0An">
-                      <property role="2Ry0Am" value="jena-querybuilder.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5N3KvtBLjG6" role="3bR37C">
-          <node concept="1BurEX" id="5N3KvtBLjG7" role="1SiIV1">
-            <node concept="55IIr" id="5N3KvtBLjG1" role="1BurEY">
-              <node concept="2Ry0Ak" id="5N3KvtBLjG2" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5N3KvtBLjG3" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="5N3KvtBLjG4" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="5N3KvtBLjG5" role="2Ry0An">
-                      <property role="2Ry0Am" value="jena-arq.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5N3KvtBLjGd" role="3bR37C">
-          <node concept="1BurEX" id="5N3KvtBLjGe" role="1SiIV1">
-            <node concept="55IIr" id="5N3KvtBLjG8" role="1BurEY">
-              <node concept="2Ry0Ak" id="5N3KvtBLjG9" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5N3KvtBLjGa" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="5N3KvtBLjGb" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="5N3KvtBLjGc" role="2Ry0An">
-                      <property role="2Ry0Am" value="jena-base.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5N3KvtBLjGk" role="3bR37C">
-          <node concept="1BurEX" id="5N3KvtBLjGl" role="1SiIV1">
-            <node concept="55IIr" id="5N3KvtBLjGf" role="1BurEY">
-              <node concept="2Ry0Ak" id="5N3KvtBLjGg" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5N3KvtBLjGh" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="5N3KvtBLjGi" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="5N3KvtBLjGj" role="2Ry0An">
-                      <property role="2Ry0Am" value="jena-core.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5N3KvtBLjGr" role="3bR37C">
-          <node concept="1BurEX" id="5N3KvtBLjGs" role="1SiIV1">
-            <node concept="55IIr" id="5N3KvtBLjGm" role="1BurEY">
-              <node concept="2Ry0Ak" id="5N3KvtBLjGn" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5N3KvtBLjGo" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="5N3KvtBLjGp" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="5N3KvtBLjGq" role="2Ry0An">
-                      <property role="2Ry0Am" value="jena-iri.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7PPLA3R2PEz" role="3bR37C">
-          <node concept="1BurEX" id="7PPLA3R2PE$" role="1SiIV1">
-            <node concept="55IIr" id="7PPLA3R2PEu" role="1BurEY">
-              <node concept="2Ry0Ak" id="7PPLA3R2PEv" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="7PPLA3R2PEw" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="7PPLA3R2PEx" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7PPLA3R2PEy" role="2Ry0An">
-                      <property role="2Ry0Am" value="jena-shacl.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5N3KvtBLjE8" role="3bR37C">
-          <node concept="1BurEX" id="5N3KvtBLjE9" role="1SiIV1">
-            <node concept="55IIr" id="5N3KvtBLjE3" role="1BurEY">
-              <node concept="2Ry0Ak" id="5N3KvtBLjE4" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5N3KvtBLjE5" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="5N3KvtBLjE6" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="5N3KvtBLjE7" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67w8z" role="2Ry0An">
                       <property role="2Ry0Am" value="caffeine.jar" />
                     </node>
                   </node>
@@ -606,16 +473,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="5N3KvtBLjEf" role="3bR37C">
-          <node concept="1BurEX" id="5N3KvtBLjEg" role="1SiIV1">
-            <node concept="55IIr" id="5N3KvtBLjEa" role="1BurEY">
-              <node concept="2Ry0Ak" id="5N3KvtBLjEb" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5N3KvtBLjEc" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="5N3KvtBLjEd" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67w8F" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w8G" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w8A" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w8B" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w8C" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w8D" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="5N3KvtBLjEe" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67w8E" role="2Ry0An">
                       <property role="2Ry0Am" value="collection.jar" />
                     </node>
                   </node>
@@ -624,31 +491,16 @@
             </node>
           </node>
         </node>
-        <node concept="3rtmxn" id="v_r5au3Mrx" role="3bR31x">
-          <node concept="3LXTmp" id="v_r5au3Mry" role="3rtmxm">
-            <node concept="55IIr" id="v_r5au3Mrz" role="3LXTmr">
-              <node concept="2Ry0Ak" id="v_r5au3Mr$" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="v_r5au3Mr_" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="v_r5au3MrB" role="3LXTna">
-              <property role="3qWCbO" value="icons/**" />
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="46W0yxsiU7e" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU7f" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU79" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU7a" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU7b" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU7c" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67w8M" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w8N" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w8H" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w8I" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w8J" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w8K" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU7d" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67w8L" role="2Ry0An">
                       <property role="2Ry0Am" value="commons-codec.jar" />
                     </node>
                   </node>
@@ -657,16 +509,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU7l" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU7m" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU7g" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU7h" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU7i" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU7j" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67w8T" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w8U" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w8O" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w8P" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w8Q" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w8R" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU7k" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67w8S" role="2Ry0An">
                       <property role="2Ry0Am" value="commons-collections4.jar" />
                     </node>
                   </node>
@@ -675,16 +527,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU7s" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU7t" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU7n" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU7o" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU7p" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU7q" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67w90" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w91" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w8V" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w8W" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w8X" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w8Y" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU7r" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67w8Z" role="2Ry0An">
                       <property role="2Ry0Am" value="commons-compress.jar" />
                     </node>
                   </node>
@@ -693,16 +545,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU7z" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU7$" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU7u" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU7v" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU7w" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU7x" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67w97" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w98" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w92" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w93" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w94" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w95" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU7y" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67w96" role="2Ry0An">
                       <property role="2Ry0Am" value="commons-csv.jar" />
                     </node>
                   </node>
@@ -711,16 +563,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU7E" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU7F" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU7_" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU7A" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU7B" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU7C" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67w9e" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w9f" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w99" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w9a" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w9b" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w9c" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU7D" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67w9d" role="2Ry0An">
                       <property role="2Ry0Am" value="commons-io.jar" />
                     </node>
                   </node>
@@ -729,16 +581,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU7L" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU7M" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU7G" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU7H" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU7I" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU7J" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67w9l" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w9m" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w9g" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w9h" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w9i" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w9j" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU7K" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67w9k" role="2Ry0An">
                       <property role="2Ry0Am" value="commons-lang3.jar" />
                     </node>
                   </node>
@@ -747,106 +599,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU6u" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU6v" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU6p" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU6q" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU6r" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU6s" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67w9s" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w9t" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w9n" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w9o" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w9p" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w9q" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU6t" role="2Ry0An">
-                      <property role="2Ry0Am" value="httpclient5.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="46W0yxsiU6_" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU6A" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU6w" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU6x" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU6y" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU6z" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU6$" role="2Ry0An">
-                      <property role="2Ry0Am" value="httpcore5-h2.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="46W0yxsiU6G" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU6H" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU6B" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU6C" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU6D" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU6E" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU6F" role="2Ry0An">
-                      <property role="2Ry0Am" value="httpcore5.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="46W0yxsiU8D" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU8E" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU8$" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU8_" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU8A" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU8B" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU8C" role="2Ry0An">
-                      <property role="2Ry0Am" value="slf4j-api.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="46W0yxsiU6N" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU6O" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU6I" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU6J" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU6K" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU6L" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU6M" role="2Ry0An">
-                      <property role="2Ry0Am" value="slf4j-simple.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="46W0yxsiU7S" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU7T" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU7N" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU7O" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU7P" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU7Q" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU7R" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67w9r" role="2Ry0An">
                       <property role="2Ry0Am" value="error_prone_annotations.jar" />
                     </node>
                   </node>
@@ -855,16 +617,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU7Z" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU80" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU7U" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU7V" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU7W" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU7X" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67w9z" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w9$" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w9u" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w9v" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w9w" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w9x" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU7Y" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67w9y" role="2Ry0An">
                       <property role="2Ry0Am" value="gson.jar" />
                     </node>
                   </node>
@@ -873,16 +635,70 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU86" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU87" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU81" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU82" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU83" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU84" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67w9E" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w9F" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w9_" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w9A" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w9B" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w9C" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU85" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67w9D" role="2Ry0An">
+                      <property role="2Ry0Am" value="httpclient5.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67w9L" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w9M" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w9G" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w9H" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w9I" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w9J" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2uMhTA67w9K" role="2Ry0An">
+                      <property role="2Ry0Am" value="httpcore5-h2.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67w9S" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67w9T" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w9N" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w9O" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w9P" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w9Q" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2uMhTA67w9R" role="2Ry0An">
+                      <property role="2Ry0Am" value="httpcore5.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67w9Z" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67wa0" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67w9U" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67w9V" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67w9W" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67w9X" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2uMhTA67w9Y" role="2Ry0An">
                       <property role="2Ry0Am" value="jakarta.json.jar" />
                     </node>
                   </node>
@@ -891,16 +707,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU8d" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU8e" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU88" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU89" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU8a" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU8b" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67wa6" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67wa7" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67wa1" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67wa2" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67wa3" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67wa4" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU8c" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67wa5" role="2Ry0An">
                       <property role="2Ry0Am" value="jcl-over-slf4j.jar" />
                     </node>
                   </node>
@@ -909,16 +725,142 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU8k" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU8l" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU8f" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU8g" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU8h" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU8i" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67wad" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67wae" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67wa8" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67wa9" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67waa" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67wab" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU8j" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67wac" role="2Ry0An">
+                      <property role="2Ry0Am" value="jena-arq.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wak" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67wal" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67waf" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67wag" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67wah" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67wai" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2uMhTA67waj" role="2Ry0An">
+                      <property role="2Ry0Am" value="jena-base.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67war" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67was" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67wam" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67wan" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67wao" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67wap" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2uMhTA67waq" role="2Ry0An">
+                      <property role="2Ry0Am" value="jena-core.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67way" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67waz" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67wat" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67wau" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67wav" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67waw" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2uMhTA67wax" role="2Ry0An">
+                      <property role="2Ry0Am" value="jena-iri.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67waD" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67waE" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67wa$" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67wa_" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67waA" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67waB" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2uMhTA67waC" role="2Ry0An">
+                      <property role="2Ry0Am" value="jena-querybuilder.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67waK" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67waL" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67waF" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67waG" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67waH" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67waI" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2uMhTA67waJ" role="2Ry0An">
+                      <property role="2Ry0Am" value="jena-rdfconnection.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67waR" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67waS" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67waM" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67waN" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67waO" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67waP" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2uMhTA67waQ" role="2Ry0An">
+                      <property role="2Ry0Am" value="jena-shacl.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67waY" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67waZ" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67waT" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67waU" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67waV" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67waW" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2uMhTA67waX" role="2Ry0An">
                       <property role="2Ry0Am" value="libthrift.jar" />
                     </node>
                   </node>
@@ -927,16 +869,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU8r" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU8s" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU8m" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU8n" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU8o" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU8p" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67wb5" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67wb6" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67wb0" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67wb1" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67wb2" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67wb3" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU8q" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67wb4" role="2Ry0An">
                       <property role="2Ry0Am" value="protobuf-java.jar" />
                     </node>
                   </node>
@@ -945,16 +887,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU8y" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU8z" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU8t" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU8u" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU8v" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU8w" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67wbc" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67wbd" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67wb7" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67wb8" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67wb9" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67wba" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU8x" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67wbb" role="2Ry0An">
                       <property role="2Ry0Am" value="RoaringBitmap.jar" />
                     </node>
                   </node>
@@ -963,22 +905,121 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46W0yxsiU8K" role="3bR37C">
-          <node concept="1BurEX" id="46W0yxsiU8L" role="1SiIV1">
-            <node concept="55IIr" id="46W0yxsiU8F" role="1BurEY">
-              <node concept="2Ry0Ak" id="46W0yxsiU8G" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="46W0yxsiU8H" role="2Ry0An">
-                  <property role="2Ry0Am" value="Turtle.runtime" />
-                  <node concept="2Ry0Ak" id="46W0yxsiU8I" role="2Ry0An">
+        <node concept="1SiIV0" id="2uMhTA67wbj" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67wbk" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67wbe" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67wbf" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67wbg" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67wbh" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="46W0yxsiU8J" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2uMhTA67wbi" role="2Ry0An">
+                      <property role="2Ry0Am" value="slf4j-api.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wbq" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67wbr" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67wbl" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67wbm" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67wbn" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67wbo" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2uMhTA67wbp" role="2Ry0An">
+                      <property role="2Ry0Am" value="slf4j-simple.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wbx" role="3bR37C">
+          <node concept="1BurEX" id="2uMhTA67wby" role="1SiIV1">
+            <node concept="55IIr" id="2uMhTA67wbs" role="1BurEY">
+              <node concept="2Ry0Ak" id="2uMhTA67wbt" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67wbu" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="2uMhTA67wbv" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2uMhTA67wbw" role="2Ry0An">
                       <property role="2Ry0Am" value="titanium-json-ld.jar" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="2uMhTA67w7Y" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="Turtle.parser" />
+        <property role="3LESm3" value="aeba435c-1d30-498a-a895-0c28f7dc9263" />
+        <node concept="55IIr" id="2uMhTA67w81" role="3LF7KH">
+          <node concept="2Ry0Ak" id="2uMhTA67w84" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="2uMhTA67w87" role="2Ry0An">
+              <property role="2Ry0Am" value="Turtle.parser" />
+              <node concept="2Ry0Ak" id="2uMhTA67w8a" role="2Ry0An">
+                <property role="2Ry0Am" value="Turtle.parser.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wbz" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wb$" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wb_" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wbA" role="1SiIV1">
+            <ref role="3bR37D" node="2CHbgKhgN9W" resolve="Turtle" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wbB" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wbC" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1YAozCvot2i" resolve="jetbrains.mps.baseLanguage.regexp" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wbD" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wbE" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="2uMhTA67wbJ" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="2uMhTA67wbK" role="1HemKq">
+            <node concept="55IIr" id="2uMhTA67wbF" role="3LXTmr">
+              <node concept="2Ry0Ak" id="2uMhTA67wbG" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2uMhTA67wbH" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.parser" />
+                  <node concept="2Ry0Ak" id="2uMhTA67wbI" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="2uMhTA67wbL" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wji" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wjj" role="1SiIV1">
+            <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
           </node>
         </node>
       </node>
@@ -1026,11 +1067,6 @@
         <node concept="1SiIV0" id="2CHbgKhgNbK" role="3bR37C">
           <node concept="3bR9La" id="2CHbgKhgNbL" role="1SiIV1">
             <ref role="3bR37D" node="2CHbgKhgN9W" resolve="Turtle" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2CHbgKhgNbM" role="3bR37C">
-          <node concept="3bR9La" id="2CHbgKhgNbN" role="1SiIV1">
-            <ref role="3bR37D" node="2CHbgKhgNa8" resolve="Turtle.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="7t9lQskU2Jl" role="3bR37C">
@@ -1081,6 +1117,11 @@
             <node concept="3qWCbU" id="v_r5au3MtF" role="3LXTna">
               <property role="3qWCbO" value="icons/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wjo" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wjp" role="1SiIV1">
+            <ref role="3bR37D" node="2uMhTA67w7Y" resolve="Turtle.parser" />
           </node>
         </node>
       </node>
@@ -1153,14 +1194,14 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="2ZAgtJQgjQE" role="3bR37C">
-          <node concept="3bR9La" id="2ZAgtJQgjQF" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2CHbgKhgNbz" role="3bR37C">
           <node concept="1Busua" id="2CHbgKhgNb$" role="1SiIV1">
             <ref role="1Busuk" node="2CHbgKhgN9W" resolve="Turtle" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2ZAgtJQgjQE" role="3bR37C">
+          <node concept="3bR9La" id="2ZAgtJQgjQF" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
         <node concept="3rtmxn" id="2lDY4vKlB4$" role="3bR31x">
@@ -1178,11 +1219,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="5N3KvtBLjDH" role="3bR37C">
-          <node concept="3bR9La" id="5N3KvtBLjDI" role="1SiIV1">
-            <ref role="3bR37D" node="2CHbgKhgNa8" resolve="Turtle.runtime" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="dhpOjPSSJ8" role="3bR37C">
           <node concept="3bR9La" id="dhpOjPSSJ9" role="1SiIV1">
             <ref role="3bR37D" node="dhpOjPSSjD" resolve="RML.IO" />
@@ -1191,6 +1227,16 @@
         <node concept="1SiIV0" id="46W0yxscu1M" role="3bR37C">
           <node concept="3bR9La" id="46W0yxscu1N" role="1SiIV1">
             <ref role="3bR37D" node="dhpOjPSRWh" resolve="RML.FNML" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wju" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wjv" role="1SiIV1">
+            <ref role="3bR37D" node="2uMhTA67w7Y" resolve="Turtle.parser" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wjw" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wjx" role="1SiIV1">
+            <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
           </node>
         </node>
       </node>
@@ -1370,9 +1416,14 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1e4IJAnhObj" role="3bR37C">
-          <node concept="3bR9La" id="1e4IJAnhObk" role="1SiIV1">
-            <ref role="3bR37D" node="2CHbgKhgNa8" resolve="Turtle.runtime" />
+        <node concept="1SiIV0" id="2uMhTA67wjJ" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wjK" role="1SiIV1">
+            <ref role="3bR37D" node="2uMhTA67w7Y" resolve="Turtle.parser" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wjL" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wjM" role="1SiIV1">
+            <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
           </node>
         </node>
       </node>
@@ -1389,11 +1440,6 @@
                 <property role="2Ry0Am" value="RML.IO.mpl" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="dhpOjPSSES" role="3bR37C">
-          <node concept="3bR9La" id="dhpOjPSSET" role="1SiIV1">
-            <ref role="3bR37D" node="2CHbgKhgNa8" resolve="Turtle.runtime" />
           </node>
         </node>
         <node concept="1BupzO" id="dhpOjPSSEY" role="3bR31x">
@@ -1464,6 +1510,44 @@
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
           </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wjW" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wjX" role="1SiIV1">
+            <ref role="3bR37D" node="2uMhTA67w7Y" resolve="Turtle.parser" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2uMhTA67wjY" role="3bR37C">
+          <node concept="3bR9La" id="2uMhTA67wjZ" role="1SiIV1">
+            <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
+          </node>
+        </node>
+      </node>
+      <node concept="3LEwk6" id="41VvNyET7u4" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="RML.all" />
+        <property role="3LESm3" value="1273514b-9c90-4335-8e65-dcd833f4c444" />
+        <node concept="55IIr" id="41VvNyET7u7" role="3LF7KH">
+          <node concept="2Ry0Ak" id="41VvNyET7Dv" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="41VvNyET7I4" role="2Ry0An">
+              <property role="2Ry0Am" value="RML.all" />
+              <node concept="2Ry0Ak" id="6wg$J2ldnNS" role="2Ry0An">
+                <property role="2Ry0Am" value="RML.all.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="41VvNyET7S4" role="3LEDUa">
+          <ref role="3LEDTV" node="2CHbgKhgN9W" resolve="Turtle" />
+        </node>
+        <node concept="3LEDTy" id="6wg$J2ldnT6" role="3LEDUa">
+          <ref role="3LEDTV" node="2CHbgKhgNa2" resolve="RML" />
+        </node>
+        <node concept="3LEDTy" id="6wg$J2ldnT7" role="3LEDUa">
+          <ref role="3LEDTV" node="dhpOjPSSjD" resolve="RML.IO" />
+        </node>
+        <node concept="3LEDTy" id="6wg$J2ldnT8" role="3LEDUa">
+          <ref role="3LEDTV" node="dhpOjPSRWh" resolve="RML.FNML" />
         </node>
       </node>
     </node>

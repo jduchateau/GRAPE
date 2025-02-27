@@ -12,7 +12,7 @@
   <imports>
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="t6dh" ref="aeba435c-1d30-498a-a895-0c28f7dc9263/java:org.apache.jena.rdf.model(Turtle.runtime/)" />
+    <import index="t6dh" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.rdf.model(Turtle.external/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1836,14 +1836,14 @@
       <node concept="3uibUv" id="7cYw35ipcG0" role="1tU5fm">
         <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
       </node>
-      <node concept="2YIFZM" id="7cYw35ipdJ6" role="33vP2m">
-        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+      <node concept="2YIFZM" id="1Pyl9R4rXX$" role="33vP2m">
         <ref role="37wK5l" to="t6dh:~ResourceFactory.createResource(java.lang.String)" resolve="createResource" />
-        <node concept="3cpWs3" id="7cYw35ipdJ7" role="37wK5m">
-          <node concept="37vLTw" id="7cYw35ipdJ8" role="3uHU7B">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <node concept="3cpWs3" id="1Pyl9R4rXX_" role="37wK5m">
+          <node concept="37vLTw" id="1Pyl9R4rXXA" role="3uHU7B">
             <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
           </node>
-          <node concept="Xl_RD" id="7cYw35ipdJ9" role="3uHU7w">
+          <node concept="Xl_RD" id="1Pyl9R4rXXB" role="3uHU7w">
             <property role="Xl_RC" value="noEmpty" />
           </node>
         </node>

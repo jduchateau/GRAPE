@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Turtle.runtime" uuid="aeba435c-1d30-498a-a895-0c28f7dc9263" moduleVersion="0">
+<solution name="Turtle.parser" uuid="aeba435c-1d30-498a-a895-0c28f7dc9263" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,52 +7,10 @@
     <modelRoot contentPath="${module}/grammar" type="java_source_stubs">
       <sourceRoot path="${module}/grammar" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="antlr4-runtime.jar" />
-      <sourceRoot path="${module}/lib/jena-base.jar" />
-      <sourceRoot path="${module}/lib/jena-core.jar" />
-      <sourceRoot path="${module}/lib/jena-arq.jar" />
-      <sourceRoot path="${module}/lib/jena-iri.jar" />
-      <sourceRoot path="${module}/lib/jena-querybuilder.jar" />
-      <sourceRoot path="${module}/lib/jena-rdfconnection.jar" />
-      <sourceRoot path="${module}/lib/jena-shacl.jar" />
-      <sourceRoot path="${module}/lib/burp.jar" />
-      <sourceRoot path="${module}/lib/collection.jar" />
-    </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes" languageLevel="JAVA_10">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/burp.jar" />
-      <library location="${module}/lib/httpclient5.jar" />
-      <library location="${module}/lib/httpcore5-h2.jar" />
-      <library location="${module}/lib/httpcore5.jar" />
-      <library location="${module}/lib/slf4j-simple.jar" />
-      <library location="${module}/lib/jena-shacl.jar" />
-      <library location="${module}/lib/jena-rdfconnection.jar" />
-      <library location="${module}/lib/caffeine.jar" />
-      <library location="${module}/lib/collection.jar" />
-      <library location="${module}/lib/commons-codec.jar" />
-      <library location="${module}/lib/commons-collections4.jar" />
-      <library location="${module}/lib/commons-compress.jar" />
-      <library location="${module}/lib/commons-csv.jar" />
-      <library location="${module}/lib/commons-io.jar" />
-      <library location="${module}/lib/commons-lang3.jar" />
-      <library location="${module}/lib/error_prone_annotations.jar" />
-      <library location="${module}/lib/gson.jar" />
-      <library location="${module}/lib/jakarta.json.jar" />
-      <library location="${module}/lib/jcl-over-slf4j.jar" />
-      <library location="${module}/lib/libthrift.jar" />
-      <library location="${module}/lib/protobuf-java.jar" />
-      <library location="${module}/lib/RoaringBitmap.jar" />
-      <library location="${module}/lib/slf4j-api.jar" />
-      <library location="${module}/lib/titanium-json-ld.jar" />
-      <library location="${module}/lib/jena-querybuilder.jar" />
-      <library location="${module}/lib/jena-arq.jar" />
-      <library location="${module}/lib/jena-base.jar" />
-      <library location="${module}/lib/jena-core.jar" />
-      <library location="${module}/lib/jena-iri.jar" />
-      <library location="${module}/lib/antlr4-runtime.jar" />
       <source location="${module}/grammar" />
     </facet>
   </facets>
@@ -61,6 +19,7 @@
     <dependency reexport="false">bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)</dependency>
     <dependency reexport="false">daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)</dependency>
     <dependency reexport="false">c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)</dependency>
+    <dependency reexport="false">7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -82,7 +41,8 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" version="3" />
-    <module reference="aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.runtime)" version="0" />
+    <module reference="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" version="0" />
+    <module reference="aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.parser)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" version="0" />
     <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />

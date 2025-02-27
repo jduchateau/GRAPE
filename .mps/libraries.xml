@@ -3,10 +3,10 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="dependencies">
+        <entry key="deps">
           <value>
             <Library>
-              <option name="name" value="dependencies" />
+              <option name="name" value="deps" />
               <option name="path" value="$PROJECT_DIR$/build/dependencies" />
             </Library>
           </value>

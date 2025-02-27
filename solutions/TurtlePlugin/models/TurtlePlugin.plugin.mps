@@ -21,7 +21,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="1y92" ref="r:a5c6ffe8-35ab-484e-86a2-877741559e77(Turtle.runtime.astConverter)" />
+    <import index="1y92" ref="r:a5c6ffe8-35ab-484e-86a2-877741559e77(Turtle.parser.astConverter)" />
     <import index="afa5" ref="r:cfccec82-df72-4483-9807-88776b4673ab(jetbrains.mps.ide.make.actions)" />
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
@@ -50,11 +50,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
-    <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
-      <concept id="1239576519914" name="jetbrains.mps.baseLanguage.tuples.structure.NamedTupleComponentAccessOperation" flags="nn" index="2sxana">
-        <reference id="1239576542472" name="component" index="2sxfKC" />
-      </concept>
-    </language>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
         <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
@@ -134,6 +129,9 @@
         <property id="2523873803623706117" name="isMultiline" index="hSjvv" />
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
@@ -1268,8 +1266,8 @@
                                                                     <node concept="2GrUjf" id="3Q3_FC7up8c" role="2Oq$k0">
                                                                       <ref role="2Gs0qQ" node="7G8hLbKwKBL" resolve="tgr" />
                                                                     </node>
-                                                                    <node concept="2sxana" id="3Q3_FC7u_PE" role="2OqNvi">
-                                                                      <ref role="2sxfKC" to="v1em:3Q3_FC7rgyO" resolve="modelName" />
+                                                                    <node concept="2OwXpG" id="2uMhTA61t6j" role="2OqNvi">
+                                                                      <ref role="2Oxat5" to="v1em:1Pyl9R4g$Mp" resolve="modelName" />
                                                                     </node>
                                                                   </node>
                                                                 </node>
@@ -1277,16 +1275,16 @@
                                                                   <node concept="2GrUjf" id="3Q3_FC7tFp3" role="2Oq$k0">
                                                                     <ref role="2Gs0qQ" node="7G8hLbKwKBL" resolve="tgr" />
                                                                   </node>
-                                                                  <node concept="2sxana" id="3Q3_FC7u2VK" role="2OqNvi">
-                                                                    <ref role="2sxfKC" to="v1em:3Q3_FC7rgf4" resolve="content" />
+                                                                  <node concept="2OwXpG" id="2uMhTA61tS1" role="2OqNvi">
+                                                                    <ref role="2Oxat5" to="v1em:1Pyl9R4g$Ge" resolve="content" />
                                                                   </node>
                                                                 </node>
                                                                 <node concept="2OqwBi" id="3Q3_FC7tPt4" role="37wK5m">
                                                                   <node concept="2GrUjf" id="3Q3_FC7tL7N" role="2Oq$k0">
                                                                     <ref role="2Gs0qQ" node="7G8hLbKwKBL" resolve="tgr" />
                                                                   </node>
-                                                                  <node concept="2sxana" id="3Q3_FC7tTus" role="2OqNvi">
-                                                                    <ref role="2sxfKC" to="v1em:3Q3_FC7rgyO" resolve="modelName" />
+                                                                  <node concept="2OwXpG" id="2uMhTA61uPJ" role="2OqNvi">
+                                                                    <ref role="2Oxat5" to="v1em:1Pyl9R4g$Mp" resolve="modelName" />
                                                                   </node>
                                                                 </node>
                                                               </node>
@@ -1306,7 +1304,7 @@
                                                       </node>
                                                       <node concept="UnYns" id="3Q3_FC7stgk" role="2OqNvi">
                                                         <node concept="3uibUv" id="3Q3_FC7sEYt" role="UnYnz">
-                                                          <ref role="3uigEE" to="v1em:3Q3_FC7mVz4" resolve="RdfTextGenOutcomeResource" />
+                                                          <ref role="3uigEE" to="v1em:1Pyl9R4g$iz" resolve="RdfTextGenOutcomeResource" />
                                                         </node>
                                                       </node>
                                                     </node>
