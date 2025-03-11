@@ -1103,6 +1103,12 @@
     <node concept="3EZMnI" id="2z4QKYxXxh$" role="2wV5jI">
       <node concept="3F0ifn" id="2z4QKYxXxhC" role="3EZMnx">
         <property role="3F0ifm" value="@" />
+        <node concept="11L4FC" id="2lbwIBJdXU_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="2lbwIBJdXUB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0A7n" id="2z4QKYxXxhF" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1131,15 +1137,15 @@
         <node concept="11L4FC" id="2L7xBeiNoQE" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="11LMrY" id="2lbwIBJdXUz" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="2iRfu4" id="2z4QKYxXE8r" role="2iSdaV" />
       <node concept="3F1sOY" id="2z4QKYxXE8D" role="3EZMnx">
         <property role="39s7Ar" value="true" />
         <property role="1$x2rV" value="&lt;lang or type&gt;" />
         <ref role="1NtTu8" to="16h3:2z4QKYxXxho" resolve="annotation" />
-        <node concept="A1WHr" id="1p4Xe90rMcp" role="3vIgyS">
-          <ref role="2ZyFGn" to="16h3:2z4QKYxXxhp" resolve="RdfLiteralAnnotation" />
-        </node>
       </node>
     </node>
     <node concept="3EZMnI" id="1p4Xe90s$Oc" role="6VMZX">

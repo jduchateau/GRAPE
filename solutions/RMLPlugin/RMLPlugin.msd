@@ -18,6 +18,8 @@
     <dependency reexport="false">22250116-183c-4e90-8450-b6a13dd8998b(jetbrains.mps.baseLanguage.execution.util)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
+    <dependency reexport="false">7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)</dependency>
+    <dependency reexport="false">d9e6c08a-a7b1-4ef6-8c54-57d93e9e0ce0(jetbrains.mps.tool.common)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -49,10 +51,12 @@
     <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="5" />
     <module reference="fd17b12e-3cbf-4173-af34-d391c94a7760(RMLPlugin)" version="0" />
     <module reference="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" version="3" />
+    <module reference="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" version="0" />
     <module reference="22250116-183c-4e90-8450-b6a13dd8998b(jetbrains.mps.baseLanguage.execution.util)" version="0" />
     <module reference="933a68f9-aab6-401b-b5c5-5ca7783dce5f(jetbrains.mps.execution.configurations.pluginSolution)" version="0" />
     <module reference="04b376d5-fc16-403b-a344-c68b30193c6a(jetbrains.mps.execution.library)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+    <module reference="d9e6c08a-a7b1-4ef6-8c54-57d93e9e0ce0(jetbrains.mps.tool.common)" version="0" />
   </dependencyVersions>
 </solution>
 
