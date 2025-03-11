@@ -1,0 +1,63 @@
+@prefix rml: <http://w3id.org/rml/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix erd: <http://erd.org/> .
+
+erd:Employee  a rdfs:Class
+.
+
+erd:firstName  a rdf:Property ;
+   rdfs:domain erd:Employee ;
+   rdfs:range xsd:string
+.
+
+erd:lastName  a rdf:Property ;
+   rdfs:domain erd:Employee ;
+   rdfs:range xsd:string
+.
+
+
+
+erd:Project  a rdfs:Class
+.
+
+erd:name  a rdf:Property ;
+   rdfs:domain erd:Project ;
+   rdfs:range xsd:string
+.
+
+erd:startDate  a rdf:Property ;
+   rdfs:domain erd:Project ;
+   rdfs:range xsd:date
+.
+
+erd:endDate  a rdf:Property ;
+   rdfs:domain erd:Project ;
+   rdfs:range xsd:date
+.
+
+erd:managedBy  a rdf:Property ;
+   rdfs:domain erd:Project ;
+   rdfs:range erd:Employee
+.
+
+
+
+erd:Task  a rdfs:Class
+.
+
+erd:description  a rdf:Property ;
+   rdfs:domain erd:Task ;
+   rdfs:range xsd:string
+.
+
+erd:assignedTo  a rdf:Property ;
+   rdfs:domain erd:Task ;
+   rdfs:range erd:Employee
+.
+
+erd:partOf  a rdfs:Class ;
+   rdfs:domain erd:Task ;
+   rdfs:range erd:Project
+.
