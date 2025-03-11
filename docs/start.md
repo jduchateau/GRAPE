@@ -96,7 +96,7 @@ And add the `rml` prefix to the top of the document.
 On an empty line, insert a new `TriplesMap`, then fill the details:
 
 - **Name**: Give it a name, such as `<Person>`.
-- **Logical Source**: Use completion ++ctrl+space++ to fill the from field with an inline logical source and an inline source. 
+- **Logical Source**: Use completion ++ctrl+space++ to fill the from field with an inline logical source and an inline source.
   Set the **path** to `people.json`,
   the **root directory** to the `current working directory`,
   the **referenceFormulation** to `rml:JSONPath` (you will need to define the `rml` prefix if not already done).,
@@ -113,7 +113,7 @@ On an empty line, insert a new `TriplesMap`, then fill the details:
 
 <div style="padding:88.02% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1054175241?h=bd68d5747f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Getting Started 2: Person Map"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-#### Running RML mappings 
+#### Running RML mappings
 
 Once done, we can check the mappings by running them in an RML Engin.
 
@@ -160,7 +160,7 @@ The link will be done with child reference `movie` and parent reference `slug`.
     You can reuse the same logical source in multiple triples maps, this also applies to Sources.
 
     On an empty line, create a new **Named Logical Source**, or with your cursor on an inline Logical SSource, press ++alt+enter++ and select **Convert to Named Logical Source**.
-    
+
     Then you can reference the named logical source in the triples map.
 
 
@@ -204,7 +204,7 @@ We will:
 
 In your new module, ensure we have all the languages: Turtle, RML, RML.IO, RML.FNML.
 
-In the logical view, right-click on the module and select **![](assets/images/icon_turtle_import.png) Import a Turtle File**, then select the `.ttl` file to be imported. The document should appear in the selected module. 
+In the logical view, right-click on the module and select **![](assets/images/icon_turtle_import.png) Import a Turtle File**, then select the `.ttl` file to be imported. The document should appear in the selected module.
 
 To create the RML structures, the editor also needs the RDF Graph version of the turtle document, therefore, use ![](assets/images/icon_refresh_rdf.png) **Reload RDF Graph** from the logical view or the first line of your document.
 
@@ -225,7 +225,8 @@ and you have even applied functions to transform data during the mapping process
 **How did that go?**
 We would be very grateful if you leave us some [feedback by email](https://www.uliege.be/cms/c_9054334/fr?uid=u190657){ target="_blank" } or with the form bellow.
 
-TODO Feedback Form :heart:
+<iframe data-tally-src="https://tally.so/embed/wdv2NK?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="862" frameborder="0" marginheight="0" marginwidth="0" title="GRAPE: Getting Started Survey"></iframe>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
 
 What to do next? There are several paths you can follow:
 
