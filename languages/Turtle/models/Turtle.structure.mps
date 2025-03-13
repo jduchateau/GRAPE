@@ -601,5 +601,10 @@
     <property role="TrG5h" value="EmptyStatment" />
     <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statment" />
   </node>
+  <node concept="PlHQZ" id="2Lc747KQCH1">
+    <property role="EcuMT" value="3191957305438145345" />
+    <property role="3GE5qa" value="Literal" />
+    <property role="TrG5h" value="RdfLiteralContext" />
+  </node>
 </model>
 

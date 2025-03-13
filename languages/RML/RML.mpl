@@ -67,6 +67,7 @@
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">4d376ef7-201b-4497-bbe5-6b936a6ab3d7(RML.FNML)</dependency>
     <dependency reexport="false">7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)</dependency>
+    <dependency reexport="false">5dae8159-ab99-46bb-a40d-0cee30ee7018(jetbrains.mps.lang.constraints.rules.kinds)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:e359e0a2-368a-4c40-ae2a-e5a09f9cfd58:de.itemis.mps.editor.math.notations" version="0" />
@@ -115,6 +116,7 @@
     <module reference="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" version="3" />
     <module reference="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" version="0" />
     <module reference="aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.parser)" version="0" />
+    <module reference="5dae8159-ab99-46bb-a40d-0cee30ee7018(jetbrains.mps.lang.constraints.rules.kinds)" version="1" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>
