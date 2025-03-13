@@ -81,6 +81,7 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -2324,6 +2325,67 @@
       </node>
       <node concept="17QB3L" id="7NlO_H3i9nO" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="2Lc747KQyGS" role="13h7CS">
+      <property role="TrG5h" value="shouldOfferAnnotation" />
+      <node concept="3Tm1VV" id="2Lc747KQyGT" role="1B3o_S" />
+      <node concept="10P_77" id="2Lc747KQ_hI" role="3clF45" />
+      <node concept="3clFbS" id="2Lc747KQyGV" role="3clF47">
+        <node concept="3cpWs8" id="2Lc747KQDbg" role="3cqZAp">
+          <node concept="3cpWsn" id="2Lc747KQDbh" role="3cpWs9">
+            <property role="TrG5h" value="context" />
+            <node concept="3Tqbb2" id="2Lc747KQDaK" role="1tU5fm">
+              <ref role="ehGHo" to="16h3:2Lc747KQCH1" resolve="RdfLiteralContext" />
+            </node>
+            <node concept="2OqwBi" id="2Lc747KQDbi" role="33vP2m">
+              <node concept="13iPFW" id="2Lc747KQDbj" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="2Lc747KQDbk" role="2OqNvi">
+                <node concept="1xMEDy" id="2Lc747KQDbl" role="1xVPHs">
+                  <node concept="chp4Y" id="2Lc747KQDbm" role="ri$Ld">
+                    <ref role="cht4Q" to="16h3:2Lc747KQCH1" resolve="RdfLiteralContext" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Lc747KQBhg" role="3cqZAp">
+          <node concept="3K4zz7" id="2Lc747KQGfF" role="3clFbG">
+            <node concept="2OqwBi" id="2Lc747KQGzL" role="3K4E3e">
+              <node concept="37vLTw" id="2Lc747KQGn6" role="2Oq$k0">
+                <ref role="3cqZAo" node="2Lc747KQDbh" resolve="context" />
+              </node>
+              <node concept="2qgKlT" id="2Lc747KQGHn" role="2OqNvi">
+                <ref role="37wK5l" node="2Lc747KQCL2" resolve="shouldOfferAnnotation" />
+              </node>
+            </node>
+            <node concept="3clFbT" id="2Lc747KQGOT" role="3K4GZi">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="2Lc747KQDpS" role="3K4Cdx">
+              <node concept="37vLTw" id="2Lc747KQDbn" role="2Oq$k0">
+                <ref role="3cqZAo" node="2Lc747KQDbh" resolve="context" />
+              </node>
+              <node concept="3x8VRR" id="2Lc747KQDHy" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="2Lc747KQBe8" role="lGtFl">
+        <node concept="TZ5HA" id="2Lc747KQBe9" role="TZ5H$">
+          <node concept="1dT_AC" id="2Lc747KQBea" role="1dT_Ay">
+            <property role="1dT_AB" value="Whether this RdfLiteral should display the annotation invitation in the editor when it is empty." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2Lc747KQBes" role="TZ5H$">
+          <node concept="1dT_AC" id="2Lc747KQBet" role="1dT_Ay">
+            <property role="1dT_AB" value="Note: Annotation is always available in the inspector." />
+          </node>
+        </node>
+        <node concept="x79VA" id="2Lc747KQBeb" role="3nqlJM">
+          <property role="x79VB" value="displays invitation annotation in editor" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="55UoUlY1IWm">
     <ref role="13h7C2" to="16h3:2z4QKYxW8U0" resolve="Iri" />
@@ -2840,6 +2902,21 @@
     </node>
     <node concept="13hLZK" id="FW04twQCPv" role="13h7CW">
       <node concept="3clFbS" id="FW04twQCPw" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2Lc747KQCH2">
+    <property role="3GE5qa" value="Literal" />
+    <ref role="13h7C2" to="16h3:2Lc747KQCH1" resolve="RdfLiteralContext" />
+    <node concept="13i0hz" id="2Lc747KQCL2" role="13h7CS">
+      <property role="TrG5h" value="shouldOfferAnnotation" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="2Lc747KQCL3" role="1B3o_S" />
+      <node concept="10P_77" id="2Lc747KQCL4" role="3clF45" />
+      <node concept="3clFbS" id="2Lc747KQCL5" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="2Lc747KQCH3" role="13h7CW">
+      <node concept="3clFbS" id="2Lc747KQCH4" role="2VODD2" />
     </node>
   </node>
 </model>

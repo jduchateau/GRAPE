@@ -174,6 +174,7 @@
     <property role="EcuMT" value="6099872835424795707" />
     <property role="TrG5h" value="TemplateExpr" />
     <property role="34LRSv" value="template" />
+    <property role="3GE5qa" value="Expression" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5iB6wpUzbKX" role="PzmwI">
       <ref role="PrY4T" node="5iB6wpUzbKt" resolve="Expression" />
@@ -303,6 +304,9 @@
     <property role="EcuMT" value="8169920669493031446" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="5tSQ8xWM0b5" resolve="ExpressionMap" />
+    <node concept="PrWs8" id="2Lc747KQO8D" role="PzmwI">
+      <ref role="PrY4T" to="16h3:2Lc747KQCH1" resolve="RdfLiteralContext" />
+    </node>
   </node>
   <node concept="1TIwiD" id="75xoT0kgf8o">
     <property role="EcuMT" value="8169920669493031448" />

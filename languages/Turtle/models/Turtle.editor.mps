@@ -242,6 +242,7 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -452,6 +453,7 @@
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -1146,6 +1148,29 @@
         <property role="39s7Ar" value="true" />
         <property role="1$x2rV" value="&lt;lang or type&gt;" />
         <ref role="1NtTu8" to="16h3:2z4QKYxXxho" resolve="annotation" />
+        <node concept="pkWqt" id="2Lc747KQGVP" role="pqm2j">
+          <node concept="3clFbS" id="2Lc747KQGVQ" role="2VODD2">
+            <node concept="3clFbF" id="2Lc747KQHX0" role="3cqZAp">
+              <node concept="22lmx$" id="2Lc747KQLvs" role="3clFbG">
+                <node concept="2OqwBi" id="2Lc747KQM8h" role="3uHU7w">
+                  <node concept="pncrf" id="2Lc747KQLw$" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="2Lc747KQNJQ" role="2OqNvi">
+                    <ref role="37wK5l" to="4g9:2Lc747KQyGS" resolve="shouldOfferAnnotation" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="2Lc747KQJrs" role="3uHU7B">
+                  <node concept="2OqwBi" id="2Lc747KQIpL" role="2Oq$k0">
+                    <node concept="pncrf" id="2Lc747KQHWZ" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2Lc747KQJey" role="2OqNvi">
+                      <ref role="3Tt5mk" to="16h3:2z4QKYxXxho" resolve="annotation" />
+                    </node>
+                  </node>
+                  <node concept="3x8VRR" id="2Lc747KQJTO" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3EZMnI" id="1p4Xe90s$Oc" role="6VMZX">
