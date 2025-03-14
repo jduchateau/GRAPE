@@ -25,7 +25,7 @@ plugins {
 
 dependencies {
     mps("com.jetbrains:mps:2024.1.+")
-    generation("de.itemis.mps:extensions:2024.1.3072.+")
+    //generation("de.itemis.mps:extensions:2024.1.3072.+")
 }
 
 tasks.named<Wrapper>("wrapper") {
@@ -90,31 +90,31 @@ tasks {
                 )
             }
 
-            val updatePluginsFile = file("updatePlugins.xml")
-            updatePluginsFile.writeText(updatePluginsFile.readText().replace("versionNumber", getLanguageVersion()))
+            // val updatePluginsFile = file("updatePlugins.xml")
+            // updatePluginsFile.writeText(updatePluginsFile.readText().replace("versionNumber", getLanguageVersion()))
 
-            exec {
-                commandLine(
-                    "curl", "--header", "PRIVATE-TOKEN: $privateToken",
-                    "--upload-file", "updatePlugins.xml",
-                    "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/0.1.0/updatePlugins.xml"
-                )
-            }
+            // exec {
+            //     commandLine(
+            //         "curl", "--header", "PRIVATE-TOKEN: $privateToken",
+            //         "--upload-file", "updatePlugins.xml",
+            //         "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/0.1.0/updatePlugins.xml"
+            //     )
+            // }
         }
     }
 
-    register<UpdateXmlTask>("updateLocalPluginXml") {
-        updateFile.set(file("updatePlugins.xml"))
-        downloadUrl.set("$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/0.1.0/GrapePlugin.zip")
-        pluginName.set("GRAPE: Turtle and RML Editor for MPS")
-        pluginId.set("be.uliege.jduchateau.grape")
-
-        version.set(getLanguageVersion())
-        // All readme lines except the first one (title)
-        pluginDescription.set(file("Readme.md").readLines().drop(1).joinToString("\n"))
-        // changeNotes.set(file("change-notes.txt").readText())
-        sinceBuild.set("241")
-    }
+    //register<UpdateXmlTask>("updateLocalPluginXml") {
+    //    updateFile.set(file("updatePlugins.xml"))
+    //    downloadUrl.set("$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/0.1.0/GrapePlugin.zip")
+    //    pluginName.set("GRAPE: Turtle and RML Editor for MPS")
+    //    pluginId.set("be.uliege.jduchateau.grape")
+    //
+    //    version.set(getLanguageVersion())
+    //    // All readme lines except the first one (title)
+    //    pluginDescription.set(file("Readme.md").readLines().drop(1).joinToString("\n"))
+    //    // changeNotes.set(file("change-notes.txt").readText())
+    //    sinceBuild.set("241")
+    //}
 }
 
 fun getLanguageVersion(): String {

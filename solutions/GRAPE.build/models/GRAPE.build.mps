@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -68,9 +67,6 @@
       </concept>
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
-      </concept>
-      <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
-        <reference id="5610619299013057365" name="target" index="3ygNvj" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
       <concept id="5248329904287794596" name="jetbrains.mps.build.structure.BuildInputFiles" flags="ng" index="3LXTmp">
@@ -193,20 +189,6 @@
         <ref role="398BVh" node="2CHbgKhgN9N" resolve="mps_home" />
       </node>
     </node>
-    <node concept="2sgV4H" id="2$xa9LRKGH7" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
-      <node concept="55IIr" id="2$xa9LRKGJq" role="2JcizS">
-        <node concept="2Ry0Ak" id="2$xa9LRKGLI" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="2$xa9LRKGLL" role="2Ry0An">
-            <property role="2Ry0Am" value="dependencies" />
-            <node concept="2Ry0Ak" id="2$xa9LRKGLO" role="2Ry0An">
-              <property role="2Ry0Am" value="de.itemis.mps.extensions" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1l3spV" id="2CHbgKhgNat" role="1l3spN">
       <node concept="3981dG" id="2CHbgKhgNau" role="39821P">
         <node concept="3_J27D" id="2CHbgKhgNav" role="Nbhlr">
@@ -217,12 +199,6 @@
         <node concept="m$_wl" id="2CHbgKhgNax" role="39821P">
           <ref role="m_rDy" node="2CHbgKhgNag" resolve="GRAPE" />
           <node concept="pUk6x" id="2CHbgKhgNay" role="pUk7w" />
-          <node concept="3ygNvl" id="5YpRw0YfTqX" role="39821P">
-            <ref role="3ygNvj" to="90a9:2Xjt3l57cXL" />
-          </node>
-          <node concept="3ygNvl" id="1IIGwo$6phv" role="39821P">
-            <ref role="3ygNvj" to="90a9:2Xjt3l57guk" />
-          </node>
           <node concept="398223" id="2uMhTA67w$9" role="39821P">
             <node concept="2HvfSZ" id="2uMhTA67wCL" role="39821P">
               <node concept="55IIr" id="2uMhTA67wCN" role="2HvfZ0">
@@ -1229,11 +1205,6 @@
             <ref role="3bR37D" node="dhpOjPSRWh" resolve="RML.FNML" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2uMhTA67wju" role="3bR37C">
-          <node concept="3bR9La" id="2uMhTA67wjv" role="1SiIV1">
-            <ref role="3bR37D" node="2uMhTA67w7Y" resolve="Turtle.parser" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2uMhTA67wjw" role="3bR37C">
           <node concept="3bR9La" id="2uMhTA67wjx" role="1SiIV1">
             <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
@@ -1416,11 +1387,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="2uMhTA67wjJ" role="3bR37C">
-          <node concept="3bR9La" id="2uMhTA67wjK" role="1SiIV1">
-            <ref role="3bR37D" node="2uMhTA67w7Y" resolve="Turtle.parser" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2uMhTA67wjL" role="3bR37C">
           <node concept="3bR9La" id="2uMhTA67wjM" role="1SiIV1">
             <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
@@ -1509,11 +1475,6 @@
             <node concept="3qWCbU" id="7t9lQskU2R2" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2uMhTA67wjW" role="3bR37C">
-          <node concept="3bR9La" id="2uMhTA67wjX" role="1SiIV1">
-            <ref role="3bR37D" node="2uMhTA67w7Y" resolve="Turtle.parser" />
           </node>
         </node>
         <node concept="1SiIV0" id="2uMhTA67wjY" role="3bR37C">

@@ -58,7 +58,6 @@
     </generator>
   </generators>
   <dependencies>
-    <dependency reexport="false">aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.parser)</dependency>
     <dependency reexport="false">7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)</dependency>
   </dependencies>
   <languageVersions>
@@ -106,7 +105,6 @@
     <module reference="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" version="0" />
     <module reference="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" version="3" />
     <module reference="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" version="0" />
-    <module reference="aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.parser)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>
