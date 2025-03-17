@@ -5,7 +5,6 @@
     <use id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle" version="0" />
     <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="1" />
     <use id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO" version="0" />
-    <use id="4d376ef7-201b-4497-bbe5-6b936a6ab3d7" name="RML.FNML" version="0" />
   </languages>
   <imports />
   <registry>
@@ -22,7 +21,6 @@
       </concept>
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
         <property id="8013925443727419326" name="disableVocabularyDownload" index="ISk$5" />
-        <property id="5867233166325549765" name="vocabulary" index="34lheZ" />
         <child id="7868724541386564408" name="namespace" index="3pzv1Z" />
       </concept>
       <concept id="2937713717140295301" name="Turtle.structure.PrefixedName" flags="ng" index="29d5ma">
@@ -41,9 +39,6 @@
         <child id="2937713717140306508" name="object" index="29d653" />
         <child id="2937713717140306507" name="verb" index="29d654" />
       </concept>
-      <concept id="2153971712317369463" name="Turtle.structure.SingleStatmentComment" flags="ng" index="H3HQF">
-        <child id="2153971712317370589" name="line" index="H3G41" />
-      </concept>
       <concept id="1285627428968645135" name="Turtle.structure.RessourceIdentifierReference" flags="ng" index="3oYVlq">
         <reference id="1285627428968645137" name="ref" index="3oYVl4" />
       </concept>
@@ -56,7 +51,6 @@
       <concept id="5068821615757897735" name="RML.IO.structure.WithSourceDef" flags="ngI" index="riy9w">
         <child id="791507941088259715" name="source" index="1FyQV4" />
       </concept>
-      <concept id="6303025759226768837" name="RML.IO.structure.LogicalSourceNamedDef" flags="ng" index="FCvld" />
       <concept id="6303025759226929063" name="RML.IO.structure.BaseSource" flags="ng" index="FCOsJ">
         <property id="791507941088379205" name="path" index="1Fxk42" />
         <child id="468146138112354137" name="list" index="2JlPsR" />
@@ -76,14 +70,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
-        <property id="155656958578482949" name="value" index="3oM_SC" />
-      </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
-        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML">
@@ -132,6 +118,7 @@
         <child id="3190666691956656690" name="subjectMap" index="2YYcL1" />
       </concept>
       <concept id="8169920669493031448" name="RML.structure.LanguageMap" flags="ng" index="1_8p68" />
+      <concept id="8169920669493031449" name="RML.structure.DatatypeMap" flags="ng" index="1_8p69" />
     </language>
   </registry>
   <node concept="29aKCY" id="6WRbFH1JKO6">
@@ -580,161 +567,6 @@
     <node concept="1SSSdx" id="6WRbFH1JKPe" role="29aKCU" />
     <node concept="1SSSdx" id="6WRbFH1JKOb" role="29aKCU" />
   </node>
-  <node concept="29aKCY" id="6WRbFH22LT6">
-    <property role="TrG5h" value="erd_mapping" />
-    <node concept="29d5m5" id="5R3My36CI9g" role="29aKCU">
-      <property role="TrG5h" value="foaf" />
-      <node concept="29d1u9" id="5R3My36CI9k" role="3pzv1Z">
-        <property role="29d1u8" value="http://xmlns.com/foaf/0.1/" />
-      </node>
-    </node>
-    <node concept="29d5m5" id="6WRbFH22M1q" role="29aKCU">
-      <property role="TrG5h" value="rml" />
-      <node concept="29d1u9" id="6WRbFH22M1u" role="3pzv1Z">
-        <property role="29d1u8" value="http://w3id.org/rml/" />
-      </node>
-    </node>
-    <node concept="29d5m5" id="6WRbFH22LTZ" role="29aKCU">
-      <property role="TrG5h" value="erd" />
-      <property role="34lheZ" value="https://jakubduchateau.gitlabpages.uliege.be/grape/assets/erd.ttl" />
-      <node concept="29d1u9" id="6WRbFH22LUP" role="3pzv1Z">
-        <property role="29d1u8" value="http://erd.org/" />
-      </node>
-    </node>
-    <node concept="29d5m5" id="4vnaUpJChL6" role="29aKCU">
-      <property role="TrG5h" value="grel" />
-      <node concept="29d1u9" id="4vnaUpJChLa" role="3pzv1Z">
-        <property role="29d1u8" value="http://users.ugent.be/~bjdmeest/function/grel.ttl#" />
-      </node>
-    </node>
-    <node concept="1SSSdx" id="5R3My36CI8Y" role="29aKCU" />
-    <node concept="H3HQF" id="5R3My36CI9A" role="29aKCU">
-      <node concept="1PaTwC" id="5R3My36CI9C" role="H3G41">
-        <node concept="3oM_SD" id="5R3My36CI9I" role="1PaTwD">
-          <property role="3oM_SC" value="&lt;me&gt;" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CI9J" role="1PaTwD">
-          <property role="3oM_SC" value="node" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CI9L" role="1PaTwD">
-          <property role="3oM_SC" value="from" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CI9M" role="1PaTwD">
-          <property role="3oM_SC" value="the" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CI9N" role="1PaTwD">
-          <property role="3oM_SC" value="tutorial" />
-        </node>
-      </node>
-    </node>
-    <node concept="1SSSdx" id="5R3My36CI9Q" role="29aKCU" />
-    <node concept="H3HQF" id="5R3My36CI9U" role="29aKCU">
-      <node concept="1PaTwC" id="5R3My36CI9W" role="H3G41">
-        <node concept="3oM_SD" id="5R3My36CIa0" role="1PaTwD">
-          <property role="3oM_SC" value="Logical" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CIa1" role="1PaTwD">
-          <property role="3oM_SC" value="Sources" />
-        </node>
-      </node>
-    </node>
-    <node concept="H3HQF" id="5R3My36CIa3" role="29aKCU">
-      <node concept="1PaTwC" id="5R3My36CIa5" role="H3G41">
-        <node concept="3oM_SD" id="5R3My36CIa9" role="1PaTwD">
-          <property role="3oM_SC" value="Specify" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CIaa" role="1PaTwD">
-          <property role="3oM_SC" value="where" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CIac" role="1PaTwD">
-          <property role="3oM_SC" value="to" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CIad" role="1PaTwD">
-          <property role="3oM_SC" value="find" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CIae" role="1PaTwD">
-          <property role="3oM_SC" value="the" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CIaf" role="1PaTwD">
-          <property role="3oM_SC" value="files" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CIag" role="1PaTwD">
-          <property role="3oM_SC" value="and" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CIah" role="1PaTwD">
-          <property role="3oM_SC" value="how" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CIai" role="1PaTwD">
-          <property role="3oM_SC" value="to" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CIaj" role="1PaTwD">
-          <property role="3oM_SC" value="iterate" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CIak" role="1PaTwD">
-          <property role="3oM_SC" value="on" />
-        </node>
-        <node concept="3oM_SD" id="5R3My36CIal" role="1PaTwD">
-          <property role="3oM_SC" value="them." />
-        </node>
-      </node>
-    </node>
-    <node concept="FCvld" id="5R3My36CI8_" role="29aKCU">
-      <node concept="2JlPsY" id="5R3My36CI8A" role="FCw5y">
-        <node concept="FCOsJ" id="5R3My36CI8B" role="1FyQV4">
-          <property role="1Fxk42" value="employee.csv" />
-          <node concept="3Y090L" id="5R3My36CI8C" role="2JlPsR" />
-          <node concept="1FyQXr" id="5R3My36CI8D" role="1Fxk40" />
-        </node>
-      </node>
-      <node concept="29d1u9" id="5R3My36CI8F" role="2$AQDL">
-        <property role="29d1u8" value="EmployeeSource" />
-      </node>
-      <node concept="3tqwV1" id="5R3My36CI8G" role="3tqwV9" />
-    </node>
-    <node concept="FCvld" id="5R3My36CI8H" role="29aKCU">
-      <node concept="2JlPsY" id="5R3My36CI8I" role="FCw5y">
-        <node concept="FCOsJ" id="5R3My36CI8J" role="1FyQV4">
-          <property role="1Fxk42" value="project.csv" />
-          <node concept="3Y090L" id="5R3My36CI8K" role="2JlPsR" />
-          <node concept="1FyQXr" id="5R3My36CI8L" role="1Fxk40" />
-        </node>
-      </node>
-      <node concept="29d1u9" id="5R3My36CI8N" role="2$AQDL">
-        <property role="29d1u8" value="ProjectSource" />
-      </node>
-      <node concept="3tqwV1" id="5R3My36CI8W" role="3tqwV9" />
-    </node>
-    <node concept="FCvld" id="5R3My36CI8O" role="29aKCU">
-      <property role="FB9vU" value="$[*]" />
-      <node concept="2JlPsY" id="5R3My36CI8P" role="FCw5y">
-        <node concept="FCOsJ" id="5R3My36CI8Q" role="1FyQV4">
-          <property role="1Fxk42" value="tasks.json" />
-          <node concept="3Y090L" id="5R3My36CI8R" role="2JlPsR" />
-          <node concept="1FyQXr" id="5R3My36CI8S" role="1Fxk40" />
-        </node>
-      </node>
-      <node concept="29d1u9" id="5R3My36CI8U" role="2$AQDL">
-        <property role="29d1u8" value="TasksSource" />
-      </node>
-      <node concept="3tqwV3" id="5R3My36CI8V" role="3tqwV9" />
-    </node>
-    <node concept="1SSSdx" id="1uUgCWYH_nG" role="29aKCU" />
-    <node concept="H3HQF" id="5R3My36CI9w" role="29aKCU">
-      <node concept="1PaTwC" id="5R3My36CI9y" role="H3G41">
-        <node concept="3oM_SD" id="5R3My36CI9z" role="1PaTwD">
-          <property role="3oM_SC" value="Tasks" />
-        </node>
-      </node>
-    </node>
-    <node concept="1SSSdx" id="5R3My36CIap" role="29aKCU" />
-    <node concept="1SSSdx" id="5R3My36CIau" role="29aKCU" />
-    <node concept="1SSSdx" id="5R3My36CIav" role="29aKCU" />
-    <node concept="1SSSdx" id="5R3My36CIaw" role="29aKCU" />
-    <node concept="1SSSdx" id="5R3My36CIax" role="29aKCU" />
-    <node concept="1SSSdx" id="5R3My36CIay" role="29aKCU" />
-    <node concept="1SSSdx" id="5R3My36CIaz" role="29aKCU" />
-    <node concept="1SSSdx" id="5R3My36CIa$" role="29aKCU" />
-  </node>
   <node concept="29aKCY" id="5R3My36CHG5">
     <property role="TrG5h" value="erd_mapping_full" />
     <node concept="29d5m5" id="5R3My36CHG6" role="29aKCU">
@@ -751,9 +583,9 @@
       </node>
     </node>
     <node concept="29d5m5" id="5R3My36CHGa" role="29aKCU">
-      <property role="TrG5h" value="grel" />
-      <node concept="29d1u9" id="5R3My36CHGb" role="3pzv1Z">
-        <property role="29d1u8" value="http://users.ugent.be/~bjdmeest/function/grel.ttl#" />
+      <property role="TrG5h" value="xsd" />
+      <node concept="29d1u9" id="2Lc747KPwoL" role="3pzv1Z">
+        <property role="29d1u8" value="http://www.w3.org/2001/XMLSchema#" />
       </node>
     </node>
     <node concept="1SSSdx" id="5R3My36CHGc" role="29aKCU" />
@@ -841,6 +673,14 @@
           <node concept="IaUoZ" id="5R3My36CHGL" role="FGdDe">
             <property role="FJGrp" value="start_date" />
           </node>
+          <node concept="1_8p69" id="2Lc747KPwoG" role="1AMlW3">
+            <node concept="IaUoN" id="2Lc747KPwoI" role="FGdDe">
+              <node concept="29d5ma" id="2Lc747KPwoM" role="FJIaS">
+                <property role="29d1ub" value="date" />
+                <ref role="29d1uc" node="5R3My36CHGa" resolve="xsd" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="Ib$Ef" id="5R3My36CHGM" role="Ib$Ea">
@@ -855,6 +695,14 @@
         <node concept="FHrlk" id="5R3My36CHGQ" role="FHrli">
           <node concept="IaUoZ" id="5R3My36CHGR" role="FGdDe">
             <property role="FJGrp" value="end_date" />
+          </node>
+          <node concept="1_8p69" id="2Lc747KPwoO" role="1AMlW3">
+            <node concept="IaUoN" id="2Lc747KPwoQ" role="FGdDe">
+              <node concept="29d5ma" id="2Lc747KPwoT" role="FJIaS">
+                <property role="29d1ub" value="date" />
+                <ref role="29d1uc" node="5R3My36CHGa" resolve="xsd" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -919,7 +767,7 @@
         </node>
         <node concept="FHrlk" id="5R3My36CHHi" role="FHrli">
           <node concept="IaUoZ" id="5R3My36CHHj" role="FGdDe">
-            <property role="FJGrp" value="description-en" />
+            <property role="FJGrp" value="decription-en" />
           </node>
           <node concept="FGdDp" id="5R3My36CHHk" role="FGdD2" />
           <node concept="1_8p68" id="5R3My36CHHl" role="1AMlW3">

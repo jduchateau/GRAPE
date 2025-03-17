@@ -906,19 +906,6 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-RML.IO-models" prefix="module/models" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-RML.IO-generator-templates" prefix="module/generator/templates" />
     </jar>
-    <mkdir dir="${build.tmp}/default/RML.all.jar" />
-    <mkdir dir="${build.tmp}/default/RML.all.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/RML.all.jar/META-INF/module.xml">
-      <module namespace="RML.all" type="devkit" uuid="1273514b-9c90-4335-8e65-dcd833f4c444">
-        <dependencies />
-        <uses />
-        <sources jar="." descriptor="RML.all.devkit" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/RML.all.jar" duplicate="preserve">
-      <zipfileset file="${basedir}/devkits/RML.all/RML.all.devkit" prefix="module" />
-      <fileset dir="${build.tmp}/default/RML.all.jar" />
-    </jar>
     <zip destfile="${build.layout}/GrapePlugin.zip">
       <zipfileset dir="${basedir}/solutions/Turtle.parser/grammar" prefix="GRAPE/grammar" />
       <zipfileset dir="${basedir}/solutions/Turtle.external/lib" prefix="GRAPE/lib" />
@@ -970,7 +957,6 @@
         <module file="${basedir}/languages/RML/RML.mpl" />
         <module file="${basedir}/languages/RML.FNML/RML.FNML.mpl" />
         <module file="${basedir}/languages/RML.IO/RML.IO.mpl" />
-        <module file="${basedir}/devkits/RML.all/RML.all.devkit" />
         <module file="${basedir}/solutions/RMLPlugin/RMLPlugin.msd" />
         <module file="${basedir}/languages/Turtle/Turtle.mpl" />
         <module file="${basedir}/solutions/Turtle.external/Turtle.external.msd" />

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/devkits/RML.all/RML.all.devkit" folder="RML" />
       <modulePath path="$PROJECT_DIR$/languages/RML.FNML/RML.FNML.mpl" folder="RML" />
       <modulePath path="$PROJECT_DIR$/languages/RML.IO/RML.IO.mpl" folder="RML" />
       <modulePath path="$PROJECT_DIR$/languages/RML/RML.mpl" folder="RML" />
