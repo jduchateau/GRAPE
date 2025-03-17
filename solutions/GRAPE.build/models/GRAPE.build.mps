@@ -149,12 +149,6 @@
         <child id="3189788309731917348" name="runtime" index="1E1XAP" />
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
-      <concept id="322010710375794190" name="jetbrains.mps.build.mps.structure.BuildMps_DevKit" flags="ng" index="3LEwk6">
-        <child id="322010710375832962" name="exports" index="3LEDUa" />
-      </concept>
-      <concept id="322010710375832938" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportLanguage" flags="ng" index="3LEDTy">
-        <reference id="322010710375832947" name="language" index="3LEDTV" />
-      </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
@@ -1481,34 +1475,6 @@
           <node concept="3bR9La" id="2uMhTA67wjZ" role="1SiIV1">
             <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
           </node>
-        </node>
-      </node>
-      <node concept="3LEwk6" id="41VvNyET7u4" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="RML.all" />
-        <property role="3LESm3" value="1273514b-9c90-4335-8e65-dcd833f4c444" />
-        <node concept="55IIr" id="41VvNyET7u7" role="3LF7KH">
-          <node concept="2Ry0Ak" id="41VvNyET7Dv" role="iGT6I">
-            <property role="2Ry0Am" value="devkits" />
-            <node concept="2Ry0Ak" id="41VvNyET7I4" role="2Ry0An">
-              <property role="2Ry0Am" value="RML.all" />
-              <node concept="2Ry0Ak" id="6wg$J2ldnNS" role="2Ry0An">
-                <property role="2Ry0Am" value="RML.all.devkit" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3LEDTy" id="41VvNyET7S4" role="3LEDUa">
-          <ref role="3LEDTV" node="2CHbgKhgN9W" resolve="Turtle" />
-        </node>
-        <node concept="3LEDTy" id="6wg$J2ldnT6" role="3LEDUa">
-          <ref role="3LEDTV" node="2CHbgKhgNa2" resolve="RML" />
-        </node>
-        <node concept="3LEDTy" id="6wg$J2ldnT7" role="3LEDUa">
-          <ref role="3LEDTV" node="dhpOjPSSjD" resolve="RML.IO" />
-        </node>
-        <node concept="3LEDTy" id="6wg$J2ldnT8" role="3LEDUa">
-          <ref role="3LEDTV" node="dhpOjPSRWh" resolve="RML.FNML" />
         </node>
       </node>
     </node>
