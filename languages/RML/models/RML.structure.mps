@@ -19,6 +19,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -57,6 +58,7 @@
   <node concept="1TIwiD" id="2L7xBeiJE45">
     <property role="EcuMT" value="3190666691956613381" />
     <property role="TrG5h" value="TriplesMap" />
+    <property role="R4oN_" value="Map data to triples" />
     <ref role="1TJDcQ" node="25MWlU63704" resolve="NamedDefintionTriples" />
     <node concept="1TJgyj" id="5iB6wpUzbK2" role="1TKVEi">
       <property role="IQ2ns" value="6099872835424795650" />
