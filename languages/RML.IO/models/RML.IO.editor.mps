@@ -62,7 +62,6 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
         <child id="1223387335081" name="query" index="3n$kyP" />
       </concept>
-      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ngI" index="2Z_bC8">
         <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
@@ -73,6 +72,7 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
@@ -636,8 +636,18 @@
         <node concept="1sVBvm" id="7Y6GWuSSMhy" role="1sWHZn">
           <node concept="3F1sOY" id="7Y6GWuSSMhA" role="2wV5jI">
             <ref role="1NtTu8" to="ys6r:25MWlU5UpGJ" resolve="identifier" />
-            <node concept="VPxyj" id="75xoT0k5kpm" role="3F10Kt" />
+            <node concept="xShMh" id="5ay_xxAw5Mq" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
           </node>
+        </node>
+        <node concept="xShMh" id="5ay_xxAw5Mo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="35HoNQ" id="5ay_xxAvQwS" role="3EZMnx">
+        <node concept="11L4FC" id="5ay_xxAwjUU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>

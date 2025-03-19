@@ -51,6 +51,10 @@
       <concept id="5068821615757897735" name="RML.IO.structure.WithSourceDef" flags="ngI" index="riy9w">
         <child id="791507941088259715" name="source" index="1FyQV4" />
       </concept>
+      <concept id="6303025759226768837" name="RML.IO.structure.LogicalSourceNamedDef" flags="ng" index="FCvld" />
+      <concept id="6303025759226768838" name="RML.IO.structure.LogicalSourceReference" flags="ng" index="FCvle">
+        <reference id="6303025759226768839" name="ref" index="FCvlf" />
+      </concept>
       <concept id="6303025759226929063" name="RML.IO.structure.BaseSource" flags="ng" index="FCOsJ">
         <property id="791507941088379205" name="path" index="1Fxk42" />
         <child id="468146138112354137" name="list" index="2JlPsR" />
@@ -64,7 +68,6 @@
       <concept id="468146138112354128" name="RML.IO.structure.SourceInlineDef" flags="ng" index="2JlPsY" />
       <concept id="6127414803068812685" name="RML.IO.structure.ReferenceFormulationCSV" flags="ng" index="3tqwV1" />
       <concept id="6127414803068812687" name="RML.IO.structure.ReferenceFormulationJSONPath" flags="ng" index="3tqwV3" />
-      <concept id="8169920669489714720" name="RML.IO.structure.LogicalSourceInlineDef" flags="ng" index="1_rNmK" />
       <concept id="791507941088259868" name="RML.IO.structure.CurrentWorkingDirectoryRoot" flags="ng" index="1FyQXr" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -589,6 +592,47 @@
       </node>
     </node>
     <node concept="1SSSdx" id="5R3My36CHGc" role="29aKCU" />
+    <node concept="FCvld" id="5ay_xxAvQwr" role="29aKCU">
+      <node concept="3tqwV1" id="5ay_xxAvQws" role="3tqwV9" />
+      <node concept="2JlPsY" id="5ay_xxAvQwt" role="FCw5y">
+        <node concept="FCOsJ" id="5ay_xxAvQwu" role="1FyQV4">
+          <property role="1Fxk42" value="employee.csv" />
+          <node concept="3Y090L" id="5ay_xxAvQwv" role="2JlPsR" />
+          <node concept="1FyQXr" id="5ay_xxAvQww" role="1Fxk40" />
+        </node>
+      </node>
+      <node concept="29d1u9" id="5ay_xxAvQwy" role="2$AQDL">
+        <property role="29d1u8" value="EmplyeeSource" />
+      </node>
+    </node>
+    <node concept="FCvld" id="5ay_xxAw4Dp" role="29aKCU">
+      <node concept="3tqwV1" id="5ay_xxAw4Dq" role="3tqwV9" />
+      <node concept="2JlPsY" id="5ay_xxAw4Dr" role="FCw5y">
+        <node concept="FCOsJ" id="5ay_xxAw4Ds" role="1FyQV4">
+          <property role="1Fxk42" value="project.csv" />
+          <node concept="3Y090L" id="5ay_xxAw4Dt" role="2JlPsR" />
+          <node concept="1FyQXr" id="5ay_xxAw4Du" role="1Fxk40" />
+        </node>
+      </node>
+      <node concept="29d1u9" id="5ay_xxAw4Dw" role="2$AQDL">
+        <property role="29d1u8" value="ProjectSource" />
+      </node>
+    </node>
+    <node concept="FCvld" id="5ay_xxAw4Dy" role="29aKCU">
+      <property role="FB9vU" value="$[*]" />
+      <node concept="3tqwV3" id="5ay_xxAw4Dz" role="3tqwV9" />
+      <node concept="2JlPsY" id="5ay_xxAw4D$" role="FCw5y">
+        <node concept="FCOsJ" id="5ay_xxAw4D_" role="1FyQV4">
+          <property role="1Fxk42" value="tasks.json" />
+          <node concept="3Y090L" id="5ay_xxAw4DA" role="2JlPsR" />
+          <node concept="1FyQXr" id="5ay_xxAw4DB" role="1Fxk40" />
+        </node>
+      </node>
+      <node concept="29d1u9" id="5ay_xxAw4DD" role="2$AQDL">
+        <property role="29d1u8" value="TasksSource" />
+      </node>
+    </node>
+    <node concept="1SSSdx" id="5ay_xxAw4Dx" role="29aKCU" />
     <node concept="2YYitQ" id="5R3My36CHGd" role="29aKCU">
       <node concept="Ib$Ef" id="5R3My36CHGe" role="Ib$Ea">
         <node concept="FHrll" id="5R3My36CHGf" role="FHrlg">
@@ -620,15 +664,8 @@
           </node>
         </node>
       </node>
-      <node concept="1_rNmK" id="5R3My36CHGq" role="IaUo4">
-        <node concept="2JlPsY" id="5R3My36CHGr" role="FCw5y">
-          <node concept="FCOsJ" id="5R3My36CHGs" role="1FyQV4">
-            <property role="1Fxk42" value="employee.csv" />
-            <node concept="3Y090L" id="5R3My36CHGt" role="2JlPsR" />
-            <node concept="1FyQXr" id="5R3My36CHGu" role="1Fxk40" />
-          </node>
-        </node>
-        <node concept="3tqwV1" id="5R3My36CHGv" role="3tqwV9" />
+      <node concept="FCvle" id="5ay_xxAvQwx" role="IaUo4">
+        <ref role="FCvlf" node="5ay_xxAvQwr" />
       </node>
       <node concept="IaUod" id="5R3My36CHGw" role="2YYcL1">
         <node concept="IaUoX" id="5R3My36CHGx" role="FGdDe">
@@ -731,15 +768,8 @@
           </node>
         </node>
       </node>
-      <node concept="1_rNmK" id="5R3My36CHH2" role="IaUo4">
-        <node concept="2JlPsY" id="5R3My36CHH3" role="FCw5y">
-          <node concept="FCOsJ" id="5R3My36CHH4" role="1FyQV4">
-            <property role="1Fxk42" value="project.csv" />
-            <node concept="3Y090L" id="5R3My36CHH5" role="2JlPsR" />
-            <node concept="1FyQXr" id="5R3My36CHH6" role="1Fxk40" />
-          </node>
-        </node>
-        <node concept="3tqwV1" id="5R3My36CHH7" role="3tqwV9" />
+      <node concept="FCvle" id="5ay_xxAw4Dv" role="IaUo4">
+        <ref role="FCvlf" node="5ay_xxAw4Dp" />
       </node>
       <node concept="IaUod" id="5R3My36CHH8" role="2YYcL1">
         <node concept="IaUoX" id="5R3My36CHH9" role="FGdDe">
@@ -852,17 +882,6 @@
           </node>
         </node>
       </node>
-      <node concept="1_rNmK" id="5R3My36CHHQ" role="IaUo4">
-        <property role="FB9vU" value="$[*]" />
-        <node concept="2JlPsY" id="5R3My36CHHR" role="FCw5y">
-          <node concept="FCOsJ" id="5R3My36CHHS" role="1FyQV4">
-            <property role="1Fxk42" value="tasks.json" />
-            <node concept="3Y090L" id="5R3My36CHHT" role="2JlPsR" />
-            <node concept="1FyQXr" id="5R3My36CHHU" role="1Fxk40" />
-          </node>
-        </node>
-        <node concept="3tqwV3" id="5R3My36CHHV" role="3tqwV9" />
-      </node>
       <node concept="IaUod" id="5R3My36CHHW" role="2YYcL1">
         <node concept="IaUoX" id="5R3My36CHHX" role="FGdDe">
           <property role="IaUoT" value="http://erd.org/Task/{task_id}" />
@@ -874,6 +893,9 @@
       </node>
       <node concept="29d1u9" id="5R3My36CHHZ" role="2$AQDL">
         <property role="29d1u8" value="TasksMap" />
+      </node>
+      <node concept="FCvle" id="5ay_xxAwygK" role="IaUo4">
+        <ref role="FCvlf" node="5ay_xxAw4Dy" resolve="&lt;TasksSource&gt;" />
       </node>
     </node>
     <node concept="1SSSdx" id="5R3My36CHI0" role="29aKCU" />
