@@ -384,6 +384,34 @@
         <node concept="1E0d5M" id="2uMhTA67wh0" role="1E1XAP">
           <ref role="1E0d5P" node="2uMhTA67w7Y" resolve="Turtle.parser" />
         </node>
+        <node concept="1yeLz9" id="7Jv1ijYoLxA" role="1TViLv">
+          <property role="TrG5h" value="Turtle.generator" />
+          <property role="3LESm3" value="bb47f3e5-6da0-4cff-b250-3e7aec573b33" />
+          <node concept="1BupzO" id="7Jv1ijYoLxG" role="3bR31x">
+            <property role="3ZfqAx" value="strictGen/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="7Jv1ijYoLxH" role="1HemKq">
+              <node concept="55IIr" id="7Jv1ijYoLxB" role="3LXTmr">
+                <node concept="2Ry0Ak" id="7Jv1ijYoLxC" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="7Jv1ijYoLxD" role="2Ry0An">
+                    <property role="2Ry0Am" value="Turtle" />
+                    <node concept="2Ry0Ak" id="7Jv1ijYoLxE" role="2Ry0An">
+                      <property role="2Ry0Am" value="strictGen" />
+                      <node concept="2Ry0Ak" id="7Jv1ijYoLxF" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="7Jv1ijYoLxI" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3VbHlF$1B66" role="2G$12L">
         <property role="TrG5h" value="Turtle.external" />
