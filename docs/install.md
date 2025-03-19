@@ -2,6 +2,15 @@
 
 First, install [JetBrains MPS 2024.1.1](https://www.jetbrains.com/mps/download/previous.html#version20241), then you can install GRAPE as a plugin or start from the source.
 
+## Install the plugin
+
+You can download the plugin from our [package registry](https://gitlab.uliege.be/JakubDuchateau/grape/-/packages) and install it from disk.
+
+[:material-download: Download GRAPE Plugin](https://gitlab.uliege.be/api/v4/projects/6137/packages/generic/GrapePlugin/0.1.0/GrapePlugin.zip){ .md-button }
+
+Then, in MPS, go to **Settings | Plugins | [Install Plugin from Disk](https://www.jetbrains.com/help/mps/managing-plugins.html#install_plugin_from_disk)** and select the downloaded zip file.
+
+
 ## Start from source
 
 In addition to MPS 2024.1.1, you will need:
@@ -20,13 +29,3 @@ To start the project:
 3. open (or restart) MPS, so that MPS correctly loads dependencies (in `Turtle.runtime`, java_stubs)
 4. then rebuild the project so that languages are loaded. ++ctrl+shift+a++ and search `rebuild project`, or right-click on the project in logical view and select `rebuild project`.
 
-## Install the plugin
-
-!!! BUG
-    Plugin install in not working yet, please [clone the sources](#start-from-source) for now.
-
-You can download the plugin from the [package registry](https://gitlab.uliege.be/JakubDuchateau/grape/-/packages) and install it from the file.
-
-[:material-download: Download GRAPE Plugin](https://gitlab.uliege.be/api/v4/projects/6137/packages/generic/GrapePlugin/0.1.0/GrapePlugin.zip){ .md-button }
-
-Then, in MPS, go to **Settings | Plugins | Install Plugin from Disk** and select the downloaded zip file.
