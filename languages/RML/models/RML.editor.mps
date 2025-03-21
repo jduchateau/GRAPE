@@ -1010,7 +1010,7 @@
     <ref role="1XX52x" to="ys6r:75xoT0kgf8o" resolve="LanguageMap" />
     <node concept="3EZMnI" id="5PE8eazYILT" role="2wV5jI">
       <node concept="3F0ifn" id="5PE8eazYILZ" role="3EZMnx">
-        <property role="3F0ifm" value="languge" />
+        <property role="3F0ifm" value="language" />
       </node>
       <node concept="B$lHz" id="5PE8eazYIM2" role="3EZMnx" />
       <node concept="l2Vlx" id="5PE8eazYILW" role="2iSdaV" />
