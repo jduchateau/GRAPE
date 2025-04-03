@@ -82,11 +82,13 @@ tasks {
         group = "release"
         description = "Upload the build plugin to the GitLab registry on new release"
         doLast {
+            val version = getLanguageVersion()
+
             exec {
                 commandLine(
                     "curl", "--header", "PRIVATE-TOKEN: $privateToken",
                     "--upload-file", "$pluginArtefactDirectory/GrapePlugin.zip",
-                    "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/0.1.0/GrapePlugin.zip"
+                    "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/$version/GrapePlugin.zip"
                 )
             }
 

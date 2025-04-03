@@ -424,6 +424,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2Lc747KQO8E">
+    <property role="3GE5qa" value="Annotation" />
     <ref role="13h7C2" to="ys6r:75xoT0kgf8n" resolve="LiteralAnnotationExpressionMap" />
     <node concept="13hLZK" id="2Lc747KQO8F" role="13h7CW">
       <node concept="3clFbS" id="2Lc747KQO8G" role="2VODD2" />

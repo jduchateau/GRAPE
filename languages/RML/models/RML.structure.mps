@@ -305,6 +305,7 @@
     <property role="TrG5h" value="LiteralAnnotationExpressionMap" />
     <property role="EcuMT" value="8169920669493031446" />
     <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="Annotation" />
     <ref role="1TJDcQ" node="5tSQ8xWM0b5" resolve="ExpressionMap" />
     <node concept="PrWs8" id="2Lc747KQO8D" role="PzmwI">
       <ref role="PrY4T" to="16h3:2Lc747KQCH1" resolve="RdfLiteralContext" />
@@ -313,11 +314,13 @@
   <node concept="1TIwiD" id="75xoT0kgf8o">
     <property role="EcuMT" value="8169920669493031448" />
     <property role="TrG5h" value="LanguageMap" />
+    <property role="3GE5qa" value="Annotation" />
     <ref role="1TJDcQ" node="75xoT0kgf8n" resolve="LiteralAnnotationExpressionMap" />
   </node>
   <node concept="1TIwiD" id="75xoT0kgf8p">
     <property role="EcuMT" value="8169920669493031449" />
     <property role="TrG5h" value="DatatypeMap" />
+    <property role="3GE5qa" value="Annotation" />
     <ref role="1TJDcQ" node="75xoT0kgf8n" resolve="LiteralAnnotationExpressionMap" />
   </node>
   <node concept="1TIwiD" id="34GH_iTY3TV">
