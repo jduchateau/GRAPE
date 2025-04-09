@@ -122,6 +122,9 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1214472762472" name="jetbrains.mps.lang.editor.structure.DefaultCaretPositionStyleClassItem" flags="ln" index="34dVlM">
+        <property id="1214472762473" name="position" index="34dVlN" />
+      </concept>
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="8998492695583109601" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_CanSubstitute" flags="ig" index="16Na2f" />
       <concept id="8998492695583125082" name="jetbrains.mps.lang.editor.structure.SubstituteFeature_MatchingText" flags="ng" index="16NfWO">
@@ -192,6 +195,7 @@
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+        <property id="1082639509531" name="nullText" index="ilYzB" />
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
@@ -1902,6 +1906,8 @@
         </node>
       </node>
       <node concept="3F0ifn" id="1e4IJAnukY9" role="2czzBI">
+        <property role="ilYzB" value="&lt;predicate object&gt;" />
+        <ref role="1k5W1q" to="tpen:4vDGnVWLnSS" resolve="Placeholder" />
         <node concept="VPxyj" id="1e4IJAnullZ" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -2524,6 +2530,23 @@
         <property role="Vb096" value="fLwANPu/blue" />
       </node>
     </node>
+    <node concept="14StLt" id="5cblP9ZAzOR" role="V601i">
+      <property role="TrG5h" value="PlaceholderError" />
+      <node concept="3Xmtl4" id="5cblP9ZAzOU" role="3F10Kt">
+        <node concept="1wgc9g" id="5cblP9ZAzOW" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:4vDGnVWLnSS" resolve="Placeholder" />
+        </node>
+      </node>
+      <node concept="VPM3Z" id="5cblP9ZAzP7" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="VPxyj" id="5cblP9ZC3yr" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="34dVlM" id="5cblP9ZER_4" role="3F10Kt">
+        <property role="34dVlN" value="hrC1nx$/FIRST" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="2ZAgtJQAnhk">
     <property role="TrG5h" value="StringCleaning" />
@@ -3100,6 +3123,30 @@
           <property role="2h4Kg1" value="as decimal" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5cblP9ZwZYc">
+    <property role="3GE5qa" value="RDF" />
+    <ref role="1XX52x" to="16h3:2z4QKYxWcd2" resolve="Subject" />
+    <node concept="3F0ifn" id="5cblP9ZwZYe" role="2wV5jI">
+      <property role="ilYzB" value="&lt;subject&gt;" />
+      <ref role="1k5W1q" node="5cblP9ZAzOR" resolve="PlaceholderError" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5cblP9ZAzOK">
+    <property role="3GE5qa" value="Verb" />
+    <ref role="1XX52x" to="16h3:2z4QKYxWdpJ" resolve="Verb" />
+    <node concept="3F0ifn" id="5cblP9ZAzOM" role="2wV5jI">
+      <property role="ilYzB" value="&lt;predicate&gt;" />
+      <ref role="1k5W1q" node="5cblP9ZAzOR" resolve="PlaceholderError" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5cblP9ZA$Kx">
+    <property role="3GE5qa" value="RDF" />
+    <ref role="1XX52x" to="16h3:2z4QKYxWdpG" resolve="Object" />
+    <node concept="3F0ifn" id="5cblP9ZA$Kz" role="2wV5jI">
+      <property role="ilYzB" value="&lt;object&gt;" />
+      <ref role="1k5W1q" node="5cblP9ZAzOR" resolve="PlaceholderError" />
     </node>
   </node>
 </model>

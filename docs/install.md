@@ -6,7 +6,7 @@ First, install [JetBrains MPS 2024.1.1](https://www.jetbrains.com/mps/download/p
 
 You can download the plugin from our [package registry](https://gitlab.uliege.be/JakubDuchateau/grape/-/packages) and install it from disk.
 
-[:material-download: Download GRAPE Plugin](https://gitlab.uliege.be/api/v4/projects/6137/packages/generic/GrapePlugin/0.1.0/GrapePlugin.zip){ .md-button }
+[:material-download: Download GRAPE Plugin](https://gitlab.uliege.be/JakubDuchateau/GRAPE/-/releases/permalink/latest/downloads/package/GrapePlugin.zip){ .md-button }
 
 Then, in MPS, go to **Settings | Plugins | [Install Plugin from Disk](https://www.jetbrains.com/help/mps/managing-plugins.html#install_plugin_from_disk)** and select the downloaded zip file.
 
