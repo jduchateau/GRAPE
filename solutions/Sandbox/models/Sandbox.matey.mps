@@ -77,10 +77,10 @@
       <concept id="6099872835424795652" name="RML.IO.structure.LogicalSourceDef" flags="ngI" index="IaUo2">
         <property id="6303025759227498354" name="iterator" index="FB9vU" />
         <child id="6303025759226878442" name="source" index="FCw5y" />
-        <child id="6303025759226878446" name="referenceFormulation_old" index="FCw5A" />
         <child id="6127414803068812677" name="referenceFormulation" index="3tqwV9" />
       </concept>
       <concept id="468146138112354128" name="RML.IO.structure.SourceInlineDef" flags="ng" index="2JlPsY" />
+      <concept id="6127414803068812685" name="RML.IO.structure.ReferenceFormulationCSV" flags="ng" index="3tqwV1" />
       <concept id="6127414803068812687" name="RML.IO.structure.ReferenceFormulationJSONPath" flags="ng" index="3tqwV3" />
       <concept id="8169920669489714720" name="RML.IO.structure.LogicalSourceInlineDef" flags="ng" index="1_rNmK" />
       <concept id="791507941088259868" name="RML.IO.structure.CurrentWorkingDirectoryRoot" flags="ng" index="1FyQXr" />
@@ -424,10 +424,6 @@
     <node concept="1SSSdx" id="4$wSEF3NDn5" role="29aKCU" />
     <node concept="2YYitQ" id="KJ$Akt$cyo" role="29aKCU">
       <node concept="1_rNmK" id="KJ$Akt$cyC" role="IaUo4">
-        <node concept="29d5ma" id="KJ$Akt$cyQ" role="FCw5A">
-          <property role="29d1ub" value="CSV" />
-          <ref role="29d1uc" node="KJ$Akt$cxJ" resolve="rml" />
-        </node>
         <node concept="2JlPsY" id="1xDVdsoyAW3" role="FCw5y">
           <node concept="FCOsJ" id="1xDVdsoyAW5" role="1FyQV4">
             <property role="1Fxk42" value="movies.csv" />
@@ -435,6 +431,7 @@
             <node concept="1FyQXr" id="62epo3iWS3s" role="1Fxk40" />
           </node>
         </node>
+        <node concept="3tqwV1" id="5cblP9ZMbsJ" role="3tqwV9" />
       </node>
       <node concept="IaUod" id="KJ$Akt$cyq" role="2YYcL1">
         <node concept="IaUoX" id="KJ$Akt$cyR" role="FGdDe">
