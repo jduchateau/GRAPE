@@ -78,30 +78,47 @@ tasks {
         workingDir = file("languages/Turtle.runtime/grammar")
     }
 
+    val version = getLanguageVersion()
+    val pluginArtefactUrl = "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/$version/GrapePlugin.zip"
     val uploadToGitLab by registering {
         group = "release"
         description = "Upload the build plugin to the GitLab registry on new release"
         doLast {
-            val version = getLanguageVersion()
-
             exec {
-                commandLine(
-                    "curl", "--header", "PRIVATE-TOKEN: $privateToken",
+                commandLine("curl",
+                    "--header", "PRIVATE-TOKEN: $privateToken",
                     "--upload-file", "$pluginArtefactDirectory/GrapePlugin.zip",
-                    "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/$version/GrapePlugin.zip"
+                    pluginArtefactUrl
                 )
             }
+        }
+    }
 
-            // val updatePluginsFile = file("updatePlugins.xml")
-            // updatePluginsFile.writeText(updatePluginsFile.readText().replace("versionNumber", getLanguageVersion()))
 
-            // exec {
-            //     commandLine(
-            //         "curl", "--header", "PRIVATE-TOKEN: $privateToken",
-            //         "--upload-file", "updatePlugins.xml",
-            //         "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/0.1.0/updatePlugins.xml"
-            //     )
-            // }
+    val createRelease by registering {
+        group = "release"
+        description = "Create a new release on GitLab"
+        dependsOn(uploadToGitLab)
+        doLast {
+            exec {
+                commandLine("curl",
+                    "--header", "PRIVATE-TOKEN: $privateToken",
+                    "--header", "Content-Type: application/json",
+                    "--request", "POST",
+                    "--data", """{
+                        "tag_name": "$version",
+                        "assets": {
+                            "links": [{
+                                "name": "GrapePlugin.zip",
+                                "url": "$pluginArtefactUrl",
+                                "link_type": "package",
+                                "direct_asset_path": "GrapePlugin.zip"
+                            }]
+                        }
+                    }""",
+                    "$gitlabApiUrlBase/projects/$gitlabProjectId/releases"
+                )
+            }
         }
     }
 
