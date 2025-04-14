@@ -923,6 +923,7 @@
     <property role="3GE5qa" value="LogicalSource" />
     <ref role="1XX52x" to="qx9m:75xoT0k3_ow" resolve="LogicalSourceInlineDef" />
     <node concept="3EZMnI" id="3EB406$5C$Q" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="l2Vlx" id="3EB406$5C$R" role="2iSdaV" />
       <node concept="3F0ifn" id="3EB406$5C$S" role="3EZMnx">
         <property role="3F0ifm" value="LogicalSource" />
@@ -974,6 +975,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="7ExXBO$AUq" role="AHCbl">
+        <property role="3F0ifm" value="LogicalSource{...}" />
       </node>
     </node>
   </node>

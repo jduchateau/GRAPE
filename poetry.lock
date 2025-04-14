@@ -550,6 +550,23 @@ files = [
 ]
 
 [[package]]
+name = "mkdocs-slides"
+version = "0.1.3"
+description = "A MkDocs plugin for creating slide presentations within documentation"
+optional = false
+python-versions = "<4.0,>=3.7"
+files = [
+    {file = "mkdocs_slides-0.1.3-py3-none-any.whl", hash = "sha256:78e1a3f51ad21e8be92a61f8abfadee832ffd99e6768d05eff2870273c90ae42"},
+    {file = "mkdocs_slides-0.1.3.tar.gz", hash = "sha256:6859e5ea328dd6fd9d7022c9397a58d914edee65946633d606f5238c9d797ddf"},
+]
+
+[package.dependencies]
+click = ">=8.0"
+mkdocs = ">=1.4.0"
+mkdocs-material = ">=9.0.0"
+PyYAML = ">=6.0"
+
+[[package]]
 name = "mkdocs-table-reader-plugin"
 version = "3.1.0"
 description = "MkDocs plugin to directly insert tables from files into markdown."
@@ -1135,4 +1152,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.13"
-content-hash = "97c7404b2488f3a22a09092265f39b1eb390efd7c43c79288d248cc17ac70a7c"
+content-hash = "4dd2e383d5e66d21bf7c3dd90fbbe3af52b227402d0ba8730a1f278a4d3af17d"

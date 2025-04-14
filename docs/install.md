@@ -1,6 +1,6 @@
 # Installation
 
-First, install [JetBrains MPS 2024.1.1](https://www.jetbrains.com/mps/download/previous.html#version20241), then you can install GRAPE as a plugin or start from the source.
+First, install [JetBrains MPS 2024.1](https://www.jetbrains.com/mps/download/previous.html#version20241), then you can install GRAPE as a plugin or start from the source.
 
 ## Install the plugin
 
@@ -14,7 +14,7 @@ You will need to **restart MPS**, then you can continue with the [tutorial](star
 
 ## Start from source
 
-In addition to MPS 2024.1.1, you will need:
+In addition to MPS 2024.1, you will need:
 
 - Gradle (ideally [Gradle 8.1.1](https://gradle.org/releases/#8.11.1))
 - Java 21

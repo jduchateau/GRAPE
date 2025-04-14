@@ -1409,40 +1409,6 @@
     <node concept="2YIFZL" id="tPE8szdrUq" role="jymVt">
       <property role="TrG5h" value="graphName" />
       <node concept="3clFbS" id="tPE8szdrUt" role="3clF47">
-        <node concept="2xdQw9" id="1uUgCWYAdmU" role="3cqZAp">
-          <property role="2xdLsb" value="gZ5fh_4/error" />
-          <node concept="3cpWs3" id="1uUgCWYDBTj" role="9lYJi">
-            <node concept="3cpWs3" id="1uUgCWYDwQe" role="3uHU7B">
-              <node concept="3cpWs3" id="1uUgCWYAgWZ" role="3uHU7B">
-                <node concept="Xl_RD" id="1uUgCWYAdmW" role="3uHU7B">
-                  <property role="Xl_RC" value="GraphName=" />
-                </node>
-                <node concept="2OqwBi" id="1uUgCWYDsd$" role="3uHU7w">
-                  <node concept="37vLTw" id="1uUgCWYDsd_" role="2Oq$k0">
-                    <ref role="3cqZAo" node="tPE8szdug7" resolve="turtleDoc" />
-                  </node>
-                  <node concept="3TrcHB" id="1uUgCWYDsdA" role="2OqNvi">
-                    <ref role="3TsBF5" to="16h3:6WRbFH1LSPi" resolve="datasetName" />
-                  </node>
-                </node>
-              </node>
-              <node concept="Xl_RD" id="1uUgCWYDzBe" role="3uHU7w">
-                <property role="Xl_RC" value="   /" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="1uUgCWYDGnn" role="3uHU7w">
-              <node concept="37vLTw" id="1uUgCWYDGno" role="2Oq$k0">
-                <ref role="3cqZAo" node="tPE8szdug7" resolve="turtleDoc" />
-              </node>
-              <node concept="3TrcHB" id="1uUgCWYDGnp" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-          <node concept="37vLTw" id="1uUgCWYDLm6" role="1wxasE">
-            <ref role="3cqZAo" node="tPE8szdug7" resolve="turtleDoc" />
-          </node>
-        </node>
         <node concept="3clFbJ" id="6WRbFH1NrO4" role="3cqZAp">
           <node concept="3clFbS" id="6WRbFH1NrO6" role="3clFbx">
             <node concept="3cpWs6" id="6WRbFH1NC2o" role="3cqZAp">
@@ -1532,13 +1498,6 @@
         <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
       </node>
     </node>
-    <node concept="312cEg" id="7HX6VHL7q35" role="jymVt">
-      <property role="TrG5h" value="datasetManager" />
-      <node concept="3Tm6S6" id="7HX6VHL7q33" role="1B3o_S" />
-      <node concept="3uibUv" id="7HX6VHL7q34" role="1tU5fm">
-        <ref role="3uigEE" node="6tKZDNaiTly" resolve="RdfDatasetsManager" />
-      </node>
-    </node>
     <node concept="312cEg" id="7HX6VHL7rbk" role="jymVt">
       <property role="TrG5h" value="jenaModel" />
       <node concept="3Tm6S6" id="7HX6VHL7qYb" role="1B3o_S" />
@@ -1551,6 +1510,14 @@
       <node concept="3cqZAl" id="7PPLA3Rk1cK" role="3clF45" />
       <node concept="3Tm1VV" id="7PPLA3Rk1cL" role="1B3o_S" />
       <node concept="3clFbS" id="7PPLA3Rk1cO" role="3clF47">
+        <node concept="3cpWs8" id="38TGP9CEV$_" role="3cqZAp">
+          <node concept="3cpWsn" id="38TGP9CEV$A" role="3cpWs9">
+            <property role="TrG5h" value="datasetManager" />
+            <node concept="3uibUv" id="7HX6VHL7q34" role="1tU5fm">
+              <ref role="3uigEE" node="6tKZDNaiTly" resolve="RdfDatasetsManager" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7PPLA3RkPac" role="3cqZAp">
           <node concept="37vLTI" id="7PPLA3RkPCa" role="3clFbG">
             <node concept="37vLTw" id="7PPLA3RkPIx" role="37vLTx">
@@ -1566,11 +1533,8 @@
         </node>
         <node concept="3clFbF" id="7HX6VHL7q3c" role="3cqZAp">
           <node concept="37vLTI" id="7HX6VHL7q3d" role="3clFbG">
-            <node concept="2OqwBi" id="7HX6VHL7q3e" role="37vLTJ">
-              <node concept="Xjq3P" id="7HX6VHL7q3f" role="2Oq$k0" />
-              <node concept="2OwXpG" id="7HX6VHL7q3g" role="2OqNvi">
-                <ref role="2Oxat5" node="7HX6VHL7q35" resolve="datasetManager" />
-              </node>
+            <node concept="37vLTw" id="38TGP9CEV$C" role="37vLTJ">
+              <ref role="3cqZAo" node="38TGP9CEV$A" resolve="datasetManager" />
             </node>
             <node concept="2YIFZM" id="7HX6VHL7q3h" role="37vLTx">
               <ref role="37wK5l" node="3l3jG31o0qT" resolve="getInstance" />
@@ -1581,8 +1545,8 @@
         <node concept="3clFbF" id="7HX6VHL7roM" role="3cqZAp">
           <node concept="37vLTI" id="7HX6VHL7unR" role="3clFbG">
             <node concept="2OqwBi" id="7HX6VHL7vcr" role="37vLTx">
-              <node concept="37vLTw" id="7HX6VHL7uUe" role="2Oq$k0">
-                <ref role="3cqZAo" node="7HX6VHL7q35" resolve="datasetManager" />
+              <node concept="37vLTw" id="38TGP9CEV$B" role="2Oq$k0">
+                <ref role="3cqZAo" node="38TGP9CEV$A" resolve="datasetManager" />
               </node>
               <node concept="liA8E" id="7HX6VHL7vr5" role="2OqNvi">
                 <ref role="37wK5l" node="tPE8szgjJt" resolve="getModel" />
