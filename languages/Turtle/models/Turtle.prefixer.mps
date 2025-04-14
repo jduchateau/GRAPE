@@ -240,6 +240,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -1777,8 +1778,11 @@
                 <node concept="Xl_RD" id="1lA7v9iyliv" role="3uHU7B">
                   <property role="Xl_RC" value="Cache PrefixCompletion for " />
                 </node>
-                <node concept="37vLTw" id="1lA7v9i$MZw" role="3uHU7w">
-                  <ref role="3cqZAo" node="41P2F0Glah3" resolve="prefix" />
+                <node concept="2OqwBi" id="38TGP9CF2ih" role="3uHU7w">
+                  <node concept="37vLTw" id="1lA7v9i$MZw" role="2Oq$k0">
+                    <ref role="3cqZAo" node="41P2F0Glah3" resolve="prefix" />
+                  </node>
+                  <node concept="2Iv5rx" id="38TGP9CF4It" role="2OqNvi" />
                 </node>
               </node>
               <node concept="Xl_RD" id="1lA7v9iyCYi" role="3uHU7w">

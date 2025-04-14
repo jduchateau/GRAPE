@@ -420,6 +420,7 @@
   </node>
   <node concept="2S6QgY" id="1R$stKLBSzP">
     <property role="TrG5h" value="AddTermTypeToTermMap" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="ys6r:5tSQ8xWM0b3" resolve="TermMap" />
     <node concept="2S6ZIM" id="1R$stKLBSzQ" role="2ZfVej">
       <node concept="3clFbS" id="1R$stKLBSzR" role="2VODD2">

@@ -25,9 +25,6 @@
       <concept id="2937713717140246833" name="Turtle.structure.TurtleDoc" flags="ng" index="29aKCY">
         <child id="2937713717140246837" name="statments" index="29aKCU" />
       </concept>
-      <concept id="2937713717140624470" name="Turtle.structure.RdfLiteral" flags="ng" index="29ckXp">
-        <property id="2937713717140624475" name="value" index="29ckXk" />
-      </concept>
       <concept id="2937713717140311174" name="Turtle.structure.IriFull" flags="ng" index="29d1u9">
         <property id="2937713717140311175" name="iri" index="29d1u8" />
       </concept>
@@ -42,32 +39,12 @@
         <property id="2937713717140311172" name="name" index="29d1ub" />
         <reference id="2937713717140311171" name="prefix" index="29d1uc" />
       </concept>
-      <concept id="2937713717140306490" name="Turtle.structure.SubjectTriples" flags="ng" index="29d64P">
-        <child id="2937713717140306495" name="predicateObjectList" index="29d64K" />
-        <child id="2937713717140306494" name="subject" index="29d64L" />
-      </concept>
-      <concept id="2937713717140306511" name="Turtle.structure.AnnotatedObject" flags="ng" index="29d650">
-        <child id="2937713717140316189" name="object" index="29d3Gi" />
-      </concept>
-      <concept id="2937713717140306498" name="Turtle.structure.PredicateObject" flags="ng" index="29d65d">
-        <child id="2937713717140306508" name="object" index="29d653" />
-        <child id="2937713717140306507" name="verb" index="29d654" />
-      </concept>
-      <concept id="1285627428968645135" name="Turtle.structure.RessourceIdentifierReference" flags="ng" index="3oYVlq">
-        <reference id="1285627428968645137" name="ref" index="3oYVl4" />
-      </concept>
       <concept id="5063185561593286416" name="Turtle.structure.EmptyStatment" flags="ng" index="1SSSdx" />
-      <concept id="7946374057678053675" name="Turtle.structure.PredicateObjectList" flags="ng" index="3Y090L">
-        <child id="7946374057678053676" name="list" index="3Y090Q" />
-      </concept>
+      <concept id="7946374057678053675" name="Turtle.structure.PredicateObjectList" flags="ng" index="3Y090L" />
     </language>
     <language id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO">
       <concept id="5068821615757897735" name="RML.IO.structure.WithSourceDef" flags="ngI" index="riy9w">
         <child id="791507941088259715" name="source" index="1FyQV4" />
-      </concept>
-      <concept id="6303025759226768837" name="RML.IO.structure.LogicalSourceNamedDef" flags="ng" index="FCvld" />
-      <concept id="6303025759226768838" name="RML.IO.structure.LogicalSourceReference" flags="ng" index="FCvle">
-        <reference id="6303025759226768839" name="ref" index="FCvlf" />
       </concept>
       <concept id="6303025759226929063" name="RML.IO.structure.BaseSource" flags="ng" index="FCOsJ">
         <property id="791507941088379205" name="path" index="1Fxk42" />
@@ -116,11 +93,9 @@
       <concept id="6303025759225643717" name="RML.structure.ExpressionMap" flags="ng" index="FGdDd">
         <child id="6303025759225643718" name="value" index="FGdDe" />
       </concept>
-      <concept id="6303025759225736045" name="RML.structure.GraphMap" flags="ng" index="FGrf_" />
       <concept id="6303025759225998812" name="RML.structure.ValueBasedObjectMap" flags="ng" index="FHrlk" />
       <concept id="6303025759225998813" name="RML.structure.PredicateMap" flags="ng" index="FHrll" />
       <concept id="6099872835424795659" name="RML.structure.SubjectMap" flags="ng" index="IaUod">
-        <child id="6303025759225736041" name="graphMap" index="FGrfx" />
         <child id="6303025759225736038" name="class" index="FGrfI" />
       </concept>
       <concept id="6099872835424795701" name="RML.structure.ConstantExpr" flags="ng" index="IaUoN">
@@ -133,7 +108,6 @@
         <property id="6303025759225519697" name="reference" index="FJGrp" />
       </concept>
       <concept id="6099872835424571529" name="RML.structure.PredicateObjectMap" flags="ng" index="Ib$Ef">
-        <child id="3355257623985582870" name="graphMap" index="p1bou" />
         <child id="6303025759225998808" name="predicateMap" index="FHrlg" />
         <child id="6303025759225998810" name="objectMap" index="FHrli" />
       </concept>
@@ -146,60 +120,13 @@
   </registry>
   <node concept="29aKCY" id="M0URkkgBQ0">
     <property role="TrG5h" value="People" />
-    <node concept="29d5m5" id="M0URkkgBQ1" role="29aKCU">
-      <property role="TrG5h" value="rml" />
-      <node concept="29d1u9" id="M0URkkgBQ3" role="3pzv1Z">
-        <property role="29d1u8" value="http://w3id.org/rml/" />
-      </node>
-    </node>
     <node concept="29d5m5" id="M0URkkgBQq" role="29aKCU">
       <property role="TrG5h" value="foaf" />
       <node concept="29d1u9" id="M0URkkgBQs" role="3pzv1Z">
         <property role="29d1u8" value="http://xmlns.com/foaf/0.1/" />
       </node>
     </node>
-    <node concept="29d4XD" id="63tg8wc0Vus" role="29aKCU">
-      <node concept="29d1u9" id="63tg8wc0Vuu" role="3pzv1K">
-        <property role="29d1u8" value="http://example.org" />
-      </node>
-    </node>
     <node concept="1SSSdx" id="5e0pfd$1Fz$" role="29aKCU" />
-    <node concept="29d64P" id="5e0pfd$1FzC" role="29aKCU">
-      <node concept="3Y090L" id="5e0pfd$1FzE" role="29d64K">
-        <node concept="29d65d" id="4ugsP3clJXj" role="3Y090Q">
-          <node concept="29d650" id="4ugsP3clJXk" role="29d653">
-            <node concept="29ckXp" id="4ugsP3clJXp" role="29d3Gi">
-              <property role="29ckXk" value="MyGraph" />
-            </node>
-          </node>
-          <node concept="29d1u9" id="4ugsP3clJXo" role="29d654">
-            <property role="29d1u8" value="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="29d1u9" id="5e0pfd$1FzF" role="29d64L">
-        <property role="29d1u8" value="g/myGraph" />
-      </node>
-    </node>
-    <node concept="1SSSdx" id="5e0pfd$1FzA" role="29aKCU" />
-    <node concept="FCvld" id="pZc6UD7Kfr" role="29aKCU">
-      <property role="FB9vU" value="$.persons[*]" />
-      <node concept="2JlPsY" id="1xDVdsoqJNg" role="FCw5y">
-        <node concept="FCOsJ" id="1xDVdsoqJNi" role="1FyQV4">
-          <property role="1Fxk42" value="people.json" />
-          <node concept="3Y090L" id="1xDVdsoqJNj" role="2JlPsR" />
-          <node concept="1FyQXr" id="5YpSZx52LtA" role="1Fxk40" />
-        </node>
-      </node>
-      <node concept="29d1u9" id="4$wSEF3Lzp6" role="2$AQDL">
-        <property role="29d1u8" value="PersonLogicalSource" />
-      </node>
-      <node concept="3tqwV3" id="1yLetCTAOUJ" role="3tqwV9" />
-    </node>
-    <node concept="3DQ70j" id="pZc6UD7Kfq" role="lGtFl">
-      <property role="3V$3am" value="statments" />
-      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
-    </node>
     <node concept="2YYitQ" id="M0URkkgBQ7" role="29aKCU">
       <node concept="Ib$Ef" id="M0URkkgBQu" role="Ib$Ea">
         <node concept="FHrll" id="641tyB4ga09" role="FHrlg">
@@ -207,13 +134,6 @@
             <node concept="29d5ma" id="641tyB4ga0c" role="FJIaS">
               <property role="29d1ub" value="firstName" />
               <ref role="29d1uc" node="M0URkkgBQq" resolve="foaf" />
-            </node>
-          </node>
-        </node>
-        <node concept="FGrf_" id="5e0pfd$1Fzs" role="p1bou">
-          <node concept="IaUoN" id="5e0pfd$1Fzu" role="FGdDe">
-            <node concept="3oYVlq" id="5e0pfd$1FzG" role="FJIaS">
-              <ref role="3oYVl4" node="5e0pfd$1FzF" />
             </node>
           </node>
         </node>
@@ -237,13 +157,6 @@
             <property role="FJGrp" value="lastname" />
           </node>
         </node>
-        <node concept="FGrf_" id="5e0pfd$1FzI" role="p1bou">
-          <node concept="IaUoN" id="5e0pfd$1FzK" role="FGdDe">
-            <node concept="3oYVlq" id="5e0pfd$1FzN" role="FJIaS">
-              <ref role="3oYVl4" node="5e0pfd$1FzF" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="IaUod" id="M0URkkgBQ8" role="2YYcL1">
         <node concept="IaUoX" id="M0URkkgBQn" role="FGdDe">
@@ -253,21 +166,24 @@
           <property role="29d1ub" value="Person" />
           <ref role="29d1uc" node="M0URkkgBQq" resolve="foaf" />
         </node>
-        <node concept="FGrf_" id="5e0pfd$1FzP" role="FGrfx">
-          <node concept="IaUoN" id="5e0pfd$1FzR" role="FGdDe">
-            <node concept="3oYVlq" id="5e0pfd$1FzU" role="FJIaS">
-              <ref role="3oYVl4" node="5e0pfd$1FzF" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="29d1u9" id="4$wSEF3Lzp8" role="2$AQDL">
         <property role="29d1u8" value="Person" />
       </node>
-      <node concept="FCvle" id="pZc6UDfx8c" role="IaUo4">
-        <ref role="FCvlf" node="pZc6UD7Kfr" resolve="&lt;PersonLogicalSource&gt;" />
+      <node concept="1_rNmK" id="5MK5ainLU7F" role="IaUo4">
+        <property role="FB9vU" value="$.persons[*]" />
+        <node concept="3tqwV3" id="5MK5ainLU7M" role="3tqwV9" />
+        <node concept="2JlPsY" id="5MK5ainLU7I" role="FCw5y">
+          <node concept="FCOsJ" id="5MK5ainLU7J" role="1FyQV4">
+            <property role="1Fxk42" value="people.json" />
+            <node concept="3Y090L" id="5MK5ainLU7K" role="2JlPsR" />
+            <node concept="1FyQXr" id="5MK5ainLU7L" role="1Fxk40" />
+          </node>
+        </node>
       </node>
     </node>
+    <node concept="1SSSdx" id="5MK5ainLU7Q" role="29aKCU" />
+    <node concept="1SSSdx" id="5MK5ainLU7R" role="29aKCU" />
     <node concept="3DQ70j" id="4p4374YyAFJ" role="lGtFl">
       <property role="3V$3am" value="statments" />
       <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
@@ -301,7 +217,7 @@
     </node>
     <node concept="29d5m5" id="KJ$Akt$cyU" role="29aKCU">
       <property role="TrG5h" value="schema" />
-      <property role="34lheZ" value="https://schema.org/version/latest/schemaorg-current-https.ttl" />
+      <property role="34lheZ" value="http://schema.org/version/latest/schemaorg-current-http.ttl" />
       <node concept="29d1u9" id="KJ$Akt$cyY" role="3pzv1Z">
         <property role="29d1u8" value="http://schema.org/" />
       </node>
@@ -336,38 +252,38 @@
         </node>
       </node>
       <node concept="Ib$Ef" id="167NyB6oxcp" role="Ib$Ea">
-        <node concept="FHrll" id="167NyB6oxcq" role="FHrlg">
-          <node concept="IaUoN" id="167NyB6oxcr" role="FGdDe">
-            <node concept="29d5ma" id="167NyB6oxcu" role="FJIaS">
-              <property role="29d1ub" value="lastName" />
-              <ref role="29d1uc" node="KJ$Akt$cxT" resolve="foaf" />
-            </node>
-          </node>
-        </node>
         <node concept="FHrlk" id="167NyB6oxcD" role="FHrli">
-          <node concept="H3HQD" id="167NyB6oxcz" role="FGdDe">
-            <node concept="GSHqK" id="167NyB6oxcM" role="GSHqR">
-              <node concept="GSHqG" id="167NyB6oxcN" role="GSHqM">
-                <node concept="IaUoN" id="167NyB6oxcS" role="FGdDe">
-                  <node concept="29d5ma" id="167NyB6oxcR" role="FJIaS">
+          <node concept="H3HQD" id="5MK5ainLUa1" role="FGdDe">
+            <node concept="GSHqK" id="5MK5ainNyM2" role="GSHqR">
+              <node concept="GSHqG" id="5MK5ainNyM3" role="GSHqM">
+                <node concept="IaUoN" id="5MK5ainNyM8" role="FGdDe">
+                  <node concept="29d5ma" id="5MK5ainNyM7" role="FJIaS">
                     <property role="29d1ub" value="valueParam" />
                     <ref role="29d1uc" node="167NyB6oxcF" resolve="grel" />
                   </node>
                 </node>
               </node>
-              <node concept="FGdDb" id="167NyB6oxcP" role="GSHqH">
-                <node concept="IaUoZ" id="167NyB6oxcw" role="FGdDe">
+              <node concept="FGdDb" id="5MK5ainNyM5" role="GSHqH">
+                <node concept="IaUoZ" id="5MK5ainNyM9" role="FGdDe">
                   <property role="FJGrp" value="lastname" />
                 </node>
               </node>
             </node>
-            <node concept="H4ayu" id="167NyB6oxc$" role="H4ays">
-              <node concept="IaUoN" id="167NyB6oxcA" role="FGdDe">
-                <node concept="29d5ma" id="167NyB6oxcK" role="FJIaS">
+            <node concept="H4ayu" id="5MK5ainLUa3" role="H4ays">
+              <node concept="IaUoN" id="5MK5ainLUa5" role="FGdDe">
+                <node concept="29d5ma" id="5MK5ainLUa8" role="FJIaS">
                   <property role="29d1ub" value="toUpperCase" />
                   <ref role="29d1uc" node="167NyB6oxcF" resolve="grel" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="FHrll" id="5MK5ainR0Q8" role="FHrlg">
+          <node concept="IaUoN" id="5MK5ainRX87" role="FGdDe">
+            <node concept="29d5ma" id="5MK5ainRX8a" role="FJIaS">
+              <property role="29d1ub" value="lastName" />
+              <ref role="29d1uc" node="KJ$Akt$cxT" resolve="foaf" />
             </node>
           </node>
         </node>
