@@ -7,7 +7,7 @@ This prototype aims to enhance **authoring of RML mappings** by providing a _pro
 It offers:
 
 - Turtle: to represent any RDF data.
-- RML: to represent mappings, embedded in Turtle files.
+- RML: to represent mappings embedded in Turtle files.
     - RML-Core: fully implemented
     - RML-FNML: function execution in expression
     - RML-IO: logical source and source
@@ -23,10 +23,13 @@ More information in the documentation: [GRAPE Documentation](https://jakubduchat
 
 If you use this software or its derivatives in an academic context, please cite the following paper:
 ```biblatex
-@inproceedings{duchateau2022grape,
-  title={GRAPE: Guiding RML Authoring with a Projectional Editor},
-  author={Duchateau, Jakub and Debruyne, Christophe},
+@inproceedings{duchateau2025grape,
+  title={{GRAPE}: Guiding {RML} Authoring with a Projectional Editor},
+  author={Jakub Duchateau and Christophe Debruyne},
+  booktitle={Submitted to Sixth International Workshop on Knowledge Graph Construction@ESWC2025},
+  year={2025},
+  note={under review}
 }
 ```
 
-© Jakub Duchateau, at the University of Liège.
+© 2024-2025 Jakub Duchateau, at the University of Liège. Licensed under the EUPL.
