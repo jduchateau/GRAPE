@@ -1,7 +1,7 @@
 # Getting started
 
 This tutorial assumes that you are already familiar with knowledge graphs and RDF (Resource Description Framework). 
-After setting up the environment, we will create a simple RML mapping to transform data from JSON and CSV files into an RDF graph representing people and movies.
+After setting up a project, we will create a simple RML mapping to transform data from JSON and CSV files into an RDF graph representing people and movies.
 
 ??? QUESTION "Need help?"
     If at some point you need help, [create an issue](https://gitlab.uliege.be/JakubDuchateau/grape/-/issues/new) if you have one, or drop us an email: [Jakub Duchateau](https://www.uliege.be/cms/c_9054334/fr?uid=u190657){ target="_blank" }.
@@ -32,7 +32,7 @@ Project
 3. In the **New Model** pop-up, keep the default options and confirm.
 4. The **Model properties** pop-up opens, go to **Used Languages** and **Add** `Turtle` and `RML`, then confirm.
    To later add languages, you can also use the ++ctrl+l++ shortcut and search for the language to add.
-5. In the _Logical View_, *right-click*  on the new model, and select **New | Turtle | TurtleDoc**.
+5. In the _Logical View_, *right-click* on the new model and select **New | Turtle | TurtleDoc**.
 
 
 === "1"
@@ -64,7 +64,7 @@ focusing on the integration of data about People and Movies.
 Our objective is to map these data sources into a unified Turtle output.
 Below, you will find a preview of the data files we will be working with,
 along with the target Turtle output we aim to generate.
-Store them on your disk in a directory to follow along, for example a `data/` directory inside the project.
+Store them on your disk in a directory to follow along, for example, a `data/` directory inside the project.
 Do it with another editor, MPS is admittedly fiddly to create new text files.
 
 === "people.json"
@@ -185,7 +185,7 @@ You should get the following code:
 
 ### Running RML mappings
 
-We can check the mappings by running them with an RML Engin.
+You can check the mappings by running them with an RML Engin.
 
 To run the mappings, right-click on the document in the logical view and select **Modify Run Configuration...**.
 In the dialogue, change the working directory to the one containing the data files, then **Run** the configuration from the upper right corner or ++shift+f10++.
@@ -215,7 +215,7 @@ You should start by adding the prefixes you can type them as previously:
     ```
     http://schema.org/version/latest/schemaorg-current-http.ttl
     ```
-    We need to do this because the namespace doesn’t serve the full vocabulary in a machine-readable format for auto-completion.
+    You need to do this because the namespace doesn’t serve the full vocabulary in a machine-readable format for auto-completion.
 
 
 Then type as usual the Mapping for Movie, you should get something like:
@@ -241,7 +241,7 @@ Then specify the _child reference_ `movie` and _parent reference_ `slug`.
     ![Screenshot of the Person Mapping](assets/images/person_tm_movie.png#only-light)
     ![Screenshot of the Person Mapping](assets/images/person_tm_movie_dark.png#only-dark)
 === "Video"
-    In this video we create the Movie TriplesMap and link people with their favourit movie.
+    In this video we create the Movie TriplesMap and link people with their favourite movie.
     <div style="padding:63.21% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1054434795?h=ec12d26900&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Getting Started 3: Movie TriplesMap"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 
@@ -254,15 +254,24 @@ Then specify the _child reference_ `movie` and _parent reference_ `slug`.
 ### Lastname in uppercase
 
 One last detail, in the generated graph we would like the last name of people to be in uppercase.
-You can use a function in the RML mapping to achieve this, start by importing the **RML.FNML** language and add the `grel` prefix.
 
-Then we will adapt the `foaf:lastName` predicate object map, remove the reference (or copy it) and place a **functionExecution** in the object position.
-Type the function `grel:toUpperCase`, move in between the parenthesis and add an argument, in the parameter names use completion to select the input parameter denoted with ![a yellow f](assets/images/icon_function.png) and as value uses a reference to `lastname` (or paste it).
+You can use a function in the RML mapping to achieve this,
+start by importing the **RML.FNML** language and add the `grel` prefix (use autocompletion for the namespace).
+
+Next, modify the `foaf:lastName` _predicate object map_.
+Remove the existing _reference_ (you might want to copy it first).
+In its place, insert a **functionExecution** in the object position.
+
+Type the function `grel:toUpperCase`.
+Now, move your cursor inside the parentheses and add a function input.
+Use auto-completion to select the input parameter, indicated by the ![a yellow f](assets/images/icon_function.png) icon.
+For the parameter's value, use a _reference_ to the `lastname` (or paste the reference you copied earlier).
 
 === "Mapping"
     ![Screenshot of the Person Mapping](assets/images/person_tm_uppercase.png#only-light)
     ![Screenshot of the Person Mapping](assets/images/person_tm_uppercase_dark.png#only-dark)
 === "Video"
+    In this video, we capitalize the object value of `foaf:lastName`.  
     <div style="padding:63.21% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1054436598?h=ae6590bd97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Getting Started 4: toUpperCase lastname"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ## Export Mappings
@@ -295,7 +304,11 @@ To create the RML structures, the editor also needs the RDF Graph version of the
 Then on the first line of the document use **Promote RML constructs**.
 Using the Turtle AST and the RDF Graph, it will insert the RML constructs in the document, so once converted you can remove the turtle version from the document.
 
-<div style="padding:54.58% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1053670824?h=5896274e8d&texttrack=en&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Demo Import and Edit RML"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+=== "Video"
+    In this video, we start by importing a `.ttl` file containing the person mapping,
+    convert it to RML structures,
+    and continue by creating the Movie TriplesMap and finally using a fonction to capitalize people's last name.
+    <div style="padding:54.58% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1053670824?h=5896274e8d&texttrack=en&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Demo Import and Edit RML"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ## Conclusion
 

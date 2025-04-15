@@ -6,7 +6,7 @@
 
 ![Screenshot of the application with the person RML mapping](assets/images/app_people_run.png)
 
-**Specs**: RML-Core is fully implemented, RML-FNML and RML-IO are partially implemented. The notations are specifically designed to be lighter than the turtle conterparts.
+**Specs**: RML-Core is fully implemented, RML-FNML and RML-IO are partially implemented. The notations are specifically designed to be lighter than the turtle counterparts.
 
 **Completions**: Use completion ++ctrl+space++ to enter the mapping and use the context assistant and quick actions ++alt+enter++.
 
@@ -19,8 +19,7 @@
 
 **SHACL Validation**: Validates RML mappings using the generated RDF graph.
 !!! TIP
-    Use **Check model** with a right-click in the Logical View (left menu) or with all actions Ctrl+Shift+A
-    You may use ++f5++ to refresh the validation.
+    Use **Check model** with a right-click in the Logical View (left menu) and ++f5++ to refresh the validation.
 
 **RML from existing Turtle mappings**:
 Generates RML structures from an existing turtle mapping.
@@ -44,7 +43,7 @@ then use **Promote to RML constructs** context action on Turtle document.
   and then the CST converted to the AST.
 - **Export to text**: Converts the AST back to text, with the textGen aspect.
 
-- **RDF Graph Conversion**: Converts Turtle document to a RDF graph (Apache Jena Model), annotating triples with origin node information for traceability.
+- **RDF Graph Conversion**: Converts Turtle documents to RDF graphs (Apache Jena Model), annotating triples with origin node information for traceability.
     - the object node id is kept by annotating the triple: `<<_ _ ?object>> grape:originNode ?origin`.
     - the subject node id is kept by adding a predicate object to it: `?subject grape:originNode ?origin`.
       !!! TIP
