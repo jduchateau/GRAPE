@@ -521,6 +521,66 @@
       </node>
       <node concept="3Tm1VV" id="7cYw35ipc_1" role="1B3o_S" />
     </node>
+    <node concept="Wx3nA" id="1OUG_EYegO6" role="jymVt">
+      <property role="TrG5h" value="UnsafeIRI" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="1OUG_EYegO7" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+      </node>
+      <node concept="2YIFZM" id="1OUG_EYegO8" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createResource(java.lang.String)" resolve="createResource" />
+        <node concept="3cpWs3" id="1OUG_EYegO9" role="37wK5m">
+          <node concept="37vLTw" id="1OUG_EYegOa" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="1OUG_EYegOb" role="3uHU7w">
+            <property role="Xl_RC" value="UnsafeIRI" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1OUG_EYegOc" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="1OUG_EYeiv9" role="jymVt">
+      <property role="TrG5h" value="URI" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="1OUG_EYeiva" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+      </node>
+      <node concept="2YIFZM" id="1OUG_EYeivb" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createResource(java.lang.String)" resolve="createResource" />
+        <node concept="3cpWs3" id="1OUG_EYeivc" role="37wK5m">
+          <node concept="37vLTw" id="1OUG_EYeivd" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="1OUG_EYeive" role="3uHU7w">
+            <property role="Xl_RC" value="URI" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1OUG_EYeivf" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="1OUG_EYekEl" role="jymVt">
+      <property role="TrG5h" value="UnsafeURI" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="1OUG_EYekEm" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+      </node>
+      <node concept="2YIFZM" id="1OUG_EYekEn" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createResource(java.lang.String)" resolve="createResource" />
+        <node concept="3cpWs3" id="1OUG_EYekEo" role="37wK5m">
+          <node concept="37vLTw" id="1OUG_EYekEp" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="1OUG_EYekEq" role="3uHU7w">
+            <property role="Xl_RC" value="UnsafeURI" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1OUG_EYekEr" role="1B3o_S" />
+    </node>
     <node concept="Wx3nA" id="7cYw35ipc_2" role="jymVt">
       <property role="TrG5h" value="LITERAL" />
       <property role="3TUv4t" value="true" />

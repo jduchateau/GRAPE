@@ -2545,7 +2545,7 @@
                 </node>
               </node>
               <node concept="3TrEf2" id="6wg$J2lEz9K" role="2OqNvi">
-                <ref role="3Tt5mk" to="16h3:2z4QKYxWe0t" />
+                <ref role="3Tt5mk" to="16h3:2z4QKYxWe0t" resolve="object" />
               </node>
             </node>
           </node>
@@ -3021,7 +3021,7 @@
                   <node concept="1rXfSq" id="6wg$J2lQ90o" role="2oxUTC">
                     <ref role="37wK5l" node="6wg$J2lN8zU" resolve="prepareGraphMap" />
                     <node concept="37vLTw" id="6wg$J2lQejr" role="37wK5m">
-                      <ref role="3cqZAo" node="6wg$J2lLukF" resolve="graphMap" />
+                      <ref role="3cqZAo" node="6wg$J2lLukF" resolve="graphMapResource" />
                     </node>
                   </node>
                 </node>
@@ -3031,7 +3031,7 @@
           <node concept="3y3z36" id="6wg$J2lPNDt" role="3clFbw">
             <node concept="10Nm6u" id="6wg$J2lPRlP" role="3uHU7w" />
             <node concept="37vLTw" id="6wg$J2lP$cd" role="3uHU7B">
-              <ref role="3cqZAo" node="6wg$J2lLukF" resolve="graphMap" />
+              <ref role="3cqZAo" node="6wg$J2lLukF" resolve="graphMapResource" />
             </node>
           </node>
         </node>
@@ -5500,7 +5500,7 @@
                 <node concept="2pJPED" id="6zcUDwvdf_F" role="2pJPEn">
                   <ref role="2pJxaS" to="qx9m:FW04txtQWI" resolve="CustomDirectoryRoot" />
                   <node concept="2pJxcG" id="6zcUDwvdnZg" role="2pJxcM">
-                    <ref role="2pJxcJ" to="qx9m:FW04txtQWK" resolve="path" />
+                    <ref role="2pJxcJ" to="qx9m:1OUG_EXN3QR" resolve="path" />
                     <node concept="WxPPo" id="6zcUDwver2z" role="28ntcv">
                       <node concept="37vLTw" id="6zcUDwver2x" role="WxPPp">
                         <ref role="3cqZAo" node="6zcUDwvecF8" resolve="path" />
@@ -5536,6 +5536,12 @@
                   <node concept="2pJPEk" id="6zcUDwvh2ij" role="3cqZAk">
                     <node concept="2pJPED" id="6zcUDwvh2il" role="2pJPEn">
                       <ref role="2pJxaS" to="qx9m:FW04txtQWs" resolve="CurrentWorkingDirectoryRoot" />
+                      <node concept="2pJxcG" id="1OUG_EXRyz8" role="2pJxcM">
+                        <ref role="2pJxcJ" to="qx9m:1OUG_EXN3QR" resolve="path" />
+                        <node concept="WxPPo" id="1OUG_EXRBQp" role="28ntcv">
+                          <node concept="10Nm6u" id="1OUG_EXRBQn" role="WxPPp" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -5556,6 +5562,12 @@
                   <node concept="2pJPEk" id="6zcUDwvhjZ$" role="3cqZAk">
                     <node concept="2pJPED" id="6zcUDwvhjZ_" role="2pJPEn">
                       <ref role="2pJxaS" to="qx9m:FW04txtQWD" resolve="MappingDirectoryRoot" />
+                      <node concept="2pJxcG" id="1OUG_EXREQf" role="2pJxcM">
+                        <ref role="2pJxcJ" to="qx9m:1OUG_EXN3QR" resolve="path" />
+                        <node concept="WxPPo" id="1OUG_EXRHQr" role="28ntcv">
+                          <node concept="10Nm6u" id="1OUG_EXRHQp" role="WxPPp" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

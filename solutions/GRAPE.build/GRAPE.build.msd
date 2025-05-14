@@ -20,7 +20,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="e50dda87-5e86-4ad2-9030-8d02500cea68(GRAPE.build)" version="0" />
-    <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
   </dependencyVersions>
 </solution>

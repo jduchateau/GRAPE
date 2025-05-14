@@ -586,7 +586,7 @@
           <property role="3F0ifm" value="annotation" />
         </node>
         <node concept="3F1sOY" id="2Lc747KPzrO" role="3EZMnx">
-          <ref role="1NtTu8" to="ys6r:55wIQ$REuhE" />
+          <ref role="1NtTu8" to="ys6r:55wIQ$REuhE" resolve="annotation" />
         </node>
         <node concept="2iRfu4" id="2Lc747KPzrP" role="2iSdaV" />
       </node>
@@ -890,7 +890,7 @@
                             </node>
                           </node>
                           <node concept="3TrEf2" id="5ay_xxA_axd" role="2OqNvi">
-                            <ref role="3Tt5mk" to="ys6r:34GH_iTY3TX" />
+                            <ref role="3Tt5mk" to="ys6r:34GH_iTY3TX" resolve="parentTriplesMap" />
                           </node>
                         </node>
                       </node>
@@ -1193,7 +1193,7 @@
         </node>
         <node concept="3F1sOY" id="2ZAgtJQaQr1" role="3EZMnx">
           <property role="2ru_X1" value="true" />
-          <ref role="1NtTu8" to="ys6r:5tSQ8xWM0ba" />
+          <ref role="1NtTu8" to="ys6r:5tSQ8xWM0ba" resolve="termType" />
           <node concept="1HlG4h" id="2Lc747KG1t6" role="2ruayu">
             <ref role="1k5W1q" to="tpco:3VARyd8XcQs" resolve="Comment" />
             <node concept="1HfYo3" id="2Lc747KG1t7" role="1HlULh">
@@ -1238,7 +1238,7 @@
                 <node concept="2OqwBi" id="3EB406zW3zd" role="2Oq$k0">
                   <node concept="pncrf" id="3EB406zW38P" role="2Oq$k0" />
                   <node concept="3TrEf2" id="3EB406zW3Yk" role="2OqNvi">
-                    <ref role="3Tt5mk" to="ys6r:5tSQ8xWM0ba" />
+                    <ref role="3Tt5mk" to="ys6r:5tSQ8xWM0ba" resolve="termType" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="3EB406zW5xo" role="2OqNvi" />
@@ -2079,7 +2079,7 @@
     <property role="3GE5qa" value="POM" />
     <ref role="1XX52x" to="ys6r:34GH_iTY3U4" resolve="JoinCondition" />
     <node concept="2aJ2om" id="5ay_xxAzFgd" role="CpUAK">
-      <ref role="2$4xQ3" node="5ay_xxAzCdK" resolve="JoinConditingFilePath" />
+      <ref role="2$4xQ3" node="5ay_xxAzCdK" resolve="JoinConditingFilePathDisabled" />
     </node>
     <node concept="3EZMnI" id="5ay_xxAzG4s" role="2wV5jI">
       <node concept="l2Vlx" id="5ay_xxAzG4t" role="2iSdaV" />
@@ -2087,7 +2087,7 @@
         <property role="3F0ifm" value="child" />
       </node>
       <node concept="3F1sOY" id="5ay_xxAzG51" role="3EZMnx">
-        <ref role="1NtTu8" to="ys6r:34GH_iTY3U6" />
+        <ref role="1NtTu8" to="ys6r:34GH_iTY3U6" resolve="childMap" />
       </node>
       <node concept="3F0ifn" id="5ay_xxAzG52" role="3EZMnx">
         <property role="3F0ifm" value="parent" />
@@ -2096,7 +2096,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5ay_xxAzG5C" role="3EZMnx">
-        <ref role="1NtTu8" to="ys6r:34GH_iTY3U7" />
+        <ref role="1NtTu8" to="ys6r:34GH_iTY3U7" resolve="parentMap" />
       </node>
       <node concept="1Bsynf" id="5ay_xxAzG5D" role="3F10Kt">
         <property role="VOm3f" value="true" />
@@ -2117,11 +2117,11 @@
               <node concept="2pJPED" id="4p1tyCkHWA0" role="2pJPEn">
                 <ref role="2pJxaS" to="ys6r:75xoT0kgf8o" resolve="LanguageMap" />
                 <node concept="2pIpSj" id="4p1tyCkHWIz" role="2pJxcM">
-                  <ref role="2pIpSl" to="ys6r:5tSQ8xWM0b6" />
+                  <ref role="2pIpSl" to="ys6r:5tSQ8xWM0b6" resolve="value" />
                   <node concept="2pJPED" id="4p1tyCkHWMA" role="28nt2d">
                     <ref role="2pJxaS" to="ys6r:5iB6wpUzbKP" resolve="ConstantExpr" />
                     <node concept="2pIpSj" id="4p1tyCkHWQp" role="2pJxcM">
-                      <ref role="2pIpSl" to="ys6r:5tSQ8xWLzCK" />
+                      <ref role="2pIpSl" to="ys6r:5tSQ8xWLzCK" resolve="value" />
                       <node concept="36biLy" id="4p1tyCkHWRc" role="28nt2d">
                         <node concept="3N4pyC" id="4p1tyCkHWV3" role="36biLW" />
                       </node>
@@ -2158,11 +2158,11 @@
               <node concept="2pJPED" id="4p1tyCkHVwP" role="2pJPEn">
                 <ref role="2pJxaS" to="ys6r:75xoT0kgf8p" resolve="DatatypeMap" />
                 <node concept="2pIpSj" id="4p1tyCkHVBJ" role="2pJxcM">
-                  <ref role="2pIpSl" to="ys6r:5tSQ8xWM0b6" />
+                  <ref role="2pIpSl" to="ys6r:5tSQ8xWM0b6" resolve="value" />
                   <node concept="2pJPED" id="4p1tyCkHVCB" role="28nt2d">
                     <ref role="2pJxaS" to="ys6r:5iB6wpUzbKP" resolve="ConstantExpr" />
                     <node concept="2pIpSj" id="4p1tyCkHVDn" role="2pJxcM">
-                      <ref role="2pIpSl" to="ys6r:5tSQ8xWLzCK" />
+                      <ref role="2pIpSl" to="ys6r:5tSQ8xWLzCK" resolve="value" />
                       <node concept="36biLy" id="4p1tyCkHVEa" role="28nt2d">
                         <node concept="3N4pyC" id="4p1tyCkHVI1" role="36biLW" />
                       </node>

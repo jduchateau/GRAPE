@@ -14,7 +14,8 @@
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" />
     <import index="21a2" ref="r:659e3dc3-5306-45e9-bef0-f5fd17f0422d(RML.prefix)" />
     <import index="2tc5" ref="r:aeabcdcf-1eba-47fc-b37f-8223dfaaa915(RML.IO.behavior)" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="dvzw" ref="r:1ab49751-3fc1-4885-8e5c-71c73f1e202f(Turtle.editor)" implicit="true" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
   </imports>
@@ -904,6 +905,15 @@
     <node concept="PMmxH" id="FW04txtQWC" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
+    <node concept="3EZMnI" id="1OUG_EXN3QT" role="6VMZX">
+      <node concept="3F0ifn" id="1OUG_EXN3QZ" role="3EZMnx">
+        <property role="3F0ifm" value="path" />
+      </node>
+      <node concept="3F0A7n" id="1OUG_EXN3R2" role="3EZMnx">
+        <ref role="1NtTu8" to="qx9m:1OUG_EXN3QR" resolve="path" />
+      </node>
+      <node concept="2iRfu4" id="1OUG_EXN3QW" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="FW04txtQWL">
     <property role="3GE5qa" value="Source.Root" />
@@ -913,7 +923,7 @@
         <property role="3F0ifm" value="custom" />
       </node>
       <node concept="3F0A7n" id="FW04txtQWW" role="3EZMnx">
-        <ref role="1NtTu8" to="qx9m:FW04txtQWK" resolve="path" />
+        <ref role="1NtTu8" to="qx9m:1OUG_EXN3QR" resolve="path" />
         <ref role="1k5W1q" to="dvzw:6qpuMwcOz1x" resolve="LiteralString" />
       </node>
       <node concept="l2Vlx" id="FW04txtQWQ" role="2iSdaV" />
@@ -1008,7 +1018,7 @@
           <property role="3F0ifm" value="from" />
         </node>
         <node concept="3F1sOY" id="5cblP9ZLTkh" role="3EZMnx">
-          <ref role="1NtTu8" to="qx9m:5tSQ8xWQHBE" />
+          <ref role="1NtTu8" to="qx9m:5tSQ8xWQHBE" resolve="source" />
         </node>
       </node>
       <node concept="3EZMnI" id="5cblP9ZLTki" role="3EZMnx">
@@ -1035,7 +1045,7 @@
           <property role="3F0ifm" value="referenceFormulation" />
         </node>
         <node concept="3F1sOY" id="5cblP9ZLTkt" role="3EZMnx">
-          <ref role="1NtTu8" to="qx9m:5k8WOM8oJQ5" />
+          <ref role="1NtTu8" to="qx9m:5k8WOM8oJQ5" resolve="referenceFormulation" />
         </node>
         <node concept="l2Vlx" id="5cblP9ZLTku" role="2iSdaV" />
       </node>
@@ -1064,7 +1074,7 @@
         </node>
         <node concept="3F1sOY" id="5cblP9ZLTkE" role="3EZMnx">
           <property role="1$x2rV" value="&lt;default&gt;" />
-          <ref role="1NtTu8" to="qx9m:5tSQ8xWQHBI" />
+          <ref role="1NtTu8" to="qx9m:5tSQ8xWQHBI" resolve="referenceFormulation_old" />
         </node>
         <node concept="pkWqt" id="5cblP9ZLTkF" role="pqm2j">
           <node concept="3clFbS" id="5cblP9ZLTkG" role="2VODD2">
@@ -1073,7 +1083,7 @@
                 <node concept="2OqwBi" id="5cblP9ZLTkJ" role="2Oq$k0">
                   <node concept="pncrf" id="5cblP9ZLTkK" role="2Oq$k0" />
                   <node concept="3TrEf2" id="5cblP9ZLTkL" role="2OqNvi">
-                    <ref role="3Tt5mk" to="qx9m:5tSQ8xWQHBI" />
+                    <ref role="3Tt5mk" to="qx9m:5tSQ8xWQHBI" resolve="referenceFormulation_old" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="5cblP9ZLTkM" role="2OqNvi" />

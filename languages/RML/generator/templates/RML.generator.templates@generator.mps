@@ -1769,7 +1769,7 @@
                               <node concept="3clFbF" id="2Lc747L1uV2" role="3cqZAp">
                                 <node concept="2OqwBi" id="2Lc747L1uUX" role="3clFbG">
                                   <node concept="3TrEf2" id="2Lc747L1uV0" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="ys6r:5tSQ8xWM0b6" />
+                                    <ref role="3Tt5mk" to="ys6r:5tSQ8xWM0b6" resolve="value" />
                                   </node>
                                   <node concept="30H73N" id="2Lc747L1uV1" role="2Oq$k0" />
                                 </node>
