@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/GrapePlugin" />
   <property name="build.layout" location="${build.dir}/artifacts/GrapePlugin" />
-  <property name="version_lang" value="0.1.4" />
+  <property name="version_lang" value="0.1.5" />
   <property name="mps_home" location="" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
@@ -450,6 +450,7 @@
           <module ref="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" kind="cl" />
           <module ref="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" kind="cl" />
           <module ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" kind="cl" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
         </dependencies>
         <uses>
@@ -835,6 +836,8 @@
           <module ref="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" kind="cl" />
           <module ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+          <module ref="86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)" kind="cl" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
@@ -1584,6 +1587,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.project.jar" />
         <pathelement path="${build.tmp}/java/out/Turtle" />
       </classpath>
     </javac>
@@ -2128,6 +2132,7 @@
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.project.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
         <pathelement path="${build.tmp}/java.modules.cycle.2" />

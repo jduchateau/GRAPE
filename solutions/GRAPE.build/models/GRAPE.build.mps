@@ -167,7 +167,7 @@
       <node concept="aVJcg" id="3x0FUHjWU8J" role="aVJcv">
         <node concept="NbPM2" id="3x0FUHjWU8I" role="aVJcq">
           <node concept="3Mxwew" id="3x0FUHjWU8P" role="3MwsjC">
-            <property role="3MwjfP" value="0.1.4" />
+            <property role="3MwjfP" value="0.1.5" />
           </node>
         </node>
       </node>
@@ -1232,6 +1232,11 @@
             <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6Zc66WZV1Iz" role="3bR37C">
+          <node concept="3bR9La" id="6Zc66WZV1I$" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="v_r5au3LEF" role="2G$12L">
         <property role="TrG5h" value="RMLPlugin" />
@@ -1502,6 +1507,16 @@
         <node concept="1SiIV0" id="2uMhTA67wjY" role="3bR37C">
           <node concept="3bR9La" id="2uMhTA67wjZ" role="1SiIV1">
             <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6Zc66WZV1IV" role="3bR37C">
+          <node concept="3bR9La" id="6Zc66WZV1IW" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8Y" resolve="jetbrains.mps.lang.project" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6Zc66WZV1IX" role="3bR37C">
+          <node concept="3bR9La" id="6Zc66WZV1IY" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
           </node>
         </node>
       </node>
