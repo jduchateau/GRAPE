@@ -1,6 +1,7 @@
+import com.fasterxml.jackson.databind.JsonNode
+import com.fasterxml.jackson.databind.ObjectMapper
 import de.undercouch.gradle.tasks.download.Download
-import dev.bmac.gradle.intellij.UpdateXmlTask
-import dev.bmac.gradle.intellij.UploadPluginTask
+import java.io.ByteArrayOutputStream
 import java.util.*
 
 buildscript {
@@ -9,6 +10,12 @@ buildscript {
         mavenCentral()
         gradlePluginPortal()
     }
+    dependencies {
+        classpath("com.fasterxml.jackson.core:jackson-databind:2.15.3")
+        classpath("com.fasterxml.jackson.core:jackson-core:2.15.3")
+        classpath("com.fasterxml.jackson.core:jackson-annotations:2.15.3")
+    }
+
 }
 
 repositories {
@@ -24,7 +31,7 @@ plugins {
 }
 
 dependencies {
-    mps("com.jetbrains:mps:2024.1.+")
+    mps("com.jetbrains:mps:2024.1.3")
     //generation("de.itemis.mps:extensions:2024.1.3072.+")
 }
 
@@ -68,7 +75,7 @@ tasks {
         group = "antlr"
     }
 
-    val runAntlr by registering(JavaExec::class) {
+    register<JavaExec>("runAntlr") {
         dependsOn(downloadAntlr)
         group = "antlr"
         description = "Run ANTLR on Turtle.g4"
@@ -78,20 +85,16 @@ tasks {
         workingDir = file("languages/Turtle.runtime/grammar")
     }
 
-    val version = getLanguageVersion()
-    val pluginArtefactUrl = "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/$version/GrapePlugin.zip"
-    val uploadToGitLab by registering {
+
+    val uploadToGitLab by registering(Exec::class) {
         group = "release"
         description = "Upload the build plugin to the GitLab registry on new release"
-        doLast {
-            exec {
-                commandLine("curl",
-                    "--header", "PRIVATE-TOKEN: $privateToken",
-                    "--upload-file", "$pluginArtefactDirectory/GrapePlugin.zip",
-                    pluginArtefactUrl
-                )
-            }
-        }
+        val version = getLanguageVersion()
+        commandLine(
+            "glab", "api", "projects/:id/packages/generic/GrapePlugin/$version/GrapePlugin.zip",
+            "-X", "PUT",
+            "--input", "$pluginArtefactDirectory/GrapePlugin.zip"
+        )
     }
 
 
@@ -99,41 +102,50 @@ tasks {
         group = "release"
         description = "Create a new release on GitLab"
         dependsOn(uploadToGitLab)
-        doLast {
-            exec {
-                commandLine("curl",
-                    "--header", "PRIVATE-TOKEN: $privateToken",
-                    "--header", "Content-Type: application/json",
-                    "--request", "POST",
-                    "--data", """{
-                        "tag_name": "$version",
-                        "assets": {
-                            "links": [{
-                                "name": "GrapePlugin.zip",
-                                "url": "$pluginArtefactUrl",
-                                "link_type": "package",
-                                "direct_asset_path": "GrapePlugin.zip"
-                            }]
-                        }
-                    }""",
-                    "$gitlabApiUrlBase/projects/$gitlabProjectId/releases"
-                )
-            }
-        }
-    }
 
-    //register<UpdateXmlTask>("updateLocalPluginXml") {
-    //    updateFile.set(file("updatePlugins.xml"))
-    //    downloadUrl.set("$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/0.1.0/GrapePlugin.zip")
-    //    pluginName.set("GRAPE: Turtle and RML Editor for MPS")
-    //    pluginId.set("be.uliege.jduchateau.grape")
-    //
-    //    version.set(getLanguageVersion())
-    //    // All readme lines except the first one (title)
-    //    pluginDescription.set(file("Readme.md").readLines().drop(1).joinToString("\n"))
-    //    // changeNotes.set(file("change-notes.txt").readText())
-    //    sinceBuild.set("241")
-    //}
+
+        doLast {
+            val version = getLanguageVersion()
+
+            val lastReleaseTag = getLastGitLabReleaseTag(project)
+            println("Last GitLab Release Tag: ${lastReleaseTag ?: "None found"}")
+
+            val tagExistsRemotely = checkGitTagExistsRemotely(project, version)
+            if (!tagExistsRemotely) {
+                throw GradleException("Git tag '$version' does not exist remotely. Please ensure you have created and pushed the tag (e.g., 'git tag $version' and 'git push origin $version').")
+            }
+            println("Git tag '$version' exists remotely.")
+
+            println("\nConfirm release creation for version '$version'? (yes/no): ")
+            val confirmation = readLine()?.trim()?.lowercase()
+            if (confirmation != "yes") {
+                throw GradleException("Release creation cancelled by user.")
+            }
+
+
+            val pluginArtefactUrl =
+                "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/$version/GrapePlugin.zip"
+            val mapper = ObjectMapper()
+            val releaseAsset = mapper.createObjectNode().apply {
+                put("name", "GrapePlugin.zip")
+                put("url", pluginArtefactUrl)
+                put("link_type", "package")
+                put("direct_asset_path", "GrapePlugin.zip")
+            }
+
+            val glabReleaseCreateCommand =
+                listOf("glab", "release", "create", version, "--asset-links", releaseAsset.toString())
+
+            project.exec {
+                commandLine(glabReleaseCreateCommand)
+                standardOutput = System.out
+                errorOutput = System.err
+            }.rethrowFailure()
+
+            println("Successfully created GitLab Release for version '$version'.")
+        }
+
+    }
 }
 
 fun getLanguageVersion(): String {
@@ -141,4 +153,42 @@ fun getLanguageVersion(): String {
     val properties = Properties().apply { load(buildPropertiesFile.inputStream()) }
     val versionLang = properties["GrapePlugin.version_lang"] as String
     return versionLang
+}
+
+fun getLastGitLabReleaseTag(project: Project): String? {
+    val outputStream = ByteArrayOutputStream()
+    val errorStream = ByteArrayOutputStream()
+
+    project.exec {
+        commandLine("glab", "api", "projects/:id/releases")
+        standardOutput = outputStream
+        errorOutput = errorStream
+    }.assertNormalExitValue()
+
+    val jsonResponse = outputStream.toString("UTF-8")
+    if (jsonResponse.isBlank() || jsonResponse == "[]") {
+        return null
+    }
+    val mapper = ObjectMapper()
+    val rootNode: JsonNode = mapper.readTree(jsonResponse)
+
+    if (rootNode.isArray && rootNode.size() > 0) {
+        val firstRelease = rootNode.get(0)
+        return firstRelease.get("tag_name")?.asText()
+    }
+    return null
+
+}
+
+fun checkGitTagExistsRemotely(project: Project, tagName: String): Boolean {
+    val outputStream = ByteArrayOutputStream()
+    val errorStream = ByteArrayOutputStream()
+
+    project.exec {
+        commandLine("git", "ls-remote", "--tags", "origin", "refs/tags/$tagName")
+        standardOutput = outputStream
+        errorOutput = errorStream
+    }.assertNormalExitValue()
+    return outputStream.toString("UTF-8").isNotBlank()
+
 }
