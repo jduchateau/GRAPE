@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/GrapePlugin" />
   <property name="build.layout" location="${build.dir}/artifacts/GrapePlugin" />
-  <property name="version_lang" value="0.1.5" />
+  <property name="version_lang" value="0.1.6" />
   <property name="mps_home" location="" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
@@ -605,9 +605,11 @@
           <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="cl" />
           <module ref="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" kind="cl" />
           <module ref="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" kind="cl" />
+          <module ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" kind="cl" />
           <module ref="22250116-183c-4e90-8450-b6a13dd8998b(jetbrains.mps.baseLanguage.execution.util)" kind="cl" />
           <module ref="933a68f9-aab6-401b-b5c5-5ca7783dce5f(jetbrains.mps.execution.configurations.pluginSolution)" kind="cl" />
           <module ref="04b376d5-fc16-403b-a344-c68b30193c6a(jetbrains.mps.execution.library)" kind="cl" />
+          <module ref="019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
@@ -615,6 +617,7 @@
           <language id="l:f3347d8a-0e79-4f35-8ac9-1574f25c986f:jetbrains.mps.execution.commands" />
           <language id="l:22e72e4c-0f69-46ce-8403-6750153aa615:jetbrains.mps.execution.configurations" />
           <language id="l:756e911c-3f1f-4a48-bdf5-a2ceb91b723c:jetbrains.mps.execution.settings" />
+          <language id="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" />
           <language id="l:ef7bf5ac-d06c-4342-b11d-e42104eb9343:jetbrains.mps.lang.plugin.standalone" />
           <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
           <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
@@ -1820,6 +1823,35 @@
         <pathelement path="${build.tmp}/java/out/Turtle" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/antlr4-runtime.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/caffeine.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/collection.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-codec.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-collections4.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-compress.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-csv.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-io.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-lang3.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/error_prone_annotations.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/gson.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/httpclient5.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/httpcore5-h2.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/httpcore5.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jakarta.json.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jcl-over-slf4j.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-arq.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-base.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-core.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-iri.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-querybuilder.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-rdfconnection.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-shacl.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/libthrift.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/protobuf-java.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/RoaringBitmap.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/slf4j-api.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/slf4j-simple.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/titanium-json-ld.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />

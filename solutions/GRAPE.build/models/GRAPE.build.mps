@@ -167,7 +167,7 @@
       <node concept="aVJcg" id="3x0FUHjWU8J" role="aVJcv">
         <node concept="NbPM2" id="3x0FUHjWU8I" role="aVJcq">
           <node concept="3Mxwew" id="3x0FUHjWU8P" role="3MwsjC">
-            <property role="3MwjfP" value="0.1.5" />
+            <property role="3MwjfP" value="0.1.6" />
           </node>
         </node>
       </node>
@@ -1317,6 +1317,16 @@
             <node concept="3qWCbU" id="v_r5au3M7j" role="3LXTna">
               <property role="3qWCbO" value="icons/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="17vw8yLrOR8" role="3bR37C">
+          <node concept="3bR9La" id="17vw8yLrOR9" role="1SiIV1">
+            <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="17vw8yLrORa" role="3bR37C">
+          <node concept="3bR9La" id="17vw8yLrORb" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
           </node>
         </node>
       </node>
