@@ -183,6 +183,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
@@ -1131,6 +1132,39 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="6thUOfk_4aR">
+    <property role="TrG5h" value="check_ReferencingObjectMap" />
+    <property role="3GE5qa" value="POM" />
+    <node concept="3clFbS" id="6thUOfk_4aS" role="18ibNy">
+      <node concept="3clFbJ" id="6thUOfk_4ci" role="3cqZAp">
+        <node concept="2OqwBi" id="6thUOfk_4VD" role="3clFbw">
+          <node concept="2OqwBi" id="6thUOfk_4mA" role="2Oq$k0">
+            <node concept="1YBJjd" id="6thUOfk_4cu" role="2Oq$k0">
+              <ref role="1YBMHb" node="6thUOfk_4aU" resolve="node" />
+            </node>
+            <node concept="3TrEf2" id="6thUOfk_4x_" role="2OqNvi">
+              <ref role="3Tt5mk" to="ys6r:34GH_iTY3TX" resolve="parentTriplesMap" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="6thUOfk_5x1" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="6thUOfk_4ck" role="3clFbx">
+          <node concept="2MkqsV" id="6thUOfk_5Dg" role="3cqZAp">
+            <node concept="Xl_RD" id="6thUOfk_5Dp" role="2MkJ7o">
+              <property role="Xl_RC" value="parentTripleMap is mandatory to join TripleMap." />
+            </node>
+            <node concept="1YBJjd" id="6thUOfk_5Dz" role="1urrMF">
+              <ref role="1YBMHb" node="6thUOfk_4aU" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6thUOfk_4aU" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="ys6r:34GH_iTY3TV" resolve="ReferencingObjectMap" />
     </node>
   </node>
 </model>

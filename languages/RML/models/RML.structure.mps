@@ -331,7 +331,6 @@
     <node concept="1TJgyj" id="34GH_iTY3TX" role="1TKVEi">
       <property role="IQ2ns" value="3543407481847299709" />
       <property role="20kJfa" value="parentTriplesMap" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2L7xBeiJE45" resolve="TriplesMap" />
     </node>
     <node concept="1TJgyj" id="34GH_iTY3U2" role="1TKVEi">
