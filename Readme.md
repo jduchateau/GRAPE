@@ -24,11 +24,17 @@ More information in the documentation: [GRAPE Documentation](https://jakubduchat
 If you use this software or its derivatives in an academic context, please cite the following paper:
 ```biblatex
 @inproceedings{duchateau2025grape,
-  title={{GRAPE}: Guiding {RML} Authoring with a Projectional Editor},
-  author={Jakub Duchateau and Christophe Debruyne},
-  booktitle={Submitted to Sixth International Workshop on Knowledge Graph Construction@ESWC2025},
-  year={2025},
-  note={under review}
+    title = {{GRAPE}: {Guiding} {RML} authoring with a projectional editor},
+    author = {Duchateau, Jakub and Debruyne, Christophe},
+    year = {2025},
+    month = jun,
+    booktitle = {Proceedings of the 6th {{International Workshop}} on {{Knowledge Graph Construction}}},
+    editor = {{Chaves-Fraga}, David and Dasoulas, Ioannis and Debruyne, Christophe and Dimou, Anastasia and Serles, Umutcan and Assche, Dylan Van},
+    address = {Portorož, Slovenia},
+    series = {{{CEUR Workshop Proceedings}}},
+    publisher = {CEUR},
+    volume = {3999},
+    issn = {1613-0073},
 }
 ```
 
