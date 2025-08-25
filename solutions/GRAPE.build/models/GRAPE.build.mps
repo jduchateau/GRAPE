@@ -1232,6 +1232,11 @@
             <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1bFFk3dLkfD" role="3bR37C">
+          <node concept="3bR9La" id="1bFFk3dLkfE" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="v_r5au3LEF" role="2G$12L">
         <property role="TrG5h" value="RMLPlugin" />

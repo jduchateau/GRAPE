@@ -32,7 +32,7 @@ plugins {
 
 dependencies {
     mps("com.jetbrains:mps:2024.1.3")
-    //generation("de.itemis.mps:extensions:2024.1.3072.+")
+    generation("de.itemis.mps:extensions:2024.1.3072.+")
 }
 
 tasks.named<Wrapper>("wrapper") {

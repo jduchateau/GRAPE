@@ -450,6 +450,7 @@
           <module ref="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" kind="cl" />
           <module ref="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" kind="cl" />
           <module ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" kind="cl" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
         </dependencies>
         <uses>
