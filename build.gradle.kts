@@ -90,19 +90,31 @@ tasks {
         group = "release"
         description = "Upload the build plugin to the GitLab registry on new release"
         val version = getLanguageVersion()
-        commandLine(
-            "glab", "api", "projects/:id/packages/generic/GrapePlugin/$version/GrapePlugin.zip",
-            "-X", "PUT",
-            "--input", "$pluginArtefactDirectory/GrapePlugin.zip"
-        )
-    }
 
+        val grapePluginPath = "$pluginArtefactDirectory/GrapePlugin.zip"
+
+        val existing = file(grapePluginPath).exists()
+        if (!existing) println("Plugin artefact '$grapePluginPath' does not exist. Build it first.")
+        else {
+            val apiUrl = "projects/:id/packages/generic/GrapePlugin/$version/GrapePlugin.zip"
+            val outputStream = ByteArrayOutputStream()
+            project.exec {
+                commandLine("glab", "api", apiUrl, "-X", "HEAD")
+                standardOutput = outputStream
+                isIgnoreExitValue = true
+            }
+            if (!outputStream.toString()
+                    .contains("404")
+            ) println("Plugin artefact for version '$version' already exists in GitLab registry. Skipping upload.")
+            else commandLine(
+                "glab", "api", apiUrl, "-X", "PUT", "--input", grapePluginPath
+            )
+        }
+    }
 
     val createRelease by registering {
         group = "release"
         description = "Create a new release on GitLab"
-        dependsOn(uploadToGitLab)
-
 
         doLast {
             val version = getLanguageVersion()
@@ -130,11 +142,15 @@ tasks {
                 put("name", "GrapePlugin.zip")
                 put("url", pluginArtefactUrl)
                 put("link_type", "package")
-                put("direct_asset_path", "GrapePlugin.zip")
+                put("direct_asset_path", "/GrapePlugin.zip")
+            }
+            val releaseAssetArray = mapper.createArrayNode().apply {
+                add(releaseAsset)
             }
 
+            println(releaseAssetArray.toString())
             val glabReleaseCreateCommand =
-                listOf("glab", "release", "create", version, "--asset-links", releaseAsset.toString())
+                listOf("glab", "release", "create", version, "--assets-links", releaseAssetArray.toString())
 
             project.exec {
                 commandLine(glabReleaseCreateCommand)
