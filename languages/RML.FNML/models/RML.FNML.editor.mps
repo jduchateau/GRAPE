@@ -66,6 +66,7 @@
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="8954657570917870539" name="jetbrains.mps.lang.editor.structure.TransformationLocation_ContextAssistant" flags="ng" index="2j_NTm" />
       <concept id="6089045305654894367" name="jetbrains.mps.lang.editor.structure.SubstituteMenuReference_Named" flags="ng" index="2kknPI">
         <reference id="6089045305654944382" name="menu" index="2kkw0f" />
@@ -450,7 +451,7 @@
   <node concept="24kQdi" id="1R$stKL6cZy">
     <ref role="1XX52x" to="vlcd:1R$stKL1EtG" resolve="Input" />
     <node concept="3EZMnI" id="1R$stKL6cZA" role="2wV5jI">
-      <node concept="l2Vlx" id="1R$stKL6cZB" role="2iSdaV" />
+      <node concept="2iRfu4" id="CVUbYhqD5o" role="2iSdaV" />
       <node concept="3F1sOY" id="1R$stKL6cZ$" role="3EZMnx">
         <ref role="1NtTu8" to="vlcd:1R$stKL1EtI" resolve="parameterMap" />
       </node>
