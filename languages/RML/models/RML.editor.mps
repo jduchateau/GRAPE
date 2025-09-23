@@ -429,7 +429,7 @@
     <node concept="3EZMnI" id="5iB6wpUyl2j" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="3F0ifn" id="5tSQ8xWK1cY" role="3EZMnx">
-        <property role="3F0ifm" value="Map" />
+        <property role="3F0ifm" value="TriplesMap" />
       </node>
       <node concept="3F1sOY" id="5tSQ8xWK1d3" role="3EZMnx">
         <ref role="1NtTu8" to="ys6r:25MWlU5UpGJ" resolve="identifier" />

@@ -52,7 +52,7 @@
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="5" />
-        <module reference="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" version="0" />
+        <module reference="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" version="1" />
         <module reference="42623156-e224-4a90-bea2-c0b8fb0c630a(RML.generator)" version="0" />
         <module reference="7960e2b8-b54e-4e5b-82c2-6aee4b0625de(RML.runtime)" version="0" />
         <module reference="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" version="3" />
@@ -110,7 +110,7 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="5" />
     <module reference="4d376ef7-201b-4497-bbe5-6b936a6ab3d7(RML.FNML)" version="0" />
-    <module reference="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" version="0" />
+    <module reference="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" version="1" />
     <module reference="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" version="3" />
     <module reference="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />

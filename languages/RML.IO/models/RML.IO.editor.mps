@@ -89,7 +89,6 @@
         <reference id="1227861587090" name="link" index="3ygfmf" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
-        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -120,6 +119,11 @@
       </concept>
       <concept id="5624877018228264944" name="jetbrains.mps.lang.editor.structure.TransformationMenuContribution" flags="ng" index="3INDKC">
         <child id="6718020819489956031" name="menuReference" index="AmTjC" />
+      </concept>
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
+        <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
+        <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
+        <child id="1088612973955" name="ifFalseCellModel" index="1QoVPY" />
       </concept>
       <concept id="7980428675268276156" name="jetbrains.mps.lang.editor.structure.TransformationMenuSection" flags="ng" index="1Qtc8_">
         <child id="7980428675268276157" name="locations" index="1Qtc8$" />
@@ -512,8 +516,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="pZc6UDa6tS">
-    <property role="3GE5qa" value="Source.Base" />
-    <ref role="1XX52x" to="qx9m:FW04txuk4O" resolve="BaseSource" />
+    <property role="3GE5qa" value="Source.Def" />
+    <ref role="1XX52x" to="qx9m:FW04txuk4O" resolve="FilePath" />
     <node concept="3EZMnI" id="pZc6UDa6tB" role="6VMZX">
       <node concept="2iRkQZ" id="pZc6UDa6tC" role="2iSdaV" />
       <node concept="3EZMnI" id="4po4Atti5s$" role="3EZMnx">
@@ -648,11 +652,6 @@
         </node>
         <node concept="2iRfu4" id="FW04txtpvp" role="2iSdaV" />
       </node>
-      <node concept="3F1sOY" id="pZc6UDa6v1" role="3EZMnx">
-        <property role="39s7Ar" value="true" />
-        <property role="1$x2rV" value="&lt;&lt; custom property &gt;&gt;" />
-        <ref role="1NtTu8" to="qx9m:pZc6UDa6tp" resolve="list" />
-      </node>
       <node concept="l2Vlx" id="pZc6UDdhZk" role="2iSdaV" />
       <node concept="1Bsynf" id="22bbLClIrXj" role="3F10Kt">
         <property role="VOm3f" value="true" />
@@ -736,19 +735,13 @@
                           <node concept="2pIpSj" id="1Kf4ImLO8U7" role="2pJxcM">
                             <ref role="2pIpSl" to="qx9m:FW04txtQU3" resolve="source" />
                             <node concept="2pJPED" id="1Kf4ImLO8Uy" role="28nt2d">
-                              <ref role="2pJxaS" to="qx9m:FW04txuk4O" resolve="BaseSource" />
+                              <ref role="2pJxaS" to="qx9m:FW04txuk4O" resolve="FilePath" />
                               <node concept="2pJxcG" id="1Kf4ImLO8Vd" role="2pJxcM">
                                 <ref role="2pJxcJ" to="qx9m:FW04txuk55" resolve="path" />
                                 <node concept="WxPPo" id="1Kf4ImLO8VL" role="28ntcv">
                                   <node concept="Xl_RD" id="1Kf4ImLO8VK" role="WxPPp">
                                     <property role="Xl_RC" value="path.csv" />
                                   </node>
-                                </node>
-                              </node>
-                              <node concept="2pIpSj" id="1Kf4ImLO8X9" role="2pJxcM">
-                                <ref role="2pIpSl" to="qx9m:pZc6UDa6tp" resolve="list" />
-                                <node concept="2pJPED" id="1Kf4ImLO8X$" role="28nt2d">
-                                  <ref role="2pJxaS" to="16h3:6T7chEghU4F" resolve="PredicateObjectList" />
                                 </node>
                               </node>
                             </node>
@@ -818,19 +811,13 @@
                           <node concept="2pIpSj" id="1Kf4ImLO9_i" role="2pJxcM">
                             <ref role="2pIpSl" to="qx9m:FW04txtQU3" resolve="source" />
                             <node concept="2pJPED" id="1Kf4ImLO9_H" role="28nt2d">
-                              <ref role="2pJxaS" to="qx9m:FW04txuk4O" resolve="BaseSource" />
+                              <ref role="2pJxaS" to="qx9m:FW04txuk4O" resolve="FilePath" />
                               <node concept="2pJxcG" id="1Kf4ImLO9Ao" role="2pJxcM">
                                 <ref role="2pJxcJ" to="qx9m:FW04txuk55" resolve="path" />
                                 <node concept="WxPPo" id="1Kf4ImLO9AW" role="28ntcv">
                                   <node concept="Xl_RD" id="1Kf4ImLO9AV" role="WxPPp">
                                     <property role="Xl_RC" value="file.json" />
                                   </node>
-                                </node>
-                              </node>
-                              <node concept="2pIpSj" id="1Kf4ImLO9Cr" role="2pJxcM">
-                                <ref role="2pIpSl" to="qx9m:pZc6UDa6tp" resolve="list" />
-                                <node concept="2pJPED" id="1Kf4ImLO9CQ" role="28nt2d">
-                                  <ref role="2pJxaS" to="16h3:6T7chEghU4F" resolve="PredicateObjectList" />
                                 </node>
                               </node>
                             </node>
@@ -1111,6 +1098,119 @@
       <node concept="l2Vlx" id="5cblP9ZLTkT" role="2iSdaV" />
       <node concept="1Bt7hp" id="5cblP9ZLTkU" role="3F10Kt">
         <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7PZGQTM_uJJ">
+    <property role="3GE5qa" value="Source.Def" />
+    <ref role="1XX52x" to="qx9m:7PZGQTMwpOz" resolve="SQLDatabase" />
+    <node concept="3EZMnI" id="7PZGQTM_uJL" role="2wV5jI">
+      <node concept="1Bsynf" id="7PZGQTMB802" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="pj6Ft" id="7PZGQTMB8wx" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="3EZMnI" id="7PZGQTM_R4L" role="3EZMnx">
+        <node concept="2iRfu4" id="7PZGQTM_R4M" role="2iSdaV" />
+        <node concept="3F0ifn" id="7PZGQTM_uJR" role="3EZMnx">
+          <property role="3F0ifm" value="sql database" />
+        </node>
+        <node concept="3F1sOY" id="7PZGQTM_uJU" role="3EZMnx">
+          <ref role="1NtTu8" to="qx9m:7PZGQTMwpOE" resolve="jdbcDSN" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7PZGQTM_uKp" role="3EZMnx">
+        <node concept="3F0ifn" id="7PZGQTM_uJZ" role="3EZMnx">
+          <property role="3F0ifm" value="driver" />
+        </node>
+        <node concept="3F0A7n" id="7PZGQTM_uK2" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <property role="1$x2rV" value="&lt;auto&gt;" />
+          <ref role="1NtTu8" to="qx9m:7PZGQTMwpOF" resolve="jdbcDriver" />
+        </node>
+        <node concept="2iRfu4" id="7PZGQTM_QOS" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="7PZGQTM_uKs" role="3EZMnx">
+        <node concept="3F0ifn" id="7PZGQTM_uK7" role="3EZMnx">
+          <property role="3F0ifm" value="auth" />
+        </node>
+        <node concept="3F0A7n" id="7PZGQTM_xYt" role="3EZMnx">
+          <ref role="1NtTu8" to="qx9m:7PZGQTM_uKv" resolve="auth" />
+        </node>
+        <node concept="1QoScp" id="7PZGQTM_uKy" role="3EZMnx">
+          <node concept="3EZMnI" id="7PZGQTM_wuq" role="1QoS34">
+            <node concept="3F0ifn" id="7PZGQTM_wIk" role="3EZMnx">
+              <property role="3F0ifm" value="user" />
+            </node>
+            <node concept="3F0A7n" id="7PZGQTM_wIn" role="3EZMnx">
+              <ref role="1NtTu8" to="qx9m:7PZGQTMwpOB" resolve="username" />
+            </node>
+            <node concept="3F0ifn" id="7PZGQTM_wIs" role="3EZMnx">
+              <property role="3F0ifm" value="password" />
+            </node>
+            <node concept="3F0A7n" id="7PZGQTM_wIx" role="3EZMnx">
+              <ref role="1NtTu8" to="qx9m:7PZGQTMwpOC" resolve="password" />
+            </node>
+            <node concept="l2Vlx" id="7PZGQTM_wut" role="2iSdaV" />
+            <node concept="VPM3Z" id="7PZGQTM_wuu" role="3F10Kt" />
+          </node>
+          <node concept="pkWqt" id="7PZGQTM_uK_" role="3e4ffs">
+            <node concept="3clFbS" id="7PZGQTM_uKB" role="2VODD2">
+              <node concept="3clFbF" id="7PZGQTM_uYX" role="3cqZAp">
+                <node concept="2OqwBi" id="7PZGQTM_vok" role="3clFbG">
+                  <node concept="pncrf" id="7PZGQTM_uYW" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="7PZGQTM_vKV" role="2OqNvi">
+                    <ref role="3TsBF5" to="qx9m:7PZGQTM_uKv" resolve="auth" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="35HoNQ" id="7PZGQTM_Q_1" role="1QoVPY" />
+        </node>
+        <node concept="2iRfu4" id="7PZGQTM_QOU" role="2iSdaV" />
+      </node>
+      <node concept="l2Vlx" id="7PZGQTM_uJO" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7PZGQTM_PFo">
+    <property role="3GE5qa" value="Source.Def.DB" />
+    <ref role="1XX52x" to="qx9m:7PZGQTMwpOL" resolve="RawJdbcDSN" />
+    <node concept="3EZMnI" id="7PZGQTM_PGp" role="2wV5jI">
+      <node concept="2iRfu4" id="7PZGQTM_PGq" role="2iSdaV" />
+      <node concept="3F0ifn" id="7PZGQTM_PGu" role="3EZMnx">
+        <property role="3F0ifm" value="url" />
+      </node>
+      <node concept="3F0A7n" id="7PZGQTM_PFq" role="3EZMnx">
+        <ref role="1NtTu8" to="qx9m:7PZGQTMwpON" resolve="url" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7PZGQTM_Qku">
+    <property role="3GE5qa" value="Source.Def.DB" />
+    <ref role="1XX52x" to="qx9m:7PZGQTMwx24" resolve="Sqlite" />
+    <node concept="3EZMnI" id="7PZGQTM_Qkw" role="2wV5jI">
+      <node concept="3F0ifn" id="7PZGQTM_QkA" role="3EZMnx">
+        <property role="3F0ifm" value="sqlite path" />
+      </node>
+      <node concept="3F0A7n" id="7PZGQTM_QkD" role="3EZMnx">
+        <ref role="1NtTu8" to="qx9m:7PZGQTMwx2a" resolve="path" />
+        <ref role="1k5W1q" to="dvzw:6qpuMwcOz1x" resolve="LiteralString" />
+      </node>
+      <node concept="2iRfu4" id="7PZGQTM_Qkz" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7PZGQTMLQ0X">
+    <property role="3GE5qa" value="Source.Def" />
+    <ref role="1XX52x" to="qx9m:7PZGQTMCtbs" resolve="CustomSource" />
+    <node concept="3EZMnI" id="7PZGQTMLQ11" role="2wV5jI">
+      <node concept="l2Vlx" id="7PZGQTMLQ12" role="2iSdaV" />
+      <node concept="3F0ifn" id="7PZGQTMLQ0Z" role="3EZMnx">
+        <property role="3F0ifm" value="custom" />
+      </node>
+      <node concept="3F1sOY" id="7PZGQTMLQ14" role="3EZMnx">
+        <ref role="1NtTu8" to="qx9m:7PZGQTMCtbt" resolve="properties" />
       </node>
     </node>
   </node>

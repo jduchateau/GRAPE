@@ -55,9 +55,8 @@
       <concept id="6303025759226768838" name="RML.IO.structure.LogicalSourceReference" flags="ng" index="FCvle">
         <reference id="6303025759226768839" name="ref" index="FCvlf" />
       </concept>
-      <concept id="6303025759226929063" name="RML.IO.structure.BaseSource" flags="ng" index="FCOsJ">
+      <concept id="6303025759226929063" name="RML.IO.structure.FilePath" flags="ng" index="FCOsJ">
         <property id="791507941088379205" name="path" index="1Fxk42" />
-        <child id="468146138112354137" name="list" index="2JlPsR" />
         <child id="791507941088379207" name="root" index="1Fxk40" />
       </concept>
       <concept id="6099872835424795652" name="RML.IO.structure.LogicalSourceDef" flags="ngI" index="IaUo2">
@@ -597,7 +596,6 @@
       <node concept="2JlPsY" id="5ay_xxAvQwt" role="FCw5y">
         <node concept="FCOsJ" id="5ay_xxAvQwu" role="1FyQV4">
           <property role="1Fxk42" value="employee.csv" />
-          <node concept="3Y090L" id="5ay_xxAvQwv" role="2JlPsR" />
           <node concept="1FyQXr" id="5ay_xxAvQww" role="1Fxk40" />
         </node>
       </node>
@@ -610,7 +608,6 @@
       <node concept="2JlPsY" id="5ay_xxAw4Dr" role="FCw5y">
         <node concept="FCOsJ" id="5ay_xxAw4Ds" role="1FyQV4">
           <property role="1Fxk42" value="project.csv" />
-          <node concept="3Y090L" id="5ay_xxAw4Dt" role="2JlPsR" />
           <node concept="1FyQXr" id="5ay_xxAw4Du" role="1Fxk40" />
         </node>
       </node>
@@ -624,7 +621,6 @@
       <node concept="2JlPsY" id="5ay_xxAw4D$" role="FCw5y">
         <node concept="FCOsJ" id="5ay_xxAw4D_" role="1FyQV4">
           <property role="1Fxk42" value="tasks.json" />
-          <node concept="3Y090L" id="5ay_xxAw4DA" role="2JlPsR" />
           <node concept="1FyQXr" id="5ay_xxAw4DB" role="1Fxk40" />
         </node>
       </node>

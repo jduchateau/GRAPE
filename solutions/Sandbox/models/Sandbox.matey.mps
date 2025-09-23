@@ -40,15 +40,13 @@
         <reference id="2937713717140311171" name="prefix" index="29d1uc" />
       </concept>
       <concept id="5063185561593286416" name="Turtle.structure.EmptyStatment" flags="ng" index="1SSSdx" />
-      <concept id="7946374057678053675" name="Turtle.structure.PredicateObjectList" flags="ng" index="3Y090L" />
     </language>
     <language id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO">
       <concept id="5068821615757897735" name="RML.IO.structure.WithSourceDef" flags="ngI" index="riy9w">
         <child id="791507941088259715" name="source" index="1FyQV4" />
       </concept>
-      <concept id="6303025759226929063" name="RML.IO.structure.BaseSource" flags="ng" index="FCOsJ">
+      <concept id="6303025759226929063" name="RML.IO.structure.FilePath" flags="ng" index="FCOsJ">
         <property id="791507941088379205" name="path" index="1Fxk42" />
-        <child id="468146138112354137" name="list" index="2JlPsR" />
         <child id="791507941088379207" name="root" index="1Fxk40" />
       </concept>
       <concept id="6099872835424795652" name="RML.IO.structure.LogicalSourceDef" flags="ngI" index="IaUo2">
@@ -174,10 +172,9 @@
         <property role="FB9vU" value="$.persons[*]" />
         <node concept="3tqwV3" id="5MK5ainLU7M" role="3tqwV9" />
         <node concept="2JlPsY" id="5MK5ainLU7I" role="FCw5y">
-          <node concept="FCOsJ" id="5MK5ainLU7J" role="1FyQV4">
+          <node concept="FCOsJ" id="7PZGQTMJdmd" role="1FyQV4">
             <property role="1Fxk42" value="people.json" />
-            <node concept="3Y090L" id="5MK5ainLU7K" role="2JlPsR" />
-            <node concept="1FyQXr" id="5MK5ainLU7L" role="1Fxk40" />
+            <node concept="1FyQXr" id="7PZGQTMJdmf" role="1Fxk40" />
           </node>
         </node>
       </node>
@@ -318,7 +315,6 @@
         <node concept="2JlPsY" id="1xDVdsoyAVZ" role="FCw5y">
           <node concept="FCOsJ" id="1xDVdsoyAW1" role="1FyQV4">
             <property role="1Fxk42" value="people.json" />
-            <node concept="3Y090L" id="1xDVdsoyAW2" role="2JlPsR" />
             <node concept="1FyQXr" id="5YpSZx52LtB" role="1Fxk40" />
           </node>
         </node>
@@ -340,14 +336,13 @@
     <node concept="1SSSdx" id="4$wSEF3NDn5" role="29aKCU" />
     <node concept="2YYitQ" id="KJ$Akt$cyo" role="29aKCU">
       <node concept="1_rNmK" id="KJ$Akt$cyC" role="IaUo4">
+        <node concept="3tqwV1" id="5cblP9ZMbsJ" role="3tqwV9" />
         <node concept="2JlPsY" id="1xDVdsoyAW3" role="FCw5y">
           <node concept="FCOsJ" id="1xDVdsoyAW5" role="1FyQV4">
             <property role="1Fxk42" value="movies.csv" />
-            <node concept="3Y090L" id="1xDVdsoyAW6" role="2JlPsR" />
             <node concept="1FyQXr" id="62epo3iWS3s" role="1Fxk40" />
           </node>
         </node>
-        <node concept="3tqwV1" id="5cblP9ZMbsJ" role="3tqwV9" />
       </node>
       <node concept="IaUod" id="KJ$Akt$cyq" role="2YYcL1">
         <node concept="IaUoX" id="KJ$Akt$cyR" role="FGdDe">
@@ -392,6 +387,7 @@
         </node>
       </node>
     </node>
+    <node concept="1SSSdx" id="7PZGQTMONxw" role="29aKCU" />
   </node>
 </model>
 

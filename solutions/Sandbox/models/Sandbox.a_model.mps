@@ -81,14 +81,14 @@
       <concept id="6303025759226929065" name="RML.IO.structure.SourceRef" flags="ng" index="FCOsx">
         <reference id="6303025759226982490" name="ref" index="FDazi" />
       </concept>
-      <concept id="6303025759226929063" name="RML.IO.structure.BaseSource" flags="ng" index="FCOsJ">
+      <concept id="6303025759226929063" name="RML.IO.structure.FilePath" flags="ng" index="FCOsJ">
         <property id="791507941088379205" name="path" index="1Fxk42" />
-        <child id="468146138112354137" name="list" index="2JlPsR" />
       </concept>
       <concept id="6099872835424795652" name="RML.IO.structure.LogicalSourceDef" flags="ngI" index="IaUo2">
         <child id="6303025759226878442" name="source" index="FCw5y" />
+        <child id="6127414803068812677" name="referenceFormulation" index="3tqwV9" />
       </concept>
-      <concept id="468146138112354128" name="RML.IO.structure.SourceInlineDef" flags="ng" index="2JlPsY" />
+      <concept id="6127414803068812687" name="RML.IO.structure.ReferenceFormulationJSONPath" flags="ng" index="3tqwV3" />
       <concept id="8169920669489714720" name="RML.IO.structure.LogicalSourceInlineDef" flags="ng" index="1_rNmK" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -326,27 +326,10 @@
         <ref role="29d1uc" node="6T7chEgtZQ9" resolve="" />
       </node>
     </node>
-    <node concept="3DQ70j" id="5tSQ8xWRCl3" role="lGtFl">
-      <property role="3V$3am" value="statments" />
-      <property role="3V$3ak" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140246833/2937713717140246837" />
-    </node>
-    <node concept="FCvld" id="34GH_iU6ANx" role="29aKCU">
-      <node concept="29d5ma" id="25MWlU6qFHk" role="2$AQDL">
-        <property role="29d1ub" value="ProjectsLS" />
-        <ref role="29d1uc" node="6T7chEgtZQ9" resolve="" />
-      </node>
-      <node concept="2JlPsY" id="3EB406$9CzL" role="FCw5y">
-        <node concept="FCOsJ" id="3EB406$9CC8" role="1FyQV4">
-          <property role="1Fxk42" value="h" />
-          <node concept="3Y090L" id="3EB406$9CCa" role="2JlPsR" />
-        </node>
-      </node>
-    </node>
     <node concept="1SSSdx" id="79nZzwqMukp" role="29aKCU" />
     <node concept="FCOsw" id="79nZzwqMukr" role="29aKCU">
       <node concept="FCOsJ" id="79nZzwqMukt" role="1FyQV4">
         <property role="1Fxk42" value="people.json" />
-        <node concept="3Y090L" id="79nZzwqMuku" role="2JlPsR" />
       </node>
       <node concept="29d1u9" id="79nZzwqMukw" role="2$AQDL">
         <property role="29d1u8" value="JsonFileSource" />
@@ -360,6 +343,7 @@
       <node concept="FCOsx" id="YWtlus$jTS" role="FCw5y">
         <ref role="FDazi" node="79nZzwqMukr" resolve="&lt;JsonFileSource&gt;" />
       </node>
+      <node concept="3tqwV3" id="7PZGQTMSjt6" role="3tqwV9" />
     </node>
     <node concept="3DQ70j" id="7Y6GWuSSMhp" role="lGtFl">
       <property role="3V$3am" value="statments" />
@@ -437,6 +421,7 @@
         <node concept="FCOsx" id="YWtlus_JI7" role="FCw5y">
           <ref role="FDazi" node="79nZzwqMukr" resolve="&lt;JsonFileSource&gt;" />
         </node>
+        <node concept="3tqwV3" id="7PZGQTMSjt7" role="3tqwV9" />
       </node>
     </node>
     <node concept="3DQ70j" id="34GH_iU2z00" role="lGtFl">

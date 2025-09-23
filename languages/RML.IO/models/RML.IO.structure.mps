@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -204,9 +205,11 @@
     </node>
   </node>
   <node concept="1TIwiD" id="FW04txuk4O">
-    <property role="TrG5h" value="BaseSource" />
-    <property role="3GE5qa" value="Source.Base" />
+    <property role="TrG5h" value="FilePath" />
+    <property role="3GE5qa" value="Source.Def" />
     <property role="EcuMT" value="6303025759226929063" />
+    <property role="R4oN_" value="RML FilePath access description to access local and relative files." />
+    <property role="34LRSv" value="file" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5tSQ8xWRka0" role="1TKVEi">
       <property role="IQ2ns" value="6303025759227036288" />
@@ -225,13 +228,6 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="root" />
       <ref role="20lvS9" node="FW04txtQWx" resolve="DirectoryRoot" />
-    </node>
-    <node concept="1TJgyj" id="pZc6UDa6tp" role="1TKVEi">
-      <property role="IQ2ns" value="468146138112354137" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="list" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="16h3:6T7chEghU4F" resolve="PredicateObjectList" />
     </node>
     <node concept="1TJgyi" id="5tSQ8xWRka3" role="1TKVEl">
       <property role="IQ2nx" value="6303025759227036291" />
@@ -326,6 +322,93 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1yLetCTrE4b" role="PzmwI">
       <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7PZGQTMwpOz">
+    <property role="EcuMT" value="9043143863732116771" />
+    <property role="3GE5qa" value="Source.Def" />
+    <property role="TrG5h" value="SQLDatabase" />
+    <property role="R4oN_" value="D2RQ access description for accessing SQL databases" />
+    <property role="34LRSv" value="sql" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="7PZGQTM_uKv" role="1TKVEl">
+      <property role="IQ2nx" value="9043143863733447711" />
+      <property role="TrG5h" value="auth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7PZGQTMwpOB" role="1TKVEl">
+      <property role="IQ2nx" value="9043143863732116775" />
+      <property role="TrG5h" value="username" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7PZGQTMwpOC" role="1TKVEl">
+      <property role="IQ2nx" value="9043143863732116776" />
+      <property role="TrG5h" value="password" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7PZGQTMwpOF" role="1TKVEl">
+      <property role="IQ2nx" value="9043143863732116779" />
+      <property role="TrG5h" value="jdbcDriver" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="7PZGQTMwpOE" role="1TKVEi">
+      <property role="IQ2ns" value="9043143863732116778" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="jdbcDSN" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7PZGQTMwpOJ" resolve="JdbcDSN" />
+    </node>
+    <node concept="PrWs8" id="7PZGQTMwpPs" role="PzmwI">
+      <ref role="PrY4T" node="FW04txuk4P" resolve="SourceDef" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7PZGQTMwpOJ">
+    <property role="TrG5h" value="JdbcDSN" />
+    <property role="EcuMT" value="9043143863732116782" />
+    <property role="3GE5qa" value="Source.Def.DB" />
+  </node>
+  <node concept="1TIwiD" id="7PZGQTMwpOL">
+    <property role="EcuMT" value="9043143863732116785" />
+    <property role="3GE5qa" value="Source.Def.DB" />
+    <property role="TrG5h" value="RawJdbcDSN" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="7PZGQTMwpON" role="1TKVEl">
+      <property role="IQ2nx" value="9043143863732116787" />
+      <property role="TrG5h" value="url" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="7PZGQTMwpOP" role="PzmwI">
+      <ref role="PrY4T" node="7PZGQTMwpOJ" resolve="JdbcDSN" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7PZGQTMwx24">
+    <property role="EcuMT" value="9043143863732146308" />
+    <property role="TrG5h" value="Sqlite" />
+    <property role="3GE5qa" value="Source.Def.DB" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="7PZGQTMwx27" role="PzmwI">
+      <ref role="PrY4T" node="7PZGQTMwpOJ" resolve="JdbcDSN" />
+    </node>
+    <node concept="1TJgyi" id="7PZGQTMwx2a" role="1TKVEl">
+      <property role="IQ2nx" value="9043143863732146314" />
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7PZGQTMCtbs">
+    <property role="EcuMT" value="9043143863734227676" />
+    <property role="3GE5qa" value="Source.Def" />
+    <property role="TrG5h" value="CustomSource" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="7PZGQTMCtbt" role="1TKVEi">
+      <property role="IQ2ns" value="9043143863734227677" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="properties" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="16h3:6T7chEghU4F" resolve="PredicateObjectList" />
+    </node>
+    <node concept="PrWs8" id="7PZGQTMCtbu" role="PzmwI">
+      <ref role="PrY4T" node="FW04txuk4P" resolve="SourceDef" />
     </node>
   </node>
 </model>
