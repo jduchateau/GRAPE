@@ -1417,7 +1417,7 @@
                   <ref role="3cqZAo" node="tPE8szdug7" resolve="turtleDoc" />
                 </node>
                 <node concept="3TrcHB" id="6WRbFH1NLZQ" role="2OqNvi">
-                  <ref role="3TsBF5" to="16h3:6WRbFH1LSPi" resolve="datasetName" />
+                  <ref role="3TsBF5" to="16h3:6WRbFH1LSPi" resolve="graphName" />
                 </node>
               </node>
             </node>
@@ -1428,7 +1428,7 @@
                 <ref role="3cqZAo" node="tPE8szdug7" resolve="turtleDoc" />
               </node>
               <node concept="3TrcHB" id="6WRbFH1NuII" role="2OqNvi">
-                <ref role="3TsBF5" to="16h3:6WRbFH1LSPi" resolve="datasetName" />
+                <ref role="3TsBF5" to="16h3:6WRbFH1LSPi" resolve="graphName" />
               </node>
             </node>
             <node concept="17RvpY" id="6WRbFH1NEIu" role="2OqNvi" />

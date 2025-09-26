@@ -1131,7 +1131,7 @@
       <node concept="3Tm1VV" id="7cYw35ipcBV" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcBW" role="jymVt">
-      <property role="TrG5h" value="childMap" />
+      <property role="TrG5h" value="child" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="7cYw35ipcBX" role="1tU5fm">
         <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
@@ -1144,11 +1144,31 @@
             <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
           </node>
           <node concept="Xl_RD" id="7cYw35ipdDF" role="3uHU7w">
-            <property role="Xl_RC" value="childMap" />
+            <property role="Xl_RC" value="child" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="7cYw35ipcC2" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="6ZehWOyxwAC" role="jymVt">
+      <property role="TrG5h" value="childMap" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="6ZehWOyxwAD" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
+      </node>
+      <node concept="2YIFZM" id="6ZehWOyxwAE" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createProperty(java.lang.String)" resolve="createProperty" />
+        <node concept="3cpWs3" id="6ZehWOyxwAF" role="37wK5m">
+          <node concept="37vLTw" id="6ZehWOyxwAG" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="6ZehWOyxwAH" role="3uHU7w">
+            <property role="Xl_RC" value="childMap" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6ZehWOyxwAI" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcC3" role="jymVt">
       <property role="TrG5h" value="compression" />
@@ -1191,7 +1211,7 @@
       <node concept="3Tm1VV" id="7cYw35ipcCg" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcCh" role="jymVt">
-      <property role="TrG5h" value="datatypeMap" />
+      <property role="TrG5h" value="datatype" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="7cYw35ipcCi" role="1tU5fm">
         <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
@@ -1204,11 +1224,31 @@
             <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
           </node>
           <node concept="Xl_RD" id="7cYw35ipdBb" role="3uHU7w">
-            <property role="Xl_RC" value="datatypeMap" />
+            <property role="Xl_RC" value="datatype" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="7cYw35ipcCn" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="6ZehWOywUQp" role="jymVt">
+      <property role="TrG5h" value="datatypeMap" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="6ZehWOywUQq" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
+      </node>
+      <node concept="2YIFZM" id="6ZehWOywUQr" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createProperty(java.lang.String)" resolve="createProperty" />
+        <node concept="3cpWs3" id="6ZehWOywUQs" role="37wK5m">
+          <node concept="37vLTw" id="6ZehWOywUQt" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="6ZehWOywUQu" role="3uHU7w">
+            <property role="Xl_RC" value="datatypeMap" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6ZehWOywUQv" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcCo" role="jymVt">
       <property role="TrG5h" value="encoding" />
@@ -1251,7 +1291,7 @@
       <node concept="3Tm1VV" id="7cYw35ipcC_" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcCA" role="jymVt">
-      <property role="TrG5h" value="functionMap" />
+      <property role="TrG5h" value="function" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="7cYw35ipcCB" role="1tU5fm">
         <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
@@ -1264,11 +1304,31 @@
             <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
           </node>
           <node concept="Xl_RD" id="7cYw35ipdJB" role="3uHU7w">
-            <property role="Xl_RC" value="functionMap" />
+            <property role="Xl_RC" value="function" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="7cYw35ipcCG" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="6ZehWOyxWBN" role="jymVt">
+      <property role="TrG5h" value="functionMap" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="6ZehWOyxWBO" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
+      </node>
+      <node concept="2YIFZM" id="6ZehWOyxWBP" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createProperty(java.lang.String)" resolve="createProperty" />
+        <node concept="3cpWs3" id="6ZehWOyxWBQ" role="37wK5m">
+          <node concept="37vLTw" id="6ZehWOyxWBR" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="6ZehWOyxWBS" role="3uHU7w">
+            <property role="Xl_RC" value="functionMap" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6ZehWOyxWBT" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcCH" role="jymVt">
       <property role="TrG5h" value="gather" />
@@ -1390,6 +1450,26 @@
       </node>
       <node concept="3Tm1VV" id="7cYw35ipcDf" role="1B3o_S" />
     </node>
+    <node concept="Wx3nA" id="6ZehWOyylKO" role="jymVt">
+      <property role="TrG5h" value="inputValue" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="6ZehWOyylKP" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
+      </node>
+      <node concept="2YIFZM" id="6ZehWOyylKQ" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createProperty(java.lang.String)" resolve="createProperty" />
+        <node concept="3cpWs3" id="6ZehWOyylKR" role="37wK5m">
+          <node concept="37vLTw" id="6ZehWOyylKS" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="6ZehWOyylKT" role="3uHU7w">
+            <property role="Xl_RC" value="inputValue" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6ZehWOyylKU" role="1B3o_S" />
+    </node>
     <node concept="Wx3nA" id="7cYw35ipcDg" role="jymVt">
       <property role="TrG5h" value="iterator" />
       <property role="3TUv4t" value="true" />
@@ -1431,7 +1511,7 @@
       <node concept="3Tm1VV" id="7cYw35ipcDt" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcDu" role="jymVt">
-      <property role="TrG5h" value="languageMap" />
+      <property role="TrG5h" value="language" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="7cYw35ipcDv" role="1tU5fm">
         <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
@@ -1444,11 +1524,31 @@
             <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
           </node>
           <node concept="Xl_RD" id="7cYw35ipdCh" role="3uHU7w">
-            <property role="Xl_RC" value="languageMap" />
+            <property role="Xl_RC" value="language" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="7cYw35ipcD$" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="6ZehWOyxan7" role="jymVt">
+      <property role="TrG5h" value="languageMap" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="6ZehWOyxan8" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
+      </node>
+      <node concept="2YIFZM" id="6ZehWOyxan9" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createProperty(java.lang.String)" resolve="createProperty" />
+        <node concept="3cpWs3" id="6ZehWOyxana" role="37wK5m">
+          <node concept="37vLTw" id="6ZehWOyxanb" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="6ZehWOyxanc" role="3uHU7w">
+            <property role="Xl_RC" value="languageMap" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6ZehWOyxand" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcD_" role="jymVt">
       <property role="TrG5h" value="logicalSource" />
@@ -1591,7 +1691,7 @@
       <node concept="3Tm1VV" id="7cYw35ipcEe" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcEf" role="jymVt">
-      <property role="TrG5h" value="parameterMap" />
+      <property role="TrG5h" value="parameter" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="7cYw35ipcEg" role="1tU5fm">
         <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
@@ -1604,11 +1704,31 @@
             <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
           </node>
           <node concept="Xl_RD" id="7cYw35ipdDn" role="3uHU7w">
-            <property role="Xl_RC" value="parameterMap" />
+            <property role="Xl_RC" value="parameter" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="7cYw35ipcEl" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="6ZehWOyy9RU" role="jymVt">
+      <property role="TrG5h" value="parameterMap" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="6ZehWOyy9RV" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
+      </node>
+      <node concept="2YIFZM" id="6ZehWOyy9RW" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createProperty(java.lang.String)" resolve="createProperty" />
+        <node concept="3cpWs3" id="6ZehWOyy9RX" role="37wK5m">
+          <node concept="37vLTw" id="6ZehWOyy9RY" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="6ZehWOyy9RZ" role="3uHU7w">
+            <property role="Xl_RC" value="parameterMap" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6ZehWOyy9S0" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcEm" role="jymVt">
       <property role="TrG5h" value="path" />
@@ -1631,7 +1751,7 @@
       <node concept="3Tm1VV" id="7cYw35ipcEs" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcEt" role="jymVt">
-      <property role="TrG5h" value="parentMap" />
+      <property role="TrG5h" value="parent" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="7cYw35ipcEu" role="1tU5fm">
         <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
@@ -1644,11 +1764,31 @@
             <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
           </node>
           <node concept="Xl_RD" id="7cYw35ipdC7" role="3uHU7w">
-            <property role="Xl_RC" value="parentMap" />
+            <property role="Xl_RC" value="parent" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="7cYw35ipcEz" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="6ZehWOyxxGl" role="jymVt">
+      <property role="TrG5h" value="parentMap" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="6ZehWOyxxGm" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
+      </node>
+      <node concept="2YIFZM" id="6ZehWOyxxGn" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createProperty(java.lang.String)" resolve="createProperty" />
+        <node concept="3cpWs3" id="6ZehWOyxxGo" role="37wK5m">
+          <node concept="37vLTw" id="6ZehWOyxxGp" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="6ZehWOyxxGq" role="3uHU7w">
+            <property role="Xl_RC" value="parentMap" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6ZehWOyxxGr" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcE$" role="jymVt">
       <property role="TrG5h" value="parentTriplesMap" />
@@ -1771,7 +1911,7 @@
       <node concept="3Tm1VV" id="7cYw35ipcF6" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcF7" role="jymVt">
-      <property role="TrG5h" value="returnMap" />
+      <property role="TrG5h" value="return_" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="7cYw35ipcF8" role="1tU5fm">
         <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
@@ -1784,11 +1924,31 @@
             <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
           </node>
           <node concept="Xl_RD" id="7cYw35ipdI3" role="3uHU7w">
-            <property role="Xl_RC" value="returnMap" />
+            <property role="Xl_RC" value="return" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="7cYw35ipcFd" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="6ZehWOyxOVN" role="jymVt">
+      <property role="TrG5h" value="returnMap" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="6ZehWOyxOVO" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Property" resolve="Property" />
+      </node>
+      <node concept="2YIFZM" id="6ZehWOyxOVP" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createProperty(java.lang.String)" resolve="createProperty" />
+        <node concept="3cpWs3" id="6ZehWOyxOVQ" role="37wK5m">
+          <node concept="37vLTw" id="6ZehWOyxOVR" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="6ZehWOyxOVS" role="3uHU7w">
+            <property role="Xl_RC" value="returnMap" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6ZehWOyxOVT" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcFe" role="jymVt">
       <property role="TrG5h" value="root" />

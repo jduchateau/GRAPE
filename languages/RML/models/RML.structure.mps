@@ -59,6 +59,7 @@
     <property role="EcuMT" value="3190666691956613381" />
     <property role="TrG5h" value="TriplesMap" />
     <property role="R4oN_" value="Map data to triples" />
+    <property role="34LRSv" value="Triples Map" />
     <ref role="1TJDcQ" node="25MWlU63704" resolve="NamedDefintionTriples" />
     <node concept="1TJgyj" id="5iB6wpUzbK2" role="1TKVEi">
       <property role="IQ2ns" value="6099872835424795650" />

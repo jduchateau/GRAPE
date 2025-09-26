@@ -167,7 +167,7 @@
       <node concept="aVJcg" id="3x0FUHjWU8J" role="aVJcv">
         <node concept="NbPM2" id="3x0FUHjWU8I" role="aVJcq">
           <node concept="3Mxwew" id="3x0FUHjWU8P" role="3MwsjC">
-            <property role="3MwjfP" value="0.1.6" />
+            <property role="3MwjfP" value="0.1.7" />
           </node>
         </node>
       </node>
@@ -251,6 +251,15 @@
       <node concept="m$_yC" id="2CHbgKhgNam" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
+      <node concept="m$_yC" id="7eeq7psA1go" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:16mx0EU4lyh" resolve="jetbrains.mps.ide" />
+      </node>
+      <node concept="m$_yC" id="7eeq7psA1kV" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:6EN03E8oSte" resolve="jetbrains.mps.ide.make" />
+      </node>
+      <node concept="m$_yC" id="7eeq7psA1u1" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5CFKsRWVb8B" resolve="jetbrains.mps.execution.configurations" />
+      </node>
       <node concept="3_J27D" id="2CHbgKhgNan" role="m_cZH">
         <node concept="3Mxwew" id="2CHbgKhgNao" role="3MwsjC">
           <property role="3MwjfP" value="GRAPE" />
@@ -272,11 +281,11 @@
         </node>
       </node>
       <node concept="m$f5U" id="v_r5au2HIW" role="m$_yh">
-        <ref role="m$f5T" node="2CHbgKhgNaf" resolve="Grape" />
+        <ref role="m$f5T" node="2CHbgKhgNaf" resolve="GRAPE" />
       </node>
     </node>
     <node concept="2G$12M" id="2CHbgKhgNaf" role="3989C9">
-      <property role="TrG5h" value="Grape" />
+      <property role="TrG5h" value="GRAPE" />
       <node concept="1E1JtD" id="2CHbgKhgN9W" role="2G$12L">
         <property role="TrG5h" value="Turtle" />
         <property role="3LESm3" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" />
@@ -366,11 +375,6 @@
         <node concept="1SiIV0" id="2ZAgtJQgjOt" role="3bR37C">
           <node concept="3bR9La" id="2ZAgtJQgjOu" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2uMhTA67wgR" role="3bR37C">
-          <node concept="3bR9La" id="2uMhTA67wgS" role="1SiIV1">
-            <ref role="3bR37D" node="2uMhTA67w7Y" resolve="Turtle.parser" />
           </node>
         </node>
         <node concept="1SiIV0" id="2uMhTA67wgT" role="3bR37C">

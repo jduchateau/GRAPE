@@ -428,7 +428,7 @@
     <node concept="3aamgX" id="4po4Att6W63" role="3acgRq">
       <ref role="30HIoZ" to="qx9m:FW04txuk4O" resolve="FilePath" />
       <node concept="j$656" id="4po4Att6W64" role="1lVwrX">
-        <ref role="v9R2y" node="4po4Att6W61" resolve="reduce_BaseSource" />
+        <ref role="v9R2y" node="4po4Att6W61" resolve="reduce_FilePath" />
       </node>
     </node>
     <node concept="3aamgX" id="7PZGQTMV8ZI" role="3acgRq">
@@ -447,7 +447,7 @@
                 <node concept="3clFbF" id="7PZGQTMXsUB" role="3cqZAp">
                   <node concept="2OqwBi" id="7PZGQTMXsUy" role="3clFbG">
                     <node concept="3TrEf2" id="7PZGQTMXsU_" role="2OqNvi">
-                      <ref role="3Tt5mk" to="qx9m:7PZGQTMCtbt" />
+                      <ref role="3Tt5mk" to="qx9m:7PZGQTMCtbt" resolve="properties" />
                     </node>
                     <node concept="30H73N" id="7PZGQTMXsUA" role="2Oq$k0" />
                   </node>

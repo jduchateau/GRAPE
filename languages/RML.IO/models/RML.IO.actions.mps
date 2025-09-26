@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -189,20 +188,20 @@
                         <node concept="2pJPED" id="7PZGQTMCBI6" role="36be1Z">
                           <ref role="2pJxaS" to="16h3:2z4QKYxWbD2" resolve="PredicateObject" />
                           <node concept="2pIpSj" id="7PZGQTMCC6W" role="2pJxcM">
-                            <ref role="2pIpSl" to="16h3:2z4QKYxWbDb" />
+                            <ref role="2pIpSl" to="16h3:2z4QKYxWbDb" resolve="verb" />
                             <node concept="2pJPED" id="7PZGQTMCCg4" role="28nt2d">
                               <ref role="2pJxaS" to="16h3:2z4QKYxWbD7" resolve="TypeVerb" />
                             </node>
                           </node>
                           <node concept="2pIpSj" id="7PZGQTMCCpr" role="2pJxcM">
-                            <ref role="2pIpSl" to="16h3:2z4QKYxWbDc" />
+                            <ref role="2pIpSl" to="16h3:2z4QKYxWbDc" resolve="object" />
                             <node concept="2pJPED" id="7PZGQTMCCzZ" role="28nt2d">
                               <ref role="2pJxaS" to="16h3:2z4QKYxWbDf" resolve="AnnotatedObject" />
                               <node concept="2pIpSj" id="7PZGQTMCC_3" role="2pJxcM">
-                                <ref role="2pIpSl" to="16h3:2z4QKYxWe0t" />
+                                <ref role="2pIpSl" to="16h3:2z4QKYxWe0t" resolve="object" />
                                 <node concept="36biLy" id="7PZGQTMCZRU" role="28nt2d">
                                   <node concept="37vLTw" id="7PZGQTMCZSj" role="36biLW">
-                                    <ref role="3cqZAo" node="7PZGQTMD7JB" resolve="bestIdentifier" />
+                                    <ref role="3cqZAo" node="7PZGQTMD7JB" resolve="rmlSourceIri" />
                                   </node>
                                 </node>
                               </node>

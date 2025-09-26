@@ -7,11 +7,12 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="22e72e4c-0f69-46ce-8403-6750153aa615" name="jetbrains.mps.execution.configurations" version="2" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <use id="756e911c-3f1f-4a48-bdf5-a2ceb91b723c" name="jetbrains.mps.execution.settings" version="0" />
     <use id="f3347d8a-0e79-4f35-8ac9-1574f25c986f" name="jetbrains.mps.execution.commands" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
+    <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -35,7 +36,6 @@
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="ends" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.persistence(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
-    <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
     <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
     <import index="dj99" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.configurations(MPS.IDEA/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
@@ -49,6 +49,9 @@
     <import index="ptfq" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.riot(Turtle.external/)" />
     <import index="t6dh" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.rdf.model(Turtle.external/)" />
     <import index="bcn8" ref="r:0e3b77a4-c2c4-4ca6-a3b1-df5ad0152a9c(jetbrains.mps.ide.make)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" implicit="true" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
@@ -57,7 +60,6 @@
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
         <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
-        <child id="1860120738943552531" name="borderColor" index="3PKjnB" />
       </concept>
       <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
         <property id="2756621024541681854" name="text" index="1irPi9" />
@@ -68,6 +70,9 @@
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
+      </concept>
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
         <property id="1860120738943552481" name="val" index="3PKj8l" />
       </concept>
@@ -460,6 +465,10 @@
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
+    <language id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable">
+      <concept id="1177714083117" name="jetbrains.mps.baseLanguage.varVariable.structure.VarType" flags="in" index="PeGgZ" />
+      <concept id="1236693300889" name="jetbrains.mps.baseLanguage.varVariable.structure.VarVariableDeclaration" flags="ng" index="3KEzu6" />
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -490,30 +499,9 @@
     </language>
   </registry>
   <node concept="2DaZZR" id="1BfOPR_lNQF" />
-  <node concept="3wDVqV" id="1BfOPR_iRIH">
-    <property role="TrG5h" value="RmlEnginBurp" />
-    <property role="2y7wD$" value="BURP" />
-    <node concept="1irR5M" id="1BfOPR_lcTO" role="1bitO_">
-      <property role="2$rrk2" value="1" />
-      <node concept="1irR9n" id="1BfOPR_lcTR" role="1irR9h">
-        <node concept="3PKj8D" id="1BfOPR_lcTW" role="3PKjn_">
-          <property role="3PKj8l" value="6495ed" />
-        </node>
-        <node concept="3PKj8D" id="1BfOPR_lcU8" role="3PKjnB">
-          <property role="3PKj8l" value="000060" />
-        </node>
-      </node>
-      <node concept="1irPie" id="1BfOPR_lcTZ" role="1irR9h">
-        <property role="1irPi9" value="&gt;" />
-        <node concept="3PKj8D" id="1BfOPR_lcU4" role="3PKjny">
-          <property role="3PKj8l" value="000060" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="3wDVqS" id="1BfOPR_iRve">
-    <property role="TrG5h" value="BurpDoc" />
-    <ref role="3wDP8j" node="1BfOPR_iRIH" resolve="RmlEnginBurp" />
+    <property role="TrG5h" value="BurpConfig" />
+    <ref role="3wDP8j" node="4KnVqmc9Vc9" resolve="BurpConfigKind" />
     <node concept="yHkDc" id="1BfOPR_iRvf" role="yHkHg">
       <node concept="yHkD3" id="7yLt8tTSJNQ" role="yHkCN">
         <property role="TrG5h" value="myNodeChooser" />
@@ -830,6 +818,54 @@
               </node>
             </node>
           </node>
+          <node concept="3cpWs8" id="7eeq7psHP_h" role="3cqZAp">
+            <node concept="3KEzu6" id="7eeq7psHUQS" role="3cpWs9">
+              <property role="TrG5h" value="outputHint" />
+              <node concept="2ShNRf" id="7eeq7psHUR0" role="33vP2m">
+                <node concept="1pGfFk" id="7eeq7psHUR1" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                  <node concept="Xl_RD" id="7eeq7psHUR2" role="37wK5m">
+                    <property role="Xl_RC" value="Use command 'BURP Output' to open it after run." />
+                  </node>
+                </node>
+              </node>
+              <node concept="PeGgZ" id="7eeq7psHUQR" role="1tU5fm" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7eeq7psHWqR" role="3cqZAp">
+            <node concept="2OqwBi" id="7eeq7psHZfE" role="3clFbG">
+              <node concept="37vLTw" id="7eeq7psHWqP" role="2Oq$k0">
+                <ref role="3cqZAo" node="7eeq7psHUQS" resolve="outputHint" />
+              </node>
+              <node concept="liA8E" id="7eeq7psI2rB" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~JComponent.setForeground(java.awt.Color)" resolve="setForeground" />
+                <node concept="10M0yZ" id="7eeq7psN1xw" role="37wK5m">
+                  <ref role="3cqZAo" to="lzb2:~JBColor.gray" resolve="gray" />
+                  <ref role="1PxDUh" to="exr9:~MPSColors" resolve="MPSColors" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7eeq7psEg_A" role="3cqZAp">
+            <node concept="2OqwBi" id="7eeq7psEiIe" role="3clFbG">
+              <node concept="37vLTw" id="7eeq7psEg_$" role="2Oq$k0">
+                <ref role="3cqZAo" node="1BfOPR_ljxM" resolve="panel" />
+              </node>
+              <node concept="liA8E" id="7eeq7psElip" role="2OqNvi">
+                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object)" resolve="add" />
+                <node concept="37vLTw" id="7eeq7psHP_m" role="37wK5m">
+                  <ref role="3cqZAo" node="7eeq7psHUQS" resolve="outputHint" />
+                </node>
+                <node concept="1rwKMM" id="7eeq7psEXUv" role="37wK5m">
+                  <property role="1rwKMK" value="field" />
+                  <node concept="3cmrfG" id="7eeq7psF1iK" role="1rxHDW">
+                    <property role="3cmrfH" value="7" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="1BfOPR_ljUw" role="3cqZAp">
             <node concept="37vLTw" id="1BfOPR_ljUu" role="3clFbG">
               <ref role="3cqZAo" node="1BfOPR_ljxM" resolve="panel" />
@@ -1042,7 +1078,7 @@
   <node concept="RBi3j" id="1BfOPR_lkqX">
     <property role="35f5FB" value="true" />
     <property role="3gLNDv" value="myRunConfiguration" />
-    <ref role="yIonz" node="1BfOPR_iRve" resolve="BurpDoc" />
+    <ref role="yIonz" node="1BfOPR_iRve" resolve="BurpConfig" />
     <node concept="3CCWSg" id="1BfOPR_lkr1" role="35uJNn">
       <node concept="3clFbS" id="1BfOPR_lkr2" role="2VODD2">
         <node concept="3cpWs8" id="o7HNFUNjQu" role="3cqZAp">
@@ -1828,14 +1864,14 @@
               <property role="TrG5h" value="config" />
               <node concept="2ShNRf" id="o7HNFV0FKO" role="33vP2m">
                 <node concept="30w_07" id="o7HNFV1GBf" role="2ShVmc">
-                  <ref role="30w_06" node="1BfOPR_iRve" resolve="BurpDoc" />
+                  <ref role="30w_06" node="1BfOPR_iRve" resolve="BurpConfig" />
                   <node concept="37vLTw" id="5YpSZx4Stgb" role="uV2A8">
                     <ref role="3cqZAo" node="5YpSZx4Stg5" resolve="configName" />
                   </node>
                 </node>
               </node>
               <node concept="yHkHH" id="o7HNFV1MDQ" role="1tU5fm">
-                <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpDoc" />
+                <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpConfig" />
               </node>
             </node>
           </node>
@@ -1991,7 +2027,7 @@
           <node concept="3clFbF" id="1BfOPR_p9xV" role="3cqZAp">
             <node concept="10QFUN" id="o7HNFV2Vz4" role="3clFbG">
               <node concept="3nJ2Q3" id="o7HNFV2Wia" role="10QFUM">
-                <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpDoc" />
+                <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpConfig" />
               </node>
               <node concept="37vLTw" id="1BfOPR_p9xT" role="10QFUP">
                 <ref role="3cqZAo" node="1BfOPR_p1QM" resolve="config" />
@@ -2002,7 +2038,7 @@
       </node>
     </node>
     <node concept="3nJ2Q3" id="1BfOPR_oJSj" role="2w4Pho">
-      <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpDoc" />
+      <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpConfig" />
     </node>
   </node>
   <node concept="2LYoGX" id="4$wSEF3CJTW">
@@ -2572,7 +2608,7 @@
         <node concept="3clFbF" id="17vw8yLjx5F" role="3cqZAp">
           <node concept="37vLTI" id="17vw8yLjALM" role="3clFbG">
             <node concept="37vLTw" id="17vw8yLjBNF" role="37vLTx">
-              <ref role="3cqZAo" node="17vw8yLjeNb" resolve="name" />
+              <ref role="3cqZAo" node="17vw8yLjeNb" resolve="configName" />
             </node>
             <node concept="37vLTw" id="17vw8yLjx5D" role="37vLTJ">
               <ref role="3cqZAo" node="17vw8yLje36" resolve="lastName" />
@@ -2585,7 +2621,7 @@
               <ref role="3cqZAo" node="17vw8yLglzY" resolve="filePath" />
             </node>
             <node concept="37vLTw" id="17vw8yLgm$S" role="37vLTJ">
-              <ref role="3cqZAo" node="17vw8yLgjU1" resolve="lastOutput" />
+              <ref role="3cqZAo" node="17vw8yLgjU1" resolve="lastOutputPath" />
             </node>
           </node>
         </node>
@@ -2618,7 +2654,7 @@
                 <ref role="37wK5l" to="eoo2:~Path.of(java.lang.String,java.lang.String...)" resolve="of" />
                 <ref role="1Pybhc" to="eoo2:~Path" resolve="Path" />
                 <node concept="37vLTw" id="17vw8yLgYrz" role="37wK5m">
-                  <ref role="3cqZAo" node="17vw8yLgjU1" resolve="lastOutput" />
+                  <ref role="3cqZAo" node="17vw8yLgjU1" resolve="lastOutputPath" />
                 </node>
               </node>
               <node concept="liA8E" id="17vw8yLhwWg" role="2OqNvi">
@@ -2732,7 +2768,7 @@
                 </node>
                 <node concept="2ShNRf" id="17vw8yLiNny" role="33vP2m">
                   <node concept="1pGfFk" id="17vw8yLiNnz" role="2ShVmc">
-                    <ref role="37wK5l" to="bcn8:9D0Ba05uR_" />
+                    <ref role="37wK5l" to="bcn8:9D0Ba05uR_" resolve="TextPreviewFile" />
                     <node concept="3cpWs3" id="17vw8yLlfX3" role="37wK5m">
                       <node concept="Xl_RD" id="17vw8yLlgfu" role="3uHU7w">
                         <property role="Xl_RC" value=" Output" />
@@ -2903,14 +2939,14 @@
               <node concept="3cpWsn" id="5ApPkyeMOEb" role="3cpWs9">
                 <property role="TrG5h" value="doc" />
                 <node concept="3nJ2Q3" id="5ApPkyeMOE7" role="1tU5fm">
-                  <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpDoc" />
+                  <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpConfig" />
                 </node>
                 <node concept="10QFUN" id="5ApPkyeQMMm" role="33vP2m">
                   <node concept="37vLTw" id="5ApPkyeMQRe" role="10QFUP">
                     <ref role="3cqZAo" node="5ApPkyeM3iD" resolve="runConfig" />
                   </node>
                   <node concept="3nJ2Q3" id="5ApPkyeQMMn" role="10QFUM">
-                    <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpDoc" />
+                    <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpConfig" />
                   </node>
                 </node>
               </node>
@@ -2986,7 +3022,7 @@
           </node>
           <node concept="2ZW3vV" id="5ApPkyeMKfN" role="3clFbw">
             <node concept="3nJ2Q3" id="5ApPkyeML5F" role="2ZW6by">
-              <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpDoc" />
+              <ref role="yHkHG" node="1BfOPR_iRve" resolve="BurpConfig" />
             </node>
             <node concept="37vLTw" id="5ApPkyeMJdB" role="2ZW6bz">
               <ref role="3cqZAo" node="5ApPkyeM3iD" resolve="runConfig" />
@@ -3373,7 +3409,7 @@
     </node>
     <node concept="mfpdH" id="17vw8yLgfr1" role="med8o" />
     <node concept="1irR5M" id="17vw8yLgfr2" role="3Uehp1">
-      <property role="2$rrk2" value="2" />
+      <property role="2$rrk2" value="OpenLastBurpOutput" />
       <node concept="1irPie" id="17vw8yLgfr4" role="1irR9h">
         <property role="1irPi9" value="B" />
         <node concept="3PKj8D" id="17vw8yLgfr8" role="3PKjny">
@@ -3384,6 +3420,16 @@
         <node concept="3PKj8D" id="17vw8yLgfrd" role="3PKjn_">
           <property role="3PKj8l" value="efc581" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3wDVqV" id="4KnVqmc9Vc9">
+    <property role="TrG5h" value="BurpConfigKind" />
+    <property role="2y7wD$" value="BURP" />
+    <node concept="1GtWCo" id="7eeq7psx9Bj" role="1bitO_">
+      <node concept="10M0yZ" id="7eeq7psxaMV" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$RunConfigurations$TestState.Run" resolve="Run" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$RunConfigurations$TestState" resolve="AllIcons.RunConfigurations.TestState" />
       </node>
     </node>
   </node>

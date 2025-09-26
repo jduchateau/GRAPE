@@ -25,7 +25,7 @@ repositories {
 }
 
 plugins {
-    id("com.specificlanguages.mps") version "1.8.0"
+    id("com.specificlanguages.mps") version "1.9.0"
     id("de.undercouch.download") version "5.6.0"
     id("dev.bmac.intellij.plugin-uploader") version "1.3.5"
 }
@@ -80,9 +80,8 @@ tasks {
         group = "antlr"
         description = "Run ANTLR on Turtle.g4"
         classpath = files(antlrJar)
-        mainClass.set("-jar")
-        args = listOf(antlrJar.absolutePath, "Turtle.g4", "-no-listener", "-visitor", "-package", "converter.grammar")
-        workingDir = file("languages/Turtle.runtime/grammar")
+        args = listOf("Turtle.g4", "-no-listener", "-visitor", "-package", "converter.grammar")
+        workingDir = file("solutions/Turtle.parser/grammar")
     }
 
 

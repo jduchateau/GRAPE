@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/GrapePlugin" />
   <property name="build.layout" location="${build.dir}/artifacts/GrapePlugin" />
-  <property name="version_lang" value="0.1.6" />
+  <property name="version_lang" value="0.1.7" />
   <property name="mps_home" location="" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
@@ -27,9 +27,7 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <fileset dir="${artifacts.mps}/lib">
-      <include name="util-8.jar" />
-    </fileset>
+    <pathelement location="${artifacts.mps}/lib/util-8.jar" />
   </path>
   
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
@@ -44,14 +42,17 @@
     <mkdir dir="${build.tmp}/default/GRAPE.jar" />
     <mkdir dir="${build.tmp}/default/GRAPE.jar/META-INF" />
     <echoxml file="${build.tmp}/default/GRAPE.jar/META-INF/plugin.xml">
-      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+      <idea-plugin>
         <id>GRAPE</id>
         <name>GRAPE: Turtle and RML editor</name>
         <description>Provides support for Turtle and RML in MPS.</description>
         <version>${version_lang}</version>
         <vendor url="https://gitlab.uliege.be/JakubDuchateau/grape">Jakub Duchateau at ULiège</vendor>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
+        <depends>jetbrains.mps.ide</depends>
+        <depends>jetbrains.mps.ide.make</depends>
+        <depends>jetbrains.mps.execution.configurations</depends>
         <depends>com.intellij.modules.platform</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -63,7 +64,7 @@
       <fileset dir="${build.tmp}/default/GRAPE.jar" />
     </jar>
     <mkdir dir="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages" />
-    <mkdir dir="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape" />
+    <mkdir dir="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE" />
     <mkdir dir="${build.tmp}/default/Turtle.jar" />
     <mkdir dir="${build.tmp}/default/Turtle.jar/META-INF" />
     <echoxml file="${build.tmp}/default/Turtle.jar/META-INF/module.xml">
@@ -100,7 +101,6 @@
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="cl" />
           <module ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" kind="cl" />
-          <module ref="aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.parser)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
           <module ref="019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)" kind="cl" />
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="cl" />
@@ -166,7 +166,7 @@
         <sources jar="Turtle-src.jar" descriptor="Turtle.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/Turtle.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/Turtle.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/Turtle" />
       <fileset dir="${basedir}/languages/Turtle" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/languages/Turtle/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
@@ -215,7 +215,7 @@
         <sources jar="Turtle-src.jar" descriptor="Turtle.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/Turtle-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/Turtle-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/Turtle.generator" />
       <fileset dir="${basedir}/languages/Turtle/strictGen/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/Turtle-generator.jar" />
@@ -226,7 +226,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-Turtle-strictGen-templates">
       <fileset dir="${basedir}/languages/Turtle/strictGen/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/Turtle-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/Turtle-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/Turtle/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -283,7 +283,7 @@
         <sources jar="." descriptor="Turtle.external.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/Turtle.external.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/Turtle.external.jar" duplicate="preserve">
       <zipfileset file="${basedir}/solutions/Turtle.external/Turtle.external.msd" prefix="module" />
       <fileset dir="${build.tmp}/default/Turtle.external.jar" />
     </jar>
@@ -316,6 +316,7 @@
           <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
           <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
           <language id="l:daafa647-f1f7-4b0b-b096-69cd7c8408c0:jetbrains.mps.baseLanguage.regexp" />
+          <language id="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" />
           <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
           <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
           <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
@@ -326,7 +327,7 @@
         <sources jar="Turtle.parser-src.jar" descriptor="Turtle.parser.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/Turtle.parser.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/Turtle.parser.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/Turtle.parser" />
       <fileset dir="${basedir}/solutions/Turtle.parser/grammar" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${basedir}/solutions/Turtle.parser/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
@@ -335,7 +336,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-Turtle.parser-models">
       <fileset dir="${basedir}/solutions/Turtle.parser/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/Turtle.parser-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/Turtle.parser-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/Turtle.parser/grammar">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -398,7 +399,7 @@
         <sources jar="TurtlePlugin-src.jar" descriptor="TurtlePlugin.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/TurtlePlugin.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/TurtlePlugin.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/TurtlePlugin" />
       <fileset dir="${basedir}/solutions/TurtlePlugin" includes="icons/**" />
       <fileset dir="${basedir}/solutions/TurtlePlugin/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
@@ -407,7 +408,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-TurtlePlugin-models">
       <fileset dir="${basedir}/solutions/TurtlePlugin/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/TurtlePlugin-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/TurtlePlugin-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/TurtlePlugin/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -504,7 +505,7 @@
         <sources jar="RML-src.jar" descriptor="RML.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/RML.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/RML.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/RML" />
       <fileset dir="${basedir}/languages/RML" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/languages/RML/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
@@ -554,7 +555,7 @@
         <sources jar="RML-src.jar" descriptor="RML.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/RML-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/RML-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/RML.generator" />
       <fileset dir="${basedir}/languages/RML/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/RML-generator.jar" />
@@ -565,7 +566,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-RML-generator-templates">
       <fileset dir="${basedir}/languages/RML/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/RML-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/RML-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/RML/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -615,6 +616,7 @@
         <uses>
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
           <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" />
           <language id="l:f3347d8a-0e79-4f35-8ac9-1574f25c986f:jetbrains.mps.execution.commands" />
           <language id="l:22e72e4c-0f69-46ce-8403-6750153aa615:jetbrains.mps.execution.configurations" />
           <language id="l:756e911c-3f1f-4a48-bdf5-a2ceb91b723c:jetbrains.mps.execution.settings" />
@@ -629,7 +631,7 @@
         <sources jar="RMLPlugin-src.jar" descriptor="RMLPlugin.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/RMLPlugin.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/RMLPlugin.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/RMLPlugin" />
       <fileset dir="${basedir}/solutions/RMLPlugin" includes="icons/**" />
       <fileset dir="${basedir}/solutions/RMLPlugin/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
@@ -638,7 +640,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-RMLPlugin-models">
       <fileset dir="${basedir}/solutions/RMLPlugin/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/RMLPlugin-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/RMLPlugin-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/RMLPlugin/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -729,7 +731,7 @@
         <sources jar="RML.FNML-src.jar" descriptor="RML.FNML.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/RML.FNML.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/RML.FNML.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/RML.FNML" />
       <fileset dir="${basedir}/languages/RML.FNML" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/languages/RML.FNML/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
@@ -780,7 +782,7 @@
         <sources jar="RML.FNML-src.jar" descriptor="RML.FNML.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/RML.FNML-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/RML.FNML-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/RML.FNML.generator" />
       <fileset dir="${basedir}/languages/RML.FNML/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/RML.FNML-generator.jar" />
@@ -791,7 +793,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-RML.FNML-generator-templates">
       <fileset dir="${basedir}/languages/RML.FNML/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/RML.FNML-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/RML.FNML-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/RML.FNML/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -823,6 +825,7 @@
           <module ref="af19274f-5f89-42dd-8f3c-c9932448f7f2(jetbrains.mps.analyzers.runtime)" kind="rt" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
           <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="23949432-aaff-4c03-b7da-26e4e956ccea(jetbrains.mps.baseLanguage.regexp.runtime)" kind="rt" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" kind="rt" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" kind="rt" />
@@ -834,6 +837,7 @@
           <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
           <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
+          <module ref="3330376f-82a0-45ed-ae50-a320ee8b0b63(jetbrains.mps.lang.script.rt)" kind="rt" />
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" kind="cl" />
@@ -849,6 +853,7 @@
           <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
           <language id="l:96ee7a94-411d-4cf8-9b94-96cad7e52411:jetbrains.mps.baseLanguage.jdk7" />
           <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:daafa647-f1f7-4b0b-b096-69cd7c8408c0:jetbrains.mps.baseLanguage.regexp" />
           <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
           <language id="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" />
           <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
@@ -878,6 +883,7 @@
           <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
           <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
           <language id="l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes" />
+          <language id="l:0eddeefa-c2d6-4437-bc2c-de50fd4ce470:jetbrains.mps.lang.script" />
           <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
           <language id="l:69b8a993-9b87-4d96-bf0c-3559f4bb0c63:jetbrains.mps.lang.slanguage" />
           <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
@@ -891,7 +897,7 @@
         <sources jar="RML.IO-src.jar" descriptor="RML.IO.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/RML.IO.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/RML.IO.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/RML.IO" />
       <fileset dir="${basedir}/languages/RML.IO" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/languages/RML.IO/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
@@ -940,7 +946,7 @@
         <sources jar="RML.IO-src.jar" descriptor="RML.IO.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/RML.IO-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/RML.IO-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/RML.IO.generator" />
       <fileset dir="${basedir}/languages/RML.IO/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/RML.IO-generator.jar" />
@@ -951,7 +957,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-RML.IO-generator-templates">
       <fileset dir="${basedir}/languages/RML.IO/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/Grape/RML.IO-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/GrapePlugin.zip/GRAPE/languages/GRAPE/RML.IO-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/RML.IO/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -987,7 +993,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.java.modules.cycle.1, java.compile.Turtle, java.compile.Turtle.generator, java.compile.Turtle.parser, java.compile.TurtlePlugin, java.compile.java.modules.cycle.2, java.compile.RML, java.compile.RML.generator, java.compile.RMLPlugin, java.compile.RML.FNML, java.compile.RML.FNML.generator, java.compile.RML.IO, java.compile.RML.IO.generator" />
+  <target name="compileJava" depends="java.compile.Turtle, java.compile.Turtle.generator, java.compile.Turtle.parser, java.compile.TurtlePlugin, java.compile.java.modules.cycle.1, java.compile.RML, java.compile.RML.generator, java.compile.RMLPlugin, java.compile.RML.FNML, java.compile.RML.FNML.generator, java.compile.RML.IO, java.compile.RML.IO.generator" />
   
   <target name="processResources" />
   
@@ -1012,6 +1018,8 @@
       <plugin path="${artifacts.mps}/plugins/mps-junit5" id="jetbrains.mps.junit5" />
       <plugin path="${artifacts.mps}/plugins/mps-make" id="jetbrains.mps.ide.make" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
@@ -1039,107 +1047,7 @@
   
   <target name="makeDependents" />
   
-  <target name="java.compile.java.modules.cycle.1" depends="fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.1" />
-    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" nowarn="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/languages/Turtle/source_gen" />
-        <path location="${basedir}/solutions/Turtle.parser/grammar" />
-        <path location="${basedir}/solutions/Turtle.parser/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/antlr4-runtime.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/caffeine.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/collection.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-codec.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-collections4.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-compress.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-csv.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-io.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-lang3.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/error_prone_annotations.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/gson.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/httpclient5.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/httpcore5-h2.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/httpcore5.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jakarta.json.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jcl-over-slf4j.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-arq.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-base.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-core.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-iri.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-querybuilder.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-rdfconnection.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-shacl.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/libthrift.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/protobuf-java.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/RoaringBitmap.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/slf4j-api.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/slf4j-simple.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/titanium-json-ld.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/util-8.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
-        <fileset file="${artifacts.mps}/lib/app.jar" />
-        <fileset file="${artifacts.mps}/lib/app-client.jar" />
-        <fileset file="${artifacts.mps}/lib/lib.jar" />
-        <fileset file="${artifacts.mps}/lib/lib-client.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
-        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
-        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
-        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
-        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
-        <fileset file="${artifacts.mps}/lib/stats.jar" />
-        <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${artifacts.mps}/languages/make/jetbrains.mps.make.facets.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.Turtle" depends="java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.Turtle" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/Turtle/source_gen" />
     <mkdir dir="${build.tmp}/java/out/Turtle" />
     <javac destdir="${build.tmp}/java/out/Turtle" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1148,29 +1056,29 @@
         <path location="${basedir}/languages/Turtle/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
@@ -1205,14 +1113,13 @@
         <fileset file="${basedir}/solutions/Turtle.external/lib/slf4j-simple.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/titanium-json-ld.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/util-8.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
         <fileset file="${artifacts.mps}/lib/lib-client.jar" />
         <fileset file="${artifacts.mps}/lib/util.jar" />
         <fileset file="${artifacts.mps}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
         <fileset file="${artifacts.mps}/lib/java-impl.jar" />
@@ -1233,7 +1140,6 @@
         <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/make/jetbrains.mps.make.facets.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/Turtle">
@@ -1323,7 +1229,6 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
@@ -1333,7 +1238,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.Turtle.parser" depends="java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.Turtle.parser" depends="java.compile.Turtle, fetchDependencies">
     <mkdir dir="${basedir}/solutions/Turtle.parser/grammar" />
     <mkdir dir="${basedir}/solutions/Turtle.parser/source_gen" />
     <mkdir dir="${build.tmp}/java/out/Turtle.parser" />
@@ -1371,6 +1276,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <pathelement path="${build.tmp}/java/out/Turtle" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/antlr4-runtime.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/caffeine.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/collection.jar" />
@@ -1415,7 +1321,6 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
@@ -1424,7 +1329,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/Turtle.parser">
@@ -1486,7 +1390,6 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-make/languages/jetbrains.mps.ide.make.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -1499,9 +1402,9 @@
     </copy>
   </target>
   
-  <target name="java.compile.java.modules.cycle.2" depends="java.compile.Turtle, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.2" />
-    <javac destdir="${build.tmp}/java.modules.cycle.2" fork="true" encoding="utf8" nowarn="true" includeantruntime="false">
+  <target name="java.compile.java.modules.cycle.1" depends="java.compile.Turtle, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.1" />
+    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/RML/source_gen" />
@@ -1532,10 +1435,10 @@
         <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/antlr4-runtime.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/caffeine.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/collection.jar" />
@@ -1580,7 +1483,6 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
@@ -1588,12 +1490,13 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <pathelement path="${build.tmp}/java/out/Turtle" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.RML" depends="java.compile.Turtle, java.compile.java.modules.cycle.2, fetchDependencies">
+  <target name="java.compile.RML" depends="java.compile.Turtle, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/RML/source_gen" />
     <mkdir dir="${build.tmp}/java/out/RML" />
     <javac destdir="${build.tmp}/java/out/RML" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1625,10 +1528,10 @@
         <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <pathelement path="${build.tmp}/java/out/Turtle" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/antlr4-runtime.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/caffeine.jar" />
@@ -1674,7 +1577,6 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
@@ -1682,7 +1584,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.2" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/RML">
@@ -1774,7 +1676,6 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
@@ -1868,7 +1769,6 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/languages/jetbrains.mps.baseLanguage.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-languages/languages/jetbrains.mps.execution.configurations.pluginSolution.jar" />
@@ -1882,7 +1782,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.RML.FNML" depends="java.compile.Turtle, java.compile.java.modules.cycle.2, fetchDependencies">
+  <target name="java.compile.RML.FNML" depends="java.compile.Turtle, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/RML.FNML/source_gen" />
     <mkdir dir="${build.tmp}/java/out/RML.FNML" />
     <javac destdir="${build.tmp}/java/out/RML.FNML" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1963,7 +1863,6 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
@@ -1971,7 +1870,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.2" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/RML.FNML">
@@ -2064,7 +1963,6 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
@@ -2074,7 +1972,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.RML.IO" depends="java.compile.Turtle, java.compile.java.modules.cycle.2, fetchDependencies">
+  <target name="java.compile.RML.IO" depends="java.compile.Turtle, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/RML.IO/source_gen" />
     <mkdir dir="${build.tmp}/java/out/RML.IO" />
     <javac destdir="${build.tmp}/java/out/RML.IO" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2155,15 +2053,15 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.2" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/RML.IO">
@@ -2255,7 +2153,6 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>

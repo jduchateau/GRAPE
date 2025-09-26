@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle" version="0" />
-    <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="1" />
   </languages>
   <imports />
   <registry>

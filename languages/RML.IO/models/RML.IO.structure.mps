@@ -52,6 +52,7 @@
     <property role="EcuMT" value="6303025759226929064" />
     <property role="TrG5h" value="SourceNamedDef" />
     <property role="3GE5qa" value="Source.Use" />
+    <property role="34LRSv" value="Source" />
     <ref role="1TJDcQ" to="ys6r:25MWlU63704" resolve="NamedDefintionTriples" />
     <node concept="PrWs8" id="75xoT0k8pUr" role="PzmwI">
       <ref role="PrY4T" to="tpck:hqLv6T6" resolve="IResolveInfo" />
@@ -129,6 +130,7 @@
     <property role="EcuMT" value="6303025759226768837" />
     <property role="TrG5h" value="LogicalSourceNamedDef" />
     <property role="3GE5qa" value="LogicalSource" />
+    <property role="34LRSv" value="Logical Source" />
     <ref role="1TJDcQ" to="ys6r:25MWlU63704" resolve="NamedDefintionTriples" />
     <node concept="PrWs8" id="5tSQ8xWQuCM" role="PzmwI">
       <ref role="PrY4T" node="5iB6wpUzbK4" resolve="LogicalSourceDef" />
@@ -330,7 +332,7 @@
     <property role="TrG5h" value="SQLDatabase" />
     <property role="R4oN_" value="D2RQ access description for accessing SQL databases" />
     <property role="34LRSv" value="sql" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7PZGQTM_uKv" role="1TKVEl">
       <property role="IQ2nx" value="9043143863733447711" />
       <property role="TrG5h" value="auth" />
@@ -371,7 +373,7 @@
     <property role="EcuMT" value="9043143863732116785" />
     <property role="3GE5qa" value="Source.Def.DB" />
     <property role="TrG5h" value="RawJdbcDSN" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7PZGQTMwpON" role="1TKVEl">
       <property role="IQ2nx" value="9043143863732116787" />
       <property role="TrG5h" value="url" />
@@ -385,7 +387,7 @@
     <property role="EcuMT" value="9043143863732146308" />
     <property role="TrG5h" value="Sqlite" />
     <property role="3GE5qa" value="Source.Def.DB" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7PZGQTMwx27" role="PzmwI">
       <ref role="PrY4T" node="7PZGQTMwpOJ" resolve="JdbcDSN" />
     </node>
@@ -399,7 +401,7 @@
     <property role="EcuMT" value="9043143863734227676" />
     <property role="3GE5qa" value="Source.Def" />
     <property role="TrG5h" value="CustomSource" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7PZGQTMCtbt" role="1TKVEi">
       <property role="IQ2ns" value="9043143863734227677" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

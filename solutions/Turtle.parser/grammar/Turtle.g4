@@ -289,22 +289,22 @@ EXPONENT
 
 // [46] STRING_LITERAL_LONG_SINGLE_QUOTE ::= "'''" (("'" | "''")? ([^'\] | ECHAR | UCHAR))* "'''"
 STRING_LITERAL_LONG_SINGLE_QUOTE
-    : '\'\'\'' (('\'' | '\'\'')? ((~ ['\\]) | ECHAR | UCHAR))* '\'\'\''
+    : '\'\'\'' (('\'' | '\'\'')? ((~ ['\\]) | ECHAR | UCHAR))*? '\'\'\''
     ;
 
 // [47] STRING_LITERAL_LONG_QUOTE ::=  	'"""' (('"' | '""')? ([^"\] | ECHAR | UCHAR))* '"""'
 STRING_LITERAL_LONG_QUOTE
-    : '"""' (('\'' | '\'\'')? ((~ ['\\]) | ECHAR | UCHAR))* '"""'
+    : '"""' (('\'' | '\'\'')? ((~ ['\\]) | ECHAR | UCHAR))*? '"""'
     ;
 
 // [44] STRING_LITERAL_QUOTE ::= '"' ([^#x22#x5C#x0A#x0D] | ECHAR | UCHAR)* '"'
 STRING_LITERAL_QUOTE
-    : '"' ((~ [\u0022\u005C\u000A\u000D]) | ECHAR | UCHAR)* '"'
+    : '"' ((~ [\u0022\u005C\u000A\u000D]) | ECHAR | UCHAR)*? '"'
     ;
 
 // [45] STRING_LITERAL_SINGLE_QUOTE ::= "'" ([^#x27#x5C#x0A#x0D] | ECHAR | UCHAR)* "'"
 STRING_LITERAL_SINGLE_QUOTE
-    : '\'' ((~ [\u0027\u005C\u000A\u000D]) | ECHAR | UCHAR)* '\''
+    : '\'' ((~ [\u0027\u005C\u000A\u000D]) | ECHAR | UCHAR)*? '\''
     ;
 
 // [48] UCHAR ::= '\u' HEX HEX HEX HEX | '\U' HEX HEX HEX HEX HEX HEX HEX HEX

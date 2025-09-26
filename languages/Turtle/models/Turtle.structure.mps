@@ -60,6 +60,7 @@
     <property role="EcuMT" value="2937713717140246833" />
     <property role="TrG5h" value="TurtleDoc" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="Turtle" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2z4QKYxVX4P" role="1TKVEi">
       <property role="IQ2ns" value="2937713717140246837" />
@@ -76,8 +77,13 @@
     </node>
     <node concept="1TJgyi" id="6WRbFH1LSPi" role="1TKVEl">
       <property role="IQ2nx" value="8013925443726445906" />
-      <property role="TrG5h" value="datasetName" />
+      <property role="TrG5h" value="graphName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4J$0oxoW41a" role="1TKVEl">
+      <property role="IQ2nx" value="5468497532653944906" />
+      <property role="TrG5h" value="isFragment" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxVX4T">
@@ -324,6 +330,11 @@
       <property role="IQ2nx" value="2937713717140624475" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3t8UTKP8nby" role="1TKVEl">
+      <property role="IQ2nx" value="3983692926548013794" />
+      <property role="TrG5h" value="singleQuote" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="2z4QKYxXxho" role="1TKVEi">
       <property role="IQ2ns" value="2937713717140657240" />
@@ -605,6 +616,23 @@
     <property role="EcuMT" value="3191957305438145345" />
     <property role="3GE5qa" value="Literal" />
     <property role="TrG5h" value="RdfLiteralContext" />
+  </node>
+  <node concept="1TIwiD" id="4J$0oxoEB7S">
+    <property role="EcuMT" value="5468497532649370104" />
+    <property role="3GE5qa" value="Literal" />
+    <property role="TrG5h" value="RdfLiteralMultiline" />
+    <property role="34LRSv" value="&quot;&quot;&quot;multiline&quot;&quot;&quot;" />
+    <ref role="1TJDcQ" node="2z4QKYxXphm" resolve="RdfLiteral" />
+    <node concept="1TJgyj" id="4J$0oxoEB9c" role="1TKVEi">
+      <property role="IQ2ns" value="5468497532649370188" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="lines" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6J5A" resolve="Line" />
+    </node>
+    <node concept="PrWs8" id="4J$0oxoGbz$" role="PzmwI">
+      <ref role="PrY4T" to="zqge:6GJhO0n1XxQ" resolve="IHoldLines" />
+    </node>
   </node>
 </model>
 

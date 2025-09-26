@@ -10,7 +10,7 @@
   <registry>
     <language id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle">
       <concept id="2937713717140246833" name="Turtle.structure.TurtleDoc" flags="ng" index="29aKCY">
-        <property id="8013925443726445906" name="datasetName" index="IWafD" />
+        <property id="8013925443726445906" name="graphName" index="IWafD" />
         <child id="2937713717140246837" name="statments" index="29aKCU" />
       </concept>
       <concept id="2937713717140624470" name="Turtle.structure.RdfLiteral" flags="ng" index="29ckXp">
@@ -661,7 +661,7 @@
         </node>
       </node>
       <node concept="FCvle" id="5ay_xxAvQwx" role="IaUo4">
-        <ref role="FCvlf" node="5ay_xxAvQwr" />
+        <ref role="FCvlf" node="5ay_xxAvQwr" resolve="&lt;EmplyeeSource&gt;" />
       </node>
       <node concept="IaUod" id="5R3My36CHGw" role="2YYcL1">
         <node concept="IaUoX" id="5R3My36CHGx" role="FGdDe">
@@ -765,7 +765,7 @@
         </node>
       </node>
       <node concept="FCvle" id="5ay_xxAw4Dv" role="IaUo4">
-        <ref role="FCvlf" node="5ay_xxAw4Dp" />
+        <ref role="FCvlf" node="5ay_xxAw4Dp" resolve="&lt;ProjectSource&gt;" />
       </node>
       <node concept="IaUod" id="5R3My36CHH8" role="2YYcL1">
         <node concept="IaUoX" id="5R3My36CHH9" role="FGdDe">

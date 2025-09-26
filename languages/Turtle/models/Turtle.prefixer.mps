@@ -785,7 +785,7 @@
                 </node>
                 <node concept="2OqwBi" id="4qVl4MKbs2d" role="33vP2m">
                   <node concept="37vLTw" id="4qVl4MKbs2e" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4qVl4MKbv$i" resolve="newHttpClient" />
+                    <ref role="3cqZAo" node="4qVl4MKbv$i" resolve="httpClient" />
                   </node>
                   <node concept="liA8E" id="4qVl4MKbs2f" role="2OqNvi">
                     <ref role="37wK5l" to="781x:~HttpClient.send(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler)" resolve="send" />
