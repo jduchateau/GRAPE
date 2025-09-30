@@ -1,9 +1,17 @@
 # Installation
 
-First, install [JetBrains MPS 2024.1](https://www.jetbrains.com/mps/download/previous.html#version20241).
+First, install [JetBrains MPS](https://www.jetbrains.com/mps/download/). Check the version you need in the [table below](#compatible-versions).
 After that, you can install GRAPE as a plugin or start from source.
 In both cases, you will be able to examine the source code;
-however, modifications are only possible when starting from source.
+however, modifications are only possible when running from source.
+
+### Compatible Versions
+
+| GRAPE Version | MPS Version |
+| ------------- | ----------- |
+| 0.1.6         | 2025.2      |
+| ...           | 2024.1      |
+| 0.1.1         | 2024.1      |
 
 ## Install the plugin
 
@@ -17,7 +25,7 @@ You will need to **restart MPS**, then you can continue with the [tutorial](star
 
 ## Running from Source
 
-In addition to MPS 2024.1, you will need:
+In addition to MPS, you will need:
 
 - Gradle (ideally [Gradle 8.1.1](https://gradle.org/releases/#8.11.1))
 - Java 17 (JetBrains Runtime 17, bundled with MPS 2024.1)
@@ -35,4 +43,6 @@ To start the project:
 4. Rebuild the project to ensure that languages are built and properly loaded. 
    ++ctrl+shift+a++ and search `rebuild project`
    or right-click on the project in Logical View and select `Rebuild Project`.
+
+
 
