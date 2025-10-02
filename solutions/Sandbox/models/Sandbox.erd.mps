@@ -4,7 +4,7 @@
   <languages>
     <use id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle" version="0" />
     <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="1" />
-    <use id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO" version="0" />
+    <use id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO" version="1" />
   </languages>
   <imports />
   <registry>
@@ -60,18 +60,29 @@
         <child id="791507941088379207" name="root" index="1Fxk40" />
       </concept>
       <concept id="6099872835424795652" name="RML.IO.structure.LogicalSourceDef" flags="ngI" index="IaUo2">
-        <property id="6303025759227498354" name="iterator" index="FB9vU" />
         <child id="6303025759226878442" name="source" index="FCw5y" />
         <child id="6127414803068812677" name="referenceFormulation" index="3tqwV9" />
+        <child id="7776130554352573427" name="iterator" index="1KPkpT" />
       </concept>
       <concept id="468146138112354128" name="RML.IO.structure.SourceInlineDef" flags="ng" index="2JlPsY" />
       <concept id="6127414803068812685" name="RML.IO.structure.ReferenceFormulationCSV" flags="ng" index="3tqwV1" />
       <concept id="6127414803068812687" name="RML.IO.structure.ReferenceFormulationJSONPath" flags="ng" index="3tqwV3" />
       <concept id="791507941088259868" name="RML.IO.structure.CurrentWorkingDirectoryRoot" flags="ng" index="1FyQXr" />
+      <concept id="7776130554352856000" name="RML.IO.structure.RawReference" flags="ng" index="1KEjpa">
+        <child id="7776130554352856002" name="lines" index="1KEjp8" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML">
@@ -616,7 +627,6 @@
       </node>
     </node>
     <node concept="FCvld" id="5ay_xxAw4Dy" role="29aKCU">
-      <property role="FB9vU" value="$[*]" />
       <node concept="3tqwV3" id="5ay_xxAw4Dz" role="3tqwV9" />
       <node concept="2JlPsY" id="5ay_xxAw4D$" role="FCw5y">
         <node concept="FCOsJ" id="5ay_xxAw4D_" role="1FyQV4">
@@ -626,6 +636,13 @@
       </node>
       <node concept="29d1u9" id="5ay_xxAw4DD" role="2$AQDL">
         <property role="29d1u8" value="TasksSource" />
+      </node>
+      <node concept="1KEjpa" id="7X6fuJen0f3" role="1KPkpT">
+        <node concept="1PaTwC" id="7X6fuJen0f4" role="1KEjp8">
+          <node concept="3oM_SD" id="7X6fuJen0f5" role="1PaTwD">
+            <property role="3oM_SC" value="$[*]" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1SSSdx" id="5ay_xxAw4Dx" role="29aKCU" />

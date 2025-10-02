@@ -4,7 +4,7 @@
   <languages>
     <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="1" />
     <use id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle" version="0" />
-    <use id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO" version="0" />
+    <use id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO" version="1" />
     <use id="4d376ef7-201b-4497-bbe5-6b936a6ab3d7" name="RML.FNML" version="0" />
   </languages>
   <imports />
@@ -50,15 +50,18 @@
         <child id="791507941088379207" name="root" index="1Fxk40" />
       </concept>
       <concept id="6099872835424795652" name="RML.IO.structure.LogicalSourceDef" flags="ngI" index="IaUo2">
-        <property id="6303025759227498354" name="iterator" index="FB9vU" />
         <child id="6303025759226878442" name="source" index="FCw5y" />
         <child id="6127414803068812677" name="referenceFormulation" index="3tqwV9" />
+        <child id="7776130554352573427" name="iterator" index="1KPkpT" />
       </concept>
       <concept id="468146138112354128" name="RML.IO.structure.SourceInlineDef" flags="ng" index="2JlPsY" />
       <concept id="6127414803068812685" name="RML.IO.structure.ReferenceFormulationCSV" flags="ng" index="3tqwV1" />
       <concept id="6127414803068812687" name="RML.IO.structure.ReferenceFormulationJSONPath" flags="ng" index="3tqwV3" />
       <concept id="8169920669489714720" name="RML.IO.structure.LogicalSourceInlineDef" flags="ng" index="1_rNmK" />
       <concept id="791507941088259868" name="RML.IO.structure.CurrentWorkingDirectoryRoot" flags="ng" index="1FyQXr" />
+      <concept id="7776130554352856000" name="RML.IO.structure.RawReference" flags="ng" index="1KEjpa">
+        <child id="7776130554352856002" name="lines" index="1KEjp8" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -71,6 +74,14 @@
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
         <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML">
@@ -169,12 +180,18 @@
         <property role="29d1u8" value="Person" />
       </node>
       <node concept="1_rNmK" id="5MK5ainLU7F" role="IaUo4">
-        <property role="FB9vU" value="$.persons[*]" />
         <node concept="3tqwV3" id="5MK5ainLU7M" role="3tqwV9" />
         <node concept="2JlPsY" id="5MK5ainLU7I" role="FCw5y">
           <node concept="FCOsJ" id="7PZGQTMJdmd" role="1FyQV4">
             <property role="1Fxk42" value="people.json" />
             <node concept="1FyQXr" id="7PZGQTMJdmf" role="1Fxk40" />
+          </node>
+        </node>
+        <node concept="1KEjpa" id="7X6fuJen0f6" role="1KPkpT">
+          <node concept="1PaTwC" id="7X6fuJen0f7" role="1KEjp8">
+            <node concept="3oM_SD" id="7X6fuJen0f8" role="1PaTwD">
+              <property role="3oM_SC" value="$.persons[*]" />
+            </node>
           </node>
         </node>
       </node>
@@ -187,17 +204,11 @@
     </node>
   </node>
   <node concept="29aKCY" id="KJ$AktwcE9">
-    <property role="TrG5h" value="Advanced_PeopleAndMovies" />
+    <property role="TrG5h" value="PeopleAndMovies" />
     <node concept="29d5m5" id="KJ$AktwcEa" role="29aKCU">
       <property role="TrG5h" value="ex" />
       <node concept="29d1u9" id="KJ$AktwcEc" role="3pzv1Z">
         <property role="29d1u8" value="http://example.org/" />
-      </node>
-    </node>
-    <node concept="29d5m5" id="KJ$Akt$cxA" role="29aKCU">
-      <property role="TrG5h" value="burp" />
-      <node concept="29d1u9" id="KJ$Akt$cxE" role="3pzv1Z">
-        <property role="29d1u8" value="http://w3id.org/burp/" />
       </node>
     </node>
     <node concept="29d5m5" id="KJ$Akt$cxJ" role="29aKCU">
@@ -311,7 +322,6 @@
         </node>
       </node>
       <node concept="1_rNmK" id="KJ$AktwcEn" role="IaUo4">
-        <property role="FB9vU" value="$.persons[*]" />
         <node concept="2JlPsY" id="1xDVdsoyAVZ" role="FCw5y">
           <node concept="FCOsJ" id="1xDVdsoyAW1" role="1FyQV4">
             <property role="1Fxk42" value="people.json" />
@@ -319,6 +329,13 @@
           </node>
         </node>
         <node concept="3tqwV3" id="1yLetCTAOUI" role="3tqwV9" />
+        <node concept="1KEjpa" id="7X6fuJen0f9" role="1KPkpT">
+          <node concept="1PaTwC" id="7X6fuJen0fa" role="1KEjp8">
+            <node concept="3oM_SD" id="7X6fuJen0fb" role="1PaTwD">
+              <property role="3oM_SC" value="$.persons[*]" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="IaUod" id="KJ$AktwcEj" role="2YYcL1">
         <node concept="IaUoX" id="KJ$Akt$cxP" role="FGdDe">
