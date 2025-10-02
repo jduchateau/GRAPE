@@ -281,8 +281,10 @@
                     <ref role="2pJxaS" to="16h3:2z4QKYxW8Ua" resolve="PrefixId" />
                     <node concept="2pJxcG" id="3UFA6ZbO1Du" role="2pJxcM">
                       <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                      <node concept="37vLTw" id="7x$r2tx6XAi" role="28ntcv">
-                        <ref role="3cqZAo" node="7x$r2tx6PAj" resolve="rmlName" />
+                      <node concept="WxPPo" id="6dwglhleGm3" role="28ntcv">
+                        <node concept="37vLTw" id="7x$r2tx6XAi" role="WxPPp">
+                          <ref role="3cqZAo" node="7x$r2tx6PAj" resolve="rmlName" />
+                        </node>
                       </node>
                     </node>
                     <node concept="2pIpSj" id="3UFA6ZbO1Dx" role="2pJxcM">
@@ -291,8 +293,10 @@
                         <ref role="2pJxaS" to="16h3:2z4QKYxWcM6" resolve="IriFull" />
                         <node concept="2pJxcG" id="3UFA6ZbO1Dz" role="2pJxcM">
                           <ref role="2pJxcJ" to="16h3:2z4QKYxWcM7" resolve="iri" />
-                          <node concept="37vLTw" id="7x$r2tx6XAn" role="28ntcv">
-                            <ref role="3cqZAo" node="7x$r2tx6QAu" resolve="rmlPrefix" />
+                          <node concept="WxPPo" id="6dwglhleGm4" role="28ntcv">
+                            <node concept="37vLTw" id="7x$r2tx6XAn" role="WxPPp">
+                              <ref role="3cqZAo" node="7x$r2tx6QAu" resolve="rmlPrefix" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -761,6 +765,26 @@
       </node>
       <node concept="3Tm1VV" id="7cYw35ipc_T" role="1B3o_S" />
     </node>
+    <node concept="Wx3nA" id="5MEGOyC8CIX" role="jymVt">
+      <property role="TrG5h" value="SQLTable" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="5MEGOyC8CIY" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+      </node>
+      <node concept="2YIFZM" id="5MEGOyC8CIZ" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createResource(java.lang.String)" resolve="createResource" />
+        <node concept="3cpWs3" id="5MEGOyC8CJ0" role="37wK5m">
+          <node concept="37vLTw" id="5MEGOyC8CJ1" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="5MEGOyC8CJ2" role="3uHU7w">
+            <property role="Xl_RC" value="SQLTable" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5MEGOyC8CJ3" role="1B3o_S" />
+    </node>
     <node concept="Wx3nA" id="7cYw35ipc_U" role="jymVt">
       <property role="TrG5h" value="SQL2008Query" />
       <property role="3TUv4t" value="true" />
@@ -780,6 +804,26 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="7cYw35ipcA0" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="5MEGOyC8BPB" role="jymVt">
+      <property role="TrG5h" value="SQLQuery" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="5MEGOyC8BPC" role="1tU5fm">
+        <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+      </node>
+      <node concept="2YIFZM" id="5MEGOyC8BPD" role="33vP2m">
+        <ref role="1Pybhc" to="t6dh:~ResourceFactory" resolve="ResourceFactory" />
+        <ref role="37wK5l" to="t6dh:~ResourceFactory.createResource(java.lang.String)" resolve="createResource" />
+        <node concept="3cpWs3" id="5MEGOyC8BPE" role="37wK5m">
+          <node concept="37vLTw" id="5MEGOyC8BPF" role="3uHU7B">
+            <ref role="3cqZAo" node="7cYw35ipc$K" resolve="NS" />
+          </node>
+          <node concept="Xl_RD" id="5MEGOyC8BPG" role="3uHU7w">
+            <property role="Xl_RC" value="SQLQuery" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5MEGOyC8BPH" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="7cYw35ipcA1" role="jymVt">
       <property role="TrG5h" value="XPath" />

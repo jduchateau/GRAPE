@@ -21,6 +21,7 @@
     <import index="t6dh" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.rdf.model(Turtle.external/)" />
     <import index="4c5q" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.datatypes.xsd.impl(Turtle.external/)" />
     <import index="7jzd" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.rdf.model.impl(Turtle.external/)" />
+    <import index="cyoz" ref="r:ef2b4066-69f7-4d14-91ae-0386ca39f157(Turtle.datasetManager)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="75q8" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.datatypes.xsd(Turtle.external/)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
@@ -2098,6 +2099,73 @@
   <node concept="13h7C7" id="55UoUlXVZSV">
     <property role="3GE5qa" value="RDF" />
     <ref role="13h7C2" to="16h3:2z4QKYxWcd2" resolve="Subject" />
+    <node concept="13i0hz" id="6dwglhl66Dw" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="convertSubject" />
+      <node concept="3Tm1VV" id="6dwglhl66Dx" role="1B3o_S" />
+      <node concept="3uibUv" id="6dwglhl66DO" role="3clF45">
+        <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+      </node>
+      <node concept="3clFbS" id="6dwglhl66Dz" role="3clF47">
+        <node concept="3cpWs8" id="6dwglhl67Qn" role="3cqZAp">
+          <node concept="3cpWsn" id="6dwglhl67Qo" role="3cpWs9">
+            <property role="TrG5h" value="manager" />
+            <node concept="3uibUv" id="6dwglhl67PI" role="1tU5fm">
+              <ref role="3uigEE" to="cyoz:6tKZDNaiTly" resolve="RdfDatasetsManager" />
+            </node>
+            <node concept="2YIFZM" id="6dwglhl67Qp" role="33vP2m">
+              <ref role="37wK5l" to="cyoz:3l3jG31o0qT" resolve="getInstance" />
+              <ref role="1Pybhc" to="cyoz:6tKZDNaiTly" resolve="RdfDatasetsManager" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6dwglhl67XP" role="3cqZAp">
+          <node concept="3cpWsn" id="6dwglhl67XQ" role="3cpWs9">
+            <property role="TrG5h" value="doc" />
+            <node concept="3Tqbb2" id="6dwglhl67Xe" role="1tU5fm">
+              <ref role="ehGHo" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
+            </node>
+            <node concept="2OqwBi" id="6dwglhl67XR" role="33vP2m">
+              <node concept="13iPFW" id="6dwglhl67XS" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="6dwglhl67XT" role="2OqNvi">
+                <node concept="1xMEDy" id="6dwglhl67XU" role="1xVPHs">
+                  <node concept="chp4Y" id="6dwglhl67XV" role="ri$Ld">
+                    <ref role="cht4Q" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6dwglhl68LN" role="3cqZAp">
+          <node concept="3cpWsn" id="6dwglhl68LO" role="3cpWs9">
+            <property role="TrG5h" value="model" />
+            <node concept="3uibUv" id="6dwglhl68Ir" role="1tU5fm">
+              <ref role="3uigEE" to="t6dh:~Model" resolve="Model" />
+            </node>
+            <node concept="2OqwBi" id="6dwglhl68LP" role="33vP2m">
+              <node concept="37vLTw" id="6dwglhl68LQ" role="2Oq$k0">
+                <ref role="3cqZAo" node="6dwglhl67Qo" resolve="manager" />
+              </node>
+              <node concept="liA8E" id="6dwglhl68LR" role="2OqNvi">
+                <ref role="37wK5l" to="cyoz:tPE8szgjJt" resolve="getModel" />
+                <node concept="37vLTw" id="6dwglhl68LS" role="37wK5m">
+                  <ref role="3cqZAo" node="6dwglhl67XQ" resolve="doc" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6dwglhl66Fn" role="3cqZAp">
+          <node concept="BsUDl" id="6dwglhl670U" role="3clFbG">
+            <ref role="37wK5l" node="55UoUlXVZTe" resolve="convertSubject" />
+            <node concept="37vLTw" id="6dwglhl68Ts" role="37wK5m">
+              <ref role="3cqZAo" node="6dwglhl68LO" resolve="model" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="55UoUlXVZTe" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />

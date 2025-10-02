@@ -44,6 +44,7 @@
     <import index="ptfq" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.riot(Turtle.external/)" />
     <import index="8ias" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.graph(Turtle.external/)" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
+    <import index="hvbj" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.shared(Turtle.external/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -579,6 +580,66 @@
                   <node concept="37vLTw" id="7NlO_H3DTY0" role="3uHU7w">
                     <ref role="3cqZAo" node="7PPLA3R9r6V" resolve="nameUri" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7Cd9YrbIe5L" role="3cqZAp">
+          <node concept="1PaTwC" id="7Cd9YrbIe5M" role="1aUNEU">
+            <node concept="3oM_SD" id="7Cd9YrbIe5N" role="1PaTwD">
+              <property role="3oM_SC" value="For" />
+            </node>
+            <node concept="3oM_SD" id="7Cd9YrbIfcZ" role="1PaTwD">
+              <property role="3oM_SC" value="some" />
+            </node>
+            <node concept="3oM_SD" id="7Cd9YrbIfd1" role="1PaTwD">
+              <property role="3oM_SC" value="reason" />
+            </node>
+            <node concept="3oM_SD" id="7Cd9YrbIfdi" role="1PaTwD">
+              <property role="3oM_SC" value="Jena" />
+            </node>
+            <node concept="3oM_SD" id="7Cd9YrbIhLe" role="1PaTwD">
+              <property role="3oM_SC" value="forget" />
+            </node>
+            <node concept="3oM_SD" id="7Cd9YrbIhLv" role="1PaTwD">
+              <property role="3oM_SC" value="about" />
+            </node>
+            <node concept="3oM_SD" id="7Cd9YrbIhLw" role="1PaTwD">
+              <property role="3oM_SC" value="prefixes," />
+            </node>
+            <node concept="3oM_SD" id="7Cd9YrbIhM1" role="1PaTwD">
+              <property role="3oM_SC" value="lets" />
+            </node>
+            <node concept="3oM_SD" id="7Cd9YrbIhMi" role="1PaTwD">
+              <property role="3oM_SC" value="remind" />
+            </node>
+            <node concept="3oM_SD" id="7Cd9YrbIhN4" role="1PaTwD">
+              <property role="3oM_SC" value="them" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Cd9YrbGHYD" role="3cqZAp">
+          <node concept="2OqwBi" id="7Cd9YrbFdJP" role="3clFbG">
+            <node concept="2OqwBi" id="7Cd9YrbF8vV" role="2Oq$k0">
+              <node concept="37vLTw" id="7Cd9YrbF7xX" role="2Oq$k0">
+                <ref role="3cqZAo" node="2fsGeYB7d6F" resolve="dataset" />
+              </node>
+              <node concept="liA8E" id="7Cd9YrbFaj6" role="2OqNvi">
+                <ref role="37wK5l" to="sg7y:~Dataset.getNamedModel(java.lang.String)" resolve="getNamedModel" />
+                <node concept="37vLTw" id="7Cd9YrbFbug" role="37wK5m">
+                  <ref role="3cqZAo" node="7PPLA3R9r6V" resolve="nameUri" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="7Cd9YrbFg6a" role="2OqNvi">
+              <ref role="37wK5l" to="t6dh:~Model.setNsPrefixes(java.util.Map)" resolve="setNsPrefixes" />
+              <node concept="2OqwBi" id="7Cd9YrbGJRv" role="37wK5m">
+                <node concept="37vLTw" id="7Cd9YrbGJRw" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7PPLA3R9p7s" resolve="model" />
+                </node>
+                <node concept="liA8E" id="7Cd9YrbGJRx" role="2OqNvi">
+                  <ref role="37wK5l" to="hvbj:~PrefixMapping.getNsPrefixMap()" resolve="getNsPrefixMap" />
                 </node>
               </node>
             </node>

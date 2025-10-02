@@ -961,6 +961,21 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="6dwglhleHcE" role="3bR31x">
+          <node concept="3LXTmp" id="6dwglhleHcF" role="3rtmxm">
+            <node concept="3qWCbU" id="6dwglhleHcG" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="6dwglhleHcH" role="3LXTmr">
+              <node concept="2Ry0Ak" id="6dwglhleHcI" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6dwglhleHcJ" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2uMhTA67w7Y" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1022,6 +1037,21 @@
         <node concept="1SiIV0" id="2uMhTA67wji" role="3bR37C">
           <node concept="3bR9La" id="2uMhTA67wjj" role="1SiIV1">
             <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="6dwglhleHcL" role="3bR31x">
+          <node concept="3LXTmp" id="6dwglhleHcM" role="3rtmxm">
+            <node concept="3qWCbU" id="6dwglhleHcN" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="6dwglhleHcO" role="3LXTmr">
+              <node concept="2Ry0Ak" id="6dwglhleHcP" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6dwglhleHcQ" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.parser" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1521,6 +1551,16 @@
         <node concept="1SiIV0" id="2uMhTA67wjY" role="3bR37C">
           <node concept="3bR9La" id="2uMhTA67wjZ" role="1SiIV1">
             <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6JEnoCrDy9q" role="3bR37C">
+          <node concept="3bR9La" id="6JEnoCrDy9r" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6JEnoCrDy9s" role="3bR37C">
+          <node concept="3bR9La" id="6JEnoCrDy9t" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
       </node>
