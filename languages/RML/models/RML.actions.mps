@@ -92,7 +92,7 @@
                 </node>
               </node>
               <node concept="2DeJnY" id="1uUgCWYHB0T" role="2OqNvi">
-                <ref role="1A9B2P" to="ys6r:5iB6wpUzbKT" resolve="RefrenceExpr" />
+                <ref role="1A9B2P" to="ys6r:5iB6wpUzbKT" resolve="ReferenceExpr" />
               </node>
             </node>
           </node>
@@ -112,7 +112,7 @@
                 </node>
               </node>
               <node concept="2DeJnY" id="1uUgCWYHD9M" role="2OqNvi">
-                <ref role="1A9B2P" to="ys6r:5iB6wpUzbKT" resolve="RefrenceExpr" />
+                <ref role="1A9B2P" to="ys6r:5iB6wpUzbKT" resolve="ReferenceExpr" />
               </node>
             </node>
           </node>

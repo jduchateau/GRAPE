@@ -8,6 +8,7 @@
   <imports>
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="qx9m" ref="r:5f21b94e-6c55-4230-951a-dc8170ceeb15(RML.IO.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -157,7 +158,7 @@
   </node>
   <node concept="1TIwiD" id="5iB6wpUzbKT">
     <property role="EcuMT" value="6099872835424795705" />
-    <property role="TrG5h" value="RefrenceExpr" />
+    <property role="TrG5h" value="ReferenceExpr" />
     <property role="3GE5qa" value="Expression" />
     <property role="34LRSv" value="reference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -166,10 +167,17 @@
     </node>
     <node concept="1TJgyi" id="5tSQ8xWLxTh" role="1TKVEl">
       <property role="IQ2nx" value="6303025759225519697" />
-      <property role="TrG5h" value="reference" />
+      <property role="TrG5h" value="reference_old" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="t5JxF" id="5tSQ8xWLxTj" role="lGtFl">
-        <property role="t5JxN" value="TODO: add real reference when logical source will have fields" />
+      <node concept="asaX9" id="2KS0UuCwrfp" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="3fDXJrO_7el" role="1TKVEi">
+      <property role="IQ2ns" value="3740792506033664917" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="referenceFormulation" />
+      <ref role="20lvS9" to="qx9m:6JEnoCrgnph" resolve="ReferenceFormulation" />
+      <node concept="t5JxF" id="3fDXJrO_9Ea" role="lGtFl">
+        <property role="t5JxN" value="With supported reference languages." />
       </node>
     </node>
   </node>

@@ -17,6 +17,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -100,7 +101,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="referenceFormulation" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5k8WOM8oJQ9" resolve="ReferenceFormulationType" />
+      <ref role="20lvS9" node="3fDXJrOwRVt" resolve="ReferenceFormulationType" />
     </node>
     <node concept="1TJgyj" id="6JEnoCrfLJN" role="1TKVEi">
       <property role="IQ2ns" value="7776130554352573427" />
@@ -266,45 +267,32 @@
       <ref role="20lvS9" node="FW04txuk4P" resolve="SourceDef" />
     </node>
   </node>
-  <node concept="PlHQZ" id="5k8WOM8oJQ9">
-    <property role="EcuMT" value="6127414803068812681" />
-    <property role="TrG5h" value="ReferenceFormulationType" />
-    <property role="3GE5qa" value="ReferenceFormulation.Type" />
-  </node>
   <node concept="1TIwiD" id="5k8WOM8oJQd">
     <property role="EcuMT" value="6127414803068812685" />
     <property role="TrG5h" value="ReferenceFormulationCSV" />
     <property role="34LRSv" value="CSV" />
     <property role="3GE5qa" value="ReferenceFormulation.Type" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5k8WOM8oJQe" role="PzmwI">
-      <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulationType" />
-    </node>
+    <ref role="1TJDcQ" node="3fDXJrOwRVt" resolve="ReferenceFormulationType" />
   </node>
   <node concept="1TIwiD" id="5k8WOM8oJQf">
     <property role="EcuMT" value="6127414803068812687" />
     <property role="TrG5h" value="ReferenceFormulationJSONPath" />
     <property role="34LRSv" value="JSONPath" />
     <property role="3GE5qa" value="ReferenceFormulation.Type" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1yLetCTrE49" role="PzmwI">
-      <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulationType" />
-    </node>
+    <ref role="1TJDcQ" node="3fDXJrOwRVt" resolve="ReferenceFormulationType" />
   </node>
   <node concept="1TIwiD" id="1yLetCTrE3M">
     <property role="EcuMT" value="1779266937217261810" />
     <property role="TrG5h" value="ReferenceFormulationCustom" />
     <property role="34LRSv" value="&lt;other&gt;" />
     <property role="3GE5qa" value="ReferenceFormulation.Type" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="3fDXJrOwRVt" resolve="ReferenceFormulationType" />
     <node concept="1TJgyj" id="1yLetCTrE3N" role="1TKVEi">
       <property role="IQ2ns" value="1779266937217261811" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="16h3:2z4QKYxWcd2" resolve="Subject" />
-    </node>
-    <node concept="PrWs8" id="1yLetCTvBgC" role="PzmwI">
-      <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulationType" />
     </node>
   </node>
   <node concept="1TIwiD" id="1yLetCTrE3T">
@@ -312,30 +300,21 @@
     <property role="TrG5h" value="ReferenceFormulationXPath" />
     <property role="34LRSv" value="XPath" />
     <property role="3GE5qa" value="ReferenceFormulation.Type" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1yLetCTrE4c" role="PzmwI">
-      <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulationType" />
-    </node>
+    <ref role="1TJDcQ" node="3fDXJrOwRVt" resolve="ReferenceFormulationType" />
   </node>
   <node concept="1TIwiD" id="1yLetCTrE3X">
     <property role="EcuMT" value="1779266937217261821" />
     <property role="TrG5h" value="ReferenceFormulationSQL2008Query" />
     <property role="34LRSv" value="SQLQuery" />
     <property role="3GE5qa" value="ReferenceFormulation.Type" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1yLetCTrE4a" role="PzmwI">
-      <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulationType" />
-    </node>
+    <ref role="1TJDcQ" node="3fDXJrOwRVt" resolve="ReferenceFormulationType" />
   </node>
   <node concept="1TIwiD" id="1yLetCTrE41">
     <property role="EcuMT" value="1779266937217261825" />
     <property role="TrG5h" value="ReferenceFormulationSQL2008Table" />
     <property role="34LRSv" value="SQLTable" />
     <property role="3GE5qa" value="ReferenceFormulation.Type" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1yLetCTrE4b" role="PzmwI">
-      <ref role="PrY4T" node="5k8WOM8oJQ9" resolve="ReferenceFormulationType" />
-    </node>
+    <ref role="1TJDcQ" node="3fDXJrOwRVt" resolve="ReferenceFormulationType" />
   </node>
   <node concept="1TIwiD" id="7PZGQTMwpOz">
     <property role="EcuMT" value="9043143863732116771" />
@@ -458,9 +437,16 @@
       <property role="IQ2ns" value="7776130554352856002" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="lines" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" to="zqge:2cLqkTm6J5A" resolve="Line" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3fDXJrOwRVt">
+    <property role="TrG5h" value="ReferenceFormulationType" />
+    <property role="3GE5qa" value="ReferenceFormulation.Type" />
+    <property role="EcuMT" value="6127414803068812681" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

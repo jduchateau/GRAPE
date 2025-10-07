@@ -22,7 +22,7 @@
     <import index="t6dh" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.rdf.model(Turtle.external/)" />
     <import index="sg7y" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.query(Turtle.external/)" />
     <import index="m0o" ref="r:a5445abd-1deb-469a-bc33-0bda25cacb85(RML.IO.prefix)" />
-    <import index="2tc5" ref="r:aeabcdcf-1eba-47fc-b37f-8223dfaaa915(RML.IO.behavior)" />
+    <import index="60va" ref="r:f465aab1-a193-484c-b487-15ebea7680f0(RML.multiline)" />
     <import index="tve8" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.util.iterator(Turtle.external/)" implicit="true" />
   </imports>
   <registry>
@@ -2192,9 +2192,9 @@
                     <ref role="3Tt5mk" to="qx9m:6JEnoCrfLJN" resolve="iterator" />
                   </node>
                 </node>
-                <node concept="2YIFZM" id="6JEnoCrBW9b" role="37vLTx">
-                  <ref role="37wK5l" to="2tc5:6JEnoCrvnzc" resolve="fromText" />
-                  <ref role="1Pybhc" to="2tc5:6JEnoCrvnwo" resolve="Multiline" />
+                <node concept="2YIFZM" id="2KS0UuCx8UR" role="37vLTx">
+                  <ref role="37wK5l" to="60va:6JEnoCrvnzc" resolve="fromText" />
+                  <ref role="1Pybhc" to="60va:6JEnoCrvnwo" resolve="Multiline" />
                   <node concept="2ShNRf" id="6JEnoCrC_8E" role="37wK5m">
                     <node concept="3zrR0B" id="6JEnoCrCFx1" role="2ShVmc">
                       <node concept="3Tqbb2" id="6JEnoCrCFx3" role="3zrR0E">
@@ -2556,7 +2556,7 @@
       </node>
       <node concept="3Tm6S6" id="6wg$J2lx4e7" role="1B3o_S" />
       <node concept="3Tqbb2" id="6wg$J2lxcN_" role="3clF45">
-        <ref role="ehGHo" to="qx9m:5k8WOM8oJQ9" resolve="ReferenceFormulationType" />
+        <ref role="ehGHo" to="qx9m:3fDXJrOwRVt" resolve="ReferenceFormulationType" />
       </node>
       <node concept="37vLTG" id="6wg$J2lybul" role="3clF46">
         <property role="TrG5h" value="stmt" />
@@ -4212,6 +4212,33 @@
         </node>
         <node concept="3clFbJ" id="7HX6VHKk_bD" role="3cqZAp">
           <node concept="3clFbS" id="7HX6VHKk_bF" role="3clFbx">
+            <node concept="3cpWs8" id="HqBUaXDK_G" role="3cqZAp">
+              <node concept="3cpWsn" id="HqBUaXDK_H" role="3cpWs9">
+                <property role="TrG5h" value="fromText" />
+                <node concept="3Tqbb2" id="HqBUaXDIoj" role="1tU5fm">
+                  <ref role="ehGHo" to="qx9m:6JEnoCrgQJ0" resolve="RawReference" />
+                </node>
+                <node concept="2YIFZM" id="HqBUaXDK_I" role="33vP2m">
+                  <ref role="37wK5l" to="60va:6JEnoCrvnzc" resolve="fromText" />
+                  <ref role="1Pybhc" to="60va:6JEnoCrvnwo" resolve="Multiline" />
+                  <node concept="2ShNRf" id="HqBUaXDK_J" role="37wK5m">
+                    <node concept="3zrR0B" id="HqBUaXDK_K" role="2ShVmc">
+                      <node concept="3Tqbb2" id="HqBUaXDK_L" role="3zrR0E">
+                        <ref role="ehGHo" to="qx9m:6JEnoCrgQJ0" resolve="RawReference" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="HqBUaXDK_M" role="37wK5m">
+                    <node concept="37vLTw" id="HqBUaXDK_N" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7HX6VHKl0YM" resolve="refStmt" />
+                    </node>
+                    <node concept="liA8E" id="HqBUaXDK_O" role="2OqNvi">
+                      <ref role="37wK5l" to="t6dh:~Statement.getString()" resolve="getString" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="7HX6VHKmNgh" role="3cqZAp">
               <node concept="37vLTI" id="7HX6VHKmZi9" role="3clFbG">
                 <node concept="2OqwBi" id="7HX6VHKmR9i" role="37vLTJ">
@@ -4224,17 +4251,12 @@
                 </node>
                 <node concept="2pJPEk" id="7HX6VHKnfwQ" role="37vLTx">
                   <node concept="2pJPED" id="7HX6VHKnfwS" role="2pJPEn">
-                    <ref role="2pJxaS" to="ys6r:5iB6wpUzbKT" resolve="RefrenceExpr" />
-                    <node concept="2pJxcG" id="7HX6VHKnnch" role="2pJxcM">
-                      <ref role="2pJxcJ" to="ys6r:5tSQ8xWLxTh" resolve="reference" />
-                      <node concept="WxPPo" id="7HX6VHKnr57" role="28ntcv">
-                        <node concept="2OqwBi" id="7HX6VHKnIME" role="WxPPp">
-                          <node concept="37vLTw" id="7HX6VHKnr55" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7HX6VHKl0YM" resolve="refStmt" />
-                          </node>
-                          <node concept="liA8E" id="7HX6VHKnNyG" role="2OqNvi">
-                            <ref role="37wK5l" to="t6dh:~Statement.getString()" resolve="getString" />
-                          </node>
+                    <ref role="2pJxaS" to="ys6r:5iB6wpUzbKT" resolve="ReferenceExpr" />
+                    <node concept="2pIpSj" id="HqBUaXEdFi" role="2pJxcM">
+                      <ref role="2pIpSl" to="ys6r:3fDXJrO_7el" resolve="referenceFormulation" />
+                      <node concept="36biLy" id="HqBUaXEjTx" role="28nt2d">
+                        <node concept="37vLTw" id="HqBUaXEq32" role="36biLW">
+                          <ref role="3cqZAo" node="HqBUaXDK_H" resolve="fromText" />
                         </node>
                       </node>
                     </node>

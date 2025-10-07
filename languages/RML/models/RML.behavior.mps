@@ -111,8 +111,15 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -121,6 +128,9 @@
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -646,6 +656,87 @@
       </node>
       <node concept="3uibUv" id="1OUG_EYenTS" role="3clF45">
         <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="urQ0tu1yVY">
+    <ref role="13h7C2" to="ys6r:5tSQ8xWM0b5" resolve="ExpressionMap" />
+    <node concept="13hLZK" id="urQ0tu1yVZ" role="13h7CW">
+      <node concept="3clFbS" id="urQ0tu1yW0" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="urQ0tu1yWh" role="13h7CS">
+      <property role="TrG5h" value="getReferingLogicalSource" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="urQ0tu1yWi" role="1B3o_S" />
+      <node concept="3Tqbb2" id="urQ0tu1yW_" role="3clF45">
+        <ref role="ehGHo" to="qx9m:5iB6wpUzbK4" resolve="LogicalSourceDef" />
+      </node>
+      <node concept="3clFbS" id="urQ0tu1yWk" role="3clF47">
+        <node concept="3clFbF" id="urQ0tu1Eds" role="3cqZAp">
+          <node concept="2OqwBi" id="urQ0tu1Edt" role="3clFbG">
+            <node concept="2OqwBi" id="urQ0tu1Edu" role="2Oq$k0">
+              <node concept="2OqwBi" id="urQ0tu1Edv" role="2Oq$k0">
+                <node concept="13iPFW" id="urQ0tu1Edw" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="urQ0tu1Edx" role="2OqNvi">
+                  <node concept="1xMEDy" id="urQ0tu1Edy" role="1xVPHs">
+                    <node concept="chp4Y" id="urQ0tu1Edz" role="ri$Ld">
+                      <ref role="cht4Q" to="ys6r:2L7xBeiJE45" resolve="TriplesMap" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrEf2" id="urQ0tu1Ed$" role="2OqNvi">
+                <ref role="3Tt5mk" to="ys6r:5iB6wpUzbK2" resolve="logicalSource" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="urQ0tu1Ed_" role="2OqNvi">
+              <ref role="37wK5l" node="5ay_xxAxhKm" resolve="getLogicalSourceDef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="urQ0tu1yYR">
+    <ref role="13h7C2" to="ys6r:34GH_iUcE_0" resolve="ParentMap" />
+    <node concept="13hLZK" id="urQ0tu1yYS" role="13h7CW">
+      <node concept="3clFbS" id="urQ0tu1yYT" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="urQ0tu1yZE" role="13h7CS">
+      <property role="TrG5h" value="getReferingLogicalSource" />
+      <ref role="13i0hy" node="urQ0tu1yWh" resolve="getReferingLogicalSource" />
+      <node concept="3Tm1VV" id="urQ0tu1yZF" role="1B3o_S" />
+      <node concept="3clFbS" id="urQ0tu1yZI" role="3clF47">
+        <node concept="3clFbF" id="urQ0tu1EtQ" role="3cqZAp">
+          <node concept="2OqwBi" id="urQ0tu1GlI" role="3clFbG">
+            <node concept="2OqwBi" id="urQ0tu1FQY" role="2Oq$k0">
+              <node concept="2OqwBi" id="urQ0tu1Fh_" role="2Oq$k0">
+                <node concept="2OqwBi" id="urQ0tu1EEf" role="2Oq$k0">
+                  <node concept="13iPFW" id="urQ0tu1EtP" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="urQ0tu1ENr" role="2OqNvi">
+                    <node concept="1xMEDy" id="urQ0tu1ENt" role="1xVPHs">
+                      <node concept="chp4Y" id="urQ0tu1EUM" role="ri$Ld">
+                        <ref role="cht4Q" to="ys6r:34GH_iTY3TV" resolve="ReferencingObjectMap" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="urQ0tu1F$Z" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ys6r:34GH_iTY3TX" resolve="parentTriplesMap" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="urQ0tu1G74" role="2OqNvi">
+                <ref role="3Tt5mk" to="ys6r:5iB6wpUzbK2" resolve="logicalSource" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="urQ0tu1GvD" role="2OqNvi">
+              <ref role="37wK5l" node="5ay_xxAxhKm" resolve="getLogicalSourceDef" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="urQ0tu1yZJ" role="3clF45">
+        <ref role="ehGHo" to="qx9m:5iB6wpUzbK4" resolve="LogicalSourceDef" />
       </node>
     </node>
   </node>

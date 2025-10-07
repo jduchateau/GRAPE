@@ -1271,6 +1271,16 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
+        <node concept="1SiIV0" id="69q1mimb4Iz" role="3bR37C">
+          <node concept="3bR9La" id="69q1mimb4I$" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="69q1mimb4I_" role="3bR37C">
+          <node concept="3bR9La" id="69q1mimb4IA" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="v_r5au3LEF" role="2G$12L">
         <property role="TrG5h" value="RMLPlugin" />
