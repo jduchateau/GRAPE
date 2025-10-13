@@ -26,8 +26,4 @@ build/
 .mps-caches/
 
 solutions/Turtle.*/lib/*.jar
-
-/gradlew
-/gradlew.bat
-/gradle/wrapper/
 /site/
