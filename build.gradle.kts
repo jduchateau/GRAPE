@@ -35,10 +35,6 @@ dependencies {
     generation("de.itemis.mps:extensions:2024.1.3072.+")
 }
 
-tasks.named<Wrapper>("wrapper") {
-    gradleVersion = "8.1.1"
-}
-
 val antlrVersion = "4.13.2"
 val jenaVersion = "5.2.0"
 
