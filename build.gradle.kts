@@ -92,18 +92,15 @@ tasks {
         if (!existing) println("Plugin artefact '$grapePluginPath' does not exist. Build it first.")
         else {
             val apiUrl = "projects/:id/packages/generic/GrapePlugin/$version/GrapePlugin.zip"
-            val outputStream = ByteArrayOutputStream()
-            project.exec {
+            val checkResult = project.exec {
                 commandLine("glab", "api", apiUrl, "-X", "HEAD")
-                standardOutput = outputStream
                 isIgnoreExitValue = true
             }
-            if (!outputStream.toString()
-                    .contains("404")
-            ) println("Plugin artefact for version '$version' already exists in GitLab registry. Skipping upload.")
-            else commandLine(
-                "glab", "api", apiUrl, "-X", "PUT", "--input", grapePluginPath
-            )
+            if (checkResult.exitValue == 0) {
+                println("Plugin artefact for version '$version' already exists in GitLab registry. Skipping upload.")
+            } else {
+                commandLine("glab", "api", apiUrl, "-X", "PUT", "--input", grapePluginPath)
+            }
         }
     }
 
