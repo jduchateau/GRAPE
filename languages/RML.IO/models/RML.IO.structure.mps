@@ -107,7 +107,7 @@
       <property role="IQ2ns" value="7776130554352573427" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="iterator" />
-      <ref role="20lvS9" node="6JEnoCrgnph" resolve="ReferenceFormulation" />
+      <ref role="20lvS9" to="ys6r:6JEnoCrgnph" resolve="ReferenceFormulation" />
     </node>
     <node concept="1TJgyi" id="5tSQ8xWT4XM" role="1TKVEl">
       <property role="IQ2nx" value="6303025759227498354" />
@@ -403,11 +403,6 @@
       <ref role="PrY4T" node="FW04txuk4P" resolve="SourceDef" />
     </node>
   </node>
-  <node concept="PlHQZ" id="6JEnoCrgnph">
-    <property role="TrG5h" value="ReferenceFormulation" />
-    <property role="EcuMT" value="7776130554352727632" />
-    <property role="3GE5qa" value="ReferenceFormulation" />
-  </node>
   <node concept="1TIwiD" id="6JEnoCrgnpo">
     <property role="EcuMT" value="7776130554352727640" />
     <property role="3GE5qa" value="ReferenceFormulation" />
@@ -419,26 +414,7 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="6JEnoCrgQIQ" role="PzmwI">
-      <ref role="PrY4T" node="6JEnoCrgnph" resolve="ReferenceFormulation" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6JEnoCrgQJ0">
-    <property role="EcuMT" value="7776130554352856000" />
-    <property role="3GE5qa" value="ReferenceFormulation" />
-    <property role="TrG5h" value="RawReference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6JEnoCrgQJ1" role="PzmwI">
-      <ref role="PrY4T" node="6JEnoCrgnph" resolve="ReferenceFormulation" />
-    </node>
-    <node concept="PrWs8" id="6JEnoCrma6F" role="PzmwI">
-      <ref role="PrY4T" to="zqge:6GJhO0n1XxQ" resolve="IHoldLines" />
-    </node>
-    <node concept="1TJgyj" id="6JEnoCrgQJ2" role="1TKVEi">
-      <property role="IQ2ns" value="7776130554352856002" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="lines" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" to="zqge:2cLqkTm6J5A" resolve="Line" />
+      <ref role="PrY4T" to="ys6r:6JEnoCrgnph" resolve="ReferenceFormulation" />
     </node>
   </node>
   <node concept="1TIwiD" id="3fDXJrOwRVt">

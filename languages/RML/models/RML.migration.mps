@@ -9,9 +9,8 @@
   <imports>
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="60va" ref="r:f465aab1-a193-484c-b487-15ebea7680f0(RML.multiline)" />
+    <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" />
     <import index="slm6" ref="90746344-04fd-4286-97d5-b46ae6a81709/r:52a3d974-bd4f-4651-ba6e-a2de5e336d95(jetbrains.mps.lang.migration/jetbrains.mps.lang.migration.methods)" implicit="true" />
-    <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" implicit="true" />
-    <import index="qx9m" ref="r:5f21b94e-6c55-4230-951a-dc8170ceeb15(RML.IO.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -223,7 +222,7 @@
                                     <node concept="2ShNRf" id="2KS0UuCx3MY" role="37wK5m">
                                       <node concept="3zrR0B" id="2KS0UuCx4gS" role="2ShVmc">
                                         <node concept="3Tqbb2" id="2KS0UuCx4gU" role="3zrR0E">
-                                          <ref role="ehGHo" to="qx9m:6JEnoCrgQJ0" resolve="RawReference" />
+                                          <ref role="ehGHo" to="ys6r:6JEnoCrgQJ0" resolve="RawReference" />
                                         </node>
                                       </node>
                                     </node>

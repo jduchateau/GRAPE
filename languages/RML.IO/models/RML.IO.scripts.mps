@@ -8,10 +8,10 @@
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="v19u" ref="r:24eeeed9-2a2d-41e4-8d10-82ea852d50e5(RML.behavior)" />
+    <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" />
     <import index="qx9m" ref="r:5f21b94e-6c55-4230-951a-dc8170ceeb15(RML.IO.structure)" implicit="true" />
     <import index="2tc5" ref="r:aeabcdcf-1eba-47fc-b37f-8223dfaaa915(RML.IO.behavior)" implicit="true" />
-    <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" implicit="true" />
-    <import index="v19u" ref="r:24eeeed9-2a2d-41e4-8d10-82ea852d50e5(RML.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -234,7 +234,7 @@
                 <node concept="1PxgMI" id="69q1mim5e0o" role="2Oq$k0">
                   <property role="1BlNFB" value="true" />
                   <node concept="chp4Y" id="69q1mim5e1p" role="3oSUPX">
-                    <ref role="cht4Q" to="qx9m:6JEnoCrgQJ0" resolve="RawReference" />
+                    <ref role="cht4Q" to="ys6r:6JEnoCrgQJ0" resolve="RawReference" />
                   </node>
                   <node concept="2OqwBi" id="69q1mim5doZ" role="1m5AlR">
                     <node concept="_YI3z" id="2KS0UuCxdOq" role="2Oq$k0" />
@@ -244,7 +244,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="2KS0UuCxe09" role="2OqNvi">
-                  <ref role="37wK5l" to="2tc5:7Cd9YrbnHEB" resolve="representAsText" />
+                  <ref role="37wK5l" to="v19u:4GX0Vh2sL7y" resolve="representAsText" />
                 </node>
               </node>
             </node>
@@ -298,7 +298,7 @@
                 </node>
                 <node concept="1mIQ4w" id="69q1mim5diD" role="2OqNvi">
                   <node concept="chp4Y" id="69q1mim5dmf" role="cj9EA">
-                    <ref role="cht4Q" to="qx9m:6JEnoCrgQJ0" resolve="RawReference" />
+                    <ref role="cht4Q" to="ys6r:6JEnoCrgQJ0" resolve="RawReference" />
                   </node>
                 </node>
               </node>

@@ -986,6 +986,9 @@
                 <node concept="3uibUv" id="5N3KvtBG8Ty" role="nSUat">
                   <ref role="3uigEE" to="zf81:~URISyntaxException" resolve="URISyntaxException" />
                 </node>
+                <node concept="3uibUv" id="3ge1JJdm3SW" role="nSUat">
+                  <ref role="3uigEE" to="ptfq:~RiotException" resolve="RiotException" />
+                </node>
               </node>
             </node>
           </node>

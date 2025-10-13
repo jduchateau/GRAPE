@@ -5,7 +5,7 @@
     <use id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle" version="0" />
     <use id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO" version="1" />
     <use id="4d376ef7-201b-4497-bbe5-6b936a6ab3d7" name="RML.FNML" version="0" />
-    <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="1" />
+    <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="2" />
   </languages>
   <imports />
   <registry>
@@ -104,6 +104,14 @@
         <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML">
       <concept id="3543407481847299707" name="RML.structure.ReferencingObjectMap" flags="ng" index="28P8wJ">
         <reference id="3543407481847299709" name="parentTriplesMap" index="28P8wD" />
@@ -136,8 +144,8 @@
       <concept id="6099872835424795707" name="RML.structure.TemplateExpr" flags="ng" index="IaUoX">
         <property id="6099872835424795711" name="template" index="IaUoT" />
       </concept>
-      <concept id="6099872835424795705" name="RML.structure.RefrenceExpr" flags="ng" index="IaUoZ">
-        <property id="6303025759225519697" name="reference" index="FJGrp" />
+      <concept id="6099872835424795705" name="RML.structure.ReferenceExpr" flags="ng" index="IaUoZ">
+        <child id="3740792506033664917" name="referenceFormulation" index="37volz" />
       </concept>
       <concept id="6099872835424571529" name="RML.structure.PredicateObjectMap" flags="ng" index="Ib$Ef">
         <child id="6303025759225998808" name="predicateMap" index="FHrlg" />
@@ -148,6 +156,9 @@
         <child id="6099872835424795650" name="logicalSource" index="IaUo4" />
         <child id="6099872835424571532" name="predicateObjectMap" index="Ib$Ea" />
         <child id="3190666691956656690" name="subjectMap" index="2YYcL1" />
+      </concept>
+      <concept id="7776130554352856000" name="RML.structure.RawReference" flags="ng" index="1KEjpa">
+        <child id="7776130554352856002" name="lines" index="1KEjp8" />
       </concept>
     </language>
   </registry>
@@ -380,7 +391,13 @@
               </node>
               <node concept="FGdDb" id="5c3_2MtXFYH" role="GSHqH">
                 <node concept="IaUoZ" id="5c3_2MtXFYL" role="FGdDe">
-                  <property role="FJGrp" value="name" />
+                  <node concept="1KEjpa" id="69q1mim2MU_" role="37volz">
+                    <node concept="1PaTwC" id="69q1mim2MUA" role="1KEjp8">
+                      <node concept="3oM_SD" id="69q1mim2MUB" role="1PaTwD">
+                        <property role="3oM_SC" value="name" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -462,7 +479,13 @@
         </node>
         <node concept="FHrlk" id="3EB406$3voH" role="FHrli">
           <node concept="IaUoZ" id="3EB406$3voG" role="FGdDe">
-            <property role="FJGrp" value="nickname" />
+            <node concept="1KEjpa" id="69q1mim2MUC" role="37volz">
+              <node concept="1PaTwC" id="69q1mim2MUD" role="1KEjp8">
+                <node concept="3oM_SD" id="69q1mim2MUE" role="1PaTwD">
+                  <property role="3oM_SC" value="nickname" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="FGdDp" id="3EB406$514C" role="FGdD2" />
         </node>
@@ -481,12 +504,24 @@
           <node concept="28P8zg" id="YWtlusJRAY" role="28P8zm">
             <node concept="2b7xXF" id="YWtlusJRAZ" role="28P8zi">
               <node concept="IaUoZ" id="YWtlusJRVA" role="FGdDe">
-                <property role="FJGrp" value="cproject" />
+                <node concept="1KEjpa" id="69q1mim2MUF" role="37volz">
+                  <node concept="1PaTwC" id="69q1mim2MUG" role="1KEjp8">
+                    <node concept="3oM_SD" id="69q1mim2MUH" role="1PaTwD">
+                      <property role="3oM_SC" value="cproject" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="2b7xWk" id="YWtlusJRB1" role="28P8zj">
               <node concept="IaUoZ" id="YWtlusJRQx" role="FGdDe">
-                <property role="FJGrp" value="project_id" />
+                <node concept="1KEjpa" id="69q1mim2MUI" role="37volz">
+                  <node concept="1PaTwC" id="69q1mim2MUJ" role="1KEjp8">
+                    <node concept="3oM_SD" id="69q1mim2MUK" role="1PaTwD">
+                      <property role="3oM_SC" value="project_id" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -522,7 +557,13 @@
               </node>
               <node concept="FGdDb" id="1xDVdso6hzd" role="GSHqH">
                 <node concept="IaUoZ" id="1xDVdsoqI_U" role="FGdDe">
-                  <property role="FJGrp" value="primary" />
+                  <node concept="1KEjpa" id="69q1mim2MUL" role="37volz">
+                    <node concept="1PaTwC" id="69q1mim2MUM" role="1KEjp8">
+                      <node concept="3oM_SD" id="69q1mim2MUN" role="1PaTwD">
+                        <property role="3oM_SC" value="primary" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d" name="Turtle" version="0" />
-    <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="1" />
+    <use id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML" version="2" />
     <use id="b59f8083-a287-4777-a331-17daee969f66" name="RML.IO" version="1" />
   </languages>
   <imports />
@@ -68,9 +68,6 @@
       <concept id="6127414803068812685" name="RML.IO.structure.ReferenceFormulationCSV" flags="ng" index="3tqwV1" />
       <concept id="6127414803068812687" name="RML.IO.structure.ReferenceFormulationJSONPath" flags="ng" index="3tqwV3" />
       <concept id="791507941088259868" name="RML.IO.structure.CurrentWorkingDirectoryRoot" flags="ng" index="1FyQXr" />
-      <concept id="7776130554352856000" name="RML.IO.structure.RawReference" flags="ng" index="1KEjpa">
-        <child id="7776130554352856002" name="lines" index="1KEjp8" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -118,8 +115,8 @@
       <concept id="6099872835424795707" name="RML.structure.TemplateExpr" flags="ng" index="IaUoX">
         <property id="6099872835424795711" name="template" index="IaUoT" />
       </concept>
-      <concept id="6099872835424795705" name="RML.structure.RefrenceExpr" flags="ng" index="IaUoZ">
-        <property id="6303025759225519697" name="reference" index="FJGrp" />
+      <concept id="6099872835424795705" name="RML.structure.ReferenceExpr" flags="ng" index="IaUoZ">
+        <child id="3740792506033664917" name="referenceFormulation" index="37volz" />
       </concept>
       <concept id="6099872835424571529" name="RML.structure.PredicateObjectMap" flags="ng" index="Ib$Ef">
         <child id="6303025759225998808" name="predicateMap" index="FHrlg" />
@@ -132,6 +129,9 @@
       </concept>
       <concept id="8169920669493031448" name="RML.structure.LanguageMap" flags="ng" index="1_8p68" />
       <concept id="8169920669493031449" name="RML.structure.DatatypeMap" flags="ng" index="1_8p69" />
+      <concept id="7776130554352856000" name="RML.structure.RawReference" flags="ng" index="1KEjpa">
+        <child id="7776130554352856002" name="lines" index="1KEjp8" />
+      </concept>
     </language>
   </registry>
   <node concept="29aKCY" id="6WRbFH1JKO6">
@@ -658,7 +658,13 @@
         </node>
         <node concept="FHrlk" id="5R3My36CHGi" role="FHrli">
           <node concept="IaUoZ" id="5R3My36CHGj" role="FGdDe">
-            <property role="FJGrp" value="first_name" />
+            <node concept="1KEjpa" id="69q1mim2MV3" role="37volz">
+              <node concept="1PaTwC" id="69q1mim2MV4" role="1KEjp8">
+                <node concept="3oM_SD" id="69q1mim2MV5" role="1PaTwD">
+                  <property role="3oM_SC" value="first_name" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -673,7 +679,13 @@
         </node>
         <node concept="FHrlk" id="5R3My36CHGo" role="FHrli">
           <node concept="IaUoZ" id="5R3My36CHGp" role="FGdDe">
-            <property role="FJGrp" value="last_name" />
+            <node concept="1KEjpa" id="69q1mim2MV6" role="37volz">
+              <node concept="1PaTwC" id="69q1mim2MV7" role="1KEjp8">
+                <node concept="3oM_SD" id="69q1mim2MV8" role="1PaTwD">
+                  <property role="3oM_SC" value="last_name" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -706,7 +718,13 @@
         </node>
         <node concept="FHrlk" id="5R3My36CHGE" role="FHrli">
           <node concept="IaUoZ" id="5R3My36CHGF" role="FGdDe">
-            <property role="FJGrp" value="name" />
+            <node concept="1KEjpa" id="69q1mim2MV9" role="37volz">
+              <node concept="1PaTwC" id="69q1mim2MVa" role="1KEjp8">
+                <node concept="3oM_SD" id="69q1mim2MVb" role="1PaTwD">
+                  <property role="3oM_SC" value="name" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -721,7 +739,13 @@
         </node>
         <node concept="FHrlk" id="5R3My36CHGK" role="FHrli">
           <node concept="IaUoZ" id="5R3My36CHGL" role="FGdDe">
-            <property role="FJGrp" value="start_date" />
+            <node concept="1KEjpa" id="69q1mim2MVc" role="37volz">
+              <node concept="1PaTwC" id="69q1mim2MVd" role="1KEjp8">
+                <node concept="3oM_SD" id="69q1mim2MVe" role="1PaTwD">
+                  <property role="3oM_SC" value="start_date" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="1_8p69" id="2Lc747KPwoG" role="1AMlW3">
             <node concept="IaUoN" id="2Lc747KPwoI" role="FGdDe">
@@ -744,7 +768,13 @@
         </node>
         <node concept="FHrlk" id="5R3My36CHGQ" role="FHrli">
           <node concept="IaUoZ" id="5R3My36CHGR" role="FGdDe">
-            <property role="FJGrp" value="end_date" />
+            <node concept="1KEjpa" id="69q1mim2MVf" role="37volz">
+              <node concept="1PaTwC" id="69q1mim2MVg" role="1KEjp8">
+                <node concept="3oM_SD" id="69q1mim2MVh" role="1PaTwD">
+                  <property role="3oM_SC" value="end_date" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="1_8p69" id="2Lc747KPwoO" role="1AMlW3">
             <node concept="IaUoN" id="2Lc747KPwoQ" role="FGdDe">
@@ -770,12 +800,24 @@
           <node concept="28P8zg" id="5R3My36CHGX" role="28P8zm">
             <node concept="2b7xXF" id="5R3My36CHGY" role="28P8zi">
               <node concept="IaUoZ" id="5R3My36CHGZ" role="FGdDe">
-                <property role="FJGrp" value="manager_id" />
+                <node concept="1KEjpa" id="69q1mim2MVi" role="37volz">
+                  <node concept="1PaTwC" id="69q1mim2MVj" role="1KEjp8">
+                    <node concept="3oM_SD" id="69q1mim2MVk" role="1PaTwD">
+                      <property role="3oM_SC" value="manager_id" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="2b7xWk" id="5R3My36CHH0" role="28P8zj">
               <node concept="IaUoZ" id="5R3My36CHH1" role="FGdDe">
-                <property role="FJGrp" value="employee_id" />
+                <node concept="1KEjpa" id="69q1mim2MVl" role="37volz">
+                  <node concept="1PaTwC" id="69q1mim2MVm" role="1KEjp8">
+                    <node concept="3oM_SD" id="69q1mim2MVn" role="1PaTwD">
+                      <property role="3oM_SC" value="employee_id" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -810,7 +852,13 @@
         </node>
         <node concept="FHrlk" id="5R3My36CHHi" role="FHrli">
           <node concept="IaUoZ" id="5R3My36CHHj" role="FGdDe">
-            <property role="FJGrp" value="decription-en" />
+            <node concept="1KEjpa" id="69q1mim2MVo" role="37volz">
+              <node concept="1PaTwC" id="69q1mim2MVp" role="1KEjp8">
+                <node concept="3oM_SD" id="69q1mim2MVq" role="1PaTwD">
+                  <property role="3oM_SC" value="decription-en" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="FGdDp" id="5R3My36CHHk" role="FGdD2" />
           <node concept="1_8p68" id="5R3My36CHHl" role="1AMlW3">
@@ -833,7 +881,13 @@
         </node>
         <node concept="FHrlk" id="5R3My36CHHs" role="FHrli">
           <node concept="IaUoZ" id="5R3My36CHHt" role="FGdDe">
-            <property role="FJGrp" value="description-fr" />
+            <node concept="1KEjpa" id="69q1mim2MVr" role="37volz">
+              <node concept="1PaTwC" id="69q1mim2MVs" role="1KEjp8">
+                <node concept="3oM_SD" id="69q1mim2MVt" role="1PaTwD">
+                  <property role="3oM_SC" value="description-fr" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="FGdDp" id="5R3My36CHHu" role="FGdD2" />
           <node concept="1_8p68" id="5R3My36CHHv" role="1AMlW3">
@@ -859,12 +913,24 @@
           <node concept="28P8zg" id="5R3My36CHHB" role="28P8zm">
             <node concept="2b7xXF" id="5R3My36CHHC" role="28P8zi">
               <node concept="IaUoZ" id="5R3My36CHHD" role="FGdDe">
-                <property role="FJGrp" value="project_id" />
+                <node concept="1KEjpa" id="69q1mim2MVu" role="37volz">
+                  <node concept="1PaTwC" id="69q1mim2MVv" role="1KEjp8">
+                    <node concept="3oM_SD" id="69q1mim2MVw" role="1PaTwD">
+                      <property role="3oM_SC" value="project_id" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="2b7xWk" id="5R3My36CHHE" role="28P8zj">
               <node concept="IaUoZ" id="5R3My36CHHF" role="FGdDe">
-                <property role="FJGrp" value="project_id" />
+                <node concept="1KEjpa" id="69q1mim2MVx" role="37volz">
+                  <node concept="1PaTwC" id="69q1mim2MVy" role="1KEjp8">
+                    <node concept="3oM_SD" id="69q1mim2MVz" role="1PaTwD">
+                      <property role="3oM_SC" value="project_id" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -884,12 +950,24 @@
           <node concept="28P8zg" id="5R3My36CHHL" role="28P8zm">
             <node concept="2b7xXF" id="5R3My36CHHM" role="28P8zi">
               <node concept="IaUoZ" id="5R3My36CHHN" role="FGdDe">
-                <property role="FJGrp" value="employee_id" />
+                <node concept="1KEjpa" id="69q1mim2MV$" role="37volz">
+                  <node concept="1PaTwC" id="69q1mim2MV_" role="1KEjp8">
+                    <node concept="3oM_SD" id="69q1mim2MVA" role="1PaTwD">
+                      <property role="3oM_SC" value="employee_id" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="2b7xWk" id="5R3My36CHHO" role="28P8zj">
               <node concept="IaUoZ" id="5R3My36CHHP" role="FGdDe">
-                <property role="FJGrp" value="employee_id" />
+                <node concept="1KEjpa" id="69q1mim2MVB" role="37volz">
+                  <node concept="1PaTwC" id="69q1mim2MVC" role="1KEjp8">
+                    <node concept="3oM_SD" id="69q1mim2MVD" role="1PaTwD">
+                      <property role="3oM_SC" value="employee_id" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

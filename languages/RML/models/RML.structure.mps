@@ -7,8 +7,9 @@
   </languages>
   <imports>
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" />
+    <import index="qx9m" ref="r:5f21b94e-6c55-4230-951a-dc8170ceeb15(RML.IO.structure)" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="qx9m" ref="r:5f21b94e-6c55-4230-951a-dc8170ceeb15(RML.IO.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -175,7 +176,7 @@
       <property role="IQ2ns" value="3740792506033664917" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="referenceFormulation" />
-      <ref role="20lvS9" to="qx9m:6JEnoCrgnph" resolve="ReferenceFormulation" />
+      <ref role="20lvS9" node="6JEnoCrgnph" resolve="ReferenceFormulation" />
       <node concept="t5JxF" id="3fDXJrO_9Ea" role="lGtFl">
         <property role="t5JxN" value="With supported reference languages." />
       </node>
@@ -192,11 +193,16 @@
     </node>
     <node concept="1TJgyi" id="5iB6wpUzbKZ" role="1TKVEl">
       <property role="IQ2nx" value="6099872835424795711" />
-      <property role="TrG5h" value="template" />
+      <property role="TrG5h" value="template_old" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="t5JxF" id="5iB6wpUzbL3" role="lGtFl">
-        <property role="t5JxN" value="TODO add its own concepts with source references" />
-      </node>
+      <node concept="asaX9" id="4GX0Vh2Behv" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="4GX0Vh25flp" role="1TKVEi">
+      <property role="IQ2ns" value="5421493599161611609" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="templateSegments" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4GX0Vh25flr" resolve="TemplateSegment" />
     </node>
   </node>
   <node concept="1TIwiD" id="5tSQ8xWM0b3">
@@ -423,6 +429,80 @@
     <property role="TrG5h" value="NamedResourceTermType" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="1VY2WX9dMsc" resolve="ResourceTermType" />
+  </node>
+  <node concept="PlHQZ" id="4GX0Vh25flr">
+    <property role="TrG5h" value="TemplateSegment" />
+    <property role="EcuMT" value="5421493599161611610" />
+    <property role="3GE5qa" value="Expression" />
+  </node>
+  <node concept="1TIwiD" id="6JEnoCrgQJ0">
+    <property role="EcuMT" value="7776130554352856000" />
+    <property role="3GE5qa" value="Expression" />
+    <property role="TrG5h" value="RawReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6JEnoCrgQJ1" role="PzmwI">
+      <ref role="PrY4T" node="6JEnoCrgnph" resolve="ReferenceFormulation" />
+    </node>
+    <node concept="PrWs8" id="6JEnoCrma6F" role="PzmwI">
+      <ref role="PrY4T" to="zqge:6GJhO0n1XxQ" resolve="IHoldLines" />
+    </node>
+    <node concept="1TJgyj" id="6JEnoCrgQJ2" role="1TKVEi">
+      <property role="IQ2ns" value="7776130554352856002" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="lines" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6J5A" resolve="Line" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6JEnoCrgnph">
+    <property role="TrG5h" value="ReferenceFormulation" />
+    <property role="EcuMT" value="7776130554352727633" />
+    <property role="3GE5qa" value="Expression" />
+  </node>
+  <node concept="1TIwiD" id="4GX0Vh25Cyi">
+    <property role="EcuMT" value="5421493599161714834" />
+    <property role="3GE5qa" value="Expression" />
+    <property role="TrG5h" value="TemplateSegmentPrefix" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4GX0Vh25Cyj" role="PzmwI">
+      <ref role="PrY4T" node="4GX0Vh25flr" resolve="TemplateSegment" />
+    </node>
+    <node concept="1TJgyj" id="4GX0Vh2a9$t" role="1TKVEi">
+      <property role="IQ2ns" value="5421493599162898717" />
+      <property role="20kJfa" value="prefix" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="16h3:2z4QKYxW8Ua" resolve="PrefixId" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4GX0Vh25Cym">
+    <property role="EcuMT" value="5421493599161714838" />
+    <property role="3GE5qa" value="Expression" />
+    <property role="TrG5h" value="TemplateSegmentString" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4GX0Vh25Cyr" role="1TKVEl">
+      <property role="IQ2nx" value="5421493599161714843" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="4GX0Vh2bYCE" role="PzmwI">
+      <ref role="PrY4T" node="4GX0Vh25flr" resolve="TemplateSegment" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4GX0Vh25Cyy">
+    <property role="EcuMT" value="5421493599161714850" />
+    <property role="3GE5qa" value="Expression" />
+    <property role="TrG5h" value="TemplateSegmentReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4GX0Vh25Cyz" role="1TKVEi">
+      <property role="IQ2ns" value="5421493599161714851" />
+      <property role="20kJfa" value="reference" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6JEnoCrgnph" resolve="ReferenceFormulation" />
+    </node>
+    <node concept="PrWs8" id="4GX0Vh2bYCD" role="PzmwI">
+      <ref role="PrY4T" node="4GX0Vh25flr" resolve="TemplateSegment" />
+    </node>
   </node>
 </model>
 
