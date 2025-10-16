@@ -1162,7 +1162,7 @@
     <node concept="3clFbS" id="urQ0tu4Bq1" role="18ibNy">
       <node concept="3cpWs8" id="urQ0tu4D1i" role="3cqZAp">
         <node concept="3cpWsn" id="urQ0tu4D1j" role="3cpWs9">
-          <property role="TrG5h" value="reference" />
+          <property role="TrG5h" value="text" />
           <node concept="17QB3L" id="urQ0tu4CZd" role="1tU5fm" />
           <node concept="2OqwBi" id="urQ0tu4D1k" role="33vP2m">
             <node concept="1YBJjd" id="urQ0tu4D1l" role="2Oq$k0">
@@ -1188,7 +1188,7 @@
         <node concept="22lmx$" id="2Lc747KAbh_" role="3clFbw">
           <node concept="2OqwBi" id="2Lc747KA6Po" role="3uHU7B">
             <node concept="37vLTw" id="urQ0tu4DaL" role="2Oq$k0">
-              <ref role="3cqZAo" node="urQ0tu4D1j" resolve="reference" />
+              <ref role="3cqZAo" node="urQ0tu4D1j" resolve="text" />
             </node>
             <node concept="liA8E" id="2Lc747KA6Ps" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
@@ -1199,7 +1199,7 @@
           </node>
           <node concept="2OqwBi" id="2Lc747KA6YT" role="3uHU7w">
             <node concept="37vLTw" id="urQ0tu4Ddg" role="2Oq$k0">
-              <ref role="3cqZAo" node="urQ0tu4D1j" resolve="reference" />
+              <ref role="3cqZAo" node="urQ0tu4D1j" resolve="text" />
             </node>
             <node concept="liA8E" id="2Lc747KA6YX" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />

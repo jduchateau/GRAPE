@@ -48,7 +48,8 @@ stubs {
         dependency("org.apache.jena:jena-shacl:$jenaVersion")
         dependency("org.apache.httpcomponents.client5:httpclient5:5.4.1")
         dependency("org.slf4j:slf4j-simple:2.0.16")
-        dependency("com.github.kg-construct:BURP:0.1.2")
+        dependency("com.github.jduchateau:BURP:parse-rdb-SNAPSHOT")
+        //dependency("com.github.kg-construct:BURP:0.1.2")
         // Dependencies of BURP
         dependency("com.jayway.jsonpath:json-path:2.9.0")
         dependency("com.fasterxml.jackson.core:jackson-core:2.15.3")

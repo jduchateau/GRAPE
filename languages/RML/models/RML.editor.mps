@@ -21,7 +21,7 @@
     <import index="v19u" ref="r:24eeeed9-2a2d-41e4-8d10-82ea852d50e5(RML.behavior)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
-    <import index="60va" ref="r:f465aab1-a193-484c-b487-15ebea7680f0(RML.multiline)" />
+    <import index="thsh" ref="r:162343a5-dbf1-45bb-b173-c7248959bb6b(Turtle.multiline)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -2693,8 +2693,8 @@
         <node concept="3clFbS" id="7KNEBy03$s4" role="2VODD2">
           <node concept="3clFbF" id="7KNEBy03$xD" role="3cqZAp">
             <node concept="2YIFZM" id="7KNEBy03$z3" role="3clFbG">
-              <ref role="37wK5l" to="60va:6JEnoCrvnzc" resolve="fromText" />
-              <ref role="1Pybhc" to="60va:6JEnoCrvnwo" resolve="Multiline" />
+              <ref role="37wK5l" to="thsh:6JEnoCrvnzc" resolve="fromText" />
+              <ref role="1Pybhc" to="thsh:6JEnoCrvnwo" resolve="Multiline" />
               <node concept="2ShNRf" id="7KNEBy03$_G" role="37wK5m">
                 <node concept="3zrR0B" id="7KNEBy03_2o" role="2ShVmc">
                   <node concept="3Tqbb2" id="7KNEBy03_2q" role="3zrR0E">

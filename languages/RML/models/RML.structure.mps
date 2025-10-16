@@ -26,7 +26,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -189,6 +191,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5iB6wpUzbKX" role="PzmwI">
       <ref role="PrY4T" node="5iB6wpUzbKt" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6MfzATVGJ2" role="PzmwI">
+      <ref role="PrY4T" node="6MfzATVGJ1" resolve="IRdfTextLiteralGen" />
     </node>
     <node concept="1TJgyi" id="5iB6wpUzbKZ" role="1TKVEl">
       <property role="IQ2nx" value="6099872835424795711" />
@@ -443,7 +448,7 @@
       <ref role="PrY4T" node="6JEnoCrgnph" resolve="ReferenceFormulation" />
     </node>
     <node concept="PrWs8" id="6JEnoCrma6F" role="PzmwI">
-      <ref role="PrY4T" to="zqge:6GJhO0n1XxQ" resolve="IHoldLines" />
+      <ref role="PrY4T" to="16h3:6MfzATYqgx" resolve="IHoldEditableLines" />
     </node>
     <node concept="1TJgyj" id="6JEnoCrgQJ2" role="1TKVEi">
       <property role="IQ2ns" value="7776130554352856002" />
@@ -457,6 +462,9 @@
     <property role="TrG5h" value="ReferenceFormulation" />
     <property role="EcuMT" value="7776130554352727633" />
     <property role="3GE5qa" value="Expression" />
+    <node concept="PrWs8" id="6MfzATWgSo" role="PrDN$">
+      <ref role="PrY4T" node="6MfzATVGJ1" resolve="IRdfTextLiteralGen" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4GX0Vh25Cyi">
     <property role="EcuMT" value="5421493599161714834" />
@@ -502,6 +510,10 @@
     <node concept="PrWs8" id="4GX0Vh2bYCD" role="PzmwI">
       <ref role="PrY4T" node="4GX0Vh25flr" resolve="TemplateSegment" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="6MfzATVGJ1">
+    <property role="TrG5h" value="IRdfTextLiteralGen" />
+    <property role="EcuMT" value="122228557545917377" />
   </node>
 </model>
 

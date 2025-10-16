@@ -100,6 +100,7 @@
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="cl" />
+          <module ref="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" kind="cl" />
           <module ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
           <module ref="019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)" kind="cl" />
@@ -1015,7 +1016,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.Turtle, java.compile.Turtle.generator, java.compile.Turtle.parser, java.compile.TurtlePlugin, java.compile.java.modules.cycle.1, java.compile.RML, java.compile.RML.generator, java.compile.RMLPlugin, java.compile.RML.FNML, java.compile.RML.FNML.generator, java.compile.RML.IO, java.compile.RML.IO.generator" />
+  <target name="compileJava" depends="java.compile.java.modules.cycle.1, java.compile.Turtle, java.compile.Turtle.generator, java.compile.Turtle.parser, java.compile.TurtlePlugin, java.compile.RML, java.compile.RML.generator, java.compile.RMLPlugin, java.compile.RML.FNML, java.compile.RML.FNML.generator, java.compile.RML.IO, java.compile.RML.IO.generator" />
   
   <target name="processResources" />
   
@@ -1069,13 +1070,15 @@
   
   <target name="makeDependents" />
   
-  <target name="java.compile.Turtle" depends="fetchDependencies">
-    <mkdir dir="${basedir}/languages/Turtle/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/Turtle" />
-    <javac destdir="${build.tmp}/java/out/Turtle" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+  <target name="java.compile.java.modules.cycle.1" depends="fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.1" />
+    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/Turtle/source_gen" />
+        <path location="${basedir}/languages/RML/source_gen" />
+        <path location="${basedir}/languages/RML.FNML/source_gen" />
+        <path location="${basedir}/languages/RML.IO/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
@@ -1097,14 +1100,14 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
         <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/antlr4-runtime.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/caffeine.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/collection.jar" />
@@ -1162,6 +1165,104 @@
         <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/make/jetbrains.mps.make.facets.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.Turtle" depends="java.compile.java.modules.cycle.1, fetchDependencies">
+    <mkdir dir="${basedir}/languages/Turtle/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/Turtle" />
+    <javac destdir="${build.tmp}/java/out/Turtle" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/Turtle/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/antlr4-runtime.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/caffeine.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/collection.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-codec.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-collections4.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-compress.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-csv.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-io.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-lang3.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/error_prone_annotations.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/gson.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/httpclient5.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/httpcore5-h2.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/httpcore5.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jakarta.json.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jcl-over-slf4j.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-arq.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-base.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-core.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-iri.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-querybuilder.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-rdfconnection.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-shacl.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/libthrift.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/protobuf-java.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/RoaringBitmap.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/slf4j-api.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/slf4j-simple.jar" />
+        <fileset file="${basedir}/solutions/Turtle.external/lib/titanium-json-ld.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
+        <fileset file="${artifacts.mps}/lib/app-client.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
+        <fileset file="${artifacts.mps}/lib/lib-client.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
+        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
+        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
+        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
+        <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.mps}/languages/make/jetbrains.mps.make.facets.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/Turtle">
@@ -1453,102 +1554,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.java.modules.cycle.1" depends="java.compile.Turtle, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.1" />
-    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" nowarn="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/languages/RML/source_gen" />
-        <path location="${basedir}/languages/RML.FNML/source_gen" />
-        <path location="${basedir}/languages/RML.IO/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/antlr4-runtime.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/caffeine.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/collection.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-codec.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-collections4.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-compress.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-csv.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-io.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/commons-lang3.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/error_prone_annotations.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/gson.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/httpclient5.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/httpcore5-h2.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/httpcore5.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jakarta.json.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jcl-over-slf4j.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-arq.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-base.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-core.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-iri.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-querybuilder.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-rdfconnection.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/jena-shacl.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/libthrift.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/protobuf-java.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/RoaringBitmap.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/slf4j-api.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/slf4j-simple.jar" />
-        <fileset file="${basedir}/solutions/Turtle.external/lib/titanium-json-ld.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/app.jar" />
-        <fileset file="${artifacts.mps}/lib/app-client.jar" />
-        <fileset file="${artifacts.mps}/lib/lib.jar" />
-        <fileset file="${artifacts.mps}/lib/lib-client.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
-        <fileset file="${artifacts.mps}/lib/util-8.jar" />
-        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
-        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
-        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
-        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
-        <fileset file="${artifacts.mps}/lib/stats.jar" />
-        <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
-        <pathelement path="${build.tmp}/java/out/Turtle" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.RML" depends="java.compile.Turtle, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.RML" depends="java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/RML/source_gen" />
     <mkdir dir="${build.tmp}/java/out/RML" />
     <javac destdir="${build.tmp}/java/out/RML" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1584,7 +1590,6 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/Turtle" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/antlr4-runtime.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/caffeine.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/collection.jar" />
@@ -1837,7 +1842,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.RML.FNML" depends="java.compile.Turtle, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.RML.FNML" depends="java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/RML.FNML/source_gen" />
     <mkdir dir="${build.tmp}/java/out/RML.FNML" />
     <javac destdir="${build.tmp}/java/out/RML.FNML" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1873,7 +1878,6 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/Turtle" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/antlr4-runtime.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/caffeine.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/collection.jar" />
@@ -2028,7 +2032,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.RML.IO" depends="java.compile.Turtle, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.RML.IO" depends="java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/RML.IO/source_gen" />
     <mkdir dir="${build.tmp}/java/out/RML.IO" />
     <javac destdir="${build.tmp}/java/out/RML.IO" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2064,7 +2068,6 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/Turtle" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/antlr4-runtime.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/caffeine.jar" />
         <fileset file="${basedir}/solutions/Turtle.external/lib/collection.jar" />

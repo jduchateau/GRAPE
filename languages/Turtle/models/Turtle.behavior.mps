@@ -309,6 +309,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
@@ -3092,6 +3093,25 @@
       </node>
       <node concept="3cqZAl" id="4J$0oxoGb$7" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="6MfzATYvDa" role="13h7CS">
+      <property role="TrG5h" value="clearLines" />
+      <ref role="13i0hy" node="6MfzATYrk7" resolve="clearLines" />
+      <node concept="3Tm1VV" id="6MfzATYvDb" role="1B3o_S" />
+      <node concept="3clFbS" id="6MfzATYvDe" role="3clF47">
+        <node concept="3clFbF" id="6MfzATYvVR" role="3cqZAp">
+          <node concept="2OqwBi" id="6MfzATYyJ$" role="3clFbG">
+            <node concept="2OqwBi" id="6MfzATYwad" role="2Oq$k0">
+              <node concept="13iPFW" id="6MfzATYvVQ" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="6MfzATYws4" role="2OqNvi">
+                <ref role="3TtcxE" to="16h3:4J$0oxoEB9c" resolve="lines" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="6MfzATYAoJ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6MfzATYvDf" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="3t8UTKPjzQI" role="13h7CS">
       <property role="TrG5h" value="quote" />
       <ref role="13i0hy" node="3t8UTKPjusO" resolve="quote" />
@@ -3115,6 +3135,21 @@
         </node>
       </node>
       <node concept="17QB3L" id="3t8UTKPjzQU" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6MfzATYqgz">
+    <property role="3GE5qa" value="Literal" />
+    <ref role="13h7C2" to="16h3:6MfzATYqgx" resolve="IHoldEditableLines" />
+    <node concept="13i0hz" id="6MfzATYrk7" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="clearLines" />
+      <node concept="3Tm1VV" id="6MfzATYrk8" role="1B3o_S" />
+      <node concept="3cqZAl" id="6MfzATYsZr" role="3clF45" />
+      <node concept="3clFbS" id="6MfzATYrka" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="6MfzATYqg$" role="13h7CW">
+      <node concept="3clFbS" id="6MfzATYqg_" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -23,7 +23,7 @@
     <import index="t6dh" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.rdf.model(Turtle.external/)" />
     <import index="sg7y" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.query(Turtle.external/)" />
     <import index="m0o" ref="r:a5445abd-1deb-469a-bc33-0bda25cacb85(RML.IO.prefix)" />
-    <import index="60va" ref="r:f465aab1-a193-484c-b487-15ebea7680f0(RML.multiline)" />
+    <import index="thsh" ref="r:162343a5-dbf1-45bb-b173-c7248959bb6b(Turtle.multiline)" />
     <import index="tve8" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.util.iterator(Turtle.external/)" implicit="true" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" implicit="true" />
   </imports>
@@ -2226,8 +2226,8 @@
                   </node>
                 </node>
                 <node concept="2YIFZM" id="2KS0UuCx8UR" role="37vLTx">
-                  <ref role="37wK5l" to="60va:6JEnoCrvnzc" resolve="fromText" />
-                  <ref role="1Pybhc" to="60va:6JEnoCrvnwo" resolve="Multiline" />
+                  <ref role="37wK5l" to="thsh:6JEnoCrvnzc" resolve="fromText" />
+                  <ref role="1Pybhc" to="thsh:6JEnoCrvnwo" resolve="Multiline" />
                   <node concept="2ShNRf" id="6JEnoCrC_8E" role="37wK5m">
                     <node concept="3zrR0B" id="6JEnoCrCFx1" role="2ShVmc">
                       <node concept="3Tqbb2" id="6JEnoCrCFx3" role="3zrR0E">
@@ -4245,8 +4245,8 @@
                   <ref role="ehGHo" to="ys6r:6JEnoCrgQJ0" resolve="RawReference" />
                 </node>
                 <node concept="2YIFZM" id="HqBUaXDK_I" role="33vP2m">
-                  <ref role="37wK5l" to="60va:6JEnoCrvnzc" resolve="fromText" />
-                  <ref role="1Pybhc" to="60va:6JEnoCrvnwo" resolve="Multiline" />
+                  <ref role="37wK5l" to="thsh:6JEnoCrvnzc" resolve="fromText" />
+                  <ref role="1Pybhc" to="thsh:6JEnoCrvnwo" resolve="Multiline" />
                   <node concept="2ShNRf" id="HqBUaXDK_J" role="37wK5m">
                     <node concept="3zrR0B" id="HqBUaXDK_K" role="2ShVmc">
                       <node concept="3Tqbb2" id="HqBUaXDK_L" role="3zrR0E">
@@ -4850,8 +4850,8 @@
                 <property role="TrG5h" value="rawRef" />
                 <node concept="PeGgZ" id="4GX0Vh34LlP" role="1tU5fm" />
                 <node concept="2YIFZM" id="4GX0Vh365bB" role="33vP2m">
-                  <ref role="37wK5l" to="60va:6JEnoCrvnzc" resolve="fromText" />
-                  <ref role="1Pybhc" to="60va:6JEnoCrvnwo" resolve="Multiline" />
+                  <ref role="37wK5l" to="thsh:6JEnoCrvnzc" resolve="fromText" />
+                  <ref role="1Pybhc" to="thsh:6JEnoCrvnwo" resolve="Multiline" />
                   <node concept="2ShNRf" id="4GX0Vh354d1" role="37wK5m">
                     <node concept="3zrR0B" id="4GX0Vh35c61" role="2ShVmc">
                       <node concept="3Tqbb2" id="4GX0Vh35c63" role="3zrR0E">

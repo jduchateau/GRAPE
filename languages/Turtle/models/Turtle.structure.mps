@@ -631,6 +631,14 @@
       <ref role="20lvS9" to="zqge:2cLqkTm6J5A" resolve="Line" />
     </node>
     <node concept="PrWs8" id="4J$0oxoGbz$" role="PzmwI">
+      <ref role="PrY4T" node="6MfzATYqgx" resolve="IHoldEditableLines" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6MfzATYqgx">
+    <property role="EcuMT" value="122228557546628129" />
+    <property role="3GE5qa" value="Literal" />
+    <property role="TrG5h" value="IHoldEditableLines" />
+    <node concept="PrWs8" id="6MfzATYqgy" role="PrDN$">
       <ref role="PrY4T" to="zqge:6GJhO0n1XxQ" resolve="IHoldLines" />
     </node>
   </node>

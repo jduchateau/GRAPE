@@ -8,8 +8,8 @@
   </languages>
   <imports>
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="60va" ref="r:f465aab1-a193-484c-b487-15ebea7680f0(RML.multiline)" />
     <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" />
+    <import index="thsh" ref="r:162343a5-dbf1-45bb-b173-c7248959bb6b(Turtle.multiline)" />
     <import index="slm6" ref="90746344-04fd-4286-97d5-b46ae6a81709/r:52a3d974-bd4f-4651-ba6e-a2de5e336d95(jetbrains.mps.lang.migration/jetbrains.mps.lang.migration.methods)" implicit="true" />
     <import index="qx9m" ref="r:5f21b94e-6c55-4230-951a-dc8170ceeb15(RML.IO.structure)" implicit="true" />
   </imports>
@@ -207,8 +207,8 @@
                           <node concept="3clFbF" id="6JEnoCrvkLZ" role="3cqZAp">
                             <node concept="37vLTI" id="6JEnoCrvnq_" role="3clFbG">
                               <node concept="2YIFZM" id="2KS0UuCx8US" role="37vLTx">
-                                <ref role="37wK5l" to="60va:6JEnoCrvnzc" resolve="fromText" />
-                                <ref role="1Pybhc" to="60va:6JEnoCrvnwo" resolve="Multiline" />
+                                <ref role="37wK5l" to="thsh:6JEnoCrvnzc" resolve="fromText" />
+                                <ref role="1Pybhc" to="thsh:6JEnoCrvnwo" resolve="Multiline" />
                                 <node concept="2ShNRf" id="6JEnoCrvqMj" role="37wK5m">
                                   <node concept="3zrR0B" id="6JEnoCrvrnN" role="2ShVmc">
                                     <node concept="3Tqbb2" id="6JEnoCrvrnP" role="3zrR0E">

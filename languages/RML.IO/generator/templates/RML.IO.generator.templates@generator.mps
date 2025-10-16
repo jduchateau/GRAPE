@@ -562,21 +562,19 @@
             <node concept="29d650" id="5JBWiVnRsxR" role="29d653">
               <node concept="29ckXp" id="5JBWiVnRsxS" role="29d3Gi">
                 <property role="29ckXk" value="iterator" />
-                <node concept="17Uvod" id="5JBWiVnRsxT" role="lGtFl">
-                  <property role="2qtEX9" value="value" />
-                  <property role="P4ACc" value="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d/2937713717140624470/2937713717140624475" />
-                  <node concept="3zFVjK" id="5JBWiVnRsxU" role="3zH0cK">
-                    <node concept="3clFbS" id="5JBWiVnRsxV" role="2VODD2">
-                      <node concept="3clFbF" id="5JBWiVnRsxW" role="3cqZAp">
-                        <node concept="2OqwBi" id="6aUx$fW2KJy" role="3clFbG">
-                          <node concept="2OqwBi" id="5JBWiVnRsxX" role="2Oq$k0">
-                            <node concept="3TrEf2" id="6aUx$fW2Kze" role="2OqNvi">
+                <node concept="29HgVG" id="6MfzATWyKo" role="lGtFl">
+                  <node concept="3NFfHV" id="6MfzATWyMu" role="3NFExx">
+                    <node concept="3clFbS" id="6MfzATWyMv" role="2VODD2">
+                      <node concept="3clFbF" id="6MfzATWyN4" role="3cqZAp">
+                        <node concept="2OqwBi" id="6MfzATWzr$" role="3clFbG">
+                          <node concept="2OqwBi" id="6MfzATWyYl" role="2Oq$k0">
+                            <node concept="30H73N" id="6MfzATWyN3" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="6MfzATWzeA" role="2OqNvi">
                               <ref role="3Tt5mk" to="qx9m:6JEnoCrfLJN" resolve="iterator" />
                             </node>
-                            <node concept="30H73N" id="5JBWiVnRsxZ" role="2Oq$k0" />
                           </node>
-                          <node concept="2qgKlT" id="6aUx$fW2KT0" role="2OqNvi">
-                            <ref role="37wK5l" to="v19u:4GX0Vh2sL7y" resolve="representAsText" />
+                          <node concept="2qgKlT" id="6MfzATWzE7" role="2OqNvi">
+                            <ref role="37wK5l" to="v19u:6MfzATVRFq" resolve="genRdfLiteral" />
                           </node>
                         </node>
                       </node>
