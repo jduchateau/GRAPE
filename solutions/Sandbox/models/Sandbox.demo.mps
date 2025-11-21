@@ -31,6 +31,7 @@
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
         <property id="764855088606600268" name="emptyName" index="2v_DfE" />
         <property id="8013925443727419326" name="disableVocabularyDownload" index="ISk$5" />
+        <property id="5867233166325549765" name="vocabulary" index="34lheZ" />
         <property id="7868724541385396558" name="sparqlVariant" index="3pBS89" />
         <child id="7868724541386564408" name="namespace" index="3pzv1Z" />
       </concept>
@@ -93,6 +94,9 @@
       </concept>
       <concept id="5421493599161714850" name="RML.structure.TemplateSegmentReference" flags="ng" index="9aSGm">
         <child id="5421493599161714851" name="reference" index="9aSGn" />
+      </concept>
+      <concept id="5421493599161714838" name="RML.structure.TemplateSegmentString" flags="ng" index="9aSGy">
+        <property id="5421493599161714843" name="value" index="9aSGJ" />
       </concept>
       <concept id="5421493599161714834" name="RML.structure.TemplateSegmentPrefix" flags="ng" index="9aSGA">
         <reference id="5421493599162898717" name="prefix" index="95pED" />
@@ -169,6 +173,7 @@
     </node>
     <node concept="29d5m5" id="jSjFvIoaln" role="29aKCU">
       <property role="TrG5h" value="foaf" />
+      <property role="34lheZ" value="https://data.bioontology.org/ontologies/FOAF/submissions/1/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb" />
       <node concept="29d1u9" id="jSjFvIoalo" role="3pzv1Z">
         <property role="29d1u8" value="http://xmlns.com/foaf/0.1/" />
       </node>
@@ -179,7 +184,13 @@
         <property role="29d1u8" value="http://w3id.org/rml/" />
       </node>
     </node>
-    <node concept="1SSSdx" id="CVUbYhqCZn" role="29aKCU" />
+    <node concept="29d5m5" id="6jTY6rZRVIr" role="29aKCU">
+      <property role="TrG5h" value="rdf" />
+      <node concept="29d1u9" id="6jTY6rZRVIs" role="3pzv1Z">
+        <property role="29d1u8" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+      </node>
+    </node>
+    <node concept="1SSSdx" id="6jTY6rZGI$i" role="29aKCU" />
     <node concept="FCvld" id="CVUbYhqD3K" role="29aKCU">
       <node concept="29d1u9" id="CVUbYhqD3L" role="2$AQDL">
         <property role="29d1u8" value="PersonSource" />
@@ -193,7 +204,7 @@
       </node>
       <node concept="1KEjpa" id="7X6fuJen0eX" role="1KPkpT">
         <node concept="1PaTwC" id="7X6fuJen0eY" role="1KEjp8">
-          <node concept="3oM_SD" id="7X6fuJen0eZ" role="1PaTwD">
+          <node concept="3oM_SD" id="6jTY6s0tmna" role="1PaTwD">
             <property role="3oM_SC" value="$.persons.*" />
           </node>
         </node>
@@ -213,13 +224,16 @@
           <ref role="29d1uc" node="jSjFvIoaln" resolve="foaf" />
         </node>
         <node concept="IaUoX" id="CVUbYhqD3W" role="FGdDe">
-          <node concept="9aSGA" id="1SyaGg9c_$5" role="9avrH">
+          <node concept="9aSGA" id="6jTY6s0ypho" role="9avrH">
             <ref role="95pED" node="CVUbYhqCZk" resolve="ex" />
           </node>
-          <node concept="9aSGm" id="1SyaGg9c_$b" role="9avrH">
-            <node concept="1KEjpa" id="1SyaGg9c_$a" role="9aSGn">
-              <node concept="1PaTwC" id="1SyaGg9c_$c" role="1KEjp8">
-                <node concept="3oM_SD" id="1SyaGg9c_$d" role="1PaTwD">
+          <node concept="9aSGy" id="6jTY6s0ypht" role="9avrH">
+            <property role="9aSGJ" value="person/" />
+          </node>
+          <node concept="9aSGm" id="6jTY6s0yphA" role="9avrH">
+            <node concept="1KEjpa" id="6jTY6s15daY" role="9aSGn">
+              <node concept="1PaTwC" id="6jTY6s15daZ" role="1KEjp8">
+                <node concept="3oM_SD" id="6jTY6s1kkb3" role="1PaTwD">
                   <property role="3oM_SC" value="firstname" />
                 </node>
               </node>
@@ -228,14 +242,6 @@
         </node>
       </node>
       <node concept="Ib$Ef" id="CVUbYhqD4I" role="Ib$Ea">
-        <node concept="FHrll" id="CVUbYhqD4J" role="FHrlg">
-          <node concept="IaUoN" id="CVUbYhqD4L" role="FGdDe">
-            <node concept="29d5ma" id="CVUbYhqD4K" role="FJIaS">
-              <property role="29d1ub" value="firstName" />
-              <ref role="29d1uc" node="jSjFvIoaln" resolve="foaf" />
-            </node>
-          </node>
-        </node>
         <node concept="FHrlk" id="CVUbYhqD4M" role="FHrli">
           <node concept="IaUoZ" id="CVUbYhqD4N" role="FGdDe">
             <node concept="1KEjpa" id="69q1mim2MUO" role="37volz">
@@ -244,6 +250,14 @@
                   <property role="3oM_SC" value="firstname" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="FHrll" id="6jTY6s1kkb4" role="FHrlg">
+          <node concept="IaUoN" id="6jTY6s1kkb5" role="FGdDe">
+            <node concept="29d5ma" id="6jTY6s1kkb7" role="FJIaS">
+              <property role="29d1ub" value="lastName" />
+              <ref role="29d1uc" node="jSjFvIoaln" resolve="foaf" />
             </node>
           </node>
         </node>
@@ -304,8 +318,8 @@
           <ref role="28P8wD" node="CVUbYhqD43" resolve="&lt;MovieTM&gt;" />
           <node concept="28P8zg" id="CVUbYhqD4q" role="28P8zm">
             <node concept="2b7xWk" id="CVUbYhqD4r" role="28P8zj">
-              <node concept="IaUoZ" id="CVUbYhqD4s" role="FGdDe">
-                <node concept="1KEMJi" id="69q1mim5HOK" role="37volz">
+              <node concept="IaUoZ" id="6jTY6rZXn4R" role="FGdDe">
+                <node concept="1KEMJi" id="6jTY6rZXn4T" role="37volz">
                   <property role="1KEjoY" value="slug" />
                 </node>
               </node>
@@ -369,7 +383,7 @@
           <node concept="FCOsJ" id="jSjFvIoadB" role="1FyQV4">
             <property role="1Fxk42" value="movies.csv" />
             <node concept="1FyQXr" id="urQ0ttNieJ" role="1Fxk40">
-              <property role="2wXCZH" value="/home/jakub/Documents/Dev/GRAPE/solutions/Sandbox/data" />
+              <property role="2wXCZH" value="V:/grape/solutions/Sandbox/data" />
             </node>
           </node>
         </node>
