@@ -10,6 +10,8 @@
 
 **Completions**: Use completion ++ctrl+space++ to enter the mapping and use the context assistant and quick actions ++alt+enter++.
 
+**Source Based Completion**: When using CSV sources, the system analyses the source structure and suggests references.
+
 **Run Mapping**: Supports running RML mappings with the **BURP** engine from the interface.
 
 **Generates Turtle**: All the RML nodes can be converted to Turtle to be used in other applications.
@@ -17,15 +19,14 @@
     To see the Turtle AST, enable *Save transient models on generation*, then rebuild your mappings, in the last transient model, you get the converted turtle.
     Alternatively to preview the text, in the logical view right-click menu, select **Preview Generated Text**.
 
-**SHACL Validation**: Validates RML mappings using the generated RDF graph.
-!!! TIP
-    Use **Check model** with a right-click in the Logical View (left menu) and ++f5++ to refresh the validation.
-
 **RML from existing Turtle mappings**:
 Generates RML structures from an existing turtle mapping.
 It needs the Turtle document and its RDF Graph representation loaded,
 then use **Promote to RML constructs** context action on Turtle document.
 
+<!-- **SHACL Validation**: Validates the RML mapping document using shapes .
+!!! TIP
+    Use **Check model** with a right-click in the Logical View (left menu) and ++f5++ to refresh the validation. -->
 
 ## Turtle in GRAPE
 

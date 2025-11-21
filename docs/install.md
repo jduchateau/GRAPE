@@ -9,6 +9,7 @@ however, modifications are only possible when running from source.
 
 | GRAPE Version | MPS Version |
 | ------------- | ----------- |
+| ...           | 2025.2      |
 | 0.1.6         | 2025.2      |
 | ...           | 2024.1      |
 | 0.1.1         | 2024.1      |
@@ -27,8 +28,7 @@ You will need to **restart MPS**, then you can continue with the [tutorial](star
 
 In addition to MPS, you will need:
 
-- Gradle (ideally [Gradle 8.1.1](https://gradle.org/releases/#8.11.1))
-- Java 17 (JetBrains Runtime 17, bundled with MPS 2024.1)
+- Java 21 (JetBrains Runtime 21, bundled with MPS 2025.2, previosuly was Java 17 with MPS 2024.1)
 - A clone of this repository:
 ```shell
 git clone --no-depth https://gitlab.uliege.be/JakubDuchateau/grape.git
@@ -36,11 +36,9 @@ git clone --no-depth https://gitlab.uliege.be/JakubDuchateau/grape.git
 
 To start the project:
 
-1. Ensure you have the correct version of Gradle installed. 
-   If not, run gradle wrapper to generate the appropriate ./gradlew wrapper.
-2. Run `gradle setup` (or `./gradlew setup`), it should download the libraries
-3. Open or restart MPS to ensure that the dependencies (located in `Turtle.runtime`, `java_stubs`) are loaded correctly.
-4. Rebuild the project to ensure that languages are built and properly loaded. 
+1. Run `./gradlew setup`, it should download the libraries
+2. Open or restart MPS to ensure that the dependencies (located in `Turtle.runtime`, `java_stubs`) are loaded correctly.
+3. Rebuild the project to ensure that languages are built and properly loaded. 
    ++ctrl+shift+a++ and search `rebuild project`
    or right-click on the project in Logical View and select `Rebuild Project`.
 

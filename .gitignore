@@ -25,5 +25,6 @@ build/
 .idea/
 .mps-caches/
 
-solutions/Turtle.*/lib/*.jar
+solutions/Turtle.external/lib/*.jar
+languages/Turtle.runtime/lib/*.jar
 /site/
