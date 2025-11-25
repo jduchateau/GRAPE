@@ -204,7 +204,7 @@
       </node>
       <node concept="1KEjpa" id="7X6fuJen0eX" role="1KPkpT">
         <node concept="1PaTwC" id="7X6fuJen0eY" role="1KEjp8">
-          <node concept="3oM_SD" id="6jTY6s0tmna" role="1PaTwD">
+          <node concept="3oM_SD" id="6jTY6s28q6R" role="1PaTwD">
             <property role="3oM_SC" value="$.persons.*" />
           </node>
         </node>
@@ -235,6 +235,17 @@
               <node concept="1PaTwC" id="6jTY6s15daZ" role="1KEjp8">
                 <node concept="3oM_SD" id="6jTY6s1kkb3" role="1PaTwD">
                   <property role="3oM_SC" value="firstname" />
+                </node>
+              </node>
+              <node concept="1PaTwC" id="1dlaSHS8j6L" role="1KEjp8">
+                <node concept="3oM_SD" id="1dlaSHS8j70" role="1PaTwD">
+                  <property role="3oM_SC" value="hello" />
+                </node>
+                <node concept="3oM_SD" id="1dlaSHS8j74" role="1PaTwD">
+                  <property role="3oM_SC" value="world" />
+                </node>
+                <node concept="3oM_SD" id="1dlaSHS8j75" role="1PaTwD">
+                  <property role="3oM_SC" value="" />
                 </node>
               </node>
             </node>

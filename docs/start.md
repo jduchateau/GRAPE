@@ -90,24 +90,25 @@ You should already have an empty Turtle Document. If not, in the Logical View, r
 
 MPS is different from your traditional editor, it is a *projectional editor*.
 Instead of editing a text buffer, you're editing a representation of the AST and editing the nodes directly.
-This interaction tries to mimic classic text editing.
-It is designed for a familiar experience, but some things are done differently.
+<!-- This interaction tries to mimic classic text editing.
+It is designed for a familiar experience, but some things are done differently. -->
 
-To get comfortable with structural editing, let's start by adding the `foaf` prefixes and adding a `<me>` node.
+To get comfortable with structural editing, let's start by adding a `<me>` node.
 
+#### Create a node about you
 
-#### Add `foaf` prefix
-
-- Place your cursor on `<<< ... >>>` and press ++ctrl+space++ to see valid constructs at this particular place.
-- Type `@prefix`, select it from the list, and complete the prefix field with `foaf`.
-- Use ++tab++ to move to the IRI field and try ++ctrl+space++ to autocomplete the FOAF namespace URI (http://xmlns.com/foaf/0.1/).
-
-#### Next, create a `<me>` node
-
-- Press ++enter++ to go to the _next line_ and _create a new node_.
-- Type `me`, select `<me>` from the completion list, and press ++tab++ and ++enter++ to create a predicate-object pair.
-- In the predicate position, use completion to enter `foaf:firstName`, and in the object position, write your name as a string.
+- Place your cursor on `<<< ... >>>` and press ++enter++
+- Start typing `<me>`, to accept completion use ++enter++ of finish typing.
+- In the predicate object position, type `foaf:firstName`. The prefix will be automatically added, the vocabulary downloaded and the autocompletion should help you type the local name. 
+- In the the object position, write your name as a string.
 - To add your `foaf:lastName`, create a second predicate-object, place your cursor before the dot `.` on the last line or on the prefix `foaf:firstName` and hit ++enter++.
+
+##### Add a prefix
+
+You can also declare a prefix manually.
+Go to an empty line, and type `@prefix`, then name your prefix for example `foaf`.
+Then move the cursor at the IRI place (you may use ++tab++) and try ++ctrl+space++ to autocomplete the prefix namespace URI (using the first match from prefix.cc).
+
 
 === "Video"
     <div style="padding:75.1% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1054084957?h=838c8ca88c&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GRAPE: Turtle me node"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>

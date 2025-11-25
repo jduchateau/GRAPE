@@ -751,6 +751,7 @@
       <node concept="3F0ifn" id="6jTY6rZpg7g" role="3EZMnx">
         <property role="3F0ifm" value="rdf:type" />
         <ref role="1k5W1q" to="tpco:3VARyd8XcQs" resolve="Comment" />
+        <node concept="VPM3Z" id="1dlaSHRSp$0" role="3F10Kt" />
       </node>
       <node concept="3F2HdR" id="7Y6GWuSRxEj" role="3EZMnx">
         <ref role="1NtTu8" to="ys6r:5tSQ8xWMmHA" resolve="class" />

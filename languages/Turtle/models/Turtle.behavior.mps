@@ -22,6 +22,7 @@
     <import index="4c5q" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.datatypes.xsd.impl(Turtle.external/)" />
     <import index="7jzd" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.rdf.model.impl(Turtle.external/)" />
     <import index="cyoz" ref="r:ef2b4066-69f7-4d14-91ae-0386ca39f157(Turtle.datasetManager)" />
+    <import index="tqna" ref="r:cc7e3d7f-6cc3-45ed-8929-4ebc0ff93d08(Turtle.prefixer)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="75q8" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.datatypes.xsd(Turtle.external/)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
@@ -1478,6 +1479,59 @@
       </node>
       <node concept="17QB3L" id="17ntPn9ciXF" role="3clF45" />
       <node concept="3Tm1VV" id="17ntPn9ciXG" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="1y48SYptvX1" role="13h7CS">
+      <property role="TrG5h" value="getMetadata" />
+      <node concept="3Tm1VV" id="1y48SYptvX2" role="1B3o_S" />
+      <node concept="3uibUv" id="1y48SYptvZ2" role="3clF45">
+        <ref role="3uigEE" to="tqna:1y48SYpdiUe" resolve="NamespaceMetadata" />
+      </node>
+      <node concept="3clFbS" id="1y48SYptvX4" role="3clF47">
+        <node concept="3clFbF" id="1y48SYptxfS" role="3cqZAp">
+          <node concept="2OqwBi" id="1y48SYptq2u" role="3clFbG">
+            <node concept="2YIFZM" id="1y48SYptpOT" role="2Oq$k0">
+              <ref role="37wK5l" to="tqna:1y48SYpcF$i" resolve="getInstance" />
+              <ref role="1Pybhc" to="tqna:1y48SYpcF$d" resolve="LOV" />
+            </node>
+            <node concept="liA8E" id="1y48SYptqfI" role="2OqNvi">
+              <ref role="37wK5l" to="tqna:1y48SYpt5Bz" resolve="get" />
+              <node concept="2OqwBi" id="1y48SYptxMR" role="37wK5m">
+                <node concept="13iPFW" id="1y48SYptxjK" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1y48SYptyeu" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1y48SYptA4f" role="13h7CS">
+      <property role="TrG5h" value="hasMetadata" />
+      <node concept="3Tm1VV" id="1y48SYptA4g" role="1B3o_S" />
+      <node concept="10P_77" id="1y48SYptC2c" role="3clF45" />
+      <node concept="3clFbS" id="1y48SYptA4i" role="3clF47">
+        <node concept="3clFbF" id="1y48SYptA4j" role="3cqZAp">
+          <node concept="3y3z36" id="1y48SYptBiU" role="3clFbG">
+            <node concept="10Nm6u" id="1y48SYptBPD" role="3uHU7w" />
+            <node concept="2OqwBi" id="1y48SYptA4k" role="3uHU7B">
+              <node concept="2YIFZM" id="1y48SYptA4l" role="2Oq$k0">
+                <ref role="37wK5l" to="tqna:1y48SYpcF$i" resolve="getInstance" />
+                <ref role="1Pybhc" to="tqna:1y48SYpcF$d" resolve="LOV" />
+              </node>
+              <node concept="liA8E" id="1y48SYptA4m" role="2OqNvi">
+                <ref role="37wK5l" to="tqna:1y48SYpt5Bz" resolve="get" />
+                <node concept="2OqwBi" id="1y48SYptA4n" role="37wK5m">
+                  <node concept="13iPFW" id="1y48SYptA4o" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1y48SYptA4p" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="17ntPn9ce1P" role="13h7CW">
       <node concept="3clFbS" id="17ntPn9ce1Q" role="2VODD2" />
