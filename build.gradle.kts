@@ -31,8 +31,8 @@ plugins {
 }
 
 dependencies {
-    mps("com.jetbrains:mps:2024.1.3")
-    generation("de.itemis.mps:extensions:2024.1.3072.+")
+    mps("com.jetbrains:mps:2025.2.1")
+    //generation("de.itemis.mps:extensions:2024.1.3072.+")
 }
 
 val antlrVersion = "4.13.2"
