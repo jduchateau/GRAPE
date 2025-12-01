@@ -6,11 +6,10 @@
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
-    <import index="cyoz" ref="r:ef2b4066-69f7-4d14-91ae-0386ca39f157(Turtle.datasetManager)" />
     <import index="tqna" ref="r:cc7e3d7f-6cc3-45ed-8929-4ebc0ff93d08(Turtle.prefixer)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -85,16 +84,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
-        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
-      </concept>
-      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
-        <child id="1144104376918" name="parameter" index="1xVPHs" />
-      </concept>
-      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
-        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
-      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -111,30 +100,6 @@
   <node concept="18kY7G" id="6jTY6rZXn4U">
     <property role="TrG5h" value="check_PrefixedName" />
     <node concept="3clFbS" id="6jTY6rZXn4V" role="18ibNy">
-      <node concept="3cpWs8" id="6jTY6rZXubs" role="3cqZAp">
-        <node concept="3cpWsn" id="6jTY6rZXubt" role="3cpWs9">
-          <property role="TrG5h" value="m" />
-          <node concept="3uibUv" id="6jTY6rZXu9p" role="1tU5fm">
-            <ref role="3uigEE" to="tqna:4qVl4MKaA5c" resolve="PrefixManager" />
-          </node>
-          <node concept="2YIFZM" id="6jTY6rZXubu" role="33vP2m">
-            <ref role="37wK5l" to="tqna:3l3jG31o0qT" resolve="getInstance" />
-            <ref role="1Pybhc" to="tqna:4qVl4MKaA5c" resolve="PrefixManager" />
-            <node concept="2OqwBi" id="6jTY6rZXuLn" role="37wK5m">
-              <node concept="1YBJjd" id="6jTY6rZXutn" role="2Oq$k0">
-                <ref role="1YBMHb" node="6jTY6rZXn4X" resolve="node" />
-              </node>
-              <node concept="2Xjw5R" id="6jTY6rZXv9J" role="2OqNvi">
-                <node concept="1xMEDy" id="6jTY6rZXv9L" role="1xVPHs">
-                  <node concept="chp4Y" id="6jTY6rZXve5" role="ri$Ld">
-                    <ref role="cht4Q" to="16h3:2z4QKYxVX4L" resolve="TurtleDoc" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3cpWs8" id="6jTY6s01u$p" role="3cqZAp">
         <node concept="3cpWsn" id="6jTY6s01u$q" role="3cpWs9">
           <property role="TrG5h" value="termDefined" />
@@ -145,8 +110,9 @@
             </node>
           </node>
           <node concept="2OqwBi" id="6jTY6s01u$r" role="33vP2m">
-            <node concept="37vLTw" id="6jTY6s01u$s" role="2Oq$k0">
-              <ref role="3cqZAo" node="6jTY6rZXubt" resolve="m" />
+            <node concept="2YIFZM" id="5GYVJOD3tnv" role="2Oq$k0">
+              <ref role="37wK5l" to="tqna:5GYVJOCUwdF" resolve="getInstance" />
+              <ref role="1Pybhc" to="tqna:5GYVJOCUsHX" resolve="VocabularyManager" />
             </node>
             <node concept="liA8E" id="6jTY6s01u$t" role="2OqNvi">
               <ref role="37wK5l" to="tqna:6jTY6rZXBW6" resolve="isTermDefined" />

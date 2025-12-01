@@ -35,7 +35,7 @@
         <child id="7868724541386564407" name="iri" index="3pzv1K" />
       </concept>
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
-        <property id="5867233166325549765" name="vocabulary" index="34lheZ" />
+        <property id="5867233166325549765" name="downloadUrl" index="34lheZ" />
         <child id="7868724541386564408" name="namespace" index="3pzv1Z" />
       </concept>
       <concept id="2937713717140295301" name="Turtle.structure.PrefixedName" flags="ng" index="29d5ma">
@@ -440,7 +440,7 @@
           <node concept="FCOsJ" id="1xDVdsoyAW5" role="1FyQV4">
             <property role="1Fxk42" value="movies.csv" />
             <node concept="1FyQXr" id="62epo3iWS3s" role="1Fxk40">
-              <property role="2wXCZH" value="/home/jakub/Documents/Dev/GRAPE/solutions/Sandbox/data" />
+              <property role="2wXCZH" value="solutions/Sandbox/data" />
             </node>
           </node>
         </node>

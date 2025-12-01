@@ -143,7 +143,7 @@
     </node>
     <node concept="1TJgyi" id="55GAnEleoF5" role="1TKVEl">
       <property role="IQ2nx" value="5867233166325549765" />
-      <property role="TrG5h" value="vocabulary" />
+      <property role="TrG5h" value="downloadUrl" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="6WRbFH1PAuY" role="1TKVEl">

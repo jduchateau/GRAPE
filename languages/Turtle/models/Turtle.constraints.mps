@@ -57,6 +57,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -64,6 +67,11 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -106,6 +114,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
+        <child id="1138662048170" name="value" index="tz02z" />
+      </concept>
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -113,11 +124,17 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+      <concept id="1146253292180" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Simple" flags="nn" index="3y1jeu">
+        <child id="1146253292181" name="value" index="3y1jev" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -275,6 +292,61 @@
                 <node concept="3TrcHB" id="2fsGeYBaIh0" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="EnEH3" id="5GYVJODvMVp" role="1MhHOB">
+      <ref role="EomxK" to="16h3:6WRbFH1PAuY" resolve="disableVocabularyDownload" />
+      <node concept="Eqf_E" id="5GYVJODvN1e" role="EtsB7">
+        <node concept="3clFbS" id="5GYVJODvN1f" role="2VODD2">
+          <node concept="3clFbF" id="5GYVJODvQyk" role="3cqZAp">
+            <node concept="3K4zz7" id="5GYVJODvQyg" role="3clFbG">
+              <node concept="3clFbT" id="5GYVJODvQD3" role="3K4E3e">
+                <property role="3clFbU" value="true" />
+              </node>
+              <node concept="2OqwBi" id="5GYVJODvRh6" role="3K4GZi">
+                <node concept="EsrRn" id="5GYVJODvQE4" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5GYVJODvRwa" role="2OqNvi">
+                  <ref role="3TsBF5" to="16h3:6WRbFH1PAuY" resolve="disableVocabularyDownload" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5GYVJODvQqW" role="3K4Cdx">
+                <node concept="2OqwBi" id="5GYVJODvQqX" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5GYVJODvQqY" role="2Oq$k0">
+                    <node concept="EsrRn" id="5GYVJODvQqZ" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5GYVJODvQr0" role="2OqNvi">
+                      <ref role="3Tt5mk" to="16h3:6ONkOuOJEcS" resolve="namespace" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="5GYVJODvQr1" role="2OqNvi">
+                    <ref role="3TsBF5" to="16h3:2z4QKYxWcM7" resolve="iri" />
+                  </node>
+                </node>
+                <node concept="3y1jeu" id="5GYVJODvQr2" role="2OqNvi">
+                  <node concept="Xl_RD" id="5GYVJODvQr3" role="3y1jev">
+                    <property role="Xl_RC" value="http://www.w3.org/2001/XMLSchema#" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1LLf8_" id="5GYVJODvRyL" role="1LXaQT">
+        <node concept="3clFbS" id="5GYVJODvRyM" role="2VODD2">
+          <node concept="3clFbF" id="5GYVJODvRA2" role="3cqZAp">
+            <node concept="2OqwBi" id="5GYVJODvSkX" role="3clFbG">
+              <node concept="2OqwBi" id="5GYVJODvRC8" role="2Oq$k0">
+                <node concept="EsrRn" id="5GYVJODvRA1" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5GYVJODvRT$" role="2OqNvi">
+                  <ref role="3TsBF5" to="16h3:6WRbFH1PAuY" resolve="disableVocabularyDownload" />
+                </node>
+              </node>
+              <node concept="tyxLq" id="5GYVJODvSCD" role="2OqNvi">
+                <node concept="1Wqviy" id="5GYVJODvSDo" role="tz02z" />
               </node>
             </node>
           </node>

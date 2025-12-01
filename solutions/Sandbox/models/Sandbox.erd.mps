@@ -68,6 +68,12 @@
       <concept id="6127414803068812685" name="RML.IO.structure.ReferenceFormulationCSV" flags="ng" index="3tqwV1" />
       <concept id="6127414803068812687" name="RML.IO.structure.ReferenceFormulationJSONPath" flags="ng" index="3tqwV3" />
       <concept id="791507941088259868" name="RML.IO.structure.CurrentWorkingDirectoryRoot" flags="ng" index="1FyQXr" />
+      <concept id="791507941088259867" name="RML.IO.structure.DirectoryRoot" flags="ngI" index="1FyQXs">
+        <property id="2106191878550207927" name="path" index="2wXCZH" />
+      </concept>
+      <concept id="7776130554352727640" name="RML.IO.structure.CsvColumn" flags="ng" index="1KEMJi">
+        <property id="7776130554352855988" name="columnName" index="1KEjoY" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -91,6 +97,15 @@
         <child id="3543407481847299718" name="childMap" index="28P8zi" />
         <child id="3543407481847299719" name="parentMap" index="28P8zj" />
       </concept>
+      <concept id="5421493599161714850" name="RML.structure.TemplateSegmentReference" flags="ng" index="9aSGm">
+        <child id="5421493599161714851" name="reference" index="9aSGn" />
+      </concept>
+      <concept id="5421493599161714838" name="RML.structure.TemplateSegmentString" flags="ng" index="9aSGy">
+        <property id="5421493599161714843" name="value" index="9aSGJ" />
+      </concept>
+      <concept id="5421493599161714834" name="RML.structure.TemplateSegmentPrefix" flags="ng" index="9aSGA">
+        <reference id="5421493599162898717" name="prefix" index="95pED" />
+      </concept>
       <concept id="3543407481851128128" name="RML.structure.ParentMap" flags="ng" index="2b7xWk" />
       <concept id="3543407481851128127" name="RML.structure.ChildMap" flags="ng" index="2b7xXF" />
       <concept id="2410254138872534997" name="RML.structure.NamedDefintionTriples" flags="ng" index="2$AQqb">
@@ -113,7 +128,7 @@
         <child id="6303025759225526832" name="value" index="FJIaS" />
       </concept>
       <concept id="6099872835424795707" name="RML.structure.TemplateExpr" flags="ng" index="IaUoX">
-        <property id="6099872835424795711" name="template" index="IaUoT" />
+        <child id="5421493599161611609" name="templateSegments" index="9avrH" />
       </concept>
       <concept id="6099872835424795705" name="RML.structure.ReferenceExpr" flags="ng" index="IaUoZ">
         <child id="3740792506033664917" name="referenceFormulation" index="37volz" />
@@ -601,13 +616,21 @@
         <property role="29d1u8" value="http://www.w3.org/2001/XMLSchema#" />
       </node>
     </node>
+    <node concept="29d5m5" id="PIDbKX4Ull" role="29aKCU">
+      <property role="TrG5h" value="geo" />
+      <node concept="29d1u9" id="PIDbKX4Ulp" role="3pzv1Z">
+        <property role="29d1u8" value="http://www.opengis.net/ont/geosparql#" />
+      </node>
+    </node>
     <node concept="1SSSdx" id="5R3My36CHGc" role="29aKCU" />
     <node concept="FCvld" id="5ay_xxAvQwr" role="29aKCU">
       <node concept="3tqwV1" id="5ay_xxAvQws" role="3tqwV9" />
       <node concept="2JlPsY" id="5ay_xxAvQwt" role="FCw5y">
         <node concept="FCOsJ" id="5ay_xxAvQwu" role="1FyQV4">
           <property role="1Fxk42" value="employee.csv" />
-          <node concept="1FyQXr" id="5ay_xxAvQww" role="1Fxk40" />
+          <node concept="1FyQXr" id="5ay_xxAvQww" role="1Fxk40">
+            <property role="2wXCZH" value="solutions/Sandbox/data" />
+          </node>
         </node>
       </node>
       <node concept="29d1u9" id="5ay_xxAvQwy" role="2$AQDL">
@@ -619,7 +642,9 @@
       <node concept="2JlPsY" id="5ay_xxAw4Dr" role="FCw5y">
         <node concept="FCOsJ" id="5ay_xxAw4Ds" role="1FyQV4">
           <property role="1Fxk42" value="project.csv" />
-          <node concept="1FyQXr" id="5ay_xxAw4Du" role="1Fxk40" />
+          <node concept="1FyQXr" id="5ay_xxAw4Du" role="1Fxk40">
+            <property role="2wXCZH" value="solutions/Sandbox/data" />
+          </node>
         </node>
       </node>
       <node concept="29d1u9" id="5ay_xxAw4Dw" role="2$AQDL">
@@ -631,7 +656,9 @@
       <node concept="2JlPsY" id="5ay_xxAw4D$" role="FCw5y">
         <node concept="FCOsJ" id="5ay_xxAw4D_" role="1FyQV4">
           <property role="1Fxk42" value="tasks.json" />
-          <node concept="1FyQXr" id="5ay_xxAw4DB" role="1Fxk40" />
+          <node concept="1FyQXr" id="5ay_xxAw4DB" role="1Fxk40">
+            <property role="2wXCZH" value="solutions/Sandbox/data" />
+          </node>
         </node>
       </node>
       <node concept="29d1u9" id="5ay_xxAw4DD" role="2$AQDL">
@@ -694,7 +721,17 @@
       </node>
       <node concept="IaUod" id="5R3My36CHGw" role="2YYcL1">
         <node concept="IaUoX" id="5R3My36CHGx" role="FGdDe">
-          <property role="IaUoT" value="http://erd.org/Employee/{employee_id}" />
+          <node concept="9aSGA" id="PIDbKX4U_Y" role="9avrH">
+            <ref role="95pED" node="5R3My36CHG8" resolve="erd" />
+          </node>
+          <node concept="9aSGy" id="PIDbKX4UA0" role="9avrH">
+            <property role="9aSGJ" value="Employee/" />
+          </node>
+          <node concept="9aSGm" id="PIDbKX4UAb" role="9avrH">
+            <node concept="1KEMJi" id="PIDbKX4UAa" role="9aSGn">
+              <property role="1KEjoY" value="employee_id" />
+            </node>
+          </node>
         </node>
         <node concept="29d5ma" id="5R3My36CHGy" role="FGrfI">
           <property role="29d1ub" value="Employee" />
@@ -776,9 +813,9 @@
               </node>
             </node>
           </node>
-          <node concept="1_8p69" id="2Lc747KPwoO" role="1AMlW3">
-            <node concept="IaUoN" id="2Lc747KPwoQ" role="FGdDe">
-              <node concept="29d5ma" id="2Lc747KPwoT" role="FJIaS">
+          <node concept="1_8p69" id="PIDbKXS$PR" role="1AMlW3">
+            <node concept="IaUoN" id="PIDbKXS$PS" role="FGdDe">
+              <node concept="29d5ma" id="PIDbKXS$PQ" role="FJIaS">
                 <property role="29d1ub" value="date" />
                 <ref role="29d1uc" node="5R3My36CHGa" resolve="xsd" />
               </node>
@@ -828,7 +865,17 @@
       </node>
       <node concept="IaUod" id="5R3My36CHH8" role="2YYcL1">
         <node concept="IaUoX" id="5R3My36CHH9" role="FGdDe">
-          <property role="IaUoT" value="http://erd.org/Project/{project_id}" />
+          <node concept="9aSGA" id="PIDbKX4UAc" role="9avrH">
+            <ref role="95pED" node="5R3My36CHG8" resolve="erd" />
+          </node>
+          <node concept="9aSGy" id="PIDbKX4UAe" role="9avrH">
+            <property role="9aSGJ" value="Project/" />
+          </node>
+          <node concept="9aSGm" id="PIDbKX4UAh" role="9avrH">
+            <node concept="1KEMJi" id="PIDbKX4UAg" role="9aSGn">
+              <property role="1KEjoY" value="project_id" />
+            </node>
+          </node>
         </node>
         <node concept="29d5ma" id="5R3My36CHHa" role="FGrfI">
           <property role="29d1ub" value="Project" />
@@ -854,8 +901,8 @@
           <node concept="IaUoZ" id="5R3My36CHHj" role="FGdDe">
             <node concept="1KEjpa" id="69q1mim2MVo" role="37volz">
               <node concept="1PaTwC" id="69q1mim2MVp" role="1KEjp8">
-                <node concept="3oM_SD" id="69q1mim2MVq" role="1PaTwD">
-                  <property role="3oM_SC" value="decription-en" />
+                <node concept="3oM_SD" id="5GYVJOClh6M" role="1PaTwD">
+                  <property role="3oM_SC" value="description-en" />
                 </node>
               </node>
             </node>
@@ -947,35 +994,25 @@
         </node>
         <node concept="28P8wJ" id="5R3My36CHHK" role="FHrli">
           <ref role="28P8wD" node="5R3My36CHGd" resolve="&lt;EmployeeMapping&gt;" />
-          <node concept="28P8zg" id="5R3My36CHHL" role="28P8zm">
-            <node concept="2b7xXF" id="5R3My36CHHM" role="28P8zi">
-              <node concept="IaUoZ" id="5R3My36CHHN" role="FGdDe">
-                <node concept="1KEjpa" id="69q1mim2MV$" role="37volz">
-                  <node concept="1PaTwC" id="69q1mim2MV_" role="1KEjp8">
-                    <node concept="3oM_SD" id="69q1mim2MVA" role="1PaTwD">
-                      <property role="3oM_SC" value="employee_id" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2b7xWk" id="5R3My36CHHO" role="28P8zj">
-              <node concept="IaUoZ" id="5R3My36CHHP" role="FGdDe">
-                <node concept="1KEjpa" id="69q1mim2MVB" role="37volz">
-                  <node concept="1PaTwC" id="69q1mim2MVC" role="1KEjp8">
-                    <node concept="3oM_SD" id="69q1mim2MVD" role="1PaTwD">
-                      <property role="3oM_SC" value="employee_id" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="IaUod" id="5R3My36CHHW" role="2YYcL1">
         <node concept="IaUoX" id="5R3My36CHHX" role="FGdDe">
-          <property role="IaUoT" value="http://erd.org/Task/{task_id}" />
+          <node concept="9aSGA" id="PIDbKX4UAj" role="9avrH">
+            <ref role="95pED" node="5R3My36CHG8" resolve="erd" />
+          </node>
+          <node concept="9aSGy" id="PIDbKX4UAl" role="9avrH">
+            <property role="9aSGJ" value="Task/" />
+          </node>
+          <node concept="9aSGm" id="PIDbKX4UAH" role="9avrH">
+            <node concept="1KEjpa" id="PIDbKX4UAE" role="9aSGn">
+              <node concept="1PaTwC" id="PIDbKX4UAI" role="1KEjp8">
+                <node concept="3oM_SD" id="PIDbKX4UB4" role="1PaTwD">
+                  <property role="3oM_SC" value="task_id" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="29d5ma" id="5R3My36CHHY" role="FGrfI">
           <property role="29d1ub" value="Task" />
