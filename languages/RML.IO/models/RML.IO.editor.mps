@@ -159,10 +159,6 @@
       <concept id="1227861515039" name="jetbrains.mps.lang.editor.structure.NavigatableReferenceStyleClassItem" flags="ln" index="3yfXC2">
         <reference id="1227861587090" name="link" index="3ygfmf" />
       </concept>
-      <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
-        <property id="1215007802031" name="value" index="3$6WeP" />
-      </concept>
-      <concept id="1215007897487" name="jetbrains.mps.lang.editor.structure.PaddingRightStyleClassItem" flags="ln" index="3$7jql" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
@@ -1393,9 +1389,6 @@
         <node concept="l2Vlx" id="5cblP9ZLTkQ" role="2iSdaV" />
         <node concept="3F0ifn" id="5cblP9ZLTkR" role="3EZMnx">
           <property role="3F0ifm" value="iterator" />
-          <node concept="3$7jql" id="6jTY6s1w1ma" role="3F10Kt">
-            <property role="3$6WeP" value="1" />
-          </node>
         </node>
         <node concept="3F0A7n" id="5cblP9ZLTkS" role="3EZMnx">
           <property role="1O74Pk" value="true" />
