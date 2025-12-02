@@ -25,6 +25,7 @@
       </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
+      <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
       <concept id="767145758118872830" name="jetbrains.mps.lang.actions.structure.NF_Link_SetNewChildOperation" flags="nn" index="2DeJnY" />
       <concept id="1158700664498" name="jetbrains.mps.lang.actions.structure.NodeFactories" flags="ng" index="37WguZ">
         <child id="1158700779049" name="nodeFactory" index="37WGs$" />
@@ -42,6 +43,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -114,6 +118,24 @@
               <node concept="2DeJnY" id="1uUgCWYHD9M" role="2OqNvi">
                 <ref role="1A9B2P" to="ys6r:5iB6wpUzbKT" resolve="ReferenceExpr" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="37WvkG" id="62UXsGko$Ki" role="37WGs$">
+      <ref role="37XkoT" to="ys6r:34GH_iTY3TV" resolve="ReferencingObjectMap" />
+      <node concept="37Y9Zx" id="62UXsGko$Kj" role="37ZfLb">
+        <node concept="3clFbS" id="62UXsGko$Kk" role="2VODD2">
+          <node concept="3clFbF" id="62UXsGko$KA" role="3cqZAp">
+            <node concept="2OqwBi" id="62UXsGkoBw3" role="3clFbG">
+              <node concept="2OqwBi" id="62UXsGko$V2" role="2Oq$k0">
+                <node concept="1r4Lsj" id="62UXsGko$K_" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="62UXsGko_4f" role="2OqNvi">
+                  <ref role="3TtcxE" to="ys6r:34GH_iTY3U2" resolve="joinCondition" />
+                </node>
+              </node>
+              <node concept="2DeJg1" id="62UXsGkoFyS" role="2OqNvi" />
             </node>
           </node>
         </node>

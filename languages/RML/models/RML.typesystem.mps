@@ -1227,7 +1227,7 @@
         <node concept="3clFbS" id="5GYVJOCfu0Q" role="3clFbx">
           <node concept="a7r0C" id="5GYVJOCfAXA" role="3cqZAp">
             <node concept="Xl_RD" id="5GYVJOCfAXR" role="a7wSD">
-              <property role="Xl_RC" value="No join condition is only allowed when the logical sources are equal." />
+              <property role="Xl_RC" value="A join condition is required, leaving it empty is only allowed when the logical sources are equal." />
             </node>
             <node concept="1YBJjd" id="5GYVJOCfB0h" role="1urrMF">
               <ref role="1YBMHb" node="6thUOfk_4aU" resolve="node" />
@@ -1247,34 +1247,44 @@
             <node concept="1v1jN8" id="5GYVJOCfz5o" role="2OqNvi" />
           </node>
           <node concept="17QLQc" id="5GYVJOCf_2P" role="3uHU7w">
-            <node concept="2OqwBi" id="5GYVJOCfANF" role="3uHU7w">
-              <node concept="2OqwBi" id="5GYVJOCf_ii" role="2Oq$k0">
-                <node concept="1YBJjd" id="5GYVJOCf_4s" role="2Oq$k0">
-                  <ref role="1YBMHb" node="6thUOfk_4aU" resolve="node" />
-                </node>
-                <node concept="2Xjw5R" id="5GYVJOCf_Fo" role="2OqNvi">
-                  <node concept="1xMEDy" id="5GYVJOCf_Fq" role="1xVPHs">
-                    <node concept="chp4Y" id="5GYVJOCf_H$" role="ri$Ld">
-                      <ref role="cht4Q" to="ys6r:2L7xBeiJE45" resolve="TriplesMap" />
+            <node concept="2OqwBi" id="62UXsGkuoDA" role="3uHU7w">
+              <node concept="2OqwBi" id="5GYVJOCfANF" role="2Oq$k0">
+                <node concept="2OqwBi" id="5GYVJOCf_ii" role="2Oq$k0">
+                  <node concept="1YBJjd" id="5GYVJOCf_4s" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6thUOfk_4aU" resolve="node" />
+                  </node>
+                  <node concept="2Xjw5R" id="5GYVJOCf_Fo" role="2OqNvi">
+                    <node concept="1xMEDy" id="5GYVJOCf_Fq" role="1xVPHs">
+                      <node concept="chp4Y" id="5GYVJOCf_H$" role="ri$Ld">
+                        <ref role="cht4Q" to="ys6r:2L7xBeiJE45" resolve="TriplesMap" />
+                      </node>
                     </node>
                   </node>
                 </node>
+                <node concept="3TrEf2" id="5GYVJOCfASd" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ys6r:5iB6wpUzbK2" resolve="logicalSource" />
+                </node>
               </node>
-              <node concept="3TrEf2" id="5GYVJOCfASd" role="2OqNvi">
-                <ref role="3Tt5mk" to="ys6r:5iB6wpUzbK2" resolve="logicalSource" />
+              <node concept="2qgKlT" id="62UXsGkuoUK" role="2OqNvi">
+                <ref role="37wK5l" to="v19u:5ay_xxAxhKm" resolve="getLogicalSourceDef" />
               </node>
             </node>
-            <node concept="2OqwBi" id="5GYVJOCfA55" role="3uHU7B">
-              <node concept="2OqwBi" id="5GYVJOCf$ic" role="2Oq$k0">
-                <node concept="1YBJjd" id="5GYVJOCf$id" role="2Oq$k0">
-                  <ref role="1YBMHb" node="6thUOfk_4aU" resolve="node" />
+            <node concept="2OqwBi" id="62UXsGkunl$" role="3uHU7B">
+              <node concept="2OqwBi" id="5GYVJOCfA55" role="2Oq$k0">
+                <node concept="2OqwBi" id="5GYVJOCf$ic" role="2Oq$k0">
+                  <node concept="1YBJjd" id="5GYVJOCf$id" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6thUOfk_4aU" resolve="node" />
+                  </node>
+                  <node concept="3TrEf2" id="5GYVJOCf$ie" role="2OqNvi">
+                    <ref role="3Tt5mk" to="ys6r:34GH_iTY3TX" resolve="parentTriplesMap" />
+                  </node>
                 </node>
-                <node concept="3TrEf2" id="5GYVJOCf$ie" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ys6r:34GH_iTY3TX" resolve="parentTriplesMap" />
+                <node concept="3TrEf2" id="5GYVJOCfALN" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ys6r:5iB6wpUzbK2" resolve="logicalSource" />
                 </node>
               </node>
-              <node concept="3TrEf2" id="5GYVJOCfALN" role="2OqNvi">
-                <ref role="3Tt5mk" to="ys6r:5iB6wpUzbK2" resolve="logicalSource" />
+              <node concept="2qgKlT" id="62UXsGkuoc4" role="2OqNvi">
+                <ref role="37wK5l" to="v19u:5ay_xxAxhKm" resolve="getLogicalSourceDef" />
               </node>
             </node>
           </node>
