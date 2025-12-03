@@ -3713,7 +3713,7 @@
       </node>
       <node concept="2hMVRd" id="5GYVJOCuElK" role="11_B2D">
         <node concept="3uibUv" id="5GYVJOCuElL" role="2hN53Y">
-          <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+          <ref role="3uigEE" node="5RmYiIP48m9" resolve="PropertyOfClass" />
         </node>
       </node>
     </node>
@@ -3724,7 +3724,7 @@
       <node concept="3Tmbuc" id="5GYVJOCuIyL" role="1B3o_S" />
       <node concept="2hMVRd" id="5GYVJOCuIyN" role="3clF45">
         <node concept="3uibUv" id="5GYVJOCuIyO" role="2hN53Y">
-          <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+          <ref role="3uigEE" node="5RmYiIP48m9" resolve="PropertyOfClass" />
         </node>
       </node>
       <node concept="3clFbS" id="5GYVJOCuIyP" role="3clF47">
@@ -3732,7 +3732,7 @@
           <node concept="2ShNRf" id="5GYVJOCuMFG" role="3cqZAk">
             <node concept="32HrFt" id="5GYVJOCuMFl" role="2ShVmc">
               <node concept="3uibUv" id="5GYVJOCuMFm" role="HW$YZ">
-                <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+                <ref role="3uigEE" node="5RmYiIP48m9" resolve="PropertyOfClass" />
               </node>
             </node>
           </node>
@@ -3813,15 +3813,15 @@
                         <property role="Xl_RC" value="PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; " />
                       </node>
                       <node concept="Xl_RD" id="5GYVJOCuW4H" role="3uHU7w">
-                        <property role="Xl_RC" value="SELECT DISTINCT ?prop WHERE { " />
+                        <property role="Xl_RC" value="SELECT DISTINCT ?prop ?domain WHERE {" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5GYVJOCv0dx" role="3uHU7w">
-                      <property role="Xl_RC" value="?prop rdfs:domain ?domain . " />
+                      <property role="Xl_RC" value="    ?prop rdfs:domain ?domain ." />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="5GYVJOCv0dz" role="3uHU7w">
-                    <property role="Xl_RC" value="?targetClass rdfs:subClassOf ?domain . " />
+                    <property role="Xl_RC" value="    ?targetClass rdfs:subClassOf ?domain . " />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="5GYVJOCuZEm" role="3uHU7w">
@@ -3900,16 +3900,16 @@
         </node>
         <node concept="3cpWs8" id="5GYVJOCuBd6" role="3cqZAp">
           <node concept="3cpWsn" id="5GYVJOCuBd5" role="3cpWs9">
-            <property role="TrG5h" value="propertyIris" />
+            <property role="TrG5h" value="pocs" />
             <node concept="2hMVRd" id="5GYVJOCv0HM" role="1tU5fm">
               <node concept="3uibUv" id="5GYVJOCv1Jx" role="2hN53Y">
-                <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+                <ref role="3uigEE" node="5RmYiIP48m9" resolve="PropertyOfClass" />
               </node>
             </node>
             <node concept="2ShNRf" id="5GYVJOCv2r$" role="33vP2m">
               <node concept="32HrFt" id="5GYVJOCv2rd" role="2ShVmc">
                 <node concept="3uibUv" id="5GYVJOCv2re" role="HW$YZ">
-                  <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+                  <ref role="3uigEE" node="5RmYiIP48m9" resolve="PropertyOfClass" />
                 </node>
               </node>
             </node>
@@ -3946,20 +3946,62 @@
                       <node concept="2jxLKc" id="5GYVJOCv4sz" role="1tU5fm" />
                     </node>
                     <node concept="3clFbS" id="5GYVJOCv4sC" role="1bW5cS">
+                      <node concept="3cpWs8" id="6$En0tb0ts" role="3cqZAp">
+                        <node concept="3cpWsn" id="6$En0tb0tt" role="3cpWs9">
+                          <property role="TrG5h" value="prop" />
+                          <node concept="3uibUv" id="6$En0tb0mP" role="1tU5fm">
+                            <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+                          </node>
+                          <node concept="2OqwBi" id="6$En0tb0tu" role="33vP2m">
+                            <node concept="37vLTw" id="6$En0tb0tv" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5GYVJOCv4sy" resolve="row" />
+                            </node>
+                            <node concept="liA8E" id="6$En0tb0tw" role="2OqNvi">
+                              <ref role="37wK5l" to="sg7y:~QuerySolution.getResource(java.lang.String)" resolve="getResource" />
+                              <node concept="Xl_RD" id="6$En0tb0tx" role="37wK5m">
+                                <property role="Xl_RC" value="prop" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="6$En0tb1Xd" role="3cqZAp">
+                        <node concept="3cpWsn" id="6$En0tb1Xe" role="3cpWs9">
+                          <property role="TrG5h" value="domain" />
+                          <node concept="3uibUv" id="6$En0tb1Xf" role="1tU5fm">
+                            <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+                          </node>
+                          <node concept="2OqwBi" id="6$En0tb3AD" role="33vP2m">
+                            <node concept="37vLTw" id="6$En0tb3gh" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5GYVJOCv4sy" resolve="row" />
+                            </node>
+                            <node concept="liA8E" id="6$En0tb55F" role="2OqNvi">
+                              <ref role="37wK5l" to="sg7y:~QuerySolution.getResource(java.lang.String)" resolve="getResource" />
+                              <node concept="Xl_RD" id="6$En0tb5nD" role="37wK5m">
+                                <property role="Xl_RC" value="domain" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                       <node concept="3clFbF" id="5GYVJOCv5s$" role="3cqZAp">
                         <node concept="2OqwBi" id="5GYVJOCv6EB" role="3clFbG">
                           <node concept="37vLTw" id="5GYVJOCv5sz" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5GYVJOCuBd5" resolve="propertyIris" />
+                            <ref role="3cqZAo" node="5GYVJOCuBd5" resolve="pocs" />
                           </node>
                           <node concept="TSZUe" id="5GYVJOCv7qT" role="2OqNvi">
-                            <node concept="2OqwBi" id="5GYVJOCv7Yv" role="25WWJ7">
-                              <node concept="37vLTw" id="5GYVJOCv7CL" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5GYVJOCv4sy" resolve="row" />
+                            <node concept="2ry78W" id="6$En0tb6JH" role="25WWJ7">
+                              <ref role="2ryb1Q" node="5RmYiIP48m9" resolve="PropertyOfClass" />
+                              <node concept="2r$n1x" id="6$En0tb7mz" role="2r_Bvh">
+                                <ref role="2r$qp6" node="5RmYiIP48mD" resolve="property" />
+                                <node concept="37vLTw" id="6$En0tb8VJ" role="2r_lH1">
+                                  <ref role="3cqZAo" node="6$En0tb0tt" resolve="prop" />
+                                </node>
                               </node>
-                              <node concept="liA8E" id="5GYVJOCv957" role="2OqNvi">
-                                <ref role="37wK5l" to="sg7y:~QuerySolution.getResource(java.lang.String)" resolve="getResource" />
-                                <node concept="Xl_RD" id="5GYVJOCv9kw" role="37wK5m">
-                                  <property role="Xl_RC" value="prop" />
+                              <node concept="2r$n1x" id="6$En0tb7_E" role="2r_Bvh">
+                                <ref role="2r$qp6" node="5RmYiIP4eKA" resolve="ofClass" />
+                                <node concept="37vLTw" id="6$En0tb84h" role="2r_lH1">
+                                  <ref role="3cqZAo" node="6$En0tb1Xe" resolve="domain" />
                                 </node>
                               </node>
                             </node>
@@ -3997,17 +4039,34 @@
         </node>
         <node concept="3cpWs6" id="5GYVJOCuBdD" role="3cqZAp">
           <node concept="37vLTw" id="5GYVJOCuBdE" role="3cqZAk">
-            <ref role="3cqZAo" node="5GYVJOCuBd5" resolve="propertyIris" />
+            <ref role="3cqZAo" node="5GYVJOCuBd5" resolve="pocs" />
           </node>
         </node>
       </node>
       <node concept="3Tmbuc" id="5GYVJOCuBdF" role="1B3o_S" />
       <node concept="2hMVRd" id="5GYVJOCuI2R" role="3clF45">
         <node concept="3uibUv" id="5GYVJOCuI2S" role="2hN53Y">
-          <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+          <ref role="3uigEE" node="5RmYiIP48m9" resolve="PropertyOfClass" />
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2fD8I5" id="5RmYiIP48m9">
+    <property role="3GE5qa" value="vocab" />
+    <property role="TrG5h" value="PropertyOfClass" />
+    <node concept="2lGYhJ" id="5RmYiIP48mD" role="2pHZQ9">
+      <property role="TrG5h" value="property" />
+      <node concept="3uibUv" id="5RmYiIP4eK$" role="2lK19J">
+        <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+      </node>
+    </node>
+    <node concept="2lGYhJ" id="5RmYiIP4eKA" role="2pHZQ9">
+      <property role="TrG5h" value="ofClass" />
+      <node concept="3uibUv" id="5RmYiIP4eL0" role="2lK19J">
+        <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="5RmYiIP48ma" role="1B3o_S" />
   </node>
 </model>
 

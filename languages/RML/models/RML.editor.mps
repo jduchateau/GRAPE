@@ -31,6 +31,11 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
+      <concept id="1239576519914" name="jetbrains.mps.baseLanguage.tuples.structure.NamedTupleComponentAccessOperation" flags="nn" index="2sxana">
+        <reference id="1239576542472" name="component" index="2sxfKC" />
+      </concept>
+    </language>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="5979521222239143262" name="jetbrains.mps.lang.resources.structure.IconResourceExpression" flags="ng" index="2SwGe0">
         <child id="5979521222239172928" name="icon" index="2SwzYu" />
@@ -3989,7 +3994,7 @@
           </node>
         </node>
         <node concept="3uibUv" id="7EDRWxE1BKg" role="2ZBHrp">
-          <ref role="3uigEE" to="v19u:62UXsGjJwoa" resolve="PrefixNameResource" />
+          <ref role="3uigEE" to="v19u:62UXsGjJwoa" resolve="PredicateResource" />
         </node>
       </node>
     </node>
@@ -4085,8 +4090,53 @@
             </node>
           </node>
           <node concept="16NL0t" id="62UXsGjJtG9" role="upBLP">
-            <node concept="2h3Zct" id="62UXsGjJtKY" role="16NL0q">
-              <property role="2h4Kg1" value="missing predicate" />
+            <node concept="uGdhv" id="5RmYiIP3zkQ" role="16NL0q">
+              <node concept="3clFbS" id="5RmYiIP3zkS" role="2VODD2">
+                <node concept="3cpWs8" id="1QdFfhR_kPw" role="3cqZAp">
+                  <node concept="3cpWsn" id="1QdFfhR_kPx" role="3cpWs9">
+                    <property role="TrG5h" value="name" />
+                    <node concept="3uibUv" id="1QdFfhR_k_L" role="1tU5fm">
+                      <ref role="3uigEE" to="tqna:4qVl4MKcVbY" resolve="PrefixedName" />
+                    </node>
+                    <node concept="2OqwBi" id="1QdFfhR_kPy" role="33vP2m">
+                      <node concept="2ZBlsa" id="1QdFfhR_kPz" role="2Oq$k0" />
+                      <node concept="2sxana" id="1QdFfhR_kP$" role="2OqNvi">
+                        <ref role="2sxfKC" to="v19u:5RmYiIP3H3M" resolve="ofClass" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="1QdFfhR_kUN" role="3cqZAp">
+                  <node concept="3clFbS" id="1QdFfhR_kUP" role="3clFbx">
+                    <node concept="3cpWs6" id="1QdFfhR_nB3" role="3cqZAp">
+                      <node concept="Xl_RD" id="1QdFfhR_nEr" role="3cqZAk">
+                        <property role="Xl_RC" value="predicate" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbC" id="1QdFfhR_nxd" role="3clFbw">
+                    <node concept="10Nm6u" id="1QdFfhR_nyS" role="3uHU7w" />
+                    <node concept="37vLTw" id="1QdFfhR_kWA" role="3uHU7B">
+                      <ref role="3cqZAo" node="1QdFfhR_kPx" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="5RmYiIP3DHt" role="3cqZAp">
+                  <node concept="3cpWs3" id="5RmYiIP3EuX" role="3clFbG">
+                    <node concept="2OqwBi" id="5RmYiIP3JmZ" role="3uHU7w">
+                      <node concept="37vLTw" id="1QdFfhR_kP_" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1QdFfhR_kPx" resolve="name" />
+                      </node>
+                      <node concept="liA8E" id="5RmYiIP3K1Q" role="2OqNvi">
+                        <ref role="37wK5l" to="tqna:1h8QYeAv_c" resolve="presentation" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="5RmYiIP3DHs" role="3uHU7B">
+                      <property role="Xl_RC" value="predicate for " />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
           <node concept="16NfWO" id="62UXsGjJtpg" role="upBLP">
@@ -4151,7 +4201,7 @@
           </node>
         </node>
         <node concept="3uibUv" id="62UXsGjFzqY" role="2ZBHrp">
-          <ref role="3uigEE" to="v19u:62UXsGjJwoa" resolve="PrefixNameResource" />
+          <ref role="3uigEE" to="v19u:62UXsGjJwoa" resolve="PredicateResource" />
         </node>
         <node concept="2$S_p_" id="62UXsGjFzr0" role="2$S_pT">
           <node concept="3clFbS" id="62UXsGjFzr1" role="2VODD2">

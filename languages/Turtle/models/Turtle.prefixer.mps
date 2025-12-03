@@ -4670,7 +4670,7 @@
       <node concept="3Tm1VV" id="7EDRWxCEXgp" role="1B3o_S" />
       <node concept="2hMVRd" id="7EDRWxCEXIT" role="3clF45">
         <node concept="3uibUv" id="7EDRWxCEXOa" role="2hN53Y">
-          <ref role="3uigEE" to="t6dh:~Resource" resolve="Resource" />
+          <ref role="3uigEE" to="cyoz:5RmYiIP48m9" resolve="PropertyOfClass" />
         </node>
       </node>
       <node concept="37vLTG" id="7EDRWxCEZ0y" role="3clF46">
