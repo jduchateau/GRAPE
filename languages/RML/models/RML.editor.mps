@@ -9,6 +9,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
+    <use id="f9bc7d73-5eda-44e2-aa14-dcc4c0d485d0" name="jetbrains.mps.baseLanguage.textBlock" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26,6 +27,7 @@
     <import index="thsh" ref="r:162343a5-dbf1-45bb-b173-c7248959bb6b(Turtle.multiline)" />
     <import index="tqna" ref="r:cc7e3d7f-6cc3-45ed-8929-4ebc0ff93d08(Turtle.prefixer)" />
     <import index="fk4s" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.riot.web(Turtle.external/)" />
+    <import index="14am" ref="r:0d3964ef-32ae-4ab9-9fa2-ecd699eb8f7e(jetbrains.mps.baseLanguage.textBlock.editor)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -1019,10 +1021,11 @@
         </node>
       </node>
       <node concept="3F1sOY" id="2KS0UuC$dE3" role="3EZMnx">
+        <property role="1$x2rV" value="&lt;missing reference&gt;" />
         <ref role="1NtTu8" to="ys6r:3fDXJrO_7el" resolve="referenceFormulation" />
         <node concept="2w$q5c" id="2KS0UuC_EDq" role="3xwHhi">
           <node concept="2aJ2om" id="2KS0UuC_EDr" role="2w$qW5">
-            <ref role="2$4xQ3" to="dvzw:4J$0oxoRR4l" resolve="RdfLiteralTextStyle" />
+            <ref role="2$4xQ3" to="14am:1e4RnBxznBa" resolve="TextBlock" />
           </node>
         </node>
       </node>
@@ -2837,7 +2840,7 @@
         <node concept="2iRkQZ" id="6JEnoCrk8AI" role="2czzBx" />
         <node concept="2w$q5c" id="3fDXJrOAwWf" role="78xua">
           <node concept="2aJ2om" id="3fDXJrOAwWg" role="2w$qW5">
-            <ref role="2$4xQ3" to="dvzw:4J$0oxoRR4l" resolve="RdfLiteralTextStyle" />
+            <ref role="2$4xQ3" to="14am:1e4RnBxznBa" resolve="TextBlock" />
           </node>
         </node>
         <node concept="11L4FC" id="6jTY6s0j4fC" role="3F10Kt">

@@ -101,6 +101,14 @@
       </concept>
     </language>
     <language id="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac" name="RML">
+      <concept id="3543407481847299707" name="RML.structure.ReferencingObjectMap" flags="ng" index="28P8wJ">
+        <reference id="3543407481847299709" name="parentTriplesMap" index="28P8wD" />
+        <child id="3543407481847299714" name="joinCondition" index="28P8zm" />
+      </concept>
+      <concept id="3543407481847299716" name="RML.structure.JoinCondition" flags="ng" index="28P8zg">
+        <child id="3543407481847299718" name="childMap" index="28P8zi" />
+        <child id="3543407481847299719" name="parentMap" index="28P8zj" />
+      </concept>
       <concept id="5421493599161714850" name="RML.structure.TemplateSegmentReference" flags="ng" index="9aSGm">
         <child id="5421493599161714851" name="reference" index="9aSGn" />
       </concept>
@@ -110,6 +118,8 @@
       <concept id="5421493599161714834" name="RML.structure.TemplateSegmentPrefix" flags="ng" index="9aSGA">
         <reference id="5421493599162898717" name="prefix" index="95pED" />
       </concept>
+      <concept id="3543407481851128128" name="RML.structure.ParentMap" flags="ng" index="2b7xWk" />
+      <concept id="3543407481851128127" name="RML.structure.ChildMap" flags="ng" index="2b7xXF" />
       <concept id="2410254138872534997" name="RML.structure.NamedDefintionTriples" flags="ng" index="2$AQqb">
         <child id="2410254138872535855" name="identifier" index="2$AQDL" />
       </concept>
@@ -389,6 +399,39 @@
           </node>
         </node>
       </node>
+      <node concept="Ib$Ef" id="1e4RnBywJMw" role="Ib$Ea">
+        <node concept="FHrll" id="1e4RnBywJMx" role="FHrlg">
+          <node concept="IaUoN" id="1e4RnBywJMy" role="FGdDe">
+            <node concept="29d5ma" id="1e4RnBywJM_" role="FJIaS">
+              <property role="29d1ub" value="likes" />
+              <ref role="29d1uc" node="KJ$AktwcEa" resolve="ex" />
+            </node>
+          </node>
+        </node>
+        <node concept="28P8wJ" id="1e4RnBywJMB" role="FHrli">
+          <ref role="28P8wD" node="KJ$Akt$cyo" resolve="&lt;Movie&gt;" />
+          <node concept="28P8zg" id="1e4RnBywJMD" role="28P8zm">
+            <node concept="2b7xXF" id="1e4RnBywJME" role="28P8zi">
+              <node concept="IaUoZ" id="1e4RnBywJMF" role="FGdDe">
+                <node concept="1KEjpa" id="1e4RnBywJMK" role="37volz">
+                  <node concept="1PaTwC" id="1e4RnBywJML" role="1KEjp8">
+                    <node concept="3oM_SD" id="1e4RnBywJMM" role="1PaTwD">
+                      <property role="3oM_SC" value="movie" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2b7xWk" id="1e4RnBywJMH" role="28P8zj">
+              <node concept="IaUoZ" id="1e4RnBywJMI" role="FGdDe">
+                <node concept="1KEMJi" id="1e4RnBywJMN" role="37volz">
+                  <property role="1KEjoY" value="slug" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1_rNmK" id="KJ$AktwcEn" role="IaUo4">
         <node concept="2JlPsY" id="1xDVdsoyAVZ" role="FCw5y">
           <node concept="FCOsJ" id="1xDVdsoyAW1" role="1FyQV4">
@@ -399,7 +442,7 @@
         <node concept="3tqwV3" id="1yLetCTAOUI" role="3tqwV9" />
         <node concept="1KEjpa" id="7X6fuJen0f9" role="1KPkpT">
           <node concept="1PaTwC" id="7X6fuJen0fa" role="1KEjp8">
-            <node concept="3oM_SD" id="7X6fuJen0fb" role="1PaTwD">
+            <node concept="3oM_SD" id="1e4RnBx$22R" role="1PaTwD">
               <property role="3oM_SC" value="$.persons[*]" />
             </node>
           </node>
@@ -465,18 +508,18 @@
         </node>
       </node>
       <node concept="Ib$Ef" id="KJ$Akt$cz6" role="Ib$Ea">
+        <node concept="FHrlk" id="KJ$Akt$czf" role="FHrli">
+          <node concept="IaUoZ" id="7KNEBxZ$Nlm" role="FGdDe">
+            <node concept="1KEMJi" id="7KNEBxZ$Nlo" role="37volz">
+              <property role="1KEjoY" value="title" />
+            </node>
+          </node>
+        </node>
         <node concept="FHrll" id="KJ$Akt$cz7" role="FHrlg">
           <node concept="IaUoN" id="KJ$Akt$czc" role="FGdDe">
             <node concept="29d5ma" id="KJ$Akt$cza" role="FJIaS">
               <property role="29d1ub" value="name" />
               <ref role="29d1uc" node="KJ$Akt$cyU" resolve="schema" />
-            </node>
-          </node>
-        </node>
-        <node concept="FHrlk" id="KJ$Akt$czf" role="FHrli">
-          <node concept="IaUoZ" id="7KNEBxZ$Nlm" role="FGdDe">
-            <node concept="1KEMJi" id="7KNEBxZ$Nlo" role="37volz">
-              <property role="1KEjoY" value="title" />
             </node>
           </node>
         </node>

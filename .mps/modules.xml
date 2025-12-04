@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/languages/RML.IO/RML.IO.mpl" folder="RML" />
       <modulePath path="$PROJECT_DIR$/languages/RML/RML.mpl" folder="RML" />
       <modulePath path="$PROJECT_DIR$/languages/Turtle/Turtle.mpl" folder="Turtle" />
+      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.baseLanguage.textBlock/jetbrains.mps.baseLanguage.textBlock.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/GRAPE.build/GRAPE.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/RMLPlugin/RMLPlugin.msd" folder="RML" />
       <modulePath path="$PROJECT_DIR$/solutions/Sandbox/Sandbox.msd" folder="" />

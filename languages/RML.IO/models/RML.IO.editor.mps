@@ -23,6 +23,7 @@
     <import index="v19u" ref="r:24eeeed9-2a2d-41e4-8d10-82ea852d50e5(RML.behavior)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="14am" ref="r:0d3964ef-32ae-4ab9-9fa2-ecd699eb8f7e(jetbrains.mps.baseLanguage.textBlock.editor)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -1416,7 +1417,7 @@
           <ref role="1NtTu8" to="qx9m:6JEnoCrfLJN" resolve="iterator" />
           <node concept="2w$q5c" id="6dwglhkWNoX" role="3xwHhi">
             <node concept="2aJ2om" id="6dwglhkWNoY" role="2w$qW5">
-              <ref role="2$4xQ3" to="dvzw:4J$0oxoRR4l" resolve="RdfLiteralTextStyle" />
+              <ref role="2$4xQ3" to="14am:1e4RnBxznBa" resolve="TextBlock" />
             </node>
           </node>
         </node>
