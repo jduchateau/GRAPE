@@ -11,6 +11,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -66,11 +67,18 @@
       <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
         <child id="1207055552304" name="warningText" index="a7wSD" />
       </concept>
+      <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
+        <child id="1175517851849" name="errorString" index="2MkJ7o" />
+      </concept>
+      <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
+        <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
+      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
@@ -84,6 +92,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -92,6 +101,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -186,6 +198,41 @@
     <node concept="1YaCAy" id="6jTY6rZXn4X" role="1YuTPh">
       <property role="TrG5h" value="node" />
       <ref role="1YaFvo" to="16h3:2z4QKYxW8U5" resolve="PrefixedName" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3PhuG6dQZ3O">
+    <property role="TrG5h" value="check_RdfLiteral" />
+    <property role="3GE5qa" value="Literal" />
+    <node concept="3clFbS" id="3PhuG6dQZ3P" role="18ibNy">
+      <node concept="3clFbJ" id="3PhuG6dQZ41" role="3cqZAp">
+        <node concept="3fqX7Q" id="3PhuG6dQZ$7" role="3clFbw">
+          <node concept="2OqwBi" id="3PhuG6dQZ$9" role="3fr31v">
+            <node concept="1YBJjd" id="3PhuG6dQZ$a" role="2Oq$k0">
+              <ref role="1YBMHb" node="3PhuG6dQZ3R" resolve="rdfLiteral" />
+            </node>
+            <node concept="2qgKlT" id="3PhuG6dQZ$b" role="2OqNvi">
+              <ref role="37wK5l" to="4g9:3PhuG6dOMYp" resolve="isRdfStringCorrect" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="3PhuG6dQZ43" role="3clFbx">
+          <node concept="2MkqsV" id="3PhuG6dQZ$K" role="3cqZAp">
+            <node concept="Xl_RD" id="3PhuG6dQZ$T" role="2MkJ7o">
+              <property role="Xl_RC" value="Invalid RDF String Literal" />
+            </node>
+            <node concept="1YBJjd" id="3PhuG6dQZ_B" role="1urrMF">
+              <ref role="1YBMHb" node="3PhuG6dQZ3R" resolve="rdfLiteral" />
+            </node>
+            <node concept="2ODE4t" id="3PhuG6dQZKL" role="1urrC5">
+              <ref role="2ODJFN" to="16h3:2z4QKYxXphr" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3PhuG6dQZ3R" role="1YuTPh">
+      <property role="TrG5h" value="rdfLiteral" />
+      <ref role="1YaFvo" to="16h3:2z4QKYxXphm" resolve="RdfLiteral" />
     </node>
   </node>
 </model>

@@ -516,6 +516,11 @@
             <ref role="3bR37D" node="1e4RnBxLXm$" resolve="jetbrains.mps.baseLanguage.textBlock" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3PhuG6fnjVC" role="3bR37C">
+          <node concept="3bR9La" id="3PhuG6fnjVD" role="1SiIV1">
+            <ref role="3bR37D" node="2uMhTA67w7Y" resolve="Turtle.parser" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3VbHlF$1B66" role="2G$12L">
         <property role="TrG5h" value="Turtle.external" />

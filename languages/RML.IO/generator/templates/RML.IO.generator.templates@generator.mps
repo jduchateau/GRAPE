@@ -94,7 +94,7 @@
       </concept>
       <concept id="2937713717140308804" name="Turtle.structure.BlankNodeName" flags="ng" index="29d1xb" />
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
-        <property id="5867233166325549765" name="vocabulary" index="34lheZ" />
+        <property id="5867233166325549765" name="downloadUrl" index="34lheZ" />
         <child id="7868724541386564408" name="namespace" index="3pzv1Z" />
       </concept>
       <concept id="2937713717140295301" name="Turtle.structure.PrefixedName" flags="ng" index="29d5ma">
@@ -566,15 +566,10 @@
                   <node concept="3NFfHV" id="6MfzATWyMu" role="3NFExx">
                     <node concept="3clFbS" id="6MfzATWyMv" role="2VODD2">
                       <node concept="3clFbF" id="6MfzATWyN4" role="3cqZAp">
-                        <node concept="2OqwBi" id="6MfzATWzr$" role="3clFbG">
-                          <node concept="2OqwBi" id="6MfzATWyYl" role="2Oq$k0">
-                            <node concept="30H73N" id="6MfzATWyN3" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="6MfzATWzeA" role="2OqNvi">
-                              <ref role="3Tt5mk" to="qx9m:6JEnoCrfLJN" resolve="iterator" />
-                            </node>
-                          </node>
-                          <node concept="2qgKlT" id="6MfzATWzE7" role="2OqNvi">
-                            <ref role="37wK5l" to="v19u:6MfzATVRFq" resolve="genRdfLiteral" />
+                        <node concept="2OqwBi" id="6MfzATWyYl" role="3clFbG">
+                          <node concept="30H73N" id="6MfzATWyN3" role="2Oq$k0" />
+                          <node concept="2qgKlT" id="3PhuG6f_yzF" role="2OqNvi">
+                            <ref role="37wK5l" to="2tc5:3PhuG6fnlHi" resolve="genIteratorRdfLiteral" />
                           </node>
                         </node>
                       </node>
