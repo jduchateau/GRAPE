@@ -1391,14 +1391,19 @@
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6aUx$fWafHf" role="3bR37C">
-          <node concept="1Busua" id="6aUx$fWafHg" role="1SiIV1">
-            <ref role="1Busuk" node="dhpOjPSSjD" resolve="RML.IO" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1e4RnBye$Gr" role="3bR37C">
           <node concept="3bR9La" id="1e4RnBye$Gs" role="1SiIV1">
             <ref role="3bR37D" node="1e4RnBxLXm$" resolve="jetbrains.mps.baseLanguage.textBlock" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3PhuG6g_pKP" role="3bR37C">
+          <node concept="3bR9La" id="3PhuG6g_pKQ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3PhuG6g_pKR" role="3bR37C">
+          <node concept="3bR9La" id="3PhuG6g_pKS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
       </node>
@@ -1496,6 +1501,11 @@
         <node concept="1SiIV0" id="17vw8yLrORa" role="3bR37C">
           <node concept="3bR9La" id="17vw8yLrORb" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="15YXejFg_f_" role="3bR37C">
+          <node concept="3bR9La" id="15YXejFg_fA" role="1SiIV1">
+            <ref role="3bR37D" node="dhpOjPSSjD" resolve="RML.IO" />
           </node>
         </node>
       </node>

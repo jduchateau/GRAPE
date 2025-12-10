@@ -189,7 +189,7 @@
     <property role="EcuMT" value="6099872835424795707" />
     <property role="TrG5h" value="TemplateExpr" />
     <property role="34LRSv" value="template" />
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="Expression.Template" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5iB6wpUzbKX" role="PzmwI">
       <ref role="PrY4T" node="5iB6wpUzbKt" resolve="Expression" />
@@ -439,7 +439,7 @@
   <node concept="PlHQZ" id="4GX0Vh25flr">
     <property role="TrG5h" value="TemplateSegment" />
     <property role="EcuMT" value="5421493599161611610" />
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="Expression.Template" />
   </node>
   <node concept="1TIwiD" id="6JEnoCrgQJ0">
     <property role="EcuMT" value="7776130554352856000" />
@@ -467,7 +467,7 @@
   </node>
   <node concept="1TIwiD" id="4GX0Vh25Cyi">
     <property role="EcuMT" value="5421493599161714834" />
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="Expression.Template" />
     <property role="TrG5h" value="TemplateSegmentPrefix" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4GX0Vh25Cyj" role="PzmwI">
@@ -482,7 +482,7 @@
   </node>
   <node concept="1TIwiD" id="4GX0Vh25Cym">
     <property role="EcuMT" value="5421493599161714838" />
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="Expression.Template" />
     <property role="TrG5h" value="TemplateSegmentString" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4GX0Vh25Cyr" role="1TKVEl">
@@ -496,7 +496,7 @@
   </node>
   <node concept="1TIwiD" id="4GX0Vh25Cyy">
     <property role="EcuMT" value="5421493599161714850" />
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="Expression.Template" />
     <property role="TrG5h" value="TemplateSegmentReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4GX0Vh25Cyz" role="1TKVEi">

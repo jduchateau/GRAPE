@@ -54,7 +54,6 @@
         <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="5" />
         <module reference="4d376ef7-201b-4497-bbe5-6b936a6ab3d7(RML.FNML)" version="0" />
         <module reference="10423818-6577-4029-bebb-3861e9ee197b(RML.FNML.generator)" version="0" />
-        <module reference="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" version="2" />
         <module reference="42623156-e224-4a90-bea2-c0b8fb0c630a(RML.generator)" version="0" />
         <module reference="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" version="3" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
@@ -108,7 +107,6 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" version="5" />
     <module reference="4d376ef7-201b-4497-bbe5-6b936a6ab3d7(RML.FNML)" version="0" />
-    <module reference="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" version="2" />
     <module reference="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" version="3" />
     <module reference="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />

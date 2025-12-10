@@ -615,7 +615,9 @@
           <module ref="3330376f-82a0-45ed-ae50-a320ee8b0b63(jetbrains.mps.lang.script.rt)" kind="rt" />
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" kind="cl" />
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
+          <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="cl" />
           <module ref="4d376ef7-201b-4497-bbe5-6b936a6ab3d7(RML.FNML)" kind="cl" />
           <module ref="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" kind="cl" />
           <module ref="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" kind="cl" />
@@ -782,6 +784,7 @@
           <module ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" kind="cl" />
           <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="cl" />
           <module ref="26d4f39c-5b3f-42a1-99fb-cee41feaf5ac(RML)" kind="cl" />
+          <module ref="b59f8083-a287-4777-a331-17daee969f66(RML.IO)" kind="cl" />
           <module ref="bc23d3a4-8d1d-4cc4-a0af-c576c7220f7d(Turtle)" kind="cl" />
           <module ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b(Turtle.external)" kind="cl" />
           <module ref="22250116-183c-4e90-8450-b6a13dd8998b(jetbrains.mps.baseLanguage.execution.util)" kind="cl" />
@@ -2340,7 +2343,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.RML.FNML.generator" depends="java.compile.RML, java.compile.RML.FNML, java.compile.RML.IO, java.compile.RML.generator, java.compile.Turtle, java.compile.Turtle.parser, fetchDependencies">
+  <target name="java.compile.RML.FNML.generator" depends="java.compile.RML, java.compile.RML.FNML, java.compile.RML.generator, java.compile.Turtle, java.compile.Turtle.parser, fetchDependencies">
     <mkdir dir="${basedir}/languages/RML.FNML/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/RML.FNML.generator" />
     <javac destdir="${build.tmp}/java/out/RML.FNML.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2375,7 +2378,6 @@
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <pathelement path="${build.tmp}/java/out/RML" />
         <pathelement path="${build.tmp}/java/out/RML.FNML" />
-        <pathelement path="${build.tmp}/java/out/RML.IO" />
         <pathelement path="${build.tmp}/java/out/RML.generator" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />

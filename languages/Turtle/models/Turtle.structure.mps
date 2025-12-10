@@ -67,7 +67,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="statments" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2z4QKYxVX4T" resolve="Statment" />
+      <ref role="20lvS9" node="2z4QKYxVX4T" resolve="Statement" />
     </node>
     <node concept="PrWs8" id="6ONkOuPh5qZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -87,7 +87,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxVX4T">
-    <property role="TrG5h" value="Statment" />
+    <property role="TrG5h" value="Statement" />
     <property role="EcuMT" value="2937713717140246839" />
     <property role="R5$K7" value="true" />
   </node>
@@ -96,14 +96,14 @@
     <property role="TrG5h" value="Directive" />
     <property role="3GE5qa" value="Directives" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statment" />
+    <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statement" />
   </node>
   <node concept="1TIwiD" id="2z4QKYxVX4W">
     <property role="EcuMT" value="2937713717140246844" />
     <property role="TrG5h" value="TriplesStatment" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="Triples" />
-    <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statment" />
+    <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statement" />
   </node>
   <node concept="1TIwiD" id="2z4QKYxW8U5">
     <property role="EcuMT" value="2937713717140295301" />
@@ -595,7 +595,7 @@
     <property role="TrG5h" value="SingleStatmentComment" />
     <property role="34LRSv" value="#" />
     <property role="R4oN_" value="Comment" />
-    <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statment" />
+    <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statement" />
     <node concept="1TJgyj" id="1R$stKKUF3t" role="1TKVEi">
       <property role="IQ2ns" value="2153971712317370589" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -615,7 +615,7 @@
   <node concept="1TIwiD" id="4p4374YDSWg">
     <property role="EcuMT" value="5063185561593286416" />
     <property role="TrG5h" value="EmptyStatment" />
-    <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statment" />
+    <ref role="1TJDcQ" node="2z4QKYxVX4T" resolve="Statement" />
   </node>
   <node concept="PlHQZ" id="2Lc747KQCH1">
     <property role="EcuMT" value="3191957305438145345" />

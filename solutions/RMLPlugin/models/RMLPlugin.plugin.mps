@@ -65,9 +65,9 @@
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="fnpx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.notification(MPS.IDEA/)" />
     <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
-    <import index="qx9m" ref="r:5f21b94e-6c55-4230-951a-dc8170ceeb15(RML.IO.structure)" />
     <import index="8oaq" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.commons.io(Turtle.external/)" />
     <import index="feyl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.actions(MPS.IDEA/)" implicit="true" />
+    <import index="qx9m" ref="r:5f21b94e-6c55-4230-951a-dc8170ceeb15(RML.IO.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -2240,10 +2240,8 @@
       </node>
       <node concept="1wNYB6" id="PIDbKZcpy0" role="1WFzRM">
         <node concept="3clFbS" id="PIDbKZcpy1" role="2VODD2">
-          <node concept="3clFbF" id="PIDbKZcpZ4" role="3cqZAp">
-            <node concept="3clFbT" id="PIDbKZcpZ3" role="3clFbG">
-              <property role="3clFbU" value="true" />
-            </node>
+          <node concept="3clFbF" id="15YXejF7Zlf" role="3cqZAp">
+            <node concept="3clFbT" id="15YXejF7Zle" role="3clFbG" />
           </node>
         </node>
       </node>

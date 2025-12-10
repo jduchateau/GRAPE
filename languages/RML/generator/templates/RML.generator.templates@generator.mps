@@ -2148,12 +2148,7 @@
                         <node concept="3clFbS" id="6MfzATVxTy" role="2VODD2">
                           <node concept="3clFbF" id="6MfzATVxTC" role="3cqZAp">
                             <node concept="2OqwBi" id="6MfzATW$nL" role="3clFbG">
-                              <node concept="2OqwBi" id="6MfzATWgsx" role="2Oq$k0">
-                                <node concept="30H73N" id="6MfzATWg9Z" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="6MfzATW$aW" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="ys6r:3fDXJrO_7el" resolve="referenceFormulation" />
-                                </node>
-                              </node>
+                              <node concept="30H73N" id="6MfzATWg9Z" role="2Oq$k0" />
                               <node concept="2qgKlT" id="6MfzATW$Av" role="2OqNvi">
                                 <ref role="37wK5l" to="v19u:6MfzATVRFq" resolve="genRdfLiteral" />
                               </node>

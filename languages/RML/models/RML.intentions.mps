@@ -448,7 +448,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7uc4gGqnZ2v">
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="Expression.Template" />
     <property role="TrG5h" value="SplitPrefixIdUse" />
     <ref role="2ZfgGC" to="ys6r:4GX0Vh25Cym" resolve="TemplateSegmentString" />
     <node concept="2S6ZIM" id="7uc4gGqnZ2w" role="2ZfVej">
@@ -486,7 +486,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7uc4gGq_H2Z">
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="Expression.Template" />
     <property role="TrG5h" value="SplitPrefixIdUseEverywhere" />
     <ref role="2ZfgGC" to="ys6r:4GX0Vh25Cym" resolve="TemplateSegmentString" />
     <node concept="2S6ZIM" id="7uc4gGq_H30" role="2ZfVej">
