@@ -2914,6 +2914,37 @@
         <node concept="3$7jql" id="6jTY6s0o9WD" role="3F10Kt">
           <property role="3$6WeP" value="0" />
         </node>
+        <node concept="VPXOz" id="1T_Ubro_yIF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+          <node concept="3nzxsE" id="1T_Ubro_yIH" role="3n$kyP">
+            <node concept="3clFbS" id="1T_Ubro_yII" role="2VODD2">
+              <node concept="3clFbF" id="1T_Ubro_yOr" role="3cqZAp">
+                <node concept="1Wc70l" id="1T_UbroDOFy" role="3clFbG">
+                  <node concept="3eOSWO" id="1T_UbroDUYT" role="3uHU7w">
+                    <node concept="3cmrfG" id="1T_UbroDUYX" role="3uHU7w">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                    <node concept="2OqwBi" id="1T_UbroDRwW" role="3uHU7B">
+                      <node concept="2OqwBi" id="1T_UbroDP2i" role="2Oq$k0">
+                        <node concept="pncrf" id="1T_UbroDOHd" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="1T_UbroDPqI" role="2OqNvi">
+                          <ref role="3TtcxE" to="ys6r:6JEnoCrgQJ2" resolve="lines" />
+                        </node>
+                      </node>
+                      <node concept="34oBXx" id="1T_UbroDTtO" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="1T_Ubro_z6V" role="3uHU7B">
+                    <node concept="pncrf" id="1T_Ubro_yOq" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="1T_Ubro_zqi" role="2OqNvi">
+                      <ref role="37wK5l" to="v19u:6jTY6s0bZiW" resolve="isSuroundedByEmptyCharacters" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1QoScp" id="5GYVJOClhZH" role="3EZMnx">
         <property role="1QpmdY" value="true" />
@@ -4422,7 +4453,10 @@
         <property role="2PWKIS" value="VK_OPEN_BRACKET" />
       </node>
       <node concept="2Py5lD" id="15YXejDHFgS" role="2PyaAO">
-        <property role="2PWKIS" value="VK_ALL_CANDIDATES" />
+        <property role="2PWKIS" value="VK_DEAD_CEDILLA" />
+      </node>
+      <node concept="2Py5lD" id="43baVD9nKh5" role="2PyaAO">
+        <property role="2PWKIS" value="VK_QUOTE" />
       </node>
       <node concept="2PzhpH" id="15YXejBhxMM" role="2PL9iG">
         <node concept="3clFbS" id="15YXejBhxMN" role="2VODD2">

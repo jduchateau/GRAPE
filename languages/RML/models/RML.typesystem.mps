@@ -6,6 +6,7 @@
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -921,7 +922,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="641tyB4kGXQ">
-    <property role="TrG5h" value="check_PredicateMap" />
+    <property role="TrG5h" value="check_ConstantPredicateMap" />
     <property role="3GE5qa" value="POM" />
     <node concept="3clFbS" id="641tyB4kGXR" role="18ibNy">
       <node concept="Jncv_" id="3MxBlnYx5kv" role="3cqZAp">
