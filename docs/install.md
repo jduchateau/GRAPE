@@ -28,7 +28,7 @@ You will need to **restart MPS**, then you can continue with the [tutorial](star
 
 In addition to MPS, you will need:
 
-- Java 21 (JetBrains Runtime 21, bundled with MPS 2025.2, previosuly was Java 17 with MPS 2024.1)
+- Java 21 (JetBrains Runtime 21, bundled with MPS 2025.2, previously was Java 17 with MPS 2024.1)
 - A clone of this repository:
 ```shell
 git clone --no-depth https://gitlab.uliege.be/JakubDuchateau/grape.git

@@ -54,6 +54,7 @@
         <depends>jetbrains.mps.ide.make</depends>
         <depends>jetbrains.mps.execution.configurations</depends>
         <depends>com.intellij.modules.platform</depends>
+        <idea-version since-build="252" until-build="253"></idea-version>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />

@@ -32,7 +32,7 @@ plugins {
 
 dependencies {
     mps("com.jetbrains:mps:2025.2.1")
-    //generation("de.itemis.mps:extensions:2025.2.+")
+    //generation("de.itemis.mps:extensions:2024.1.3072.+")
 }
 
 val antlrVersion = "4.13.2"
@@ -154,6 +154,16 @@ tasks {
             println("Successfully created GitLab Release for version '$version'.")
         }
 
+    }
+
+    val cleanMps by registering(Delete::class) {
+        delete(fileTree(projectDir) {
+            include("**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**", "artifacts/**")
+        })
+    }
+
+    clean {
+        dependsOn(cleanMps)
     }
 }
 
