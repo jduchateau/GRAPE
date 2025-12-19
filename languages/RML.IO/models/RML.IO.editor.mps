@@ -24,6 +24,8 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="14am" ref="r:0d3964ef-32ae-4ab9-9fa2-ecd699eb8f7e(jetbrains.mps.baseLanguage.textBlock.editor)" />
+    <import index="8dlq" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.commons.io.input(Turtle.external/)" />
+    <import index="i4xu" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.commons.io.build(Turtle.external/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -253,6 +255,9 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="4952749571008284462" name="jetbrains.mps.baseLanguage.structure.CatchVariable" flags="ng" index="XOnhg" />
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -1809,6 +1814,22 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="6jTY6rZSatH" role="1zxBo7">
+                      <node concept="3SKdUt" id="3861mT0VUcC" role="3cqZAp">
+                        <node concept="1PaTwC" id="3861mT0VUcD" role="1aUNEU">
+                          <node concept="3oM_SD" id="3861mT0VVxp" role="1PaTwD">
+                            <property role="3oM_SC" value="Take" />
+                          </node>
+                          <node concept="3oM_SD" id="3861mT0VVmq" role="1PaTwD">
+                            <property role="3oM_SC" value="BOM" />
+                          </node>
+                          <node concept="3oM_SD" id="3861mT0VVpM" role="1PaTwD">
+                            <property role="3oM_SC" value="into" />
+                          </node>
+                          <node concept="3oM_SD" id="3861mT0VVtT" role="1PaTwD">
+                            <property role="3oM_SC" value="account" />
+                          </node>
+                        </node>
+                      </node>
                       <node concept="3cpWs8" id="3fDXJrOLwcK" role="3cqZAp">
                         <node concept="3KEzu6" id="3fDXJrOLwcH" role="3cpWs9">
                           <property role="TrG5h" value="fileReader" />
@@ -1816,7 +1837,7 @@
                           <node concept="2ShNRf" id="3fDXJrOLz2C" role="33vP2m">
                             <node concept="1pGfFk" id="3fDXJrOLEQX" role="2ShVmc">
                               <property role="373rjd" value="true" />
-                              <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.io.File)" resolve="FileReader" />
+                              <ref role="37wK5l" to="guwi:~FileInputStream.&lt;init&gt;(java.io.File)" resolve="FileInputStream" />
                               <node concept="37vLTw" id="PIDbKX8gdh" role="37wK5m">
                                 <ref role="3cqZAo" node="PIDbKX8gdc" resolve="fileFile" />
                               </node>
@@ -1824,6 +1845,45 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3cpWs8" id="3861mT0VvKs" role="3cqZAp">
+                        <node concept="3KEzu6" id="3861mT0VvKp" role="3cpWs9">
+                          <property role="TrG5h" value="bomStream" />
+                          <node concept="PeGgZ" id="3861mT0VvKq" role="1tU5fm" />
+                          <node concept="2OqwBi" id="3861mT0VHiV" role="33vP2m">
+                            <node concept="2OqwBi" id="3861mT0V_Hs" role="2Oq$k0">
+                              <node concept="2YIFZM" id="3861mT0V$k7" role="2Oq$k0">
+                                <ref role="37wK5l" to="8dlq:~BOMInputStream.builder()" resolve="builder" />
+                                <ref role="1Pybhc" to="8dlq:~BOMInputStream" resolve="BOMInputStream" />
+                              </node>
+                              <node concept="liA8E" id="3861mT0VE7q" role="2OqNvi">
+                                <ref role="37wK5l" to="i4xu:~AbstractOriginSupplier.setInputStream(java.io.InputStream)" resolve="setInputStream" />
+                                <node concept="37vLTw" id="3861mT0VEHX" role="37wK5m">
+                                  <ref role="3cqZAo" node="3fDXJrOLwcH" resolve="fileReader" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="3861mT0VJQ7" role="2OqNvi">
+                              <ref role="37wK5l" to="8dlq:~BOMInputStream$Builder.get()" resolve="get" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="3861mT0VLjt" role="3cqZAp">
+                        <node concept="3KEzu6" id="3861mT0VLjq" role="3cpWs9">
+                          <property role="TrG5h" value="reader" />
+                          <node concept="PeGgZ" id="3861mT0VLjr" role="1tU5fm" />
+                          <node concept="2ShNRf" id="3861mT0VOiQ" role="33vP2m">
+                            <node concept="1pGfFk" id="3861mT0VQyt" role="2ShVmc">
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="guwi:~InputStreamReader.&lt;init&gt;(java.io.InputStream)" resolve="InputStreamReader" />
+                              <node concept="37vLTw" id="3861mT0VRvs" role="37wK5m">
+                                <ref role="3cqZAo" node="3861mT0VvKp" resolve="bomStream" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbH" id="3861mT0VTfX" role="3cqZAp" />
                       <node concept="3cpWs8" id="3fDXJrOLxT$" role="3cqZAp">
                         <node concept="3cpWsn" id="3fDXJrOLxT_" role="3cpWs9">
                           <property role="TrG5h" value="csvFormat" />
@@ -1849,7 +1909,7 @@
                             <node concept="liA8E" id="3fDXJrOLHDs" role="2OqNvi">
                               <ref role="37wK5l" to="gb6y:~CSVFormat.parse(java.io.Reader)" resolve="parse" />
                               <node concept="37vLTw" id="3fDXJrOLHDt" role="37wK5m">
-                                <ref role="3cqZAo" node="3fDXJrOLwcH" resolve="fileReader" />
+                                <ref role="3cqZAo" node="3861mT0VLjq" resolve="reader" />
                               </node>
                             </node>
                           </node>
