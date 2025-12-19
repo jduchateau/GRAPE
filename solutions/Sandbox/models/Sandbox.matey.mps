@@ -349,7 +349,7 @@
             <node concept="1KEjpa" id="69q1mim2MVK" role="37volz">
               <node concept="1PaTwC" id="69q1mim2MVL" role="1KEjp8">
                 <node concept="3oM_SD" id="69q1mim2MVM" role="1PaTwD">
-                  <property role="3oM_SC" value="firstname" />
+                  <property role="3oM_SC" value="$.firstname" />
                 </node>
               </node>
             </node>
@@ -373,7 +373,7 @@
                   <node concept="1KEjpa" id="26X5ng4S2P3" role="37volz">
                     <node concept="1PaTwC" id="26X5ng4S2P5" role="1KEjp8">
                       <node concept="3oM_SD" id="26X5ng4UVaF" role="1PaTwD">
-                        <property role="3oM_SC" value="lastname" />
+                        <property role="3oM_SC" value="$.lastname" />
                       </node>
                     </node>
                   </node>
@@ -392,7 +392,7 @@
         </node>
         <node concept="FHrll" id="5MK5ainR0Q8" role="FHrlg">
           <node concept="IaUoN" id="5MK5ainRX87" role="FGdDe">
-            <node concept="29d5ma" id="5MK5ainRX8a" role="FJIaS">
+            <node concept="29d5ma" id="1T_Ubrp9VQ2" role="FJIaS">
               <property role="29d1ub" value="lastName" />
               <ref role="29d1uc" node="KJ$Akt$cxT" resolve="foaf" />
             </node>
@@ -415,8 +415,8 @@
               <node concept="IaUoZ" id="1e4RnBywJMF" role="FGdDe">
                 <node concept="1KEjpa" id="1e4RnBywJMK" role="37volz">
                   <node concept="1PaTwC" id="1e4RnBywJML" role="1KEjp8">
-                    <node concept="3oM_SD" id="1e4RnBywJMM" role="1PaTwD">
-                      <property role="3oM_SC" value="movie" />
+                    <node concept="3oM_SD" id="1T_UbroIdAG" role="1PaTwD">
+                      <property role="3oM_SC" value="$.movie" />
                     </node>
                   </node>
                 </node>
@@ -460,11 +460,11 @@
           <node concept="9aSGy" id="6aUx$fW0kgE" role="9avrH">
             <property role="9aSGJ" value="person/" />
           </node>
-          <node concept="9aSGm" id="6aUx$fW0kgJ" role="9avrH">
-            <node concept="1KEjpa" id="6aUx$fW0kgG" role="9aSGn">
-              <node concept="1PaTwC" id="6aUx$fW0kgH" role="1KEjp8">
-                <node concept="3oM_SD" id="6aUx$fW0kgK" role="1PaTwD">
-                  <property role="3oM_SC" value="firstname" />
+          <node concept="9aSGm" id="1T_UbroIdAY" role="9avrH">
+            <node concept="1KEjpa" id="1T_UbroIdAV" role="9aSGn">
+              <node concept="1PaTwC" id="1T_UbroIdAW" role="1KEjp8">
+                <node concept="3oM_SD" id="1T_UbroIdAX" role="1PaTwD">
+                  <property role="3oM_SC" value="$.first" />
                 </node>
               </node>
             </node>
