@@ -1,7 +1,4 @@
-import com.fasterxml.jackson.databind.JsonNode
-import com.fasterxml.jackson.databind.ObjectMapper
 import de.undercouch.gradle.tasks.download.Download
-import java.io.ByteArrayOutputStream
 import java.util.*
 
 buildscript {
@@ -19,24 +16,58 @@ buildscript {
 }
 
 repositories {
-    maven("https://jitpack.io")
-    maven("https://artifacts.itemis.cloud/repository/maven-mps")
+    mavenLocal()
+    maven {
+        name = "centralManualTesting"
+        url = uri("https://central.sonatype.com/api/v1/publisher/deployments/download/")
+        credentials(HttpHeaderCredentials::class)
+        authentication {
+            create<HttpHeaderAuthentication>("header")
+        }
+        content {
+            includeModule("io.github.kg-construct", "burp")
+        }
+    }
     mavenCentral()
+    maven("https://artifacts.itemis.cloud/repository/maven-mps")
+    maven("https://jitpack.io")
 }
 
 plugins {
     id("com.specificlanguages.mps") version "1.9.0"
     id("de.undercouch.download") version "5.6.0"
-    id("dev.bmac.intellij.plugin-uploader") version "1.3.5"
+    id("org.jreleaser") version "1.25.0"
+    java
+}
+
+// CARML CLI Configurer
+sourceSets {
+    create("carmlConfigurer") {
+        java {
+            srcDirs("solutions/carml.external/configurer/src/main/java")
+        }
+        resources {
+            srcDirs("solutions/carml.external/configurer/src/main/resources")
+        }
+    }
 }
 
 dependencies {
-    mps("com.jetbrains:mps:2025.2.1")
+    mps("com.jetbrains:mps:2026.1.0")
     //generation("de.itemis.mps:extensions:2024.1.3072.+")
+
+    "carmlConfigurerCompileOnly"("io.carml.jar:carml-app-jena:1.5.0-SNAPSHOT")
+    "carmlConfigurerCompileOnly"("com.github.fnoio:grel-functions-java:v0.10.1")
+    "carmlConfigurerCompileOnly"("be.ugent.idlab.knows:idlab-functions-java:1.4.0")
+    "carmlConfigurerCompileOnly"("org.eclipse.rdf4j:rdf4j-model:5.0.2")
+    "carmlConfigurerCompileOnly"("org.eclipse.rdf4j:rdf4j-rio-api:5.0.2")
+    "carmlConfigurerCompileOnly"("org.eclipse.rdf4j:rdf4j-rio-turtle:5.0.2")
+    "carmlConfigurerCompileOnly"("com.google.auto.service:auto-service-annotations:1.1.1")
+    "carmlConfigurerAnnotationProcessor"("com.google.auto.service:auto-service:1.1.1")
 }
 
 val antlrVersion = "4.13.2"
-val jenaVersion = "5.2.0"
+val jenaVersion = "5.6.0"
 
 stubs {
     register("stubs") {
@@ -48,23 +79,46 @@ stubs {
         dependency("org.apache.jena:jena-shacl:$jenaVersion")
         dependency("org.apache.httpcomponents.client5:httpclient5:5.4.1")
         dependency("org.slf4j:slf4j-simple:2.0.16")
-        dependency("com.github.jduchateau:BURP:parse-rdb-SNAPSHOT")
-        //dependency("com.github.kg-construct:BURP:0.1.2")
-        // Dependencies of BURP
-        dependency("com.jayway.jsonpath:json-path:2.9.0")
-        dependency("com.fasterxml.jackson.core:jackson-core:2.15.3")
-        dependency("com.fasterxml.jackson.core:jackson-databind:2.15.3")
-        dependency("com.fasterxml.jackson.core:jackson-annotations:2.15.3")
+    }
+    register("burp") {
+        destinationDir("solutions/burp.external/lib")
+        dependency("io.github.kg-construct:burp:0.1.3-rc.5")
+    }
+    register("carml") {
+        destinationDir("solutions/carml.external/lib")
+        dependency("io.carml.jar:carml-app-jena:1.5.0-SNAPSHOT") //contains CARML CLI
+        dependency("com.github.fnoio:grel-functions-java:v0.10.1")
+        dependency("be.ugent.idlab.knows:idlab-functions-java:1.5.0")
     }
 }
 
 val antlrJar = file("build/dependencies/antlr/antlr4-complete.jar")
-
-val privateToken = System.getenv("CI_JOB_TOKEN") ?: properties["private-token"] as String?
-val gitlabApiUrlBase = System.getenv("CI_API_V4_URL") ?: properties["gitlab.api.url"] as String?
-val gitlabProjectId = System.getenv("CI_PROJECT_ID") ?: properties["gitlab.project.id"] as String?
-
 val pluginArtefactDirectory = "build/artifacts/GrapePlugin"
+
+// Robust language version reader
+fun getLanguageVersion(): String {
+    val buildPropertiesFile = file("$pluginArtefactDirectory/build.properties")
+    if (buildPropertiesFile.exists()) {
+        val properties = Properties().apply { load(buildPropertiesFile.inputStream()) }
+        return properties["GrapePlugin.version_lang"] as String
+    }
+    // Fallback: parse build.xml which is checked in
+    val buildXmlFile = file("build.xml")
+    if (buildXmlFile.exists()) {
+        val lines = buildXmlFile.readLines()
+        for (line in lines) {
+            val match = Regex("""<property name="version_lang" value="([^"]+)"\s*/?>""").find(line)
+            if (match != null) {
+                return match.groupValues[1]
+            }
+        }
+    }
+    return "0.0.0-SNAPSHOT"
+}
+
+// Set Gradle project version dynamically
+version = System.getenv("CI_COMMIT_TAG") ?: getLanguageVersion()
+
 tasks {
     val downloadAntlr by registering(Download::class) {
         src("https://www.antlr.org/download/antlr-$antlrVersion-complete.jar")
@@ -81,79 +135,29 @@ tasks {
         workingDir = file("solutions/Turtle.parser/grammar")
     }
 
-
-    val uploadToGitLab by registering(Exec::class) {
-        group = "release"
-        description = "Upload the build plugin to the GitLab registry on new release"
-        val version = getLanguageVersion()
-
-        val grapePluginPath = "$pluginArtefactDirectory/GrapePlugin.zip"
-
-        val existing = file(grapePluginPath).exists()
-        if (!existing) println("Plugin artefact '$grapePluginPath' does not exist. Build it first.")
-        else {
-            val apiUrl = "projects/:id/packages/generic/GrapePlugin/$version/GrapePlugin.zip"
-            val checkResult = project.exec {
-                commandLine("glab", "api", apiUrl, "-X", "HEAD")
-                isIgnoreExitValue = true
-            }
-            if (checkResult.exitValue == 0) {
-                println("Plugin artefact for version '$version' already exists in GitLab registry. Skipping upload.")
+    // Add verification task
+    val verifyVersion by registering {
+        group = "verification"
+        description = "Checks if the release tag matches the built version"
+        mustRunAfter("package")
+        doLast {
+            val tagVersion = System.getenv("CI_COMMIT_TAG") ?: System.getenv("JRELEASER_TAG_NAME")
+            if (tagVersion != null) {
+                val cleanTag = tagVersion.removePrefix("v").trim()
+                val buildVersion = getLanguageVersion().removePrefix("v").trim()
+                if (cleanTag != buildVersion) {
+                    throw GradleException("Version Mismatch! Git tag version '$tagVersion' does not match the built MPS plugin version '$buildVersion'. Please update your MPS build model version (GRAPE.build.mps) and regenerate the build script.")
+                }
+                println("Version verification passed: tag '$tagVersion' matches built version '$buildVersion'")
             } else {
-                commandLine("glab", "api", apiUrl, "-X", "PUT", "--input", grapePluginPath)
+                println("No git tag found in environment (CI_COMMIT_TAG/JRELEASER_TAG_NAME not set). Skipping version matching verification.")
             }
         }
     }
 
-    val createRelease by registering {
-        group = "release"
-        description = "Create a new release on GitLab"
-
-        doLast {
-            val version = getLanguageVersion()
-
-            val lastReleaseTag = getLastGitLabReleaseTag(project)
-            println("Last GitLab Release Tag: ${lastReleaseTag ?: "None found"}")
-
-            val tagExistsRemotely = checkGitTagExistsRemotely(project, version)
-            if (!tagExistsRemotely) {
-                throw GradleException("Git tag '$version' does not exist remotely. Please ensure you have created and pushed the tag (e.g., 'git tag $version' and 'git push origin $version').")
-            }
-            println("Git tag '$version' exists remotely.")
-
-            println("\nConfirm release creation for version '$version'? (yes/no): ")
-            val confirmation = readLine()?.trim()?.lowercase()
-            if (confirmation != "yes") {
-                throw GradleException("Release creation cancelled by user.")
-            }
-
-
-            val pluginArtefactUrl =
-                "$gitlabApiUrlBase/projects/$gitlabProjectId/packages/generic/GrapePlugin/$version/GrapePlugin.zip"
-            val mapper = ObjectMapper()
-            val releaseAsset = mapper.createObjectNode().apply {
-                put("name", "GrapePlugin.zip")
-                put("url", pluginArtefactUrl)
-                put("link_type", "package")
-                put("direct_asset_path", "/GrapePlugin.zip")
-            }
-            val releaseAssetArray = mapper.createArrayNode().apply {
-                add(releaseAsset)
-            }
-
-            println(releaseAssetArray.toString())
-            val glabReleaseCreateCommand =
-                listOf("glab", "release", "create", version, "--assets-links", releaseAssetArray.toString())
-
-            project.exec {
-                commandLine(glabReleaseCreateCommand)
-                standardOutput = System.out
-                errorOutput = System.err
-            }.rethrowFailure()
-
-            println("Successfully created GitLab Release for version '$version'.")
-        }
-
+    // Bind jreleaser tasks to depend on build & verification tasks
+    named("jreleaserRelease") {
+        dependsOn("package", verifyVersion)
     }
 
     val cleanMps by registering(Delete::class) {
@@ -167,47 +171,46 @@ tasks {
     }
 }
 
-fun getLanguageVersion(): String {
-    val buildPropertiesFile = file("$pluginArtefactDirectory/build.properties")
-    val properties = Properties().apply { load(buildPropertiesFile.inputStream()) }
-    val versionLang = properties["GrapePlugin.version_lang"] as String
-    return versionLang
+jreleaser {
+    project {
+        name.set("GrapePlugin")
+        description.set("GRAPE plugin for JetBrains MPS")
+        copyright.set("2026 Jakub Duchateau")
+        license.set("EUPL-1.2")
+        authors.set(listOf("Jakub Duchateau"))
+        links {
+            homepage.set("https://gitlab.uliege.be/JakubDuchateau/grape")
+            documentation.set("https://gitlab.uliege.be/JakubDuchateau/grape")
+        }
+    }
+    release {
+        gitlab {
+            enabled.set(true)
+            host.set("gitlab.uliege.be")
+            repoOwner.set("JakubDuchateau")
+            name.set("grape")
+            overwrite.set(true)
+        }
+    }
+    signing {
+        active.set(org.jreleaser.model.Active.NEVER)
+    }
+    distributions {
+        create("GrapePlugin") {
+            active.set(org.jreleaser.model.Active.ALWAYS)
+            artifact {
+                path.set(layout.buildDirectory.file("artifacts/GrapePlugin/GrapePlugin.zip"))
+            }
+        }
+    }
 }
 
-fun getLastGitLabReleaseTag(project: Project): String? {
-    val outputStream = ByteArrayOutputStream()
-    val errorStream = ByteArrayOutputStream()
-
-    project.exec {
-        commandLine("glab", "api", "projects/:id/releases")
-        standardOutput = outputStream
-        errorOutput = errorStream
-    }.assertNormalExitValue()
-
-    val jsonResponse = outputStream.toString("UTF-8")
-    if (jsonResponse.isBlank() || jsonResponse == "[]") {
-        return null
-    }
-    val mapper = ObjectMapper()
-    val rootNode: JsonNode = mapper.readTree(jsonResponse)
-
-    if (rootNode.isArray && rootNode.size() > 0) {
-        val firstRelease = rootNode.get(0)
-        return firstRelease.get("tag_name")?.asText()
-    }
-    return null
-
+val carmlConfigurerJar by tasks.registering(Jar::class) {
+    from(sourceSets["carmlConfigurer"].output)
+    archiveFileName.set("carml-configurer.jar")
+    destinationDirectory.set(file("solutions/carml.external/lib"))
 }
 
-fun checkGitTagExistsRemotely(project: Project, tagName: String): Boolean {
-    val outputStream = ByteArrayOutputStream()
-    val errorStream = ByteArrayOutputStream()
-
-    project.exec {
-        commandLine("git", "ls-remote", "--tags", "origin", "refs/tags/$tagName")
-        standardOutput = outputStream
-        errorOutput = errorStream
-    }.assertNormalExitValue()
-    return outputStream.toString("UTF-8").isNotBlank()
-
+tasks.named("resolveCarml") {
+    dependsOn(carmlConfigurerJar)
 }

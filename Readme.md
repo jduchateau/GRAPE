@@ -12,7 +12,7 @@ It offers:
     - RML-FNML: function execution in expression
     - RML-IO: logical source and source
 - Import/Export of mapping files
-- Run mappings with the BURP engine
+- Run mappings with the [BURP](https://github.com/kg-construct/BURP) or [CARML](https://github.com/carml/carml/tree/rml-cg) RML Processor.
 - Balance between guidance and freedom of editing
 
 [//]: # (--8<-- [end:features])
@@ -38,4 +38,4 @@ If you use this software or its derivatives in an academic context, please cite 
 }
 ```
 
-© 2024-2025 Jakub Duchateau, at the University of Liège. Licensed under the EUPL.
+© 2024-2026 Jakub Duchateau, at the University of Liège. Licensed under the EUPL.

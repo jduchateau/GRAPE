@@ -8,7 +8,8 @@ however, modifications are only possible when running from source.
 ### Compatible Versions
 
 | GRAPE Version | MPS Version |
-| ------------- | ----------- |
+| ------------- |-------------|
+| 0.1.7         | 2026.2      |
 | ...           | 2025.2      |
 | 0.1.6         | 2025.2      |
 | ...           | 2024.1      |

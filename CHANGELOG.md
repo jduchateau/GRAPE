@@ -1,5 +1,11 @@
 # Release Notes
 
+## [0.1.12] - Released 2026-04-23
+
+feat: add support for CARML version rml-cg with grel and idlab functions preloaded.
+burp upgrade to RER  
+rml: adds the ability to use the turtle predicate object list in ExpressionMap, the option is shown only if *turtle* is fully typed.
+
 ## [0.1.11] - Released 2025-12-16
 
 **turtle: intention clear cache of PrefixId**  
