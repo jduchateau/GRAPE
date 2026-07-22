@@ -4,14 +4,14 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/grammar" type="java_source_stubs">
-      <sourceRoot path="${module}/grammar" />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="parser.jar" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="yes" languageLevel="JAVA_10">
+    <facet type="java" compile="mps" classes="mps" ext="no" languageLevel="JAVA_10">
       <classes generated="true" path="${module}/classes_gen" />
-      <source location="${module}/grammar" />
+      <library location="${module}/lib/parser.jar" />
     </facet>
   </facets>
   <dependencies>

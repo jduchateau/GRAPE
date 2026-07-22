@@ -454,7 +454,7 @@
             <node concept="2ShNRf" id="29l9n5i7I9u" role="33vP2m">
               <node concept="1pGfFk" id="29l9n5i7JYK" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="dcux:~TurtleLexer(CharStream)" resolve="TurtleLexer" />
+                <ref role="37wK5l" to="dcux:~TurtleLexer.&lt;init&gt;(org.antlr.v4.runtime.CharStream)" resolve="TurtleLexer" />
                 <node concept="37vLTw" id="29l9n5i7K0o" role="37wK5m">
                   <ref role="3cqZAo" node="29l9n5i7KyB" resolve="charStream" />
                 </node>
@@ -486,7 +486,7 @@
             </node>
             <node concept="2ShNRf" id="29l9n5i7L1K" role="33vP2m">
               <node concept="1pGfFk" id="29l9n5i7L1$" role="2ShVmc">
-                <ref role="37wK5l" to="dcux:~TurtleParser(TokenStream)" resolve="TurtleParser" />
+                <ref role="37wK5l" to="dcux:~TurtleParser.&lt;init&gt;(org.antlr.v4.runtime.TokenStream)" resolve="TurtleParser" />
                 <node concept="37vLTw" id="29l9n5i7PVa" role="37wK5m">
                   <ref role="3cqZAo" node="29l9n5i7Ppm" resolve="tokenStream" />
                 </node>
@@ -843,7 +843,7 @@
       <node concept="37vLTG" id="6ONkOuOEtFx" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="6ONkOuOEtFy" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.TurtleDocContext" resolve="TurtleParser.TurtleDocContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$TurtleDocContext" resolve="TurtleParser.TurtleDocContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6ONkOuOEtFB" role="1B3o_S" />
@@ -875,7 +875,7 @@
               <ref role="3cqZAo" node="6ONkOuOEtFx" resolve="ctx" />
             </node>
             <node concept="liA8E" id="6ONkOuOEGji" role="2OqNvi">
-              <ref role="37wK5l" to="dcux:~TurtleParser.TurtleDocContext.statement()" resolve="statement" />
+              <ref role="37wK5l" to="dcux:~TurtleParser$TurtleDocContext.statement()" resolve="statement" />
             </node>
           </node>
           <node concept="3clFbS" id="6ONkOuOEDz5" role="2LFqv$">
@@ -909,7 +909,7 @@
                   <ref role="3cqZAo" node="6ONkOuOEtFx" resolve="ctx" />
                 </node>
                 <node concept="liA8E" id="4oMzy$Ib68a" role="2OqNvi">
-                  <ref role="37wK5l" to="dcux:~TurtleParser.TurtleDocContext.statement()" resolve="statement" />
+                  <ref role="37wK5l" to="dcux:~TurtleParser$TurtleDocContext.statement()" resolve="statement" />
                 </node>
               </node>
               <node concept="liA8E" id="4oMzy$IbjD3" role="2OqNvi">
@@ -955,7 +955,7 @@
       <node concept="37vLTG" id="5xuladFx0dj" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="5xuladFx0dk" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.StatementContext" resolve="TurtleParser.StatementContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$StatementContext" resolve="TurtleParser.StatementContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="5xuladFx0dm" role="1B3o_S" />
@@ -1292,7 +1292,7 @@
                         <ref role="3cqZAo" node="5xuladFx0dj" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="4oMzy$IhHHx" role="2OqNvi">
-                        <ref role="37wK5l" to="dcux:~TurtleParser.StatementContext.triples()" resolve="triples" />
+                        <ref role="37wK5l" to="dcux:~TurtleParser$StatementContext.triples()" resolve="triples" />
                       </node>
                     </node>
                   </node>
@@ -1312,7 +1312,7 @@
                 <ref role="3cqZAo" node="5xuladFx0dj" resolve="ctx" />
               </node>
               <node concept="liA8E" id="4oMzy$IgXNi" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.StatementContext.triples()" resolve="triples" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$StatementContext.triples()" resolve="triples" />
               </node>
             </node>
           </node>
@@ -1325,7 +1325,7 @@
                 <ref role="3cqZAo" node="5xuladFx0dj" resolve="ctx" />
               </node>
               <node concept="liA8E" id="4oMzy$IfA_E" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.StatementContext.directive()" resolve="directive" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$StatementContext.directive()" resolve="directive" />
               </node>
             </node>
           </node>
@@ -1341,13 +1341,13 @@
                       <ref role="ehGHo" to="16h3:2z4QKYxVX4V" resolve="Directive" />
                     </node>
                     <node concept="1rXfSq" id="4oMzy$IfYeB" role="10QFUP">
-                      <ref role="37wK5l" to="dcux:~TurtleBaseVisitor.visitDirective(TurtleParser.DirectiveContext)" resolve="visitDirective" />
+                      <ref role="37wK5l" to="dcux:~TurtleBaseVisitor.visitDirective(converter.grammar.TurtleParser$DirectiveContext)" resolve="visitDirective" />
                       <node concept="2OqwBi" id="4oMzy$Igb4G" role="37wK5m">
                         <node concept="37vLTw" id="4oMzy$Ig67M" role="2Oq$k0">
                           <ref role="3cqZAo" node="5xuladFx0dj" resolve="ctx" />
                         </node>
                         <node concept="liA8E" id="4oMzy$Igj_J" role="2OqNvi">
-                          <ref role="37wK5l" to="dcux:~TurtleParser.StatementContext.directive()" resolve="directive" />
+                          <ref role="37wK5l" to="dcux:~TurtleParser$StatementContext.directive()" resolve="directive" />
                         </node>
                       </node>
                     </node>
@@ -1717,7 +1717,7 @@
       <node concept="37vLTG" id="6ONkOuOF8fk" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="6ONkOuOF8fl" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.PrefixIDContext" resolve="TurtleParser.PrefixIDContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$PrefixIDContext" resolve="TurtleParser.PrefixIDContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6ONkOuOF8fq" role="1B3o_S" />
@@ -1733,7 +1733,7 @@
                 <ref role="3cqZAo" node="6ONkOuOF8fk" resolve="ctx" />
               </node>
               <node concept="liA8E" id="5xuladF8roC" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.PrefixIDContext.IRIREF()" resolve="IRIREF" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$PrefixIDContext.IRIREF()" resolve="IRIREF" />
               </node>
             </node>
             <node concept="2OqwBi" id="5xuladF91KI" role="37wK5m">
@@ -1742,7 +1742,7 @@
                   <ref role="3cqZAo" node="6ONkOuOF8fk" resolve="ctx" />
                 </node>
                 <node concept="liA8E" id="5xuladF8TYQ" role="2OqNvi">
-                  <ref role="37wK5l" to="dcux:~TurtleParser.PrefixIDContext.PNAME_NS()" resolve="PNAME_NS" />
+                  <ref role="37wK5l" to="dcux:~TurtleParser$PrefixIDContext.PNAME_NS()" resolve="PNAME_NS" />
                 </node>
               </node>
               <node concept="liA8E" id="5xuladF99PL" role="2OqNvi">
@@ -1763,7 +1763,7 @@
       <node concept="37vLTG" id="6ONkOuOF8fG" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="6ONkOuOF8fH" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.SparqlPrefixContext" resolve="TurtleParser.SparqlPrefixContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$SparqlPrefixContext" resolve="TurtleParser.SparqlPrefixContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6ONkOuOF8fM" role="1B3o_S" />
@@ -1779,7 +1779,7 @@
                 <ref role="3cqZAo" node="6ONkOuOF8fG" resolve="ctx" />
               </node>
               <node concept="liA8E" id="5xuladFa0wg" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.SparqlPrefixContext.IRIREF()" resolve="IRIREF" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$SparqlPrefixContext.IRIREF()" resolve="IRIREF" />
               </node>
             </node>
             <node concept="2OqwBi" id="5xuladFa$wc" role="37wK5m">
@@ -1788,7 +1788,7 @@
                   <ref role="3cqZAo" node="6ONkOuOF8fG" resolve="ctx" />
                 </node>
                 <node concept="liA8E" id="5xuladFasxV" role="2OqNvi">
-                  <ref role="37wK5l" to="dcux:~TurtleParser.SparqlPrefixContext.PNAME_NS()" resolve="PNAME_NS" />
+                  <ref role="37wK5l" to="dcux:~TurtleParser$SparqlPrefixContext.PNAME_NS()" resolve="PNAME_NS" />
                 </node>
               </node>
               <node concept="liA8E" id="5xuladFaEL3" role="2OqNvi">
@@ -1811,7 +1811,7 @@
       <node concept="37vLTG" id="6ONkOuOF8g4" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="6ONkOuOF8g5" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.BaseContext" resolve="TurtleParser.BaseContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$BaseContext" resolve="TurtleParser.BaseContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6ONkOuOF8ga" role="1B3o_S" />
@@ -1833,7 +1833,7 @@
                         <ref role="3cqZAo" node="6ONkOuOF8g4" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="6ONkOuOO2Uz" role="2OqNvi">
-                        <ref role="37wK5l" to="dcux:~TurtleParser.BaseContext.IRIREF()" resolve="IRIREF" />
+                        <ref role="37wK5l" to="dcux:~TurtleParser$BaseContext.IRIREF()" resolve="IRIREF" />
                       </node>
                     </node>
                   </node>
@@ -1859,7 +1859,7 @@
       <node concept="37vLTG" id="6ONkOuOF8gs" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="6ONkOuOF8gt" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.SparqlBaseContext" resolve="TurtleParser.SparqlBaseContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$SparqlBaseContext" resolve="TurtleParser.SparqlBaseContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6ONkOuOF8gy" role="1B3o_S" />
@@ -1881,7 +1881,7 @@
                         <ref role="3cqZAo" node="6ONkOuOF8gs" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="6ONkOuOO6PQ" role="2OqNvi">
-                        <ref role="37wK5l" to="dcux:~TurtleParser.SparqlBaseContext.IRIREF()" resolve="IRIREF" />
+                        <ref role="37wK5l" to="dcux:~TurtleParser$SparqlBaseContext.IRIREF()" resolve="IRIREF" />
                       </node>
                     </node>
                   </node>
@@ -1909,7 +1909,7 @@
       <node concept="37vLTG" id="248lfK9eGZ0" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="248lfK9eGZ1" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.TriplesContext" resolve="TurtleParser.TriplesContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$TriplesContext" resolve="TurtleParser.TriplesContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="248lfK9eGZ3" role="1B3o_S" />
@@ -1939,7 +1939,7 @@
                 <ref role="3cqZAo" node="248lfK9eGZ0" resolve="ctx" />
               </node>
               <node concept="liA8E" id="4oMzy$H_jCp" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.TriplesContext.subject()" resolve="subject" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$TriplesContext.subject()" resolve="subject" />
               </node>
             </node>
           </node>
@@ -1952,7 +1952,7 @@
                       <ref role="3cqZAo" node="248lfK9eGZ0" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="5xuladFfCpf" role="2OqNvi">
-                      <ref role="37wK5l" to="dcux:~TurtleParser.TriplesContext.subject()" resolve="subject" />
+                      <ref role="37wK5l" to="dcux:~TurtleParser$TriplesContext.subject()" resolve="subject" />
                     </node>
                   </node>
                   <node concept="liA8E" id="5xuladFfSFH" role="2OqNvi">
@@ -1978,7 +1978,7 @@
                             <ref role="3cqZAo" node="248lfK9eGZ0" resolve="ctx" />
                           </node>
                           <node concept="liA8E" id="248lfK9gkRx" role="2OqNvi">
-                            <ref role="37wK5l" to="dcux:~TurtleParser.TriplesContext.subject()" resolve="subject" />
+                            <ref role="37wK5l" to="dcux:~TurtleParser$TriplesContext.subject()" resolve="subject" />
                           </node>
                         </node>
                       </node>
@@ -1994,7 +1994,7 @@
                             <ref role="3cqZAo" node="248lfK9eGZ0" resolve="ctx" />
                           </node>
                           <node concept="liA8E" id="248lfK9gvYz" role="2OqNvi">
-                            <ref role="37wK5l" to="dcux:~TurtleParser.TriplesContext.predicateObjectList()" resolve="predicateObjectList" />
+                            <ref role="37wK5l" to="dcux:~TurtleParser$TriplesContext.predicateObjectList()" resolve="predicateObjectList" />
                           </node>
                         </node>
                       </node>
@@ -2026,7 +2026,7 @@
                             <ref role="3cqZAo" node="248lfK9eGZ0" resolve="ctx" />
                           </node>
                           <node concept="liA8E" id="6r99biSSo8y" role="2OqNvi">
-                            <ref role="37wK5l" to="dcux:~TurtleParser.TriplesContext.blankNodePropertyList()" resolve="blankNodePropertyList" />
+                            <ref role="37wK5l" to="dcux:~TurtleParser$TriplesContext.blankNodePropertyList()" resolve="blankNodePropertyList" />
                           </node>
                         </node>
                       </node>
@@ -2042,7 +2042,7 @@
                             <ref role="3cqZAo" node="248lfK9eGZ0" resolve="ctx" />
                           </node>
                           <node concept="liA8E" id="6r99biSS63N" role="2OqNvi">
-                            <ref role="37wK5l" to="dcux:~TurtleParser.TriplesContext.predicateObjectList()" resolve="predicateObjectList" />
+                            <ref role="37wK5l" to="dcux:~TurtleParser$TriplesContext.predicateObjectList()" resolve="predicateObjectList" />
                           </node>
                         </node>
                       </node>
@@ -2059,7 +2059,7 @@
                 <ref role="3cqZAo" node="248lfK9eGZ0" resolve="ctx" />
               </node>
               <node concept="liA8E" id="6r99biSQ2pq" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.TriplesContext.blankNodePropertyList()" resolve="blankNodePropertyList" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$TriplesContext.blankNodePropertyList()" resolve="blankNodePropertyList" />
               </node>
             </node>
           </node>
@@ -2223,7 +2223,7 @@
       <node concept="37vLTG" id="248lfK9HzVo" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="248lfK9HzVp" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.CollectionContext" resolve="TurtleParser.CollectionContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$CollectionContext" resolve="TurtleParser.CollectionContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="248lfK9HzVr" role="1B3o_S" />
@@ -2239,12 +2239,12 @@
                 <ref role="3cqZAo" node="248lfK9HzVo" resolve="ctx" />
               </node>
               <node concept="liA8E" id="248lfK9HHDt" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.CollectionContext.object_()" resolve="object_" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$CollectionContext.object_()" resolve="object_" />
               </node>
             </node>
             <node concept="A3Dl8" id="248lfK9HHDu" role="1tU5fm">
               <node concept="3uibUv" id="248lfK9HHDv" role="A3Ik2">
-                <ref role="3uigEE" to="dcux:~TurtleParser.Object_Context" resolve="TurtleParser.Object_Context" />
+                <ref role="3uigEE" to="dcux:~TurtleParser$Object_Context" resolve="TurtleParser.Object_Context" />
               </node>
             </node>
           </node>
@@ -2294,7 +2294,7 @@
       <node concept="37vLTG" id="248lfK9hM3Q" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="248lfK9hM3R" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.SubjectContext" resolve="TurtleParser.SubjectContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$SubjectContext" resolve="TurtleParser.SubjectContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="248lfK9hM3T" role="1B3o_S" />
@@ -2312,7 +2312,7 @@
                     <ref role="3cqZAo" node="248lfK9hM3Q" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="248lfK9i_Wk" role="2OqNvi">
-                    <ref role="37wK5l" to="dcux:~TurtleParser.SubjectContext.iri()" resolve="iri" />
+                    <ref role="37wK5l" to="dcux:~TurtleParser$SubjectContext.iri()" resolve="iri" />
                   </node>
                 </node>
               </node>
@@ -2325,7 +2325,7 @@
                 <ref role="3cqZAo" node="248lfK9hM3Q" resolve="ctx" />
               </node>
               <node concept="liA8E" id="248lfK9i6oj" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.SubjectContext.iri()" resolve="iri" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$SubjectContext.iri()" resolve="iri" />
               </node>
             </node>
           </node>
@@ -2338,7 +2338,7 @@
                 <ref role="3cqZAo" node="248lfK9hM3Q" resolve="ctx" />
               </node>
               <node concept="liA8E" id="248lfK9Hi4L" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.SubjectContext.BlankNode()" resolve="BlankNode" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$SubjectContext.BlankNode()" resolve="BlankNode" />
               </node>
             </node>
           </node>
@@ -2351,7 +2351,7 @@
                     <ref role="3cqZAo" node="248lfK9hM3Q" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="248lfK9Hi4R" role="2OqNvi">
-                    <ref role="37wK5l" to="dcux:~TurtleParser.SubjectContext.BlankNode()" resolve="BlankNode" />
+                    <ref role="37wK5l" to="dcux:~TurtleParser$SubjectContext.BlankNode()" resolve="BlankNode" />
                   </node>
                 </node>
               </node>
@@ -2368,7 +2368,7 @@
                     <ref role="3cqZAo" node="248lfK9hM3Q" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="248lfK9Iti3" role="2OqNvi">
-                    <ref role="37wK5l" to="dcux:~TurtleParser.SubjectContext.collection()" resolve="collection" />
+                    <ref role="37wK5l" to="dcux:~TurtleParser$SubjectContext.collection()" resolve="collection" />
                   </node>
                 </node>
               </node>
@@ -2381,7 +2381,7 @@
                 <ref role="3cqZAo" node="248lfK9hM3Q" resolve="ctx" />
               </node>
               <node concept="liA8E" id="248lfK9HdUN" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.SubjectContext.collection()" resolve="collection" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$SubjectContext.collection()" resolve="collection" />
               </node>
             </node>
           </node>
@@ -2421,7 +2421,7 @@
       <node concept="37vLTG" id="248lfK9hyrk" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="248lfK9hyrl" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.IriContext" resolve="TurtleParser.IriContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$IriContext" resolve="TurtleParser.IriContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="248lfK9hyrn" role="1B3o_S" />
@@ -2437,7 +2437,7 @@
                 <ref role="3cqZAo" node="248lfK9hyrk" resolve="ctx" />
               </node>
               <node concept="liA8E" id="248lfK9uob5" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.IriContext.IRIREF()" resolve="IRIREF" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$IriContext.IRIREF()" resolve="IRIREF" />
               </node>
             </node>
           </node>
@@ -2450,7 +2450,7 @@
                     <ref role="3cqZAo" node="248lfK9hyrk" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="248lfK9vFZa" role="2OqNvi">
-                    <ref role="37wK5l" to="dcux:~TurtleParser.IriContext.IRIREF()" resolve="IRIREF" />
+                    <ref role="37wK5l" to="dcux:~TurtleParser$IriContext.IRIREF()" resolve="IRIREF" />
                   </node>
                 </node>
               </node>
@@ -2464,7 +2464,7 @@
                   <ref role="3cqZAo" node="248lfK9hyrk" resolve="ctx" />
                 </node>
                 <node concept="liA8E" id="248lfK9v0OG" role="2OqNvi">
-                  <ref role="37wK5l" to="dcux:~TurtleParser.IriContext.PrefixedName()" resolve="PrefixedName" />
+                  <ref role="37wK5l" to="dcux:~TurtleParser$IriContext.PrefixedName()" resolve="PrefixedName" />
                 </node>
               </node>
             </node>
@@ -2499,7 +2499,7 @@
                       <ref role="3cqZAo" node="248lfK9hyrk" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="248lfK9wzwe" role="2OqNvi">
-                      <ref role="37wK5l" to="dcux:~TurtleParser.IriContext.PrefixedName()" resolve="PrefixedName" />
+                      <ref role="37wK5l" to="dcux:~TurtleParser$IriContext.PrefixedName()" resolve="PrefixedName" />
                     </node>
                   </node>
                   <node concept="liA8E" id="248lfK9yPcT" role="2OqNvi">
@@ -2646,7 +2646,7 @@
       <node concept="37vLTG" id="248lfK9o4am" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="248lfK9o4an" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.Object_Context" resolve="TurtleParser.Object_Context" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$Object_Context" resolve="TurtleParser.Object_Context" />
         </node>
       </node>
       <node concept="3Tm1VV" id="248lfK9o4ap" role="1B3o_S" />
@@ -2664,7 +2664,7 @@
                     <ref role="3cqZAo" node="248lfK9o4am" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="248lfK9G9w2" role="2OqNvi">
-                    <ref role="37wK5l" to="dcux:~TurtleParser.Object_Context.BlankNode()" resolve="BlankNode" />
+                    <ref role="37wK5l" to="dcux:~TurtleParser$Object_Context.BlankNode()" resolve="BlankNode" />
                   </node>
                 </node>
               </node>
@@ -2677,7 +2677,7 @@
                 <ref role="3cqZAo" node="248lfK9o4am" resolve="ctx" />
               </node>
               <node concept="liA8E" id="248lfK9FteC" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.Object_Context.BlankNode()" resolve="BlankNode" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$Object_Context.BlankNode()" resolve="BlankNode" />
               </node>
             </node>
           </node>
@@ -2688,7 +2688,7 @@
               <ref role="ehGHo" to="16h3:2z4QKYxWdpG" resolve="Object" />
             </node>
             <node concept="3nyPlj" id="4oMzy$HHHLm" role="10QFUP">
-              <ref role="37wK5l" to="dcux:~TurtleBaseVisitor.visitObject_(TurtleParser.Object_Context)" resolve="visitObject_" />
+              <ref role="37wK5l" to="dcux:~TurtleBaseVisitor.visitObject_(converter.grammar.TurtleParser$Object_Context)" resolve="visitObject_" />
               <node concept="37vLTw" id="4oMzy$HHTPB" role="37wK5m">
                 <ref role="3cqZAo" node="248lfK9o4am" resolve="ctx" />
               </node>
@@ -2707,7 +2707,7 @@
       <node concept="37vLTG" id="4oMzy$HJQdS" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="4oMzy$HJQdT" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.RdfLiteralContext" resolve="TurtleParser.RdfLiteralContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$RdfLiteralContext" resolve="TurtleParser.RdfLiteralContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="4oMzy$HJQdV" role="1B3o_S" />
@@ -2723,7 +2723,7 @@
                   <ref role="3cqZAo" node="4oMzy$HJQdS" resolve="ctx" />
                 </node>
                 <node concept="liA8E" id="4oMzy$HURaE" role="2OqNvi">
-                  <ref role="37wK5l" to="dcux:~TurtleParser.RdfLiteralContext.string()" resolve="string" />
+                  <ref role="37wK5l" to="dcux:~TurtleParser$RdfLiteralContext.string()" resolve="string" />
                 </node>
               </node>
               <node concept="liA8E" id="4oMzy$HV7hk" role="2OqNvi">
@@ -2761,7 +2761,7 @@
                               <ref role="3cqZAo" node="4oMzy$HJQdS" resolve="ctx" />
                             </node>
                             <node concept="liA8E" id="4oMzy$HQ85D" role="2OqNvi">
-                              <ref role="37wK5l" to="dcux:~TurtleParser.RdfLiteralContext.LANG_DIR()" resolve="LANG_DIR" />
+                              <ref role="37wK5l" to="dcux:~TurtleParser$RdfLiteralContext.LANG_DIR()" resolve="LANG_DIR" />
                             </node>
                           </node>
                           <node concept="liA8E" id="4oMzy$HQo6Q" role="2OqNvi">
@@ -2785,7 +2785,7 @@
                 <ref role="3cqZAo" node="4oMzy$HJQdS" resolve="ctx" />
               </node>
               <node concept="liA8E" id="4oMzy$HO3Lp" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.RdfLiteralContext.LANG_DIR()" resolve="LANG_DIR" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$RdfLiteralContext.LANG_DIR()" resolve="LANG_DIR" />
               </node>
             </node>
           </node>
@@ -2810,7 +2810,7 @@
                               <ref role="3cqZAo" node="4oMzy$HJQdS" resolve="ctx" />
                             </node>
                             <node concept="liA8E" id="4oMzy$HSBhq" role="2OqNvi">
-                              <ref role="37wK5l" to="dcux:~TurtleParser.RdfLiteralContext.iri()" resolve="iri" />
+                              <ref role="37wK5l" to="dcux:~TurtleParser$RdfLiteralContext.iri()" resolve="iri" />
                             </node>
                           </node>
                         </node>
@@ -2828,7 +2828,7 @@
                 <ref role="3cqZAo" node="4oMzy$HJQdS" resolve="ctx" />
               </node>
               <node concept="liA8E" id="4oMzy$HRSG8" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.RdfLiteralContext.iri()" resolve="iri" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$RdfLiteralContext.iri()" resolve="iri" />
               </node>
             </node>
           </node>
@@ -2842,7 +2842,7 @@
                 <ref role="3cqZAo" node="4oMzy$HJQdS" resolve="ctx" />
               </node>
               <node concept="liA8E" id="4J$0oxpfRaT" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.RdfLiteralContext.string()" resolve="string" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$RdfLiteralContext.string()" resolve="string" />
               </node>
             </node>
             <node concept="37vLTw" id="4J$0oxp1zBA" role="37wK5m">
@@ -2985,7 +2985,7 @@
       <node concept="37vLTG" id="4J$0oxp25p9" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="4J$0oxp25pa" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.StringContext" resolve="TurtleParser.StringContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$StringContext" resolve="TurtleParser.StringContext" />
         </node>
       </node>
       <node concept="37vLTG" id="4J$0oxp1OAS" role="3clF46">
@@ -3007,7 +3007,7 @@
                 <ref role="3cqZAo" node="6T7chEfUIgA" resolve="ctx" />
               </node>
               <node concept="liA8E" id="6T7chEfWtn4" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.StringContext.STRING_LITERAL_QUOTE()" resolve="STRING_LITERAL_QUOTE" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$StringContext.STRING_LITERAL_QUOTE()" resolve="STRING_LITERAL_QUOTE" />
               </node>
             </node>
           </node>
@@ -3020,7 +3020,7 @@
                     <ref role="3cqZAo" node="6T7chEfUIgA" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="6T7chEgaHDK" role="2OqNvi">
-                    <ref role="37wK5l" to="dcux:~TurtleParser.StringContext.STRING_LITERAL_QUOTE()" resolve="STRING_LITERAL_QUOTE" />
+                    <ref role="37wK5l" to="dcux:~TurtleParser$StringContext.STRING_LITERAL_QUOTE()" resolve="STRING_LITERAL_QUOTE" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="3t8UTKP0OCq" role="37wK5m">
@@ -3039,7 +3039,7 @@
                       <ref role="3cqZAo" node="6T7chEfUIgA" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="6T7chEg9Wj1" role="2OqNvi">
-                      <ref role="37wK5l" to="dcux:~TurtleParser.StringContext.STRING_LITERAL_SINGLE_QUOTE()" resolve="STRING_LITERAL_SINGLE_QUOTE" />
+                      <ref role="37wK5l" to="dcux:~TurtleParser$StringContext.STRING_LITERAL_SINGLE_QUOTE()" resolve="STRING_LITERAL_SINGLE_QUOTE" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="3t8UTKP1mgm" role="37wK5m">
@@ -3055,7 +3055,7 @@
                   <ref role="3cqZAo" node="6T7chEfUIgA" resolve="ctx" />
                 </node>
                 <node concept="liA8E" id="6T7chEg0oJA" role="2OqNvi">
-                  <ref role="37wK5l" to="dcux:~TurtleParser.StringContext.STRING_LITERAL_SINGLE_QUOTE()" resolve="STRING_LITERAL_SINGLE_QUOTE" />
+                  <ref role="37wK5l" to="dcux:~TurtleParser$StringContext.STRING_LITERAL_SINGLE_QUOTE()" resolve="STRING_LITERAL_SINGLE_QUOTE" />
                 </node>
               </node>
             </node>
@@ -3068,7 +3068,7 @@
                   <ref role="3cqZAo" node="6T7chEfUIgA" resolve="ctx" />
                 </node>
                 <node concept="liA8E" id="6T7chEg2gse" role="2OqNvi">
-                  <ref role="37wK5l" to="dcux:~TurtleParser.StringContext.STRING_LITERAL_LONG_QUOTE()" resolve="STRING_LITERAL_LONG_QUOTE" />
+                  <ref role="37wK5l" to="dcux:~TurtleParser$StringContext.STRING_LITERAL_LONG_QUOTE()" resolve="STRING_LITERAL_LONG_QUOTE" />
                 </node>
               </node>
             </node>
@@ -3081,7 +3081,7 @@
                       <ref role="3cqZAo" node="6T7chEfUIgA" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="6T7chEg7wH1" role="2OqNvi">
-                      <ref role="37wK5l" to="dcux:~TurtleParser.StringContext.STRING_LITERAL_LONG_QUOTE()" resolve="STRING_LITERAL_LONG_QUOTE" />
+                      <ref role="37wK5l" to="dcux:~TurtleParser$StringContext.STRING_LITERAL_LONG_QUOTE()" resolve="STRING_LITERAL_LONG_QUOTE" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="3t8UTKP1QKy" role="37wK5m">
@@ -3099,7 +3099,7 @@
                   <ref role="3cqZAo" node="6T7chEfUIgA" resolve="ctx" />
                 </node>
                 <node concept="liA8E" id="6T7chEg8aiF" role="2OqNvi">
-                  <ref role="37wK5l" to="dcux:~TurtleParser.StringContext.STRING_LITERAL_LONG_SINGLE_QUOTE()" resolve="STRING_LITERAL_LONG_SINGLE_QUOTE" />
+                  <ref role="37wK5l" to="dcux:~TurtleParser$StringContext.STRING_LITERAL_LONG_SINGLE_QUOTE()" resolve="STRING_LITERAL_LONG_SINGLE_QUOTE" />
                 </node>
               </node>
             </node>
@@ -3112,7 +3112,7 @@
                       <ref role="3cqZAo" node="6T7chEfUIgA" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="6T7chEg9cHM" role="2OqNvi">
-                      <ref role="37wK5l" to="dcux:~TurtleParser.StringContext.STRING_LITERAL_LONG_SINGLE_QUOTE()" resolve="STRING_LITERAL_LONG_SINGLE_QUOTE" />
+                      <ref role="37wK5l" to="dcux:~TurtleParser$StringContext.STRING_LITERAL_LONG_SINGLE_QUOTE()" resolve="STRING_LITERAL_LONG_SINGLE_QUOTE" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="3t8UTKP2n31" role="37wK5m">
@@ -3153,7 +3153,7 @@
       <node concept="37vLTG" id="6T7chEfUIgA" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="6T7chEfUIgB" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.StringContext" resolve="TurtleParser.StringContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$StringContext" resolve="TurtleParser.StringContext" />
         </node>
       </node>
       <node concept="2AHcQZ" id="6T7chEfV7s3" role="2AJF6D">
@@ -3250,7 +3250,7 @@
       <node concept="37vLTG" id="248lfK9K0Rm" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="248lfK9K0Rn" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.BlankNodePropertyListContext" resolve="TurtleParser.BlankNodePropertyListContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$BlankNodePropertyListContext" resolve="TurtleParser.BlankNodePropertyListContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="248lfK9K0Rp" role="1B3o_S" />
@@ -3269,7 +3269,7 @@
                         <ref role="3cqZAo" node="248lfK9K0Rm" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="248lfK9LNFs" role="2OqNvi">
-                        <ref role="37wK5l" to="dcux:~TurtleParser.BlankNodePropertyListContext.predicateObjectList()" resolve="predicateObjectList" />
+                        <ref role="37wK5l" to="dcux:~TurtleParser$BlankNodePropertyListContext.predicateObjectList()" resolve="predicateObjectList" />
                       </node>
                     </node>
                   </node>
@@ -3293,7 +3293,7 @@
       <node concept="37vLTG" id="248lfK9KD7U" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="248lfK9KD7V" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.PredicateObjectListContext" resolve="TurtleParser.PredicateObjectListContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$PredicateObjectListContext" resolve="TurtleParser.PredicateObjectListContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="248lfK9KD7X" role="1B3o_S" />
@@ -3323,7 +3323,7 @@
                 <ref role="3cqZAo" node="248lfK9KD7U" resolve="ctx" />
               </node>
               <node concept="liA8E" id="248lfK9Mlbv" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.PredicateObjectListContext.verb()" resolve="verb" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$PredicateObjectListContext.verb()" resolve="verb" />
               </node>
             </node>
           </node>
@@ -3336,7 +3336,7 @@
                 <ref role="3cqZAo" node="248lfK9KD7U" resolve="ctx" />
               </node>
               <node concept="liA8E" id="248lfK9MCwK" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.PredicateObjectListContext.objectList()" resolve="objectList" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$PredicateObjectListContext.objectList()" resolve="objectList" />
               </node>
             </node>
           </node>
@@ -3404,7 +3404,7 @@
       <node concept="37vLTG" id="248lfK9Pimk" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="248lfK9Piml" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.VerbContext" resolve="TurtleParser.VerbContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$VerbContext" resolve="TurtleParser.VerbContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="248lfK9Pimn" role="1B3o_S" />
@@ -3422,7 +3422,7 @@
                     <ref role="3cqZAo" node="248lfK9Pimk" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="5xuladEIvo9" role="2OqNvi">
-                    <ref role="37wK5l" to="dcux:~TurtleParser.VerbContext.iri()" resolve="iri" />
+                    <ref role="37wK5l" to="dcux:~TurtleParser$VerbContext.iri()" resolve="iri" />
                   </node>
                 </node>
               </node>
@@ -3435,7 +3435,7 @@
                 <ref role="3cqZAo" node="248lfK9Pimk" resolve="ctx" />
               </node>
               <node concept="liA8E" id="4oMzy$HDpOK" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.VerbContext.iri()" resolve="iri" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$VerbContext.iri()" resolve="iri" />
               </node>
             </node>
           </node>
@@ -3508,7 +3508,7 @@
       <node concept="37vLTG" id="248lfK9R3Je" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="248lfK9R3Jf" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.ObjectListContext" resolve="TurtleParser.ObjectListContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$ObjectListContext" resolve="TurtleParser.ObjectListContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="248lfK9R3Jh" role="1B3o_S" />
@@ -3541,7 +3541,7 @@
                 <ref role="3cqZAo" node="248lfK9R3Je" resolve="ctx" />
               </node>
               <node concept="liA8E" id="5xuladEPEDQ" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.ObjectListContext.object_()" resolve="object_" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$ObjectListContext.object_()" resolve="object_" />
               </node>
             </node>
           </node>
@@ -3554,7 +3554,7 @@
                 <ref role="3cqZAo" node="248lfK9R3Je" resolve="ctx" />
               </node>
               <node concept="liA8E" id="5xuladEQt2e" role="2OqNvi">
-                <ref role="37wK5l" to="dcux:~TurtleParser.ObjectListContext.annotation()" resolve="annotation" />
+                <ref role="37wK5l" to="dcux:~TurtleParser$ObjectListContext.annotation()" resolve="annotation" />
               </node>
             </node>
           </node>
@@ -3653,7 +3653,7 @@
       <node concept="37vLTG" id="55UoUlYvbUA" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="55UoUlYvbUB" role="1tU5fm">
-          <ref role="3uigEE" to="dcux:~TurtleParser.AnnotationContext" resolve="TurtleParser.AnnotationContext" />
+          <ref role="3uigEE" to="dcux:~TurtleParser$AnnotationContext" resolve="TurtleParser.AnnotationContext" />
         </node>
       </node>
       <node concept="3Tm1VV" id="55UoUlYvbUD" role="1B3o_S" />

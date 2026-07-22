@@ -1,3 +1,6 @@
+stages:
+  - deploy
+
 pages:
   stage: deploy
   needs: [ ]
@@ -15,3 +18,18 @@ pages:
     # This ensures that only pushes to the default branch
     # will trigger a pages deploy
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+
+release:
+  stage: deploy
+  image: eclipse-temurin:21-jdk
+  before_script:
+    - apt-get update -y && apt-get install -y xvfb libxrender1 libxtst6 libxi6 curl unzip
+    - curl -sSfL https://jreleaser.org/setup.sh | sh
+    - export PATH="$HOME/.jreleaser/bin:$PATH"
+  script:
+    - ./gradlew zip
+    - export JRELEASER_PROJECT_VERSION=${CI_COMMIT_TAG#v}
+    - jreleaser release
+  rules:
+    # Trigger only on version tags following semantic versioning (e.g., v0.1.2)
+    - if: $CI_COMMIT_TAG =~ /^v\d+\.\d+\.\d+/

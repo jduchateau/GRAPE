@@ -2331,7 +2331,7 @@
             <node concept="2ShNRf" id="29l9n5i7I9u" role="33vP2m">
               <node concept="1pGfFk" id="29l9n5i7JYK" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="dcux:~TurtleLexer(CharStream)" resolve="TurtleLexer" />
+                <ref role="37wK5l" to="dcux:~TurtleLexer.&lt;init&gt;(org.antlr.v4.runtime.CharStream)" resolve="TurtleLexer" />
                 <node concept="37vLTw" id="29l9n5i7K0o" role="37wK5m">
                   <ref role="3cqZAo" node="29l9n5i7KyB" resolve="charStream" />
                 </node>
@@ -2363,7 +2363,7 @@
             </node>
             <node concept="2ShNRf" id="29l9n5i7L1K" role="33vP2m">
               <node concept="1pGfFk" id="29l9n5i7L1$" role="2ShVmc">
-                <ref role="37wK5l" to="dcux:~TurtleParser(TokenStream)" resolve="TurtleParser" />
+                <ref role="37wK5l" to="dcux:~TurtleParser.&lt;init&gt;(org.antlr.v4.runtime.TokenStream)" resolve="TurtleParser" />
                 <node concept="37vLTw" id="29l9n5i7PVa" role="37wK5m">
                   <ref role="3cqZAo" node="29l9n5i7Ppm" resolve="tokenStream" />
                 </node>

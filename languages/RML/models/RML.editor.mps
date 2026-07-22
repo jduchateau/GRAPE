@@ -435,6 +435,9 @@
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
+      <concept id="7812779912047922391" name="jetbrains.mps.baseLanguage.structure.AbstractClassifierReference" flags="nn" index="39w1OS">
+        <reference id="7812779912047934386" name="classifier" index="39w2Dt" />
+      </concept>
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -2618,6 +2621,11 @@
                 <ref role="37wK5l" to="fk4s:~LangTag.check(java.lang.String)" resolve="check" />
                 <ref role="1Pybhc" to="fk4s:~LangTag" resolve="LangTag" />
                 <node concept="ub8z3" id="7lV$dXlJ$BQ" role="37wK5m" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="7FQFlbn1oKl" role="3cqZAp">
+              <node concept="39w1OS" id="7FQFlbn1oKj" role="3clFbG">
+                <ref role="39w2Dt" to="fk4s:~LangTag" resolve="LangTag" />
               </node>
             </node>
           </node>

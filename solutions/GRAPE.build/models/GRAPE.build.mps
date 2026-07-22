@@ -171,11 +171,11 @@
     <property role="TrG5h" value="GrapePlugin" />
     <property role="2DA0ip" value="../.." />
     <node concept="2kB4xC" id="3x0FUHjWU8n" role="1l3spd">
-      <property role="TrG5h" value="version_lang" />
-      <node concept="aVJcg" id="3x0FUHjWU8J" role="aVJcv">
-        <node concept="NbPM2" id="3x0FUHjWU8I" role="aVJcq">
-          <node concept="3Mxwew" id="3x0FUHjWU8P" role="3MwsjC">
-            <property role="3MwjfP" value="0.1.12" />
+      <property role="TrG5h" value="version" />
+      <node concept="aVJcg" id="7FQFlbmPcPQ" role="aVJcv">
+        <node concept="NbPM2" id="7FQFlbmPcPP" role="aVJcq">
+          <node concept="3Mxwew" id="7FQFlbmPcPO" role="3MwsjC">
+            <property role="3MwjfP" value="0.1.12-SNAPSHOT" />
           </node>
         </node>
       </node>
@@ -209,7 +209,7 @@
                   <node concept="2Ry0Ak" id="2uMhTA67wFb" role="2Ry0An">
                     <property role="2Ry0Am" value="Turtle.parser" />
                     <node concept="2Ry0Ak" id="2uMhTA67wFe" role="2Ry0An">
-                      <property role="2Ry0Am" value="grammar" />
+                      <property role="2Ry0Am" value="lib" />
                     </node>
                   </node>
                 </node>
@@ -217,7 +217,7 @@
             </node>
             <node concept="3_J27D" id="2uMhTA67w$b" role="Nbhlr">
               <node concept="3Mxwew" id="2uMhTA67wAu" role="3MwsjC">
-                <property role="3MwjfP" value="grammar" />
+                <property role="3MwjfP" value="lib" />
               </node>
             </node>
           </node>
@@ -253,7 +253,7 @@
       </node>
       <node concept="3_J27D" id="2CHbgKhgNaj" role="m$_w8">
         <node concept="3Mxwey" id="3x0FUHjWU90" role="3MwsjC">
-          <ref role="3Mxwex" node="3x0FUHjWU8n" resolve="version_lang" />
+          <ref role="3Mxwex" node="3x0FUHjWU8n" resolve="version" />
         </node>
       </node>
       <node concept="m$_yC" id="2CHbgKhgNam" role="m$_yJ">
@@ -261,6 +261,9 @@
       </node>
       <node concept="m$_yC" id="7eeq7psA1go" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:16mx0EU4lyh" resolve="jetbrains.mps.ide" />
+      </node>
+      <node concept="m$_yC" id="tjKaiCHt$b" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:6WtY9M1bDO_" resolve="jetbrains.mps.ide.java" />
       </node>
       <node concept="m$_yC" id="7eeq7psA1kV" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:6EN03E8oSte" resolve="jetbrains.mps.ide.make" />
@@ -285,13 +288,13 @@
         <node concept="2pNUuL" id="4NBDepxMfbb" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
           <node concept="2pMdtt" id="4NBDepxMfbc" role="2pMdts">
-            <property role="2pMdty" value="252" />
+            <property role="2pMdty" value="261" />
           </node>
         </node>
         <node concept="2pNUuL" id="1qE6pRINbi1" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
           <node concept="2pMdtt" id="1qE6pRINbi2" role="2pMdts">
-            <property role="2pMdty" value="253" />
+            <property role="2pMdty" value="262" />
           </node>
         </node>
       </node>
@@ -543,6 +546,11 @@
         <node concept="1SiIV0" id="3PhuG6fnjVC" role="3bR37C">
           <node concept="3bR9La" id="3PhuG6fnjVD" role="1SiIV1">
             <ref role="3bR37D" node="2uMhTA67w7Y" resolve="Turtle.parser" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="tjKaiEAWNW" role="3bR37C">
+          <node concept="3bR9La" id="tjKaiEAWNX" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
       </node>
@@ -1107,9 +1115,9 @@
         </node>
       </node>
       <node concept="1E1JtA" id="2uMhTA67w7Y" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="Turtle.parser" />
         <property role="3LESm3" value="aeba435c-1d30-498a-a895-0c28f7dc9263" />
+        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="2uMhTA67w81" role="3LF7KH">
           <node concept="2Ry0Ak" id="2uMhTA67w84" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
@@ -1178,6 +1186,24 @@
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6dwglhleHcQ" role="2Ry0An">
                   <property role="2Ry0Am" value="Turtle.parser" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="tjKaiEnpbe" role="3bR37C">
+          <node concept="1BurEX" id="tjKaiEnpbf" role="1SiIV1">
+            <node concept="55IIr" id="tjKaiEnpb9" role="1BurEY">
+              <node concept="2Ry0Ak" id="tjKaiEnpba" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="tjKaiEnpbb" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.parser" />
+                  <node concept="2Ry0Ak" id="tjKaiEnpbc" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="tjKaiEnpbd" role="2Ry0An">
+                      <property role="2Ry0Am" value="parser.jar" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -1520,11 +1546,6 @@
         <node concept="1SiIV0" id="17vw8yLrOR8" role="3bR37C">
           <node concept="3bR9La" id="17vw8yLrOR9" role="1SiIV1">
             <ref role="3bR37D" node="3VbHlF$1B66" resolve="Turtle.external" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="17vw8yLrORa" role="3bR37C">
-          <node concept="3bR9La" id="17vw8yLrORb" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
           </node>
         </node>
         <node concept="1SiIV0" id="15YXejFg_f_" role="3bR37C">
