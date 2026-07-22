@@ -4,7 +4,7 @@
   <languages>
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
     <use id="f9bc7d73-5eda-44e2-aa14-dcc4c0d485d0" name="jetbrains.mps.baseLanguage.textBlock" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -47,6 +47,9 @@
       <concept id="1239576519914" name="jetbrains.mps.baseLanguage.tuples.structure.NamedTupleComponentAccessOperation" flags="nn" index="2sxana">
         <reference id="1239576542472" name="component" index="2sxfKC" />
       </concept>
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -188,14 +191,8 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -243,7 +240,6 @@
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
         <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
@@ -2427,9 +2423,21 @@
         <node concept="3rGOSV" id="tPE8s$zQKj" role="2ShVmc" />
       </node>
       <node concept="z59LJ" id="4wAuuo3hnbn" role="lGtFl">
-        <node concept="TZ5HA" id="4wAuuo3hnbo" role="TZ5H$">
-          <node concept="1dT_AC" id="4wAuuo3hnbp" role="1dT_Ay">
-            <property role="1dT_AB" value="From Resource URI to TriplesMap" />
+        <node concept="1PaTwC" id="89GFgMJGfJ" role="1Vez_I">
+          <node concept="3oM_SD" id="89GFgMJGfK" role="1PaTwD">
+            <property role="3oM_SC" value="From" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGfL" role="1PaTwD">
+            <property role="3oM_SC" value="Resource" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGfM" role="1PaTwD">
+            <property role="3oM_SC" value="URI" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGfN" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGfO" role="1PaTwD">
+            <property role="3oM_SC" value="TriplesMap" />
           </node>
         </node>
       </node>
@@ -4553,7 +4561,7 @@
                   <node concept="37vLTw" id="tPE8s$NUo_" role="2Oq$k0">
                     <ref role="3cqZAo" node="6cPctbeDP4a" resolve="termType" />
                   </node>
-                  <node concept="2qgKlT" id="tPE8s$NUoA" role="2OqNvi">
+                  <node concept="3zqWPK" id="89GFgMJGaU" role="2OqNvi">
                     <ref role="37wK5l" to="4g9:17ntPn9kXuX" resolve="getFullIdentifier" />
                   </node>
                 </node>

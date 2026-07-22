@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/languages/Turtle/Turtle.iml" filepath="$PROJECT_DIR$/languages/Turtle/Turtle.iml" />
       <module fileurl="file://$PROJECT_DIR$/languages/RML/generator/generator.iml" filepath="$PROJECT_DIR$/languages/RML/generator/generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/languages/Turtle/generator/generator2.iml" filepath="$PROJECT_DIR$/languages/Turtle/generator/generator2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grape.carmlConfigurer.iml" filepath="$PROJECT_DIR$/.idea/modules/grape.carmlConfigurer.iml" />
     </modules>
   </component>
 </project>

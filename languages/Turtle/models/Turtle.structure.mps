@@ -201,9 +201,6 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6T7chEghU4F" resolve="PredicateObjectList" />
     </node>
-    <node concept="PrWs8" id="n6bVFlXZDL" role="PzmwI">
-      <ref role="PrY4T" node="n6bVFlXZi_" resolve="Triples" />
-    </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxWbD2">
     <property role="TrG5h" value="PredicateObject" />
@@ -222,6 +219,9 @@
       <property role="20kJfa" value="object" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="2z4QKYxWbDf" resolve="AnnotatedObject" />
+    </node>
+    <node concept="PrWs8" id="58tPkD7WaFY" role="PzmwI">
+      <ref role="PrY4T" node="58tPkD7WaFX" resolve="PredicateObjectProducer" />
     </node>
   </node>
   <node concept="1TIwiD" id="2z4QKYxWbD7">
@@ -490,7 +490,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="list" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2z4QKYxWbD2" resolve="PredicateObject" />
+      <ref role="20lvS9" node="58tPkD7WaFX" resolve="PredicateObjectProducer" />
     </node>
   </node>
   <node concept="1TIwiD" id="17ntPn9bc8f">
@@ -607,11 +607,6 @@
     <property role="TrG5h" value="RessourceIdentifierPrefixed" />
     <property role="EcuMT" value="2584134829551952641" />
   </node>
-  <node concept="PlHQZ" id="n6bVFlXZi_">
-    <property role="EcuMT" value="416072495078569125" />
-    <property role="TrG5h" value="Triples" />
-    <property role="3GE5qa" value="RDF" />
-  </node>
   <node concept="1TIwiD" id="4p4374YDSWg">
     <property role="EcuMT" value="5063185561593286416" />
     <property role="TrG5h" value="EmptyStatment" />
@@ -646,6 +641,10 @@
     <node concept="PrWs8" id="6MfzATYqgy" role="PrDN$">
       <ref role="PrY4T" to="zqge:6GJhO0n1XxQ" resolve="IHoldLines" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="58tPkD7WaFX">
+    <property role="EcuMT" value="5917120000445950717" />
+    <property role="TrG5h" value="PredicateObjectProducer" />
   </node>
 </model>
 

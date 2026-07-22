@@ -14,6 +14,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/Turtle.external/Turtle.external.msd" folder="Turtle" />
       <modulePath path="$PROJECT_DIR$/solutions/Turtle.parser/Turtle.parser.msd" folder="Turtle" />
       <modulePath path="$PROJECT_DIR$/solutions/TurtlePlugin/TurtlePlugin.msd" folder="Turtle" />
+      <modulePath path="$PROJECT_DIR$/solutions/burp.external/burp.external.msd" folder="RML" />
+      <modulePath path="$PROJECT_DIR$/solutions/carml.external/carml.external.msd" folder="RML" />
     </projectModules>
   </component>
 </project>

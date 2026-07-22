@@ -31,7 +31,7 @@
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
         <property id="764855088606600268" name="emptyName" index="2v_DfE" />
         <property id="8013925443727419326" name="disableVocabularyDownload" index="ISk$5" />
-        <property id="5867233166325549765" name="vocabulary" index="34lheZ" />
+        <property id="5867233166325549765" name="downloadUrl" index="34lheZ" />
         <property id="7868724541385396558" name="sparqlVariant" index="3pBS89" />
         <child id="7868724541386564408" name="namespace" index="3pzv1Z" />
       </concept>
@@ -230,22 +230,11 @@
           <node concept="9aSGy" id="6jTY6s0ypht" role="9avrH">
             <property role="9aSGJ" value="person/" />
           </node>
-          <node concept="9aSGm" id="6jTY6s0yphA" role="9avrH">
-            <node concept="1KEjpa" id="6jTY6s15daY" role="9aSGn">
-              <node concept="1PaTwC" id="6jTY6s15daZ" role="1KEjp8">
-                <node concept="3oM_SD" id="6jTY6s1kkb3" role="1PaTwD">
-                  <property role="3oM_SC" value="firstname" />
-                </node>
-              </node>
-              <node concept="1PaTwC" id="1dlaSHS8j6L" role="1KEjp8">
-                <node concept="3oM_SD" id="1dlaSHS8j70" role="1PaTwD">
-                  <property role="3oM_SC" value="hello" />
-                </node>
-                <node concept="3oM_SD" id="1dlaSHS8j74" role="1PaTwD">
-                  <property role="3oM_SC" value="world" />
-                </node>
-                <node concept="3oM_SD" id="1dlaSHS8j75" role="1PaTwD">
-                  <property role="3oM_SC" value="" />
+          <node concept="9aSGm" id="5W8OBhcVzNB" role="9avrH">
+            <node concept="1KEjpa" id="5W8OBhcVzNF" role="9aSGn">
+              <node concept="1PaTwC" id="5W8OBhcVzNG" role="1KEjp8">
+                <node concept="3oM_SD" id="5W8OBhcVzNH" role="1PaTwD">
+                  <property role="3oM_SC" value="$.firstname" />
                 </node>
               </node>
             </node>
@@ -258,7 +247,7 @@
             <node concept="1KEjpa" id="69q1mim2MUO" role="37volz">
               <node concept="1PaTwC" id="69q1mim2MUP" role="1KEjp8">
                 <node concept="3oM_SD" id="69q1mim2MUQ" role="1PaTwD">
-                  <property role="3oM_SC" value="firstname" />
+                  <property role="3oM_SC" value="$.firstname" />
                 </node>
               </node>
             </node>
@@ -306,7 +295,7 @@
                   <node concept="1KEjpa" id="69q1mim2MUR" role="37volz">
                     <node concept="1PaTwC" id="69q1mim2MUS" role="1KEjp8">
                       <node concept="3oM_SD" id="69q1mim2MUT" role="1PaTwD">
-                        <property role="3oM_SC" value="lastname" />
+                        <property role="3oM_SC" value="$.lastname" />
                       </node>
                     </node>
                   </node>
@@ -340,7 +329,7 @@
                 <node concept="1KEjpa" id="69q1mim2MUX" role="37volz">
                   <node concept="1PaTwC" id="69q1mim2MUY" role="1KEjp8">
                     <node concept="3oM_SD" id="69q1mim2MUZ" role="1PaTwD">
-                      <property role="3oM_SC" value="movie" />
+                      <property role="3oM_SC" value="$.movie" />
                     </node>
                   </node>
                 </node>

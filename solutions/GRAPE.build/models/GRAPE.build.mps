@@ -175,7 +175,7 @@
       <node concept="aVJcg" id="3x0FUHjWU8J" role="aVJcv">
         <node concept="NbPM2" id="3x0FUHjWU8I" role="aVJcq">
           <node concept="3Mxwew" id="3x0FUHjWU8P" role="3MwsjC">
-            <property role="3MwjfP" value="0.1.11" />
+            <property role="3MwjfP" value="0.1.12" />
           </node>
         </node>
       </node>
