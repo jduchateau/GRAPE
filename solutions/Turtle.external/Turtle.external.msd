@@ -21,6 +21,8 @@
       <sourceRoot location="jena-base.jar" />
       <sourceRoot location="jena-core.jar" />
       <sourceRoot location="jena-iri.jar" />
+      <sourceRoot location="jena-iri3986.jar" />
+      <sourceRoot location="jena-langtag.jar" />
       <sourceRoot location="jena-querybuilder.jar" />
       <sourceRoot location="jena-rdfconnection.jar" />
       <sourceRoot location="jena-shacl.jar" />
@@ -30,18 +32,12 @@
       <sourceRoot location="slf4j-api.jar" />
       <sourceRoot location="slf4j-simple.jar" />
       <sourceRoot location="titanium-json-ld.jar" />
-      <sourceRoot path="${module}/lib/jena-iri3986.jar" />
-      <sourceRoot path="${module}/lib/jena-langtag.jar" />
-      <sourceRoot path="${module}/lib/jena-ontapi.jar" />
-      <sourceRoot path="${module}/lib/commons-collections.jar" />
-      <sourceRoot path="${module}/lib/commons-logging.jar" />
-      <sourceRoot path="${module}/lib/commons-text.jar" />
-      <sourceRoot path="${module}/lib/commons-beanutils.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="ext" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/jena-langtag.jar" />
       <library location="${module}/lib/antlr4-runtime.jar" />
       <library location="${module}/lib/caffeine.jar" />
       <library location="${module}/lib/collection.jar" />

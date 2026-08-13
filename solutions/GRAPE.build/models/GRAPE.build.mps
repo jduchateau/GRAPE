@@ -1113,6 +1113,24 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="5GRtiN3Di02" role="3bR37C">
+          <node concept="1BurEX" id="5GRtiN3Di03" role="1SiIV1">
+            <node concept="55IIr" id="5GRtiN3DhZX" role="1BurEY">
+              <node concept="2Ry0Ak" id="5GRtiN3DhZY" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5GRtiN3DhZZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="Turtle.external" />
+                  <node concept="2Ry0Ak" id="5GRtiN3Di00" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5GRtiN3Di01" role="2Ry0An">
+                      <property role="2Ry0Am" value="jena-langtag.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2uMhTA67w7Y" role="2G$12L">
         <property role="TrG5h" value="Turtle.parser" />

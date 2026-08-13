@@ -55,6 +55,7 @@ bundledDependencies {
         dependency("org.apache.jena:jena-querybuilder:$jenaVersion")
         dependency("org.apache.jena:jena-rdfconnection:$jenaVersion")
         dependency("org.apache.jena:jena-shacl:$jenaVersion")
+        dependency("org.apache.jena:jena-langtag:$jenaVersion")
         dependency("org.apache.httpcomponents.client5:httpclient5:5.4.1")
         dependency("org.slf4j:slf4j-simple:2.0.16")
     }
@@ -87,7 +88,7 @@ fun getLanguageVersion(): String {
     val buildPropertiesFile = file("$pluginArtefactDirectory/build.properties")
     if (buildPropertiesFile.exists()) {
         val properties = Properties().apply { load(buildPropertiesFile.inputStream()) }
-        return properties["GrapePlugin.version_lang"] as String
+        return properties["GrapePlugin.version"] as String
     }
     return "0.0.0-SNAPSHOT"
 }
