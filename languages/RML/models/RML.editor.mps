@@ -27,6 +27,7 @@
     <import index="tqna" ref="r:cc7e3d7f-6cc3-45ed-8929-4ebc0ff93d08(Turtle.prefixer)" />
     <import index="fk4s" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.riot.web(Turtle.external/)" />
     <import index="14am" ref="r:0d3964ef-32ae-4ab9-9fa2-ecd699eb8f7e(jetbrains.mps.baseLanguage.textBlock.editor)" />
+    <import index="dsci" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.langtag(Turtle.external/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="4g9" ref="r:602fef3d-c4ff-4108-aa97-6b028cc8d4be(Turtle.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -435,9 +436,6 @@
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
-      <concept id="7812779912047922391" name="jetbrains.mps.baseLanguage.structure.AbstractClassifierReference" flags="nn" index="39w1OS">
-        <reference id="7812779912047934386" name="classifier" index="39w2Dt" />
-      </concept>
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -651,6 +649,36 @@
         <property role="3F0ifm" value="{" />
         <node concept="ljvvj" id="6jTY6rZ_aQH" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="5GRtiN3Wh_4" role="3EZMnx">
+        <node concept="3F0ifn" id="5GRtiN3Wh_5" role="3EZMnx">
+          <property role="3F0ifm" value="base IRI" />
+        </node>
+        <node concept="3F0A7n" id="5GRtiN3Wh_6" role="3EZMnx">
+          <ref role="1NtTu8" to="ys6r:5GRtiN3O2Y$" resolve="baseIri" />
+        </node>
+        <node concept="2iRfu4" id="5GRtiN3Wh_7" role="2iSdaV" />
+        <node concept="lj46D" id="5GRtiN3Wh_8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="5GRtiN3Wh_9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="5GRtiN3Wh_a" role="pqm2j">
+          <node concept="3clFbS" id="5GRtiN3Wh_c" role="2VODD2">
+            <node concept="3clFbF" id="5GRtiN3Wh_d" role="3cqZAp">
+              <node concept="2OqwBi" id="5GRtiN3Wh_f" role="3clFbG">
+                <node concept="2OqwBi" id="5GRtiN3Wh_i" role="2Oq$k0">
+                  <node concept="pncrf" id="5GRtiN3Wh_l" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5GRtiN3Wh_m" role="2OqNvi">
+                    <ref role="3TsBF5" to="ys6r:5GRtiN3O2Y$" resolve="baseIri" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="5GRtiN3Wh_n" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="PMmxH" id="6jTY6rZ_boX" role="3EZMnx">
@@ -2616,16 +2644,11 @@
       <node concept="16NL3D" id="7lV$dXlJo2k" role="upBLP">
         <node concept="16Na2f" id="7lV$dXlJo2m" role="16NL3A">
           <node concept="3clFbS" id="7lV$dXlJo2o" role="2VODD2">
-            <node concept="3clFbF" id="7lV$dXlJ$re" role="3cqZAp">
-              <node concept="2YIFZM" id="7lV$dXlJ$x4" role="3clFbG">
-                <ref role="37wK5l" to="fk4s:~LangTag.check(java.lang.String)" resolve="check" />
-                <ref role="1Pybhc" to="fk4s:~LangTag" resolve="LangTag" />
-                <node concept="ub8z3" id="7lV$dXlJ$BQ" role="37wK5m" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="7FQFlbn1oKl" role="3cqZAp">
-              <node concept="39w1OS" id="7FQFlbn1oKj" role="3clFbG">
-                <ref role="39w2Dt" to="fk4s:~LangTag" resolve="LangTag" />
+            <node concept="3clFbF" id="5BdMn8Ccue1" role="3cqZAp">
+              <node concept="2YIFZM" id="5BdMn8Ccuj4" role="3clFbG">
+                <ref role="37wK5l" to="dsci:~LangTags.check(java.lang.String)" resolve="check" />
+                <ref role="1Pybhc" to="dsci:~LangTags" resolve="LangTags" />
+                <node concept="ub8z3" id="5BdMn8CcujL" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -3579,6 +3602,17 @@
         <node concept="3F1sOY" id="5tSQ8xWLpbW" role="3EZMnx">
           <ref role="1NtTu8" to="ys6r:25MWlU5UpGJ" resolve="identifier" />
         </node>
+      </node>
+      <node concept="3EZMnI" id="5GRtiN3WhnU" role="3EZMnx">
+        <node concept="3F0ifn" id="5GRtiN3WhnV" role="3EZMnx">
+          <property role="3F0ifm" value="base IRI" />
+        </node>
+        <node concept="3F0A7n" id="5GRtiN3WhnW" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="ys6r:5GRtiN3O2Y$" resolve="baseIri" />
+        </node>
+        <node concept="2iRfu4" id="5GRtiN3WhnX" role="2iSdaV" />
+        <node concept="VPM3Z" id="5GRtiN3WhnY" role="3F10Kt" />
       </node>
       <node concept="3EZMnI" id="6jTY6rZDeJ7" role="3EZMnx">
         <node concept="VPM3Z" id="6jTY6rZDeJ9" role="3F10Kt" />

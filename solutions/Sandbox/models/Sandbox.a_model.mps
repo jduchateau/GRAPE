@@ -121,6 +121,12 @@
         <child id="3543407481847299718" name="childMap" index="28P8zi" />
         <child id="3543407481847299719" name="parentMap" index="28P8zj" />
       </concept>
+      <concept id="5421493599161714850" name="RML.structure.TemplateSegmentReference" flags="ng" index="9aSGm">
+        <child id="5421493599161714851" name="reference" index="9aSGn" />
+      </concept>
+      <concept id="5421493599161714838" name="RML.structure.TemplateSegmentString" flags="ng" index="9aSGy">
+        <property id="5421493599161714843" name="value" index="9aSGJ" />
+      </concept>
       <concept id="3543407481851128128" name="RML.structure.ParentMap" flags="ng" index="2b7xWk" />
       <concept id="3543407481851128127" name="RML.structure.ChildMap" flags="ng" index="2b7xXF" />
       <concept id="2410254138872534997" name="RML.structure.NamedDefintionTriples" flags="ng" index="2$AQqb">
@@ -142,7 +148,7 @@
         <child id="6303025759225526832" name="value" index="FJIaS" />
       </concept>
       <concept id="6099872835424795707" name="RML.structure.TemplateExpr" flags="ng" index="IaUoX">
-        <property id="6099872835424795711" name="template_old" index="IaUoT" />
+        <child id="5421493599161611609" name="templateSegments" index="9avrH" />
       </concept>
       <concept id="6099872835424795705" name="RML.structure.ReferenceExpr" flags="ng" index="IaUoZ">
         <child id="3740792506033664917" name="referenceFormulation" index="37volz" />
@@ -427,7 +433,18 @@
           <ref role="29d1uc" node="2z4QKYxWat$" resolve="foaf" />
         </node>
         <node concept="IaUoX" id="34GH_iU2z0d" role="FGdDe">
-          <property role="IaUoT" value="http://example.org/project/{project_slug}" />
+          <node concept="9aSGy" id="5GRtiN3O1Ja" role="9avrH">
+            <property role="9aSGJ" value="http://example.org/project/" />
+          </node>
+          <node concept="9aSGm" id="5GRtiN3O1J8" role="9avrH">
+            <node concept="1KEjpa" id="5GRtiN3O1J5" role="9aSGn">
+              <node concept="1PaTwC" id="5GRtiN3O1J6" role="1KEjp8">
+                <node concept="3oM_SD" id="5GRtiN3O1J7" role="1PaTwD">
+                  <property role="3oM_SC" value="project_slug" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="29d5ma" id="25MWlU6qG2j" role="2$AQDL">
@@ -449,7 +466,18 @@
       <node concept="3Y090L" id="6T7chEgmu84" role="FAC90" />
       <node concept="IaUod" id="5tSQ8xWMz6_" role="2YYcL1">
         <node concept="IaUoX" id="5tSQ8xWMDtE" role="FGdDe">
-          <property role="IaUoT" value="http://example.com/{id}" />
+          <node concept="9aSGy" id="5GRtiN3O1Jb" role="9avrH">
+            <property role="9aSGJ" value="http://example.com/" />
+          </node>
+          <node concept="9aSGm" id="5GRtiN3O1Jg" role="9avrH">
+            <node concept="1KEjpa" id="5GRtiN3O1Jd" role="9aSGn">
+              <node concept="1PaTwC" id="5GRtiN3O1Je" role="1KEjp8">
+                <node concept="3oM_SD" id="5GRtiN3O1Jf" role="1PaTwD">
+                  <property role="3oM_SC" value="id" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="29d5ma" id="7Y6GWuSSLHM" role="FGrfI">
           <property role="29d1ub" value="Person" />
