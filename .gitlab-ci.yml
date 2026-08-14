@@ -1,5 +1,4 @@
 stages:
-  - prepare
   - build
   - deploy
 
@@ -21,16 +20,19 @@ pages:
     # will trigger a pages deploy
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
 
-prepare-carml:
-  stage: prepare
+build-plugin:
+  stage: build
   image: maven:3.9-eclipse-temurin-21
   cache:
-    key: "carml-dependency-cache"
+    key: "grape-build-cache"
     paths:
+      - build/mps-platform-cache
       - .m2/repository
-  script:
+  before_script:
+    - mkdir -p .m2/repository /root/.m2
+    - ln -sfn $CI_PROJECT_DIR/.m2/repository /root/.m2/repository
     - |
-      if [ ! -d ".m2/repository/io/carml/jar/carml-app-jena/1.5.0-SNAPSHOT" ]; then
+      if [ ! -d "$CI_PROJECT_DIR/.m2/repository/io/carml/jar/carml-app-jena/1.5.0-SNAPSHOT" ]; then
         echo "carml dependencies not found in cache. Building from source..."
 
         echo "=== 1. Building carml (core) ==="
@@ -45,27 +47,6 @@ prepare-carml:
       else
         echo "carml dependencies found in cache, skipping build."
       fi
-  artifacts:
-    paths:
-      - .m2/repository/io/carml
-    expire_in: 1 week
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-    # Trigger on version tags following semantic versioning (e.g., v0.1.2)
-    - if: $CI_COMMIT_TAG =~ /^v\d+\.\d+\.\d+/
-
-build-plugin:
-  stage: build
-  image: eclipse-temurin:21-jdk
-  needs:
-    - prepare-carml
-  cache:
-    key: "grape-mps-platform-cache"
-    paths:
-      - build/mps-platform-cache
-  before_script:
-    - mkdir -p /root/.m2
-    - ln -sfn $CI_PROJECT_DIR/.m2/repository /root/.m2/repository
   script:
     - ./gradlew zip
   artifacts:
