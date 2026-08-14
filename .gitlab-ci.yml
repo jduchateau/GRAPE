@@ -23,6 +23,9 @@ pages:
 build-plugin:
   stage: build
   image: eclipse-temurin:21-jdk
+  cache:
+    paths:
+      - build/mps-platform-cache
   script:
     - ./gradlew zip
   artifacts:

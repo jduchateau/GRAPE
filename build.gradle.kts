@@ -17,15 +17,18 @@ buildscript {
 
 repositories {
     mavenLocal()
-    maven {
-        name = "centralManualTesting"
-        url = uri("https://central.sonatype.com/api/v1/publisher/deployments/download/")
-        credentials(HttpHeaderCredentials::class)
-        authentication {
-            create<HttpHeaderAuthentication>("header")
-        }
-        content {
-            includeModule("io.github.kg-construct", "burp")
+    // Only use centralManualTesting repository locally (not in CI)
+    if (!System.getenv("CI").toBoolean()) {
+        maven {
+            name = "centralManualTesting"
+            url = uri("https://central.sonatype.com/api/v1/publisher/deployments/download/")
+            credentials(HttpHeaderCredentials::class)
+            authentication {
+                create<HttpHeaderAuthentication>("header")
+            }
+            content {
+                includeModule("io.github.kg-construct", "burp")
+            }
         }
     }
     mavenCentral()
