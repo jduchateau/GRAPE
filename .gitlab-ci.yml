@@ -24,7 +24,7 @@ build-plugin:
   stage: build
   image: maven:3.9-eclipse-temurin-21
   variables:
-    MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+    MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository"
   cache:
     key: "grape-build-cache"
     paths:
