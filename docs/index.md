@@ -12,7 +12,7 @@
 
 **Source Based Completion**: When using CSV sources, the system analyses the source structure and suggests references.
 
-**Run Mapping**: Supports running RML mappings with the **BURP** engine from the interface.
+**Run Mapping**: Supports running RML mappings with the **BURP** or **CARML** RML processor from the interface.
 
 **Generates Turtle**: All the RML nodes can be converted to Turtle to be used in other applications.
 !!! TIP

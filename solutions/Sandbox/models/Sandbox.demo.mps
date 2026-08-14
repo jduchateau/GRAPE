@@ -31,7 +31,7 @@
       <concept id="2937713717140295306" name="Turtle.structure.PrefixId" flags="ng" index="29d5m5">
         <property id="764855088606600268" name="emptyName" index="2v_DfE" />
         <property id="8013925443727419326" name="disableVocabularyDownload" index="ISk$5" />
-        <property id="5867233166325549765" name="vocabulary" index="34lheZ" />
+        <property id="5867233166325549765" name="downloadUrl" index="34lheZ" />
         <property id="7868724541385396558" name="sparqlVariant" index="3pBS89" />
         <child id="7868724541386564408" name="namespace" index="3pzv1Z" />
       </concept>
@@ -63,9 +63,6 @@
       <concept id="6127414803068812687" name="RML.IO.structure.ReferenceFormulationJSONPath" flags="ng" index="3tqwV3" />
       <concept id="8169920669489714720" name="RML.IO.structure.LogicalSourceInlineDef" flags="ng" index="1_rNmK" />
       <concept id="791507941088259868" name="RML.IO.structure.CurrentWorkingDirectoryRoot" flags="ng" index="1FyQXr" />
-      <concept id="791507941088259867" name="RML.IO.structure.DirectoryRoot" flags="ngI" index="1FyQXs">
-        <property id="2106191878550207927" name="path" index="2wXCZH" />
-      </concept>
       <concept id="7776130554352727640" name="RML.IO.structure.CsvColumn" flags="ng" index="1KEMJi">
         <property id="7776130554352855988" name="columnName" index="1KEjoY" />
       </concept>
@@ -230,22 +227,11 @@
           <node concept="9aSGy" id="6jTY6s0ypht" role="9avrH">
             <property role="9aSGJ" value="person/" />
           </node>
-          <node concept="9aSGm" id="6jTY6s0yphA" role="9avrH">
-            <node concept="1KEjpa" id="6jTY6s15daY" role="9aSGn">
-              <node concept="1PaTwC" id="6jTY6s15daZ" role="1KEjp8">
-                <node concept="3oM_SD" id="6jTY6s1kkb3" role="1PaTwD">
-                  <property role="3oM_SC" value="firstname" />
-                </node>
-              </node>
-              <node concept="1PaTwC" id="1dlaSHS8j6L" role="1KEjp8">
-                <node concept="3oM_SD" id="1dlaSHS8j70" role="1PaTwD">
-                  <property role="3oM_SC" value="hello" />
-                </node>
-                <node concept="3oM_SD" id="1dlaSHS8j74" role="1PaTwD">
-                  <property role="3oM_SC" value="world" />
-                </node>
-                <node concept="3oM_SD" id="1dlaSHS8j75" role="1PaTwD">
-                  <property role="3oM_SC" value="" />
+          <node concept="9aSGm" id="5W8OBhcVzNB" role="9avrH">
+            <node concept="1KEjpa" id="5W8OBhcVzNF" role="9aSGn">
+              <node concept="1PaTwC" id="5W8OBhcVzNG" role="1KEjp8">
+                <node concept="3oM_SD" id="5W8OBhcVzNH" role="1PaTwD">
+                  <property role="3oM_SC" value="$.firstname" />
                 </node>
               </node>
             </node>
@@ -258,7 +244,7 @@
             <node concept="1KEjpa" id="69q1mim2MUO" role="37volz">
               <node concept="1PaTwC" id="69q1mim2MUP" role="1KEjp8">
                 <node concept="3oM_SD" id="69q1mim2MUQ" role="1PaTwD">
-                  <property role="3oM_SC" value="firstname" />
+                  <property role="3oM_SC" value="$.firstname" />
                 </node>
               </node>
             </node>
@@ -306,7 +292,7 @@
                   <node concept="1KEjpa" id="69q1mim2MUR" role="37volz">
                     <node concept="1PaTwC" id="69q1mim2MUS" role="1KEjp8">
                       <node concept="3oM_SD" id="69q1mim2MUT" role="1PaTwD">
-                        <property role="3oM_SC" value="lastname" />
+                        <property role="3oM_SC" value="$.lastname" />
                       </node>
                     </node>
                   </node>
@@ -340,7 +326,7 @@
                 <node concept="1KEjpa" id="69q1mim2MUX" role="37volz">
                   <node concept="1PaTwC" id="69q1mim2MUY" role="1KEjp8">
                     <node concept="3oM_SD" id="69q1mim2MUZ" role="1PaTwD">
-                      <property role="3oM_SC" value="movie" />
+                      <property role="3oM_SC" value="$.movie" />
                     </node>
                   </node>
                 </node>
@@ -393,9 +379,7 @@
         <node concept="2JlPsY" id="jSjFvIoadt" role="FCw5y">
           <node concept="FCOsJ" id="jSjFvIoadB" role="1FyQV4">
             <property role="1Fxk42" value="movies.csv" />
-            <node concept="1FyQXr" id="urQ0ttNieJ" role="1Fxk40">
-              <property role="2wXCZH" value="V:/grape/solutions/Sandbox/data" />
-            </node>
+            <node concept="1FyQXr" id="urQ0ttNieJ" role="1Fxk40" />
           </node>
         </node>
         <node concept="3tqwV1" id="3fDXJrO_7dS" role="3tqwV9" />

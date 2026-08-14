@@ -27,4 +27,7 @@ build/
 
 solutions/Turtle.external/lib/*.jar
 languages/Turtle.runtime/lib/*.jar
+solutions/burp.external/lib/*.jar
+solutions/carml.external/lib/*.jar
 /site/
+bin/

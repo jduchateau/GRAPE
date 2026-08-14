@@ -1,3 +1,7 @@
+stages:
+  - build
+  - deploy
+
 pages:
   stage: deploy
   needs: [ ]
@@ -15,3 +19,42 @@ pages:
     # This ensures that only pushes to the default branch
     # will trigger a pages deploy
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+
+build-plugin:
+  stage: build
+  image: maven:3.9-eclipse-temurin-21
+  variables:
+    MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository"
+    # Disable shallow cloning so that JReleaser can diff between tags to generate changelog
+    GIT_DEPTH: 0
+  cache:
+    key: "grape-build-cache"
+    paths:
+      - build/mps-platform-cache
+      - .m2/repository
+  before_script:
+    - |
+      if [ ! -f ".m2/repository/io/carml/carml-engine/1.0.0-SNAPSHOT/carml-engine-1.0.0-SNAPSHOT.jar" ]; then
+        echo "carml core dependency not found in cache. Building from source..."
+        git clone --branch rml-cg --depth 1 https://github.com/carml/carml.git /tmp/carml
+        (cd /tmp/carml && mvn clean install -DskipTests)
+        rm -rf /tmp/carml
+      else
+        echo "carml dependencies found in cache, skipping build."
+      fi
+  script:
+    - ./gradlew zip
+    - |
+      if [ -n "$CI_COMMIT_TAG" ]; then
+        echo "=== Release tag detected: $CI_COMMIT_TAG. Running JReleaser... ==="
+        export JRELEASER_PROJECT_VERSION=${CI_COMMIT_TAG#v}
+        export JRELEASER_GITLAB_TOKEN="${JRELEASER_GITLAB_TOKEN:-$CI_JOB_TOKEN}"
+        mkdir -p build/jreleaser
+        ./gradlew jreleaserRelease
+      else
+        echo "No release tag detected. Skipping release."
+      fi
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    # Trigger on version tags following semantic versioning (e.g., v0.1.2)
+    - if: $CI_COMMIT_TAG =~ /^v\d+\.\d+\.\d+/

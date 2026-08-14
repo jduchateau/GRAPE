@@ -6,7 +6,7 @@
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -182,7 +182,6 @@
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
-        <child id="1107880067339" name="method" index="3MN40a" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
@@ -240,15 +239,9 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -491,9 +484,39 @@
         </node>
       </node>
       <node concept="z59LJ" id="1y7fkCtbco4" role="lGtFl">
-        <node concept="TZ5HA" id="1y7fkCtbco5" role="TZ5H$">
-          <node concept="1dT_AC" id="1y7fkCtbco6" role="1dT_Ay">
-            <property role="1dT_AB" value="Prefix.cc returns a singleton list so just store the first item." />
+        <node concept="1PaTwC" id="89GFgMJGjZ" role="1Vez_I">
+          <node concept="3oM_SD" id="89GFgMJGk0" role="1PaTwD">
+            <property role="3oM_SC" value="Prefix.cc" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGk1" role="1PaTwD">
+            <property role="3oM_SC" value="returns" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGk2" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGk3" role="1PaTwD">
+            <property role="3oM_SC" value="singleton" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGk4" role="1PaTwD">
+            <property role="3oM_SC" value="list" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGk5" role="1PaTwD">
+            <property role="3oM_SC" value="so" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGk6" role="1PaTwD">
+            <property role="3oM_SC" value="just" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGk7" role="1PaTwD">
+            <property role="3oM_SC" value="store" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGk8" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGk9" role="1PaTwD">
+            <property role="3oM_SC" value="first" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGka" role="1PaTwD">
+            <property role="3oM_SC" value="item." />
           </node>
         </node>
       </node>
@@ -2011,7 +2034,7 @@
       <node concept="17QB3L" id="4qVl4MKcVcq" role="2lK19J" />
     </node>
     <node concept="3Tm1VV" id="4qVl4MKcVbZ" role="1B3o_S" />
-    <node concept="3clFb_" id="1h8QYeAv_c" role="3MN40a">
+    <node concept="3clFb_" id="1h8QYeAv_c" role="jymVt">
       <property role="TrG5h" value="presentation" />
       <node concept="17QB3L" id="1h8QYeAvDu" role="3clF45" />
       <node concept="3Tm1VV" id="1h8QYeAv_e" role="1B3o_S" />
@@ -2196,9 +2219,39 @@
         </node>
       </node>
       <node concept="z59LJ" id="1y48SYpcF$N" role="lGtFl">
-        <node concept="TZ5HA" id="1y48SYpcF$O" role="TZ5H$">
-          <node concept="1dT_AC" id="1y48SYpcF$P" role="1dT_Ay">
-            <property role="1dT_AB" value="Prefix.cc returns a singleton list so just store the first item." />
+        <node concept="1PaTwC" id="89GFgMJGkb" role="1Vez_I">
+          <node concept="3oM_SD" id="89GFgMJGkc" role="1PaTwD">
+            <property role="3oM_SC" value="Prefix.cc" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkd" role="1PaTwD">
+            <property role="3oM_SC" value="returns" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGke" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkf" role="1PaTwD">
+            <property role="3oM_SC" value="singleton" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkg" role="1PaTwD">
+            <property role="3oM_SC" value="list" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkh" role="1PaTwD">
+            <property role="3oM_SC" value="so" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGki" role="1PaTwD">
+            <property role="3oM_SC" value="just" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkj" role="1PaTwD">
+            <property role="3oM_SC" value="store" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkk" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkl" role="1PaTwD">
+            <property role="3oM_SC" value="first" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkm" role="1PaTwD">
+            <property role="3oM_SC" value="item." />
           </node>
         </node>
       </node>
@@ -3344,14 +3397,56 @@
       <node concept="3Tm1VV" id="5GYVJOCEHzs" role="1B3o_S" />
       <node concept="3cqZAl" id="5GYVJOCEHzt" role="3clF45" />
       <node concept="P$JXv" id="5GYVJOCEHzu" role="lGtFl">
-        <node concept="TZ5HA" id="5GYVJOCEHCA" role="TZ5H$">
-          <node concept="1dT_AC" id="5GYVJOCEHCB" role="1dT_Ay">
-            <property role="1dT_AB" value="Ensures the vocabulary is loaded into the Dataset." />
+        <node concept="1PaTwC" id="89GFgMJGkn" role="1Vez_I">
+          <node concept="3oM_SD" id="89GFgMJGko" role="1PaTwD">
+            <property role="3oM_SC" value="Ensures" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkp" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkq" role="1PaTwD">
+            <property role="3oM_SC" value="vocabulary" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkr" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGks" role="1PaTwD">
+            <property role="3oM_SC" value="loaded" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkt" role="1PaTwD">
+            <property role="3oM_SC" value="into" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGku" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkv" role="1PaTwD">
+            <property role="3oM_SC" value="Dataset." />
           </node>
         </node>
-        <node concept="TZ5HA" id="5GYVJOCEHCC" role="TZ5H$">
-          <node concept="1dT_AC" id="5GYVJOCEHCD" role="1dT_Ay">
-            <property role="1dT_AB" value="Order: Memory -&gt; Disk Cache -&gt; Download (Url/Override/LOV)." />
+        <node concept="1PaTwC" id="89GFgMJGkw" role="1Vez_I">
+          <node concept="3oM_SD" id="89GFgMJGkx" role="1PaTwD">
+            <property role="3oM_SC" value="Order:" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGky" role="1PaTwD">
+            <property role="3oM_SC" value="Memory" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkz" role="1PaTwD">
+            <property role="3oM_SC" value="-&gt;" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGk$" role="1PaTwD">
+            <property role="3oM_SC" value="Disk" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGk_" role="1PaTwD">
+            <property role="3oM_SC" value="Cache" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkA" role="1PaTwD">
+            <property role="3oM_SC" value="-&gt;" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkB" role="1PaTwD">
+            <property role="3oM_SC" value="Download" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGkC" role="1PaTwD">
+            <property role="3oM_SC" value="(Url/Override/LOV)." />
           </node>
         </node>
       </node>

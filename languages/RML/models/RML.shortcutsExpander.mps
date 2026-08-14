@@ -4,9 +4,9 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
@@ -36,6 +36,9 @@
       <concept id="1239576519914" name="jetbrains.mps.baseLanguage.tuples.structure.NamedTupleComponentAccessOperation" flags="nn" index="2sxana">
         <reference id="1239576542472" name="component" index="2sxfKC" />
       </concept>
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
@@ -144,7 +147,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -152,13 +154,10 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -189,7 +188,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -214,6 +212,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -255,9 +261,27 @@
     <node concept="2tJIrI" id="4WD8E3kC5md" role="jymVt" />
     <node concept="3Tm1VV" id="4WD8E3kC5js" role="1B3o_S" />
     <node concept="3UR2Jj" id="4WD8E3kC5km" role="lGtFl">
-      <node concept="TZ5HA" id="4WD8E3kC5kn" role="TZ5H$">
-        <node concept="1dT_AC" id="4WD8E3kC5ko" role="1dT_Ay">
-          <property role="1dT_AB" value="Replace RML shortcuts by their full equivalent" />
+      <node concept="1PaTwC" id="89GFgMJGfP" role="1Vez_I">
+        <node concept="3oM_SD" id="89GFgMJGfQ" role="1PaTwD">
+          <property role="3oM_SC" value="Replace" />
+        </node>
+        <node concept="3oM_SD" id="89GFgMJGfR" role="1PaTwD">
+          <property role="3oM_SC" value="RML" />
+        </node>
+        <node concept="3oM_SD" id="89GFgMJGfS" role="1PaTwD">
+          <property role="3oM_SC" value="shortcuts" />
+        </node>
+        <node concept="3oM_SD" id="89GFgMJGfT" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="89GFgMJGfU" role="1PaTwD">
+          <property role="3oM_SC" value="their" />
+        </node>
+        <node concept="3oM_SD" id="89GFgMJGfV" role="1PaTwD">
+          <property role="3oM_SC" value="full" />
+        </node>
+        <node concept="3oM_SD" id="89GFgMJGfW" role="1PaTwD">
+          <property role="3oM_SC" value="equivalent" />
         </node>
       </node>
     </node>
@@ -520,7 +544,7 @@
                             <ref role="3Tt5mk" to="16h3:2z4QKYxWbDb" resolve="verb" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="25MWlU5ATtI" role="2OqNvi">
+                        <node concept="3zqWPK" id="89GFgMJGaW" role="2OqNvi">
                           <ref role="37wK5l" to="4g9:17ntPn9kXuX" resolve="getFullIdentifier" />
                         </node>
                       </node>
@@ -585,7 +609,7 @@
                               <ref role="3Tt5mk" to="16h3:2z4QKYxWbDb" resolve="verb" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="25MWlU5C7Og" role="2OqNvi">
+                          <node concept="3zqWPK" id="89GFgMJGaY" role="2OqNvi">
                             <ref role="37wK5l" to="4g9:17ntPn9kXuX" resolve="getFullIdentifier" />
                           </node>
                         </node>
@@ -732,7 +756,7 @@
                               <ref role="3Tt5mk" to="16h3:2z4QKYxWbDb" resolve="verb" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="25MWlU5F28y" role="2OqNvi">
+                          <node concept="3zqWPK" id="89GFgMJGb0" role="2OqNvi">
                             <ref role="37wK5l" to="4g9:17ntPn9kXuX" resolve="getFullIdentifier" />
                           </node>
                         </node>
@@ -902,7 +926,7 @@
                               <ref role="3Tt5mk" to="16h3:2z4QKYxWbDb" resolve="verb" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="7x$r2tx8g5z" role="2OqNvi">
+                          <node concept="3zqWPK" id="89GFgMJGb2" role="2OqNvi">
                             <ref role="37wK5l" to="4g9:17ntPn9kXuX" resolve="getFullIdentifier" />
                           </node>
                         </node>
@@ -1101,27 +1125,102 @@
       </node>
       <node concept="3cqZAl" id="25MWlU5_uKI" role="3clF45" />
       <node concept="P$JXv" id="25MWlU5$QiC" role="lGtFl">
-        <node concept="TZ5HA" id="25MWlU5$QiD" role="TZ5H$">
-          <node concept="1dT_AC" id="25MWlU5$QiE" role="1dT_Ay">
-            <property role="1dT_AB" value="Replace poNode{?_ ?obj} by poNode{?newPred [ ?expressionPred ?obj]} " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="25MWlU5$QiF" role="3nqlJM">
-          <property role="TUZQ4" value="The Predicate object to mutate inplace" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="25MWlU5$QiH" role="zr_5Q">
             <ref role="zr_51" node="25MWlU5$wO5" resolve="poNode" />
           </node>
+          <node concept="1PaTwC" id="89GFgMJGg6" role="1Vez_I">
+            <node concept="3oM_SD" id="89GFgMJGg7" role="1PaTwD">
+              <property role="3oM_SC" value="The" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGg8" role="1PaTwD">
+              <property role="3oM_SC" value="Predicate" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGg9" role="1PaTwD">
+              <property role="3oM_SC" value="object" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGga" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGgb" role="1PaTwD">
+              <property role="3oM_SC" value="mutate" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGgc" role="1PaTwD">
+              <property role="3oM_SC" value="inplace" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="25MWlU5$QiI" role="3nqlJM">
-          <property role="TUZQ4" value="the new predicate" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="25MWlU5$QiK" role="zr_5Q">
             <ref role="zr_51" node="25MWlU5$vaY" resolve="newPred" />
           </node>
+          <node concept="1PaTwC" id="89GFgMJGgd" role="1Vez_I">
+            <node concept="3oM_SD" id="89GFgMJGge" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGgf" role="1PaTwD">
+              <property role="3oM_SC" value="new" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGgg" role="1PaTwD">
+              <property role="3oM_SC" value="predicate" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="25MWlU5$QiL" role="3nqlJM">
-          <property role="TUZQ4" value="the predicate inside the blanknode property list" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="25MWlU5$QiN" role="zr_5Q">
             <ref role="zr_51" node="25MWlU5$vb0" resolve="expresssionPred" />
+          </node>
+          <node concept="1PaTwC" id="89GFgMJGgh" role="1Vez_I">
+            <node concept="3oM_SD" id="89GFgMJGgi" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGgj" role="1PaTwD">
+              <property role="3oM_SC" value="predicate" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGgk" role="1PaTwD">
+              <property role="3oM_SC" value="inside" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGgl" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGgm" role="1PaTwD">
+              <property role="3oM_SC" value="blanknode" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGgn" role="1PaTwD">
+              <property role="3oM_SC" value="property" />
+            </node>
+            <node concept="3oM_SD" id="89GFgMJGgo" role="1PaTwD">
+              <property role="3oM_SC" value="list" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="89GFgMJGfX" role="1Vez_I">
+          <node concept="3oM_SD" id="89GFgMJGfY" role="1PaTwD">
+            <property role="3oM_SC" value="Replace" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGfZ" role="1PaTwD">
+            <property role="3oM_SC" value="poNode{?_" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGg0" role="1PaTwD">
+            <property role="3oM_SC" value="?obj}" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGg1" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGg2" role="1PaTwD">
+            <property role="3oM_SC" value="poNode{?newPred" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGg3" role="1PaTwD">
+            <property role="3oM_SC" value="[" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGg4" role="1PaTwD">
+            <property role="3oM_SC" value="?expressionPred" />
+          </node>
+          <node concept="3oM_SD" id="89GFgMJGg5" role="1PaTwD">
+            <property role="3oM_SC" value="?obj]}" />
           </node>
         </node>
       </node>

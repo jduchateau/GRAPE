@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/RDFMatcher/RDFMatcher.mpl" folder="Turtle" />
       <modulePath path="$PROJECT_DIR$/languages/RML.FNML/RML.FNML.mpl" folder="RML" />
       <modulePath path="$PROJECT_DIR$/languages/RML.IO/RML.IO.mpl" folder="RML" />
       <modulePath path="$PROJECT_DIR$/languages/RML/RML.mpl" folder="RML" />
@@ -14,6 +13,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/Turtle.external/Turtle.external.msd" folder="Turtle" />
       <modulePath path="$PROJECT_DIR$/solutions/Turtle.parser/Turtle.parser.msd" folder="Turtle" />
       <modulePath path="$PROJECT_DIR$/solutions/TurtlePlugin/TurtlePlugin.msd" folder="Turtle" />
+      <modulePath path="$PROJECT_DIR$/solutions/burp.external/burp.external.msd" folder="RML" />
+      <modulePath path="$PROJECT_DIR$/solutions/carml.external/carml.external.msd" folder="RML" />
     </projectModules>
   </component>
 </project>

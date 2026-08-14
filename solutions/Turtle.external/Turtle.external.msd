@@ -3,7 +3,6 @@
   <models>
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="antlr4-runtime.jar" />
-      <sourceRoot location="caffeine.jar" />
       <sourceRoot location="collection.jar" />
       <sourceRoot location="commons-codec.jar" />
       <sourceRoot location="commons-collections4.jar" />
@@ -22,6 +21,8 @@
       <sourceRoot location="jena-base.jar" />
       <sourceRoot location="jena-core.jar" />
       <sourceRoot location="jena-iri.jar" />
+      <sourceRoot location="jena-iri3986.jar" />
+      <sourceRoot location="jena-langtag.jar" />
       <sourceRoot location="jena-querybuilder.jar" />
       <sourceRoot location="jena-rdfconnection.jar" />
       <sourceRoot location="jena-shacl.jar" />
@@ -36,6 +37,7 @@
   <facets>
     <facet type="java" compile="ext" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/jena-langtag.jar" />
       <library location="${module}/lib/antlr4-runtime.jar" />
       <library location="${module}/lib/caffeine.jar" />
       <library location="${module}/lib/collection.jar" />
@@ -72,8 +74,9 @@
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
-    <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="3" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
+    <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>

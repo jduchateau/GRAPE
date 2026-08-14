@@ -8,6 +8,7 @@
   <imports>
     <import index="ys6r" ref="r:dcbf118f-eb3d-496f-96d3-8d2d8ea2b4fe(RML.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="16h3" ref="r:af42d9c5-8c1d-4825-92e5-8a5fd6bee7b8(Turtle.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -48,6 +49,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1R$stKKXd$U" role="PzmwI">
       <ref role="PrY4T" to="ys6r:5iB6wpUzbKt" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="58tPkD8l0ry" role="PzmwI">
+      <ref role="PrY4T" to="16h3:58tPkD7WaFX" resolve="PredicateObjectProducer" />
     </node>
     <node concept="1TJgyj" id="1R$stKKXd_0" role="1TKVEi">
       <property role="IQ2ns" value="2153971712318036288" />

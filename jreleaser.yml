@@ -1,0 +1,46 @@
+project:
+  name: GrapePlugin
+  description: GRAPE plugin for JetBrains MPS
+  copyright: 2026 Jakub Duchateau
+  license: EUPL-1.2
+  authors:
+    - Jakub Duchateau
+  links:
+    homepage: https://gitlab.uliege.be/JakubDuchateau/grape
+    documentation: https://gitlab.uliege.be/JakubDuchateau/grape
+  languages:
+    java:
+      enabled: false
+
+upload:
+  gitlab:
+    grape:
+      active: ALWAYS
+      host: gitlab.uliege.be
+      projectIdentifier: '6137'
+      packageName: GrapePlugin
+      artifacts: true
+
+release:
+  gitlab:
+    enabled: true
+    host: gitlab.uliege.be
+    apiEndpoint: https://gitlab.uliege.be/api/v4
+    owner: JakubDuchateau
+    name: grape
+    projectIdentifier: '6137'
+    uploadAssets: NEVER
+    uploadLinks:
+      gitlab: grape
+    skipTag: true
+    overwrite: true
+
+signing:
+  active: NEVER
+
+distributions:
+  GrapePlugin:
+    active: ALWAYS
+    type: BINARY
+    artifacts:
+      - path: build/artifacts/GrapePlugin/GrapePlugin.zip
