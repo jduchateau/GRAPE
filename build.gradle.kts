@@ -1,5 +1,4 @@
 import com.specificlanguages.mps.MainBuild
-import de.undercouch.gradle.tasks.download.Download
 import java.util.*
 
 buildscript {
@@ -35,8 +34,7 @@ repositories {
 }
 
 plugins {
-    id("com.specificlanguages.mps") version "2.0.0"
-    id("de.undercouch.download") version "5.7.0"
+    id("com.specificlanguages.mps") version "2.1.0"
 }
 
 val antlrVersion = "4.13.2"
@@ -81,7 +79,6 @@ mpsBuilds {
     }
 }
 
-val antlrJar = file("build/antlr/antlr4-complete.jar")
 val pluginArtefactDirectory = "build/artifacts/GrapePlugin"
 
 fun getLanguageVersion(): String {
@@ -97,21 +94,6 @@ fun getLanguageVersion(): String {
 version = System.getenv("CI_COMMIT_TAG")?.removePrefix("v")?.trim() ?: getLanguageVersion()
 
 tasks {
-    val downloadAntlr by registering(Download::class) {
-        src("https://www.antlr.org/download/antlr-$antlrVersion-complete.jar")
-        dest(antlrJar)
-        group = "antlr"
-    }
-
-    register<JavaExec>("runAntlr") {
-        dependsOn(downloadAntlr)
-        group = "antlr"
-        description = "Run ANTLR on Turtle.g4"
-        classpath = files(antlrJar)
-        args = listOf("Turtle.g4", "-no-listener", "-visitor", "-package", "converter.grammar")
-        workingDir = file("solutions/Turtle.parser/grammar")
-    }
-
     named("resolveCarml") {
         finalizedBy(":carml-configurer:jar")
     }
