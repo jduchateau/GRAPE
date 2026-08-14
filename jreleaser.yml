@@ -32,6 +32,7 @@ release:
     uploadAssets: NEVER
     uploadLinks:
       gitlab: grape
+    skipTag: true
     overwrite: true
 
 signing:
