@@ -40,6 +40,7 @@ plugins {
 
 jreleaser {
     configFile.set(file("jreleaser.yml"))
+    layout.buildDirectory.dir("jreleaser").get().asFile.mkdirs()
 }
 
 val antlrVersion = "4.13.2"
