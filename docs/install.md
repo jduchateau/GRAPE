@@ -36,18 +36,11 @@ git clone --no-depth https://gitlab.uliege.be/JakubDuchateau/grape.git
 
 ### 1. Install CARML dependencies to Maven Local
 
-GRAPE currently requires the `rml-cg` branches of `carml` and `carml-jar`. Build and install them into your local Maven cache (`~/.m2/repository`):
+GRAPE uses CARML libraries from the `rml-cg` branch of `carml`. Build and install them into your local Maven cache (`~/.m2/repository`):
 
 ```shell
-# 1. Build carml (core)
 git clone --branch rml-cg --depth 1 https://github.com/carml/carml.git
 cd carml
-mvn clean install -DskipTests
-cd ..
-
-# 2. Build carml-jar (cli & bundles)
-git clone --branch rml-cg --depth 1 https://github.com/carml/carml-jar.git
-cd carml-jar
 mvn clean install -DskipTests
 cd ..
 ```

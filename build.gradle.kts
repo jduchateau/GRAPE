@@ -19,7 +19,6 @@ repositories {
     mavenLocal {
         content {
             includeGroup("io.carml")
-            includeGroup("io.carml.jar")
         }
     }
     // CI builds custom dependencies (carml) into project-local .m2/repository for caching
@@ -27,7 +26,6 @@ repositories {
         url = uri("${layout.projectDirectory}/.m2/repository")
         content {
             includeGroup("io.carml")
-            includeGroup("io.carml.jar")
         }
     }
     mavenCentral()
@@ -37,10 +35,16 @@ repositories {
 
 plugins {
     id("com.specificlanguages.mps") version "2.1.0"
+    id("org.jreleaser") version "1.16.0"
+}
+
+jreleaser {
+    configFile.set(file("jreleaser.yml"))
 }
 
 val antlrVersion = "4.13.2"
 val jenaVersion = "5.6.0"
+val carmlVersion = "1.0.0-SNAPSHOT"
 
 dependencies {
     mps("com.jetbrains:mps:2026.1")
@@ -67,9 +71,15 @@ bundledDependencies {
 
     create("carml") {
         destinationDir = layout.projectDirectory.dir("solutions/carml.external/lib")
-        dependency("io.carml.jar:carml-app-jena:1.5.0-SNAPSHOT")
+        dependency("io.carml:carml-engine:$carmlVersion")
+        dependency("io.carml:carml-model:$carmlVersion")
+        dependency("io.carml:carml-rdf-mapper:$carmlVersion")
+        dependency("io.carml:carml-logical-source-resolver-jsonpath:$carmlVersion")
+        dependency("io.carml:carml-logical-source-resolver-xpath:$carmlVersion")
+        dependency("io.carml:carml-logical-source-resolver-csv:$carmlVersion")
         dependency("com.github.fnoio:grel-functions-java:v0.10.1")
         dependency("be.ugent.idlab.knows:idlab-functions-java:1.4.0")
+        dependency("info.picocli:picocli:4.7.7")
     }
 }
 
@@ -110,11 +120,11 @@ tasks {
     }
 
     named("generateBuildScripts") {
-        dependsOn(":antlr-parser:jar")
+        dependsOn(":antlr-parser:jar", ":carml-configurer:jar")
     }
 
     named("generateGRAPE") {
-        dependsOn(":antlr-parser:jar")
+        dependsOn(":antlr-parser:jar", ":carml-configurer:jar")
     }
 
     // Add verification task

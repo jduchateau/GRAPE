@@ -8,8 +8,9 @@ project:
   links:
     homepage: https://gitlab.uliege.be/JakubDuchateau/grape
     documentation: https://gitlab.uliege.be/JakubDuchateau/grape
-  java:
-    enabled: false
+  languages:
+    java:
+      enabled: false
 
 release:
   gitlab:

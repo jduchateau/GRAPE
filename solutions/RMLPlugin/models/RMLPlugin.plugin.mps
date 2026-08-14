@@ -4934,6 +4934,67 @@
   </node>
   <node concept="2LYoGX" id="5JdcZP3kvHy">
     <property role="TrG5h" value="carml" />
+    <node concept="2LYoGM" id="4BpsjFkVo3M" role="2LYoGV">
+      <property role="TrG5h" value="protect" />
+      <node concept="3Tm1VV" id="4BpsjFkVo3N" role="1B3o_S" />
+      <node concept="17QB3L" id="4BpsjFkVo3O" role="3clF45" />
+      <node concept="3clFbS" id="4BpsjFkVo3P" role="3clF47">
+        <node concept="3clFbJ" id="4BpsjFkVo3Q" role="3cqZAp">
+          <node concept="3clFbS" id="4BpsjFkVo3R" role="3clFbx">
+            <node concept="3cpWs6" id="4BpsjFkVo3S" role="3cqZAp">
+              <node concept="Xl_RD" id="4BpsjFkVo3T" role="3cqZAk">
+                <property role="Xl_RC" value="" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="4BpsjFkVo3U" role="3clFbw">
+            <node concept="10Nm6u" id="4BpsjFkVo3V" role="3uHU7w" />
+            <node concept="37vLTw" id="4BpsjFkVo3W" role="3uHU7B">
+              <ref role="3cqZAo" node="4BpsjFkVo4b" resolve="result" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4BpsjFkVo3X" role="3cqZAp">
+          <node concept="3clFbS" id="4BpsjFkVo3Y" role="3clFbx">
+            <node concept="3cpWs6" id="4BpsjFkVo3Z" role="3cqZAp">
+              <node concept="3cpWs3" id="4BpsjFkVo40" role="3cqZAk">
+                <node concept="Xl_RD" id="4BpsjFkVo41" role="3uHU7w">
+                  <property role="Xl_RC" value="\&quot;" />
+                </node>
+                <node concept="3cpWs3" id="4BpsjFkVo42" role="3uHU7B">
+                  <node concept="Xl_RD" id="4BpsjFkVo43" role="3uHU7B">
+                    <property role="Xl_RC" value="\&quot;" />
+                  </node>
+                  <node concept="37vLTw" id="4BpsjFkVo44" role="3uHU7w">
+                    <ref role="3cqZAo" node="4BpsjFkVo4b" resolve="result" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4BpsjFkVo45" role="3clFbw">
+            <node concept="37vLTw" id="4BpsjFkVo46" role="2Oq$k0">
+              <ref role="3cqZAo" node="4BpsjFkVo4b" resolve="result" />
+            </node>
+            <node concept="liA8E" id="4BpsjFkVo47" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+              <node concept="Xl_RD" id="4BpsjFkVo48" role="37wK5m">
+                <property role="Xl_RC" value=" " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4BpsjFkVo49" role="3cqZAp">
+          <node concept="37vLTw" id="4BpsjFkVo4a" role="3cqZAk">
+            <ref role="3cqZAo" node="4BpsjFkVo4b" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4BpsjFkVo4b" role="3clF46">
+        <property role="TrG5h" value="result" />
+        <node concept="17QB3L" id="4BpsjFkVo4c" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="VMRTV" id="5JdcZP3kTjE" role="VMfyR">
       <property role="TrG5h" value="debuggerSettings" />
       <node concept="17QB3L" id="5JdcZP3kTjG" role="1tU5fm" />
@@ -4971,17 +5032,6 @@
       </node>
       <node concept="9aQIb" id="5JdcZP3kTjZ" role="3rFUVF">
         <node concept="3clFbS" id="5JdcZP3kTk1" role="9aQI4">
-          <node concept="3cpWs8" id="2m1amDljQRv" role="3cqZAp">
-            <node concept="3cpWsn" id="2m1amDljQRw" role="3cpWs9">
-              <property role="TrG5h" value="param_arg" />
-              <node concept="2dOA70" id="2m1amDljQRx" role="1tU5fm" />
-              <node concept="1tenjt" id="2m1amDljQRy" role="33vP2m">
-                <node concept="Xl_RD" id="2m1amDljRD8" role="1r8FgC">
-                  <property role="Xl_RC" value="map" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="5JdcZP3lacj" role="3cqZAp">
             <node concept="3cpWsn" id="5JdcZP3lack" role="3cpWs9">
               <property role="TrG5h" value="param_mapping" />
@@ -4989,10 +5039,16 @@
               <node concept="1tenjt" id="5JdcZP3lacm" role="33vP2m">
                 <node concept="2dOGH5" id="5JdcZP3lacn" role="1r8FgC">
                   <node concept="Xl_RD" id="5JdcZP3laco" role="2dOGIT">
-                    <property role="Xl_RC" value="-m" />
+                    <property role="Xl_RC" value="--mapping" />
                   </node>
-                  <node concept="2LYoG9" id="5JdcZP3lbnE" role="2dOGIY">
-                    <ref role="2LYoGb" node="5JdcZP3kTjQ" resolve="mappingFile" />
+                  <node concept="2OqwBi" id="4BpsjFkVMsk" role="2dOGIY">
+                    <node concept="2WthIp" id="4BpsjFkVMkr" role="2Oq$k0" />
+                    <node concept="2XshWL" id="4BpsjFkVMFn" role="2OqNvi">
+                      <ref role="2WH_rO" node="4BpsjFkVo3M" resolve="protect" />
+                      <node concept="2LYoG9" id="4BpsjFkVMGy" role="2XxRq1">
+                        <ref role="2LYoGb" node="5JdcZP3kTjQ" resolve="mappingFile" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -5005,10 +5061,16 @@
               <node concept="1tenjt" id="6Qz4eQrU58S" role="33vP2m">
                 <node concept="2dOGH5" id="6Qz4eQrUce_" role="1r8FgC">
                   <node concept="Xl_RD" id="6Qz4eQrUcrl" role="2dOGIT">
-                    <property role="Xl_RC" value="-o" />
+                    <property role="Xl_RC" value="--output" />
                   </node>
-                  <node concept="2LYoG9" id="6Qz4eQrUdD4" role="2dOGIY">
-                    <ref role="2LYoGb" node="5JdcZP3kTjT" resolve="outputFile" />
+                  <node concept="2OqwBi" id="4BpsjFkVMJz" role="2dOGIY">
+                    <node concept="2WthIp" id="4BpsjFkVMHq" role="2Oq$k0" />
+                    <node concept="2XshWL" id="4BpsjFkVMN4" role="2OqNvi">
+                      <ref role="2WH_rO" node="4BpsjFkVo3M" resolve="protect" />
+                      <node concept="2LYoG9" id="4BpsjFkVMOf" role="2XxRq1">
+                        <ref role="2LYoGb" node="5JdcZP3kTjT" resolve="outputFile" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -5021,10 +5083,16 @@
               <node concept="1tenjt" id="6Qz4eQrU5dm" role="33vP2m">
                 <node concept="2dOGH5" id="6Qz4eQrU5q_" role="1r8FgC">
                   <node concept="Xl_RD" id="6Qz4eQrU5rO" role="2dOGIT">
-                    <property role="Xl_RC" value="-r" />
+                    <property role="Xl_RC" value="--working-dir" />
                   </node>
-                  <node concept="2LYoG9" id="6Qz4eQrU5t_" role="2dOGIY">
-                    <ref role="2LYoGb" node="5JdcZP3kTjW" resolve="workingDirectory" />
+                  <node concept="2OqwBi" id="4BpsjFkVMV$" role="2dOGIY">
+                    <node concept="2WthIp" id="4BpsjFkVMP7" role="2Oq$k0" />
+                    <node concept="2XshWL" id="4BpsjFkVNfY" role="2OqNvi">
+                      <ref role="2WH_rO" node="4BpsjFkVo3M" resolve="protect" />
+                      <node concept="2LYoG9" id="4BpsjFkVNh9" role="2XxRq1">
+                        <ref role="2LYoGb" node="5JdcZP3kTjW" resolve="workingDirectory" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -5035,9 +5103,6 @@
               <property role="TrG5h" value="paramsList" />
               <node concept="2ShNRf" id="6Qz4eQrUebb" role="33vP2m">
                 <node concept="Tc6Ow" id="6Qz4eQrUebc" role="2ShVmc">
-                  <node concept="37vLTw" id="2m1amDljRIu" role="HW$Y0">
-                    <ref role="3cqZAo" node="2m1amDljQRw" resolve="param_arg" />
-                  </node>
                   <node concept="37vLTw" id="6Qz4eQrUebd" role="HW$Y0">
                     <ref role="3cqZAo" node="5JdcZP3lack" resolve="param_mapping" />
                   </node>
@@ -5156,7 +5221,7 @@
               <node concept="2LYoGL" id="5JdcZP3nvSJ" role="2LYoGw">
                 <ref role="2LYoGK" to="go48:14R2qyOBxc4" resolve="className" />
                 <node concept="Xl_RD" id="5JdcZP3nw91" role="2LYoGN">
-                  <property role="Xl_RC" value="io.carml.jar.app.CarmlJarJenaApplication" />
+                  <property role="Xl_RC" value="grape.carml.CarmlRunner" />
                 </node>
               </node>
               <node concept="2LYoGL" id="5JdcZP3nwQe" role="2LYoGw">
