@@ -63,9 +63,6 @@
       <concept id="6127414803068812687" name="RML.IO.structure.ReferenceFormulationJSONPath" flags="ng" index="3tqwV3" />
       <concept id="8169920669489714720" name="RML.IO.structure.LogicalSourceInlineDef" flags="ng" index="1_rNmK" />
       <concept id="791507941088259868" name="RML.IO.structure.CurrentWorkingDirectoryRoot" flags="ng" index="1FyQXr" />
-      <concept id="791507941088259867" name="RML.IO.structure.DirectoryRoot" flags="ngI" index="1FyQXs">
-        <property id="2106191878550207927" name="path" index="2wXCZH" />
-      </concept>
       <concept id="7776130554352727640" name="RML.IO.structure.CsvColumn" flags="ng" index="1KEMJi">
         <property id="7776130554352855988" name="columnName" index="1KEjoY" />
       </concept>
@@ -382,9 +379,7 @@
         <node concept="2JlPsY" id="jSjFvIoadt" role="FCw5y">
           <node concept="FCOsJ" id="jSjFvIoadB" role="1FyQV4">
             <property role="1Fxk42" value="movies.csv" />
-            <node concept="1FyQXr" id="urQ0ttNieJ" role="1Fxk40">
-              <property role="2wXCZH" value="V:/grape/solutions/Sandbox/data" />
-            </node>
+            <node concept="1FyQXr" id="urQ0ttNieJ" role="1Fxk40" />
           </node>
         </node>
         <node concept="3tqwV1" id="3fDXJrO_7dS" role="3tqwV9" />
