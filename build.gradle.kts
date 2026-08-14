@@ -41,7 +41,7 @@ val antlrVersion = "4.13.2"
 val jenaVersion = "5.6.0"
 
 dependencies {
-    mps("com.jetbrains:mps:2025.2.1")
+    mps("com.jetbrains:mps:2026.1")
     jbr("com.jetbrains.jdk:jbr_jcef:21.0.8-b1138.52")
 }
 

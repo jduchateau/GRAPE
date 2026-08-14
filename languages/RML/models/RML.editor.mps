@@ -25,7 +25,6 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="thsh" ref="r:162343a5-dbf1-45bb-b173-c7248959bb6b(Turtle.multiline)" />
     <import index="tqna" ref="r:cc7e3d7f-6cc3-45ed-8929-4ebc0ff93d08(Turtle.prefixer)" />
-    <import index="fk4s" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.riot.web(Turtle.external/)" />
     <import index="14am" ref="r:0d3964ef-32ae-4ab9-9fa2-ecd699eb8f7e(jetbrains.mps.baseLanguage.textBlock.editor)" />
     <import index="dsci" ref="7affc86d-0488-4d79-a2c7-6c2c1b5f071b/java:org.apache.jena.langtag(Turtle.external/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />

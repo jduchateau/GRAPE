@@ -70,6 +70,7 @@
     <dependency reexport="false">f9bc7d73-5eda-44e2-aa14-dcc4c0d485d0(jetbrains.mps.baseLanguage.textBlock)</dependency>
     <dependency reexport="false">aeba435c-1d30-498a-a895-0c28f7dc9263(Turtle.parser)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
+    <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />

@@ -29,7 +29,7 @@ You will need to **restart MPS**, then you can continue with the [tutorial](star
 
 In addition to MPS, you will need:
 
-- Java 21 (JetBrains Runtime 21, bundled with MPS 2025.2, previously was Java 17 with MPS 2024.1)
+- Java 21 (JetBrains Runtime 21, bundled with MPS 2026.1, previously was Java 17 with MPS 2024.1)
 - A clone of this repository:
 ```shell
 git clone --no-depth https://gitlab.uliege.be/JakubDuchateau/grape.git
@@ -38,10 +38,12 @@ git clone --no-depth https://gitlab.uliege.be/JakubDuchateau/grape.git
 To start the project:
 
 1. Run `./gradlew setup`, it should download the libraries
-2. Open or restart MPS to ensure that the dependencies (located in `Turtle.runtime`, `java_stubs`) are loaded correctly.
+2. Open or restart MPS to ensure that the dependencies are loaded correctly.
 3. Rebuild the project to ensure that languages are built and properly loaded. 
    ++ctrl+shift+a++ and search `rebuild project`
    or right-click on the project in Logical View and select `Rebuild Project`.
 
 
+If you do changes to the anltr grammar, you can explicitly regenerate the parser by running `./gradlew :antlr-parser:generateGrammarSource`.
 
+To generate the plugin you can use the task `./gradlew zip` which will create the plugin `build/artifacts/GrapePlugin/GrapePlugin.zip`.
