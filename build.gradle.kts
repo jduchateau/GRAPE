@@ -16,10 +16,19 @@ buildscript {
 }
 
 repositories {
-    mavenLocal()
+    mavenLocal {
+        content {
+            includeGroup("io.carml")
+            includeGroup("io.carml.jar")
+        }
+    }
     // CI builds custom dependencies (carml) into project-local .m2/repository for caching
     maven {
         url = uri("${layout.projectDirectory}/.m2/repository")
+        content {
+            includeGroup("io.carml")
+            includeGroup("io.carml.jar")
+        }
     }
     mavenCentral()
     maven("https://artifacts.itemis.cloud/repository/maven-mps")
