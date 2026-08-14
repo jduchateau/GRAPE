@@ -4,6 +4,10 @@ plugins {
 
 repositories {
     mavenLocal()
+    // CI builds custom dependencies (carml) into project-local .m2/repository for caching
+    maven {
+        url = uri("${rootProject.layout.projectDirectory}/.m2/repository")
+    }
     mavenCentral()
     maven("https://jitpack.io")
 }

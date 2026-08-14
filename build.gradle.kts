@@ -17,6 +17,10 @@ buildscript {
 
 repositories {
     mavenLocal()
+    // CI builds custom dependencies (carml) into project-local .m2/repository for caching
+    maven {
+        url = uri("${layout.projectDirectory}/.m2/repository")
+    }
     mavenCentral()
     maven("https://artifacts.itemis.cloud/repository/maven-mps")
     maven("https://jitpack.io")
