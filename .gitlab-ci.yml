@@ -48,7 +48,7 @@ build-plugin:
       if [ -n "$CI_COMMIT_TAG" ]; then
         echo "=== Release tag detected: $CI_COMMIT_TAG. Running JReleaser... ==="
         export JRELEASER_PROJECT_VERSION=${CI_COMMIT_TAG#v}
-        export JRELEASER_GITLAB_TOKEN="${CI_JOB_TOKEN}"
+        export JRELEASER_GITLAB_TOKEN="${JRELEASER_GITLAB_TOKEN:-$CI_JOB_TOKEN}"
         mkdir -p build/jreleaser
         ./gradlew jreleaserRelease
       else

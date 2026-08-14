@@ -12,12 +12,26 @@ project:
     java:
       enabled: false
 
+upload:
+  gitlab:
+    grape:
+      active: ALWAYS
+      host: gitlab.uliege.be
+      projectIdentifier: '6137'
+      packageName: GrapePlugin
+      artifacts: true
+
 release:
   gitlab:
     enabled: true
     host: gitlab.uliege.be
+    apiEndpoint: https://gitlab.uliege.be/api/v4
     owner: JakubDuchateau
     name: grape
+    projectIdentifier: '6137'
+    uploadAssets: NEVER
+    uploadLinks:
+      gitlab: grape
     overwrite: true
 
 signing:
