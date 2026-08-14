@@ -31,12 +31,19 @@ prepare-carml:
   script:
     - |
       if [ ! -d ".m2/repository/io/carml/jar/carml-app-jena/1.5.0-SNAPSHOT" ]; then
-        echo "carml-app-jena not found in cache. Building from source..."
+        echo "carml dependencies not found in cache. Building from source..."
+
+        echo "=== 1. Building carml (core) ==="
+        git clone --branch rml-cg --depth 1 https://github.com/carml/carml.git /tmp/carml
+        (cd /tmp/carml && mvn clean install -DskipTests -Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository)
+        rm -rf /tmp/carml
+
+        echo "=== 2. Building carml-jar ==="
         git clone --branch rml-cg --depth 1 https://github.com/carml/carml-jar.git /tmp/carml-jar
         (cd /tmp/carml-jar && mvn clean install -DskipTests -Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository)
         rm -rf /tmp/carml-jar
       else
-        echo "carml-app-jena found in cache, skipping build."
+        echo "carml dependencies found in cache, skipping build."
       fi
   artifacts:
     paths:
