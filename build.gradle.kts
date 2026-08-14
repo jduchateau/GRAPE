@@ -17,20 +17,6 @@ buildscript {
 
 repositories {
     mavenLocal()
-    // Only use centralManualTesting repository locally (not in CI)
-    if (!System.getenv("CI").toBoolean()) {
-        maven {
-            name = "centralManualTesting"
-            url = uri("https://central.sonatype.com/api/v1/publisher/deployments/download/")
-            credentials(HttpHeaderCredentials::class)
-            authentication {
-                create<HttpHeaderAuthentication>("header")
-            }
-            content {
-                includeModule("io.github.kg-construct", "burp")
-            }
-        }
-    }
     mavenCentral()
     maven("https://artifacts.itemis.cloud/repository/maven-mps")
     maven("https://jitpack.io")
@@ -63,7 +49,7 @@ bundledDependencies {
 
     create("burp") {
         destinationDir = layout.projectDirectory.dir("solutions/burp.external/lib")
-        dependency("io.github.kg-construct:burp:0.1.3-rc.5")
+        dependency("io.github.kg-construct:burp:0.1.3")
     }
 
     create("carml") {
@@ -73,6 +59,15 @@ bundledDependencies {
         dependency("be.ugent.idlab.knows:idlab-functions-java:1.4.0")
     }
 }
+
+configurations.matching { it.name in listOf("stubs", "burp", "carml") }.configureEach {
+    attributes {
+        attribute(Usage.USAGE_ATTRIBUTE, objects.named(Usage.JAVA_RUNTIME))
+        attribute(Category.CATEGORY_ATTRIBUTE, objects.named(Category.LIBRARY))
+        attribute(TargetJvmEnvironment.TARGET_JVM_ENVIRONMENT_ATTRIBUTE, objects.named(TargetJvmEnvironment.STANDARD_JVM))
+    }
+}
+
 
 mpsBuilds {
     create<MainBuild>("GRAPE") {

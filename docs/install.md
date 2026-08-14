@@ -27,20 +27,30 @@ You will need to **restart MPS**, then you can continue with the [tutorial](star
 
 ## Running from Source
 
-In addition to MPS, you will need:
-
 - Java 21 (JetBrains Runtime 21, bundled with MPS 2026.1, previously was Java 17 with MPS 2024.1)
+- Maven 3.8+ (to install custom dependencies to your local Maven cache)
 - A clone of this repository:
 ```shell
 git clone --no-depth https://gitlab.uliege.be/JakubDuchateau/grape.git
 ```
 
-To start the project:
+### 1. Install CARML dependency to Maven Local
 
-1. Run `./gradlew setup`, it should download the libraries
+GRAPE currently requires the `rml-cg` branch of `carml-jar`. Build and install it into your local Maven cache (`~/.m2/repository`):
+
+```shell
+git clone --branch rml-cg --depth 1 https://github.com/carml/carml-jar.git
+cd carml-jar
+mvn clean install -DskipTests
+cd ..
+```
+
+### 2. Setup the GRAPE project
+
+1. Run `./gradlew setup`, it will download and bundle the required libraries.
 2. Open or restart MPS to ensure that the dependencies are loaded correctly.
-3. Rebuild the project to ensure that languages are built and properly loaded. 
-   ++ctrl+shift+a++ and search `rebuild project`
+3. Rebuild the project to ensure that languages are built and properly loaded:
+   Press ++ctrl+shift+a++, search `rebuild project`,
    or right-click on the project in Logical View and select `Rebuild Project`.
 
 

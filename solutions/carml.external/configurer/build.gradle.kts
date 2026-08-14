@@ -3,8 +3,8 @@ plugins {
 }
 
 repositories {
-    mavenCentral()
     mavenLocal()
+    mavenCentral()
     maven("https://jitpack.io")
 }
 
